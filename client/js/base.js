@@ -152,7 +152,7 @@
 
 	$(document).ready(function () {
 
-		var root.your4 = new App({
+		root.your4 = new App({
 			//http://152.78.144.19/your4/e4.stream/playlist.m3u8
 			server: "152.78.144.19:1935/your4",
 			channels: [
