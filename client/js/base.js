@@ -168,7 +168,7 @@
 		$('#container').append(your4.render().el);
 	});
 
-	document.on("touchstart", function(e){ 
+	$(document).on("touchstart", function(e){ 
 	    e.preventDefault(); 
 	});
 
