@@ -1,16 +1,16 @@
+function htmlEscape(str) {
+	return String(str)
+		.replace(/&/g, '&amp;')
+		.replace(/"/g, '&quot;')
+		.replace(/'/g, '&#39;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;');
+}
+
 (function(root) {
 	"use strict";
 
 	var useHtmlVideo = navigator.userAgent.match(/iPad/i) != null;
-
-	function htmlEscape(str) {
-		return String(str)
-			.replace(/&/g, '&amp;')
-			.replace(/"/g, '&quot;')
-			.replace(/'/g, '&#39;')
-			.replace(/</g, '&lt;')
-			.replace(/>/g, '&gt;');
-	}
 
 	var App = Backbone.View.extend({
 		initialize: function (options) {
