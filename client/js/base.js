@@ -59,6 +59,14 @@ var App = Backbone.View.extend({
 			that.showChannels();
 		});
 
+		/*this.$("video").on("mousemove touchstart touchmove click", function () {
+			that.showChannels();
+		});*/
+
+		setTimeout(function () {
+			this.$("video")[0].play();
+		}, 2000);
+
 		this.showChannels();
 
 		return this;
@@ -75,7 +83,7 @@ var App = Backbone.View.extend({
 		clearTimeout(this.hideChannelsTimeout);
 		this.hideChannelsTimeout = setTimeout(function () {
 			that.hideChannels();
-		}, 500);
+		}, 1500);
 		return this;
 	},
 	hideChannels: function () {
@@ -155,4 +163,8 @@ $(document).ready(function () {
 	});
 
 	$('#container').append(your4.render().el);
+});
+
+document.on("touchstart", function(e){ 
+    e.preventDefault(); 
 });
