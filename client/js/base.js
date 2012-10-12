@@ -137,7 +137,8 @@ function htmlEscape(str) {
 						rtmp: {
 							url: 'lib/flowplayer.rtmp.swf',
 							netConnectionUrl: 'rtmp://' + this.server
-						}
+						},
+						controls: null
 					},
 					canvas: {
 						background: '#ff0000',
