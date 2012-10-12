@@ -2,6 +2,15 @@ body {
 	overflow: hidden;
 }
 
+.controls {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1001;
+}
+
 .channels {
 	position: absolute;
 	top: 0;

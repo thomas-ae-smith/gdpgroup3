@@ -59,39 +59,39 @@ function htmlEscape(str) {
 			this.$(".player").append(this.video.render().el);
 
 			this.$el.on("mousemove touchstart touchmove click", function () {
-				that.showChannels();
+				that.showOverlay();
 			});
 
 			/*this.$("video").on("mousemove touchstart touchmove click", function () {
-				that.showChannels();
+				that.showOverlay();
 			});*/
 
 			setTimeout(function () {
 				this.$("video")[0].play();
 			}, 2000);
 
-			this.showChannels();
+			this.showOverlay();
 
 			return this;
 		},
 
-		channelsAreShown: false,
-		hideChannelsTimeout: null,
-		showChannels: function () {
+		overlayIsShown: false,
+		hideOverlayTimeout: null,
+		showOverlay: function () {
 			var that = this;
-			if (!this.channelsAreShown) {
-				this.$(".channels").fadeIn(200);
-				this.channelsAreShown = true;
+			if (!this.overlayIsShown) {
+				this.$(".channels, .controls").fadeIn(200);
+				this.overlayIsShown = true;
 			}
-			clearTimeout(this.hideChannelsTimeout);
-			this.hideChannelsTimeout = setTimeout(function () {
-				that.hideChannels();
+			clearTimeout(this.hideOverlayTimeout);
+			this.hideOverlayTimeout = setTimeout(function () {
+				that.hideOverlay();
 			}, 1500);
 			return this;
 		},
-		hideChannels: function () {
-			this.$(".channels").dequeue().fadeOut(200);
-			this.channelsAreShown = false;
+		hideOverlay: function () {
+			this.$(".channels, .constrols").dequeue().fadeOut(200);
+			this.overlayIsShown = false;
 			return this;
 		}
 	});
