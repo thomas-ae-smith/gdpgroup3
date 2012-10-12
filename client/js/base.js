@@ -1,4 +1,4 @@
-var useHtmlVideo = true || navigator.userAgent.match(/iPad/i) != null;
+var useHtmlVideo = navigator.userAgent.match(/iPad/i) != null;
 
 function htmlEscape(str) {
 	return String(str)
