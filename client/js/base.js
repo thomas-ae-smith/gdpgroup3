@@ -17,7 +17,9 @@ function htmlEscape(str) {
 			"mousemove": "showOverlay",
 			"touchstart": "showOverlay",
 			"click .start-screen": "start",
-			"touchstart .start-screen": "start"
+			"touchstart .start-screen": "start",
+			"click .icon-play": "play",
+			"click .icon-stop": "stop"
 		},
 		initialize: function (options) {
 			var Video = useHtmlVideo ? HtmlVideo : FlashVideo;
@@ -93,6 +95,14 @@ function htmlEscape(str) {
 			}, 3000);
 		},
 
+		play: function() {
+			this.video.play();
+		},
+
+		stop: function() {
+			this.video.stop();
+		},
+
 		overlayIsShown: false,
 		hideOverlayTimeout: null,
 		showOverlay: function () {
@@ -131,6 +141,9 @@ function htmlEscape(str) {
 		play: function () {
 			this.$("video")[0].play();
 		},
+		stop: function() {
+			this.$("video")[0].pause();
+		},
 		setChannel: function (channel) {
 			var that = this;
 			this.$("video").attr("src", "http://" + this.options.server + "/" + channel.url + ".stream/playlist.m3u8");
@@ -150,6 +163,9 @@ function htmlEscape(str) {
 
 	var FlashVideo = Video.extend({
 		play: function () {
+			console.log("TODO")
+		},
+		stop: function () {
 			console.log("TODO")
 		},
 		setChannel: function (channel) {
