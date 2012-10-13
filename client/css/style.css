@@ -11,6 +11,10 @@ body {
         z-index: 1001;
 }
 
+.controls .left-controls {
+	float: left;
+}
+
 .controls .right-controls {
 	float: right;
 }
