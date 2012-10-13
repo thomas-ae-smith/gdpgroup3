@@ -90,7 +90,7 @@ function htmlEscape(str) {
 			return this;
 		},
 		hideOverlay: function () {
-			this.$(".channels, .constrols").dequeue().fadeOut(200);
+			this.$(".channels, .controls").dequeue().fadeOut(200);
 			this.overlayIsShown = false;
 			return this;
 		}
