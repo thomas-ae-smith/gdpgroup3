@@ -82,3 +82,6 @@ body {
 .player {
 	height: 90%;
 }
+
+.player .video-container {
+}

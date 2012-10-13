@@ -23,18 +23,18 @@ function htmlEscape(str) {
 			var Video = useHtmlVideo ? HtmlVideo : FlashVideo;
 
 			// Video displayed to user and video for buffering
-			this.video1 = new Video({ server: options.server });
-			this.video2 = new Video({ server: options.server, hidden: true });
-
-			this.currentVideo = this.video1;
+			this.video = new Video({ server: options.server });
 
 			_.bindAll(this);
 		},
 		setChannel: function (channel) {
 			this.channel = channel;
-			this.currentVideo.setChannel(channel, true); 
+			this.video.setChannel(channel); 
 
 			return this;
+		},
+		off: function () {
+			this.setChannel({ url: "" });
 		},
 		render: function () {
 			var that = this,
@@ -42,7 +42,7 @@ function htmlEscape(str) {
 
 			this.$el.html(playerTemplate());
 			this.renderChannelButtons();
-			this.$(".player").append(this.video1.render().el, this.video2.render().el);
+			this.$(".player").append(this.video.render().el);
 
 			return this;
 		},
@@ -76,19 +76,21 @@ function htmlEscape(str) {
 			var that = this;
 
 			this.$(".start-screen").hide();
-			this.video1.play();
-			this.video2.play();
+			this.video.play();
 			this.showOverlay();
 
 			setTimeout(function () {
-				that.log("Loading E4...");
-				that.video2.setChannel(that.options.channels[1]);
+				that.log("Switching to E4...");
+				that.setChannel(that.options.channels[1]);
 				setTimeout(function () {
-					that.log("Switching to E4...");
-					that.video1.hide();
-					that.video2.show();
-				}, 2000);
-			}, 2000);
+					that.log("Switching to nothing...");
+					that.off();
+					setTimeout(function () {
+						that.log("Switching to C4...")
+						that.setChannel(that.options.channels[0]);	
+					}, 3000)
+				}, 3000);
+			}, 3000);
 		},
 
 		overlayIsShown: false,
@@ -116,26 +118,24 @@ function htmlEscape(str) {
 	});
 
 	var Video = Backbone.View.extend({
+		className: "video-container",
 		initialize: function (options) {
 			this.options = _.extend({
 				server: "",
 			}, options);
-			if (options.hidden) { this.hide(); }
 			if (options.channel) { this.setChannel(options.channel, true); }
-		},
-		show: function () { this.$el.show(); },
-		hide: function () { this.$el.hide(); },
+		}
 	});
 
 	var HtmlVideo = Video.extend({
 		play: function () {
 			this.$("video")[0].play();
 		},
-		setChannel: function (channel, autoplay) {
+		setChannel: function (channel) {
 			var that = this;
 			this.$("video").attr("src", "http://" + this.options.server + "/" + channel.url + ".stream/playlist.m3u8");
 			this.$("video")[0].load();
-			if (autoplay) { this.play(); }
+			this.play();
 			return this;
 		},
 		render: function () {
@@ -199,7 +199,7 @@ function htmlEscape(str) {
 
 	$(document).ready(function () {
 		$('#container').html("").append(your4.render().el);
-		your4.setChannel(root.your4.options.channels[0])
+		//your4.setChannel(root.your4.options.channels[0])
 	});
 
 	$(document).on("touchstart", function(e){ 
