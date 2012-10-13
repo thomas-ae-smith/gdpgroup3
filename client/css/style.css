@@ -4,11 +4,16 @@ body {
 
 .controls {
 	position: absolute;
-	left: 140px;
+	left: 0;
+	padding-left:140px;
 	bottom: 0;
 	width: 100%;
 	background: rgba(0, 0, 0, 0.6);
 	z-index: 50;
+	font-size: 30px;
+	height: 35px;
+	line-height: 38px;
+	color: #fff;
 }
 
 .controls .left-controls {
@@ -19,11 +24,15 @@ body {
 	float: right;
 }
 
+.controls i:hover {
+	color: #dedede;
+}
+
 .channels {
 	position: absolute;
 	top: 0;
 	left: 0;
-	bottom: 0;
+	bottom: 35px;
 	width: 140px;
 	background: rgba(0, 0, 0, 0.6);
 	z-index: 50;
