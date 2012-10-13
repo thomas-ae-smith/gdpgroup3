@@ -20,8 +20,8 @@ body {
 	float: left;
 }
 
-.controls .right-controls {
-	float: right;
+.controls i {
+	display: inline-block;
 }
 
 .controls i:hover {
