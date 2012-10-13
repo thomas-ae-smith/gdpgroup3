@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="http://warlock.ecs.soton.ac.uk:8080/target/target-script-min.js#anonymous"></script>
-	<script>console.log("BOOO YA!")</script>
 	<script type="text/javascript" src="lib/jquery.js"></script>
 	<script type="text/javascript" src="lib/underscore.js"></script>
 	<script type="text/javascript" src="lib/backbone.js"></script>
@@ -15,9 +14,10 @@
 	<script type="text/javascript" src="js/base.js"></script>
 </head>
 <body>
-	<div id="container"></div>
+	<div id="container"><div class="loading">Loading...</div></div>
 	<div class="templates">
 		<script id="player-template" type="text/template">
+			<div class="start-screen">Touch to start <br>[ replace with login? ]</div>
 			<div class="channels"></div>
 			<div class="controls">
 				<div class="left-controls">
@@ -29,10 +29,12 @@
 				</div>
 			</div>
 			<div class="player"></div>
+			<div class="log"></div>
 		</script>
 		<script id="html-video-template" type="text/template">
-			<video width="100%" height="100%" poster="http://nrg.project4.tv/c4_480$" autoplay preload="auto">
-				<source src="http://<%= server %>/<%= channel %>.stream/playlist.m3u8" type="video/mp4"/>
+			<div class="touch-catcher"></div>
+			<video width="100%" height="100%" preload="auto">
+				<source src="" type="video/mp4"/>
 			</video>
 		</script>
 		<script id="flash-video-template" type="text/template">

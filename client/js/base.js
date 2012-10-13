@@ -13,12 +13,27 @@ function htmlEscape(str) {
 	var useHtmlVideo = navigator.userAgent.match(/iPad/i) != null;
 
 	var App = Backbone.View.extend({
+		events: {
+			"mousemove": "showOverlay",
+			"touchstart": "showOverlay",
+			"click .start-screen": "start",
+			"touchstart .start-screen": "start"
+		},
 		initialize: function (options) {
-			this.channel = options.channels[0];
+			var Video = useHtmlVideo ? HtmlVideo : FlashVideo;
+
+			// Video displayed to user and video for buffering
+			this.video1 = new Video({ server: options.server });
+			this.video2 = new Video({ server: options.server, hidden: true });
+
+			this.currentVideo = this.video1;
+
+			_.bindAll(this);
 		},
 		setChannel: function (channel) {
 			this.channel = channel;
-			this.video.setUrl(channel.url);
+			this.currentVideo.setChannel(channel, true); 
+
 			return this;
 		},
 		render: function () {
@@ -26,8 +41,15 @@ function htmlEscape(str) {
 				playerTemplate = _.template($("#player-template").html());
 
 			this.$el.html(playerTemplate());
+			this.renderChannelButtons();
+			this.$(".player").append(this.video1.render().el, this.video2.render().el);
 
-			var $channels = this.$('.channels');
+			return this;
+		},
+
+		renderChannelButtons: function () {
+			var that = this,
+				$channels = this.$('.channels');
 
 			_.each(this.options.channels, function (channel, i) {
 				var $el = $('<a class="channel" href="javascript:;">' +
@@ -37,7 +59,7 @@ function htmlEscape(str) {
 				 	'</div>' +
 				 	'</a>'),
 					$icon = $el.find(".icon");
-				$el.click(function () {
+				$el.on("click touchstart", function () {
 					that.setChannel(channel);
 				});
 				$channels.append($el);
@@ -48,31 +70,25 @@ function htmlEscape(str) {
 				}
 				setTimeout(refresh, 60000 + i * 5000)
 			});
+		},
 
-			var Video = useHtmlVideo ? HtmlVideo : FlashVideo;
+		start: function () {
+			var that = this;
 
-			this.video = new Video({
-				server: this.options.server,
-				url: this.channel.url
-			});
-
-			this.$(".player").append(this.video.render().el);
-
-			this.$el.on("mousemove touchstart touchmove click", function () {
-				that.showOverlay();
-			});
-
-			/*this.$("video").on("mousemove touchstart touchmove click", function () {
-				that.showOverlay();
-			});*/
-
-			setTimeout(function () {
-				this.$("video")[0].play();
-			}, 2000);
-
+			this.$(".start-screen").hide();
+			this.video1.play();
+			this.video2.play();
 			this.showOverlay();
 
-			return this;
+			setTimeout(function () {
+				that.log("Loading E4...");
+				that.video2.setChannel(that.options.channels[1]);
+				setTimeout(function () {
+					that.log("Switching to E4...");
+					that.video1.hide();
+					that.video2.show();
+				}, 2000);
+			}, 2000);
 		},
 
 		overlayIsShown: false,
@@ -93,33 +109,51 @@ function htmlEscape(str) {
 			this.$(".channels, .controls").dequeue().fadeOut(200);
 			this.overlayIsShown = false;
 			return this;
+		},
+		log: function (msg) {
+			this.$(".log").html(msg + "<br>" + this.$(".log").html());
 		}
 	});
 
-	var HtmlVideo = Backbone.View.extend({
-		setUrl: function (url) {
-			this.$("source").attr("src", "http://" + this.options.server + "/" + url + "/playlist.m3u8");
+	var Video = Backbone.View.extend({
+		initialize: function (options) {
+			this.options = _.extend({
+				server: "",
+			}, options);
+			if (options.hidden) { this.hide(); }
+			if (options.channel) { this.setChannel(options.channel, true); }
+		},
+		show: function () { this.$el.show(); },
+		hide: function () { this.$el.hide(); },
+	});
+
+	var HtmlVideo = Video.extend({
+		play: function () {
+			this.$("video")[0].play();
+		},
+		setChannel: function (channel, autoplay) {
+			var that = this;
+			this.$("video").attr("src", "http://" + this.options.server + "/" + channel.url + ".stream/playlist.m3u8");
+			this.$("video")[0].load();
+			if (autoplay) { this.play(); }
 			return this;
 		},
 		render: function () {
-			var template = _.template($("#html-video-template").html());
+			var that = this, 
+			template = _.template($("#html-video-template").html());
 
-			this.$el.html(template({
-				server: this.options.server,
-				channel: this.options.url
-			}));
+			this.$el.html(template(this.options));
 
 			return this;
 		}
 	});
 
-	var FlashVideo = Backbone.View.extend({
-		initialize: function (options) {
-			this.server = options.server;
-			this.url = options.url;
+	var FlashVideo = Video.extend({
+		play: function () {
+			console.log("TODO")
 		},
-		setUrl: function (url) {
-			this.url = url;
+		setChannel: function (channel) {
+			this.url = channel.url;
 			this.render();
 			return this;
 		},
@@ -136,7 +170,7 @@ function htmlEscape(str) {
 					plugins: {
 						rtmp: {
 							url: 'lib/flowplayer.rtmp.swf',
-							netConnectionUrl: 'rtmp://' + this.server
+							netConnectionUrl: 'rtmp://' + this.options.server
 						},
 						controls: null
 					},
@@ -151,22 +185,21 @@ function htmlEscape(str) {
 		}
 	});
 
+	root.your4 = new App({
+		server: "152.78.144.19:1935/your4",
+		channels: [
+			{ title: "Channel 4", icon: "http://nrg.project4.tv/c4_90$", thumbnail: "http://nrg.project4.tv/c4_480$", url: "c4" },
+			{ title: "E4", icon: "http://nrg.project4.tv/e4_90$", thumbnail: "http://nrg.project4.tv/e4_480$", url: "e4" },
+			{ title: "More4", icon: "http://nrg.project4.tv/m4_90$", thumbnail: "http://nrg.project4.tv/m4_480$", url: "m4" },
+			{ title: "Film4", icon: "http://nrg.project4.tv/f4_90$", thumbnail: "http://nrg.project4.tv/f4_480$", url: "film4" },
+			{ title: "4Music", icon: "http://nrg.project4.tv/4music_90$", thumbnail: "http://nrg.project4.tv/4music_480$", url: "4music" },
+			{ title: "studentTV", icon: "http://nrg.project4.tv/stv_90$", thumbnail: "http://nrg.project4.tv/stv_480$", url: "studentTV" }
+		]
+	});
+
 	$(document).ready(function () {
-
-		root.your4 = new App({
-			//http://152.78.144.19/your4/e4.stream/playlist.m3u8
-			server: "152.78.144.19:1935/your4",
-			channels: [
-				{ title: "Channel 4", icon: "http://nrg.project4.tv/c4_90$", url: "c4" },
-				{ title: "E4", icon: "http://nrg.project4.tv/e4_90$", url: "e4" },
-				{ title: "More4", icon: "http://nrg.project4.tv/m4_90$", url: "m4" },
-				{ title: "Film4", icon: "http://nrg.project4.tv/f4_90$", url: "film4" },
-				{ title: "4Music", icon: "http://nrg.project4.tv/4music_90$", url: "4music" },
-				{ title: "studentTV", icon: "http://nrg.project4.tv/stv_90$", url: "studentTV" }
-			]
-		});
-
-		$('#container').append(your4.render().el);
+		$('#container').html("").append(your4.render().el);
+		your4.setChannel(root.your4.options.channels[0])
 	});
 
 	$(document).on("touchstart", function(e){ 

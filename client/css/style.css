@@ -3,12 +3,12 @@ body {
 }
 
 .controls {
-        position: absolute;
-        left: 140px;
-        bottom: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.6);
-        z-index: 1001;
+	position: absolute;
+	left: 140px;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 50;
 }
 
 .controls .left-controls {
@@ -26,7 +26,7 @@ body {
 	bottom: 0;
 	width: 140px;
 	background: rgba(0, 0, 0, 0.6);
-	z-index: 1000;
+	z-index: 50;
 }
 
 .channel {
@@ -54,4 +54,31 @@ body {
 
 .templates {
 	display: none;
+}
+
+.start-screen {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: #ffffff;
+	z-index: 100;
+	font-size: 34px;
+	text-align: center;
+	line-height: 90px;
+}
+
+.log {
+	position: absolute;
+	top: 90%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	font-size: 10px;
+	font-family: monospace;
+}
+
+.player {
+	height: 90%;
 }
