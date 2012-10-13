@@ -71,11 +71,36 @@ body {
 	top: 0;
 	bottom: 0;
 	right: 0;
-	background: #ffffff;
+	background: #000;
+	color: #fff;
 	z-index: 100;
-	font-size: 34px;
 	text-align: center;
 	line-height: 90px;
+}
+
+@-webkit-keyframes pulse {
+      from {
+        opacity: 0.2;
+      }
+      to {
+        opacity: 1.0;
+      }
+    }
+
+.start-screen .instruction {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 70%;
+}
+
+.start-screen .instruction strong {
+	font-size: 34px;
+	-webkit-animation-name: pulse;
+      -webkit-animation-duration: 1s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+      -webkit-animation-direction: alternate;
 }
 
 .log {
@@ -89,8 +114,48 @@ body {
 }
 
 .player {
-	height: 90%;
+	position: relative;
+	height: 100%;
 }
 
 .player .video-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.player .blank-frame {
+	position: absolute;
+	z-index: 2;
+	background: black;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	color: red;
+	font-size: 30px;
+	line-height: 100px;
+	text-align: center;
+}
+
+.player .logo-frame,
+.start-screen .logo-frame {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	right: 0;
+	bottom: 80px;
+}
+
+.player .logo-frame img,
+.start-screen .logo-frame img {
+	width: 100%;
+	height: 100%;
+}
+
+video {
+	width: 100%;
+	height: 100%;
 }
