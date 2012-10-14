@@ -5,27 +5,30 @@
 	<meta name="apple-mobile-web-app-capable" content="yes"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="css/style.css">
 	<script src="http://warlock.ecs.soton.ac.uk:8080/target/target-script-min.js#anonymous"></script>
 	<script type="text/javascript" src="lib/jquery.js"></script>
 	<script type="text/javascript" src="lib/underscore.js"></script>
 	<script type="text/javascript" src="lib/backbone.js"></script>
 	<script type="text/javascript" src="lib/flowplayer.min.js"></script>
 	<script type="text/javascript" src="lib/bootstrap.js"></script>
-	<script type="text/javascript" src="js/base.js"></script>
+	<script>
+		// Hack to avoid iPad caching
+		document.write('<script type="text/javascript" src="js/base.js?' + Math.round(Math.random() * 10000000) + '"></' + "script>");
+	</script>
 </head>
 <body>
 	<div id="container"><div class="loading">Loading...</div></div>
 	<div class="templates">
 		<script id="player-template" type="text/template">
-			<div class="start-screen">Touch to start <br>[ replace with login? ]</div>
+			<div class="start-screen">
+				<div class="logo-frame"><img src="img/logo-frame.png"></div>
+				<div class="instruction"><strong>Touch to start</strong></div>
+			</div>
 			<div class="channels"></div>
 			<div class="controls">
 				<div class="left-controls">
 					<i class="icon-play"></i> 
 					<i class="icon-stop"></i>
-				</div>	
-				<div class="right-controls">
 					<i class="icon-volume-up"></i>
 				</div>
 			</div>
@@ -33,7 +36,6 @@
 			<div class="log"></div>
 		</script>
 		<script id="html-video-template" type="text/template">
-			<div class="touch-catcher"></div>
 			<video width="100%" height="100%" preload="auto">
 				<source src="" type="video/mp4"/>
 			</video>

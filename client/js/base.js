@@ -10,196 +10,67 @@ function htmlEscape(str) {
 (function(root) {
 	"use strict";
 
-	var useHtmlVideo = navigator.userAgent.match(/iPad/i) != null;
+	var y4 = root.y4 = {};
 
-	var App = Backbone.View.extend({
-		events: {
-			"mousemove": "showOverlay",
-			"touchstart": "showOverlay",
-			"click .start-screen": "start",
-			"touchstart .start-screen": "start"
-		},
-		initialize: function (options) {
-			var Video = useHtmlVideo ? HtmlVideo : FlashVideo;
 
-			// Video displayed to user and video for buffering
-			this.video = new Video({ server: options.server });
+	var scripts = ["js/App.js", "js/Scene.js", "js/Video.js"],
+		styles = ["css/style.css"];
 
-			_.bindAll(this);
-		},
-		setChannel: function (channel) {
-			this.channel = channel;
-			this.video.setChannel(channel); 
+	var htmlVideoBrowsers = ["iPad"];
 
-			return this;
-		},
-		off: function () {
-			this.setChannel({ url: "" });
-		},
-		render: function () {
-			var that = this,
-				playerTemplate = _.template($("#player-template").html());
+	if (navigator.userAgent.indexOf("iPad") > -1) {
+		y4.browser = "iPad";
+	} else {
+		y4.browser = "unknown";
+	}
+	
+	// Should HTML5 videos be used?
+	y4.useHtmlVideo = y4.browser.indexOf(y4.browser) > -1;
 
-			this.$el.html(playerTemplate());
-			this.renderChannelButtons();
-			this.$(".player").append(this.video.render().el);
-
-			return this;
-		},
-
-		renderChannelButtons: function () {
-			var that = this,
-				$channels = this.$('.channels');
-
-			_.each(this.options.channels, function (channel, i) {
-				var $el = $('<a class="channel" href="javascript:;">' +
-					'<div>' +
-						'<img class="icon" src="' + channel.icon + '">' +
-				 		'<span class="title">' + channel.title + '</span>' +
-				 	'</div>' +
-				 	'</a>'),
-					$icon = $el.find(".icon");
-				$el.on("click touchstart", function () {
-					that.setChannel(channel);
-				});
-				$channels.append($el);
-
-				var refresh = function () {
-					$icon.attr("src", channel.icon + "?" + (new Date()).getTime());
-					setTimeout(refresh, 60000);
-				}
-				setTimeout(refresh, 60000 + i * 5000)
-			});
-		},
-
-		start: function () {
-			var that = this;
-
-			this.$(".start-screen").hide();
-			this.video.play();
-			this.showOverlay();
-
-			setTimeout(function () {
-				that.log("Switching to E4...");
-				that.setChannel(that.options.channels[1]);
-				setTimeout(function () {
-					that.log("Switching to nothing...");
-					that.off();
-					setTimeout(function () {
-						that.log("Switching to C4...")
-						that.setChannel(that.options.channels[0]);	
-					}, 3000)
-				}, 3000);
-			}, 3000);
-		},
-
-		overlayIsShown: false,
-		hideOverlayTimeout: null,
-		showOverlay: function () {
-			var that = this;
-			if (!this.overlayIsShown) {
-				this.$(".channels, .controls").fadeIn(200);
-				this.overlayIsShown = true;
-			}
-			clearTimeout(this.hideOverlayTimeout);
-			this.hideOverlayTimeout = setTimeout(function () {
-				that.hideOverlay();
-			}, 1500);
-			return this;
-		},
-		hideOverlay: function () {
-			this.$(".channels, .controls").dequeue().fadeOut(200);
-			this.overlayIsShown = false;
-			return this;
-		},
-		log: function (msg) {
-			this.$(".log").html(msg + "<br>" + this.$(".log").html());
-		}
+	_.each(scripts, function (script, i) {
+		document.write('<script type="text/javascript" src="' + script + '?' + Math.round(Math.random() * 10000000) + '"></script>'); 
+	});
+	_.each(styles, function (style) {
+		document.write('<link type="text/css" rel="stylesheet" href="' + style + '?' + Math.round(Math.random() * 10000000) + '">');
 	});
 
-	var Video = Backbone.View.extend({
-		className: "video-container",
-		initialize: function (options) {
-			this.options = _.extend({
-				server: "",
-			}, options);
-			if (options.channel) { this.setChannel(options.channel, true); }
-		}
-	});
+	y4.now = function () {
+		return (new Date()).getTime();
+	}
 
-	var HtmlVideo = Video.extend({
-		play: function () {
-			this.$("video")[0].play();
-		},
-		setChannel: function (channel) {
-			var that = this;
-			this.$("video").attr("src", "http://" + this.options.server + "/" + channel.url + ".stream/playlist.m3u8");
-			this.$("video")[0].load();
-			this.play();
-			return this;
-		},
-		render: function () {
-			var that = this, 
-			template = _.template($("#html-video-template").html());
+	y4.error = function (msg) {
+		console.error(msg)
+	}
 
-			this.$el.html(template(this.options));
-
-			return this;
-		}
-	});
-
-	var FlashVideo = Video.extend({
-		play: function () {
-			console.log("TODO")
-		},
-		setChannel: function (channel) {
-			this.url = channel.url;
-			this.render();
-			return this;
-		},
-		render: function () {
-			var template = _.template($("#flash-video-template").html());
-
-			this.$el.html(template({
-				config: {
-					clip: {
-						url: this.url + ".stream",
-						provider: 'rtmp',
-						autoPlay: true
-					},
-					plugins: {
-						rtmp: {
-							url: 'lib/flowplayer.rtmp.swf',
-							netConnectionUrl: 'rtmp://' + this.options.server
-						},
-						controls: null
-					},
-					canvas: {
-						background: '#ff0000',
-						backgroundGradient: 'none'
-					}
-				}
-			}));
-
-			return this;
-		}
-	});
-
-	root.your4 = new App({
-		server: "152.78.144.19:1935/your4",
-		channels: [
-			{ title: "Channel 4", icon: "http://nrg.project4.tv/c4_90$", thumbnail: "http://nrg.project4.tv/c4_480$", url: "c4" },
-			{ title: "E4", icon: "http://nrg.project4.tv/e4_90$", thumbnail: "http://nrg.project4.tv/e4_480$", url: "e4" },
-			{ title: "More4", icon: "http://nrg.project4.tv/m4_90$", thumbnail: "http://nrg.project4.tv/m4_480$", url: "m4" },
-			{ title: "Film4", icon: "http://nrg.project4.tv/f4_90$", thumbnail: "http://nrg.project4.tv/f4_480$", url: "film4" },
-			{ title: "4Music", icon: "http://nrg.project4.tv/4music_90$", thumbnail: "http://nrg.project4.tv/4music_480$", url: "4music" },
-			{ title: "studentTV", icon: "http://nrg.project4.tv/stv_90$", thumbnail: "http://nrg.project4.tv/stv_480$", url: "studentTV" }
-		]
-	});
 
 	$(document).ready(function () {
-		$('#container').html("").append(your4.render().el);
-		//your4.setChannel(root.your4.options.channels[0])
+		var channels = y4.channels = {
+			"c4": new y4.Channel({ title: "Channel 4", url: "c4", icon: "img/ids/c4.svg" }),
+			"e4": new y4.Channel({ title: "E4", url: "e4", icon: "img/ids/e4.svg" }),
+			"m4": new y4.Channel({ title: "More4", url: "m4", icon: "img/ids/more4.svg" }),
+			"f4": new y4.Channel({ title: "Film4", url: "film4", icon: "img/ids/film4.svg" }),
+			"4music": new y4.Channel({ title: "4music", url: "4music", icon: "img/ids/4music.svg" }),
+			"stv": new y4.Channel({ title: "studentTV", url: "studentTV", icon: "img/ids/studenttv.svg" })
+		};
+		var app = y4.app = new y4.App({
+			server: "152.78.144.19:1935/your4",
+			channels: channels,
+			channelsOrdered: [channels["c4"], channels["e4"], channels["m4"], channels["f4"], channels["4music"], channels["stv"]]
+		});
+
+		app.on("start", function () {
+			app.setPlaylist([
+				{ scene: channels["c4"], duration: 5000 },
+				// Program break -> sponser message, c4 promo ad and channel sting should still be included
+				{ scene: "logo-frame", duration: 2000 },
+				{ scene: new y4.Advert("Some advert"), duration: 2000 },
+				{ scene: new y4.Advert("Another advert"), duration: 2000 },
+				{ scene: new y4.Advert("Yet another advert"), duration: 2000 },
+				{ scene: channels["c4"], duration: 10000 }
+			]);
+		});
+
+		$('#container').html("").append(app.render().el);
 	});
 
 	$(document).on("touchstart", function(e){ 
