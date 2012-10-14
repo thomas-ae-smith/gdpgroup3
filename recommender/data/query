@@ -1,0 +1,15 @@
+SELECT IP, CurrentShow, genre, type, rating
+FROM (SELECT *
+    FROM project4_Stats
+    WHERE IP IN
+        (SELECT DISTINCT IP
+        FROM some_ips
+        )
+    ) AS Viewings
+INNER JOIN project4_epg
+ON CurrentShowEventID = rawID
+WHERE Viewings.StartTimeUTC >= start_TimeStamp
+AND Viewings.EndTimeUTC <= start_TimeStamp + ((1 +duration_min) * 60)
+AND CurrentShow != "Off air"
+ORDER BY IP
+LIMIT 0, 1000000

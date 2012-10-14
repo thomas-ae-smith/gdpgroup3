@@ -9,3 +9,4 @@ pyml
 
 Datastore:
 mysql-connector
+tvdb_api
