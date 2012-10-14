@@ -32,7 +32,7 @@ conn_inqb8r = mysql.connector.connect(user='teamgdp',
 									password='MountainDew2012',
 									host='77.244.130.51',
 									port=3307)
-cursor_inqb8r = connection.cursor()
+cursor_inqb8r = conn_inqb8r.cursor()
 cursor_inqb8r.execute(query)
 conn_inqb8r.close()
 
@@ -41,7 +41,7 @@ query_warlock = ('INSERT INTO your4(id, channel, vector, length, start_time)'
 conn_warlock = mysql.connector.connect(user='your4',
 									password='2zVGP58Z5YttvAxV',
 									database='your4')
-cursor_warlock = connection.cursor()
+cursor_warlock = conn_warlock.cursor()
 for (key, chanID, genre, type, duration, startTime, rating) in cursor_inqb8r:
 	vector = pickle.dumps(calc_prog_vector())
 	cursor.execute(query, (key, chanID, vector, duration, startTime))
