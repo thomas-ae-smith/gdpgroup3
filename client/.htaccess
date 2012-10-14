@@ -1,5 +1,0 @@
-AuthName "Restricted Area" 
-AuthType Basic 
-AuthUserFile /usr/share/gdp/repo/client/.htpasswd 
-AuthGroupFile /dev/null 
-require valid-user	
