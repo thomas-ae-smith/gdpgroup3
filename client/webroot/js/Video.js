@@ -15,7 +15,9 @@
 		play: function () { this.videoEl.play(); },
 		stop: function() { this.videoEl.pause(); },
 		setUrl: function (url) {
+			if (this.url === url) { return; }
 			var that = this;
+			this.url = url;
 			this.$video.attr("src", "http://" + this.options.server + "/" + url + ".stream/playlist.m3u8");
 			this.videoEl.load();
 			this.play();
@@ -37,6 +39,7 @@
 		play: function () { console.log("TODO") },
 		stop: function () { console.log("TODO") },
 		setUrl: function (url) {
+			if (this.url === url) { return; }
 			this.url = url;
 			this.render();
 			return this;
