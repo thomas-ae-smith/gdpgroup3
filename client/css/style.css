@@ -33,7 +33,7 @@ body {
 	top: 0;
 	left: 0;
 	bottom: 35px;
-	width: 140px;
+	width: 90px;
 	background: rgba(0, 0, 0, 0.6);
 	z-index: 50;
 }
@@ -41,7 +41,7 @@ body {
 .channel {
 	position: relative;
 	display: block;
-	width: 130px;
+	width: 70px;
 	margin: 5px;
 }
 
@@ -50,12 +50,12 @@ body {
 }
 
 .channel .title {
-	position: absolute;
+	/*position: absolute;
 	bottom: 10px;
 	left: 0;
 	right: 0;
-	padding: 2px;
-	background: rgba(0, 0, 0, 0.8);
+	padding: 2px;*//*
+	background: rgba(0, 0, 0, 0.8);*/
 	color: white;
 	font-weight: bold;
 	text-align: center;
