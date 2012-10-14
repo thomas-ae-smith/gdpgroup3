@@ -61,7 +61,7 @@ function htmlEscape(str) {
 		app.on("start", function () {
 			var logoFrame = new y4.StillScene({ image: "img/logo-frame.png" });
 			app.setPlaylist([
-				{ scene: channels["c4"], duration: 2000 },
+				{ scene: channels["c4"], duration: 5000 },
 				// Program break -> sponser message, c4 promo ad and channel sting should still be included
 				{ scene: logoFrame, duration: 2000 },
 				{ scene: new y4.StillScene({ text: "Some advert" }), duration: 2000 },

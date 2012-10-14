@@ -143,6 +143,7 @@ body {
 
 .player .still-frame,
 .start-screen .still-frame {
+	background: #221199;
 	position: absolute;
 	top: 80px;
 	left: 0;

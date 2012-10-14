@@ -20,50 +20,61 @@
 		play: function () { this.player.play(); },
 		stop: function () { this.player.stop(); },
 
+		setVideoScene: function (scene, duration) {
+			var that = this;
+			that.player.blackLayer.show();
+			that.player.videoLayer.set(scene).unmute();
+			that.player.blackLayer.hide();
+			setTimeout(function () {
+				that.player.blackLayer.hide();
+			}, 1500);
+
+			if (duration) {
+				setTimeout(function () {
+					that.player.videoLayer.mute().set(null);
+					that.player.blackLayer.show();
+				}, duration);
+			}
+		},
+
+		setStillScene: function (scene, duration) {
+			var that = this;
+			that.player.blackLayer.show();
+			that.player.stillLayer.set(scene).show();
+
+			if (duration) {
+				setTimeout(function () {
+					that.player.stillLayer.hide();
+				}, duration);
+			}
+
+		},
+
 		setPlaylist: function (_playlist) {
 			var that = this,
 				playlist = _.clone(_playlist),
 
+				underplay = 2000, // when to start playing before showing - start earlier to give more buffer time
+				overplay = 500, // milliseconds longer to play a stream after an advert has shown
+
 				playItem = function (item) {
 					var scene = item.scene,
+						duration = item.duration,
 						i;
 
-					console.log("Item:", item.scene)
-
 					if (scene instanceof y4.VideoScene) {
-						that.player.blackLayer.show();
-						that.player.videoLayer.set(scene).unmute();
-						that.player.blackLayer.hide();
-						setTimeout(function () {
-							that.player.blackLayer.hide();
-						}, 1500);
-
-						if (item.duration) {
-							setTimeout(function () {
-								that.player.videoLayer.mute().set(null);
-								that.player.blackLayer.show();
-							}, item.duration);
-						}
-
+						that.setVideoScene(scene, duration + overplay);
 					} else if (scene instanceof y4.StillScene) {
-						that.player.blackLayer.show();
-						that.player.stillLayer.set(scene).show();
-
-						if (item.duration) {
-							setTimeout(function () {
-								that.player.stillLayer.hide();
-							}, item.duration);
-						}
-
+						that.setStillScene(scene, duration);
 						// Iterate through items to find next video scene so that it can buffer
-						for (i = 0; i < playlist.length; i++) {
-							if (playlist[i].item instanceof y4.VideoScene) {
-								that.player.videoLayer.mute().set(playlist[i]);
-								break;
-							}
+						if (playlist.length && (playlist[0].scene instanceof y4.VideoScene)) {
+							setTimeout(function () {
+								that.player.videoLayer.mute().set(playlist[0].scene);
+							}, item.duration - underplay);
 						}
-
-					} else { return y4.error("Invalid item"); }
+					} else {
+						return y4.error("Invalid item");
+					}
 
 					if (item.duration) {
 						setTimeout(function () {
@@ -99,7 +110,7 @@
 				 	'</a>'),
 					$icon = $el.find(".icon");
 				$el.on("click touchstart", function () {
-					that.setChannel(channel);
+					that.setVideoScene(channel);
 				});
 				$channels.append($el);
 
