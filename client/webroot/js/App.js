@@ -14,10 +14,11 @@
 		initialize: function (options) {
 			this.player = new y4.Player({ server: options.server });
 
-			this.logoFrame = new y4.StillScene({ image: "img/logo-frame.png" });
-
 			_.bindAll(this);
 		},
+
+		play: function () { this.player.play(); },
+		stop: function () { this.player.stop(); },
 
 		setPlaylist: function (_playlist) {
 			var that = this,
@@ -27,33 +28,47 @@
 					var scene = item.scene,
 						i;
 
-					if (scene === "logo-frame") {
-						scene = that.logoFrame;
-					}
+					console.log("Item:", item.scene)
 
-					if (scene === "blank-frame") {
-						that.player.blankFrame.
-					} else if (scene instanceof y4.VideoScene) {
-						that.setVideoScene(scene);
-					} else if (item.scene instanceof y4.StillScene) {
-						that.setStillScene(item.scene, item.duration);
+					if (scene instanceof y4.VideoScene) {
+						that.player.blackLayer.show();
+						that.player.videoLayer.set(scene).unmute();
+						that.player.blackLayer.hide();
+						setTimeout(function () {
+							that.player.blackLayer.hide();
+						}, 1500);
+
+						if (item.duration) {
+							setTimeout(function () {
+								that.player.videoLayer.mute().set(null);
+								that.player.blackLayer.show();
+							}, item.duration);
+						}
+
+					} else if (scene instanceof y4.StillScene) {
+						that.player.blackLayer.show();
+						that.player.stillLayer.set(scene).show();
+
+						if (item.duration) {
+							setTimeout(function () {
+								that.player.stillLayer.hide();
+							}, item.duration);
+						}
+
 						// Iterate through items to find next video scene so that it can buffer
 						for (i = 0; i < playlist.length; i++) {
 							if (playlist[i].item instanceof y4.VideoScene) {
-								that.setVideoScene(playlist[i]);
+								that.player.videoLayer.mute().set(playlist[i]);
 								break;
 							}
 						}
-					} else {
-						y4.error("Invalid item");
-						return;
-					}
 
-					if (playlist.length > 0) { 
-						item.setDuration(item.duration);
-						item.scene.on("end", function () {
-							playItem(playlist.shift());
-						});
+					} else { return y4.error("Invalid item"); }
+
+					if (item.duration) {
+						setTimeout(function () {
+							if (playlist.length) { playItem(playlist.shift()); }
+						}, item.duration);
 					}
 				};
 
@@ -100,7 +115,7 @@
 			var that = this;
 
 			this.$(".start-screen").hide();
-			this.video.play();
+			this.player.play();
 			this.showOverlay();
 
 			this.trigger("start");
