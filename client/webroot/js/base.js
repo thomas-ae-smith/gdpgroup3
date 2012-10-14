@@ -13,7 +13,7 @@ function htmlEscape(str) {
 	var y4 = root.y4 = {};
 
 
-	var scripts = ["js/App.js", "js/Scene.js", "js/Video.js"],
+	var scripts = ["js/App.js", "js/Scene.js", "js/Video.js", "js/Player.js"],
 		styles = ["css/style.css"];
 
 	var htmlVideoBrowsers = ["iPad"];
@@ -25,7 +25,7 @@ function htmlEscape(str) {
 	}
 	
 	// Should HTML5 videos be used?
-	y4.useHtmlVideo = y4.browser.indexOf(y4.browser) > -1;
+	y4.useHtmlVideo = htmlVideoBrowsers.indexOf(y4.browser) > -1;
 
 	_.each(scripts, function (script, i) {
 		document.write('<script type="text/javascript" src="' + script + '?' + Math.round(Math.random() * 10000000) + '"></script>'); 
@@ -59,14 +59,15 @@ function htmlEscape(str) {
 		});
 
 		app.on("start", function () {
+			var logoFrame = new y4.StillScene({ image: "img/logo-frame.png" });
 			app.setPlaylist([
-				{ scene: channels["c4"], duration: 5000 },
+				{ scene: channels["c4"], duration: 2000 },
 				// Program break -> sponser message, c4 promo ad and channel sting should still be included
-				{ scene: "logo-frame", duration: 2000 },
-				{ scene: new y4.Advert("Some advert"), duration: 2000 },
-				{ scene: new y4.Advert("Another advert"), duration: 2000 },
-				{ scene: new y4.Advert("Yet another advert"), duration: 2000 },
-				{ scene: channels["c4"], duration: 10000 }
+				{ scene: logoFrame, duration: 2000 },
+				{ scene: new y4.StillScene({ text: "Some advert" }), duration: 2000 },
+				{ scene: new y4.StillScene({ text: "Another advert" }), duration: 2000 },
+				{ scene: new y4.StillScene({ text: "Yet another advert" }), duration: 2000 },
+				{ scene: channels["c4"] }
 			]);
 		});
 

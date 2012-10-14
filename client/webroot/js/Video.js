@@ -37,7 +37,7 @@
 		play: function () { console.log("TODO") },
 		stop: function () { console.log("TODO") },
 		setUrl: function (url) {
-			this.url = channel.url;
+			this.url = url;
 			this.render();
 			return this;
 		},

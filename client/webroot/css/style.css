@@ -126,7 +126,8 @@ body {
 	bottom: 0;
 }
 
-.player .blank-frame {
+.player .black-layer,
+.player .still-layer {
 	position: absolute;
 	z-index: 2;
 	background: black;
@@ -140,8 +141,8 @@ body {
 	text-align: center;
 }
 
-.player .logo-frame,
-.start-screen .logo-frame {
+.player .still-frame,
+.start-screen .still-frame {
 	position: absolute;
 	top: 80px;
 	left: 0;
@@ -149,8 +150,8 @@ body {
 	bottom: 80px;
 }
 
-.player .logo-frame img,
-.start-screen .logo-frame img {
+.player .still-frame img,
+.start-screen .still-frame img {
 	width: 100%;
 	height: 100%;
 }
