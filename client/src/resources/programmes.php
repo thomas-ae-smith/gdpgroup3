@@ -11,8 +11,8 @@ class ProgrammeCollection extends Tonic\Resource {
 	 * @json
 	 */
 
-	function list() {
-		$programmes = R::find('project4_epg');
+	function programmes() {
+		$programmes = R::find('project4_epg', 'start_TimeStamp > UNIX_TIMESTAMP(DATE_SUB(NOW(), INTERVAL 7 DAY))');
 		return $programmes;
 	}
 }
