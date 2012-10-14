@@ -1,9 +1,9 @@
 <?php
 
-require_once '../src/system/bootstrap.php';
+require_once '../../src/system/bootstrap.php';
 
 $config = array(
-    'load' => array('../src/resources/*.php')
+    'load' => array('../../src/resources/*.php')
 );
 
 $app = new Tonic\Application($config);
