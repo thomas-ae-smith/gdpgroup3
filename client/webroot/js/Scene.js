@@ -5,17 +5,7 @@
 	y4.Scene = Backbone.View.extend({
 		initialize: function (options) {
 			options = _.extend({}, options);
-			this.duration = options.duration;
-			this.startTime = (new Date()).getTime();
-			setInterval(this.tick, 500);
 			_.bindAll(this);
-		},
-		tick: function () {
-			if (!this.duration) { return; }
-			var now = y4.now();
-			if (now >= this.startTime + this.duration) {
-				this.trigger("end");
-			}
 		}
 	});
 
@@ -29,6 +19,7 @@
 	});
 
 	y4.StillScene = y4.Scene.extend({
+		className: "still-frame",
 		initialize: function (options) {
 			options = _.extend({}, options);
 			y4.Scene.prototype.initialize.apply(this, arguments);
@@ -36,16 +27,16 @@
 			this.image = options.image;
 		},
 		render: function () {
-			var $el = ('<div class="blank-frame"></div>');
-
+			this.$el.html("")
+			
 			if (this.image) {
-				$el.append('<div class="image-frame"><img src="' + this.image + '"></div>');
+				this.$el.append('<div class="image-frame"><img src="' + this.image + '"></div>');
 			}
 			if (this.text) {
-				$el.append('<div class="text">' + this.text + '</div>');
+				this.$el.append('<div class="text">' + this.text + '</div>');
 			}
 
-			this.$el.html("").append($el);
+			return this;
 		}
 	});
 
