@@ -8,6 +8,7 @@ class ProgrammeCollection extends Tonic\Resource {
 	/**
 	 * @method GET
 	 * @provides application/json
+	 * @json
 	 */
 
 	function list() {
