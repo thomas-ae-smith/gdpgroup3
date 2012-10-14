@@ -12,60 +12,40 @@
 			"click .icon-stop": "stop"
 		},
 		initialize: function (options) {
-			var Video = y4.useHtmlVideo ? y4.HtmlVideo : y4.FlashVideo;
+			this.player = new y4.Player({ server: options.server });
 
-			this.video = new Video({ server: options.server });
-
-			this.blankFrame = new y4.StillScene();
 			this.logoFrame = new y4.StillScene({ image: "img/logo-frame.png" });
 
 			_.bindAll(this);
 		},
-		setChannel: function (channel) {
-			if (channel == this.channel) { return; }
-			this.channel = channel;
-			this.blankFrame(1000);
-			this.video.setChannel(channel); 
-
-			return this;
-		},
-
-		setVideoScene: function (scene) {
-			this.blankFrame(1000);
-			scene.setVideo(this.video);
-		},
-
-		setStillScene: function (scene, duration) {
-			scene.setDuration(duration);
-		},
 
 		setPlaylist: function (_playlist) {
 			var that = this,
-				playlist = _.clone(playlist),
+				playlist = _.clone(_playlist),
 
 				playItem = function (item) {
 					var scene = item.scene,
 						i;
 
 					if (scene === "logo-frame") {
-						scene = this.logoFrame;
-					} else if (scene === "blank-frame") {
-						scene = this.blankFrame;
+						scene = that.logoFrame;
 					}
 
-					if (item.scene instanceof your4.VideoScene) {
-						that.setVideoScene(item.scene);
-					} else if (item.scene instanceof your4.StillScene) {
+					if (scene === "blank-frame") {
+						that.player.blankFrame.
+					} else if (scene instanceof y4.VideoScene) {
+						that.setVideoScene(scene);
+					} else if (item.scene instanceof y4.StillScene) {
 						that.setStillScene(item.scene, item.duration);
 						// Iterate through items to find next video scene so that it can buffer
 						for (i = 0; i < playlist.length; i++) {
-							if (playlist[i].item instanceof your4.VideoScene) {
+							if (playlist[i].item instanceof y4.VideoScene) {
 								that.setVideoScene(playlist[i]);
 								break;
 							}
 						}
 					} else {
-						your4.error("Invalid item");
+						y4.error("Invalid item");
 						return;
 					}
 
@@ -75,13 +55,9 @@
 							playItem(playlist.shift());
 						});
 					}
-				}
+				};
 
 			playItem(playlist.shift());
-		},
-
-		off: function () {
-			this.setChannel({ url: "" });
 		},
 
 		render: function () {
@@ -90,7 +66,7 @@
 
 			this.$el.html(playerTemplate());
 			this.renderChannelButtons();
-			this.$(".player").append(this.video.render().el);
+			this.$el.append(this.player.render().el);
 
 			return this;
 		},
@@ -129,10 +105,6 @@
 
 			this.trigger("start");
 		},
-
-		play: function() { this.video.play(); },
-
-		stop: function() { this.video.stop(); },
 
 		showOverlay: function () {
 			var that = this;

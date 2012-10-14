@@ -8,21 +8,16 @@
 			this.options = _.extend({
 				server: ""
 			}, options);
-			if (options.channel) { this.setChannel(options.channel, true); }
 		}
 	});
 
 	y4.HtmlVideo = y4.Video.extend({
-		play: function () {
-			this.$("video")[0].play();
-		},
-		stop: function() {
-			this.$("video")[0].pause();
-		},
-		setChannel: function (channel) {
+		play: function () { this.videoEl.play(); },
+		stop: function() { this.videoEl.pause(); },
+		setUrl: function (url) {
 			var that = this;
-			this.$("video").attr("src", "http://" + this.options.server + "/" + channel.url + ".stream/playlist.m3u8");
-			this.$("video")[0].load();
+			this.$video.attr("src", "http://" + this.options.server + "/" + url + ".stream/playlist.m3u8");
+			this.videoEl.load();
 			this.play();
 			return this;
 		},
@@ -31,19 +26,17 @@
 			template = _.template($("#html-video-template").html());
 
 			this.$el.html(template(this.options));
+			this.$video = this.$("video");
+			this.videoEl = this.$video[0];
 
 			return this;
 		}
 	});
 
 	y4.FlashVideo = y4.Video.extend({
-		play: function () {
-			console.log("TODO")
-		},
-		stop: function () {
-			console.log("TODO")
-		},
-		setChannel: function (channel) {
+		play: function () { console.log("TODO") },
+		stop: function () { console.log("TODO") },
+		setUrl: function (url) {
 			this.url = channel.url;
 			this.render();
 			return this;
