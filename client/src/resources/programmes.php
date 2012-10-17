@@ -1,10 +1,14 @@
 <?php
 
+
+use Tonic\Resource,
+    Tonic\Response;
+	
 /**
  * @uri /programmes
  */
 
-class ProgrammeCollection extends Tonic\Resource {
+class ProgrammeCollection extends Your4Resource {
 	/**
 	 * @method GET
 	 * @provides application/json
@@ -12,7 +16,7 @@ class ProgrammeCollection extends Tonic\Resource {
 	 */
 
 	function programmes() {
-		$programmes = R::find('project4_epg', 'start_TimeStamp > UNIX_TIMESTAMP(DATE_SUB(NOW(), INTERVAL 7 DAY))');
-		return $programmes;
+		$programmes = R::find('epg', 'startTime > UNIX_TIMESTAMP(DATE_SUB(NOW(), INTERVAL 7 DAY))');
+		return new Response(Response::OK, $programmes);
 	}
 }
