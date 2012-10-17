@@ -39,7 +39,7 @@ def get_matrix():
 
 def get_vector(data):
 	name, genre, type, rating = data
-	return [0,0,0,0]
+	return [0,0,0,0] # TODO
 
 def tvdb_query(programme_name):
 	"""Takes a programme name and returns extra programme data acuired from
