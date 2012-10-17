@@ -74,7 +74,7 @@ _genre_convert = {
 	"Unclassified":18
 }
 
-def get_programme_vector(name):
+def get_programme_vector(title):
 	"""Given a programme name, returns a vector representiong that programme 
 	to be used by the recommender"""
 	genre_vec = [0] * len(genre_convert)
