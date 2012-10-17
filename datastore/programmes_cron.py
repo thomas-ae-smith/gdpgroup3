@@ -9,12 +9,14 @@ import time
 import mysql.connector
 import tvdb_api
 
+_tvdb = tvdb_api.Tvdb(cache="tvdb_cache")
+
 def get_epg(lookahead=3600):
 	"""Pulls EPG data from the project4 database for the next `lookahead` 
 	seconds, processes it and writes it to the local database"""
 
 	time_now = int(time.time())
-	query_inqb8r = ('SELECT `key`, `channelID`, `genre`, `type`, '
+	query_inqb8r = ('SELECT `key`, `channelID`, `genre`, `type`, `showName`, '
 						'`duration_min`, `start_TimeStamp`, `rating` '
 					'FROM project4_epg '
 					'WHERE start_TimeStamp BETWEEN {earliestTime} AND {latestTime}'
@@ -31,7 +33,7 @@ def get_epg(lookahead=3600):
 											host='77.244.130.51',
 											port=3307)
 		cursor_inqb8r = conn_inqb8r.cursor()
-		cursor_inqb8r.execute(query)
+		cursor_inqb8r.execute(query_inqb8r)
 	except: # If anything goes wrong, close the connection!
 		conn_inqb8r.close()
 		raise
@@ -42,9 +44,9 @@ def get_epg(lookahead=3600):
 											password='2zVGP58Z5YttvAxV',
 											database='your4')
 		cursor_warlock = conn_warlock.cursor()
-		for (key, chanID, genre, type, duration, startTime, rating) in cursor_inqb8r:
-			vector = pickle.dumps(calc_prog_vector())
-			cursor.execute(query, (key, chanID, vector, duration, startTime))
+		for (key, chanID, genre, _type, name, duration, startTime, rating) in cursor_inqb8r:
+			vector = pickle.dumps(calc_prog_vector(name))
+			cursor_warlock.execute(query_warlock, (key, chanID, vector, duration, startTime))
 	except:	# If anything goes wrong, close the connection!
 		conn_inqb8r.close()
 		raise
@@ -77,7 +79,7 @@ def get_programme_vector(name):
 	to be used by the recommender"""
 	genre_vec = [0] * len(genre_convert)
 	try:
-		tvdb_genres = tvdb[title]['genre']
+		tvdb_genres = _tvdb[title]['genre']
 
 		for genre in filter(None, tvdb_genres.split('|')):
 			genre_vec[genre_convert[genre.rstrip()]] = 1
@@ -101,3 +103,5 @@ def get_programme_vector(name):
 		genre_vec[genre_convert['Unclassified']] = 1
 
 	return genre_vec
+
+get_epg()
