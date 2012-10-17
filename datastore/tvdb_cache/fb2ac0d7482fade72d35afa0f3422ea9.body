@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>122741</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek>Sunday</Airs_DayOfWeek>
+  <Airs_Time>21:10</Airs_Time>
+  <ContentRating>TV-G</ContentRating>
+  <FirstAired>1983-11-06</FirstAired>
+  <Genre>|Drama|Mini-Series|</Genre>
+  <IMDB_ID>tt0085052</IMDB_ID>
+  <Language>en</Language>
+  <Network>BBC Two</Network>
+  <NetworkID></NetworkID>
+  <Overview>Drama series based on the novel by Jane Austen.
+Mansfield Park is the magnificient country residence of Sir Thomas Bertram and his family. It is here that their poor relation Fanny Price is brought up. Never allowed to forget her good fortune, Fanny is ignored by her cousins, with the exception of Edmund, who alone treats her with care and affection. But will she ever be able to win a valued place in the household and the heart of the man of her dreams?</Overview>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime>50</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Mansfield Park</SeriesName>
+  <Status>Ended</Status>
+  <added>2009-11-05 13:17:48</added>
+  <addedBy>73461</addedBy>
+  <banner>graphical/122741-g.jpg</banner>
+  <fanart>fanart/original/122741-1.jpg</fanart>
+  <lastupdated>1336263169</lastupdated>
+  <poster>posters/122741-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>1269671</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>David Giles</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Episode 1</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1983-11-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Jane Austen</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/122741/1269671.jpg</filename>
+  <lastupdated>1269824862</lastupdated>
+  <seasonid>141691</seasonid>
+  <seriesid>122741</seriesid>
+</Episode>
+<Episode>
+  <id>1269681</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>David Giles</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Episode 2</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1983-11-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Jane Austen</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/122741/1269681.jpg</filename>
+  <lastupdated>1269825236</lastupdated>
+  <seasonid>141691</seasonid>
+  <seriesid>122741</seriesid>
+</Episode>
+<Episode>
+  <id>1269691</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>David Giles</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Episode 3</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1983-11-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>5.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Jane Austen</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/122741/1269691.jpg</filename>
+  <lastupdated>1269825255</lastupdated>
+  <seasonid>141691</seasonid>
+  <seriesid>122741</seriesid>
+</Episode>
+<Episode>
+  <id>1269701</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>David Giles</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Episode 4</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1983-11-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Jane Austen</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/122741/1269701.jpg</filename>
+  <lastupdated>1269825353</lastupdated>
+  <seasonid>141691</seasonid>
+  <seriesid>122741</seriesid>
+</Episode>
+<Episode>
+  <id>1269711</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>David Giles</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Episode 5</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1983-12-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Jane Austen</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/122741/1269711.jpg</filename>
+  <lastupdated>1269825734</lastupdated>
+  <seasonid>141691</seasonid>
+  <seriesid>122741</seriesid>
+</Episode>
+<Episode>
+  <id>1269721</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>David Giles</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Episode 6</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1983-12-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Jane Austen</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/122741/1269721.jpg</filename>
+  <lastupdated>1269825750</lastupdated>
+  <seasonid>141691</seasonid>
+  <seriesid>122741</seriesid>
+</Episode>
+</Data>

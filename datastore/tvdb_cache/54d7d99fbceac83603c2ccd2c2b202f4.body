@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>135491</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating>TV-PG</ContentRating>
+    <FirstAired></FirstAired>
+    <Genre>|Documentary|</Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network>Discovery</Network>
+    <NetworkID></NetworkID>
+    <Overview>Over the past 20 years a new breed of people has been evolving. They have their own culture, their own technology and their own languages. Among them are pirates and thieves, celebrities and philosophers, lawbreakers and police, heroes and villains. They operate all over the world but their real home is cyberspace. And now there's a conflict in cyberspace between its outlaws and its angels. This is the inside story of the very different missions which now drive the diverse breed of people known to the world as hackers.</Overview>
+    <Rating>8.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>50</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Hackers</SeriesName>
+    <Status>Ended</Status>
+    <added>2010-01-16 04:21:45</added>
+    <addedBy>97531</addedBy>
+    <banner>graphical/135491-g.jpg</banner>
+    <fanart></fanart>
+    <lastupdated>1329915850</lastupdated>
+    <poster>posters/135491-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

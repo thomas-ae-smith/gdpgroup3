@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+<Series>
+<seriesid>249285</seriesid>
+<language>en</language>
+<SeriesName>Toy Story Toons</SeriesName>
+<banner>graphical/249285-g2.jpg</banner>
+<Overview>"Toy Story Toons" is a revival of "Toy Story Treats", based on the "Toy Story" trilogy. The first episode, "Hawaiian Vacation", was released with "Cars 2". A second episode, "Small Fry", premiered in theaters before "The Muppets". </Overview>
+<FirstAired>2011-06-24</FirstAired>
+<id>249285</id>
+</Series>
+<Series>
+<seriesid>216431</seriesid>
+<language>en</language>
+<SeriesName>Toy Story Treats</SeriesName>
+<Overview>A series of shorts/spots originally aired on ABC's One Saturday Morning, which were also included on the Toy Story dvds as "Toy Story Treats"</Overview>
+<id>216431</id>
+</Series>
+</Data>

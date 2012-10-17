@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>210211</id>
+    <Actors>|Misery Bear|</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>2010-12-12</FirstAired>
+    <Genre>|Comedy|</Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network></Network>
+    <NetworkID></NetworkID>
+    <Overview>A series of short films chronicling the life of the worlds most miserable bear. </Overview>
+    <Rating>10.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>3</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Misery Bear</SeriesName>
+    <Status>Continuing</Status>
+    <added>2010-12-05 11:39:05</added>
+    <addedBy>269991</addedBy>
+    <banner>graphical/210211-g.jpg</banner>
+    <fanart>fanart/original/210211-2.jpg</fanart>
+    <lastupdated>1334411264</lastupdated>
+    <poster>posters/210211-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

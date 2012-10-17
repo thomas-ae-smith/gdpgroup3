@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>257139</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired></FirstAired>
+  <Genre>|Comedy|</Genre>
+  <IMDB_ID>nm0040995</IMDB_ID>
+  <Language>en</Language>
+  <Network></Network>
+  <NetworkID></NetworkID>
+  <Overview>Born in Queens, New York, to a Jewish family, he grew up in Rockville Centre, New York and now lives in New York City. Attell's initial motivation to perform stand-up comedy is attributed to his indecisiveness as to what he should do after college. In 1987 he graduated from New York University  with a degree in communications. Like many other fledgling comedians, he worked menial jobs during the day and put in his time at comedy clubs at night. He worked his first gig at Governor's in Levittown and, according to Attell, &quot;totally bombed&quot;.[citation needed] After years of honing his act, he found himself being described as a &quot;comedian's comedian&quot;.[citation needed] When working a club, the other comedians, such as Mike Royce (a producer/writer on Everybody Loves Raymond), David Juskow (a performer on TV Funhouse), Kevin Brennan (from Saturday Night Live and HBO's One Night Stand) and Jon Stewart, would come in to watch his act. While the audience didn't always follow his up-front delivery, fellow comedians were refreshed by his originality.[citation needed]
+
+Attell often begins a joke in a relatively tame way, but then gets progressively stranger and ends in an obscene non sequitur. For example: &quot;Sex is not important. What's important is that afterward part. When you're both naked and it's warm and you're watching the sun come up in the windshield. You look in her eyes, you look in her one good eye and help her strap on her leg and you know: you just fucked a pirate.&quot;</Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>1</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Dave Attell</SeriesName>
+  <Status></Status>
+  <added>2012-03-13 13:30:42</added>
+  <addedBy>360428</addedBy>
+  <banner>graphical/257139-g.jpg</banner>
+  <fanart>fanart/original/257139-1.jpg</fanart>
+  <lastupdated>1331674324</lastupdated>
+  <poster>posters/257139-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4285266</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Insomniac Tour</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2006-04-11</FirstAired>
+  <GuestStars>Sean Rouse, Greg Giraldo and Dane Cook</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Dave Attell</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/257139/4285266.jpg</filename>
+  <lastupdated>1331671817</lastupdated>
+  <seasonid>487562</seasonid>
+  <seriesid>257139</seriesid>
+</Episode>
+<Episode>
+  <id>4285272</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Beth McCarthy-Miller</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Captain Miserable</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2007-12-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Dave Attell Attell's first one-hour special, Captain Miserable, aired December 8, 2007 on HBO.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Dave Attell</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/257139/4285272.jpg</filename>
+  <lastupdated>1331674369</lastupdated>
+  <seasonid>487562</seasonid>
+  <seriesid>257139</seriesid>
+</Episode>
+</Data>

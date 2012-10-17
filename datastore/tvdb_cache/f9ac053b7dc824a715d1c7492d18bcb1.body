@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>260201</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>1975-06-24</FirstAired>
+    <Genre>|Drama|Mini-Series|</Genre>
+    <IMDB_ID>tt0072513</IMDB_ID>
+    <Language>en</Language>
+    <Network>BBC One</Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>How Green Was My Valley</SeriesName>
+    <Status>Ended</Status>
+    <added>2012-06-24 02:10:13</added>
+    <addedBy>366248</addedBy>
+    <banner></banner>
+    <fanart></fanart>
+    <lastupdated>1340541103</lastupdated>
+    <poster>posters/260201-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

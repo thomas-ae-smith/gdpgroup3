@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>78383</id>
+  <Actors>|Anna Manahan|Brendan Conroy|Bryan Murray|Doran Godwin|Faith Brook|Joe Lynch|Jonathan Ryan|Lise-Ann McLaughlin|Niall Toibin|Peter Bowles|</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>1982-01-01</FirstAired>
+  <Genre></Genre>
+  <IMDB_ID>tt0144053</IMDB_ID>
+  <Language>en</Language>
+  <Network>Channel 4</Network>
+  <NetworkID></NetworkID>
+  <Overview>Directed by Robert Chetwyn THE IRISH R.M. is based on the stories of Somerville &amp; Ross and tells of monocled Major Sinclair Yeats, played by Peter Bowles. An English army officer who resigns his commission to become a Resident Magistrate in the West of Ireland, Major Yeates finds himself living in a ramshackle old manor house surrounded by local community's colourful inhabitants. Major Yeats struggles with his new position which turns out to be at the mercy of the Irish.</Overview>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime>1</Runtime>
+  <SeriesID>8762</SeriesID>
+  <SeriesName>The Irish R. M.</SeriesName>
+  <Status>Ended</Status>
+  <added></added>
+  <addedBy></addedBy>
+  <banner>graphical/78383-g2.jpg</banner>
+  <fanart></fanart>
+  <lastupdated>1316210480</lastupdated>
+  <poster></poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4171766</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Making of the Irish R.M.</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1316210480</lastupdated>
+  <seasonid>25840</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282441</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Robert Chetwyn</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Great Uncle McCarthy</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1983-01-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Major Sinclair Yeates, an Englishman, arrives in a rural area of Victorian Ireland. He has married his colonel's daughter and has decided to take up a new career as a Resident Magistrate. Major Yeates quickly meets the hard-riding Knox clan, including Great Uncle McCarthy and young Flurry Knox, his landlord.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Rosemary Anne Sisson</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281997092</lastupdated>
+  <seasonid>14891</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282442</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Robert Chetwyn</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Trinket's Colt</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1983-01-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Continuing the story of Major Sinclair Yeates's experiences in Ireland. He has to deal with a remarkable dispute about a young horse. Meanwhile, the Major's wife, Phillipa, arrives from England.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Rosemary Anne Sisson</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281997065</lastupdated>
+  <seasonid>14891</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282443</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Robert Chetwyn</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>A Misdeal</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1983-01-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Yeates and Philippa visit a horse fair in search of a suitable mount for a forthcoming hunt.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Rosemary Anne Sisson</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281997038</lastupdated>
+  <seasonid>14891</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282444</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Robert Chetwyn</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Boat's Share</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1983-01-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Yeates and his cousin Basil fear their careers are ruined when they are caught in a police raid at the Brickleys.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Rosemary Anne Sisson</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281997005</lastupdated>
+  <seasonid>14891</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282445</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Robert Chetwyn</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Occasional Licences</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1983-02-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A local publican neatly sidesteps Yeates' objections to beer sales at the annual St Peter and St Paul's Day Games.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Rosemary Anne Sisson</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281996932</lastupdated>
+  <seasonid>14891</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282446</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Robert Chetwyn</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>O Love! O Fire!</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1983-02-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Major Sinclair Yeates has settled in as a magistrate in rural Ireland and even his wife Philippa is taking to the country. And with Flurry Knox in love with his cousin, it seems that neither love nor fire should always be taken at face value.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Rosemary Anne Sisson</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281996915</lastupdated>
+  <seasonid>14891</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282447</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Ward Baker</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>A Horse, A Horse</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1984-07-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Flurry and Sally return from their honeymoon in Paris and Flurry is up to his old tricks again. He convinces Major Yeates to go on a hunting trip. Of course, Flurrys deceitfulness causes the Major to have an unfortunate accident, but Flurry gets just what he wants.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Rosemary Anne Sisson</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281996834</lastupdated>
+  <seasonid>14892</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282448</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Sykes</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Dispensary Doctor</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1984-07-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>On the eve of the annual local regatta, family rivalries are aggravated when the Callaghans inform the police that the Foleys are planning a salmon poaching trip.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Alfred Shaughnessy</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281996854</lastupdated>
+  <seasonid>14892</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282449</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Sykes</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Holy Island</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1984-07-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A ship with a full cargo of rum runs aground near Skebawn. The locals engage in drunken revelry as the barrels wash ashore. Of course, the subsequent police search reveals practically no signs of rum.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Rosemary Anne Sisson</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281996872</lastupdated>
+  <seasonid>14892</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282450</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Ward Baker</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Oweneen the Sprat</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1984-08-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0612271</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Christmas Eve ends with the Yeates having an unfortunate carriage accident. An injured victim turns out to be Oweneen the Sprat, one of the villainous mountainy men who live in the hills. The Major's household is stricken with fear.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Alfred Shaughnessy</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281996518</lastupdated>
+  <seasonid>14892</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282451</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Sykes</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>A Royal Command</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1984-08-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0822539</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Flurry has challenged a visiting Indian polo team to a match and sold an incorrigible young filly to John Cullinane. The Maharajah and his team are vastly better than the Skebawn team, and the whole game goes a bit pear-shaped when John Cullinane's filly goes nuts, topples a goal post, and disappears with a horde of spectators in tow.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Alfred Shaughnessy</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281996540</lastupdated>
+  <seasonid>14892</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282452</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Ward Baker</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Aussolas Martin Cat</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1984-08-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0822540</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Trouble threatens when Flurry and Sally find out that Mrs. Knox wants to rent out their current home, Aussolas Castle, receiving a telegram from her informing them of the imminent arrival of a potential tenant from England.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Rosemary Anne Sisson</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281996456</lastupdated>
+  <seasonid>14892</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282453</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Ward Baker</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Muse in Skebawn</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1985-06-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0612275</IMDB_ID>
+  <Language>en</Language>
+  <Overview>With Philippa gone to England to tend to her ailing mother, Major Yeates's problems multiply. A shifty entrepreneur brings moving pictures into Skebawn, create havoc that the Major must subdue while fending off the unwanted advances of Miss Bobby Bennell. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>Alfred Shaughnessy</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281993403</lastupdated>
+  <seasonid>14893</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282454</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Ward Baker</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Apollo Riggs</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1985-06-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0612265</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Major's sister, Babs, looks after him in Philippa's absence. Cousin Andrew also arrives to help and begins to fix everything in sight, including a crumbling chimney and a mysterious well. Cold water and strange spirits are unleashed as Andrew's enthusiasm goes a bit too far. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>Julia Jones</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281993415</lastupdated>
+  <seasonid>14893</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282455</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Ward Baker</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>A Friend of Her Youth</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1985-06-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0822538</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Babs fondly reminisces about her old friend, Julian Chichester, who is coming to stay at Shreelane. But no sooner does Chichester arrive than he begins to scorn the Major's household, including a beloved canine. Flurry decides to teach Chichester a lesson or two with the canine as an unwitting accomplice. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>Bill Craig</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281993425</lastupdated>
+  <seasonid>14893</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282456</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Ward Baker</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>In The Curranhilty Country</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1985-06-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Yeates's day of hunting goes badly, and he soon decides to abandon a troublesome new car </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>Alfred Shaughnessy</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281997212</lastupdated>
+  <seasonid>14893</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282457</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Ward Baker</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Lisheen Races</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1985-06-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A stern official from Dublin Castle observes Yeates' court conduct; Yeates finds Sally's horse hidden in the loft.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>Bill Craig</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281997273</lastupdated>
+  <seasonid>14893</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+<Episode>
+  <id>282458</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Ward Baker</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Devil You Know</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1985-07-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>An old friend's offer of a resident magistrate position in a more civilized location tempts Yeates.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>Hugh Leonard</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1281997322</lastupdated>
+  <seasonid>14893</seasonid>
+  <seriesid>78383</seriesid>
+</Episode>
+</Data>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>258603</id>
+  <Actors>|Rich Eisen|</Actors>
+  <Airs_DayOfWeek>Sunday</Airs_DayOfWeek>
+  <Airs_Time>10pm</Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>2012-06-24</FirstAired>
+  <Genre>|Action and Adventure|Game Show|Reality|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>TNT</Network>
+  <NetworkID></NetworkID>
+  <Overview>Hosted by Rich Eisen (NFL Total Access), The Great Escape drops teams of ordinary people into the middle of their own epic action/adventure movie. Each week, three pairs of players will compete for a cash prize by escaping from such locations as a seven-story castle, a deserted island, a sinking ship or a maximum security prison. Players must use their wits, skills and whatever tools they can find to overcome obstacles, evade pursuers and make their way to freedom.</Overview>
+  <Rating>7.5</Rating>
+  <RatingCount>2</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>The Great Escape</SeriesName>
+  <Status>Continuing</Status>
+  <added>2012-04-29 18:42:01</added>
+  <addedBy>359859</addedBy>
+  <banner>graphical/258603-g2.jpg</banner>
+  <fanart>fanart/original/258603-1.jpg</fanart>
+  <lastupdated>1346579826</lastupdated>
+  <poster>posters/258603-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4337841</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Escape From Alcatraz</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2012-06-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Teams of everyday people must overcome obstacles and dodge pursuers to escape from tight situations at notable locations in this reality-competition series from the producers of &quot;The Amazing Race.&quot; An escape from Alcatraz marks the premiere.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1340670193</lastupdated>
+  <seasonid>493843</seasonid>
+  <seriesid>258603</seriesid>
+</Episode>
+<Episode>
+  <id>4345859</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Escape From the USS Hornet</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2012-07-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Three teams try to break free from the claustrophobic maze of a U.S. aircraft carrier, the USS Hornet.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1341477538</lastupdated>
+  <seasonid>493843</seasonid>
+  <seriesid>258603</seriesid>
+</Episode>
+<Episode>
+  <id>4345860</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Escape From the Institution</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2012-07-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Three teams must escape from a labyrinth of chaos at a supposedly haunted mental institution.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1341820627</lastupdated>
+  <seasonid>493843</seasonid>
+  <seriesid>258603</seriesid>
+</Episode>
+<Episode>
+  <id>4345861</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Escape From Titan Missile Silo</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2012-07-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Teams try to break free from a secret missile silo deep below the Arizona desert, escaping through a tangle of cableways and portals.
+</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1342574747</lastupdated>
+  <seasonid>493843</seasonid>
+  <seriesid>258603</seriesid>
+</Episode>
+<Episode>
+  <id>4345862</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Escape From Air Force Boneyard</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2012-07-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Teams try to escape from a massive airplane-storage field.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1343269178</lastupdated>
+  <seasonid>493843</seasonid>
+  <seriesid>258603</seriesid>
+</Episode>
+<Episode>
+  <id>4345863</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Escape From Los Angeles</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2012-08-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Trapped in the underbelly of one of the most populated cities in the world, three teams attempt to escape Los Angeles by navigating the underground maze of corridors to make it to the surface.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344226578</lastupdated>
+  <seasonid>493843</seasonid>
+  <seriesid>258603</seriesid>
+</Episode>
+<Episode>
+  <id>4345864</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Escape from the Power Station</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2012-08-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Trapped in the heart of an active Power Plant Generator, three teams attempt to free themselves by navigating a web of pipes, pistons, and puzzles and be first to make the Great Escape.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1345075252</lastupdated>
+  <seasonid>493843</seasonid>
+  <seriesid>258603</seriesid>
+</Episode>
+<Episode>
+  <id>4345865</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Escape from the Swamp</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2012-08-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Three teams try to escape from a Louisiana swamp while connected to a ball and chain. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1345438621</lastupdated>
+  <seasonid>493843</seasonid>
+  <seriesid>258603</seriesid>
+</Episode>
+<Episode>
+  <id>4345866</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Escape from the Tower</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2012-08-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Trapped in a Los Angeles skyscraper almost 50 stories high, three teams attempt to free themselves by racing through the endless corridors, passageways and office space.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1346046493</lastupdated>
+  <seasonid>493843</seasonid>
+  <seriesid>258603</seriesid>
+</Episode>
+<Episode>
+  <id>4345867</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1340138470</lastupdated>
+  <seasonid>493843</seasonid>
+  <seriesid>258603</seriesid>
+</Episode>
+</Data>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>259818</id>
+  <Actors>|Aimee-Ffion Edwards|Ami Metcalf|Jerry Sadowitz|Kathy Burke|Sean Gallagher|</Actors>
+  <Airs_DayOfWeek>Monday</Airs_DayOfWeek>
+  <Airs_Time>10:30</Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>2012-06-25</FirstAired>
+  <Genre>|Comedy|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network></Network>
+  <NetworkID></NetworkID>
+  <Overview>Young Kathy harboured a dream to be an actress, but circumstance and her upbringing made it an unlikely dream. Walking and Talking tells stories inspired from her teenage years - time spent skiving from school with her best friend, talking about boys and planning for the future.
+</Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>25</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Walking and Talking	</SeriesName>
+  <Status>Continuing</Status>
+  <added>2012-06-09 13:39:02</added>
+  <addedBy>365587</addedBy>
+  <banner>graphical/259818-g.jpg</banner>
+  <fanart>fanart/original/259818-1.jpg</fanart>
+  <lastupdated>1342873774</lastupdated>
+  <poster>posters/259818-3.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4348639</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Tim Kirkby</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Episode 1</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2012-06-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Kathy Burke's comedy based on her teenage years in Islington, north London, starring Ami Metcalf and Aimee-Ffion Edwards. The story begins in 1979, as Kathy dreams of becoming a music journalist after being told she is too ugly to be an actress. Meanwhile, her best friend Mary is thrilled to score a date with an 18-year-old man who can get her into gigs and the pub.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Kathy Burke</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/259818/4348639.jpg</filename>
+  <lastupdated>1341774892</lastupdated>
+  <seasonid>495190</seasonid>
+  <seriesid>259818</seriesid>
+</Episode>
+<Episode>
+  <id>4348648</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Tim Kirkby</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Episode 2</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2012-07-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Kathy excitedly prepares to go to a secret gig at a pub, but suffers a setback when her tape recorder gets smashed. Meanwhile, Mary and Larry mark their three-week anniversary in slightly inappropriate fashion, and Pretty Nun and Angry Nun argue about actresses. Comedy based on Kathy Burke's teenage years, starring Ami Metcalf and Aimee-Ffion Edwards.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Kathy Burke</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/259818/4348648.jpg</filename>
+  <lastupdated>1341774904</lastupdated>
+  <seasonid>495190</seasonid>
+  <seriesid>259818</seriesid>
+</Episode>
+<Episode>
+  <id>4348650</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Tim Kirkby</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Episode 3</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2012-07-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Kath and Mary end up hitching a ride with an ice cream van man on their way to a haunted house. Angry Nun ruins Pretty Nun's excitement about a trip.
+</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Kathy Burke</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/259818/4348650.jpg</filename>
+  <lastupdated>1342002481</lastupdated>
+  <seasonid>495190</seasonid>
+  <seriesid>259818</seriesid>
+</Episode>
+<Episode>
+  <id>4348652</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Tim Kirkby</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Episode 4</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2012-07-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>After receiving some good news, Kath works on her improvising skills to get Mary out of a right pickle.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Kathy Burke</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/259818/4348652.jpg</filename>
+  <lastupdated>1342479649</lastupdated>
+  <seasonid>495190</seasonid>
+  <seriesid>259818</seriesid>
+</Episode>
+</Data>

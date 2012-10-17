@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>127831</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired></FirstAired>
+    <Genre></Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network></Network>
+    <NetworkID></NetworkID>
+    <Overview>Historical documentary exploring the events that 
+inspired the film, 'The Hunt for Red October'. In 1975, a 
+disgruntled Soviet officer led a mutiny on board a Russian 
+warship.</Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>1</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>The Hunt For The Red October The True Story</SeriesName>
+    <Status></Status>
+    <added>2009-12-10 06:20:36</added>
+    <addedBy>107121</addedBy>
+    <banner>graphical/127831-g.jpg</banner>
+    <fanart></fanart>
+    <lastupdated>1284836766</lastupdated>
+    <poster></poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

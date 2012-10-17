@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>135491</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating>TV-PG</ContentRating>
+  <FirstAired></FirstAired>
+  <Genre>|Documentary|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>Discovery</Network>
+  <NetworkID></NetworkID>
+  <Overview>Over the past 20 years a new breed of people has been evolving. They have their own culture, their own technology and their own languages. Among them are pirates and thieves, celebrities and philosophers, lawbreakers and police, heroes and villains. They operate all over the world but their real home is cyberspace. And now there's a conflict in cyberspace between its outlaws and its angels. This is the inside story of the very different missions which now drive the diverse breed of people known to the world as hackers.</Overview>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime>50</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Hackers</SeriesName>
+  <Status>Ended</Status>
+  <added>2010-01-16 04:21:45</added>
+  <addedBy>97531</addedBy>
+  <banner>graphical/135491-g.jpg</banner>
+  <fanart></fanart>
+  <lastupdated>1329915850</lastupdated>
+  <poster>posters/135491-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>1981241</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Outlaws and Angels</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>This alarming program reveals the daily battle between the Internet’s outlaws and the hackers who oppose them by warding off system attacks, training IT professionals and police officers, and watching cyberspace for signs of imminent infowar. Through interviews with frontline personnel from the Department of Defense, NYPD’s computer crime squad, private detective firm Kroll Associates, X-Force Threat Analysis Service, and several notorious crackers, the program provides penetrating insights into the millions of hack attacks that occur annually in the U.S.—including one that affected the phone bills of millions and another that left confidential details of the B-1 stealth bomber in the hands of teenagers. The liabilities of wireless networks, the Code Red worm, and online movie piracy are also discussed. A Discovery Channel Production. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1270052442</lastupdated>
+  <seasonid>221831</seasonid>
+  <seriesid>135491</seriesid>
+</Episode>
+<Episode>
+  <id>1981541</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>History of Hacking</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Magnificent a documentary one to you emitted by Discovery Channel, that reviews great landmarks of the history of hacking.
+In this way, you will be able to see Steve Wozniak or the John Draper and, by all means, to Kevin Mitnick, interviewed people in exclusive right for the program. It is worth the trouble to put themselves comfortable and to know first hand the opinion of these pioneers on an as dark subculture as attractive.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1270083166</lastupdated>
+  <seasonid>221831</seasonid>
+  <seriesid>135491</seriesid>
+</Episode>
+</Data>

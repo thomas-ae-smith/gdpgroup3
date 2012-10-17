@@ -1,0 +1,2167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>192171</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek>Sunday</Airs_DayOfWeek>
+  <Airs_Time>10:00 am</Airs_Time>
+  <ContentRating>TV-Y7</ContentRating>
+  <FirstAired>2010-10-20</FirstAired>
+  <Genre>|Action and Adventure|Animation|Children|Fantasy|</Genre>
+  <IMDB_ID>tt1626038</IMDB_ID>
+  <Language>en</Language>
+  <Network>Disney XD</Network>
+  <NetworkID></NetworkID>
+  <Overview>This animated series follows the adventures of the infamous Marvel Comics superhero team the Avengers - primarily consisting of Iron Man, Thor, Captain America, the Hulk, Ant Man and Wasp - as they team up to save the world from dangers far too great for one superhero to handle alone. The Avengers headquarters, where the Avengers plan their operations and attacks, is based in the mansion Tony Stark grew up in. Superheroes planned to be joining the Avengers in the near future are Hawkeye and the Black Panther. The team also frequently works alongside S.H.I.E.L.D., an organization run by Nick Fury</Overview>
+  <Rating>8.6</Rating>
+  <RatingCount>22</RatingCount>
+  <Runtime>30</Runtime>
+  <SeriesID>78848</SeriesID>
+  <SeriesName>The Avengers: Earth's Mightiest Heroes</SeriesName>
+  <Status>Continuing</Status>
+  <added>2010-09-23 22:19:15</added>
+  <addedBy>199281</addedBy>
+  <banner>graphical/192171-g5.jpg</banner>
+  <fanart>fanart/original/192171-1.jpg</fanart>
+  <lastupdated>1350312759</lastupdated>
+  <poster>posters/192171-3.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>2978491</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 1 - Iron Man Is Born!</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1339276087</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978501</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 2 - The Coming of the Hulk</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1339276114</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978511</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 3 - The Man In the Ant Hill</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187132</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978521</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 4 - Hydra Lives</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187145</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978531</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 5 - Thor The Mighty</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187163</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978541</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 6 - Behold, The Mandroids!</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187182</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978551</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 7 - Hulk Versus the World</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187200</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978561</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 8 - The Siege of Asgard</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187215</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978571</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 9 - Nick Fury, Agent of S.H.I.E.L.D.</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187240</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978581</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 10 - This Monster, This Hero</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187256</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978591</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 11 - My Brother, My Enemy</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187271</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978601</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 12 - The Isle of Silence</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187290</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978611</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 13 - Enter The Whirlwind</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187307</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978621</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 14 - Meet Captain America</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187321</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978631</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 15 - The Red Skull Strikes!</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187343</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978641</id>
+  <Combined_episodenumber>16</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 16 - If This Be Doomsday!</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187354</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978651</id>
+  <Combined_episodenumber>17</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 17 - Welcome to Wakanda</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187369</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978661</id>
+  <Combined_episodenumber>18</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 18 - Lo, There Shall Come a Conqueror</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187400</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978671</id>
+  <Combined_episodenumber>19</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 19 - Beware the Widow's Bite!</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187419</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2978681</id>
+  <Combined_episodenumber>20</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Webisode 20 - The Big House</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1287187430</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4048841</id>
+  <Combined_episodenumber>21</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Webisodes 1-20</EpisodeName>
+  <EpisodeNumber>21</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>All 20 Webisodes of The Avengers: Earth's Mightiest Heroes</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename>episodes/192171/4048841.jpg</filename>
+  <lastupdated>1305675541</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4301253</id>
+  <Combined_episodenumber>22</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Season 1 Extras Part 1</EpisodeName>
+  <EpisodeNumber>22</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1333747907</lastupdated>
+  <seasonid>322041</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2955501</id>
+  <Combined_episodenumber>6.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>6.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Sebastian Montes, Ciro Nieli</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Breakout (Part 1)</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2010-10-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1699027</IMDB_ID>
+  <Language>en</Language>
+  <Overview>After Iron Man stops an A.I.M. arms trade, Hank Pym talks with Mad Thinker to see what he meant when he referred to the villains in the super prisons as soon being free. All four of the prisons then break down and each hero deals with this. Meanwhile, Leonard Samson is exposed to Gamma radiation when the Cube deactivates and is injured by Zzzax. Hulk escapes with Samson and heads to the nearest civilized area. Graviton escapes the Raft and seeks revenge on Nick Fury. </Overview>
+  <ProductionCode>006</ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>25</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Christopher Yost</Writer>
+  <absolute_number>6</absolute_number>
+  <filename>episodes/192171/2955501.jpg</filename>
+  <lastupdated>1332996103</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>2955511</id>
+  <Combined_episodenumber>7.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>7.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Vinton Heuck, Ciro Nieli</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Breakout (Part 2)</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2010-10-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1699028</IMDB_ID>
+  <Language>en</Language>
+  <Overview>A flashback to 10 years before reveals Graviton's origin. In the present, Iron Man is outnumbered by old enemies at the Vault. To escape and fight Graviton, Tony self-destructs the Vault, but his armor was damaged and he radios a replacement from his Chicago tower. Thor, Hank Pym, and Wasp try to fight Graviton. Later, they are joined by Hulk and Iron Man and with their combined power they defeat Graviton and form the Avengers in order to catch the 74 escaped supervillians that escaped the four prisons. </Overview>
+  <ProductionCode>007</ProductionCode>
+  <Rating>7.4</Rating>
+  <RatingCount>20</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Christopher Yost</Writer>
+  <absolute_number>7</absolute_number>
+  <filename>episodes/192171/2955511.jpg</filename>
+  <lastupdated>1332996114</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3008791</id>
+  <Combined_episodenumber>1.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>1.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Vinton Heuck</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Iron Man is Born</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2010-10-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview> A compilation of the micro-series episodes &quot;Iron Man is Born!&quot;, &quot;HYDRA Lives!&quot;, &quot;Behold, the Mandroids!&quot;, and &quot;Nick Fury, Agent of S.H.I.E.L.D</Overview>
+  <ProductionCode>001</ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>20</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Brandon Auman</Writer>
+  <absolute_number>1</absolute_number>
+  <filename>episodes/192171/3008791.jpg</filename>
+  <lastupdated>1332996128</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3008801</id>
+  <Combined_episodenumber>2.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>2.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Thor the Mighty</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2010-10-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A compilation of the micro-series episodes &quot;Thor the Mighty&quot;, &quot;The Siege of Asgard&quot;, &quot;My Brother, My Enemy&quot;, and &quot;The Isle of Silence&quot;. </Overview>
+  <ProductionCode>002</ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>19</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>2</absolute_number>
+  <filename>episodes/192171/3008801.jpg</filename>
+  <lastupdated>1332996134</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3008821</id>
+  <Combined_episodenumber>3.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>3.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Hulk Versus the World</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2010-10-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A compilation of the micro-series episodes &quot;The Coming of the Hulk&quot;, &quot;Hulk Versus the World&quot;, &quot;This Monster, This Hero&quot;, and &quot;Beware the Widow's Bite&quot;. </Overview>
+  <ProductionCode>003</ProductionCode>
+  <Rating>7.4</Rating>
+  <RatingCount>18</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>3</absolute_number>
+  <filename>episodes/192171/3008821.jpg</filename>
+  <lastupdated>1332996141</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3008841</id>
+  <Combined_episodenumber>4.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>4.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Meet Captain America</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2010-10-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview> A compilation of the micro-series episodes &quot;Meet Captain America&quot;, &quot;The Red Skull Strikes!&quot;, &quot;If This Be Doomsday!&quot;, and &quot;Lo, There Shall Come a Conqueror&quot;.</Overview>
+  <ProductionCode>004</ProductionCode>
+  <Rating>7.1</Rating>
+  <RatingCount>17</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>4</absolute_number>
+  <filename>episodes/192171/3008841.jpg</filename>
+  <lastupdated>1332996147</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3008871</id>
+  <Combined_episodenumber>5.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>5.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Man in the Ant Hill</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2010-10-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A compilation of the micro-series episodes &quot;The Man in the Ant Hill&quot;, &quot;Enter the Whirlwind&quot;, &quot;The Big House&quot;, and &quot;Welcome to Wakanda&quot;. </Overview>
+  <ProductionCode>005</ProductionCode>
+  <Rating>7.3</Rating>
+  <RatingCount>20</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>5</absolute_number>
+  <filename>episodes/192171/3008871.jpg</filename>
+  <lastupdated>1332996154</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3008901</id>
+  <Combined_episodenumber>8.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>8.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Some Assembly Required</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2010-10-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Avengers move into a mansion together, but Hulk threatens to kill everyone after he is magically manipulated by the Enchantress</Overview>
+  <ProductionCode>008</ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>21</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>8</absolute_number>
+  <filename>episodes/192171/3008901.jpg</filename>
+  <lastupdated>1332996163</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3055201</id>
+  <Combined_episodenumber>9.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>9.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Living Legend</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2010-11-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Avengers rescue a frozen Captain America, who has been on ice since World War II.</Overview>
+  <ProductionCode>009</ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>19</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>9</absolute_number>
+  <filename>episodes/192171/3055201.jpg</filename>
+  <lastupdated>1332996169</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3055211</id>
+  <Combined_episodenumber>10.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>10.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Everything Is Wonderful</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2010-11-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon Williams becomes a deadly being of ionic energy after being enraged by Tony destroying his company. Meanwhile, Wasp and Thor chase a group of AIM agents to find their secret hideout and run into another villain, MODOK.</Overview>
+  <ProductionCode>010</ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>18</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>10</absolute_number>
+  <filename>episodes/192171/3055211.jpg</filename>
+  <lastupdated>1338316876</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3055221</id>
+  <Combined_episodenumber>11.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>11.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Vinton Heuck</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Panther's Quest</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>2010-11-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>T'Challa, the new Black Panther, meets the Avengers and tells them that his country has been overthrown by Man-Ape. As the Avengers arrive in Wakanda, not only do they have to help T'Challa reclaim his family's throne and country, but they also have to deal with Klaw and the Grim Reaper.</Overview>
+  <ProductionCode>011</ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>20</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Brandon Auman</Writer>
+  <absolute_number>11</absolute_number>
+  <filename>episodes/192171/3055221.jpg</filename>
+  <lastupdated>1332996180</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3055231</id>
+  <Combined_episodenumber>12.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>12.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Gamma World (Part 1)</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>2010-11-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Leader has placed a dome around the Cube. It soon expands with anyone who is caught in it turned into a Gamma Monster. Meanwhile, Hawkeye catches up with Black Widow.</Overview>
+  <ProductionCode>012</ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>23</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>12</absolute_number>
+  <filename>episodes/192171/3055231.jpg</filename>
+  <lastupdated>1332996185</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3055241</id>
+  <Combined_episodenumber>13.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>13.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Gamma World (Part 2)</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>2010-11-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>With the Avengers turned into Gamma Monsters, Hawkeye must convince Hulk to help fight Leader.</Overview>
+  <ProductionCode>013</ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>11</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>13</absolute_number>
+  <filename>episodes/192171/3055241.jpg</filename>
+  <lastupdated>1332996189</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3232041</id>
+  <Combined_episodenumber>14.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>14.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Masters of Evil</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>2010-12-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Supervillains invade Avengers Mansion and attempt to destroy the superheroes</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>19</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>14</absolute_number>
+  <filename>episodes/192171/3232041.jpg</filename>
+  <lastupdated>1332996194</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3232051</id>
+  <Combined_episodenumber>15.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>15.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>459</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>2010-12-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ant-Man and Wasp attempt to prevent an interstellar war between the Earth and two invading alien empires.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>18</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>15</absolute_number>
+  <filename>episodes/192171/3232051.jpg</filename>
+  <lastupdated>1332996198</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3237711</id>
+  <Combined_episodenumber>16.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>16.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Widow's Sting</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired>2010-12-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye infiltrates Hydra Island to battle the Black Widow</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>18</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>16</absolute_number>
+  <filename>episodes/192171/3237711.jpg</filename>
+  <lastupdated>1332996203</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3312791</id>
+  <Combined_episodenumber>17.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>17.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Man Who Stole Tomorrow</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired>2011-01-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Kang arrives from the future, claiming he must kill Captain America and conquer the Earth in order to save it from destruction.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>17</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>17</absolute_number>
+  <filename>episodes/192171/3312791.jpg</filename>
+  <lastupdated>1332996208</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3312801</id>
+  <Combined_episodenumber>18.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>18.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Come the Conqueror</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired>2011-01-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Avengers fend off Kang's invasion of Earth.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>17</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>18</absolute_number>
+  <filename>episodes/192171/3312801.jpg</filename>
+  <lastupdated>1332996213</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3444781</id>
+  <Combined_episodenumber>19.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>19.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Kang Dynasty</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired>2011-01-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Avengers attack Kang's ship with the help of the last of the Ultrons. They defeat Kang, who tells them the worst is yet to come.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>15</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>19</absolute_number>
+  <filename>episodes/192171/3444781.jpg</filename>
+  <lastupdated>1332996219</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>3568871</id>
+  <Combined_episodenumber>20.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>20.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Sebastian Montes</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Casket of Ancient Winters</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired>2011-04-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Avengers must stop Malekith the Accursed after he unleashes an everlasting winter on Earth. Once Malekith is defeated Thor learns he has been barred from returning to Asgard.</Overview>
+  <ProductionCode>020</ProductionCode>
+  <Rating>7.4</Rating>
+  <RatingCount>14</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Paul Giacoppo</Writer>
+  <absolute_number>20</absolute_number>
+  <filename>episodes/192171/3568871.jpg</filename>
+  <lastupdated>1332996226</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4057141</id>
+  <Combined_episodenumber>21.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>21.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Hail, Hydra!</EpisodeName>
+  <EpisodeNumber>21</EpisodeNumber>
+  <FirstAired>2011-04-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Black Widow requests the Avengers' help in retrieving the Cosmic Cube before AIM and HYDRA tear the world apart fighting over it.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>13</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>21</absolute_number>
+  <filename>episodes/192171/4057141.jpg</filename>
+  <lastupdated>1332996234</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4057151</id>
+  <Combined_episodenumber>22.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>22.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Ultron-5</EpisodeName>
+  <EpisodeNumber>22</EpisodeNumber>
+  <FirstAired>2011-04-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ant-Man gets tired of unending violence and he wants to find a better way to bring peace to world. After all, this is why he created the robot army, Ultron. But something goes terribly wrong. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>13</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>22</absolute_number>
+  <filename>episodes/192171/4057151.jpg</filename>
+  <lastupdated>1332996240</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4057161</id>
+  <Combined_episodenumber>23.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>23.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Ultron Imperative</EpisodeName>
+  <EpisodeNumber>23</EpisodeNumber>
+  <FirstAired>2011-04-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When the team is devastated after a loss, Iron Man and Ant-Man go destroying all remnants of Ultron. But they do not realize that Ultron has transcended his body, and has taken over the world's technology systems. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>14</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>23</absolute_number>
+  <filename>episodes/192171/4057161.jpg</filename>
+  <lastupdated>1332996244</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4057171</id>
+  <Combined_episodenumber>24.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>24.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>This Hostage Earth</EpisodeName>
+  <EpisodeNumber>24</EpisodeNumber>
+  <FirstAired>2011-04-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Masters of Evil go all across the world preparing for an invasion that the Earth has never seen. Unless the Avengers can stop the invasion, the people of Asgard are coming to Earth.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>15</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>24</absolute_number>
+  <filename>episodes/192171/4057171.jpg</filename>
+  <lastupdated>1332996251</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4057181</id>
+  <Combined_episodenumber>25.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>25.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Fall of Asgard</EpisodeName>
+  <EpisodeNumber>25</EpisodeNumber>
+  <FirstAired>2011-04-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Avengers struggle to survive in the realms of Asgard. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>15</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>25</absolute_number>
+  <filename>episodes/192171/4057181.jpg</filename>
+  <lastupdated>1332996259</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4057191</id>
+  <Combined_episodenumber>26.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>26.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>A Day Unlike Any Other</EpisodeName>
+  <EpisodeNumber>26</EpisodeNumber>
+  <FirstAired>2011-04-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Avengers go against Loki, although they are nothing to Loki's power.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.1</Rating>
+  <RatingCount>14</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number>26</absolute_number>
+  <filename>episodes/192171/4057191.jpg</filename>
+  <lastupdated>1332996266</lastupdated>
+  <seasonid>333271</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4188739</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Gary Hartle</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Private War of Dr. Doom</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2012-04-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Avengers team up with the Fantastic Four to battle Dr.Doom's armies.</Overview>
+  <ProductionCode>027</ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>16</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Christopher Yost</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4188739.jpg</filename>
+  <lastupdated>1343894690</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4299933</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Boyd Kirkland</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Alone Against A.I.M.</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2012-04-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1968895</IMDB_ID>
+  <Language>en</Language>
+  <Overview>An armorless Iron Man fights A.I.M.'s latest creation, the Technovore, while A.I.M. goes up against Captain America, Black Panther, and War Machine in an effort to steal the armored avenger's armor.</Overview>
+  <ProductionCode>028</ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>14</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Kevin Burke &amp; Chris Wyatt</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4299933.jpg</filename>
+  <lastupdated>1343894728</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4299934</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Burdine</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Acts of Vengeance</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2012-04-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt2122881</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Enchantress, after being betrayed by Zemo, seeks revenge on her former teammates, leaving the Avengers in the middle of a clash between supervillains.</Overview>
+  <ProductionCode>029</ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>13</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Michael Ryan</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4299934.jpg</filename>
+  <lastupdated>1343894747</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4299935</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Boyd Kirkland</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Welcome to the Kree Empire</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2012-04-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt2146955</IMDB_ID>
+  <Language>en</Language>
+  <Overview>An alien warrior race known as the Kree visits Earth to make a final decision regarding whether to add Earth to the ever-expanding Kree empire or obliterate it.</Overview>
+  <ProductionCode>030</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>13</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Paul Giacoppo</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4299935.jpg</filename>
+  <lastupdated>1343895007</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4299936</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Burdine</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>To Steal an Ant-Man</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2012-04-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt2146957</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ant-Man's suit goes missing, and Hank's quest to find his armor before someone gets hurt lands him in the clutches of the supervillain Crossfire.</Overview>
+  <ProductionCode>031</ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>12</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Brandon Auman</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4299936.jpg</filename>
+  <lastupdated>1340145857</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4321167</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Boyd Kirkland</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Michael Korvac</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2012-05-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>An extraterrestrial being named Michael Korvac seeks the Avengers' protection from &quot;villains&quot; who turn out to be the Guardians of the Galaxy. As the Avengers fight the Guardians to keep Korvac safe, they are unaware that they are protecting the wrong person.</Overview>
+  <ProductionCode>032</ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>12</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Dan Abnett &amp; Andy Lanning</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4321167.jpg</filename>
+  <lastupdated>1340145907</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4321168</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Gary Hartle</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Who Do You Trust?</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2012-05-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Avengers are torn apart when Nick Fury returns and reveals that the shapeshifting aliens Skrulls have begun infiltrating Earth. The situation becomes worse when they learn a Skrull lurks within the Avengers.</Overview>
+  <ProductionCode>034</ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>16</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Brian Reed</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4321168.jpg</filename>
+  <lastupdated>1346345390</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4321169</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Steve Gordon</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Ballad of Beta Ray Bill</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2012-05-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>While searching for the fire demon Surtur, Thor is attacked by a powerful creature known as Beta Ray Bill, and the unthinkable happens when Bill lifts Thor's hammer as the two battle. Thor must ally himself with this strange warrior to save Asgard before Surtur and his demon army burn it to the ground.</Overview>
+  <ProductionCode>033</ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>13</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Michael Ryan</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4321169.jpg</filename>
+  <lastupdated>1340145986</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4330996</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Boyd Kirkland</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Nightmare in Red</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2012-06-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When S.H.I.E.L.D. is attacked by the Hulk, the Avengers rush to the scene. When they arrive, the rampaging Hulk is RED! The hunt is on for Bruce Banner as the Avengers try and unravel the mystery of 'Who is the Red Hulk?'</Overview>
+  <ProductionCode>036</ProductionCode>
+  <Rating>8.2</Rating>
+  <RatingCount>13</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Mark Parsons</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4330996.jpg</filename>
+  <lastupdated>1340408535</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4331335</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Steve Gordon</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Prisoner of War</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2012-07-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>After being held prisoner for months, Captain America is ready to break out. If he is to succeed he must team up with his enemies. Cap won't let anything stop him, but he didn't count on facing the Super Skrull!</Overview>
+  <ProductionCode>038</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>12</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Kevin Burke &amp; Chris Wyatt</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4331335.jpg</filename>
+  <lastupdated>1340664424</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4331336</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Burdine</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Infiltration</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>2012-07-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Skrull invasion has begun, and Wakanda is the first target. Ms. Marvel is the only one there to fight off these aliens, whose shape-shifting abilities make matters much worse for her.</Overview>
+  <ProductionCode>037</ProductionCode>
+  <Rating>8.1</Rating>
+  <RatingCount>13</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Christopher Yost</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4331336.jpg</filename>
+  <lastupdated>1340664533</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4336158</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Boyd Kirkland</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Secret Invasion</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>2012-07-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Skrulls have invaded the entire Earth, and Captain America, Iron Man, and Thor lead an attack on the aliens.</Overview>
+  <ProductionCode>039</ProductionCode>
+  <Rating>8.3</Rating>
+  <RatingCount>10</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Christopher Yost</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4336158.jpg</filename>
+  <lastupdated>1345571572</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4336159</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Burdine</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Along Came a Spider…</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>2012-07-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Captain America is still trying to earn back the trust of the public, he teams up with the equally-mistrusted Spider-Man to fight the Serpent Society, whose members are trying to rescue Viper.</Overview>
+  <ProductionCode>042</ProductionCode>
+  <Rating>8.3</Rating>
+  <RatingCount>10</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Christopher Yost</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4336159.jpg</filename>
+  <lastupdated>1340664569</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4336161</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Burdine</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Behold… The Vision</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>2012-07-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Still trying to restore hope and order to the world after the Skrull invasion, Captain America travels to Wakanda with the Avengers to repair his shield, but a new foe has come to take his shield. The Avengers must now find out where he came from and who sent him before he prevails.</Overview>
+  <ProductionCode>035</ProductionCode>
+  <Rating>8.2</Rating>
+  <RatingCount>11</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Michael Ryan</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4336161.jpg</filename>
+  <lastupdated>1340664591</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4336162</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Steve Gordon</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Assault on 42</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>2012-08-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Avengers must team up with their enemies to fight an army of strange creatures who are attacking 42.</Overview>
+  <ProductionCode>041</ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>10</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Man of Action &amp; Danielle Wolff</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4336162.jpg</filename>
+  <lastupdated>1349667452</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4336163</id>
+  <Combined_episodenumber>16</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Steve Gordon</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Ultron Unlimited</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired>2012-08-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Avengers are attacked and captured by Ultron's team of synthezoid Avengers as part of Ultron's plan to rid the world of &quot;flawed&quot; humans, perfect himself, and construct a mate.</Overview>
+  <ProductionCode>040</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>9</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Brian Reed</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4336163.jpg</filename>
+  <lastupdated>1349668006</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4336165</id>
+  <Combined_episodenumber>17</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Boyd Kirkland</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Yellowjacket</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired>2012-09-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A new vigilante who calls himself &quot;Yellowjacket&quot; shows up. Meanwhile, Iron Man and Wasp attempt to persuade Hank to rejoin the team, to no avail.</Overview>
+  <ProductionCode>044</ProductionCode>
+  <Rating>8.1</Rating>
+  <RatingCount>8</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Man of Action &amp; James Felder</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4336165.jpg</filename>
+  <lastupdated>1349667425</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4339870</id>
+  <Combined_episodenumber>18</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Boyd Kirkland</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Emperor Stark</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired>2012-09-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Vision awakens after a month of repairs only to find that Iron Man and the Avengers have taken over the Earth! With the whole planet against him, the Vision must get to the bottom of Tony Stark's 'utopia'.</Overview>
+  <ProductionCode>045</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>7</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Christopher Yost</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4339870.jpg</filename>
+  <lastupdated>1349668028</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4339871</id>
+  <Combined_episodenumber>19</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Burdine</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Code Red</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired>2012-09-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Mysterious fumes in the Avengers mansion cause everyone to fall ill. Luckily, the Iron Man suit is sealed from danger. Can Tony figure out what's going on before the Secretary of Defense shut down the Avengers?</Overview>
+  <ProductionCode>046</ProductionCode>
+  <Rating>8.3</Rating>
+  <RatingCount>6</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Man of Action</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4339871.jpg</filename>
+  <lastupdated>1349667379</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4339872</id>
+  <Combined_episodenumber>20</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Boyd Kirkland</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Winter Soldier</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired>2012-09-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>No one knows who the Winter Soldier is or how he came to be. But one thing is for certain, he's the Red Skull's top recruit. So why did he disobey orders and save Captain America's life? What is he truly after?</Overview>
+  <ProductionCode>047</ProductionCode>
+  <Rating>8.6</Rating>
+  <RatingCount>7</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Man of Action &amp; James Felder</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4339872.jpg</filename>
+  <lastupdated>1349668049</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4339873</id>
+  <Combined_episodenumber>21</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Steve Gordon</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Deadliest Man Alive</EpisodeName>
+  <EpisodeNumber>21</EpisodeNumber>
+  <FirstAired>2012-10-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>During the midst of the Skrull Invasion, Captain America convinced Hulk to transform back to Bruce Banner and turn himself in for a crime he didn't commit. Now, that his name is cleared, Bruce isn't just mad, he's raging!</Overview>
+  <ProductionCode>048</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>6</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Man of Action</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4339873.jpg</filename>
+  <lastupdated>1349667361</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4345869</id>
+  <Combined_episodenumber>22</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>New Avengers</EpisodeName>
+  <EpisodeNumber>22</EpisodeNumber>
+  <FirstAired>2012-10-14</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Kang attempts to conquer the world once again, this time trapping the Avengers in a temporal void to keep Earth's mightiest heroes from getting in the way of his plans. Now, a new team of heroes (consisting of Spider-Man, War Machine, Wolverine, Iron Fist, Luke Cage and the Thing) must band together to stop the invasion.</Overview>
+  <ProductionCode>049</ProductionCode>
+  <Rating>8.5</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4345869.jpg</filename>
+  <lastupdated>1349668067</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4345870</id>
+  <Combined_episodenumber>23</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Operation Galactic Storm</EpisodeName>
+  <EpisodeNumber>23</EpisodeNumber>
+  <FirstAired>2012-10-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Kree attempt to create a wormhole connecting our solar system with theirs, which will consequently destroy the Sun. </Overview>
+  <ProductionCode>050</ProductionCode>
+  <Rating>8.5</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4345870.jpg</filename>
+  <lastupdated>1349723439</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4345871</id>
+  <Combined_episodenumber>24</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Live Kree or Die</EpisodeName>
+  <EpisodeNumber>24</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Avengers arrive on the Kree's home world, Hala, but find that they aren't exactly welcome there.</Overview>
+  <ProductionCode>051</ProductionCode>
+  <Rating>8.5</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4345871.jpg</filename>
+  <lastupdated>1349668098</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4345872</id>
+  <Combined_episodenumber>25</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Avengers Assemble</EpisodeName>
+  <EpisodeNumber>25</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Avengers fight Galactus and his heralds, their greatest threat yet.</Overview>
+  <ProductionCode>052</ProductionCode>
+  <Rating>8.7</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4345872.jpg</filename>
+  <lastupdated>1349668110</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+<Episode>
+  <id>4336164</id>
+  <Combined_episodenumber>26</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Roy Burdine</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Powerless</EpisodeName>
+  <EpisodeNumber>26</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Enchantress, as part of her master's plan, offers Loki a chance to exact revenge on Thor and the Avengers for defeating him and uses a magical spell to take away the powers of Thor, Captain America, and Iron Man. Now, the helpless heroes must defeat Loki and an Asgardian weapon known as the Destroyer without their abilities.</Overview>
+  <ProductionCode>043</ProductionCode>
+  <Rating>8.2</Rating>
+  <RatingCount>6</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Christopher Yost</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/192171/4336164.jpg</filename>
+  <lastupdated>1349668129</lastupdated>
+  <seasonid>476521</seasonid>
+  <seriesid>192171</seriesid>
+</Episode>
+</Data>

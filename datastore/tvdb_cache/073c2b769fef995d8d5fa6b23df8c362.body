@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>256579</id>
+    <Actors>|Mike Myres|Dana Carvey|</Actors>
+    <Airs_DayOfWeek>Friday</Airs_DayOfWeek>
+    <Airs_Time>7.00.PM</Airs_Time>
+    <ContentRating>TV-14</ContentRating>
+    <FirstAired></FirstAired>
+    <Genre>|Comedy|Drama|</Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network>CBS</Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Waynes World The Series</SeriesName>
+    <Status>Continuing</Status>
+    <added>2012-02-29 04:11:14</added>
+    <addedBy>359471</addedBy>
+    <banner></banner>
+    <fanart></fanart>
+    <lastupdated>1330520737</lastupdated>
+    <poster></poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

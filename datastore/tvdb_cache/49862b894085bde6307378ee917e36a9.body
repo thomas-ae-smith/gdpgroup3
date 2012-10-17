@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>192171</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek>Sunday</Airs_DayOfWeek>
+    <Airs_Time>10:00 am</Airs_Time>
+    <ContentRating>TV-Y7</ContentRating>
+    <FirstAired>2010-10-20</FirstAired>
+    <Genre>|Action and Adventure|Animation|Children|Fantasy|</Genre>
+    <IMDB_ID>tt1626038</IMDB_ID>
+    <Language>en</Language>
+    <Network>Disney XD</Network>
+    <NetworkID></NetworkID>
+    <Overview>This animated series follows the adventures of the infamous Marvel Comics superhero team the Avengers - primarily consisting of Iron Man, Thor, Captain America, the Hulk, Ant Man and Wasp - as they team up to save the world from dangers far too great for one superhero to handle alone. The Avengers headquarters, where the Avengers plan their operations and attacks, is based in the mansion Tony Stark grew up in. Superheroes planned to be joining the Avengers in the near future are Hawkeye and the Black Panther. The team also frequently works alongside S.H.I.E.L.D., an organization run by Nick Fury</Overview>
+    <Rating>8.6</Rating>
+    <RatingCount>22</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID>78848</SeriesID>
+    <SeriesName>The Avengers: Earth's Mightiest Heroes</SeriesName>
+    <Status>Continuing</Status>
+    <added>2010-09-23 22:19:15</added>
+    <addedBy>199281</addedBy>
+    <banner>graphical/192171-g5.jpg</banner>
+    <fanart>fanart/original/192171-1.jpg</fanart>
+    <lastupdated>1350462393</lastupdated>
+    <poster>posters/192171-3.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

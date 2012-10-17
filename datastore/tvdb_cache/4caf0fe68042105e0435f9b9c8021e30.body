@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>83884</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>1998-05-27</FirstAired>
+    <Genre></Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network>BBC Two</Network>
+    <NetworkID></NetworkID>
+    <Overview>Series about the lives and work of six great figures in children's literature, examining their most famous works and the impact they had on the genre</Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>50</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>An Awfully Big Adventure</SeriesName>
+    <Status>Ended</Status>
+    <added>2008-11-27 06:43:52</added>
+    <addedBy>2019</addedBy>
+    <banner>graphical/83884-g.jpg</banner>
+    <fanart></fanart>
+    <lastupdated>1275003087</lastupdated>
+    <poster></poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

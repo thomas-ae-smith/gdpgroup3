@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+<Series>
+<seriesid>106811</seriesid>
+<language>en</language>
+<SeriesName>Les Vampires</SeriesName>
+<banner>graphical/106811-g.jpg</banner>
+<Overview>Les Vampires is a series of silent films in ten episodes (total of 6h20mn), written and directed by Louis Feuillade in 1915.
+
+The series takes place in Paris and recounts the exploits of a band of criminals who call themselves "Vampires."
+
+Musidora plays the role of Irma Vep, a femme fatale whose name is obvious anagram of "vampire".
+</Overview>
+<FirstAired>1915-11-13</FirstAired>
+<IMDB_ID>tt0006206</IMDB_ID>
+<id>106811</id>
+</Series>
+<Series>
+<seriesid>173561</seriesid>
+<language>en</language>
+<SeriesName>The School for Vampires</SeriesName>
+<banner>graphical/173561-g.jpg</banner>
+<FirstAired>2006-08-26</FirstAired>
+<id>173561</id>
+</Series>
+</Data>

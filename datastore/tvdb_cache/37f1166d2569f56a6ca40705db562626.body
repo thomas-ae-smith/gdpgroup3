@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>126731</id>
+  <Actors>|Al Brown|Steve Logan|</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating>TV-G</ContentRating>
+  <FirstAired></FirstAired>
+  <Genre>|Documentary|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>TVNZ</Network>
+  <NetworkID></NetworkID>
+  <Overview>Steve Logan and Al Brown trade the comfort of their fine dining restaurant for life on the road as they head for the hills, hook up with some great Kiwi characters and chase down some of New Zealand's finest and freshest food - bringing us dishes of wild game and seasonal delicacies.</Overview>
+  <Rating>5.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime>30</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Hunger For The Wild</SeriesName>
+  <Status>Ended</Status>
+  <added>2009-12-01 19:33:50</added>
+  <addedBy>103171</addedBy>
+  <banner>graphical/126731-g.jpg</banner>
+  <fanart>fanart/original/126731-1.jpg</fanart>
+  <lastupdated>1328060376</lastupdated>
+  <poster>posters/126731-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>1359231</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Crayfish</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan &amp; Brown head to Punakaiki on the West Coast to catch up with their old mate Ginge Connors who has a clever way of catching crayfish.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259726357</lastupdated>
+  <seasonid>152011</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359241</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Wild Pig</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logie hooks up with two legendary Whanganui River pig hunters while Al finds fresh ingredients at the River Traders' Market.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259726363</lastupdated>
+  <seasonid>152011</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359251</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Whitebait</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan &amp; Brown do river time on the West Coast's Mighty Mokihinui and discover what the whitebaiting culture is all about.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259726368</lastupdated>
+  <seasonid>152011</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359261</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Wild Rabbit</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Brownie chases down wild rabbit while Logie gathers some Central Otago treats and digs up and an old gold-mining recipe.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259726374</lastupdated>
+  <seasonid>152011</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359271</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Paua</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Brownie returns to his old hunting ground at Castlepoint for a feed of paua butties while Logie smokes some freshly caught kahawai.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259726379</lastupdated>
+  <seasonid>152011</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359281</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Pheasant</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan &amp; Brown head to Rotorua to test their aim against the flighty pheasant and dig up winter treats fit for a king.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259726384</lastupdated>
+  <seasonid>152011</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359291</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Flounder</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan &amp; Brown visit the rich waters of Kawhia Harbour to find out about flounder, the fascinating flatfish that has been feeding the people of Kawhia for over 700 years.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>10.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259726391</lastupdated>
+  <seasonid>152011</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359301</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Kingfish</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown take a road trip round the North Island's East Cape, and after receiving a divine tip, hook up with a keen fisherman to chase down the prized kingfish.
+
+The trip begins with a fuel stop in Opotiki, where they stock up on supplies and set up a meal for the road, hot dogs cooked under the hood of the old Holden. Then the boys drop into a macadamia nut farm where owners Graham Dempsey and Sue Burgess give them the nut low-down.
+
+Back on the road and feeling peckish they stop for lunch at historic Raukokore Christ Church. They are joined by church minister Alice Callaghan who tells Logie about the history of the church, which was built by her grandfather Duncan Stirling, before giving the boys a blessing for a successful fishing trip.
+
+The hunt for kingfish takes Logan and Brown round the winding scenic coastline to Cape Runaway where resident expert fisherman Jim Kemp abandons his farm work to take Brownie and Logie to his secret fishing spot.
+
+It seems to be Logies day; it's not long before he catches a snapper. Meanwhile Brownie's patience is starting to wear thin, he's had no bites. When finally the bait's taken he gets the catch of the day, a magnificent kingfish.
+
+Logie heads back to the farmhouse to fetch provisions for the salad and Jim's wife Sally gives him free range of her garden. Then it's onto a local honey factory where he observes the honey making process and picks up a pottle of manuka honey from Harry Satchel.
+
+Back at the beach Brownie is preparing the fish and a caper vinaigrette. Logie gets stuck in slicing up fresh mau mau and snapper for sashimi and then makes a salad. Using Jim's enormous homemade wok Brownie cooks the macadamia nut coated kingfish and serves an impressive fish dinner on the beach.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1260738531</lastupdated>
+  <seasonid>152021</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359311</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Scallops</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown take the ferry across the Cook Strait to the magical Marlborough Sounds. Logie has never been diving for scallops and he's so keen not to miss out that he even delegates the wine selection to Brownie.
+
+Meeting up with Takutai and Pete Beech on their 74-year-old wooden launch, the Tutanekai, Logie heads for East Bay at the far end of Queen Charlotte Sound, where brothers Nev and Trev Tahuaroa have access to some prime scallop territory. On the way they stop for some fresh green-lipped mussels and Takutai makes fresh Paraoa, or Maori bread, to wrap around them.
+
+Meanwhile Brownie visits Seresin Vineyard where the vines are grown organically. Estate manager Colin Ross gives Brownie the run down on biodynamic fundamentals before helping him choose a wine to go with the scallops.
+
+Brownie then heads to Thymebank for coriander and chillies to spice up his corn and capsicum salsa. With ingredients in hand he thumbs a ride as far as Arapawa Island. Here he meets Betty Rowe who has been providing sanctuary to goats that are believed to be descendants of those first released by Captain Cook.
+
+While Logie motors further up Queen Charlotte Sound there's time to stop off at Pete's favourite spot, Motuara Island. Regenerating under the care of the Department of Conservation, the island is once again a sanctuary for birds.
+
+Finally it's off to East Bay to meet the tangata whenua, Nev and Trev Tahuaroa. Their great-great grandfather came down from Taranaki in the mid 1820s, crossing Cook Strait in their waka, Paroa. Brownie is very excited to have made it to the Bay in time to collect the scallops for their dish. Kitted out in wetsuits and snorkels the boys flounder around in the shallow waters while Trev goes out further with a diving tank to collect a good bagful.
+
+Brownie makes a summer salsa of corn and roasted capsicum, while Logie gives Trev a hand to open the succulent scallops. Then Brownie sears the scallops in the pan and serves them with the Seresin olive oil and the well-matched pinot gris. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1260738575</lastupdated>
+  <seasonid>152021</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359321</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Eel</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown point the Holden towards Birdlings Flat on Banks Peninsula in search of New Zealand's mysterious migrating eel. Arriving on the shingle beach they meet local eeling legend and kaumatua George Skipper. George catches eels in nearby Lake Forsyth or Wairewa in the time honoured traditional way, which involves digging deep drains. Logie gives George a hand while Brownie drives off to gather the other ingredients. George skins, dries and smokes the eels himself, showing Logie all the steps along the way.
+
+First stop for Brownie is commercial eeler Clem Smith who's been catching eels on Lake Ellesmere for over 20 years. Brownie gives him a helping hand sorting out his massive catch. Further around the lake, Brownie meets NIWA scientist Don Jellyman, learning about the eels' remarkable mating journey that ends thousands of miles away in the South Pacific. Then Brownie's off tracking down the Two Mandy's - well known for turning gnarly old horseradishes into a delicious secret horseradish sauce.
+
+Ingredients gathered and night falling, Brownie heads back to meet up with Logie. George Skipper takes the eager lads to Lake Forsyth to stalk and trap any migrating eels.
+
+Next morning Brownie starts cooking at a lakeside picture perfect kiwi bach, while Logie, waiting for the smoked eel to finish curing, drives to Kaituna Valley. Here he meets wine maker Grant Whelan who is rightly proud of his Pinot Noir. Logie's happy to take away a couple of bottles to share with Brownie and George as they feast on smoked eel with cauliflower and horseradish puree overlooking the lake waters.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1260738660</lastupdated>
+  <seasonid>152021</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359331</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Wild Duck</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown hightail it to Hawke's Bay for a day of duck shooting. Except Logie's the one who does most of the shooting while Brownie collects the ingredients for his duck ragout and salad.
+
+Logie begins his day shooting with Greg Duley on Lake Oingo just inland from Hastings. He's taken out in Greg's dinghy to the family mai mai, given a quick duck-calling lesson, then it's all on as the ducks begin to circle overhead.
+
+Brownie's day starts off collecting salad greens from Clyde Potter, a market gardener who grows over 70 varieties of salad greens and herbs, before he drops into Village Press where he is impressed by the harvesting and cold pressing methods, which produces what he considers the finest olive oil in the country.
+
+Over lunch Logie gets the chance to sample Greg's family recipe - Ma Duley's Roast Duck with Orange Gravy. Then he's back out shooting more mallards, this time coffin shooting in a maize field. With guns blazing they quickly down a few ducks. In no time Logie has two plump ducks to deliver to Brownie.
+
+Brownie, lacking confidence in Logie's shooting ability, calls in on his mate Dave Hern of Waipukurau to do a bit of pond stalking. A short time later Brownie has his ducks. The missing ingredient for the duck dish is a good stock. He drops in on Clint Toomie knowing his stock ingredients and cooking methods are the freshest and best for his needs.
+
+Brownie then heads to the shearing shed where he begins the preparations for his duck ragout while Logie visits Hawkes Bay wine maker Warren Gibson. They decide the spicy Syrah is the perfect match to sip over a dinner of wild duck ragout served over penne pasta with a blue cheese and rocket salad.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1260738697</lastupdated>
+  <seasonid>152021</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359341</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Crab</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown head north of Wellington to the Kapiti Coast where they're fishing for the feisty Waikanae crab. The tender crabmeat is used in the recipe for Logan Brown crab cakes and their mates Narina McBeath and Matt Whittaker of Waikanae Crab have been supplying the restaurant for over 10 years.
+
+Pioneers in the business of catching and selling paddle crabs, Narina and Matt found what worked best for extracting the meat through trial and error, with the simple answers often the best.
+
+After sampling the succulent meat, Matt invites Logie out on their fishing boat, while Brownie tries his luck closer to shore with restaurant greengrocer, Sanjay Dayal, whose mother Puspa cooks a mean Indian crab curry.
+
+Meanwhile Matt and Logie head out to sea and throw baited pots and nets over the side. Matt fishes the Kapiti coast anywhere from just beyond the breakers to a couple of kilometres out, and finding the crabs is a combination of luck and local knowledge.
+
+Brownie is back up the coast to pick a selection of fresh berries with Narina, then he calls into Tuatara Brewery tucked away in the back-blocks of Waikanae. Owners Carl and Simone Vasta let Brownie sample their award-winning brew straight from the bottle, and he's not disappointed.
+
+All set for their cook-up, Logie and Brownie say goodbye to the mainland and head to beautiful Kapiti Island, where they spend time exploring with one of the few people to live on the island, John Barrett. Many tribal groups have left their mark on here including the great Ngati Toa chief, Te Rauparaha, who made it his stronghold in the 1800's.
+
+Kapiti Island is also a sanctuary for endangered birds and the cheeky kaka are keen on helping themselves to Brownie's berries. Once the guests arrive its time to light up the barbie. Waikanae crab cakes served with homemade tartare sauce accompanied by a Te Mata Chardonnay - a perfect ending to an absolutely perfect day.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1260738729</lastupdated>
+  <seasonid>152021</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359351</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Cod &amp; Clam</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown drive south to Dunedin and wind their way around Otago Peninsula as they track down blue cod and clams for a boat shed brunch at Papanui Inlet.
+
+Leaving Brownie at the Portobello Marine Laboratory, Logie takes the Holden to Papanui Inlet where he gets to see the latest commercial clam harvester in action with local inventor Graeme Granger. He then samples Graeme's partner Megan Bardell's delicious clam chowder before hoofing it back to Portobello to meet up with Brownie as arranged.
+
+In the meantime Brownie has made his way directly to Port Chalmers to track down Dunedin's iconic blue cod. He wanders into fishmonger Aaron Cooper's shop where he's introduced to fisherman Al Anderson. Offering his services as a deckie he scores a job on Al's fishing boat. As he waits for the first pot to be lifted Brownie drops a hand line over and catches some magnificent blue cod.
+
+Having missed Brownie, Logie has to drive round the harbour to Port Chalmers where again he's too late - Brownie's already gone fishing. So Logie decides enough chasing and calls into legendary market gardener Ray Goddard who gives him some expert advice on the humble potato.
+
+Eventually Logie catches up with Brownie as the fishing boat comes into Karitane Bay, and they head off to gather the clams for their fritters.
+
+Up early next day they call into the popular Otago Farmers' Market to gather fresh local ingredients from the friendly stallholders. They then make their way to Graham and Megan's boatshed where, after popping the cork on the bubbles, they create a delicious dish of clam fritters with battered blue cod served with a hollandaise sauce.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1260738757</lastupdated>
+  <seasonid>152021</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359361</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Hare</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>On the road again, Logan and Brown head to Marlborough and find their way to the majestic Awatere Valley where they base themselves on Molesworth Station in the historic Bolton Cottage while hunting down the fleet-footed hare.
+
+Logie and Brownie decide to get a little help from the experts at Premium Game in Blenheim, where Allan Spencer runs a team of thirty hunters providing the factory with wild game. Allan and top hunter Brent Macdonald volunteer to take Brownie further into the Awatere Valley to hunt for hare for his dish, while Logie's in charge of finding the rest of the ingredients.
+
+First stop for Logie is De Brood Bakery where Fred Roubos has been making a living with a half-baked idea for fresh bread. From there it's a jaunt through the Blenheim vineyards to Herbsford Farm, a long-standing market garden run by Terry and Glenys Ford. Logie wants celeriac and in his search for this versatile root vegetable he manages to get the Holden stuck in mud. Eventually he's back on track looking for locally grown garlic and shallots. New Zealand garlic is getting harder and harder to find but eventually he meets local man Robert Harrison-Jones of Piquant Garlic who's been in the business for twenty years. The final stop is the Grassmere Salt Works, where Brett Hobson gives Logie a tour and a bag of flaky salt.
+
+Meanwhile from the back of the ute at Mount Gladstone High Country Sheep Station, Brent and Allan get plenty of shots at the roaming hare, while Brownie finds he's got to be quick to beat these sharp shooters. Keen to get his bag they continue with the spotlight. Brownie finally gets his eye in - and the hares for his dish.
+
+Bright and early next morning while Brownie prepares the hare for cooking, Logie takes off to Vavasour Winery where he meets up with winemaker Stu Marfell. Stu reckons the Awatere Valley pinot noir is a little different - it's intense plum cherry flavour with mushroom character, violets, and slight mineral character makes a perfect match for Brownie's hare patties and backstraps on roasted celeriac, with garlic and shallot confit.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1260738795</lastupdated>
+  <seasonid>152021</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359371</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Trout</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown are off to Taupo, the capital of trout fishing in New Zealand. Their first stop is the Hatepe Rip where Brownie, a passionate fly fisherman, gives Logie, a willing apprentice, an introduction to the art of fly-fishing.
+
+Leaving Logie to hone his skills, Brownie hightails it for the peace and quiet of the Tauranga-Taupo River. Here he enjoys the thrill and challenge of tracking and catching the wily trout, as they hide in pools and hug riverbanks.
+
+Logie decides this type of fishing isn't really for him, so gives his mates Bruce Grant and Tony Orr a call. Invited onto the launch Victory Logie tries down-rigging and catches a couple of rainbow trout which Tony turns into a tasty pan-fried dish of lemon trout.
+
+Back at the river Brownie is still walking knee-deep in water chasing the elusive trout. After leaving one good-looking pool for another, and changing his fly, he eventually lures a rainbow trout onto the hook. While it's a good one Brownie reckons it's better left to fight another day, so releases it back into the river.
+
+On his way to meet up with Brownie Logie calls into the Tongariro National Trout Centre, where he meets Department of Conservation ranger Dave Conley at the trout hatchery. Being a keen trout fisherman, Dave is keen to show Logie his Indian inspired trout recipe. Logie happily indulges, before heading off the Taupo Fishery, where Glenn Maclean observes the trout as they travel up the river to spawn. Knowing trout is in good hands Logie's off to Huka Prawn Park where he furthers his fishing skills by catching enough prawns for a treat later on.
+
+With his fish list now complete Logie heads back to Taupo to catch up with mate Bruce Grant again, affectionately known as the Merchant of Taupo. Here he checks off the rest of his shopping list. Fully loaded he drives through the Kaimanawa Forest Park to find Brownie still happily fly-fishing in the river.
+
+After impressing Brownie with his beautiful big trout, Logie sets up a riverside kitchen where he serves Brownie an entrée of delicious garlic prawns. Brownie fillets Logie's trout, then lightly smokes it over manuka wood chips, and serves it with bacon and salad between thick slices of fresh white bread.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1260738830</lastupdated>
+  <seasonid>152021</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359381</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Barbeque</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown fly 800kms east of Wellington to the isolated Chatham Islands. The islands, with a population of around 600 are a hunters and gatherers paradise and the guys decide to put on a barbeque for some of the locals, cooking up the best of the island's wild foods. The first job is to find a replacement for the Holdie and Darren Kyle, the Air Chathams pilot obliges, donating his classic old Landcruiser for the cause.
+
+While Brownie tracks down the biggest and best barbeques on the island, Logie heads to Owenga wharf to hitch a ride to Pitt Island, home to the Pitt Island wild sheep which will be a great cornerstone to the bar-bie. But at the wharf, he discovers the sea is too rough for the crossing.
+
+All is not lost, Brownie has had word from the locals about a good paua spot so he and Logie head down to a wind-swept coast. Brownie braves the icy waters and leaves no stone unturned but to no avail, the guys are skunked for a second time in one day and the barbie is in serious jeopardy. It is time to check out the insurance.
+
+Patrice Rodger's has been cooking fresh fish and chips at the islands only takeaway bar for eight years. She cooks Al and Steve some delicious Chatham Island blue cod and tells them why she loves these remote islands. Over the fish 'n chips the guys make another plan.
+
+Brownie heads to the wharf and hooks up with groper guru Jeff Clarke who agrees to take him out fishing. Groper fishing in the Chathams is done on handlines. Brownie is taught the ropes and lands some beautiful groper, his favourite eating fish. On the way back to the wharf, Jeff calls in to his holding pots, adding a couple of crays to mix, the bar-bie is back on.
+
+In the meantime Logie has hooked up with local hunting legend Pita Thomas and that night they head out in search of what is known as the Chatham Island national dish - weka. Weka were introduced to the Chathams in 1906 and thrived. There are over 60,000 birds on the Island and each year the Chatham Islanders are allowed to harvest 5000.
+
+&quot;My father always had a weka dog and when we were kids, took us out hunting every chance he got. It's a tradition, something we've done all our lives.&quot; Pita Thomas
+
+Hunting weka is done with a well trained dog that sniffs them out and brings them back to the owner unharmed, that way they can decide if the bird is fat enough for the pot. They catch a handful of birds and leave them to hang for the night.
+
+The next morning Logan and Brown get a call from Pitt Island resident Bernie Mallinson. The winter has eased enough to allow one boat through and they head down to Owenga where she greets them with a special delivery - a Pitt Island wild sheep. With mutton back on the menu it's time get ready for the bar-b-que.
+
+Logie prepares the fire while Brownie fillets the fish and prepares sauces, a wonderful Mediterranean one for the mutton called Harrisa and a dry marinade for the fish, Gremolata. To finish things off Brownie whips up a classic potato salad complete with another local delicacy, swan eggs.
+
+As people start arriving, Pita Turns up with his Weka boil up, Logie and Brownie try it with trepidation but are well impressed, with the tender and succulent meat, &quot;no wonder it's protected on the mainland&quot; is Brownie's reaction.
+
+Logan and Brown's Chatham Island bar-b-que didn't come easy but when it did it was a smorgasbord of great fresh local food, blue cod, groper, paua, crayfish and wild sheep, washed down with a well earned Dog Point Chardonnay from New Zealand. This is one barbeque the locals and the boys will always remember.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1260738861</lastupdated>
+  <seasonid>152021</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359391</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Deer</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>This week Logan and Brown journey to the Southwest corner of Southland to hunt down some wild venison. Their first port of call is the Bracken Hall tea rooms in Mossburn where Al and Steve try their famous venison pies. They're well impressed with the big pieces of fresh, wild venison that have been supplied by local hunter, Callum Hughes.
+
+Brownie reckons Callum must know where a few wild deer are so he joins him on a hunt up the Whitestone River, near Te Anau. After a forty five minute, four wheel drive journey through Glen Echo Station, they arrive at Jock's hut - a hunters' hangout with a large fire - just the place to be cooking some venision back-straps. After settling in, they take a wander trough the bush out the back of the hut.
+
+While Brownie's out hunting, Logie heads off to find out more about the deer and to find something to have with the venison. At a roadside stall he finds the perfect match.
+
+&quot;You couldn't come to Southland without including the swede in the cook up, it's everywhere here.&quot; (Steve)
+
+After buying two swedes for a dollar and getting a few tips from the grower about how to cook them, Logie heads off to meet Derek 'Woody' Wilson, a hunter turned farmer who has been involved in the deer industry for over thirty years. Woody worked initially as a deer culler and then became involved in capturing them live. Steve helped Woody feeding the deer on his farm and in between hay bales heard a few stories about the live capture days.
+
+&quot;It was a real buzz, an adrenalin buzz... if you didn't scare the hell out of yourself everyday you weren't working hard enough!&quot; Woody Wilson
+
+With the deer fed, Woody takes Steve to meet his long time hunting partner, helicopter pilot Richard 'Hannibal' Hayes who is about to fly into Fiordland with Ron Peacock. Richard and Ron are part of a group trying to preserve the blood lines of the Wapiti deer which are the largest and most majestic of the seven species of deer found in New Zealand and Fiordland is the only place in the Southern Hemisphere you can see them in the wild.
+
+Logie joined Hannibal, Ron and Woody on their flight in to the Wapiti country where they were culling out the more common red deer, which is crossbreeding with the Wapiti, threatening the pure bloodlines. Not long into the flight they came across two magnificent Wapiti stags.
+
+&quot;The Wapiti are amazing - they have huge antlers and run with their head held high - they're definitely deer with attitude - and it was great to see them in the wild!&quot;
+
+While Logie is flying around the Fiordland mountains, Brownie and Callum are bashing through the bush, hoping to shoot a deer for the cook up, but after a long day's march they returned to the hut empty handed. The thought of swede on it's own is enough to send Callum out for plan 'B'. Leaving Brownie at the hut to prepare for the meal, Callum picks up Logie and they head to Milford Sound, where after meeting up with Jeff Shanks, Logie take's his second helicopter ride of the day.
+
+When hunting venison, the helicopter is invaluable, giving quick access to the remote areas where deer are found and providing the speed and manoeuvrability to keep up with them. It's not long before they come across a small group of hinds. Callum's shooting is accurate and death comes quick and clean. There is venison for the cook-up and plenty to spare for a few more Bracken Hall pies.
+
+Logie and Callum return to Jock's hut where Brownie is waiting with fire blazing. He gets to work preparing a great southern treat - seared venison back-straps, with sauteed mushrooms on grated southern swede, washed down with Vidal Reserve Merlot Cabernet Sauvignon. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1260738901</lastupdated>
+  <seasonid>152021</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359401</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Seafood Stew</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown head to the Far North, rolling out the lines for fresh fish and digging deep for tuatuas.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259726928</lastupdated>
+  <seasonid>152031</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359411</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Oysters &amp; Venison</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown are in the Deep South dredging up Foveaux oysters and hunting the elusive Whitetail deer.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259726963</lastupdated>
+  <seasonid>152031</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359421</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Wild Turkey</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown are hanging in the Hokianga and talking turkey with wildman Chris McGarry.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259726976</lastupdated>
+  <seasonid>152031</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359431</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Salmon</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown are on the banks of the Rakaia River, rubbing shoulders with the red and blacks in search of the great southern salmon run.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259726992</lastupdated>
+  <seasonid>152031</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359441</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Tahr</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown head high into the Mackenzie Country for the autumn muster, and track down tahr with local linesman Barry Green.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259727008</lastupdated>
+  <seasonid>152031</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359451</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Snapper</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown cast for snapper on Great Barrier Island, raising the stakes by entering the local fishing competition.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259727023</lastupdated>
+  <seasonid>152031</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359461</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Wallaby</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown brave the snow to hunt down wallaby for a cook up at an historic Waimate homestead.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259727038</lastupdated>
+  <seasonid>152031</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359471</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Quail</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown are in the Upper Moutere Valley, bagging quail to roast in a vineyard adobe oven.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259727052</lastupdated>
+  <seasonid>152031</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359481</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Butterfish &amp; Crayfish</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown catch cray with Clarkie from Nin's Bin caravan and spear butterfish with Barnacle Bill for a stunning seafood risotto.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259727065</lastupdated>
+  <seasonid>152031</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+<Episode>
+  <id>1359491</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Young</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Goat</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Logan and Brown head up the Mokau River for a taste of wild goat, fresh whitebait patties and riverside tunes with The Bads.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1259727090</lastupdated>
+  <seasonid>152031</seasonid>
+  <seriesid>126731</seriesid>
+</Episode>
+</Data>

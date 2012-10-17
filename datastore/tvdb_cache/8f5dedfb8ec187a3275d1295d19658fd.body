@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>85471</id>
+  <Actors>|Joe McFadden|Peter Capaldi|Bill Paterson|David Robb|Dougray Scott|Stella Gonet|Valerie Edmond|</Actors>
+  <Airs_DayOfWeek>Monday</Airs_DayOfWeek>
+  <Airs_Time>21:30</Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>1996-11-04</FirstAired>
+  <Genre>|Drama|</Genre>
+  <IMDB_ID>tt0115145</IMDB_ID>
+  <Language>en</Language>
+  <Network>BBC</Network>
+  <NetworkID></NetworkID>
+  <Overview>An adaptation of Iain Banks' acclaimed novel. It all begins when History student Prentice returns home to attend his grandmother’s funeral. As the McHoan family gathers together to mark the solemn occasion, old disagreements continue to fester and old acquaintances are renewed. Following the unexpected death of another close relative, Prentice begins to question the past: why did his Uncle Rory suddenly disappear and where did he go? Reading his Uncle Rory’s unpublished novel may provide the answers he is seeking but it also unearths some dark family secrets he didn’t bargain for.</Overview>
+  <Rating>9.0</Rating>
+  <RatingCount>4</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID>10904</SeriesID>
+  <SeriesName>The Crow Road</SeriesName>
+  <Status>Ended</Status>
+  <added>2009-03-14 01:56:40</added>
+  <addedBy>2897</addedBy>
+  <banner>graphical/85471-g.jpg</banner>
+  <fanart>fanart/original/85471-1.jpg</fanart>
+  <lastupdated>1340216596</lastupdated>
+  <poster>posters/85471-3.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>444921</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Gavin Miller</Director>
+  <EpImgFlag>3</EpImgFlag>
+  <EpisodeName>Prentice</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1996-11-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Student Prentice McHoan carries out his recently deceased grandmother's request to find out what happened to his Uncle Rory, who disappeared seven years before. The chance discovery of a novel that Rory had begun working on at the time of his disappearance takes Prentice and his childhood friend Ashley on a complex journey through his family history.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|iain Banks (author)|Bryan Elsley|</Writer>
+  <absolute_number>1</absolute_number>
+  <filename>episodes/85471/444921.jpg</filename>
+  <lastupdated>1293027906</lastupdated>
+  <seasonid>41770</seasonid>
+  <seriesid>85471</seriesid>
+</Episode>
+<Episode>
+  <id>444922</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Gavin Miller</Director>
+  <EpImgFlag>3</EpImgFlag>
+  <EpisodeName>Kenneth</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1996-11-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Prentice McHoan is looking for his long lost Uncle Rory. He uses his uncle's unfinished novel to put together a picture of his extraordinary family.
+He also continues to pursue the gorgeous Verity, but makes a devastating discovery about the object of his affections.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|iain Banks (author)|Bryan Elsley|</Writer>
+  <absolute_number>2</absolute_number>
+  <filename>episodes/85471/444922.jpg</filename>
+  <lastupdated>1293027959</lastupdated>
+  <seasonid>41770</seasonid>
+  <seriesid>85471</seriesid>
+</Episode>
+<Episode>
+  <id>444923</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Gavin Miller</Director>
+  <EpImgFlag>3</EpImgFlag>
+  <EpisodeName>Fergus</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1996-11-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The McHoan family are devastated by the death of Kenneth, while Prentice is dismayed by the news that Verity is pregnant. And Ashley Watt provides another step forward in solving the mystery of Rory.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|iain Banks (author)|Bryan Elsley|</Writer>
+  <absolute_number>3</absolute_number>
+  <filename>episodes/85471/444923.jpg</filename>
+  <lastupdated>1293028006</lastupdated>
+  <seasonid>41770</seasonid>
+  <seriesid>85471</seriesid>
+</Episode>
+<Episode>
+  <id>444924</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Gavin Miller</Director>
+  <EpImgFlag>3</EpImgFlag>
+  <EpisodeName>Rory</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1996-11-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The last pieces of the jigsaw puzzle are falling into place, as Prentice discovers Rory's final, unbelievable, secret about the McHoan family. The main characters gather for the final showdown, but will Prentice have the courage to see it through, and will he finally get the woman he loves?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|iain Banks (author)|Bryan Elsley|</Writer>
+  <absolute_number>4</absolute_number>
+  <filename>episodes/85471/444924.jpg</filename>
+  <lastupdated>1293028043</lastupdated>
+  <seasonid>41770</seasonid>
+  <seriesid>85471</seriesid>
+</Episode>
+</Data>

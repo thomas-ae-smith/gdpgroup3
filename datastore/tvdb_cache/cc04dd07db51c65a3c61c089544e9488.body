@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>74438</id>
+    <Actors>|Zoe Wanamaker|Robert Lindsay|Kris Marshall|Gabriel Thomson|Daniela Denby-Ashe|Siobhan Hayes|Daisy Donovan|Noah Davis|Thomas Davis|</Actors>
+    <Airs_DayOfWeek>Friday</Airs_DayOfWeek>
+    <Airs_Time>8:30 pm</Airs_Time>
+    <ContentRating>TV-PG</ContentRating>
+    <FirstAired>2000-09-01</FirstAired>
+    <Genre>|Comedy|</Genre>
+    <IMDB_ID>tt0257315</IMDB_ID>
+    <Language>en</Language>
+    <Network>BBC One</Network>
+    <NetworkID></NetworkID>
+    <Overview>My Family is about the life of the Harpers, a fictional middle-class English family, who live in 78 Lancaster Road, Chiswick, London. Ben, a dentist, and Susan, a tour guide who later works for an art gallery, have three children, Nick, Janey and Michael, all of whom cause problems in their own way. While Susan is a control freak, Ben prefers to leave the children to it and tries not to get involved.</Overview>
+    <Rating>8.5</Rating>
+    <RatingCount>13</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID>2687</SeriesID>
+    <SeriesName>My Family</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/74438-g2.jpg</banner>
+    <fanart>fanart/original/74438-1.jpg</fanart>
+    <lastupdated>1346862575</lastupdated>
+    <poster>posters/74438-2.jpg</poster>
+    <zap2it_id>SH399792</zap2it_id>
+  </Series>
+</Data>

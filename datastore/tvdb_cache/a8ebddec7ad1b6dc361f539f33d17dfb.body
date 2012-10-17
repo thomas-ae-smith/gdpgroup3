@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>227081</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek>Thursday</Airs_DayOfWeek>
+  <Airs_Time>09:00pm</Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>2010-06-05</FirstAired>
+  <Genre>|Documentary|Talk Show|</Genre>
+  <IMDB_ID>tt1662495</IMDB_ID>
+  <Language>en</Language>
+  <Network></Network>
+  <NetworkID></NetworkID>
+  <Overview></Overview>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime>240</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Channel 4's Alternative Election Night</SeriesName>
+  <Status>Ended</Status>
+  <added>2011-01-30 03:44:27</added>
+  <addedBy>301661</addedBy>
+  <banner></banner>
+  <fanart>fanart/original/227081-1.jpg</fanart>
+  <lastupdated>1296391968</lastupdated>
+  <poster></poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>3579981</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Channel 4's Alternative Election Night</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2010-05-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Broadcast live, in front of an audience of comedy enthusiasts of mixed political persuasion. The hosts will respond to news and up-to-the minute results interacting with the studio audience, and giving their inimitable take on the election as it unfolds.
+
+The show promises satire and sass, minus the staid political swing-o-meters. As the main results pour in, pundits and an in-studio bookmaker analyse the facts with no-nonsense, non-partisan predictions.
+
+Together with the live studio action there are some specially recorded shows, played out in segments throughout the night, including You Have Been Watching Election Special with Robert Webb; calls from the Fonejacker (Kayvan Novak), plus a Come Dine with Me Election Special, featuring Edwina Currie, Brian Paddick, Derek Hatton and Rod Liddle.
+
+The evening will provide spiky and intelligent coverage of the results, once the polls have closed, and the gloves are off.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/227081/3579981.jpg</filename>
+  <lastupdated>1296388176</lastupdated>
+  <seasonid>409841</seasonid>
+  <seriesid>227081</seriesid>
+</Episode>
+</Data>

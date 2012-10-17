@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>201911</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek>Sunday</Airs_DayOfWeek>
+    <Airs_Time>17;30</Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>1966-11-13</FirstAired>
+    <Genre>|Action and Adventure|Mini-Series|</Genre>
+    <IMDB_ID>tt0240301</IMDB_ID>
+    <Language>en</Language>
+    <Network>BBC One</Network>
+    <NetworkID></NetworkID>
+    <Overview>The BBC produced this mini-series version of Alexandre Dumas's classic THREE MUSKETEERS tale in 1966. Among the cast members helping to bring the tale to life are Brian Blessed and Gary Watson Dumas’ timeless tale of epic adventure and swashbuckling romance comes to life in this classic BBC production starring Brian Blessed, Jeremy Young and Gary Watson. Determined to fulfill his dream of becoming a musketeer, D’Artagnan leaves home with only an old horse and a letter of recommendation to the Captain of the King’s Musketeers. Although the letter is stolen, he quickly proves himself worthy and joins the ranks of Athos, Porthos and Aramis. The four become fast friends and band together to protect the King of France from the devious Cardinal Richilieu who plans to overthrow the monarchy.</Overview>
+    <Rating>8.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>25</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>The Three Musketeers (1966)</SeriesName>
+    <Status>Ended</Status>
+    <added>2010-10-30 12:10:21</added>
+    <addedBy>154081</addedBy>
+    <banner></banner>
+    <fanart></fanart>
+    <lastupdated>1290734305</lastupdated>
+    <poster>posters/201911-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>257343</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>2012-03-18</FirstAired>
+  <Genre>|Comedy|</Genre>
+  <IMDB_ID>tt2250661</IMDB_ID>
+  <Language>en</Language>
+  <Network></Network>
+  <NetworkID></NetworkID>
+  <Overview>When evil ninja Bruce sets out to obtain Ultimate Ninja Power and rule the world, it's up to Gordon to stop him. After all, it takes a ninja to defeat a ninja. And a ninja is exactly what Gordon is. </Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>10</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Ninja the Mission Force</SeriesName>
+  <Status>Continuing</Status>
+  <added>2012-03-18 08:19:53</added>
+  <addedBy>360929</addedBy>
+  <banner></banner>
+  <fanart>fanart/original/257343-1.jpg</fanart>
+  <lastupdated>1332090690</lastupdated>
+  <poster>posters/257343-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4288554</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Ninja Begininator</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2012-02-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Gordon enlists Brandon Lee to retrieve a sacred ninja artifact from a notorious band of cheese smugglers.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/257343/4288554.jpg</filename>
+  <lastupdated>1332085808</lastupdated>
+  <seasonid>488009</seasonid>
+  <seriesid>257343</seriesid>
+</Episode>
+<Episode>
+  <id>4288555</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Ninja Godfather</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2012-02-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Gordon receives a ninja challenge while Richard Harrison infiltrates the mafia.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/257343/4288555.jpg</filename>
+  <lastupdated>1332085691</lastupdated>
+  <seasonid>488009</seasonid>
+  <seriesid>257343</seriesid>
+</Episode>
+<Episode>
+  <id>4288568</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Citizen Ninja</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2012-03-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Gordon tells his wife how he became a ninja, back when he was played by Orson Welles.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/257343/4288568.jpg</filename>
+  <lastupdated>1332086990</lastupdated>
+  <seasonid>488009</seasonid>
+  <seriesid>257343</seriesid>
+</Episode>
+<Episode>
+  <id>4288583</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>'N' is for Ninja</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2012-03-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Encyclopedia salesmen are invading Canada, and Gordon has real problems.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/257343/4288583.jpg</filename>
+  <lastupdated>1332090741</lastupdated>
+  <seasonid>488009</seasonid>
+  <seriesid>257343</seriesid>
+</Episode>
+</Data>

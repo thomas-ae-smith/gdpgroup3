@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>77912</id>
+  <Actors>|Brianne Leary|Byron Chung|Dana Elcar|Denise Dubarry|Dirk Blocker|James Whitmore Jr.|Jeb Adams|Jeff MacKay|Joey Aresco|John Larroquette|Katherine Cannon|Kathy McCullen|Larry Manetti|Nancy Conrad|Red West|Robert Conrad|Robert Ginty|Simon Oakland|W.K. Stratton|</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>1976-09-21</FirstAired>
+  <Genre>|Drama|</Genre>
+  <IMDB_ID>tt0073961</IMDB_ID>
+  <Language>en</Language>
+  <Network>NBC</Network>
+  <NetworkID></NetworkID>
+  <Overview>In World War II Marine Corps Major Greg 'Pappy' Boyington commanded a squadron of fighter pilots. They were a collection of misfits and screwballs who became the terrors of the South Pacific. They were known as the Black Sheep.</Overview>
+  <Rating>8.2</Rating>
+  <RatingCount>5</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID>73</SeriesID>
+  <SeriesName>Black Sheep Squadron</SeriesName>
+  <Status>Ended</Status>
+  <added></added>
+  <addedBy></addedBy>
+  <banner>graphical/77912-g.jpg</banner>
+  <fanart>fanart/original/77912-2.jpg</fanart>
+  <lastupdated>1349269804</lastupdated>
+  <poster>posters/77912-4.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>1967891</id>
+  <Combined_episodenumber>0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>intro before showstart</EpisodeName>
+  <EpisodeNumber>0</EpisodeNumber>
+  <FirstAired>1976-09-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Robert Conrad and Pappy Boyington in interview in &quot;Today&quot; right before the start of the first episode/pilot</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1269940249</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263526</id>
+  <Combined_episodenumber>1.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>1.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Russ Mayberry|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Flying Misfits (1)</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1976-09-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Major Greg Boyington, upset with his new desk job, goes against regulations and forms a fighter squadron using pilots thrown out of other squadrons for disciplinary reasons.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.7</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Stephen J. Cannell|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263526.jpg</filename>
+  <lastupdated>1286646942</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263527</id>
+  <Combined_episodenumber>2.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>2.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Russ Mayberry|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Flying Misfits (2)</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1976-09-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Pappy continues cutting corners to find a home base for his new squadron, absconding with a bunch of planes due for repairs that can barely fly.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Stephen J. Cannell|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263527.jpg</filename>
+  <lastupdated>1286647011</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263528</id>
+  <Combined_episodenumber>3.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>3.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Larry Doheny|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Best Three Out of Five</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1976-09-23</FirstAired>
+  <GuestStars>|Charles Napier|Noel Conlon|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Col. Lard cuts off supplies to the 214th making it impossible for the squadron to fly any missions.  He flat out tells Boyington that a squadron that stands down for too many days can be decommisioned.  Unfotunately General Moore is stateside and is not there to pull rank on Lard.
+Pappy gets the idea to put his squadron on R and R so that they cannot be cited for standing down.  Lard takes this opportunity to put Major Red Buell back in command of the squadron along with his men.  This is the same unit that Pappy conned to get their planes in order to start the 214th.
+While relaxing on a native island the Pappy gets word that the 214th has been reassigned to Buell.  When he and his men return to Vella La Cava they find Buell and his men there and they have taken over the camp.
+They have been unable to fly any missions because before he left, Pappy had Hutch take the points out of all the Corsairs.  Boyington plans to replace the parts and continue flying with his unit.  To usurp this p</Overview>
+  <ProductionCode>46201</ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Stephen J. Cannell|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263528.jpg</filename>
+  <lastupdated>1286647020</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263529</id>
+  <Combined_episodenumber>4.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>4.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Walter Doniger|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Small War</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1976-09-28</FirstAired>
+  <GuestStars>|Rene Auberjonois|Lloyd Kino|Hatsuo Uda|Dale Ishimoto|Jill Jaress|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>During a dogfight, TJ accidently shoots down Pappy's plane.  Pappy is able to parachute from his plane, but he is over an enemy island.
+The squadron returns to Vella La Cava where Capt. Gutterman does not hold much hope for Greg's rescue.  He tells the men that they'd better start worrying about all those courtmartials they have waiting for them.
+Meanwhile on the island, Greg is found by an Austrailian navy man, Lt. Hooper, who has been on the island since his boat went down a few months previous.  He has found a way to exist on the island unbeknownst to the Japanese that inhabit it.  Greg immediately makes plans to try to get off the island but his companion is in no hurry to get back to the war.
+On Vella La Cava the moral of the squadron gets lower everyday.  Many men refuse to fly and Jim Gutterman does nothing to motivate them.  Their mission go unflown drawing attention from General Moore.
+Pappy has found an old Japanese plane that was wrecked on the island and steals parts from t</Overview>
+  <ProductionCode>46204</ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Philip DeGuere|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263529.jpg</filename>
+  <lastupdated>1286647029</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263530</id>
+  <Combined_episodenumber>5.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>5.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|John Peyser|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>High Jinx</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1976-10-05</FirstAired>
+  <GuestStars>|Donald Petrie|Richard Rasof|Phil Simms|Frank Parker|Walt Davis|Tim Haldeman|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Greg and Larry go to Espritos for a special briefing.  Greg learns that the Japanese have a new kind of zero that is more difficult to shoot down.  He and other squadron leaders are advised to not engage the enemy until a viable defense can be found.  Greg can't believe that they are being told not to fight.
+After the meeting he goes to find Larry.  He is in the middle of a poker game with several other officers.  Greg watches them finish one hand then tells Casey that it is time to go.  Before they leave one of the other players stands up and introduces himself to Greg as Doug Rafferty.
+When they are alone Larry tells Greg that Doug is Admiral Rafferty's son, and Boyington quickly deducts that Doug would come in handy as a contact if he was to be in the 214th.  Pulling a few strings he has Rafferty assigned to the Black Sheep Squadron.
+When Doug arrives at Vella La Cava and deplanes, a mechanic tells Jim Gutterman that he won't believe who got off the transport...Doug Rafferty.  Jim l</Overview>
+  <ProductionCode>46202</ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Ken Pettus|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263530.jpg</filename>
+  <lastupdated>1286647037</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263531</id>
+  <Combined_episodenumber>6.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>6.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Jackie Cooper|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Prisoners of War</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1976-10-12</FirstAired>
+  <GuestStars>|Dennis Robertson|Jerry Hardin|Rob Clotworthy|Terry Hinz|Michael J. McDonough|Keith Walker|Elaine Pepparde|Clyde Kusatsu|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>An enemy plane is shot down as it flies over Vella La Cava during an attack by the Japanese.  The pilot is taken prisoner and a strange device is found on his plane.  Through a series of mistakes, word of the prisoner never makes it to the brass at Espritos.
+It turns out the Japanese pilot was born and raised in the US but still felt enough allegiance to Japan to fight on that side.  The Black Sheep befriend the pilot who also plays a mean game of ping pong.
+The sheep set up a ping pong match with the Seabees and expect their star player, TJ, to clean up during the match, but when TJ is injured, &quot;&quot;Rocky&quot;&quot; as the squadron nick named him steps in to play.
+TJ and Rocky have a talk about what it is like being a fighter pilot and Rocky admits to TJ that he still gets scared everytime he goes up. TJ is grateful that Rocky wants to talk about this becuase no one else wants to discuss the issue with him.  The form an awkward friendship becuase the enemies have so much in common.
+&quot;&quot;Rocky&quot;&quot; is unwil</Overview>
+  <ProductionCode>46205</ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Ken Pettus|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263531.jpg</filename>
+  <lastupdated>1286647047</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263532</id>
+  <Combined_episodenumber>7.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid>BBBS_DISC2</DVD_discid>
+  <DVD_episodenumber>7.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Lawrence Doheny|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Presumed Dead</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1976-10-26</FirstAired>
+  <GuestStars>|Kent McCord|James Hong|Jeff David|Norman Burton|Eric Server|Robert Kino|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Captain Charlie Dobson,a naval flyer, has been shot done and presumed lost at sea.  He has actually been picked by the Japanese and put through an intensive brainwashing program.  He is taken by submarine to just off Vella La Cava.  The Japanese tell him they are planting a val bag on the beach with explosives and timers for him to use at a later time.  He is then placed in an infatable raft at sea near Vella La Cava.
+Gutterman and Anderson are flying towards a photo recon mission when they spot Dobson and call for the air-sea rescue to pick him up.  They continue on to their target, a supposably deserted island with an old Japanese airstrip.  When they approach to shoot the pictures, they come under heavy fire from ground artillery.
+Meanwhile, Dobson has been rescued and brought to Vella La Cava.  The flight surgeon, Dr. Jerry Corgney, asks Pappy and the Black Sheep to meet Dobson.  Pappy knows Dobson from their time in flight school and thinks that Dobson is acting strangely, althoug</Overview>
+  <ProductionCode>46207</ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Milt Rosen|Philip DeGuere|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263532.jpg</filename>
+  <lastupdated>1331467354</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263533</id>
+  <Combined_episodenumber>8.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>8.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director></Director>
+  <EpImgFlag>3</EpImgFlag>
+  <EpisodeName>The Meatball Circus</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1976-11-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Pappy leads the Black Sheep on a mission to destroy a Japanese aircraft carrier in a squadron composed of captured Japanese planes.</Overview>
+  <ProductionCode>46209</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Stephen J. Cannell|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263533.jpg</filename>
+  <lastupdated>1286647060</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263534</id>
+  <Combined_episodenumber>9.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>9.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Ivan Dixon|Alex Beaton|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Up for Grabs</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1976-11-16</FirstAired>
+  <GuestStars>|James Saito|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Vella la Cava is taken over by the Japanese, in anticipation of a surprise visit from General MacArthur.
+The morning starts out as TJ and Casey go fishing before the camp is taken over.  The rest of the camp sleeps, except for Anderson and Hutch.  They hear Meatball making noises in the jungle and go to investigate.  The noise wakes Pappy, but it's too late.  Everyone is awakened by the Japanese soldiers and herded into the sheep pen.  Pappy does what he can to warn TJ and Casey by turning the squadron flag upside down and playing reveille.
+As TJ and Casey return to camp, they discover the Japanese.  TJ overhears their plans to capture General MacArthur and creates a diversion so Casey can get to his plane and try to warn the general.  He makes it into the air and tries to send a message, but it's garbled and MacArthur's plane can't read him.  Soon after, Casey is attacked by zero's and has to jump before the message was delivered.
+On the ground, the Japanese commando in charge grabs G</Overview>
+  <ProductionCode>46206</ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Stephen J. Cannell|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263534.jpg</filename>
+  <lastupdated>1286647075</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263535</id>
+  <Combined_episodenumber>10.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>10.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Jackie Cooper|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Anyone for Suicide?</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>1976-11-23</FirstAired>
+  <GuestStars>|Ed Gilbert|Dale Ishimoto|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Everyone thinks that Pappy's bout with malaria has caused him to go insane when he proposes a suicide mission starting with a dead-stick landing on a Japanese-held island.</Overview>
+  <ProductionCode>46210</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Ken Pettus|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263535.jpg</filename>
+  <lastupdated>1286647083</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263536</id>
+  <Combined_episodenumber>11.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>11.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Jeannot Szwarc|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>New Georgia On My Mind</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>1976-11-30</FirstAired>
+  <GuestStars>|James Luisi|William Lucking|John Davey|Muni Zano|Ken Lesco|Dennis Madalone|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Black Sheep are ousted from their quarters when a Marine paratroop battalion takes over their island to use as a training area for an upcoming strike.</Overview>
+  <ProductionCode>46211</ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Ken Pettus|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263536.jpg</filename>
+  <lastupdated>1286647094</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263537</id>
+  <Combined_episodenumber>12.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>12.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Russ Mayberry|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Cat's Whiskers</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>1976-12-07</FirstAired>
+  <GuestStars>|Michael Talbott|Jeffrey Reese|Steven Hood|Thomas H. Middleton|Frank Maxwell|Jill Jaress|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Pappy decides to make an unauthorized attack against a semingly impregnable Japanese radar station in order to generate good PR, which can be used to avoid his impending court martial.</Overview>
+  <ProductionCode>46203</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Milt Rosen|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263537.jpg</filename>
+  <lastupdated>1297721818</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263538</id>
+  <Combined_episodenumber>1.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>1.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>|William Wiard|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Love and War</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>1976-12-14</FirstAired>
+  <GuestStars>|Leslie Charleson|Sharon Ulrick|Jeannie Fitzsimmons-Cowan|George Marhsall Ruge|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The squadron is granted a few days of rest and relaxation at Espritos Marcos.  There Jerry Bragg runs into Annie, an old acquaintance from his home town.  She is a nurse that has just been stationed  in the South Pacific.  He introduces her to the rest of the guys and she seems to have the eye for Larry.
+An air raid alarm goes of and while trying to find shelter, Jerry and Annie find themselves drenched by sprinklers.  Annie takes Jerry back to her quarters so that they can get dried off.  They kiss and Jerry asks to see her again the next night.  Annie only agrees to the date if he can find a date for her friend and she suggests Larry.  Bragg reluctantly agrees and manages to convince Larry to join him in this double date.</Overview>
+  <ProductionCode>46214</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Philip DeGuere|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263538.jpg</filename>
+  <lastupdated>1286647955</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263539</id>
+  <Combined_episodenumber>2.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>2.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>|Lawrence Doheny|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The War Biz Warrior</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>1977-01-04</FirstAired>
+  <GuestStars>|James Darren|Robert Gooden|Ford Rainey|John Haymer|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A Hollywood actor, Rod Towers, is sent to the South Pacific on a media tour to boost morale and polish his image of a strong hero type.  He is stationed with the Black Sheep, most of whom are thrilled to have a star among them.  But the thrill soon wears off as he is given 'command' of the squadron, though be it mostly ceremonial.  And he takes credit for fighting action when he's actually watching it from a safe distance away.</Overview>
+  <ProductionCode>46212</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Gordon Dawson|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263539.jpg</filename>
+  <lastupdated>1286647140</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263540</id>
+  <Combined_episodenumber>3.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>3.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>|Barry Shear|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Deadliest Enemy of All (1)</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>1977-01-11</FirstAired>
+  <GuestStars>|Linda Scruggs|Nancy Conrad|Anne Francis|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Pappy suffers severe burns after pulling a pilot from a burning plane. While recovering he falls for the nurse who is taking care of him.</Overview>
+  <ProductionCode>46218</ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Philip DeGuere|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263540.jpg</filename>
+  <lastupdated>1286647151</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263541</id>
+  <Combined_episodenumber>4.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>4.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>|Barry Shear|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Deadliest Enemy of All (2)</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired>1977-01-18</FirstAired>
+  <GuestStars>|Linda Scruggs|Nancy Conrad|Anne Francis|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>While recovering from severe burns, Pappy has fallen for the nurse who is taking care of him, but then discovers that she is married and her husband is missing in action in Europe.</Overview>
+  <ProductionCode>46219</ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Philip DeGuere|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263541.jpg</filename>
+  <lastupdated>1286647165</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263542</id>
+  <Combined_episodenumber>5.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>5.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>|Edward Dein|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Devil in the Slot</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired>1977-01-25</FirstAired>
+  <GuestStars>|Rollin Moriyama|Johnny Fain|Byron Chung|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Gutterman suffers battle shock after he is shot down by a Japanese ace pilot. Sgt. Micklin becomes the Black Sheep's new mechanic, making Pappy's life as difficult on the ground as the Japanese ace is making it in the sky.</Overview>
+  <ProductionCode>46216</ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Stephen J. Cannell|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263542.jpg</filename>
+  <lastupdated>1286647179</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263543</id>
+  <Combined_episodenumber>6.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>6.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>|Jackie Cooper|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Five the Hard Way</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired>1977-02-01</FirstAired>
+  <GuestStars>|Kenneth Mars|Frederick Herrick|Douglas Dirkson|James Gallanti|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Squadron member Don French is surprised at all the press coverage he receives after he chalks up his fourth air victory, making him one shy of the five it takes to become an ace.  The pressurre is turned up higher when his father arrives, hoping to be present when his son turns ace.  A troubled father/son relationship is revealed as the elder French's visit continues.</Overview>
+  <ProductionCode>46217</ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Ken Pettus|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263543.jpg</filename>
+  <lastupdated>1286647193</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263544</id>
+  <Combined_episodenumber>7.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>7.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>|Jackie Cooper|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Last Mission Over Sengai</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired>1977-02-08</FirstAired>
+  <GuestStars>|Frederick Herrick|Mills Watson|Dennis Fimple|Booth Colman|Fred Sadoff1|Alex Henteloff|Richard Doyle|Jeff Sampson|Hal Bokar|Michael Bandoni|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A new pilot whose family has military connections alleges that Pappy ordered an attack against American troops, leaving Pappy facing a court martial.</Overview>
+  <ProductionCode>46221</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Philip DeGuere|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263544.jpg</filename>
+  <lastupdated>1286647207</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263545</id>
+  <Combined_episodenumber>8.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>8.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>|Edward Dein|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Trouble at Fort Apache</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired>1977-02-15</FirstAired>
+  <GuestStars>|Joel Fabiani|James Keach|Les Lannom|Brianne Leary|Ron Kuhlman|Tim Haldeman|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Gen. Moore orders the Black Sheep to escort a squadron of experimental bombers, something the bomber squadron's commander refuses to let them do.</Overview>
+  <ProductionCode>46222</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Stephen J. Cannell|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263545.jpg</filename>
+  <lastupdated>1286647219</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263546</id>
+  <Combined_episodenumber>9.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>9.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>|Jackie Cooper|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Poor Little Lambs</EpisodeName>
+  <EpisodeNumber>21</EpisodeNumber>
+  <FirstAired>1977-02-22</FirstAired>
+  <GuestStars>|Lilyan Chauvin|Sorrell Booke|Bob Neill|Soon-Teck Oh|Jesse Dizon|Jim Ishida|George Cheung|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Returning from Espritos on a 'borrowed' plane Pappy, Anderson and Boyle run into trouble.  Boyle pilots the plane as Pappy and Anderson nap in the back and wakes them to tell them they must be lost.  They've been in the air too long and should have reached Vella La Cava.  Turns out the needle on the compass was stuck and now they are lost and running out of fuel.  They spot an island and turn towards it.  They are forced to parachute out.  All three land on the island, but they become separated and do not know the status of the others.
+The island is Japanese occupied.  Hearing the plane come down and seeing the parachutes, the Japanese send troups to investigate.  Pappy lands very close to the enemy and they surround him as he is trying to get free of his chute.  They are interupted by a jeep driving through and Pappy uses the opportunity to escape into the jungle.
+As the Japanese scoure the area to find the three men, Anderson and Boyle find each other and wonder about Pappy.  Anderso</Overview>
+  <ProductionCode>46225</ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Ken Pettus|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263546.jpg</filename>
+  <lastupdated>1286647272</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263547</id>
+  <Combined_episodenumber>10.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>10.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director>|Dana Elcar|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>W*A*S*P*S</EpisodeName>
+  <EpisodeNumber>22</EpisodeNumber>
+  <FirstAired>1977-03-01</FirstAired>
+  <GuestStars>|Kin Shriner|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Women's Air Service Pilots who arrive on the island to ferry bombers aren't supposed to fraternize with the Black Sheep, but a battle of the sexes ensues anyway.</Overview>
+  <ProductionCode>46224</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Philip DeGuere|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263547.jpg</filename>
+  <lastupdated>1286647288</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263548</id>
+  <Combined_episodenumber>11.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>11.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Last One for Hutch</EpisodeName>
+  <EpisodeNumber>23</EpisodeNumber>
+  <FirstAired>1977-03-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>After an enemy attack destroys their base and kills their mechanic, the Black Sheep Squadron is broken up and the men assigned to desk jobs in other units.</Overview>
+  <ProductionCode>46220</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Glen Olson|Rod Baker|James S. Crocker|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263548.jpg</filename>
+  <lastupdated>1286647365</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263549</id>
+  <Combined_episodenumber>12.0</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>12.0</DVD_episodenumber>
+  <DVD_season>2</DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Fastest Gun</EpisodeName>
+  <EpisodeNumber>24</EpisodeNumber>
+  <FirstAired>1977-03-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Pappy faces attack on three fronts: a Pentagon efficiency expert who is poking his nose into everything, a maintenance chief who's angry enough to kill him, and a Japanese ace who challenges him to a one-to-one dogfight.</Overview>
+  <ProductionCode>46226</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Stephen J. Cannell|Philip DeGuere|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263549.jpg</filename>
+  <lastupdated>1286647337</lastupdated>
+  <seasonid>13876</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263550</id>
+  <Combined_episodenumber>1.0</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>1.0</DVD_episodenumber>
+  <DVD_season>3</DVD_season>
+  <Director>|Larry Doheny|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Divine Wind</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1977-12-14</FirstAired>
+  <GuestStars>|James Saito|Soon-Teck Oh|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A chaplain comes to visit Vella La Cava.
+Through some paperwork error Bob Anderson is declared dead.  Anderson gets the feeling that he has bad karma and that he will die soon.
+The chaplain and Pappy both try to snap Bob out of this morose line of thinking.  But have little luck.  Bob spends alot of time contemplating his death.  We also find him playing the clarinet. He uses some music that he says he found on the island after it was abandoned by the Japanese.
+All the while the Seabees are building a hospital on the other side of the island.  This interferes with regular operations at 214's base.  Boyington finally figures out that through yet another paperwork error, they are building an ammo depot instead of a hospital and it becomes the target of enemy fighters.
+Bob's obsession with death ends when the chaplain finally looses his patience and decks Bob.  Shortly after this the Seabees realize their mistake but the enemy is coming in for an attatck.  The chaplain dies when he goes t</Overview>
+  <ProductionCode>49313</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Donald P. Bellisario|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263550.jpg</filename>
+  <lastupdated>1286647458</lastupdated>
+  <seasonid>13877</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263551</id>
+  <Combined_episodenumber>2.0</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>2.0</DVD_episodenumber>
+  <DVD_season>3</DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The 200 Pound Gorilla</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1977-12-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The promotion list arrives, giving Gen. Moore another star and making Sgt. Micklin a warrant officer, which causes him to become even more hostile towards the &quot;&quot;college boy&quot;&quot; pilots.</Overview>
+  <ProductionCode>49309</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Stephen J. Cannell|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263551.jpg</filename>
+  <lastupdated>1286647476</lastupdated>
+  <seasonid>13877</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263552</id>
+  <Combined_episodenumber>3.0</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>3.0</DVD_episodenumber>
+  <DVD_season>3</DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Hawk Flies on Sunday</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1977-12-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Squadron's chances of being assigned the mission to kill Admiral Yamamoto are lessened by T.J.'s romance with a Eurasian girl suspected of giving information to the Japanese.</Overview>
+  <ProductionCode>49312</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Frank Abatemarco|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263552.jpg</filename>
+  <lastupdated>1286647497</lastupdated>
+  <seasonid>13877</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263553</id>
+  <Combined_episodenumber>4.0</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>4.0</DVD_episodenumber>
+  <DVD_season>3</DVD_season>
+  <Director>|Edward Dein|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Wolves in the Sheep Pen</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1978-01-04</FirstAired>
+  <GuestStars>|Tim Matheson|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A Navy squadron, composed of cocky pilots fresh out of flight school, falsely claims to have sunk a Japanese radar ship in the Solomon slot.</Overview>
+  <ProductionCode>49303</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Donald P. Bellisario|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263553.jpg</filename>
+  <lastupdated>1286647511</lastupdated>
+  <seasonid>13877</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263554</id>
+  <Combined_episodenumber>5.0</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>5.0</DVD_episodenumber>
+  <DVD_season>3</DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Operation Stand-Down</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1978-01-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Black Sheep are pulled out of action and given a series of tests to reevaluate their physical fitness, combat tactics and flight proficiency.</Overview>
+  <ProductionCode>49306</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Donald P. Bellisario|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263554.jpg</filename>
+  <lastupdated>1286647527</lastupdated>
+  <seasonid>13877</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263555</id>
+  <Combined_episodenumber>6.0</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>6.0</DVD_episodenumber>
+  <DVD_season>3</DVD_season>
+  <Director>|Robert Conrad|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Ten'll Get You Five</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1978-01-18</FirstAired>
+  <GuestStars>|Scott Colomby|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Pappy meets his match in a sergeant who is escorting civilian VIPs around the Pacific theatre, and who cons Pappy into trading whiskey for oil that fails in the Black Sheep's engines during combat.</Overview>
+  <ProductionCode>49304</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Peter Lefcourt|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263555.jpg</filename>
+  <lastupdated>1286647539</lastupdated>
+  <seasonid>13877</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263556</id>
+  <Combined_episodenumber>7.0</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>7.0</DVD_episodenumber>
+  <DVD_season>3</DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Forbidden Fruit</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1978-02-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>As the Black Sheep are preparing for a dangerous night strike against Japanese bombers, things are disrupted by two new arrivals, an underage pilot and a nurse who happens to be Pappy's old flame -- and General Moore's daughter.</Overview>
+  <ProductionCode>49317</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Stephen J. Cannell|Donald P. Bellisario|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263556.jpg</filename>
+  <lastupdated>1286647561</lastupdated>
+  <seasonid>13877</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263557</id>
+  <Combined_episodenumber>8.0</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>8.0</DVD_episodenumber>
+  <DVD_season>3</DVD_season>
+  <Director>|Lawrence Doheny|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Fighting Angels</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1978-03-01</FirstAired>
+  <GuestStars>|Reb Brown|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Vella La Cava is overrun with Japanese commandos.  Col. Lard and Pappy must work together to keep the island out of enemy hands.  Is this possible?  A number of surprises in this one!</Overview>
+  <ProductionCode>49316</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Stephen J. Cannell|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263557.jpg</filename>
+  <lastupdated>1286647582</lastupdated>
+  <seasonid>13877</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263558</id>
+  <Combined_episodenumber>9.0</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>9.0</DVD_episodenumber>
+  <DVD_season>3</DVD_season>
+  <Director>|Dana Elcar|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Iceman</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1978-03-08</FirstAired>
+  <GuestStars>|Richard Jaeckel|Richard Narita|Harry Moses|Marcus Mukai|Michael Bond|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Pappy gets transferred back to the States to boost morale, denying him a rematch with a top Japanese air ace and placing the Black Sheep under the command of a no-nonsense by-the-book commander.</Overview>
+  <ProductionCode>49314</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Donald P. Bellisario|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263558.jpg</filename>
+  <lastupdated>1286647596</lastupdated>
+  <seasonid>13877</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263559</id>
+  <Combined_episodenumber>10.0</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>10.0</DVD_episodenumber>
+  <DVD_season>3</DVD_season>
+  <Director>|Lawrence Doheny|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Hotshot</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>1978-03-15</FirstAired>
+  <GuestStars>|Frank Converse|Richard Stanley|James Crittenden|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Black Sheep play uneasy hosts to a hotshot army pilot whose amiability masks his ambition to become the war's best fighter pilot.</Overview>
+  <ProductionCode>49318</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Donald P. Bellisario|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263559.jpg</filename>
+  <lastupdated>1286647624</lastupdated>
+  <seasonid>13877</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263560</id>
+  <Combined_episodenumber>11.0</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>11.0</DVD_episodenumber>
+  <DVD_season>3</DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Show Must Go On... Sometimes</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>1978-03-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Pappy cons a unit of lecherous Seabees into repairing the bomb blasted runway with a trumped up promise of a bawdy USO show after the work is done, only the only girls around are the island's four nurses.</Overview>
+  <ProductionCode>49301</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|James S. Crocker|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263560.jpg</filename>
+  <lastupdated>1286647648</lastupdated>
+  <seasonid>13877</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263561</id>
+  <Combined_episodenumber>12.0</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>12.0</DVD_episodenumber>
+  <DVD_season>3</DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Sheep in the Limelight</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>1978-03-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>While out on a mission, the squadron saves a transport plane from being shot down by zeros.  Unbeknownst to them one of the passengers in Eleanor Roosevelt.  The sheep become media darlings and get caught up in their own press.  This leads to problems on the ground and in the air.</Overview>
+  <ProductionCode>49319</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Frank Abatemarco|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263561.jpg</filename>
+  <lastupdated>1286647665</lastupdated>
+  <seasonid>13877</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+<Episode>
+  <id>263562</id>
+  <Combined_episodenumber>13.0</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>13.0</DVD_episodenumber>
+  <DVD_season>3</DVD_season>
+  <Director>|Donald P. Bellisario|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>A Little Bit of England</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>1978-04-06</FirstAired>
+  <GuestStars>|Peter Frampton|Ernie Hudson|Cheryl Lee Ralph|Tak Kubota|Michael Yama|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The show starts with Boyle and French trying to get a closer look at a showering Nurse Ellie.  They throw a golf ball into the water barrel and pretend they're looking for it. Ellie is none the wiser, but the other nurses come upon the scene and are none to happy with the little trick they are playing.  Nurse Nancy tells Boyle that he can forget about that night and the next and the next and that she never wants to see him again.
+On their mission that day the squadron strafes a harbor at Raubaul and comes out okay.  But as they are leaving the area Boyle spots a train and asks permission to go after it.  Greg has a feeling that he should not let him go as they have just enough fuel to get back to La Cava.  He lets Boyle and Casey take a run at the train.  Casey goes first and hits the target, passing over the train afterwards.  Boyle makes a better hit, causing a large explosion.  His plane flies through the explosion and catches on fire.
+Greg tells him to try to make it to England.  T</Overview>
+  <ProductionCode>49321</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Donald P. Bellisario|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/77912/263562.jpg</filename>
+  <lastupdated>1286647685</lastupdated>
+  <seasonid>13877</seasonid>
+  <seriesid>77912</seriesid>
+</Episode>
+</Data>

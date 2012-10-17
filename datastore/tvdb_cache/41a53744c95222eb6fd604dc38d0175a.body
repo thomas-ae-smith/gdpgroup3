@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>78090</id>
+    <Actors>|Brooke Langton|Eric Szmanda|Kelli Taylor|Mackenzie Gray|Jim Byrnes|Tim Curry|Joseph Bottoms|</Actors>
+    <Airs_DayOfWeek>Sunday</Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>1998-07-19</FirstAired>
+    <Genre>|Action and Adventure|Drama|Science-Fiction|</Genre>
+    <IMDB_ID>tt0163953</IMDB_ID>
+    <Language>en</Language>
+    <Network>USA Network</Network>
+    <NetworkID></NetworkID>
+    <Overview>Angela Bennett's a software engineer type who works from home and has few friends outside of cyberspace. Taking her first vacation in years she becomes embroiled in a web (sic) of computer espionage.</Overview>
+    <Rating>5.8</Rating>
+    <RatingCount>4</RatingCount>
+    <Runtime>45</Runtime>
+    <SeriesID>780</SeriesID>
+    <SeriesName>The Net</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/780-g.jpg</banner>
+    <fanart>fanart/original/78090-2.jpg</fanart>
+    <lastupdated>1342970169</lastupdated>
+    <poster>posters/78090-2.jpg</poster>
+    <zap2it_id>SH269516</zap2it_id>
+  </Series>
+</Data>

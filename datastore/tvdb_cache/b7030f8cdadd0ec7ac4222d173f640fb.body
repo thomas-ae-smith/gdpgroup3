@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>86241</id>
+  <Actors>|Tyler Francavilla|Dorian Brown|Tamera Mowry|David Weidoff|Tommy Dewey|</Actors>
+  <Airs_DayOfWeek>Monday</Airs_DayOfWeek>
+  <Airs_Time>9 PM</Airs_Time>
+  <ContentRating>TV-PG</ContentRating>
+  <FirstAired>2009-03-23</FirstAired>
+  <Genre>|Comedy|</Genre>
+  <IMDB_ID>tt1179914</IMDB_ID>
+  <Language>en</Language>
+  <Network>ABC Family</Network>
+  <NetworkID></NetworkID>
+  <Overview>Roommates follows the lives of a group of friends who are making their way through life after graduating from college. </Overview>
+  <Rating>8.0</Rating>
+  <RatingCount>2</RatingCount>
+  <Runtime>30</Runtime>
+  <SeriesID>75600</SeriesID>
+  <SeriesName>Roommates</SeriesName>
+  <Status>Ended</Status>
+  <added>2009-03-24 04:35:33</added>
+  <addedBy>5664</addedBy>
+  <banner>graphical/86241-g2.jpg</banner>
+  <fanart>fanart/original/86241-1.jpg</fanart>
+  <lastupdated>1325743818</lastupdated>
+  <poster>posters/86241-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>461011</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Roommate</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2009-03-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Mark moves in with his former crush, Katie, and her roommates, hoping she will fall for him. However, Mark doesn't make a great first impression with Hope, one of the roommates, who just happens to be Katie's best friend.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>5.3</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/86241/461011.jpg</filename>
+  <lastupdated>1237924105</lastupdated>
+  <seasonid>43701</seasonid>
+  <seriesid>86241</seriesid>
+</Episode>
+<Episode>
+  <id>461021</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Tarot</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2009-03-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Katie goes to a tarot card reader where she learns that she has already met her future husband. Now that she has learned this piece of information, Mark tries to convince Katie that he is that man.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/86241/461021.jpg</filename>
+  <lastupdated>1238553546</lastupdated>
+  <seasonid>43701</seasonid>
+  <seriesid>86241</seriesid>
+</Episode>
+<Episode>
+  <id>461031</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Lie</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2009-04-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hope persuades Mark and Thom into hiding her secret from Katie about her job.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/86241/461031.jpg</filename>
+  <lastupdated>1239219879</lastupdated>
+  <seasonid>43701</seasonid>
+  <seriesid>86241</seriesid>
+</Episode>
+<Episode>
+  <id>532421</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Break-In</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2009-04-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hope's father arrives unexpectedly and wants her to come home as he is unsatisfied with her job situation. Wishing to stay in New York, Hope makes believe that Mark is her boyfriend and that their love is enough reason to remain.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/86241/532421.jpg</filename>
+  <lastupdated>1240322891</lastupdated>
+  <seasonid>43701</seasonid>
+  <seriesid>86241</seriesid>
+</Episode>
+<Episode>
+  <id>532431</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Set-Up</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2009-04-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Katie sets Mark up on a blind date with Jenny, her former co-worker. Disaster ensues when Mark assumes that she is &quot;hetero-flexible&quot;.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/86241/532431.jpg</filename>
+  <lastupdated>1240342878</lastupdated>
+  <seasonid>43701</seasonid>
+  <seriesid>86241</seriesid>
+</Episode>
+<Episode>
+  <id>532441</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Mark-a-like</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2009-04-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Katie begins dating a new guy in an attempt to move on from Ben: a mattress store owner who resembles Mark, yet possesses the confidence that Mark lacks.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/86241/532441.jpg</filename>
+  <lastupdated>1241019354</lastupdated>
+  <seasonid>43701</seasonid>
+  <seriesid>86241</seriesid>
+</Episode>
+<Episode>
+  <id>532451</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Uninvited Thom</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2009-04-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hope asks for Mark's help in finding a new job after she quits working at the coffeehouse. But Mark's boss would prefer a hookup, and he's more interested in Katie than Hope. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/86241/532451.jpg</filename>
+  <lastupdated>1241020106</lastupdated>
+  <seasonid>43701</seasonid>
+  <seriesid>86241</seriesid>
+</Episode>
+<Episode>
+  <id>589011</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Green People</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2009-04-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Katie passes off a business idea of her own which she had stolen from Hope, then lies about what she had done and pretends she got Hope a job. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/86241/589011.jpg</filename>
+  <lastupdated>1241021400</lastupdated>
+  <seasonid>43701</seasonid>
+  <seriesid>86241</seriesid>
+</Episode>
+<Episode>
+  <id>589021</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Game Night</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2009-04-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Mark finally gets what he's been waiting for as the gang have a game night at the apartment. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/86241/589021.jpg</filename>
+  <lastupdated>1241022917</lastupdated>
+  <seasonid>43701</seasonid>
+  <seriesid>86241</seriesid>
+</Episode>
+<Episode>
+  <id>616161</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Tickets</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2009-05-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Mark uses theater tickets to try and win over Katie after she and David return from their business trip.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/86241/616161.jpg</filename>
+  <lastupdated>1241708478</lastupdated>
+  <seasonid>43701</seasonid>
+  <seriesid>86241</seriesid>
+</Episode>
+<Episode>
+  <id>616171</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Mother of James</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>2009-05-04</FirstAired>
+  <GuestStars>Marilu Henner</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The gang helps James' mom prepare for her first date since her divorce. But when things don't go well, she looks for comfort from Mark.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/86241/616171.jpg</filename>
+  <lastupdated>1268798316</lastupdated>
+  <seasonid>43701</seasonid>
+  <seriesid>86241</seriesid>
+</Episode>
+<Episode>
+  <id>616181</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Trash 'N Treasures</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>2009-05-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The evening does not go as expected when the roommates invite their ex's to attend a party with them. Katie still hasn't made up her mind between Mark or David.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/86241/616181.jpg</filename>
+  <lastupdated>1241709669</lastupdated>
+  <seasonid>43701</seasonid>
+  <seriesid>86241</seriesid>
+</Episode>
+<Episode>
+  <id>616191</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Old and the New</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>2009-05-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The season one finale finds Hope and James attempting to keep their relationship hushed. Meanwhile, Mark and Katie find themselves leaning on each other after facing a surprise in their relationships.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/86241/616191.jpg</filename>
+  <lastupdated>1241710811</lastupdated>
+  <seasonid>43701</seasonid>
+  <seriesid>86241</seriesid>
+</Episode>
+</Data>

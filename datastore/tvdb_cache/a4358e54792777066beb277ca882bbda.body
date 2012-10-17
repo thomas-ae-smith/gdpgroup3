@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>257343</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>2012-03-18</FirstAired>
+    <Genre>|Comedy|</Genre>
+    <IMDB_ID>tt2250661</IMDB_ID>
+    <Language>en</Language>
+    <Network></Network>
+    <NetworkID></NetworkID>
+    <Overview>When evil ninja Bruce sets out to obtain Ultimate Ninja Power and rule the world, it's up to Gordon to stop him. After all, it takes a ninja to defeat a ninja. And a ninja is exactly what Gordon is. </Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>10</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Ninja the Mission Force</SeriesName>
+    <Status>Continuing</Status>
+    <added>2012-03-18 08:19:53</added>
+    <addedBy>360929</addedBy>
+    <banner></banner>
+    <fanart>fanart/original/257343-1.jpg</fanart>
+    <lastupdated>1332090690</lastupdated>
+    <poster>posters/257343-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

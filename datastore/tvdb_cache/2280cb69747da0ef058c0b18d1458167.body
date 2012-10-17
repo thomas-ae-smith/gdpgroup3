@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>85259</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>1993-02-23</FirstAired>
+  <Genre>|Documentary|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network></Network>
+  <NetworkID></NetworkID>
+  <Overview>Real life stories following the fortunes of the crew of the RNLI Salcombe lifeboat.</Overview>
+  <Rating>10.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime>25</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Lifeboat</SeriesName>
+  <Status>Ended</Status>
+  <added>2009-02-23 06:35:33</added>
+  <addedBy>8150</addedBy>
+  <banner>graphical/85259-g.jpg</banner>
+  <fanart>fanart/original/85259-1.jpg</fanart>
+  <lastupdated>1235404744</lastupdated>
+  <poster></poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>439380</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Graham Johnston</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Shaken But Not Stirred</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1993-02-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A ship carrying full gas tanks is on fire - it is a floating bomb waiting to go off. This is every lifeboat man or woman’s nightmare and yet within minutes the lifeboat and its crew are on their way. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1235402242</lastupdated>
+  <seasonid>41219</seasonid>
+  <seriesid>85259</seriesid>
+</Episode>
+<Episode>
+  <id>439388</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>In Safe Hands</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1993-02-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>It's 1.30am on a stormy winter's night and a fully laden coaster has lost all power. The wind and tide are pushing the boat ever closer to the rocks. This is the story of a dangerous and exhausting rescue that earns the coxswain Frank Smith the RNLI medal for bravery. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1235403307</lastupdated>
+  <seasonid>41219</seasonid>
+  <seriesid>85259</seriesid>
+</Episode>
+<Episode>
+  <id>439424</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>By Invitation Only</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Lucie Powlesland, the first female crew member in the history of the Salcombe lifeboat, joins the crew in a race against time. The race is to rescue four inexperienced divers who have been missing at sea for many hours and unlikely to survive a night in the water.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1235403327</lastupdated>
+  <seasonid>41219</seasonid>
+  <seriesid>85259</seriesid>
+</Episode>
+<Episode>
+  <id>439454</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Never a Cross Word Spoken</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>As the summer sun comes out so do the water sports enthusiasts the estuary is awash with pleasure boats - it's the start of a busy season for the crew of The Baltic Exchange II. The extra work load all adds to the strain of being on call 24 hours a day what will be the reaction of the crew, their families and friends.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1235403351</lastupdated>
+  <seasonid>41219</seasonid>
+  <seriesid>85259</seriesid>
+</Episode>
+<Episode>
+  <id>439455</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Friendly rivals</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>August sees a record number of call outs for the lifeboat. A swimmer is stranded on the rocks, a diver is rescued by a fishing boat and to the crew's annoyance, there is an increasing number of false alarms. The crew have a friendly rivalry with the RAF Air Sea Rescue helicopter as to who will be first on the scene but all this is put aside when they are called out to a life or death rescue.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1235403369</lastupdated>
+  <seasonid>41219</seasonid>
+  <seriesid>85259</seriesid>
+</Episode>
+<Episode>
+  <id>439456</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Let Not the Deep Swallow Me Up</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A yacht is in distress on Salcombe's notorious sand bar. It is a dangerous place - made worse by the weather.  76 years earlier in similar conditions the sand bar caused the capsize of Salcombe's lifeboat - all but two crew members lost their lives. The crew also find that life on dry land is not as smooth as they would like.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1235403381</lastupdated>
+  <seasonid>41219</seasonid>
+  <seriesid>85259</seriesid>
+</Episode>
+</Data>

@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>210171</id>
+  <Actors>|Mireille Enos|Joel Kinnaman|Billy Campbell|Kristin Lehman|Eric Ladin|Brent Sexton|Michelle Forbes|Callum Keith Rennie|</Actors>
+  <Airs_DayOfWeek>Sunday</Airs_DayOfWeek>
+  <Airs_Time>21:00</Airs_Time>
+  <ContentRating>TV-14</ContentRating>
+  <FirstAired>2011-04-03</FirstAired>
+  <Genre>|Action and Adventure|Drama|</Genre>
+  <IMDB_ID>tt1637727</IMDB_ID>
+  <Language>en</Language>
+  <Network>AMC</Network>
+  <NetworkID></NetworkID>
+  <Overview>From writer, executive producer and series showrunner Veena Sud (Cold Case), The Killing is based on the wildly successful Danish television series Forbrydelsen and tells the story of the murder of a young girl in Seattle and the subsequent police investigation.
+
+The Killing ties together three distinct stories around a single murder including the detectives assigned to the case, the victim's grieving family, and the suspects. Set in Seattle, the story also explores local politics as it follows politicians connected to the case. As the series unfolds, it becomes clear that there are no accidents; everyone has a secret, and while the characters think they've moved on, their past isn't done with them.</Overview>
+  <Rating>8.6</Rating>
+  <RatingCount>58</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID>78583</SeriesID>
+  <SeriesName>The Killing (2011)</SeriesName>
+  <Status>Ended</Status>
+  <added>2010-12-05 10:18:48</added>
+  <addedBy>101751</addedBy>
+  <banner>graphical/210171-g4.jpg</banner>
+  <fanart>fanart/original/210171-17.jpg</fanart>
+  <lastupdated>1349963264</lastupdated>
+  <poster>posters/210171-2.jpg</poster>
+  <zap2it_id>EP01394263</zap2it_id>
+</Series>
+<Episode>
+  <id>3554181</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Killing - About the Show</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2010-12-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Upcoming AMC's crime drama television series created and produced by Veena Sud. Based on the Danish miniseries Forbrydelsen.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode>1</airsbefore_episode>
+  <airsbefore_season>1</airsbefore_season>
+  <filename></filename>
+  <lastupdated>1329985712</lastupdated>
+  <seasonid>367741</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>4294653</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Season 1 Recap</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2012-03-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Killing ties together three distinct stories around a single murder: the detectives assigned to the case, the victim's grieving family, and the suspects.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season>1</airsafter_season>
+  <airsbefore_episode>1</airsbefore_episode>
+  <airsbefore_season>2</airsbefore_season>
+  <filename>episodes/210171/4294653.jpg</filename>
+  <lastupdated>1333348723</lastupdated>
+  <seasonid>367741</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>3249671</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Patty Jenkins</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Pilot</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2011-04-03</FirstAired>
+  <GuestStars>|Callum Keith Rennie|Lee Garlington|Tom Butler|Katie Findlay|Liam James|Kacey Rohl|Gary Chalk|Brandon Jay McLaren|</GuestStars>
+  <IMDB_ID>tt1769191</IMDB_ID>
+  <Language>en</Language>
+  <Overview>On her last day of work, homicide detective Sarah Linden is drawn into a new case about the disappearance of a teenage girl, Rosie Larsen. Mitch and Stan Larsen frantically try to track down their daughter when they learn she did not show up at school. City Councilman Darren Richmond prepares for an important forum with the Mayor as the election nears. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.4</Rating>
+  <RatingCount>37</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Veena Cabreros Sud</Writer>
+  <absolute_number>1</absolute_number>
+  <filename>episodes/210171/3249671.jpg</filename>
+  <lastupdated>1345809719</lastupdated>
+  <seasonid>367751</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>3249681</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ed Bianchi</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Cage</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2011-04-03</FirstAired>
+  <GuestStars>|Brandon Jay McLaren|Callum Keith Rennie|Gary Chalk|Kacey Rohl|Katie Findlay|Lee Garlington|Liam James|Tom Butler|</GuestStars>
+  <IMDB_ID>tt1793155</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The investigation into Rosie’s killer begins as Sarah and Holder question the missing girl’s parents, Stan and Mitch, as well as Rosie’s friends and City Councilman Richmond. Rosie’s school becomes a potential murder site when Sarah and Holder uncover shocking evidence on campus. Heartbroken and grief-stricken, Mitch and Stan face the aftermath of losing their daughter. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>26</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Veena Cabreros Sud</Writer>
+  <absolute_number>2</absolute_number>
+  <filename>episodes/210171/3249681.jpg</filename>
+  <lastupdated>1347390603</lastupdated>
+  <seasonid>367751</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>3249691</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Gwyneth Horder-Payton</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>El Diablo</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2011-04-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1792692</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Councilman Richmond suspects a leak within his team; Sarah tracks down a witness and is led to a suspect.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>39</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Dawn Prestwich|Nicole Yorkin</Writer>
+  <absolute_number>3</absolute_number>
+  <filename>episodes/210171/3249691.jpg</filename>
+  <lastupdated>1347390657</lastupdated>
+  <seasonid>367751</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>3249701</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Jennifer Getzinger</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>A Soundless Echo</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2011-04-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1792693</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Larsens plan their daughter's funeral; Rosie's friend unveils surprises about her life.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>31</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Soo Hugh</Writer>
+  <absolute_number>4</absolute_number>
+  <filename>episodes/210171/3249701.jpg</filename>
+  <lastupdated>1347390692</lastupdated>
+  <seasonid>367751</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>3249711</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Phil Abraham</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Super 8</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2011-04-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1861182</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Rosie's teacher provides Sarah and Holder with a new piece of evidence. Richmond's campaign team plans a new anti-crime television commercial. Mitch continues to struggle with the loss of her daughter, while Stan becomes more determined to find Rosie's killer, and asks his colleague Belko for help.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.4</Rating>
+  <RatingCount>35</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Jeremy Doner</Writer>
+  <absolute_number>5</absolute_number>
+  <filename>episodes/210171/3249711.jpg</filename>
+  <lastupdated>1347390722</lastupdated>
+  <seasonid>367751</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>3249721</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Agnieszka Holland</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>What You Have Left</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2011-05-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1861183</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Sarah and Holder intensify their investigation on a suspect's family and friends. Gwen and Richmond disagree over strategy for the next debate with the mayor. Meanwhile, Rosie's funeral takes place and Stan concentrates on his own investigation into her death. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>35</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Nic Pizzolatto</Writer>
+  <absolute_number>6</absolute_number>
+  <filename>episodes/210171/3249721.jpg</filename>
+  <lastupdated>1345809287</lastupdated>
+  <seasonid>367751</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>3249731</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ed Bianchi</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Vengeance</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2011-05-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1861184</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Mitch questions the validity of the police investigation while Richmond has to deal with a negative ad. It's discovered that Rosie was at Bennett's apartment the night she died. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.4</Rating>
+  <RatingCount>32</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Linda Burstyn</Writer>
+  <absolute_number>7</absolute_number>
+  <filename>episodes/210171/3249731.jpg</filename>
+  <lastupdated>1347390790</lastupdated>
+  <seasonid>367751</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>3249741</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Agnieszka Holland</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Stonewalled</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2011-05-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1861185</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Sarah and Holder evade the FBI and unearth new evidence. Mitch endangers the boys, prompting Stan to take matters into his own hands. Richmond tries to climb back in the race.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>33</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Danny Nowak</Writer>
+  <absolute_number>8</absolute_number>
+  <filename>episodes/210171/3249741.jpg</filename>
+  <lastupdated>1345809965</lastupdated>
+  <seasonid>367751</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>3249751</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Agnieszka Holland</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Undertow</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2011-05-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1861186</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The police are thwarted in their efforts to arrest Bennet. Richmond thinks long and hard about removing himself from the Mayor's race. Mitch and Stan have had it with the police.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>31</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Dan Nowak</Writer>
+  <absolute_number>9</absolute_number>
+  <filename>episodes/210171/3249751.jpg</filename>
+  <lastupdated>1347390842</lastupdated>
+  <seasonid>367751</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>3249761</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ed Bianchi</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>I'll Let You Know When I Get There</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2011-05-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1861179</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Richmond rises in the polls; a surprising individual turns himself in.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>29</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Dawn Prestwich</Writer>
+  <absolute_number>10</absolute_number>
+  <filename>episodes/210171/3249761.jpg</filename>
+  <lastupdated>1345810301</lastupdated>
+  <seasonid>367751</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>3249771</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Nicole Kassell</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Missing</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>2011-06-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1861180</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Sarah and Holder discover more on Rosie, but the investigation gets stalled when they have to set out on a search for Jack.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.9</Rating>
+  <RatingCount>31</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Veena Sud</Writer>
+  <absolute_number>11</absolute_number>
+  <filename>episodes/210171/3249771.jpg</filename>
+  <lastupdated>1347390878</lastupdated>
+  <seasonid>367751</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>3249781</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Keith Gordon</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Beau Soleil</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>2011-06-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1861181</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The police connect Rosie to a suspicious website. Stan faces his demons while Mitch learns secrets she never knew about Rosie.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>34</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Jeremy Doner|Soo Hugh</Writer>
+  <absolute_number>12</absolute_number>
+  <filename>episodes/210171/3249781.jpg</filename>
+  <lastupdated>1347390911</lastupdated>
+  <seasonid>367751</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>3249791</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Brad Anderson</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Orpheus Descending</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>2011-06-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1729484</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The identification of the mysterious Orpheus provides a vital connection to the case. Mitch and Stan reflect on the past while contemplating their family's future.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>37</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Veena Sud|Nic Pizzolatto</Writer>
+  <absolute_number>13</absolute_number>
+  <filename>episodes/210171/3249791.jpg</filename>
+  <lastupdated>1345812397</lastupdated>
+  <seasonid>367751</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>4233648</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Agnieszka Holland</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Reflections</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2012-04-01</FirstAired>
+  <GuestStars>|Garry Chalk|Tom Butler|</GuestStars>
+  <IMDB_ID>tt1964127</IMDB_ID>
+  <Language>en</Language>
+  <Overview>In the aftermath of the shooting at City Hall and Linden's discovery that the photo leading to Councilman Darren Richmond's arrest was forged, Sarah returns to Seattle to investigate a possible cover up and wonders if she can trust her partner.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>28</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Veena Sud</Writer>
+  <absolute_number>14</absolute_number>
+  <filename>episodes/210171/4233648.jpg</filename>
+  <lastupdated>1347390960</lastupdated>
+  <seasonid>467852</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>4253819</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Daniel Attias</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>My Lucky Day</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2012-04-01</FirstAired>
+  <GuestStars>|Sofie Gråbøl|Mark Moses|Garry Chalk|Tom Butler|</GuestStars>
+  <IMDB_ID>tt1964132</IMDB_ID>
+  <Language>en</Language>
+  <Overview>An ominous discovery is made at the Larsen house while Sarah travels to Tacoma to learn Councilman Richmond's dark secret. Meanwhile, Richmond is forced to come to grips with the fallout from the attack at City Hall.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.3</Rating>
+  <RatingCount>15</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Dawn Prestwich|Nicole Yorkin|</Writer>
+  <absolute_number>15</absolute_number>
+  <filename>episodes/210171/4253819.jpg</filename>
+  <lastupdated>1347391028</lastupdated>
+  <seasonid>467852</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>4278008</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Brad Anderson</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Numb</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2012-04-08</FirstAired>
+  <GuestStars>|Alan Dale|Mark Moses|Garry Chalk|Tom Butler|</GuestStars>
+  <IMDB_ID>tt1964133</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Sarah hunts down Rosie's backpack as Holder falls from grace. Mitch re-emerges while Stan continues to entangle himself with the mob. Richmond faces up to his situation.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>30</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Eliza Clark</Writer>
+  <absolute_number>16</absolute_number>
+  <filename>episodes/210171/4278008.jpg</filename>
+  <lastupdated>1347391115</lastupdated>
+  <seasonid>467852</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>4278009</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Phil Abraham</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Ogi Jun</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2012-04-15</FirstAired>
+  <GuestStars>Tom Butler</GuestStars>
+  <IMDB_ID>tt1964134</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Sarah and Holder identify the mystery man with the tattoo while Jamie attempts to enlist Gwen's help and Stan learns his past may have come back to haunt him. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>30</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Jeremy Doner</Writer>
+  <absolute_number>17</absolute_number>
+  <filename>episodes/210171/4278009.jpg</filename>
+  <lastupdated>1347391155</lastupdated>
+  <seasonid>467852</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>4278010</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ed Bianchi</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Ghosts of the Past </EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2012-04-22</FirstAired>
+  <GuestStars>|Brendan Sexton III|Mark Moses|</GuestStars>
+  <IMDB_ID>tt1964135</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Sarah receives a message from the dead that may shed light on the identity of Rosie's killer. Meanwhile, Mitch befriends a young runaway; and Richmond has grave doubts about his future in politics.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>31</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Wendy Riss</Writer>
+  <absolute_number>18</absolute_number>
+  <filename>episodes/210171/4278010.jpg</filename>
+  <lastupdated>1347391304</lastupdated>
+  <seasonid>467852</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>4278011</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Kevin Bray</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Openings</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2012-04-29</FirstAired>
+  <GuestStars>|Tom Butler|Alan Dale|Mark Moses|</GuestStars>
+  <IMDB_ID>tt1964136</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Sarah zeros in on a Larsen-family secret; Stan comes to grips with some past indiscretions; and Mitch takes in a runaway girl. Meanwhile, the Richmond campaign entertains a surprise visitor.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>28</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Aaron Zelman</Writer>
+  <absolute_number>19</absolute_number>
+  <filename>episodes/210171/4278011.jpg</filename>
+  <lastupdated>1345213758</lastupdated>
+  <seasonid>467852</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>4297413</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Nicole Kassell</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Keylela</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2012-05-06</FirstAired>
+  <GuestStars>Kacey Rohl</GuestStars>
+  <IMDB_ID>tt1964137</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The investigation refocuses on the casino; Stan has an uneasy face-to-face with Richmond; tension grips the Larsen house.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>27</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Dan Nowak</Writer>
+  <absolute_number>20</absolute_number>
+  <filename>episodes/210171/4297413.jpg</filename>
+  <lastupdated>1342433516</lastupdated>
+  <seasonid>467852</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>4297414</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Veena Sud</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Off the Reservation</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2012-05-13</FirstAired>
+  <GuestStars>|Tom Butler|Mark Moses|</GuestStars>
+  <IMDB_ID>tt1964138</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Holder disappears and a desperate Sarah goes looking for him; Stan decides to take matters into his own hands; and Richmond returns to City Hall.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.3</Rating>
+  <RatingCount>29</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Nathaniel Halpern</Writer>
+  <absolute_number>21</absolute_number>
+  <filename>episodes/210171/4297414.jpg</filename>
+  <lastupdated>1347309285</lastupdated>
+  <seasonid>467852</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>4297415</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Phil Abraham</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Sayonara Hiawatha</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2012-05-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1964139</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Richmond lends support to the investigation; Sarah tries to track down Rosie's key; and Stan deals with his troubled son.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>26</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Dawn Prestwich|Nicole Yorkin|</Writer>
+  <absolute_number>22</absolute_number>
+  <filename>episodes/210171/4297415.jpg</filename>
+  <lastupdated>1347309302</lastupdated>
+  <seasonid>467852</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>4297416</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Nicole Kassell</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>72 Hours</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2012-05-27</FirstAired>
+  <GuestStars>|Katie Findlay|</GuestStars>
+  <IMDB_ID>tt1964128</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Sarah teeters on the edge. Stan attempts to make amends. Richmond receives an unexpected boost in the mayoral race.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>20</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Eliza Clark</Writer>
+  <absolute_number>23</absolute_number>
+  <filename>episodes/210171/4297416.jpg</filename>
+  <lastupdated>1347309319</lastupdated>
+  <seasonid>467852</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>4297417</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ed Bianchi</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Bulldog</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>2012-06-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1964129</IMDB_ID>
+  <Language>en</Language>
+  <Overview>A return to the casino winds up sending Sarah and Holder on the run, while Stan and Richmond face life-altering decisions.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>23</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Jeremy Doner</Writer>
+  <absolute_number>24</absolute_number>
+  <filename>episodes/210171/4297417.jpg</filename>
+  <lastupdated>1347546051</lastupdated>
+  <seasonid>467852</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>4297418</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Keith Gordon</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Donnie or Marie</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>2012-06-10</FirstAired>
+  <GuestStars>|Katie Findlay|</GuestStars>
+  <IMDB_ID>tt1964130</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Sarah and Holder close in on the murderer. Meanwhile, the Richmond campaign preps for the election; and the Larsens seek to get their lives back in order.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>25</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Wendy Riss|Aaron Zelman|</Writer>
+  <absolute_number>25</absolute_number>
+  <filename>episodes/210171/4297418.jpg</filename>
+  <lastupdated>1348251102</lastupdated>
+  <seasonid>467852</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+<Episode>
+  <id>4297419</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Patty Jenkins</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>What I Know</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>2012-06-17</FirstAired>
+  <GuestStars>|Katie Findlay|</GuestStars>
+  <IMDB_ID>tt1964131</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Sarah and Holder's investigation comes to a close. Meanwhile, Richmond sets out on a bold new course; and a surprise source helps bring closure to the Larsens.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.6</Rating>
+  <RatingCount>24</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Veena Sud|Dan Nowak|</Writer>
+  <absolute_number>26</absolute_number>
+  <filename>episodes/210171/4297419.jpg</filename>
+  <lastupdated>1348251135</lastupdated>
+  <seasonid>467852</seasonid>
+  <seriesid>210171</seriesid>
+</Episode>
+</Data>

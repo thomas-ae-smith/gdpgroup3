@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>77871</id>
+    <Actors>|Adam West|Burt Ward|Alan Napier|Byron Keith|David Lewis|Madge Blake|Neil Hamilton|Stafford Repp|William Dozier|Yvonne Craig|</Actors>
+    <Airs_DayOfWeek>Daily</Airs_DayOfWeek>
+    <Airs_Time>16:00 PM</Airs_Time>
+    <ContentRating>TV-PG</ContentRating>
+    <FirstAired>1966-01-12</FirstAired>
+    <Genre>|Action and Adventure|Science-Fiction|Fantasy|</Genre>
+    <IMDB_ID>tt0059968</IMDB_ID>
+    <Language>en</Language>
+    <Network>ITV4</Network>
+    <NetworkID></NetworkID>
+    <Overview>Wealthy entrepreneur Bruce Wayne and his ward Dick Grayson lead a double life: they are actually crime fighting duo Batman and Robin. 
+A secret Batpole in the Wayne mansion leads to the Batcave, where Police Commissioner Gordon often calls with the latest emergency threatening Gotham City. Racing the the scene of the crime in the Batmobile, Batman and Robin must (with the help of their trusty Bat-utility-belt) thwart the efforts of a variety of master criminals, including The Riddler, The Joker, Catwoman, and The Penguin.</Overview>
+    <Rating>8.7</Rating>
+    <RatingCount>15</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID>713</SeriesID>
+    <SeriesName>Batman</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/77871-g.jpg</banner>
+    <fanart>fanart/original/77871-10.jpg</fanart>
+    <lastupdated>1349466013</lastupdated>
+    <poster>posters/77871-2.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>79479</id>
+    <Actors>|Jonas Armstrong|Lucy Griffiths|David Harewood|Toby Stephens|Lara Pulver|Joanne Froggatt|Anjali Jay|Gordon Kennedy|Harry Lloyd|Joe Armstrong|Keith Allen|Richard Armitage|Sam Troughton|William Beck|</Actors>
+    <Airs_DayOfWeek>Saturday</Airs_DayOfWeek>
+    <Airs_Time>7:00 PM</Airs_Time>
+    <ContentRating>TV-14</ContentRating>
+    <FirstAired>2006-10-07</FirstAired>
+    <Genre>|Action and Adventure|Drama|</Genre>
+    <IMDB_ID>tt0787985</IMDB_ID>
+    <Language>en</Language>
+    <Network>BBC One</Network>
+    <NetworkID></NetworkID>
+    <Overview>An updated series following the life of Robin Hood and his Merry Men in Sherwood Forest. Together they steal from the rich and give to the poor--all the while avoiding their enemies Sir Guy of Gisborne and the Sheriff of Nottingham.</Overview>
+    <Rating>8.2</Rating>
+    <RatingCount>37</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID>64043</SeriesID>
+    <SeriesName>Robin Hood</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/64043-g.jpg</banner>
+    <fanart>fanart/original/79479-5.jpg</fanart>
+    <lastupdated>1350291675</lastupdated>
+    <poster>posters/79479-2.jpg</poster>
+    <zap2it_id>SH899947</zap2it_id>
+  </Series>
+</Data>

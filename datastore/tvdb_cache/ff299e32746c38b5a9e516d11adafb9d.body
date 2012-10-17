@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>220661</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek>Wednesday</Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating>TV-PG</ContentRating>
+  <FirstAired>2010-12-08</FirstAired>
+  <Genre>|Documentary|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>Discovery</Network>
+  <NetworkID></NetworkID>
+  <Overview>Airplane Repo' follows Nick Popovich, a super repossession man, one of a handful of specialists who get the call when a bank wants back its Gulfstream II jet from, say, a small army of Colombian rebels. A mad hybrid of cat burglar, F.B.I. agent and con artist, Nick and his adrenaline-fueled team specialize in stealing jets from the jungle hideouts of corrupt landowners in Colombia, Mexico and Brazil and swiping corporate airliners from mainstream companies like Southwest and American Airlines. He is the best of the best.</Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Airplane Repo</SeriesName>
+  <Status>Ended</Status>
+  <added>2011-01-11 13:57:37</added>
+  <addedBy>290011</addedBy>
+  <banner></banner>
+  <fanart>fanart/original/220661-1.jpg</fanart>
+  <lastupdated>1338924449</lastupdated>
+  <poster>posters/220661-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>3490041</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Best in the Business</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2010-12-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1295285221</lastupdated>
+  <seasonid>399031</seasonid>
+  <seriesid>220661</seriesid>
+</Episode>
+<Episode>
+  <id>3490161</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Not Ready to Fly</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2011-01-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1296243381</lastupdated>
+  <seasonid>399031</seasonid>
+  <seriesid>220661</seriesid>
+</Episode>
+<Episode>
+  <id>3566221</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>International Situation</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2011-01-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1296243217</lastupdated>
+  <seasonid>399031</seasonid>
+  <seriesid>220661</seriesid>
+</Episode>
+</Data>

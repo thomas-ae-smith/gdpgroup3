@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>251695</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating>TV-G</ContentRating>
+    <FirstAired>2011-04-19</FirstAired>
+    <Genre></Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network>YouTube</Network>
+    <NetworkID></NetworkID>
+    <Overview>Billy and Jay search the great state of Texas for classic games. Whether it is garage sales, flee markets, classic game stores, or under a rock......if it is retro we will find it.</Overview>
+    <Rating>10.0</Rating>
+    <RatingCount>2</RatingCount>
+    <Runtime>15</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>The Game Chasers</SeriesName>
+    <Status>Continuing</Status>
+    <added>2011-09-06 13:46:52</added>
+    <addedBy>38151</addedBy>
+    <banner>graphical/251695-g2.jpg</banner>
+    <fanart>fanart/original/251695-1.jpg</fanart>
+    <lastupdated>1349418036</lastupdated>
+    <poster>posters/251695-2.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

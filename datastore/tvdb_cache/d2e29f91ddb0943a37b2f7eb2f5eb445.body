@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>248861</id>
+  <Actors>|Poppy Montgomery|Dylan Walsh|Daya Vaidya|Kevin Rankin|Michael Gaston|</Actors>
+  <Airs_DayOfWeek>Tuesday</Airs_DayOfWeek>
+  <Airs_Time>10:00 PM</Airs_Time>
+  <ContentRating>TV-14</ContentRating>
+  <FirstAired>2011-09-20</FirstAired>
+  <Genre>|Action and Adventure|Drama|</Genre>
+  <IMDB_ID>tt1842530</IMDB_ID>
+  <Language>en</Language>
+  <Network>CBS</Network>
+  <NetworkID></NetworkID>
+  <Overview>Carrie Wells is an enigmatic former police detective with a rare condition that makes her memory so flawless that every place, every conversation, every moment of joy and every heartbreak is forever embedded in her mind. It’s not just that she doesn’t forget anything - she can’t; except for one thing: the details that would help solve her sister's long-ago murder.</Overview>
+  <Rating>7.5</Rating>
+  <RatingCount>18</RatingCount>
+  <Runtime>45</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Unforgettable</SeriesName>
+  <Status>Continuing</Status>
+  <added>2011-05-18 13:32:26</added>
+  <addedBy>37721</addedBy>
+  <banner>graphical/248861-g2.jpg</banner>
+  <fanart>fanart/original/248861-2.jpg</fanart>
+  <lastupdated>1350250739</lastupdated>
+  <poster>posters/248861-1.jpg</poster>
+  <zap2it_id>EP01419807</zap2it_id>
+</Series>
+<Episode>
+  <id>4139576</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Preview</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1311776562</lastupdated>
+  <seasonid>466233</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4101893</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Niels Arden Oplev</Director>
+  <EpImgFlag>7</EpImgFlag>
+  <EpisodeName>Pilot</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2011-09-20</FirstAired>
+  <GuestStars>|Deanna Dungan|Samira Wiley|Thomas Guiry|Sofia Jean Gomez|Madison Arnold|Robert Vataj|Andrew Katz|Haley Murphy|Victoria Leigh|Temur Mamisashvili|John Sharian|Timothy Adams|Roxanna Hope|Vanessa Aspillaga|Brian O'Neill|Clem Cheung|Alexandra Fong|Crystal Chi</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A murder reunites former detective Carrie Wells with her ex-boyfriend and colleague; Carrie must use her rare ability to help solve the case.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>45</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Ed Redlich|John Bellucci|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4101893.jpg</filename>
+  <lastupdated>1347558289</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4151829</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Niels Arden Oplev</Director>
+  <EpImgFlag>7</EpImgFlag>
+  <EpisodeName>Heroes</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2011-09-27</FirstAired>
+  <GuestStars>|Victoria Leigh|Haley Murphy|Deanna Dunagan|Samira Wiley|Kyle Beltran|Catherine Wolf|Annie Parisse|Kyle Catlett|Mike Houston|Danielle Skraastad|Madison Arnold|Khari Wyatt|David Costabile|Che Ayende|Wayne Maugans|Omar Gonzalez|Steven Rishard|Christina Jack</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Carrie must put aside memories of her sister's death to help a young murder witness lead the police to a killer.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>35</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Sherri Cooper|Jennifer Levin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4151829.jpg</filename>
+  <lastupdated>1339535700</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4151830</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>John Coles</Director>
+  <EpImgFlag>7</EpImgFlag>
+  <EpisodeName>Check Out Time</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2011-10-04</FirstAired>
+  <GuestStars>|Jacob Ming-Trent|Ryan O’nan|Linda Emond|Victoria Cartagena|Omar Metwally|Dahlia Chacon|Christopher McCann|Michael Lewis|Lesley Stahl|Stephen Mailer|Sarah Sokolovic|Heidi Armbruster|James Waterston|Joseph Amato|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Carrie tries to uncover the truth when a hotel maid accused of murder says she was defending herself against attempted rape.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>31</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Joan B. Weiss</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4151830.jpg</filename>
+  <lastupdated>1339535718</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4180431</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Niels Arden Oplev</Director>
+  <EpImgFlag>7</EpImgFlag>
+  <EpisodeName>Up in Flames</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2011-10-11</FirstAired>
+  <GuestStars>|Omar Metwally|Angela Christian|Paul Urcioli|Brad Heberlee|Maury Ginsberg|Chris Bauer|Jose Soto|Eden Marryshow|Chad Lindsey|Adam McNulty|Michael Basile|Chris Barnes|Edwin J. Birmingham|Quinn MColgan|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>After an explosion destroys a crime scene, Carrie's memories become essential to the investigation.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>28</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Michael Foley|Erik Oleson|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4180431.jpg</filename>
+  <lastupdated>1339535734</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4184735</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Werner</Director>
+  <EpImgFlag>7</EpImgFlag>
+  <EpisodeName>With Honor</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2011-10-18</FirstAired>
+  <GuestStars>|Tom Mason|Malachy Cleary|Deidre O’Connell|Lenny Venito|Annie Parisse|Alfredo Narciso|Stivi Paskoski|Charlie Hudson III|Ejyp Johnson|Thuliso Dingwall|Elain Graham|Gary Basaraba|Emma Ramos|Edwin J. Birmingham|Frank Harts|Amy Tribbey|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When Al’s ex-partner is gunned down and the investigation reveals he may have been a dirty cop, Carrie must decide how to support him without getting too close</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>29</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Eric Oleson</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4184735.jpg</filename>
+  <lastupdated>1339535752</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4190692</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Niels Arden Oplev</Director>
+  <EpImgFlag>4</EpImgFlag>
+  <EpisodeName>Friended</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2011-10-25</FirstAired>
+  <GuestStars>|Deanna Dunagan|Khari Wyatt|Kristen Bush|Jason Ralph|Patrick Heusinger|Kahan James|Justine Lupine|Alesandra Assante|Samantha Silverman|Jason Pendergraft|Juan Luis Acevado|Ari Fliakos|Grim Reaper Q.|Nicole Guidetti|Terrence Mann|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Carrie and Al’s investigation into the murder of a hard-partying heiress takes an unexpected turn when they discover that the woman apparently didn’t exist until 18 months earlier.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>29</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Sherri Cooper|Jennifer Levin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4190692.jpg</filename>
+  <lastupdated>1339614931</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4192390</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Jean de Segonzac</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Road Block</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2011-11-01</FirstAired>
+  <GuestStars>|Deanna Dunagan|Sherri Saum|Clark Carmichael|Brian Anthony Wilson|Nilaja Sun|Jo Armeniox|Steve Cirbus|Chance Kelly|Kevin O’Donnell|Joey Auzenne|Vanessa A. Jones|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Carrie's investigation into the death of her sister moves forward, but her inability to let go may hinder the search for a missing infant whose father was murdered.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>24</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Heather Bellson|Christal Henry|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4192390.jpg</filename>
+  <lastupdated>1339614970</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4195440</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>John Showalter</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Lost Things</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2011-11-08</FirstAired>
+  <GuestStars>|Victoria Leigh|Sue Cremin|Alexy Gillian|Drew Powell|Ismael Bashey|Michael Arden|Liam Craig|Robert Turano|Jordan Leeds|Marisa Redanty|Daniel Breaker|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Carrie and Al investigate the death of a public defender, only to discover that the killer has a larger plan which may lead to a second murder.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>26</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Jan Nash</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4195440.jpg</filename>
+  <lastupdated>1339615000</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4201398</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Paul Holahan</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Golden Bird</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2011-11-15</FirstAired>
+  <GuestStars>|Deanna Dunagan|Marilu Henner|Derek Cecil|Kellie Overbey|Jack Gwaltney|Anna Friedman|Peter Benson|Drew McVety|Aaron Sauter|Anne Clare Gibbons-Brown|Jamil Mena|Mark Zeisler|Anna Rose Hopkins|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Al and Carrie investigate the murder of a teen who seemed to have no enemies. Meanwhile, Carrie looks to her estranged aunt for help with the investigation into her sister's murder.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>28</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Michael Foley</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4201398.jpg</filename>
+  <lastupdated>1339615038</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4206218</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Anna J. Foerster</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Trajectories</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2011-11-22</FirstAired>
+  <GuestStars>|C.S. Lee|Danny Flaherty|Maria Elena Ramirez|Greg Serano|Dascha Polanco|Iris Delgado|Robert Funaro|Jonathan Hogan|Jennifer Restivo|Erik Jensen|Tino Sutras|Luke Rosen|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When a second murder suddenly occurs at an active crime scene, Al and Carrie must wade through hundreds of bystanders to uncover if it was retribution or an unrelated attack.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>28</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Erik Oleson</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4206218.jpg</filename>
+  <lastupdated>1342554994</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4211518</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Anna Foerster</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Spirited Away</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>2011-12-13</FirstAired>
+  <GuestStars>|Britt Lower|Scott Cohen|Jennifer Ferrin|Luke Vexler|David Thompson|Martin Shakar|Mason Pettit|William Rogers|Lucy Cottrell|Audrey Amey|Benjamin Pelteson|Ayana Brown|Gabe Hernandez|David Raymond Wagner|Paula Leggett Chase|Samuel Ray Gates|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Carrie and Al link the death of a ghost hunter to a discovery he made on a recent assignment.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.3</Rating>
+  <RatingCount>27</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Erik Oleson</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4211518.jpg</filename>
+  <lastupdated>1339615083</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4223474</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Jace Alexander</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Butterfly Effect</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>2012-01-03</FirstAired>
+  <GuestStars>|Cotter Smith|Nicole Brill|Kevin O’Rourke|Caitlin O’Connell|Nick Sandow|Jackson Hurst|Isidra Vega|Albert Jones|James DiSalvatore|Peter Van Wagner|George Hughes|Gavin-Keith Umeh|Frank Page|Ryan Woodle|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When a construction worker with a promising future is murdered, Carrie and Al wonder if his ties to the mob were the cause of his death or an unrelated coincidence.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>29</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Sam Montgomery</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4223474.jpg</filename>
+  <lastupdated>1349878945</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4226852</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>John David Coles</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Brotherhood</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>2012-01-10</FirstAired>
+  <GuestStars>|Tom Lipinski|Mike Steinmetz|Robert Clohessy|Chazz Menendez|Daniel Cosgrove|Nicolette Robinson|Barret Mindell|Jason Dworak|Brad Aldous|Brendan Dooling|Nikki E. Walker|Tim Barker|Adam Huber|Omar Evans|Chris Critelli|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A routine investigation into a college student’s death takes a disturbing turn for Carrie when a suspect makes a dangerous move to outwit her memory.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>30</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Jim Adler</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4226852.jpg</filename>
+  <lastupdated>1349878986</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4248617</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Aaron Lipstadt</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Carrie's Caller</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>2012-02-07</FirstAired>
+  <GuestStars>|Jane Curtin|James Urbaniak|Chris Beetem|Anne Bates|Harriett D. Foy|Michael DeNola|Ramona Keller|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A serial killer with knowledge of Carrie’s memory abilities taunts the Queens PD as his list of victims grows.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>23</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Ed Redlich|John Bellucci|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4248617.jpg</filename>
+  <lastupdated>1349879029</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4248620</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Oz Scott</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Following Sea</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>2012-02-14</FirstAired>
+  <GuestStars>|Paul Fitzgerald|Al Sapienza|PJ Sosko|Frank Lewallen|Armand Schultz|Kate Skinner|Deborah Baum|Rebecca Hirota|Kim Director|Frank Ridley</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When a key witness in his murder case vanishes before testifying, Al scrambles to find her before the suspect walks free.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>27</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Jan Nash|Michael Foley|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4248620.jpg</filename>
+  <lastupdated>1349879055</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4261270</id>
+  <Combined_episodenumber>16</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Anna Foerster</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Heartbreak</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired>2012-02-21</FirstAired>
+  <GuestStars>|Gabriel Gaston|Sebastian Roche|Marin Ireland|Jacqueline Hahn|Aaron Serotsky|Carmine Famiglietti|Jennifer Johnson|Ernesto Rosas|Declan Mulvey|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Carrie and Al are at a loss to explain how a murder victim mysteriously appeared in an empty ballpark.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>25</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Spencer Hudnut</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4261270.jpg</filename>
+  <lastupdated>1349879085</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4264972</id>
+  <Combined_episodenumber>17</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Peter Werner</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Blind Alleys</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired>2012-02-28</FirstAired>
+  <GuestStars>|Clark Johnson|Boris McGiver|Anne Lange|Blanca Camacho|Scott Johnsen|Jasmine Carmichael|Stephen Tyrone Williams|Pablo Gonzalez|Matthew Sproul|Christopher Pena|Mateo Gomez|Alexis Suarez|Ann Sanders|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Al and Carrie are forced to the sidelines by a negotiator when the father of a suspect that Roe shot takes members of the Queens PD, including Nina, hostage in a desperate quest for justice.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>25</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Erik Oleson|Heather Bellson|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4264972.jpg</filename>
+  <lastupdated>1349879109</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4277269</id>
+  <Combined_episodenumber>18</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Jean DeSegonzac</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Comeback</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired>2012-03-20</FirstAired>
+  <GuestStars>|James Urbaniak|Nneka Okafor|Stu 'Large' Riley|Michael Ingram|Lee Sellars|Jill Paice|Robert Jimenez|Will Chase|Jay O. Sanders|Sophia Rokhlin|Andrew Stewart-Jones|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When Carrie’s latest case is stalled by a powerful family’s influence, she receives assistance from a lawyer who may be the mysterious caller who orchestrated a series of sniper attacks.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>22</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Michael Foley|Christal Henry|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4277269.jpg</filename>
+  <lastupdated>1342687328</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4284733</id>
+  <Combined_episodenumber>19</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Oz Scott</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Allegiances</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired>2012-03-27</FirstAired>
+  <GuestStars>|Rachel Ticotin|Joshua Bitton|Anthony Mangano|Fulvio Cecere|Arthur Nascarella|Corinna May|Ami Brabson|Joe Passaro|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Carrie’s personal and professional lives collide when her boyfriend, the son of a mob boss, is revealed to have ties to suspects in a murder investigation.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>24</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Joan B. Weiss</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4284733.jpg</filename>
+  <lastupdated>1342687246</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4289139</id>
+  <Combined_episodenumber>20</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Jean DeSegonzac</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>You Are Here</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired>2012-04-10</FirstAired>
+  <GuestStars>|Adam Trese|Socorro Santiago|Omar Chagall|Charise Castro Smith|Nicholas Maccarone|Nicholas Webber|Peter Bradbury|Nick Lashaway|Jennifer Joan Thompson|Brad Cassini|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Carrie and Al must get inside the mind of a deranged conspiracy theorist before he sets off a series of bombs.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.1</Rating>
+  <RatingCount>19</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Jim Adler</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4289139.jpg</filename>
+  <lastupdated>1341590776</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4295023</id>
+  <Combined_episodenumber>21</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Endgame</EpisodeName>
+  <EpisodeNumber>21</EpisodeNumber>
+  <FirstAired>2012-05-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When Carrie's obsessed admirer turns up dead, she must locate the killer while deflecting attention from the prime suspect: her.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>21</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4295023.jpg</filename>
+  <lastupdated>1342175634</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4295024</id>
+  <Combined_episodenumber>22</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Man in the Woods</EpisodeName>
+  <EpisodeNumber>22</EpisodeNumber>
+  <FirstAired>2012-05-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Carrie follows the trail of her sister's killer to Syracuse, where the murderer may have struck again.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>17</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248861/4295024.jpg</filename>
+  <lastupdated>1342687190</lastupdated>
+  <seasonid>466234</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4352223</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>TBA</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1341062793</lastupdated>
+  <seasonid>495580</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4364229</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1342948683</lastupdated>
+  <seasonid>495580</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4364230</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1342948685</lastupdated>
+  <seasonid>495580</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4364231</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1342948689</lastupdated>
+  <seasonid>495580</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4364232</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1342948692</lastupdated>
+  <seasonid>495580</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4364233</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1342948696</lastupdated>
+  <seasonid>495580</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4364234</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1342948698</lastupdated>
+  <seasonid>495580</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4364235</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1342948702</lastupdated>
+  <seasonid>495580</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4364236</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1342948706</lastupdated>
+  <seasonid>495580</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4364237</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1342948709</lastupdated>
+  <seasonid>495580</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4364238</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1342948712</lastupdated>
+  <seasonid>495580</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4364239</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1342948717</lastupdated>
+  <seasonid>495580</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+<Episode>
+  <id>4364240</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1342948720</lastupdated>
+  <seasonid>495580</seasonid>
+  <seriesid>248861</seriesid>
+</Episode>
+</Data>

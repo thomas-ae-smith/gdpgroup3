@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>178491</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired></FirstAired>
+    <Genre></Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network></Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>25</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Toys</SeriesName>
+    <Status></Status>
+    <added>2010-07-25 05:43:21</added>
+    <addedBy>200841</addedBy>
+    <banner>graphical/178491-g.jpg</banner>
+    <fanart></fanart>
+    <lastupdated>1280099276</lastupdated>
+    <poster>posters/178491-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

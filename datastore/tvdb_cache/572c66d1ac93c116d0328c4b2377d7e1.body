@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+<Series>
+<seriesid>80547</seriesid>
+<language>en</language>
+<SeriesName>Gossip Girl</SeriesName>
+<banner>graphical/80547-g7.jpg</banner>
+<Overview>Gossip Girl satirizes and revolves around the lives of young Manhattan socialites growing up on New York City's Upper East Side who attend elite academic institutions while dealing with sex, drugs, jealousy, and other teenage issues.</Overview>
+<FirstAired>2007-09-19</FirstAired>
+<IMDB_ID>tt0397442</IMDB_ID>
+<zap2it_id>EP00932206</zap2it_id>
+<id>80547</id>
+</Series>
+<Series>
+<seriesid>263053</seriesid>
+<language>en</language>
+<SeriesName>Take Me Out: The Gossip</SeriesName>
+<Overview>Take Me Out: The Gossip is a spin off show from the popular Take Me Out. The show is presented by Zoe Hardman and Mark Wright and features behind-the-scenes activity and dating tales and trials.</Overview>
+<FirstAired>2012-01-07</FirstAired>
+<id>263053</id>
+</Series>
+<Series>
+<seriesid>70493</seriesid>
+<language>en</language>
+<SeriesName>Office Gossip</SeriesName>
+<FirstAired>2001-02-01</FirstAired>
+<id>70493</id>
+</Series>
+</Data>

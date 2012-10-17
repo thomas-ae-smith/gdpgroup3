@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>80678</id>
+    <Actors>|Christer Fant|Jonas Inde|Noomi Rapace|Per Morberg|Ulf Brunnberg|</Actors>
+    <Airs_DayOfWeek>Tuesday</Airs_DayOfWeek>
+    <Airs_Time>21:00</Airs_Time>
+    <ContentRating>TV-Y7</ContentRating>
+    <FirstAired>2007-10-11</FirstAired>
+    <Genre>|Drama|</Genre>
+    <IMDB_ID>tt0995012</IMDB_ID>
+    <Language>en</Language>
+    <Network>TV4</Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Labyrinth</SeriesName>
+    <Status>Continuing</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/80678-g.jpg</banner>
+    <fanart></fanart>
+    <lastupdated>1343696628</lastupdated>
+    <poster></poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>249421</id>
+  <Actors>|Andrew Lamberty|Emma Hawkins|Gordon Watson|Jeffrey Salmon|</Actors>
+  <Airs_DayOfWeek>Tuesday</Airs_DayOfWeek>
+  <Airs_Time>8:00 PM</Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>2011-05-24</FirstAired>
+  <Genre>|Reality|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>Channel 4</Network>
+  <NetworkID></NetworkID>
+  <Overview>New series in which people who believe they have a valuable artefact get a chance to sell it to four of the country's leading buyers. But, once they turn down an offer, there's no going back...</Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID>23920</SeriesID>
+  <SeriesName>Four Rooms</SeriesName>
+  <Status>Continuing</Status>
+  <added>2011-06-11 19:40:53</added>
+  <addedBy>71161</addedBy>
+  <banner>graphical/249421-g.jpg</banner>
+  <fanart>fanart/original/249421-1.jpg</fanart>
+  <lastupdated>1335848461</lastupdated>
+  <poster>posters/249421-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4114279</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Episode 1</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2011-05-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The first episode of the series features a collection of Christmas cards from Princess Diana to her personal chef, an original 1960s Dalek, a cigar owned by Winston Churchill, and a Francis Bacon portrait all but destroyed by the artist.
+
+Will any of them make their owners rich?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/249421/4114279.jpg</filename>
+  <lastupdated>1307847531</lastupdated>
+  <seasonid>467637</seasonid>
+  <seriesid>249421</seriesid>
+</Episode>
+<Episode>
+  <id>4114280</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Episode 2</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2011-05-31</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Best friends Bradley Ridge and Nick Loizou bring a four-tonne concrete wall to Four Rooms, complete with a mural by artist Banksy. They want a six-figure sum, but will they see eye-to-eye with the dealers, and each other?
+
+Meanwhile, retired policeman Stewart Evans wants big money for his gruesome Victorian hangman's rope, and the nose cone from a Concorde plane is on offer.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/249421/4114280.jpg</filename>
+  <lastupdated>1307847438</lastupdated>
+  <seasonid>467637</seasonid>
+  <seriesid>249421</seriesid>
+</Episode>
+<Episode>
+  <id>4114281</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Episode 3</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2011-06-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The dealers have to decide how much to offer for a Tracy Emin print owned by her twin brother; a gruesome piece of tattooed skin pickled in a jar; a rare Beatles poster from the 60s; and a vintage penny arcade electric-shock machine. Will any of them make their owners rich?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/249421/4114281.jpg</filename>
+  <lastupdated>1307847342</lastupdated>
+  <seasonid>467637</seasonid>
+  <seriesid>249421</seriesid>
+</Episode>
+<Episode>
+  <id>4114282</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Episode 4</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2011-06-14</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A Victorian seven-foot stuffed turtle, erotic photos, a Sean Connery James Bond suit, and a collection of hats by the queen of punk, Vivienne Westwood. Will any of them bring their owners the cash they want?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/249421/4114282.jpg</filename>
+  <lastupdated>1308342843</lastupdated>
+  <seasonid>467637</seasonid>
+  <seriesid>249421</seriesid>
+</Episode>
+<Episode>
+  <id>4114283</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 5</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2011-06-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The dealers have to decide how much to offer for a guitar belonging to punk legend Dee Dee Ramone, one of British artists Gilbert and George's famous gin bottles, a lifetime collection of over 1000 matchbox cars, and circus impresario Gerry Cottle's miniature zoo.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1307847083</lastupdated>
+  <seasonid>467637</seasonid>
+  <seriesid>249421</seriesid>
+</Episode>
+<Episode>
+  <id>4117585</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 6</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2011-06-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>This episode features a bar designed for Sir Elton John by shoe designer Patrick Cox; a million-year-old fossil; and a collection of candid photos of the stars of the 60s, from Barbara Windsor to Roger Moore. Will they make their owners a fortune?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1308342934</lastupdated>
+  <seasonid>467637</seasonid>
+  <seriesid>249421</seriesid>
+</Episode>
+<Episode>
+  <id>4182852</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 7</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2011-07-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Could a rare painting by Marilyn Monroe, a life-size mechanical baby elephant, a collection of bizarre celebrity memorabilia or a collection of stuffed frogs make someone rich?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1323161162</lastupdated>
+  <seasonid>467637</seasonid>
+  <seriesid>249421</seriesid>
+</Episode>
+<Episode>
+  <id>4182853</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 8</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2011-07-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The final episode in the series features a bottle of wine owned by George Best, a mummified mermaid, a collection of Playboy memorabilia, and the death mask of a Victorian murderer. Will any of the owners sell for a fortune?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1323161237</lastupdated>
+  <seasonid>467637</seasonid>
+  <seriesid>249421</seriesid>
+</Episode>
+<Episode>
+  <id>4291398</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 1</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2012-03-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Can the chair on which JK Rowling wrote Harry Potter, the original music score for Psycho, artwork by Marlon Brando, Francis Bacon's paint brushes or an antique dildo make their owners rich?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1333041467</lastupdated>
+  <seasonid>488274</seasonid>
+  <seriesid>249421</seriesid>
+</Episode>
+<Episode>
+  <id>4295353</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 2</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2012-03-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Can a dress worn by Amy Winehouse, a bottle of champagne signed by the Ashes-winning cricket team, a waxwork autopsy, a slice of the Queen and Prince Phillip's wedding cake, or Kate Middleton's car make their owners a life-changing sum of money?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1333041568</lastupdated>
+  <seasonid>488274</seasonid>
+  <seriesid>249421</seriesid>
+</Episode>
+<Episode>
+  <id>4300545</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 3</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2012-04-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Can tiles featured on the Beatles' Abbey Road album cover, original artwork from Reservoir Dogs, Ku Klux Klan costumes or Richard Burton's fur coat earn their owners life-changing money?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>10.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1333641977</lastupdated>
+  <seasonid>488274</seasonid>
+  <seriesid>249421</seriesid>
+</Episode>
+<Episode>
+  <id>4318310</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 4</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2012-04-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The dealers get a chance to bid for Katie Price and Peter Andre's wedding carriage, paintings by the Kray twins, Dracula author Bram Stoker's desk and artwork by Damien Hirst.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335848426</lastupdated>
+  <seasonid>488274</seasonid>
+  <seriesid>249421</seriesid>
+</Episode>
+<Episode>
+  <id>4318311</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 5</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2012-04-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Can Napoleon's death mask, a pair of woolly mammoth tusks, a giant Polaroid by Bob Carlos Clarke or a 1920s chandelier earn their owners life-changing sums of money?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335848465</lastupdated>
+  <seasonid>488274</seasonid>
+  <seriesid>249421</seriesid>
+</Episode>
+<Episode>
+  <id>4318312</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 6</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2012-04-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>This episode features a wallet made from the skin of the hand of notorious Edinburgh bodysnatcher William Burke; and a 19th-century Nepalese witchdoctor's outfit complete with spirit catcher and ritual dagger, given directly to the seller by a Shaman family.
+
+Plus a graduation artwork by young British artist Jake Chapman, which the seller bought in the 1980s for just £50; and a giant elephant-bird egg - 180 times larger than a hen's egg, it was laid by the biggest bird that ever lived.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335848500</lastupdated>
+  <seasonid>488274</seasonid>
+  <seriesid>249421</seriesid>
+</Episode>
+<Episode>
+  <id>4318313</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 7</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2012-05-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The dealers bid for six original dresses made by the late Alexander McQueen, including a design piece for Sarah Jessica Parker; a bespoke gold Rolex watch made for the Sultan of Oman containing 300 diamonds and 27 rubies; a boxing glove worn by Mohammad Ali; and a shocking artwork depicting the gates of Auschwitz, which the artist claims is made partly from the gold teeth of Holocaust victims.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335848562</lastupdated>
+  <seasonid>488274</seasonid>
+  <seriesid>249421</seriesid>
+</Episode>
+</Data>

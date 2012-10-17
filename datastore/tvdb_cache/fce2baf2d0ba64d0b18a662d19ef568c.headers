@@ -1,0 +1,10 @@
+Server: cloudflare-nginx
+Date: Wed, 17 Oct 2012 10:36:13 GMT
+Content-Type: text/xml; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+X-Powered-By: PHP/5.2.6-1+lenny16
+Cache-Control: max-age=900
+Expires: Wed, 17 Oct 2012 10:51:13 GMT
+Vary: User-Agent,Accept-Encoding
+Set-Cookie: __cfduid=dc526498966b899d5c0dde22dcb7d392f1350470173; expires=Mon, 23-Dec-2019 23:50:00 GMT; path=/; domain=.thetvdb.com

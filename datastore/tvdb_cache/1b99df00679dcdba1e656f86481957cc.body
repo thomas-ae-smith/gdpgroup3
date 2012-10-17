@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>123001</id>
+    <Actors>|Aldo Barberito|Beatrice Margiotti|Bruno Cattaneo|Fabio Boccanera|Franco Latini|Giuseppe Fortis|Marco Baroni|Mariù Safier|Nino Scardina|Vittorio Stagni|Willy Moser|</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>1972-01-04</FirstAired>
+    <Genre>|Animation|Children|</Genre>
+    <IMDB_ID>tt0204102</IMDB_ID>
+    <Language>en</Language>
+    <Network>Fuji TV</Network>
+    <NetworkID></NetworkID>
+    <Overview>The episodes tell the classic story of Pinocchio the wooden puppet, who often gets into trouble through being mischievous and naive. He leaves Geppetto to follow a puppet theater and together with a duck named Gina and a woodpecker called Rocco, Pinocchio finds his way through various adventures and eventually learns about values like friendship and courage. In the end, he finds his way back to Geppetto and a fairy transforms him into a real boy.</Overview>
+    <Rating>10.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>25</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>The Adventures of Pinocchio</SeriesName>
+    <Status>Ended</Status>
+    <added>2009-11-07 08:05:52</added>
+    <addedBy>91221</addedBy>
+    <banner>graphical/123001-g.jpg</banner>
+    <fanart>fanart/original/123001-1.jpg</fanart>
+    <lastupdated>1345203047</lastupdated>
+    <poster>posters/123001-5.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

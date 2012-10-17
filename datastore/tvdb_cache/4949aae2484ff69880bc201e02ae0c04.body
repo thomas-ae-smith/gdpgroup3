@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>186551</id>
+  <Actors>|Jason Biggs|Sarah Chalke|Tyler Labine|Judy Greer|Sarah Wright|</Actors>
+  <Airs_DayOfWeek>Monday</Airs_DayOfWeek>
+  <Airs_Time>8:30PM</Airs_Time>
+  <ContentRating>TV-14</ContentRating>
+  <FirstAired>2011-02-14</FirstAired>
+  <Genre>|Comedy|</Genre>
+  <IMDB_ID>tt1684910</IMDB_ID>
+  <Language>en</Language>
+  <Network>CBS</Network>
+  <NetworkID></NetworkID>
+  <Overview>MAD LOVE is a comedy about a quartet of New Yorkers - two who are falling in love and two who despise each other... at least for now. Ben, a lawyer, is a hopeless romantic trying to build a relationship with Kate, a beautiful, smart girl whom Ben thinks is the woman of his dreams. Larry, Ben's unrefined best friend and co-worker, is a guy who doesn't believe in love and has a long track record as the third wheel. Connie, Kate's roommate, works as a nanny and finds Larry aggravating... or does she? Larry and Connie have a lot in common, but refuse to let their guard down long enough to see it. </Overview>
+  <Rating>7.6</Rating>
+  <RatingCount>14</RatingCount>
+  <Runtime>30</Runtime>
+  <SeriesID>78742</SeriesID>
+  <SeriesName>Mad Love</SeriesName>
+  <Status>Ended</Status>
+  <added>2010-09-02 12:03:09</added>
+  <addedBy>39111</addedBy>
+  <banner>graphical/186551-g2.jpg</banner>
+  <fanart>fanart/original/186551-1.jpg</fanart>
+  <lastupdated>1343400449</lastupdated>
+  <poster>posters/186551-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>3351461</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Pamela Fryman</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Fireworks</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2011-02-14</FirstAired>
+  <GuestStars>Rachel Boston</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When Ben Parr and Kate Swanson accidentally meet at the top of the Empire State Building, they make a date for later that evening and each bring along their best friends, Larry and Connie, who instantly despise each other.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>27</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Matt Tarses</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/186551/3351461.jpg</filename>
+  <lastupdated>1339322155</lastupdated>
+  <seasonid>379611</seasonid>
+  <seriesid>186551</seriesid>
+</Episode>
+<Episode>
+  <id>3486221</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Scott Ellis</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Friends and Other Obstacles</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2011-02-21</FirstAired>
+  <GuestStars>Martin Starr</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ben and Kate aren't able to go on their first date because Larry and Connie are keeping them from it. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>21</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Rob DesHotel</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/186551/3486221.jpg</filename>
+  <lastupdated>1339322208</lastupdated>
+  <seasonid>379611</seasonid>
+  <seriesid>186551</seriesid>
+</Episode>
+<Episode>
+  <id>3486231</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Rob Schiller</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Kate Gatsby</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2011-02-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ben gives bad advice to Kate not realizing that the advice could ruin a friendship that Kate and Connie have as well as the party being planned for Kate's birthday. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>19</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Adrian Wenner</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/186551/3486231.jpg</filename>
+  <lastupdated>1339322255</lastupdated>
+  <seasonid>379611</seasonid>
+  <seriesid>186551</seriesid>
+</Episode>
+<Episode>
+  <id>3486241</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Beth McCarthy-Miller</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Little Sister, Big City </EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2011-03-07</FirstAired>
+  <GuestStars>Brittany Snow</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Kate welcomes her younger sister Julia for a visit and doesn't realize that her sister is all grown up. Larry and Connie decide to support each other at the bar. 
+
+</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>19</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Corey Nickerson</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/186551/3486241.jpg</filename>
+  <lastupdated>1339322312</lastupdated>
+  <seasonid>379611</seasonid>
+  <seriesid>186551</seriesid>
+</Episode>
+<Episode>
+  <id>3486251</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>To Munsch or Not to Munsch </EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2011-03-14</FirstAired>
+  <GuestStars>Matt Besser | Kelly Stables</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ben is determined to win Connie over by helping her at her nanny job, while Kate tries to change Larry's ways after she learns that he breaks up with women by avoiding them until they leave him. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>20</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/186551/3486251.jpg</filename>
+  <lastupdated>1339322482</lastupdated>
+  <seasonid>379611</seasonid>
+  <seriesid>186551</seriesid>
+</Episode>
+<Episode>
+  <id>3486261</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Spy Who Loved Me</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2011-03-21</FirstAired>
+  <GuestStars>Rachel Boston, Joe Lo Truglio, Reid Scott,</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Kate spies on Ben when he is required to work late nights with his ex-girlfriend; Larry tries to track a mysterious woman.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>18</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/186551/3486261.jpg</filename>
+  <lastupdated>1342897428</lastupdated>
+  <seasonid>379611</seasonid>
+  <seriesid>186551</seriesid>
+</Episode>
+<Episode>
+  <id>3486271</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Baby, You Can Drive My Car</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2011-03-28</FirstAired>
+  <GuestStars>Martin Starr, Chris Parnell,</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When Kate crashes Ben's car during a road trip, the gang is forced to share a room for a night.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>19</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/186551/3486271.jpg</filename>
+  <lastupdated>1342897152</lastupdated>
+  <seasonid>379611</seasonid>
+  <seriesid>186551</seriesid>
+</Episode>
+<Episode>
+  <id>3486281</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Paw &amp; Order</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2011-04-11</FirstAired>
+  <GuestStars>Chris Parnell</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>While Larry intrudes on Connie's dates with Officer Barrett in an attempt to get out of a traffic ticket, Kate fears for her job when she accidentally loses her boss's dog.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>21</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/186551/3486281.jpg</filename>
+  <lastupdated>1342897194</lastupdated>
+  <seasonid>379611</seasonid>
+  <seriesid>186551</seriesid>
+</Episode>
+<Episode>
+  <id>3486291</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Lee Shallat-Chemel</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Pub Quiz</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2011-04-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>An obnoxious client forces Ben and Larry to jump through hoops before he gives them his business. Larry risks the account - and his friendship with Ben - by choosing to participate in the bar's annual Pub Quiz instead.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>18</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Rob Sheridan</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/186551/3486291.jpg</filename>
+  <lastupdated>1342897249</lastupdated>
+  <seasonid>379611</seasonid>
+  <seriesid>186551</seriesid>
+</Episode>
+<Episode>
+  <id>3486301</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Young and The Reckless</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2011-04-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When Ben and Kate each worry that they're not fun enough for the other, a spontaneous outing leads to disaster. Meanwhile, Larry tags along with Connie so he can find a chance to hit on her friend.
+</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.6</Rating>
+  <RatingCount>21</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/186551/3486301.jpg</filename>
+  <lastupdated>1342897272</lastupdated>
+  <seasonid>379611</seasonid>
+  <seriesid>186551</seriesid>
+</Episode>
+<Episode>
+  <id>3486311</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Secret Life of Larry</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>2011-05-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When Larry loses Connie's camera, she follows him around New York as he retraces his steps, but when they reach the end of the trail, Connie discovers there's more to Larry than she thought.
+</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>23</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/186551/3486311.jpg</filename>
+  <lastupdated>1342897303</lastupdated>
+  <seasonid>379611</seasonid>
+  <seriesid>186551</seriesid>
+</Episode>
+<Episode>
+  <id>3486321</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Friends</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>2011-05-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When Tiffany decides to leave New York because of her divorce, it means Connie must find a new job and Larry finally has a chance with his dream girl; however, they soon each get more than they bargained for.
+</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.8</Rating>
+  <RatingCount>21</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/186551/3486321.jpg</filename>
+  <lastupdated>1342897335</lastupdated>
+  <seasonid>379611</seasonid>
+  <seriesid>186551</seriesid>
+</Episode>
+<Episode>
+  <id>3486331</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>After The Fireworks</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>2011-05-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Kate's ex-boyfriend reveals some shocking information that could put her relationship with Ben in jeopardy, and Connie and Larry's fake date takes a very real turn.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.9</Rating>
+  <RatingCount>20</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/186551/3486331.jpg</filename>
+  <lastupdated>1342897358</lastupdated>
+  <seasonid>379611</seasonid>
+  <seriesid>186551</seriesid>
+</Episode>
+</Data>

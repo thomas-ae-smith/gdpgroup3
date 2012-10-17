@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+<Series>
+<seriesid>118881</seriesid>
+<language>en</language>
+<SeriesName>Comedy Fight Club</SeriesName>
+<banner>text/118881.jpg</banner>
+<FirstAired>2007-02-15</FirstAired>
+<IMDB_ID>tt1042453</IMDB_ID>
+<id>118881</id>
+</Series>
+<Series>
+<seriesid>82642</seriesid>
+<language>en</language>
+<SeriesName>Jurassic Fight Club</SeriesName>
+<banner>graphical/82642-g.jpg</banner>
+<Overview>The History Channel imagines prehistoric life in this entertainment series about dinosaur battles. Computer-generated dinosaurs engage in conflicts choreographed using paleontological evidence from 70-million-year-old crime scenes.</Overview>
+<FirstAired>2008-07-29</FirstAired>
+<IMDB_ID>tt1258908</IMDB_ID>
+<id>82642</id>
+</Series>
+<Series>
+<seriesid>221251</seriesid>
+<language>en</language>
+<SeriesName>Outback Fight Club</SeriesName>
+<banner>graphical/221251-g.jpg</banner>
+<id>221251</id>
+</Series>
+</Data>

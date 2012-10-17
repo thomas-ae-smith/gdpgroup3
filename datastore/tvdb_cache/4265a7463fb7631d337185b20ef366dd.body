@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>248779</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek>Sunday</Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>2011-05-08</FirstAired>
+  <Genre>|Home and Garden|</Genre>
+  <IMDB_ID>tt1927244</IMDB_ID>
+  <Language>en</Language>
+  <Network>Food Network</Network>
+  <NetworkID></NetworkID>
+  <Overview>Hailing from different cities across the country, six of the best barbecue masters meet in New York City to face off for a $50,000 grand prize and the right to claim the title Best in Smoke. Endurance and skill are the key ingredients as contestants take on multiple challenges for vastly different audiences, with limited resources. From barbecue desserts to single bite hors d'oeuvres, no food is off limits. Contestants show off their personal style and quick wit throughout the competition, but a final mad dash to three separate venues around Manhattan and Brooklyn will determine which competitor will win the ultimate prize</Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>30</Runtime>
+  <SeriesID>81308</SeriesID>
+  <SeriesName>Best In Smoke</SeriesName>
+  <Status>Continuing</Status>
+  <added>2011-05-15 14:08:33</added>
+  <addedBy>9841</addedBy>
+  <banner>graphical/248779-g.jpg</banner>
+  <fanart>fanart/original/248779-1.jpg</fanart>
+  <lastupdated>1339215818</lastupdated>
+  <poster></poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4100168</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Best Bite</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2011-05-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The six competitors' first challenge is to create their best bite of bbq.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248779/4100168.jpg</filename>
+  <lastupdated>1339215760</lastupdated>
+  <seasonid>466040</seasonid>
+  <seriesid>248779</seriesid>
+</Episode>
+<Episode>
+  <id>4100169</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Child's Play</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2011-05-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The pit masters cook up a kid-friendly bbq for a child's birthday party.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248779/4100169.jpg</filename>
+  <lastupdated>1339215738</lastupdated>
+  <seasonid>466040</seasonid>
+  <seriesid>248779</seriesid>
+</Episode>
+<Episode>
+  <id>4100311</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Vendor Wars</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2011-05-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The final four pit masters team up in order to operate a vending food cart.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248779/4100311.jpg</filename>
+  <lastupdated>1339215854</lastupdated>
+  <seasonid>466040</seasonid>
+  <seriesid>248779</seriesid>
+</Episode>
+<Episode>
+  <id>4100312</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Triple Play</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2011-05-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The three remaining pit masters have a marathon day of barbecuing.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/248779/4100312.jpg</filename>
+  <lastupdated>1339215964</lastupdated>
+  <seasonid>466040</seasonid>
+  <seriesid>248779</seriesid>
+</Episode>
+</Data>

@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>83625</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>2008-11-01</FirstAired>
+  <Genre>|Comedy|Documentary|</Genre>
+  <IMDB_ID>tt0397794</IMDB_ID>
+  <Language>en</Language>
+  <Network>BBC Two</Network>
+  <NetworkID></NetworkID>
+  <Overview>Assembling a group of grumpy, world-weary blokes to moan about selected topics might sound boring but the show side-stepped political correctness and tapped a rich vein of sardonic, eloquent and well informed grumpiness that got right to the nub of each issue.
+
+The grumpy old men included, amongst others, Arthur Smith, Will Self, John Peel, Rick Wakeman and Jeremy Clarkson. The subject matter up for discussion ranged from Pop Idol to Tony Blair to mobile phones to Christmas and beyond. Geoffrey Palmer provided a wry, understated narration.</Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>30</Runtime>
+  <SeriesID>31236</SeriesID>
+  <SeriesName>Grumpy Old Men</SeriesName>
+  <Status>Continuing</Status>
+  <added>2008-11-01 19:15:41</added>
+  <addedBy>3850</addedBy>
+  <banner>graphical/83625-g2.jpg</banner>
+  <fanart></fanart>
+  <lastupdated>1326092524</lastupdated>
+  <poster>posters/83625-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>3046801</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Grumpy Old Men At Christmas</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2003-12-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>0939616</IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season>1</airsafter_season>
+  <airsbefore_episode>1</airsbefore_episode>
+  <airsbefore_season>2</airsbefore_season>
+  <filename></filename>
+  <lastupdated>1307829862</lastupdated>
+  <seasonid>36806</seasonid>
+  <seriesid>83625</seriesid>
+</Episode>
+<Episode>
+  <id>402675</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Alan Lewens Director|Stuart Prebble|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName> Is This the World We Created?</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2003-10-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>In this episode the grumpy old men focus on the effect speed bumps have on cars and accident numbers and also they discuss the annoyance that is call centres.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Stuart Prebble Writer|Jackie Baker|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83625/402675.jpg</filename>
+  <lastupdated>1326092537</lastupdated>
+  <seasonid>36813</seasonid>
+  <seriesid>83625</seriesid>
+</Episode>
+<Episode>
+  <id>402676</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Alan Lewens|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Stuff</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2003-10-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>In this episode the men talk about the way in which technology is trying to enhance our lives but in the case of the older generation, it often makes life more complicated.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83625/402676.jpg</filename>
+  <lastupdated>1282312342</lastupdated>
+  <seasonid>36813</seasonid>
+  <seriesid>83625</seriesid>
+</Episode>
+<Episode>
+  <id>402677</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Alan Lewens|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>A Life in the Day</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2003-10-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>In this episode the men discuss the effect fast food has on our body and how this leads to the many diets and keep fit attempts that people have throughout the year.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83625/402677.jpg</filename>
+  <lastupdated>1282312471</lastupdated>
+  <seasonid>36813</seasonid>
+  <seriesid>83625</seriesid>
+</Episode>
+<Episode>
+  <id>402678</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Alan Lewens|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>So Who's to Blame?</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2003-10-31</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Stuart Prebble|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83625/402678.jpg</filename>
+  <lastupdated>1282317141</lastupdated>
+  <seasonid>36813</seasonid>
+  <seriesid>83625</seriesid>
+</Episode>
+<Episode>
+  <id>402679</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Is It Just Me?</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2004-09-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>This episode covers topics such as holidays and the joys of the new football season.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1324208248</lastupdated>
+  <seasonid>36814</seasonid>
+  <seriesid>83625</seriesid>
+</Episode>
+<Episode>
+  <id>402680</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Nanny State</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2004-09-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Participants in the programme rail against the concept and evidence of 'the nanny state'.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1324208226</lastupdated>
+  <seasonid>36814</seasonid>
+  <seriesid>83625</seriesid>
+</Episode>
+<Episode>
+  <id>402681</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Meedja</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2004-09-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Topics covered in this programme include the tabloids' obsession with 'fabricated celebrity'.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1324208142</lastupdated>
+  <seasonid>36814</seasonid>
+  <seriesid>83625</seriesid>
+</Episode>
+<Episode>
+  <id>402682</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Going Large</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2004-10-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>This week's focus is celebrity-chef culture, exclusive restaurants and expensive wine lists.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1324208191</lastupdated>
+  <seasonid>36814</seasonid>
+  <seriesid>83625</seriesid>
+</Episode>
+<Episode>
+  <id>402683</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Those Were the Days</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The grumblers cast their minds back to the days when the post would arrive on time, when water came out of a tap and not a bottle, of decent music and classic movies and before going to the cinema meant a two hour extravaganza of junk food in a bucket. With Arthur Smith, Rory McGrath, Rick Wakeman, Will Self, John Stapleton, Tim Rice, John O'Farrell, Des Lynam, Nigel Havers, Sir Gerry Robinson, Tony Slattery, Don Warrington and Peter York.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83625/402683.jpg</filename>
+  <lastupdated>1307830232</lastupdated>
+  <seasonid>36815</seasonid>
+  <seriesid>83625</seriesid>
+</Episode>
+<Episode>
+  <id>402684</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Everywhere You Look</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The grumblers find their hackles rising virtually the moment they leave their homes. Filling up the car; a trip to the supermarket; even consulting the A-Z can prove potentially explosive. With Arthur Smith, Rory McGrath, Rick Wakeman, Will Self, John Stapleton, Tim Rice, John O'Farrell, Des Lynam, Nigel Havers, Gerry Robinson, Tony Slattery, Don Warrington and Peter York.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83625/402684.jpg</filename>
+  <lastupdated>1307830242</lastupdated>
+  <seasonid>36815</seasonid>
+  <seriesid>83625</seriesid>
+</Episode>
+<Episode>
+  <id>402685</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Terminally Confused</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The grumblers get annoyed about technology - how VCRs, DVDs and mobile telephones all seem designed specifically to annoy them. Television adverts they don't understand, phone calls which are never for them, the endless pleasure of dialling directory enquiries. When did modern life becoming so confusing?
+
+With Arthur Smith, Rory McGrath, Rick Wakeman, Will Self, John Stapleton, Tim Rice, John O'Farrell, Des Lynam, Nigel Havers, Gerry Robinson, Tony Slattery, Don Warrington and Peter York.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83625/402685.jpg</filename>
+  <lastupdated>1307830250</lastupdated>
+  <seasonid>36815</seasonid>
+  <seriesid>83625</seriesid>
+</Episode>
+<Episode>
+  <id>402686</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>This Is the Price We Pay</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1225608188</lastupdated>
+  <seasonid>36815</seasonid>
+  <seriesid>83625</seriesid>
+</Episode>
+<Episode>
+  <id>402687</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>All You Need Is Love</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1225608196</lastupdated>
+  <seasonid>36815</seasonid>
+  <seriesid>83625</seriesid>
+</Episode>
+<Episode>
+  <id>402688</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Being John Grumpy</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1225608205</lastupdated>
+  <seasonid>36815</seasonid>
+  <seriesid>83625</seriesid>
+</Episode>
+</Data>

@@ -1,0 +1,2829 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>71874</id>
+  <Actors>|Amber MacArthur|Andy Walker|Becky Worley|Brett Larson|Catherine Schwartz|Chris Pirillo|Leo Laporte|Martin Sargent|Patrick Norton|</Actors>
+  <Airs_DayOfWeek>Daily</Airs_DayOfWeek>
+  <Airs_Time>6:00 PM</Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>1998-01-01</FirstAired>
+  <Genre></Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>TechTV Canada</Network>
+  <NetworkID></NetworkID>
+  <Overview></Overview>
+  <Rating>10.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID>15771</SeriesID>
+  <SeriesName>Call For Help</SeriesName>
+  <Status>Continuing</Status>
+  <added></added>
+  <addedBy></addedBy>
+  <banner>graphical/71874-g.jpg</banner>
+  <fanart>fanart/original/71874-2.jpg</fanart>
+  <lastupdated>1312070848</lastupdated>
+  <poster>posters/71874-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>384397</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 051</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2004-08-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy gives an introduction to Bluetooth, Monica demonstrates &quot;Veeper&quot; animated images, and guest Mark Douglas showed off some X-Box mods. Calls were answered dealing with CD burning, game backups, problematic mice, and applications that wouldn't close.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220299594</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384398</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 052</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2004-08-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Monica shows some alternate mouse pointers, and Andy shows how to set up a home network. Leo answers calls about AMD speeds, screen savers, video cards, and programming on OS X.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220299653</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384399</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 053</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2004-08-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Looking at file sharing and some experimental food websites. Also, Amber MacArthur made her CFH debut with a Web Workshop that gives an introduction to blogging. Calls deal with LCD Monitors, Media Center software, web-based photo albums, reading Mac disks on Windows, and video cards.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220299699</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384400</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 054</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2004-08-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Monica looks at Firefox extensions, Andy explains Windows XP's System Restore, and calls are answered dealing with Wi-Fi ranges, Microsoft .NET, networking Windows and Mac machines, monitor problems, and DVD authoring.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220299837</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384401</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 055</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2004-08-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy demonstrates Windows' Disk Cleanup, Monica shows how to erase Internet Browsing history, and guest John Christopher talks about hard drive recovery. Calls deal with hard drives, faxing drawings, virus protection, and Windows/OS X compatibility.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220299859</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384402</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 056</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2004-08-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy explains SP2, and Monica looks again at Firefox extensions. Guest Mark Douglas looks at PVR alternatives, and Leo answers calls dealing with online video, DVD recording, Windows errors, and the Windows welcome screen.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220299885</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384403</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 057</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2004-08-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy talks cell phones, and Monica looks at some more Firefox extensions. Guest Amber MacArthur gives a basic intro to finding a domain name and starting up a web site. Calls deal with spyware, web-page compatibility, the iPod Mini, and the default directory in Windows Explorer.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220299908</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384404</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 058</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2004-08-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy discusses drivers, Monica looks at bored.com, and guest Marcel Gagne talks Linux. Callers ask about file sorting, Windows Explorer's default directory, Z-Modem protocols, and dying laptop batteries.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220299932</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384405</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 059</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2004-08-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy talks about cleaning up liquid spills around computers, and Monica looks at a PC diagnostic program, and Guest John Christopher shares some hard drive horror stories. Calls deal with digital cameras, Linux on a Mac, and if moving from XP Home to Professional is worth it.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220299949</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384406</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 060</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2004-08-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy looks at TV on the PC, Monica discusses Winamp, and guest Jim Sanderson demonstrates some Word customisations. Callers ask about PDA's, using Wi-Fi on an iBook, programs that can't be removed, and file sharing between computers with Windows.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220299966</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384407</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 061</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>2004-08-30</FirstAired>
+  <GuestStars>Glenn Dietzel</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy gives some tips to improve Wi-Fi signal strength, and Monica shares some trivia websites. Guest Glenn Dietzel talks e-Books. Leo answers calls about iBook errors, multiple copies of XP, management of computers in the office, and user-specific display resolutions.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300202</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384408</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 062</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>2004-08-31</FirstAired>
+  <GuestStars>Sean Carruthers</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy explains networking over power lines, and Monica runs through some online image storage sites. Guest Sean Carruthers shows off some MP3 players, and Leo answers calls dealing with iTunes, comparisons between audio files, video editing software, and removing DRM from .wma files.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300292</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384409</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 063</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>2004-09-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy demonstrates the use of a mobile phone as a wireless modem, and Monica looks at some online virus scanners. Guest   and Web Specialist Amber MacArthur talks about HTML editors, and Leo answers calls asking about remote PC access, getting WMA onto a Mac, sharing Outlook inboxes between users, and the space needed for defragging.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300369</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384410</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 064</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>2004-09-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy shows how to add more RAM, Monica looks at places to make friends online, and CFH's Office expert Jim Sanderson talks about Powerpoint. Calls deal with the integrity of data moving around the world, Linux for a beginner, finding old arcade ROMs, and problems downloading .zip files in IE.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300383</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384411</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 065</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>2004-09-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Monica introduces bitTorrent, Andy looks at home network troubleshooting, and guest Amber MacArthur goes over some HTML basics. Calls deal with Wi-Fi standards, setting up Linux on a Mac, alternatives to Norton, and using RAM disks.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300423</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384412</id>
+  <Combined_episodenumber>16</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 066</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired>2004-09-08</FirstAired>
+  <GuestStars>Greg Danbrooke</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy talks about defragmenting, Monica looks at metroblogging, and guest Greg Danbrooke demonstrates retouching in Photoshop. Callers ask about Firefox compatability, mouse problems, the need to enter a password in Windows XP, monitoring network bandwidth, and hard drive drivers.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300438</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384413</id>
+  <Combined_episodenumber>17</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 067</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired>2004-09-09</FirstAired>
+  <GuestStars>Heather McBurney</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy talks firewalls, Monica shows off hello.com, and guest Heather McBurney gives some Powerpoint tips. Leo answers calls about synching email and calendars over a home network, mp3 ripping, boot CDs, sound cards, and making the move to Mac.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300452</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384414</id>
+  <Combined_episodenumber>18</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 068</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired>2004-09-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy looks at some software that protects your keyboard from your cat, and Monica looks at an animated character maker. Guest Amber MacArthur gives some basic web design tips. Leo answers questions asking about storing digital photos, differences between Office for Windows and Mac, sychronising email and contacts between computers, updating pirated versions of Windows, and getting the internet to work after upgrading to XP.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300466</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384415</id>
+  <Combined_episodenumber>19</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 069</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired>2004-09-14</FirstAired>
+  <GuestStars>Greg Danbrooke</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy reviews some SPOT watches, Monica looks at audio file converters, and guest Greg Danbrooke explains layers in Photoshop. Questions deal with repairing XP, getting around Macrovision protection, upgrading a gaming machine, backing up to CD, and the importance of XP SP2.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300500</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384416</id>
+  <Combined_episodenumber>20</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 070</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired>2004-09-15</FirstAired>
+  <GuestStars>Marcel Gagne</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy gives some &quot;emergency Windows tricks&quot;, Monica looks at the top IM clients, and CFH's Linux Guru Marcel Gagne gives gives some software suggestions for making the Windows-to-Linux transition easier. Calls deal with hard drive formatting, upgrading from ME to XP, putting video on a website, and IE errors.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300518</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384417</id>
+  <Combined_episodenumber>21</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 071</EpisodeName>
+  <EpisodeNumber>21</EpisodeNumber>
+  <FirstAired>2004-09-16</FirstAired>
+  <GuestStars>Sean Carruthers</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy demonstrates the use of the Windows key, and Monica talks about Wikis. Sean Carruthers rounds up some digital SLR cameras, and Leo answers calls about the + and - of DVD's, whether a computer should be bought or leased, emailing pictures in Outlook, HTML in Eudora, and the System File Checker in Windows.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300541</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384418</id>
+  <Combined_episodenumber>22</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 072</EpisodeName>
+  <EpisodeNumber>22</EpisodeNumber>
+  <FirstAired>2004-09-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy looks at some software that can turn your PC into a karaoke machine, and Monica demos a device that helps manage your time. Guest Amber MacArthur shares some web usability tips, and Leo answers calls about DVD playback problems, media file conversion, slow network speeds, video editing, and recovering hard drive space.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300559</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384419</id>
+  <Combined_episodenumber>23</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 073</EpisodeName>
+  <EpisodeNumber>23</EpisodeNumber>
+  <FirstAired>2004-09-21</FirstAired>
+  <GuestStars>Andrew Moore-Crispin</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Monica looks at a fun website, Andy troubleshoots Wi-Fi, and guest Andrew Moore-Crispin looks at music mixers. Calls deal with Adware, borderless printing problems, wireless network range, sharing internet history, and a potential risk of laser pointers.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300575</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384420</id>
+  <Combined_episodenumber>24</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 074</EpisodeName>
+  <EpisodeNumber>24</EpisodeNumber>
+  <FirstAired>2004-09-22</FirstAired>
+  <GuestStars>Greg Danbrooke</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy looks at SMS news updates, Monica looks at a site to help you find the cheapest gas, and Photoshop expert Greg Danbrooke demonstrates 3D Anaglyphs. Leo answers calls about Apple LCD's, restore discs, looking at IP addresses on a router, .ca domain names, and burning problems.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300588</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384421</id>
+  <Combined_episodenumber>25</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 075</EpisodeName>
+  <EpisodeNumber>25</EpisodeNumber>
+  <FirstAired>2004-09-27</FirstAired>
+  <GuestStars>Heather McBurney</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy checks out some of SP2's updates, and Monica finds some online stress relief. Heather McBurney shows how to use Smart tags in Outlook. Leo answers calls about 64-bit computing, video card troubles, IE running slow, internet telephony, and web video.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300606</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384422</id>
+  <Combined_episodenumber>26</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 076</EpisodeName>
+  <EpisodeNumber>26</EpisodeNumber>
+  <FirstAired>2004-09-28</FirstAired>
+  <GuestStars>Heather McBurney</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy looks at Windows Connect Now, Monica demonstrates a couple of Firefox extensions, and CFH's office expert Heather  shows how to get row/column subtotals for spreadsheets. Leo answers calls about password protecting folders, remote PC access, firewalls, networking, and surge protection.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300627</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384423</id>
+  <Combined_episodenumber>27</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 077</EpisodeName>
+  <EpisodeNumber>27</EpisodeNumber>
+  <FirstAired>2004-09-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy sends SMS from a PC, Monica looks at a directory of catchy advertising songs, and guest Amber MacArthur discusses web navigation. Calls deal with web design software, recording internet radio to .mp3, firewalls, installing software in XP, and anti-spyware.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300638</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384424</id>
+  <Combined_episodenumber>28</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 078</EpisodeName>
+  <EpisodeNumber>28</EpisodeNumber>
+  <FirstAired>2004-09-30</FirstAired>
+  <GuestStars>Heather McBurney</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy looks at Wi-Fi security in SP2, Monica looks at a free online calendar, and guest Heather explains labels and automatic formatting in Outlook. Leo answers calls dealing with Windows activation, erasing data from USB drives, running multiple firewalls, automatic software installation, and preventing a PC from dialing out on its own.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300652</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384425</id>
+  <Combined_episodenumber>29</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 079</EpisodeName>
+  <EpisodeNumber>29</EpisodeNumber>
+  <FirstAired>2004-10-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Monica looks at more Firefox extensions, Andy shows how to share printers over networks. CFH's Photoshop expert looks at the liquify feature, and Leo answers more viewer calls.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300677</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384426</id>
+  <Combined_episodenumber>30</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 080</EpisodeName>
+  <EpisodeNumber>30</EpisodeNumber>
+  <FirstAired>2004-10-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Some email-related Firefox extensions from Monica, while Andy looks at the advantages of USB security keys. Leo answers calls about DivX encoding problems, cost-effective computer parts, AirSnare in the workplace, PVRs, and the dependability of AVG anti-virus.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300689</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384427</id>
+  <Combined_episodenumber>31</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 081</EpisodeName>
+  <EpisodeNumber>31</EpisodeNumber>
+  <FirstAired>2004-10-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy shows off some software that can recover data from scratched CD's, and new co-host Amber looks at the best workout-friendly mp3 players. Guest Bill Jelen introduces pivot tables in Excel, and calls deal with personalised menus, removing Windows updates, LCD screen resolutions, sharing email between user accounts, and file sharing between Mac and PC.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300700</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384428</id>
+  <Combined_episodenumber>32</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 082</EpisodeName>
+  <EpisodeNumber>32</EpisodeNumber>
+  <FirstAired>2004-10-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy gives some spyware removal tips, Amber presents some simple ways to improve your internet searching, and Leo answers calls about doing a clean install of XP, problems with Windows Update, overclocking a video card, facing a monitor in a certain direction, and choosing the right hardware for a PC.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300712</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384429</id>
+  <Combined_episodenumber>33</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 083</EpisodeName>
+  <EpisodeNumber>33</EpisodeNumber>
+  <FirstAired>2004-10-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy discusses some of XP's backup options, and Amber looks at some autumn-themed sites. Calls deal with disk defragging, user account types in XP, gaming performance issues, cheap web hosting options, and VoIP.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300729</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384430</id>
+  <Combined_episodenumber>34</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 084 - Learning all those processes</EpisodeName>
+  <EpisodeNumber>34</EpisodeNumber>
+  <FirstAired>2004-10-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy looks at the processes tab in the task manager, Amber discusses the best way to link, and Leo answers calls about power setting in XP, mysterious reboots, Bluetooth, flash memory, and creating images of a hard drive.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300771</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384431</id>
+  <Combined_episodenumber>35</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 085 - Track your health online</EpisodeName>
+  <EpisodeNumber>35</EpisodeNumber>
+  <FirstAired>2004-10-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy explains the workings of CD burners. Amber finds a website that allows you to keep track of your health and fitness. Calls deal with USB radio receivers, connecting two machines by their parallel ports, broken  Photo Wizards, using Perl in Windows 2000, and software equalisers.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300788</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384432</id>
+  <Combined_episodenumber>36</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 086 - Rid yourself of spyware</EpisodeName>
+  <EpisodeNumber>36</EpisodeNumber>
+  <FirstAired>2004-10-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy gives some more spyware removal tips. Amber finds a site that can email you your birthday or anniversary reminders. Leo takes calls about firewalls, partitioning the hard drive on a G5 for the swapfile, routers that support wired and wireless, remote access, and the best way to set up a RAID array.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300801</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384433</id>
+  <Combined_episodenumber>37</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 087 - How to find health sites you can trust</EpisodeName>
+  <EpisodeNumber>37</EpisodeNumber>
+  <FirstAired>2004-10-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy shows you how to repair scratched CDs or DVDs, and Amber discusses online medical info and whether or not a site can be trusted. Callers ask about Sasser, recompressing video files, deleting files securely, hiding your domain registration information, and speeding up a dial-up connection</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300821</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>384434</id>
+  <Combined_episodenumber>38</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 088 - How to take your website on the road</EpisodeName>
+  <EpisodeNumber>38</EpisodeNumber>
+  <FirstAired>2004-10-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>In her Web Workshop, Amber shows how you can set up a site to document your travels. Andy looks at what you need to set up a Wi-Fi printer. Guest Nick Barbuto talks about overclocking PCs. Calls deal with RAM problems, removing items from the context menu, formatting a hard drive to remove viruses, and rewitable DVDs.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1220300834</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387302</id>
+  <Combined_episodenumber>39</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 089</EpisodeName>
+  <EpisodeNumber>39</EpisodeNumber>
+  <FirstAired>2004-10-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Anti-Spyware Primer, Playlists to Suit Your Mood </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221189869</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387303</id>
+  <Combined_episodenumber>40</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 090</EpisodeName>
+  <EpisodeNumber>40</EpisodeNumber>
+  <FirstAired>2004-10-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Pumpkin Pie Partitions, Crafty Jack-O-Lanterns</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221189921</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387304</id>
+  <Combined_episodenumber>41</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 091</EpisodeName>
+  <EpisodeNumber>41</EpisodeNumber>
+  <FirstAired>2004-10-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hallowe'en Costume Ideas</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221190085</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387305</id>
+  <Combined_episodenumber>42</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 092</EpisodeName>
+  <EpisodeNumber>42</EpisodeNumber>
+  <FirstAired>2004-11-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Windows Portable Media Center, Get the Word Out Digitally</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221190313</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387306</id>
+  <Combined_episodenumber>43</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 093</EpisodeName>
+  <EpisodeNumber>43</EpisodeNumber>
+  <FirstAired>2004-11-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>How to Use Hijack This, Track Your Cashflow</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221190412</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387307</id>
+  <Combined_episodenumber>44</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 094</EpisodeName>
+  <EpisodeNumber>44</EpisodeNumber>
+  <FirstAired>2004-10-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Pumpkin Pie Partitions, Crafty Jack-O-Lanterns</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278133</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387308</id>
+  <Combined_episodenumber>45</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 095</EpisodeName>
+  <EpisodeNumber>45</EpisodeNumber>
+  <FirstAired>2004-11-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>USB Tough Test, Build a Simple Site Map, Answers to Your Questions. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221277587</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387309</id>
+  <Combined_episodenumber>46</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 096</EpisodeName>
+  <EpisodeNumber>46</EpisodeNumber>
+  <FirstAired>2004-11-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>How to Optimize Windows XP, Quick Parenting Advice</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221190487</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387310</id>
+  <Combined_episodenumber>47</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 097</EpisodeName>
+  <EpisodeNumber>47</EpisodeNumber>
+  <FirstAired>2004-11-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Record an MP3 file from an LP , Fear-free car shopping</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221190529</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387311</id>
+  <Combined_episodenumber>48</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 098</EpisodeName>
+  <EpisodeNumber>48</EpisodeNumber>
+  <FirstAired>2004-11-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>PCI Express and Intel 915 Chipset, Web Workshop Review</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221277632</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387312</id>
+  <Combined_episodenumber>49</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 099</EpisodeName>
+  <EpisodeNumber>49</EpisodeNumber>
+  <FirstAired>2004-11-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Wi-Fi webcams, The ABCs of Apple Mail</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221190597</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387313</id>
+  <Combined_episodenumber>50</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 100</EpisodeName>
+  <EpisodeNumber>50</EpisodeNumber>
+  <FirstAired>2004-11-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>More Windows XP Optimization Tips, Take live yoga classes online</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221190629</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387553</id>
+  <Combined_episodenumber>51</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 101</EpisodeName>
+  <EpisodeNumber>51</EpisodeNumber>
+  <FirstAired>2004-11-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>How to put music files on MP3 player, Give your time - volunteer online</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221276747</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387554</id>
+  <Combined_episodenumber>52</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 102</EpisodeName>
+  <EpisodeNumber>52</EpisodeNumber>
+  <FirstAired>2004-11-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Flat panel televisions, Web Workshop Review</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221276958</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387555</id>
+  <Combined_episodenumber>53</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 103</EpisodeName>
+  <EpisodeNumber>53</EpisodeNumber>
+  <FirstAired>2004-11-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>How an Inkjet Printer Works, Personalize your Mac</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221277087</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387556</id>
+  <Combined_episodenumber>54</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 104</EpisodeName>
+  <EpisodeNumber>54</EpisodeNumber>
+  <FirstAired>2004-11-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>MAC address filtering, Go organic on the go</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221277663</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387557</id>
+  <Combined_episodenumber>55</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 105</EpisodeName>
+  <EpisodeNumber>55</EpisodeNumber>
+  <FirstAired>2004-11-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Legal music downloads, Set trends with insider tips</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221277729</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387558</id>
+  <Combined_episodenumber>56</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 106</EpisodeName>
+  <EpisodeNumber>56</EpisodeNumber>
+  <FirstAired>2004-11-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Projection TV Buyer's Guide, Web Workshop Review</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221277770</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387559</id>
+  <Combined_episodenumber>57</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 107</EpisodeName>
+  <EpisodeNumber>57</EpisodeNumber>
+  <FirstAired>2004-11-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Panasonic's PVR, Mac keyboard shortcuts</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221277893</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387560</id>
+  <Combined_episodenumber>58</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 108</EpisodeName>
+  <EpisodeNumber>58</EpisodeNumber>
+  <FirstAired>2004-11-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Rip audio files from CDs, Safe Web surfing and shopping</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221277924</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387561</id>
+  <Combined_episodenumber>59</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 109</EpisodeName>
+  <EpisodeNumber>59</EpisodeNumber>
+  <FirstAired>2004-12-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>PCI Express Primer, Safe Web surfing and shopping</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221277982</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387562</id>
+  <Combined_episodenumber>60</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 110</EpisodeName>
+  <EpisodeNumber>60</EpisodeNumber>
+  <FirstAired>2004-12-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>VHS to DVD conversion, Get to know your dock</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278039</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387563</id>
+  <Combined_episodenumber>61</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 111</EpisodeName>
+  <EpisodeNumber>61</EpisodeNumber>
+  <FirstAired>2004-12-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Digital camera buying primer, Make friends in the iPod Lounge!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278336</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387564</id>
+  <Combined_episodenumber>62</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 112</EpisodeName>
+  <EpisodeNumber>62</EpisodeNumber>
+  <FirstAired>2004-12-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Cover Your Web Tracks in Firefox, Web Workshop</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278364</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387565</id>
+  <Combined_episodenumber>63</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 113</EpisodeName>
+  <EpisodeNumber>63</EpisodeNumber>
+  <FirstAired>2004-12-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Inside an Email Header, Stay on top of tech slang</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278400</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387566</id>
+  <Combined_episodenumber>64</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 114</EpisodeName>
+  <EpisodeNumber>64</EpisodeNumber>
+  <FirstAired>2004-12-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Gadgets for Guys, Great gift ideas for gals!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278435</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387567</id>
+  <Combined_episodenumber>65</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 115</EpisodeName>
+  <EpisodeNumber>65</EpisodeNumber>
+  <FirstAired>2004-12-14</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Stocking stuffers, Great gift ideas for kids!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278468</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387568</id>
+  <Combined_episodenumber>66</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 116</EpisodeName>
+  <EpisodeNumber>66</EpisodeNumber>
+  <FirstAired>2004-12-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Andy's Wishlist, What Amber wants for Christmas</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278500</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387569</id>
+  <Combined_episodenumber>67</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 117</EpisodeName>
+  <EpisodeNumber>67</EpisodeNumber>
+  <FirstAired>2004-12-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Gadgets for Geeks, Santa's Web Workshop, Sending holiday greetings online</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278553</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387570</id>
+  <Combined_episodenumber>68</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 118</EpisodeName>
+  <EpisodeNumber>68</EpisodeNumber>
+  <FirstAired>2004-12-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Lazy Man's Xmas Shopping, Take your kids to the North Pole!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278581</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387571</id>
+  <Combined_episodenumber>69</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 119</EpisodeName>
+  <EpisodeNumber>69</EpisodeNumber>
+  <FirstAired>2004-12-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Demystifying megapixels, Online tips for sleeping in airports!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278621</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387572</id>
+  <Combined_episodenumber>70</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 120</EpisodeName>
+  <EpisodeNumber>70</EpisodeNumber>
+  <FirstAired>2004-12-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Cover your tracks in XP, Web Workshop Review, Ron Berard's Astrophotography Review</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278658</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387573</id>
+  <Combined_episodenumber>71</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 121</EpisodeName>
+  <EpisodeNumber>71</EpisodeNumber>
+  <FirstAired>2004-12-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Belkin Pre-N kicks wireless butt, Make cheap gifts with unique twists</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278761</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387574</id>
+  <Combined_episodenumber>72</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 122</EpisodeName>
+  <EpisodeNumber>72</EpisodeNumber>
+  <FirstAired>2004-12-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Cover your Web tracks with IE, Web Workshop Review - Sydney Tar Ponds Review</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278795</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387575</id>
+  <Combined_episodenumber>73</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 123</EpisodeName>
+  <EpisodeNumber>73</EpisodeNumber>
+  <FirstAired>2004-12-31</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Command Line Secrets, Web Workshop - Vernon Search and Rescue Review</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278837</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387576</id>
+  <Combined_episodenumber>74</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 124</EpisodeName>
+  <EpisodeNumber>74</EpisodeNumber>
+  <FirstAired>2005-01-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>How to Remotely Access Your Computer, Tide Stain Detective</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278884</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>387577</id>
+  <Combined_episodenumber>75</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 125</EpisodeName>
+  <EpisodeNumber>75</EpisodeNumber>
+  <FirstAired>2005-01-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Be a do-gooder with your PC, Make a mini movie in five minutes</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221278916</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388098</id>
+  <Combined_episodenumber>76</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 126</EpisodeName>
+  <EpisodeNumber>76</EpisodeNumber>
+  <FirstAired>2005-01-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Customize your system shutdown, Find the best skinny recipes online</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516334</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388099</id>
+  <Combined_episodenumber>77</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 127</EpisodeName>
+  <EpisodeNumber>77</EpisodeNumber>
+  <FirstAired>2005-01-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Make phone calls with your PC, Great Web tips for road trips</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516369</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388100</id>
+  <Combined_episodenumber>78</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 128</EpisodeName>
+  <EpisodeNumber>78</EpisodeNumber>
+  <FirstAired>2005-01-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Create a custom font book for your PC, Web Workshop Review</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516399</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388101</id>
+  <Combined_episodenumber>79</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 129</EpisodeName>
+  <EpisodeNumber>79</EpisodeNumber>
+  <FirstAired>2005-01-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Troubleshooting Shutdown in XP, Excel-erate your workout miles</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516436</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388102</id>
+  <Combined_episodenumber>80</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 130</EpisodeName>
+  <EpisodeNumber>80</EpisodeNumber>
+  <FirstAired>2005-01-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Webcam with MSN Messenger, Email money transfer</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516468</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388103</id>
+  <Combined_episodenumber>81</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 131</EpisodeName>
+  <EpisodeNumber>81</EpisodeNumber>
+  <FirstAired>2005-01-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Record Streaming Audio, Online book club</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516514</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388104</id>
+  <Combined_episodenumber>82</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 132</EpisodeName>
+  <EpisodeNumber>82</EpisodeNumber>
+  <FirstAired>2005-01-14</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Quick Launch Bar, iSight and iChat for video chats</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516544</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388105</id>
+  <Combined_episodenumber>83</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 133</EpisodeName>
+  <EpisodeNumber>83</EpisodeNumber>
+  <FirstAired>2005-01-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>BIOS Primer, Web Workshop Review</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516577</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388106</id>
+  <Combined_episodenumber>84</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 134</EpisodeName>
+  <EpisodeNumber>84</EpisodeNumber>
+  <FirstAired>2005-01-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Record streaming video to your PC, Share home videos with the world</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516629</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388107</id>
+  <Combined_episodenumber>85</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 135</EpisodeName>
+  <EpisodeNumber>85</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516088</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388108</id>
+  <Combined_episodenumber>86</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 136</EpisodeName>
+  <EpisodeNumber>86</EpisodeNumber>
+  <FirstAired>2005-01-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>How to update your BIOS, Web Workshop Review</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516690</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388109</id>
+  <Combined_episodenumber>87</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 137</EpisodeName>
+  <EpisodeNumber>87</EpisodeNumber>
+  <FirstAired>2005-01-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Make Your Own RingTone, Custom CD covers</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516737</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388110</id>
+  <Combined_episodenumber>88</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 138</EpisodeName>
+  <EpisodeNumber>88</EpisodeNumber>
+  <FirstAired>2005-01-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>VOIP Home Phones, Speak French with simple software</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516772</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388111</id>
+  <Combined_episodenumber>89</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 139</EpisodeName>
+  <EpisodeNumber>89</EpisodeNumber>
+  <FirstAired>2005-01-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Change the boot sequence on your PC, Web Workshop Review</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516816</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388112</id>
+  <Combined_episodenumber>90</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 140</EpisodeName>
+  <EpisodeNumber>90</EpisodeNumber>
+  <FirstAired>2005-01-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>VHS/DVD Recorders, Get groovy hairstyles online</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516858</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388113</id>
+  <Combined_episodenumber>91</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 141</EpisodeName>
+  <EpisodeNumber>91</EpisodeNumber>
+  <FirstAired>2005-02-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The world's biggest plasma TV at CES, Hip and hot music madness at CES!, Desktop X</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516919</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388114</id>
+  <Combined_episodenumber>92</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 142</EpisodeName>
+  <EpisodeNumber>92</EpisodeNumber>
+  <FirstAired>2005-02-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Tech-savvy Valentine's Gifts for Men, Web tips for a romantic Valentine's Day dinner, ISO Recorder</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221516962</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388115</id>
+  <Combined_episodenumber>93</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 143</EpisodeName>
+  <EpisodeNumber>93</EpisodeNumber>
+  <FirstAired>2005-02-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Microsoft Anti-Spyware Beta, Read with your ears!, LogMeIn</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221517002</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388116</id>
+  <Combined_episodenumber>94</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 144</EpisodeName>
+  <EpisodeNumber>94</EpisodeNumber>
+  <FirstAired>2005-02-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Bandwidth explained, Web Workshop - Kincardine Summer Music Festival, Calculate your costs!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221517060</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388117</id>
+  <Combined_episodenumber>95</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 145</EpisodeName>
+  <EpisodeNumber>95</EpisodeNumber>
+  <FirstAired>2005-02-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Cell phone accessories gone wild, Tiny and trendy camcorders, Yahoo Desktop Search</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221517121</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388118</id>
+  <Combined_episodenumber>96</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 146</EpisodeName>
+  <EpisodeNumber>96</EpisodeNumber>
+  <FirstAired>2005-02-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Norton SystemWorks 2005: An ok buy, How to organize your chaotic life, Virtue</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221517162</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388119</id>
+  <Combined_episodenumber>97</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 147</EpisodeName>
+  <EpisodeNumber>97</EpisodeNumber>
+  <FirstAired>2005-02-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Laptop Desk Test, Web Workshop - Paddlewheelers Lions Club, PC Aligner</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221517199</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388120</id>
+  <Combined_episodenumber>98</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 148</EpisodeName>
+  <EpisodeNumber>98</EpisodeNumber>
+  <FirstAired>2005-02-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Attack of the killer data packets, Web Workshop - Zunior, WinPatrol</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221517233</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388121</id>
+  <Combined_episodenumber>99</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 149</EpisodeName>
+  <EpisodeNumber>99</EpisodeNumber>
+  <FirstAired>2005-03-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Get to your email from anywhere in the world, How to plan your wedding online, Read thousands of news headlines at once!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221517274</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+<Episode>
+  <id>388122</id>
+  <Combined_episodenumber>100</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>2.0 Episode 150</EpisodeName>
+  <EpisodeNumber>100</EpisodeNumber>
+  <FirstAired>2005-03-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Do it yourself freebie PC fix-it software suite, Turn your favourite photos into pop art!, Get free Mac software to find your flicks</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1221517312</lastupdated>
+  <seasonid>3137</seasonid>
+  <seriesid>71874</seriesid>
+</Episode>
+</Data>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>89871</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating>TV-G</ContentRating>
+    <FirstAired>1976-02-23</FirstAired>
+    <Genre>|Documentary|</Genre>
+    <IMDB_ID>tt0321020</IMDB_ID>
+    <Language>en</Language>
+    <Network>PBS</Network>
+    <NetworkID></NetworkID>
+    <Overview>Marty Stouffer's Wild America was the first wildlife and nature series to focus exclusively on the wild animals and wild lands of North America.
+Hosted by award-winning wildlife photographer and premier naturalist Marty Stouffer the series featured footage of mammals birds reptiles fish and insects throughout the entire continent.</Overview>
+    <Rating>8.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Marty Stouffer's Wild America</SeriesName>
+    <Status>Ended</Status>
+    <added>2009-04-16 06:46:40</added>
+    <addedBy>15021</addedBy>
+    <banner>graphical/89871-g.jpg</banner>
+    <fanart>fanart/original/89871-1.jpg</fanart>
+    <lastupdated>1332929829</lastupdated>
+    <poster>posters/89871-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

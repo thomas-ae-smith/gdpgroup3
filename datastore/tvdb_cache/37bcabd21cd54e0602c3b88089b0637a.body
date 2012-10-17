@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>82890</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>1985-01-01</FirstAired>
+    <Genre>|Documentary|Reality|</Genre>
+    <IMDB_ID>tt0356301</IMDB_ID>
+    <Language>en</Language>
+    <Network>France 3</Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>15</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Strip-Tease</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/82890-g.jpg</banner>
+    <fanart>fanart/original/82890-1.jpg</fanart>
+    <lastupdated>1343834863</lastupdated>
+    <poster>posters/82890-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

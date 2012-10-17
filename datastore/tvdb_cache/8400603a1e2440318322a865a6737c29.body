@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>121601</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired></FirstAired>
+    <Genre></Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network></Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>45</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>In The Chamber of Bliss</SeriesName>
+    <Status></Status>
+    <added>2009-10-28 21:50:21</added>
+    <addedBy>46411</addedBy>
+    <banner>graphical/121601-g.jpg</banner>
+    <fanart></fanart>
+    <lastupdated>1308477298</lastupdated>
+    <poster>posters/121601-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

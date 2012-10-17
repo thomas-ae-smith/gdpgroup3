@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>135821</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek>Saturday</Airs_DayOfWeek>
+  <Airs_Time>19:00</Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>2010-01-16</FirstAired>
+  <Genre>|Documentary|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>BBC Two</Network>
+  <NetworkID></NetworkID>
+  <Overview>Rory Stewart examines the writings of Lawrence of Arabia, and learns that the warrior hero himself later questioned the very nature of his intervention in the Middle East.
+
+Seeking a model for how to fight and win in the Middle East, the American military is turning to an extraordinary source – Lawrence of Arabia. Today, the writing of Thomas Edward Lawrence is required reading in some US military academies. 
+
+But for Rory Stewart, a former soldier and diplomat in post-war Iraq, this surprising story has a darker message: Lawrence might have won his desert war and been hailed a warrior hero, but the political deals that followed fatally undermined his success.
+
+In two films, Rory Stewart explains why he believes that Lawrence, as a result, came to the bitter conclusion that foreign military interventions in the Middle East are fundamentally unworkable and should not take place.</Overview>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>The Legacy of Lawrence of Arabia</SeriesName>
+  <Status>Continuing</Status>
+  <added>2010-01-17 07:02:35</added>
+  <addedBy>120611</addedBy>
+  <banner></banner>
+  <fanart></fanart>
+  <lastupdated>1281267082</lastupdated>
+  <poster></poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>1563891</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Iain Scollay</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Episode 1</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2010-01-16</FirstAired>
+  <GuestStars>Rory Stewart</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>In the First World War, T.E Lawrence helped to unite feuding Arab tribes into a formidable guerrilla army which helped to topple the Ottoman Empire. But today Lawrence has an extraordinary new relevance. His experiences of defeating a foreign military occupation, and of leading an insurgency, have led to him being held up as the man who cracked fighting in the Middle East.
+
+Harvard Professor Rory Stewart is a former soldier, diplomat and governor of two Iraqi provinces. Rory has spent many years living and working in Iraq and 
+Afghanistan, and has been fascinated with Lawrence since his childhood. In these two films, he examines the legacy of Britain's First World War campaign in the Middle East, and draws parallels with British and American interventions in Iraq and Afghanistan today.
+
+But for Rory, Lawrence's story has a much darker message than is normally portrayed - Lawrence might have won his war in the desert and been hailed a warrior hero, but the politics that followed fatally undermined his success.
+
+Lawrence had aimed, he said, 'to write his will across the skies' and build a new independent Arab nation, but in these two films Rory Stewart shows how 
+Lawrence felt his dream ended in catastrophe and shame.
+
+Drawing a comparison between Lawrence's experience and today, Rory explains how Lawrence came to the conclusion that foreign military interventions in the Middle East are fundamentally unworkable. He concludes, 'Looking at Iraq and 
+Afghanistan today, I believe very strongly that Lawrence's message would not have been do it better, do it more sensitively, but don't do it at all.'.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Iain Scollay</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/135821/1563891.jpg</filename>
+  <lastupdated>1281267017</lastupdated>
+  <seasonid>175491</seasonid>
+  <seriesid>135821</seriesid>
+</Episode>
+<Episode>
+  <id>1563901</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Iain Scollay</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Episode 2</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2010-01-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Conclusion. Former soldier and diplomat Rory Stewart travels through the Middle East to places of importance in these fields to TE Lawrence, and examines the parallels between the region in the aftermath of World War One and today's Western intervention. A camel trek through the desert of Wadi Rum, a tour of Damascus - chosen by Lawrence as the prospective capital of a new Arab nation - and a foot patrol with American soldiers in Baghdad feature in his examination of the region, where politics and the military have long been a potent mix</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Iain Scollay</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/135821/1563901.jpg</filename>
+  <lastupdated>1281267082</lastupdated>
+  <seasonid>175491</seasonid>
+  <seriesid>135821</seriesid>
+</Episode>
+</Data>

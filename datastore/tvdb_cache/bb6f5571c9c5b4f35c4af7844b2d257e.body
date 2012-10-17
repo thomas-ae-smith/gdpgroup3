@@ -1,0 +1,3423 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>75134</id>
+  <Actors>|Roger Moore|</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating>TV-PG</ContentRating>
+  <FirstAired>1962-10-01</FirstAired>
+  <Genre>|Action and Adventure|</Genre>
+  <IMDB_ID>tt0055701</IMDB_ID>
+  <Language>en</Language>
+  <Network>ITV1</Network>
+  <NetworkID></NetworkID>
+  <Overview>Simon Templar is The Saint - adored by women, feared by his adversaries and a constant thorn in the side of police forces everywhere.  A smooth-talking adventurer, the Saint goes in where angels fear to tread.  Always where the action is, he courts danger with a smile, but his charm can sometimes be a lethal weapon. The Saint is always on a mission of mercy or intrigue, with a beautiful woman close at hand.  He's Sir Lancelot without armor.  A formidable enemy, an unwavering friend.    (distributed world-wide by ITC)</Overview>
+  <Rating>7.5</Rating>
+  <RatingCount>8</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID>3049</SeriesID>
+  <SeriesName>The Saint</SeriesName>
+  <Status>Ended</Status>
+  <added></added>
+  <addedBy></addedBy>
+  <banner>graphical/3049-g.jpg</banner>
+  <fanart>fanart/original/75134-3.jpg</fanart>
+  <lastupdated>1342971924</lastupdated>
+  <poster>posters/75134-3.jpg</poster>
+  <zap2it_id>SH004386</zap2it_id>
+</Series>
+<Episode>
+  <id>4204270</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Saint Steps in... to Colour</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1321288468</lastupdated>
+  <seasonid>22595</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>4204271</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Saint Steps in... to Television</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1321288453</lastupdated>
+  <seasonid>22595</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165376</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Michael Truman|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Talented Husband</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1962-10-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon encounters a man whose first two wives died mysteriously.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>10.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Michael Truman|Jack Saunders|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165376.jpg</filename>
+  <lastupdated>1274616892</lastupdated>
+  <seasonid>8523</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165377</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Gilling|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Latin Touch</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1962-10-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon attempts to rescue a kidnapped girl.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>10.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Gerald Kelsey|Dick Sharples|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165377.jpg</filename>
+  <lastupdated>1299430622</lastupdated>
+  <seasonid>8523</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165378</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Ainsworth|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Careful Terrorist</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1962-10-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon is marked for death by a Union boss.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Gerald Kelsey|Dick Sharples|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165378.jpg</filename>
+  <lastupdated>1299430682</lastupdated>
+  <seasonid>8523</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165379</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Michael Truman|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Covetous Headsman</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1962-10-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A girl going to see her brother discovers him murdered.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|John Roddick|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165379.jpg</filename>
+  <lastupdated>1299430722</lastupdated>
+  <seasonid>8523</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165380</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jeremy Summers|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Loaded Tourist</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1962-11-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A tourist has a briefcase of something valuable.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Richard Harris|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165380.jpg</filename>
+  <lastupdated>1299430807</lastupdated>
+  <seasonid>8523</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165381</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|David Greene (I)|David Greene|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Pearls of Peace</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1962-11-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon lends a friend $3000 to search for lost pearls.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Richard Harris|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165381.jpg</filename>
+  <lastupdated>1299430869</lastupdated>
+  <seasonid>8523</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165382</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Paddy Carstairs|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Arrow of God</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1962-11-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A columnist is found dead at a party where everyone has a motive.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Julian Bond|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165382.jpg</filename>
+  <lastupdated>1299430908</lastupdated>
+  <seasonid>8523</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165383</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Ainsworth|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Element of Doubt</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1962-11-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A criminal lawyer never seems to loose a case.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Norman Borisoff|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165383.jpg</filename>
+  <lastupdated>1299430989</lastupdated>
+  <seasonid>8523</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165384</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Anthony Bushell|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Effete Angler</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1962-11-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Fishing trip turns up a different kind of fish then expected.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Norman Borisoff|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165384.jpg</filename>
+  <lastupdated>1299431021</lastupdated>
+  <seasonid>8523</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165385</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Robert S. Baker|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Golden Journey</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>1962-12-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon takes a spoiled heiress on a 100 mile hike.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Lewis Davidson|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165385.jpg</filename>
+  <lastupdated>1299431057</lastupdated>
+  <seasonid>8523</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165386</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Gilling|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Man Who Was Lucky</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>1962-12-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A friend of the Saint's is threatened by a protection racket.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|John Gilling|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165386.jpg</filename>
+  <lastupdated>1299431090</lastupdated>
+  <seasonid>8523</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165387</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jeremy Summers|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Charitable Countess</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>1962-12-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A gang of Italian street urchins rob charity balls.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Gerald Kelsey|Dick Sharples|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165387.jpg</filename>
+  <lastupdated>1299431127</lastupdated>
+  <seasonid>8523</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165388</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Peter Yates|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Fellow Traveller</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1963-09-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon investigates the death of an electronics engineer.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165388.jpg</filename>
+  <lastupdated>1299431189</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165389</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|James Hill|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Starring the Saint</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1963-09-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A film is being planned based on The Saint's life.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165389.jpg</filename>
+  <lastupdated>1299431223</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165390</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Robert Lynn|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Judith</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1963-10-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A drive in the country leads Simon to a case of fraud.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Leonard Grahame|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165390.jpg</filename>
+  <lastupdated>1299431356</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165391</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Teresa</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1963-10-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon helps a woman find her husband a circus performer.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|John Kruse|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165391.jpg</filename>
+  <lastupdated>1299431385</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165392</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Llewellyn Moxey|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Elusive Ellshaw</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1963-10-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Someone is trying to kill a shipping magnate.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165392.jpg</filename>
+  <lastupdated>1299431413</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165393</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Krish|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Marcia</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1963-10-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon assists an actress whose predecessor had committed suicide.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165393.jpg</filename>
+  <lastupdated>1299431429</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165394</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Peter Yates|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Work of Art</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1963-10-31</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A girl's brother is accused of murdering an undercover agent.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165394.jpg</filename>
+  <lastupdated>1299431538</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165395</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Gilling|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Iris</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1963-11-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon must find the real blackmailer when the police suspect him.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Bill Strutton|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165395.jpg</filename>
+  <lastupdated>1299431576</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165396</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Gilling|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The King of the Beggars</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1963-11-14</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon poses as a beggar to investigate a protection racket.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|John Gilling|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165396.jpg</filename>
+  <lastupdated>1299431618</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165397</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Peter Yates|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Rough Diamonds</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>1963-11-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint is the prime suspect in a diamond robbery.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Bill Strutton|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165397.jpg</filename>
+  <lastupdated>1299431691</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165398</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Robert S. Baker|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Saint Plays with Fire</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>1963-11-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon becomes involved with Nazi's in England.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|John Kruse|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165398.jpg</filename>
+  <lastupdated>1299431773</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165399</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jeremy Summers|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Well-Meaning Mayor</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>1963-12-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A mayoral candidate dies in a small coastal town.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Robert Stewart|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165399.jpg</filename>
+  <lastupdated>1299431797</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165400</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jeremy Summers|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Sporting Chance</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>1963-12-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A scientist's daughter has been kidnapped to get him to defect.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|John Kruse|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165400.jpg</filename>
+  <lastupdated>1299431860</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165401</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Peter Yates|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Bunco Artists</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>1963-12-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon poses as a Texan to out con some con men.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Lewis Davidson|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165401.jpg</filename>
+  <lastupdated>1299431912</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165402</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jeremy Summers|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Benevolent Burglary</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>1963-12-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon is falsely accused of stealing a piece of art after he bets the owner that he can steal it.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Larry Forrester|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165402.jpg</filename>
+  <lastupdated>1299431974</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165403</id>
+  <Combined_episodenumber>16</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Robert S. Baker|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Wonderful War</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired>1964-01-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint comes to the aid of a Middle East oil magnate's son.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|John Graeme|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165403.jpg</filename>
+  <lastupdated>1299432103</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165404</id>
+  <Combined_episodenumber>17</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Peter Yates|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Noble Sportsman</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired>1964-01-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon meets Lord Yearly and ends up fighting in a duel.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|John Graeme|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165404.jpg</filename>
+  <lastupdated>1299432158</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165405</id>
+  <Combined_episodenumber>18</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Paddy Carstairs|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Romantic Matron</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired>1964-01-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A young widow is attracted to a foreign agent.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Larry Forrester|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165405.jpg</filename>
+  <lastupdated>1299432190</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165406</id>
+  <Combined_episodenumber>19</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Luella</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired>1964-01-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A friend of Simon's is blackmailed after he decides to have some fun while his wife is away.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165406.jpg</filename>
+  <lastupdated>1299432210</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165407</id>
+  <Combined_episodenumber>20</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jeremy Summers|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Lawless Lady</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired>1964-01-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon joins forces with a titled lady to avenge a friend's death.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Harry W. Junkin|Leslie Charteris|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165407.jpg</filename>
+  <lastupdated>1299432243</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165408</id>
+  <Combined_episodenumber>21</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Good Medicine</EpisodeName>
+  <EpisodeNumber>21</EpisodeNumber>
+  <FirstAired>1964-02-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint gives an unkind woman a taste of her own medicine.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Norman Borisoff|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165408.jpg</filename>
+  <lastupdated>1299432278</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165409</id>
+  <Combined_episodenumber>22</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jeremy Summers|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Invisible Millionaire</EpisodeName>
+  <EpisodeNumber>22</EpisodeNumber>
+  <FirstAired>1964-02-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A man seriously injured in an auto accident is very rich.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Kenneth Hayles|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165409.jpg</filename>
+  <lastupdated>1299432321</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165410</id>
+  <Combined_episodenumber>23</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|James Hill|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The High Fence</EpisodeName>
+  <EpisodeNumber>23</EpisodeNumber>
+  <FirstAired>1964-02-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon must match wits with a top London criminal after a date with a beautiful actress.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165410.jpg</filename>
+  <lastupdated>1299432346</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165411</id>
+  <Combined_episodenumber>24</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roger Moore|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Sophia</EpisodeName>
+  <EpisodeNumber>24</EpisodeNumber>
+  <FirstAired>1964-02-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon deals with a bully who is threatening a small town.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Robert Stewart|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165411.jpg</filename>
+  <lastupdated>1299432384</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165412</id>
+  <Combined_episodenumber>25</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jeremy Summers|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Gentle Ladies</EpisodeName>
+  <EpisodeNumber>25</EpisodeNumber>
+  <FirstAired>1964-03-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Three women are being blackmailed by an old acquaintance.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|John Graeme|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165412.jpg</filename>
+  <lastupdated>1299432420</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165413</id>
+  <Combined_episodenumber>26</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Ernest Morris|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Ever-Loving Spouse</EpisodeName>
+  <EpisodeNumber>26</EpisodeNumber>
+  <FirstAired>1964-03-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon meets a businessman who's being blackmailed.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Norman Borisoff|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165413.jpg</filename>
+  <lastupdated>1299432445</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165414</id>
+  <Combined_episodenumber>27</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Robert S. Baker|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Saint Sees It Through</EpisodeName>
+  <EpisodeNumber>27</EpisodeNumber>
+  <FirstAired>1964-03-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon is called upon by the U.N. to investigate art smuggling.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Ian Martin (III)|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165414.jpg</filename>
+  <lastupdated>1299432473</lastupdated>
+  <seasonid>8524</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165415</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roger Moore|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Miracle Tea Party</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1964-10-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon tries to discover who killed an agent.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Paddy Manning O'Brine|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165415.jpg</filename>
+  <lastupdated>1273093581</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165416</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Lida</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1964-10-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon comes to the aid of a girl who is being blackmailed.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Terry Nation|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165416.jpg</filename>
+  <lastupdated>1275557744</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165417</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Llewellyn Moxey|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Jeannine</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1964-10-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon becomes interested in an oriental diplomat's pearl necklace.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Terry Nation|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165417.jpg</filename>
+  <lastupdated>1258700890</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165418</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Scorpion</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1964-10-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A criminal, known as The Scorpion, is blackmailing one of the Saint's friends and he goes to stop him.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Paul Erickson|Leslie Charteris|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165418.jpg</filename>
+  <lastupdated>1273093513</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165419</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Pat Jackson|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Revolution Racket</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1964-11-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A South American police Captain moonlights as an arms dealer.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Terry Nation|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165419.jpg</filename>
+  <lastupdated>1274376219</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165420</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Gilling|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Saint Steps In</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1964-11-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A revolutionary new textile formula gets stolen.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|John Kruse|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165420.jpg</filename>
+  <lastupdated>1273093630</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165421</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Loving Brothers</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1964-11-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>In Australia, Simon helps an old prospector has just struck a fortune keep it away from his greedy sons.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|John Graeme|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165421.jpg</filename>
+  <lastupdated>1277937771</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165422</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Gilling|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Man Who Liked Toys</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1964-11-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A friend of Simon's thinks her boss is being blackmailed.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Basil Dawson|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165422.jpg</filename>
+  <lastupdated>1275557647</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165423</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jeremy Summers|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Death Penalty</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1964-12-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint uncovers a vicious vice ring in Southern France.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Ian Stuart Black|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165423.jpg</filename>
+  <lastupdated>1274362734</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165424</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Llewellyn Moxey|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Imprudent Politician</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>1964-12-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The wife of an indiscreet politician asks Simon for help.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Norman Hudis|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165424.jpg</filename>
+  <lastupdated>1276642215</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165425</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|David Eady|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Hi-Jackers</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>1964-12-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon meets an old friend in Munich.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Paul Erickson|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165425.jpg</filename>
+  <lastupdated>1276642014</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165426</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jeremy Summers|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Unkind Philanthropist</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>1964-12-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint comes to the aid of a Puerto Rican farmer.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Marcus Demian|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165426.jpg</filename>
+  <lastupdated>1275557541</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165427</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Peter Yates|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Damsel in Distress</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>1964-12-31</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon helps a family who owns a London Restaurant</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Paul Erickson|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165427.jpg</filename>
+  <lastupdated>1277938257</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165428</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roger Moore|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Contract</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>1965-01-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>An American airman is seeking revenge against The Saint.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Terry Nation|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165428.jpg</filename>
+  <lastupdated>1277938297</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165429</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Set-Up</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>1965-01-14</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon and a young starlet go after a gangster.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Paddy Manning O'Brine|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165429.jpg</filename>
+  <lastupdated>1279176924</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165430</id>
+  <Combined_episodenumber>16</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|James Hill|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Rhine Maiden</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired>1965-01-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon helps a woman chase down bank robbers.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Brian Degas|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165430.jpg</filename>
+  <lastupdated>1279176950</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165431</id>
+  <Combined_episodenumber>17</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Inescapable Word</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired>1965-01-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Death rays seem to be coming from a Scottish research center.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Terry Nation|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165431.jpg</filename>
+  <lastupdated>1279176979</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165432</id>
+  <Combined_episodenumber>18</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Sign of the Claw</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired>1965-02-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint confronts a terrorist gang in the South East Asian jungles.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Terry Nation|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165432.jpg</filename>
+  <lastupdated>1258701046</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165433</id>
+  <Combined_episodenumber>19</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Llewellyn Moxey|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Golden Frog</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired>1965-02-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A father and daughter con artist team tries to con the Saint.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Michael Cramoy|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165433.jpg</filename>
+  <lastupdated>1258701056</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165434</id>
+  <Combined_episodenumber>20</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Frightened Inn-Keeper</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired>1965-02-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon finds he is unwelcome in Cornwall when he comes to the aid of a friend.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Norman Hudis|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165434.jpg</filename>
+  <lastupdated>1269013667</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165435</id>
+  <Combined_episodenumber>21</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Peter Yates|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Sibao</EpisodeName>
+  <EpisodeNumber>21</EpisodeNumber>
+  <FirstAired>1965-02-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon encounters a young girl who is involved with voodoo.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Terry Nation|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165435.jpg</filename>
+  <lastupdated>1276642126</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165436</id>
+  <Combined_episodenumber>22</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Gilling|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Crime of the Century</EpisodeName>
+  <EpisodeNumber>22</EpisodeNumber>
+  <FirstAired>1965-03-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon joins forces with, his old adversary, Inspector Teal to stop the crime of the century.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Terry Nation|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165436.jpg</filename>
+  <lastupdated>1281534210</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165437</id>
+  <Combined_episodenumber>23</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Robert Tronson|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Happy Suicide</EpisodeName>
+  <EpisodeNumber>23</EpisodeNumber>
+  <FirstAired>1965-03-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon becomes the guest on a TV talk show.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer>|Brian Degas|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165437.jpg</filename>
+  <lastupdated>1281534241</lastupdated>
+  <seasonid>8525</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165438</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>4</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Chequered Flag</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1965-07-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon encounters race car driver who has had lots of bad luck.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>4</SeasonNumber>
+  <Writer>|Norman Hudis|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165438.jpg</filename>
+  <lastupdated>1282859148</lastupdated>
+  <seasonid>8526</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165439</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>4</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jeremy Summers|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Abductors</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1965-07-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon and an English girl become involved with a kidnapped scientist while in Paris.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>4</SeasonNumber>
+  <Writer>|Brian Degas|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165439.jpg</filename>
+  <lastupdated>1282859174</lastupdated>
+  <seasonid>8526</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165440</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>4</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Crooked Ring</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1965-07-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon investigates a boxer's sudden rise in the ranks.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>4</SeasonNumber>
+  <Writer>|Terry Nation|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165440.jpg</filename>
+  <lastupdated>1281537036</lastupdated>
+  <seasonid>8526</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165441</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>4</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Llewellyn Moxey|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Smart Detective</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1965-07-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon tests a security firm's claim that they are burglar proof.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>4</SeasonNumber>
+  <Writer>|Michael Cramoy|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165441.jpg</filename>
+  <lastupdated>1282859206</lastupdated>
+  <seasonid>8526</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165442</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>4</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Robert Tronson|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Persistent Parasites</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1965-07-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A rich man invites Simon and his 3 ex-wives to his French villa.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>4</SeasonNumber>
+  <Writer>|Norman Hudis|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165442.jpg</filename>
+  <lastupdated>1283982259</lastupdated>
+  <seasonid>8526</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165443</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>4</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roger Moore|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Man Who Could Not Die</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1965-08-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A man is trapped underground with someone who wants to kill him.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>4</SeasonNumber>
+  <Writer>|Terry Nation|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165443.jpg</filename>
+  <lastupdated>1285169020</lastupdated>
+  <seasonid>8526</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165444</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>4</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Saint Bids Diamonds</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1965-08-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint poses as a diamond cutter to recover stolen diamonds.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>4</SeasonNumber>
+  <Writer>|Pat Lasky|Jesse Lasky, Jr.|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165444.jpg</filename>
+  <lastupdated>1283982411</lastupdated>
+  <seasonid>8526</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165445</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>4</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Gilling|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Spanish Cow</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1965-08-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon gets into trouble after preventing a theft.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>4</SeasonNumber>
+  <Writer>|Michael Cramoy|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165445.jpg</filename>
+  <lastupdated>1283982346</lastupdated>
+  <seasonid>8526</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165446</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>4</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roger Moore|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Old Treasure Story</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1965-08-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint travels around the world in search of buried treasure.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>4</SeasonNumber>
+  <Writer>|Ronald Duncan|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165446.jpg</filename>
+  <lastupdated>1285169091</lastupdated>
+  <seasonid>8526</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>3530661</id>
+  <Combined_episodenumber>0</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>0</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1296795146</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165447</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Queen's Ransom</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1966-09-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint helps a disposed mid east ruler recover jewels needed to fund a counter coop.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Leigh Vance|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165447.jpg</filename>
+  <lastupdated>1269013894</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165448</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Interlude in Venice</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1966-10-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint gets involved in a gangsters revenge plot against a lawyer.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Paddy Manning O'Brine|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165448.jpg</filename>
+  <lastupdated>1269013904</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165449</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Llewellyn Moxey|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Russian Prisoner</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1966-10-14</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A Russian Physicist wants to defect to the United States.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165449.jpg</filename>
+  <lastupdated>1243262044</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165450</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Reluctant Revolution</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1966-10-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint gets involved in a banana republic's revolution.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|John Stanton|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165450.jpg</filename>
+  <lastupdated>1243262053</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165451</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Helpful Pirate</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1966-10-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A South American Dictator falls under the influence of a corrupt British scientist.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Roy Russell|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165451.jpg</filename>
+  <lastupdated>1269013923</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165452</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Convenient Monster</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1966-11-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Loch Ness Monster gets blamed for murders in Scotland.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Terence Feely|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165452.jpg</filename>
+  <lastupdated>1269013939</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165453</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Angel's Eye</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1966-11-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>In Amsterdam a respectable gem cutter denies ever seeing a diamond that was sent to him.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165453.jpg</filename>
+  <lastupdated>1269013959</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165454</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jeremy Summers|Douglas Enefer|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Man Who Liked Lions</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1966-11-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon uncovers a strange cult that worships ancient Rome.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165454.jpg</filename>
+  <lastupdated>1243262090</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165455</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Gordon Flemyng|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Better Mousetrap</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1966-11-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>It appears that Simon is involved in a Riviera jewel robbery.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Leigh Vance|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165455.jpg</filename>
+  <lastupdated>1269013980</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165456</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Little Girl Lost</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>1966-12-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon helps a girl who claims to be Hitler's daughter escape from Nazis.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Leigh Vance|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165456.jpg</filename>
+  <lastupdated>1244722015</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165457</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Paper Chase</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>1966-12-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A civil servant has defected with top secret files.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165457.jpg</filename>
+  <lastupdated>1244722039</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165458</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Locate and Destroy</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>1966-12-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>In South America, the Saint helps an Israeli agent capture a fugitive Nazi.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|John Stanton|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165458.jpg</filename>
+  <lastupdated>1269014001</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165459</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Flight Plan</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>1966-12-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A nun in high heels has Simon involved with a VTOL plane theft that Simon has to learn to fly very quickly.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Alfred Shaughnessy|Anthony Squire|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165459.jpg</filename>
+  <lastupdated>1269014013</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165460</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roger Moore|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Escape Route</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>1966-12-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon gets himself put in jail to infiltrate a gang specializing in jail breaks.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Michael Winder|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165460.jpg</filename>
+  <lastupdated>1259098979</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165461</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Persistent Patriots</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>1967-01-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon investigates an assignation attempt against the prime minister of a British colony.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Michael Pertwee|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165461.jpg</filename>
+  <lastupdated>1259099001</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165462</id>
+  <Combined_episodenumber>16</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Fast Women</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired>1967-01-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon investigates murder attempt on female race car driver.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Leigh Vance|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165462.jpg</filename>
+  <lastupdated>1269014047</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165463</id>
+  <Combined_episodenumber>17</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Death Game</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired>1967-01-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon tries to stop an alliance between a crime ring and psychology students who plan murders.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Harry W. Junkin|John Kruse|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165463.jpg</filename>
+  <lastupdated>1246603830</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165464</id>
+  <Combined_episodenumber>18</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Art Collectors</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired>1967-01-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon meets several people who are after 3 lost Da Vinci's.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Michael Pertwee|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165464.jpg</filename>
+  <lastupdated>1269014062</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165465</id>
+  <Combined_episodenumber>19</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Robert Asher|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>To Kill a Saint</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired>1967-02-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>After an attempted assassination Simon tries to find out who has a contract out on him.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Michael Winder|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165465.jpg</filename>
+  <lastupdated>1269014073</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165466</id>
+  <Combined_episodenumber>20</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Counterfeit Countess</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired>1967-03-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon is on the trail of counterfeit money.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Philip Broadley|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165466.jpg</filename>
+  <lastupdated>1269014088</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165467</id>
+  <Combined_episodenumber>21</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Simon and Delilah</EpisodeName>
+  <EpisodeNumber>21</EpisodeNumber>
+  <FirstAired>1967-03-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A hated movie queen and her co-star are kidnapped.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Scott Forbes|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165467.jpg</filename>
+  <lastupdated>1269014100</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165468</id>
+  <Combined_episodenumber>22</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Island of Chance</EpisodeName>
+  <EpisodeNumber>22</EpisodeNumber>
+  <FirstAired>1967-04-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon journeys to the West Indies to find the murderer of an old friend.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Leigh Vance|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165468.jpg</filename>
+  <lastupdated>1269014111</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165469</id>
+  <Combined_episodenumber>23</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jim O'Connolly|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Gadget Lovers</EpisodeName>
+  <EpisodeNumber>23</EpisodeNumber>
+  <FirstAired>1967-04-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon joins up with Russian agent in finding agent killer.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|John Kruse|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165469.jpg</filename>
+  <lastupdated>1269014123</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165470</id>
+  <Combined_episodenumber>24</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Gilling|Donald Ford|Derek Ford|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>A Double in Diamonds</EpisodeName>
+  <EpisodeNumber>24</EpisodeNumber>
+  <FirstAired>1967-05-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon is led into a plot to steal a necklace while investigating the murder of a jeweler.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165470.jpg</filename>
+  <lastupdated>1269014136</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165471</id>
+  <Combined_episodenumber>25</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Power Artists</EpisodeName>
+  <EpisodeNumber>25</EpisodeNumber>
+  <FirstAired>1967-05-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon gets framed for murder after a visit to an artist's studio.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|John Kruse|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165471.jpg</filename>
+  <lastupdated>1250860158</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165472</id>
+  <Combined_episodenumber>26</Combined_episodenumber>
+  <Combined_season>5</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jim O'Connolly|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>When Spring Is Sprung</EpisodeName>
+  <EpisodeNumber>26</EpisodeNumber>
+  <FirstAired>1967-06-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A pretty girl lures Simon into a plot to free a Soviet spy, who is waiting trail in London.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>5</SeasonNumber>
+  <Writer>|Michael Pertwee|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165472.jpg</filename>
+  <lastupdated>1269014150</lastupdated>
+  <seasonid>8527</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165473</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Freddie Francis|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Gadic Collection</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1968-09-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon is the prime suspect when an antique collection disappears from Istanbul Museum.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|Philip Broadley|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165473.jpg</filename>
+  <lastupdated>1269014182</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165474</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Llewellyn Moxey|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Best Laid Schemes</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1968-09-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon investigates the drowning of sea captain.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|Joseph Morhain|A. Sandford Wolfe|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165474.jpg</filename>
+  <lastupdated>1269014192</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165475</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roger Moore|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Invitation to Danger</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1968-10-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon is taken prisoner by a beautiful blonde secret agent, who picks Simon up in a casino.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|Terry Nation|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165475.jpg</filename>
+  <lastupdated>1269014204</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165476</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Legacy for the Saint</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1968-10-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint masterminds a murder caper.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|Michael Winder|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165476.jpg</filename>
+  <lastupdated>1269014214</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165477</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Ray Austin|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Desperate Diplomat</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1968-10-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon tries to find a diplomat friend who disappeared with $1,000,000.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|Terry Nation|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165477.jpg</filename>
+  <lastupdated>1269014225</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165478</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Organisation Man</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1968-10-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon joins the ranks of a mercenary army in order to prevent a hijacking.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|Donald James|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165478.jpg</filename>
+  <lastupdated>1252564275</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165479</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Double Take</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1968-11-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon helps out a business man who claims he is being ruined by a perfect double.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|John Kruse|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165479.jpg</filename>
+  <lastupdated>1269014240</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165480</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Time to Die</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1968-11-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon stalks an avenging killer bent on playing a clever game of cat-and-mouse with his pursuer.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|Terry Nation|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165480.jpg</filename>
+  <lastupdated>1269014255</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165481</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Master Plan</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1968-11-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint tangles with dope smugglers.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165481.jpg</filename>
+  <lastupdated>1269014266</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165482</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roger Moore|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The House on Dragon's Rock</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>1968-11-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>In Wales an experiment terrifies the local villagers.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165482.jpg</filename>
+  <lastupdated>1243262121</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165483</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Robert Asher|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Scales of Justice</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>1968-12-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint investigates a series of convenient heart attacks.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|Robert Holmes|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165483.jpg</filename>
+  <lastupdated>1269014284</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165484</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roy Ward Baker|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Fiction-Makers (1)</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>1968-12-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon is mistaken for a mystery novelist, whom he is visiting, by a criminal gang who forces him to plot them a successful crime.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|John Kruse|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165484.jpg</filename>
+  <lastupdated>1286378890</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165485</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Fiction-Makers (2)</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>1968-12-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon is mistaken for a mystery novelist, whom he is visiting, by a criminal gang who forces him to plot them a successful crime.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|John Kruse|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165485.jpg</filename>
+  <lastupdated>1286378906</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165486</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Ray Austin|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The People Importers</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>1968-12-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A smuggling ring deals in human cargo.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|Donald James|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165486.jpg</filename>
+  <lastupdated>1269014320</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165487</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Roger Moore|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Where the Money Is</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>1968-12-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon investigates the kidnapping of a producer's daughter.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|Terry Nation|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165487.jpg</filename>
+  <lastupdated>1269014345</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165488</id>
+  <Combined_episodenumber>16</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jim O'Connolly|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Vendetta for the Saint (1)</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired>1969-01-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint is put under pressure when he starts a vendetta against syndicate bosses.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|John Kruse|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165488.jpg</filename>
+  <lastupdated>1287586997</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165489</id>
+  <Combined_episodenumber>17</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jim O'Connolly|Leslie Charteris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Vendetta for the Saint (2)</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired>1969-01-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint is put under pressure when he starts a vendetta against syndicate bosses.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|John Kruse|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165489.jpg</filename>
+  <lastupdated>1287587009</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165490</id>
+  <Combined_episodenumber>18</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Alvin Rakoff|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Ex-King of Diamonds</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired>1969-01-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>An ex-king cheats at cards to regain his fortune.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|John Kruse|Alvin Rakoff|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165490.jpg</filename>
+  <lastupdated>1269014379</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165491</id>
+  <Combined_episodenumber>19</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Freddie Francis|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Man Who Gambled with Life</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired>1969-01-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Simon is selected to be frozen alive.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165491.jpg</filename>
+  <lastupdated>1256219067</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165492</id>
+  <Combined_episodenumber>20</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|John Gilling|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Portrait of Brenda</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired>1969-02-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Saint investigates the murder of an old friend.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|Harry W. Junkin|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165492.jpg</filename>
+  <lastupdated>1269014394</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+<Episode>
+  <id>165493</id>
+  <Combined_episodenumber>21</Combined_episodenumber>
+  <Combined_season>6</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Leslie Norman|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The World Beater</EpisodeName>
+  <EpisodeNumber>21</EpisodeNumber>
+  <FirstAired>1969-02-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A beautiful blonde gets the Saint into trouble at a crooked auto race.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>6</SeasonNumber>
+  <Writer>|Donald James|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/75134/165493.jpg</filename>
+  <lastupdated>1269014406</lastupdated>
+  <seasonid>8528</seasonid>
+  <seriesid>75134</seriesid>
+</Episode>
+</Data>

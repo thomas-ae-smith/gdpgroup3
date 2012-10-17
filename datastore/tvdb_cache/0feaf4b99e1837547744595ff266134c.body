@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+<Series>
+<seriesid>75534</seriesid>
+<language>en</language>
+<SeriesName>Street Fighter II: V</SeriesName>
+<banner>graphical/75534-g.jpg</banner>
+<Overview>The show is a loose adaptation of the Street Fighter II games, taking several liberties with the established storyline and characters from the games. The show follows the adventures of a young Ryu and Ken, as they go through a journey to improve their martial arts skills after they both experienced a brutal defeat at the hands of Guile. During the course of the series, Ryu and Ken become acquainted with other Street Fighter characters such as Chun-Li, Fei Long, Sagat and Dhalsim. Eventually the duo find themselves involved with the criminal syndicate Shadowlaw, led by M. Bison, after defeating one of their subordinate organizations.</Overview>
+<FirstAired>1995-04-10</FirstAired>
+<IMDB_ID>tt0144069</IMDB_ID>
+<id>75534</id>
+</Series>
+<Series>
+<seriesid>73035</seriesid>
+<language>en</language>
+<SeriesName>Street Fighter: the Animated Series</SeriesName>
+<banner>graphical/73035-g.jpg</banner>
+<Overview> Continuing after "Street Fighter" (1994), Col. Guile, Chun-Li Zang, Charlie Blanka, Ken Masters, Ryu Hoshi and others form an elite group of street fighters from all around the world to combat General Bison and his henchmen, attempting to stop his evil dreams of world domination.</Overview>
+<FirstAired>1995-10-21</FirstAired>
+<IMDB_ID>tt0219458</IMDB_ID>
+<id>73035</id>
+</Series>
+</Data>

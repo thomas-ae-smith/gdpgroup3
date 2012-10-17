@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>223861</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek>Tuesday</Airs_DayOfWeek>
+    <Airs_Time>9PM</Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>2011-08-02</FirstAired>
+    <Genre>|Reality|</Genre>
+    <IMDB_ID>tt1864054</IMDB_ID>
+    <Language>en</Language>
+    <Network>ABC</Network>
+    <NetworkID></NetworkID>
+    <Overview>Combining all the elements of an edge-of-your-seat spy thriller with the excitement of rooting for real people in different locales trying to outwit legitimate professionals, “Take the Money and Run” is an exhilarating competition series that will take reality television to a whole new level. The cat and mouse format will pit everyday people against real life law enforcement for a $100,000 prize.</Overview>
+    <Rating>10.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID>79342</SeriesID>
+    <SeriesName>Take the Money and Run</SeriesName>
+    <Status>Ended</Status>
+    <added>2011-01-20 23:18:15</added>
+    <addedBy>135271</addedBy>
+    <banner>graphical/223861-g2.jpg</banner>
+    <fanart>fanart/original/223861-1.jpg</fanart>
+    <lastupdated>1343843173</lastupdated>
+    <poster>posters/223861-1.jpg</poster>
+    <zap2it_id>EP01379343</zap2it_id>
+  </Series>
+</Data>

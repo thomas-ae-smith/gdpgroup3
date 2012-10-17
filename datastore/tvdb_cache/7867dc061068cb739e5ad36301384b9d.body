@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>127401</id>
+  <Actors>|Jesse Ventura|June Sarpong|Michael Braverman|Alex Piper|Daniel Kucan|</Actors>
+  <Airs_DayOfWeek>Wednesday</Airs_DayOfWeek>
+  <Airs_Time>10:00 pm</Airs_Time>
+  <ContentRating>TV-14</ContentRating>
+  <FirstAired>2009-12-02</FirstAired>
+  <Genre>|Documentary|</Genre>
+  <IMDB_ID>tt1572498</IMDB_ID>
+  <Language>en</Language>
+  <Network>truTV</Network>
+  <NetworkID></NetworkID>
+  <Overview>Jesse Ventura and a team of expert investigators are on a mission to examine some of the most frightening and mysterious conspiracy allegations of our time. They examine available evidence as well as talking to experts and eyewitnesses to learn more about such topics as global warming, possible 9/11 cover-ups, secret government weapons and apocalyptic prophecies. &quot;This is my personal journey,&quot; Ventura says, &quot;to prove that there is more to these stories than you know about.&quot;</Overview>
+  <Rating>9.9</Rating>
+  <RatingCount>7</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Conspiracy Theory with Jesse Ventura</SeriesName>
+  <Status>Ended</Status>
+  <added>2009-12-07 09:43:03</added>
+  <addedBy>1375</addedBy>
+  <banner>graphical/127401-g3.jpg</banner>
+  <fanart>fanart/original/127401-2.jpg</fanart>
+  <lastupdated>1349345422</lastupdated>
+  <poster>posters/127401-1.jpg</poster>
+  <zap2it_id>SH01203034</zap2it_id>
+</Series>
+<Episode>
+  <id>4336439</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Plum Island Post Show Questions</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2010-10-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Jesse Ventura answers questions put to him by viewers of Conspiracy Theory, on subjects ranging from Wall Street and the BP oil spill to 9/11 and deadly viruses.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename>episodes/127401/4336439.jpg</filename>
+  <lastupdated>1338611539</lastupdated>
+  <seasonid>153621</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>1375121</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>HAARP</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2009-12-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1577239</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Is it a communications research project or a doomsday weapon that can change the weather, shoot satellites out of orbit - and trigger mind control across the globe? Jesse Ventura and his team head north to a remote region of Alaska to confront the military installation called HAARP.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.5</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/127401/1375121.jpg</filename>
+  <lastupdated>1345422540</lastupdated>
+  <seasonid>153631</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>1392111</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>9/11</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2009-12-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1577238</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Jesse Ventura steps into America's most controversial conspiracy by challenging the 9/11 Commission Report and searching for evidence that the September 11th attacks may have been an inside job. At the urging of victims' families, he finds witnesses who claim the towers were brought down by explosives, the missing black box flight recorders were actually recovered and ground control knew the hijackers were in the cockpits before the jets took off</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.7</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/127401/1392111.jpg</filename>
+  <lastupdated>1345422586</lastupdated>
+  <seasonid>153631</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>1392121</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Global Warming</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2009-12-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1581936</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Whether global warming is real or not, it's believed some people are using the issue to make billions of dollars, start a one-world government and control our lives, from the cars we drive to the foods we eat. Jesse Ventura starts with Al Gore and goes far beyond as he uncovers the evidence that leads to one man thought to be behind the global warming conspiracy.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/127401/1392121.jpg</filename>
+  <lastupdated>1345422621</lastupdated>
+  <seasonid>153631</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>1392131</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Big Brother</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2009-12-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1581935</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Big Brother is watching and it's not who you think. Jesse Ventura's investigation of government surveillance on its citizens tears the lid off a nationwide program that is thought to turn local businessmen and office workers into spies, snooping on their neighbors and ratting on their friends in exchange for information and special privileges from the FBI- including, some charge, a &quot;license to kill.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/127401/1392131.jpg</filename>
+  <lastupdated>1345422695</lastupdated>
+  <seasonid>153631</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>1392141</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Secret Societies</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2009-12-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1581938</IMDB_ID>
+  <Language>en</Language>
+  <Overview>They're thought to be a group of the world's elite who meet once a year at a luxury hotel and decide how they will run the world. It's believed they plan to thin out the population through disease-and vaccines. Jesse Ventura infiltrates the Bilderberg Group.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/127401/1392141.jpg</filename>
+  <lastupdated>1345422684</lastupdated>
+  <seasonid>153631</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>1392151</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Manchurian Candidate</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2010-01-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1581937</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Authors and experts warn that forces within the government have revived a program that uses mind control techniques to turn ordinary citizens into programmed assassins. This real-life Manchurian Candidate seems outlandish-until Jesse Ventura searches for the evidence and goes face-to-face with a man who claims he's one of the killers.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/127401/1392151.jpg</filename>
+  <lastupdated>1345422707</lastupdated>
+  <seasonid>153631</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>1392161</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Apocalypse 2012</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2010-01-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1581934</IMDB_ID>
+  <Language>en</Language>
+  <Overview>It's believed that the world is heading for disaster in 2012 and the government is preparing to save and protect the elite - while leaving the rest of us to fend for ourselves. Jesse Ventura investigates claims of top secret underground bunkers being built in places ranging from the Nevada desert to the White House, including the largest, now under construction beneath a major metropolitan airport.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/127401/1392161.jpg</filename>
+  <lastupdated>1345422720</lastupdated>
+  <seasonid>153631</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>2981141</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Plum Island</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2010-10-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1749043</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ventura investigates the secretive Plum Island Animal Disease Center located off the coast of Long Island, New York, which has been suspected as being a bio-weapons research center responsible for the release of Lyme disease and other deadly viruses. He also learns that the facility is to be moved to Kansas, into the heart of cattle country, which could spell disaster if a dangerous contaminant was released into the nation's food supply.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/127401/2981141.jpg</filename>
+  <lastupdated>1345422750</lastupdated>
+  <seasonid>336091</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>2981151</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Area 51</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2010-10-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1749044</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ventura treks into the Nevada desert to monitor the activity of Area 51, the most secretive military complex in the country and believed by many in the UFO community to be reverse engineering alien technology. He also looks into why the homes of two Area 51 watchdogs were recently raided by the Joint Terrorism Task Force.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/127401/2981151.jpg</filename>
+  <lastupdated>1345422759</lastupdated>
+  <seasonid>336091</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>2981161</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Wall Street</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2010-11-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1757041</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ventura infiltrates a group of Wall Street  elitists to find out what caused the financial meltdown and to see who has the power to manipulate the stock market and the prices of oil, silver and gold.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/127401/2981161.jpg</filename>
+  <lastupdated>1345422793</lastupdated>
+  <seasonid>336091</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>2981171</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Police State</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2010-11-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1749045</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ventura looks into the plans and procedures in place by the government for declaring martial law, and investigates law enforcement &quot;fusion centers&quot; that are being set up around the country; what some say are concentration camps for rounding up U.S. citizens.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/127401/2981171.jpg</filename>
+  <lastupdated>1345422806</lastupdated>
+  <seasonid>336091</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>2981181</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>JFK Assassination</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2010-11-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1761132</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ventura looks into recently declassified CIA documents that may connect the John F. Kennedy assassination to the Watergate scandal that brought down Richard Nixon. He interviews Lee Harvey Oswald's widow Marina to gain more insight into the &quot;Two-Oswalds&quot; theory that a CIA-double killed JFK.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/127401/2981181.jpg</filename>
+  <lastupdated>1345422827</lastupdated>
+  <seasonid>336091</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>2981191</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Great Lakes</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2010-12-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1749042</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ventura looks into the prospects of &quot;Blue Gold&quot; and why corporations and the super-rich are buying up water rights around the world in what could be a plan in controlling the nations and their masses. He looks into evidence that these tactics are going on in North America in what could be a literal theft of the Great Lakes.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/127401/2981191.jpg</filename>
+  <lastupdated>1345422836</lastupdated>
+  <seasonid>336091</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>3175881</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Gulf Oil Spill</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2010-12-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1769530</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ventura looks into rumors that the Deepwater Horizon oil spill was a staged event by companies like BP and Halliburton to reap in profits from the cleanup, as well a administer toxic agents into the Gulf coast waters as part of a larger depopulation program, inspired by the Hurricane Katrina disaster, to modify the world's ocean currents and weather, and to target the Louisiana coastline to gain complete control of its oil reserves. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/127401/3175881.jpg</filename>
+  <lastupdated>1345422848</lastupdated>
+  <seasonid>336091</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>3175891</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Pentagon</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2010-12-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1795126</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ventura investigates the theory that a missile, and not a hijacked airliner, hit The Pentagon during the September 11 attacks. Questioned are issues such as the lack of surveillance video released by the FBI; debris and damage inconsistent with a jetliner crash; the extreme difficulty of crashing a jetliner at high speed into a specific ground target by an amateur pilot, and links to a possible cover-up of $2.3 trillion of unaccounted taxpayer money announced by then Secretary of Defense, Donald Rumsfeld, just a day before the attacks. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/127401/3175891.jpg</filename>
+  <lastupdated>1345422865</lastupdated>
+  <seasonid>336091</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+<Episode>
+  <id>4410901</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>TBA</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2012-11-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1349345475</lastupdated>
+  <seasonid>502386</seasonid>
+  <seriesid>127401</seriesid>
+</Episode>
+</Data>

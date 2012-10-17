@@ -1,0 +1,1126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>78331</id>
+  <Actors>|John Hart|Lon Chaney Jr.|</Actors>
+  <Airs_DayOfWeek>Wednesday</Airs_DayOfWeek>
+  <Airs_Time>19:00</Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>1957-04-03</FirstAired>
+  <Genre>|Drama|</Genre>
+  <IMDB_ID>tt0050026</IMDB_ID>
+  <Language>en</Language>
+  <Network>Syndicated</Network>
+  <NetworkID></NetworkID>
+  <Overview>Hawkeye and the Last of the Mohicans was set in New York's Hudson Valley during the French and Indian war in the 1750's and depicted the adventures of Hawkeye and his Indian blood brother Chingachgook, the last member of the Mohican tribe. The series based on stories by James Fenimore Cooper.</Overview>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime>30</Runtime>
+  <SeriesID>8559</SeriesID>
+  <SeriesName>Hawkeye and the Last of the Mohicans</SeriesName>
+  <Status>Ended</Status>
+  <added></added>
+  <addedBy></addedBy>
+  <banner></banner>
+  <fanart>fanart/original/78331-1.jpg</fanart>
+  <lastupdated>1297972904</lastupdated>
+  <poster>posters/78331-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>280839</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Sidney Salkow|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Hawkeye's Homecoming</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1957-04-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye returns to his home.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Richard Schayer|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280839.jpg</filename>
+  <lastupdated>1297901235</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280840</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Sam Newfield</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Threat</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1957-04-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A group of settlers from England head for the wilderness guided by two malevolent men posing as scouts. In the depths of the Huron territory they find themselves at the mercy of two men.   Hawkeye and Chingachgook, suspicious when the settlers are not heard from, let out to find them.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|James Fenimore Cooper (author)|Endre Bohem|Louis Vittes|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280840.jpg</filename>
+  <lastupdated>1297904705</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280841</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Franklin Story</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1957-04-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye and Chingachgook call on Ben Franklin for help to prevent a dictator from taking over a frontier town.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280842</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Sam Newfield|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Wild One</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1957-04-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye and Chingachgook come to the aid of a young Indian doctor who attempts to practice in an intolerant town.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Bob Bailey|Hugh King|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280843</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Sam Newfield|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Delaware Hoax</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1957-05-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye and Chingachgook learn that the Delaware, an Indian tribe that is close to Chingachgook, are being framed by white men for looting, pillaging and murder.   They race to the nearest fort to report to the commandant.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Louis Stevens|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280843.jpg</filename>
+  <lastupdated>1297901257</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280844</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Coward</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1957-05-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Tom Morgan flees from a Huron attack on Morgansboro, thinking his father, Will, is dead. But Will is rescued by Hawkeye and Chingachgook-and labels Tom as a coward.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Endre Bohem|Louis Vittes|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280845</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Sam Newfield|Mortimer Braus|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Ethan Allen Story</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1957-05-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Sent to investigate a complaint that Ethan Allen and his Green Mountain Boys are committing crime verging on treason, Hawkeye and Chingachgook discover that the local sheriff and tax collector are victimising local settlers.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Nat Tanchuck|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280846</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Witch</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1957-05-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Weird incidents terrorize a frontier town.   in spite of Hawkeye's efforts to disprove the witch stories, strange murders increase the settlers' horror.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280847</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Sam Newfield|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Medicine Man</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1957-05-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye and Chingachgook find, Wenatchgo, an old medicine man of the Conestoga tribe wandering in the wilderness. He tells them he has been driven out by Shenahbe, an ambitious young brave.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Bob Bailey|Hugh King|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280847.jpg</filename>
+  <lastupdated>1297919639</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280848</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Servant</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>1957-06-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye and Chingachgook are given authority to investigate the   claims that servants are being sold into bondage.
+
+They learn that an unscrupulous farmer is behind the illegal transactions.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280849</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Sam Newfield|Nat Tanchuck|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Search</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>1957-06-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>After rescuing an elderly white woman from the Indian warriors, Hawkeye and Chingachgook learn that she has been a slave since her husband was killed, 18 years previous.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Nat Tanchuck|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280849.jpg</filename>
+  <lastupdated>1297899634</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280850</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Sam Newfield|Bob Bailey|Hugh King|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Snake Tattoo</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>1957-06-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye and Chingachgook try to help a young Indian boy who has been raised by the white man.   They learn that the youngster is really the son of a Cree chief.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Bob Bailey|Hugh King|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280850.jpg</filename>
+  <lastupdated>1297919659</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280851</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>False Witness</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>1957-06-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye and Chingachgook are assigned to investigate a series of robberies of Army payrolls.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280851.jpg</filename>
+  <lastupdated>1297901275</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280852</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Sam Newfield</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Powder Keg</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>1957-07-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>McKenzie, an unscrupulous fur trader, organises the Huron tribes to destroy a nearby settlement where a rival trader has taken away his business.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|James Fenimore Cooper (author)|Orville Hampton|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280852.jpg</filename>
+  <lastupdated>1297972904</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280853</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Sam Newfield|Orville Hampton|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Scapegoat</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>1957-07-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye tries to help his friend, the chief of the Tuscarora tribe, who is threatened with starvation during a harsh winter.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Orville Hampton|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280853.jpg</filename>
+  <lastupdated>1297919679</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280854</id>
+  <Combined_episodenumber>16</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Sam Newfield|Arthur Browne Jr.|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Way Station</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired>1957-07-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye and Chingachgook are taken prisoners by a band of warriors, and learn they have been accused of wounding a young brave.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Arthur Brown Jr.|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280854.jpg</filename>
+  <lastupdated>1297904806</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280855</id>
+  <Combined_episodenumber>17</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Brute</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired>1957-07-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A kindly man with the mentality of a child is forced to join a gang of marauding desperados.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280856</id>
+  <Combined_episodenumber>18</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Sam Newfield</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Stubborn Pioneer</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired>1957-07-31</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A leader of a group of settlers, ignores warnings and lead his people into hostile Huron territory.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|James Fenimore Cooper (author)|Art Browne, Jr.|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280856.jpg</filename>
+  <lastupdated>1297972815</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280857</id>
+  <Combined_episodenumber>19</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Sam Newfield</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Promised Valley</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired>1957-08-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A fierce, degenerate brave of the Tuscarora tribe plots to overthrow Chief Tawenduma. Hawkeye and Chingachgook come onto the scene in time to save the Chief from ambush, but can they save his honor?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|James Fenimore Cooper (author)|P.K. Palmer|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280857.jpg</filename>
+  <lastupdated>1297904670</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280858</id>
+  <Combined_episodenumber>20</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Sam Newfield</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Girl</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired>1957-08-14</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>An unscrupulous girl uses trickery to anger the Iroquois tribe into war against the whites.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|James Fenimore Cooper (author)|Charles Marion|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280858.jpg</filename>
+  <lastupdated>1297957579</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280859</id>
+  <Combined_episodenumber>21</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Soldier</EpisodeName>
+  <EpisodeNumber>21</EpisodeNumber>
+  <FirstAired>1957-08-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye and Chingachgook are called upon to investigate a problem between the Indians and the army.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280860</id>
+  <Combined_episodenumber>22</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Huron Tomahawk</EpisodeName>
+  <EpisodeNumber>22</EpisodeNumber>
+  <FirstAired>1957-08-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A young man on his way to be married finds that his fiancee and her family have been massacred, apparaently by marrauding  Huron braves.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280861</id>
+  <Combined_episodenumber>23</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Tolliver Gang</EpisodeName>
+  <EpisodeNumber>23</EpisodeNumber>
+  <FirstAired>1957-09-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye and Chingachgook join a pirate band to rescue two women.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280862</id>
+  <Combined_episodenumber>24</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Colonel and His Lady</EpisodeName>
+  <EpisodeNumber>24</EpisodeNumber>
+  <FirstAired>1957-09-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Attempting to prove that Chief Black Wolf and his Indians are   innocent of attacking settlers in violation of a peace treaty,   Hawkeye and Chingachgook realise that a military scout is   responsible for the disturbances.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280863</id>
+  <Combined_episodenumber>25</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Sam Newfield</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Washington Story</EpisodeName>
+  <EpisodeNumber>25</EpisodeNumber>
+  <FirstAired>1957-09-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye and Chingachgook save a pretty girl and a young prospector from angry trappers who feel that the newcomers are threatening their hunting and trapping preserves.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|James Fenimore Cooper (author)|Nat Tanchuck|Albert Aley|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280863.jpg</filename>
+  <lastupdated>1297957478</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280864</id>
+  <Combined_episodenumber>26</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Winter Passage</EpisodeName>
+  <EpisodeNumber>26</EpisodeNumber>
+  <FirstAired>1957-09-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When a party of women insist on taking a legendary pass to join   their husbands, Hawkeye attempts to save them from treachery.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280865</id>
+  <Combined_episodenumber>27</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Sam Newfield</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Reckoning</EpisodeName>
+  <EpisodeNumber>27</EpisodeNumber>
+  <FirstAired>1957-10-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A young lieutenant comes home to find his boyhood friend an enemy.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|James Fenimore Cooper (author)|Nat Tanchuck|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280865.jpg</filename>
+  <lastupdated>1297957378</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280866</id>
+  <Combined_episodenumber>28</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>La Salle's Treasure</EpisodeName>
+  <EpisodeNumber>28</EpisodeNumber>
+  <FirstAired>1957-10-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Victor LaSalle and two other greedy fortune hunters hire Hawkeye and Chingachgook to help them find the rumoured treasure of the great explorer Sieur de LaSalle.
+
+When Hawkeye learns that the location is in the heart of a Dakota burial ground, he tries to stop them.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280867</id>
+  <Combined_episodenumber>29</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Prisoner</EpisodeName>
+  <EpisodeNumber>29</EpisodeNumber>
+  <FirstAired>1957-10-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>While taking a lietenant accused of violating an Indian treaty   to trial, Hawkeye and Chingachgook stop at an Indian village</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280868</id>
+  <Combined_episodenumber>30</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>False Faces</EpisodeName>
+  <EpisodeNumber>30</EpisodeNumber>
+  <FirstAired>1957-10-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A gang of desperadoes raid trappers and isolated settlers wearing special masks, so their raids will be blamed on a certain Indian tribe.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280868.jpg</filename>
+  <lastupdated>1297919699</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280869</id>
+  <Combined_episodenumber>31</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Sam Newfield</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Morristown Story</EpisodeName>
+  <EpisodeNumber>31</EpisodeNumber>
+  <FirstAired>1957-10-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye and Chingachgook, on the trail of the notorious renegade   Simon Girty, defy a warning that Morristown is barred to all   newcomers because of the Black Plague and enter the town secretly.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|James Fenimore Cooper (author)|Endre Bohem|Louis Vittes|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280869.jpg</filename>
+  <lastupdated>1297957280</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280870</id>
+  <Combined_episodenumber>32</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Revenge</EpisodeName>
+  <EpisodeNumber>32</EpisodeNumber>
+  <FirstAired>1957-11-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A young lieutenant has sworn vengeance against all Shawnee   Indians because his parents were murdered by the war chief of   of the tribe. When Nangus, a Shawnee chief, is killed during a   peace pow-wow, the lieutenant is blamed. Hawkeye and Chingachcook believe that he is innocent.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280871</id>
+  <Combined_episodenumber>33</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Sam Newfield</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Contest</EpisodeName>
+  <EpisodeNumber>33</EpisodeNumber>
+  <FirstAired>1957-11-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When two thieves masquerade as Hawkeye and Chingachgook, the pathfinder and his friend have ten days to clear their names.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|James Fenimore Cooper (author)|Hugh King|Robert Bailey|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280871.jpg</filename>
+  <lastupdated>1297905300</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280872</id>
+  <Combined_episodenumber>34</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Truant</EpisodeName>
+  <EpisodeNumber>34</EpisodeNumber>
+  <FirstAired>1957-11-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Hawkeye and Chingachgook are commisioned by the Attorney-General   to guide an orphaned boy, Greg, heir to a silver mine, to the    frontier home of his aunt and uncle whom he has never seen. But    just outside the settlement an attempt is made on the boy's life.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280873</id>
+  <Combined_episodenumber>35</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Royal Grant</EpisodeName>
+  <EpisodeNumber>35</EpisodeNumber>
+  <FirstAired>1957-11-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A young couple who own a trading post is terrorized by Millard Cressing, Who claims to own the territory by Royal Grant.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280874</id>
+  <Combined_episodenumber>36</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Long Rifles</EpisodeName>
+  <EpisodeNumber>36</EpisodeNumber>
+  <FirstAired>1957-12-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Angry settlers blame gunsmith Eben Cotton and his daughter Beth for illegally selling rifles to the Ojibwas.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280875</id>
+  <Combined_episodenumber>37</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Printer</EpisodeName>
+  <EpisodeNumber>37</EpisodeNumber>
+  <FirstAired>1957-12-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Arriving in a frontier town to deliver type from Benjamin Franklin to printer Nathan Peale, Hawkeye and Chingachgook find themselves involved in the midst of a battle for freedom of the press. Peale is arrested for the murder of his brother-in-law.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280876</id>
+  <Combined_episodenumber>38</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Indian Doll</EpisodeName>
+  <EpisodeNumber>38</EpisodeNumber>
+  <FirstAired>1957-12-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>An unscrupulous medicine man, Redwing, of the Turtle tribe,    administers a drug to Snowbird, daughter of Chief Killbuck,   to discredit Hawkeye and all white men in the eyes of his people. He accuses Hawkeye of casting an evil spell on the little girl.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+<Episode>
+  <id>280877</id>
+  <Combined_episodenumber>39</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Sam Newfield</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Circle of Hate</EpisodeName>
+  <EpisodeNumber>39</EpisodeNumber>
+  <FirstAired>1957-12-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A young army lietenant whose family has been wiped out by Indians has developed a fanatical hatred of the Red Man.
+He attempts to kill or injure any Indian who crosses his path. When Hawkeye and Chingachgook enter the territory they hear of the Indians anger and their desire for revenge that can only lead to full scale war.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|James Fenimore Cooper (author)|Louis Stevens||</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78331/280877.jpg</filename>
+  <lastupdated>1297972751</lastupdated>
+  <seasonid>14798</seasonid>
+  <seriesid>78331</seriesid>
+</Episode>
+</Data>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+<Series>
+<seriesid>123001</seriesid>
+<language>en</language>
+<SeriesName>The Adventures of Pinocchio</SeriesName>
+<banner>graphical/123001-g2.jpg</banner>
+<Overview>The episodes tell the classic story of Pinocchio the wooden puppet, who often gets into trouble through being mischievous and naive. He leaves Geppetto to follow a puppet theater and together with a duck named Gina and a woodpecker called Rocco, Pinocchio finds his way through various adventures and eventually learns about values like friendship and courage. In the end, he finds his way back to Geppetto and a fairy transforms him into a real boy.</Overview>
+<FirstAired>1972-01-04</FirstAired>
+<IMDB_ID>tt0204102</IMDB_ID>
+<id>123001</id>
+</Series>
+</Data>

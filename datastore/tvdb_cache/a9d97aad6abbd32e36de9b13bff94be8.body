@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>254965</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired></FirstAired>
+    <Genre></Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network></Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime></Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Celebrity Wedding Planner</SeriesName>
+    <Status></Status>
+    <added>2012-01-07 06:50:27</added>
+    <addedBy>345034</addedBy>
+    <banner></banner>
+    <fanart></fanart>
+    <lastupdated>1327754680</lastupdated>
+    <poster></poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>76977</id>
+  <Actors>|Burt Metcalfe|Leon Ames|Lurene Tuttle|Myrna Fahey|Ransom Sherman|Rickie Sorensen|Ruby Dandridge|Ruth Warrick|</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>1961-09-01</FirstAired>
+  <Genre>|Comedy|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>CBS</Network>
+  <NetworkID></NetworkID>
+  <Overview>When the daughter of a prosperous family decides to marry, it's her harried father, who ends up suffering most.</Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>30</Runtime>
+  <SeriesID>5214</SeriesID>
+  <SeriesName>Father of the Bride</SeriesName>
+  <Status>Ended</Status>
+  <added></added>
+  <addedBy></addedBy>
+  <banner></banner>
+  <fanart></fanart>
+  <lastupdated>1163101692</lastupdated>
+  <poster></poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>222956</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Fletcher Markle|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Bombshell At Breakfast</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1961-09-29</FirstAired>
+  <GuestStars>|Irene Tedrow|Mary Foran|Shelley Ames|Ted Wedderspoon|Howard Wendell|Charles Stewart|Wally Richard|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Kay delivers her bombshell to the Banks family at breakfast with just three little words, &quot;&quot;we're getting married.&quot;&quot;</Overview>
+  <ProductionCode>6600</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Edward Streeter|Ken Cooper|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222957</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Buckley</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1961-10-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Stanley Banks meets his future son-in-law to learn how Buckley Dunstan expects to take care of a wife but only succeeds in convincing Buckley that he, Stanley, is destitute.</Overview>
+  <ProductionCode>6602</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Ken Cooper|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222958</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Buckley's Parents</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1961-10-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ellie, with great trepidation, and Stanley call on Buckleys' parents for the first time.</Overview>
+  <ProductionCode>6603</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Ken Cooper|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222959</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Ring</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1961-10-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Buckley's mother suggests a specially cut, family heirloom ring as the ideal engagement ring for Kay, to Buckley's horror. But to Buckley's amazement, Kay thinks the ring is beautiful, and all goes happily until Father picks the ring up from the jeweler, who has reset it, and promptly loses it.</Overview>
+  <ProductionCode>6604</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Dale Eunson|Katherine Eunson|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222960</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Engagement Party</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1961-10-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Father decides against hiring caterers for the engagement party. He'll handle the drinks and Delilah will take care of everything else.</Overview>
+  <ProductionCode>6605</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Mathilde Ferro|Theodore Ferro|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222961</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Kay's Dinner</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1961-11-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Kay sets out to show the Dunstans that she is more than just an attractive woman by insisting, against Ellie's warning, on making an exotic curry. All goes well until Tommy's pained cries ring through the house, where upon Stanley calls on Ellie to perform a last minute rescue operation.</Overview>
+  <ProductionCode>6606</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Dale Eunson|Katherine Eunson|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222962</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Guest List</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1961-11-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>To Father's relief, everyone is in favor of a small wedding. But when Ellie hands him her guest list, it's a much different story. Stanley nominates himself to reduce the list, thus forcing Ellie to reveal a secret she has kept throughout their marriage.</Overview>
+  <ProductionCode>6607</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Theodore Ferro|Mathilde Ferro|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222963</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Maid of Honor</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1961-11-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Swearing Kay to secrecy, Agnes Ramsey reveals that she is secretly married and cannot be maid of honor at Kay's wedding. Agnes' parents, close friends of the Banks, react violently when they hear the news, causing a crisis in both households.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Dale Eunson|Katherine Eunson|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222964</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Mr. Massoula</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1961-11-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ellie brings in a Mr. Massoula to cater the wedding reception. Stanley, hearing how much it's going to cost, assures her he can handle the job himself. His attempts backfire, forcing him to make a last minute change of strategy.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Mathilde Ferro|Theodore Ferro|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222965</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>White Elephant</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>1961-12-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A large white elephant, without a card, arrives with Kay's wedding gifts. Its presence is treated as a prank, but Father learns the piece comes from his secretary and is a priceless antique. His fears grow as he arrives home just as a trash truck starts to pull away from the house.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Dale Eunson|Katherine Eunson|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222966</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Stanley's Suit</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>1961-12-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Stanley, despite the fact that he has gained some 20 pounds from the time he was married, is determined to lose enough weight so he can wear his old cutaway suit at Kay's wedding. He buys an exercise machine that cost him as much as a new suit would.</Overview>
+  <ProductionCode>6611</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Mathilde Ferro|Theodore Ferro|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222967</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Shower</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>1961-12-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>On the day of Kay's bridal celebration, Ellie persuades Stanley to take Herbert, Buckley and Tommy fishing. But the expedition winds up a disaster when all but Tommy are hauled before a country judge and jailed for not having fishing licenses.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Dale Eunson|Katherine Eunson|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222968</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Fletcher Markle|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Furnishing the Apartment (aka The Apartment)</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>1961-12-22</FirstAired>
+  <GuestStars>|Bill Mumy|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>After Stanley puts a deposit down on an apartment for Kay and Buckley, he discovers the newlyweds have already decided to buy a house.</Overview>
+  <ProductionCode>6613</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Mathilde Ferro|Theodore Ferro|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222969</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Surprise, Surprise!</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>1961-12-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>For his birthday present, Stanley has a brand new electric gold cart picked out. But with all the excitement centered around the impending wedding, Ellie seems to have completely forgotten his birthday. When Stanley's bold hints have no effect, he gives up in disgust and decides to buy the golf cart himself.</Overview>
+  <ProductionCode>6614</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Mort Green|Ken Cooper|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222970</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Honeymoon</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>1962-01-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Tommy begins to worry about Kay and Buckley's compatibility when the two disagree over where they will spend their honeymoon.</Overview>
+  <ProductionCode>6615</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Dale Eunson|Katherine Eunson|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222971</id>
+  <Combined_episodenumber>16</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Homework</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired>1962-01-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Stanley gets himself in an awkward situation when he brags to Tommy about his scholastic prowess. When Tommy invites a classmate, a girl who he is very anxious to impress, to come over for help with a difficult geometry problem, Stanley must find a way of saving face and not disappointing his son.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Ken Cooper|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222972</id>
+  <Combined_episodenumber>17</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Rehearsal</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired>1962-01-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>At a stage luncheon for Buckley before his wedding, someone sets his watch back an hour as a joke and causes him to miss the wedding rehearsal, thus getting him into big trouble with Kay.</Overview>
+  <ProductionCode>6616</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Dale Eunson|Katherine Eunson|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222973</id>
+  <Combined_episodenumber>18</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Wedding</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired>1962-02-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The day of Kay's wedding to Buckley finally arrives. It is during the reception at the Banks' home that an unexpected crisis develops. Upset by the appearance of Buckley's former girlfriend and by his forgetting his traveler's checks, Kay shuts herself in her room and announces she can't go through with the day.</Overview>
+  <ProductionCode>6617</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Dale Eunson|Katherine Eunson|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222974</id>
+  <Combined_episodenumber>19</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Pine Pillow</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired>1962-02-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Stanley becomes jealous when the honeymooning Buckley sends a pine pillow to his parents, but the Banks receive nothing from Kay. To cover his disappointment, Stanley tells the Dunstans he has received a long letter from Kay, a falsehood that puts him in an awkward situation when the Dunstans, visiting for the evening, ask to see the letter.</Overview>
+  <ProductionCode>6618</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Mathilde Ferro|Theodore Ferro|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222975</id>
+  <Combined_episodenumber>20</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Homecoming</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired>1962-02-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>After furnishing the apartment for Kay and Buckley's homecoming, both families receive a shock when the newlyweds return and find it completely bare.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Dale Eunson|Katherine Eunson|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222976</id>
+  <Combined_episodenumber>21</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Too Many Cooks</EpisodeName>
+  <EpisodeNumber>21</EpisodeNumber>
+  <FirstAired>1962-02-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Buckley's mother decides that Kay's cooking isn't proper for her son and determines to remedy the situation by giving Kay recipes, helping her shop and even taking a turn in her kitchen. When Mrs. Dunstan annoys the newlyweds with her constant &quot;&quot;assistance&quot;&quot; the situation goes from bad to worse.</Overview>
+  <ProductionCode>6623</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Mort Green|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222977</id>
+  <Combined_episodenumber>22</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Quarrel</EpisodeName>
+  <EpisodeNumber>22</EpisodeNumber>
+  <FirstAired>1962-03-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Kay and Buckley's first quarrel ends with Kay running home to mother. Stanley thinks his daughter is too pampered and is in favor of sending her right back but Ellie won't hear of it. When the &quot;&quot;father of the bride&quot;&quot; and the &quot;&quot;mother of the bride&quot;&quot; join the argument, Stanley, too, decides to leave home.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Mathilde Ferro|Theodore Ferro|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222978</id>
+  <Combined_episodenumber>23</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Tommy's Hero</EpisodeName>
+  <EpisodeNumber>23</EpisodeNumber>
+  <FirstAired>1962-03-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Both Stanley and Kay begin to feel neglected when Tommy begins spending all of his spare time with Buckley.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Mathilde Ferro|Theodore Ferro|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222979</id>
+  <Combined_episodenumber>24</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Milking Stool</EpisodeName>
+  <EpisodeNumber>24</EpisodeNumber>
+  <FirstAired>1962-03-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ellie and Doris Dunstan decide to open an antique shop for charity. They start acquiring stock by giving all of their own &quot;&quot;antiques,&quot;&quot; which are Stanley and Herbert's favorite pieces of furniture. Stanley comes to his breaking point when the women are forced to move the shop into the Banks' residence.</Overview>
+  <ProductionCode>6622</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Mathilde Ferro|Theodore Ferro|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222980</id>
+  <Combined_episodenumber>25</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Quibbling</EpisodeName>
+  <EpisodeNumber>25</EpisodeNumber>
+  <FirstAired>1962-03-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A tearful Kay arrives at the Banks' house following a quarrel with Buckley. Her dramatic explanation of what took place is later contradicted in Buckley's version, whereupon Stanley deliberately puts on an act for the newlyweds' benefit.</Overview>
+  <ProductionCode>6620</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Mort Green|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222981</id>
+  <Combined_episodenumber>26</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The House</EpisodeName>
+  <EpisodeNumber>26</EpisodeNumber>
+  <FirstAired>1962-03-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When the Dunstans find an elegant old home for Kay and Buckley that is an unbelievable bargain, Stanley is piqued because the house is quite close to the Dunstans and across town from him and Ellie. He embarks on an all-out campaign to find the flaw in the property, but at first only succeeds in wrecking himself.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|John Elliotte|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222982</id>
+  <Combined_episodenumber>27</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Campaign Manager</EpisodeName>
+  <EpisodeNumber>27</EpisodeNumber>
+  <FirstAired>1962-04-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Delilah's announcement of candidacy for president of a social and charity organization throws the Banks' household into political turmoil.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Mort Green|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222983</id>
+  <Combined_episodenumber>28</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Duchess</EpisodeName>
+  <EpisodeNumber>28</EpisodeNumber>
+  <FirstAired>1962-04-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Doris receives a letter telling her that a distant relative has died leaving an island and 145-room Norman Castle off the coast of Wales, which she will inherit along with a title if she can prove her descent.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Dale Eunson|Katherine Eunson|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222984</id>
+  <Combined_episodenumber>29</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Richard Whorf|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Stanley's Steamer</EpisodeName>
+  <EpisodeNumber>29</EpisodeNumber>
+  <FirstAired>1962-04-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Stanley begins devoting much of his evenings to a mysterious &quot;&quot;Josephine&quot;&quot; to the horror of Doris, Herbert and Stanley's secretary, who can't believe that he and Ellie are having marital troubles after all their happy years together. They soon discover that Josephine is a huge old classic car that he has been restoring.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Carey Wilber|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222985</id>
+  <Combined_episodenumber>30</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Richard Whorf|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Hospital</EpisodeName>
+  <EpisodeNumber>30</EpisodeNumber>
+  <FirstAired>1962-04-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>When Stanley hears that Herbert has been mysteriously hospitalized but is unable to reach him or his doctor, he goes to the hospital himself to see what it's all about. Stanley discovers that Herbert is merely &quot;&quot;vacationing&quot;&quot; for the weekend, surrounded by beautiful nurses. Herbert convinces Stanley that he should try the ruse himself.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Mort Green|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222986</id>
+  <Combined_episodenumber>31</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Band</EpisodeName>
+  <EpisodeNumber>31</EpisodeNumber>
+  <FirstAired>1962-05-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Stanley takes Buckley's suggestion for a band to play at the annual Lawyer's Ball.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Ken Cooper|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222987</id>
+  <Combined_episodenumber>32</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Gene Reynolds|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Bradley's Shack</EpisodeName>
+  <EpisodeNumber>32</EpisodeNumber>
+  <FirstAired>1962-05-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Stanley cons Buckley and Tommy into joining him for the weekend at Ed Bradley's mountain hideaway, unaware of the consequences when Ellie and Kay discover that Bradley's so called &quot;&quot;shack&quot;&quot; is a palatial lodge, used to entertain his poker-playing pals.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Charles E. Anderson|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222988</id>
+  <Combined_episodenumber>33</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Gene Reynolds|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Hammers</EpisodeName>
+  <EpisodeNumber>33</EpisodeNumber>
+  <FirstAired>1962-05-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Stanley invites an old-school mate, Bones Hammerstock, to stop by for a visit. He discovers that Bones is now a big, hearty muscleman and his wife is a veritable Amazon. Ellie recognizes the couple as &quot;&quot;The Hammers&quot;&quot; of health and exercise TV fame.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Dale Eunson|Katherine Eunson|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+<Episode>
+  <id>222989</id>
+  <Combined_episodenumber>34</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Gene Reynolds|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Visit</EpisodeName>
+  <EpisodeNumber>34</EpisodeNumber>
+  <FirstAired>1962-06-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Stanley listens to the counsel of one of his clients, Mr. Wilkins, about how to deal with Kay. Wilkins' advice and the experts' psychology backfire, leaving Stanley in trouble with newlyweds Kay and Buckley.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>11834</seasonid>
+  <seriesid>76977</seriesid>
+</Episode>
+</Data>

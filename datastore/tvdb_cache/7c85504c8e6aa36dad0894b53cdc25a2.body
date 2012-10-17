@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>153381</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating>TV-PG</ContentRating>
+  <FirstAired>1971-12-24</FirstAired>
+  <Genre></Genre>
+  <IMDB_ID>tt0075220</IMDB_ID>
+  <Language>en</Language>
+  <Network>BBC One</Network>
+  <NetworkID></NetworkID>
+  <Overview>A collection of ghost stories, mostly adapted from the short stories of M.R. James that were aired over the Christmas holidays. Originally an annual event for eight years they were then followed by various other ghost stories in the 1980s and 2000s.</Overview>
+  <Rating>10.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime>50</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>A Ghost Story For Christmas</SeriesName>
+  <Status>Ended</Status>
+  <added>2010-04-01 11:26:12</added>
+  <addedBy>151131</addedBy>
+  <banner>graphical/153381-g2.jpg</banner>
+  <fanart>fanart/original/153381-1.jpg</fanart>
+  <lastupdated>1340398753</lastupdated>
+  <poster>posters/153381-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>2926651</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Jonathan Miller</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Oh Whistle and I'll Come To You</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1968-01-01</FirstAired>
+  <GuestStars>Michael Hordern</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A retired academic takes a holiday at a small seaside hotel, dividing his time between stiff walks along the beach, and pompous philosophical debate with his fellow hotel guests. During one of his walks, he finds a half-buried whistle, and takes it back to the hotel to examine it further. From this moment on, he becomes haunted, by night and by day.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer>M.R. James</Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1340398213</lastupdated>
+  <seasonid>222321</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>2926661</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Casting the Runes</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1979-12-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>An ITV production in a similar style to the BBC's 'A Ghost Story for Christmas'</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1340398373</lastupdated>
+  <seasonid>222321</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>2926671</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Schalken The Painter</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1979-12-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1340398887</lastupdated>
+  <seasonid>222321</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>3534851</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Mezzotinit</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1986-12-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Told by Robert Powell</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1340398744</lastupdated>
+  <seasonid>222321</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>3534861</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Ash Tree</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1986-12-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Told by Robert Powell</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1340398735</lastupdated>
+  <seasonid>222321</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>3534871</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Wailing Well</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1986-12-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Told by Robert Powell</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1340398767</lastupdated>
+  <seasonid>222321</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>3534881</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Oh, Whistle and I'll Come To You, My Lad</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1986-12-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Told by Robert Powell</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1340398784</lastupdated>
+  <seasonid>222321</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>3534891</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Rose Garden</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1986-12-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Told by Robert Powell</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1340398916</lastupdated>
+  <seasonid>222321</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>3881861</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Haunted Airman</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2006-10-31</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer>Dennis Wheatley</Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1340398520</lastupdated>
+  <seasonid>222321</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>2926711</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Crooked House</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2008-12-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Set over three consecutive episodes, this story tells the tale of Lee Ingleby who plays a man who has unearthed an unearthly door knocker from his garden and goes to see the Curator (Mark Gatiss) of an old museum who sheds light on its gruesome past of the now demolished Geap Manor....</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1340398567</lastupdated>
+  <seasonid>222321</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>2010041</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Stalls of Barchester</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1971-12-24</FirstAired>
+  <GuestStars>Robert Hardy, Clive Swift, Thelma Barlow</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>An ambitious cleric murders an aged Archdeacon at Barchester Cathedral. However, he is soon being stalked by a sinister black cat and by a hooded figure both of whom seem to be embodiments of carvings on the cathedral's choir stalls.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>M. R. James, adapted by Lawrence Gordon Clark</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321649617</lastupdated>
+  <seasonid>224751</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>2010051</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName> A Warning to the Curious</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1972-12-24</FirstAired>
+  <GuestStars>Peter Vaughan, Clive Swift</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>An amateur archaeologist travels to a remote seaside town in Norfolk to search for the lost crown of Anglia, but after unearthing it is haunted by a mysterious black figure.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>M. R. James, adapted by Lawrence Gordon Clark</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321649641</lastupdated>
+  <seasonid>224751</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>2010061</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName> Lost Hearts</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1973-12-25</FirstAired>
+  <GuestStars>Simon Gipps-Kent, Joseph O'Conor</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>An orphan moves into the house of his uncle, but is disturbed by visions of a pair of ghostly children. Is their message a warning to be fearful of his uncle's obsession with immortality?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>M. R. James, adapted by Robin Chapman</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321649878</lastupdated>
+  <seasonid>224751</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>2010071</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName> Treasure of Abbot Thomas</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1974-12-23</FirstAired>
+  <GuestStars>Michael Bryant, Paul Lavers</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A respected theologian and his protégé unearth clues to find the hidden treasure of a disgraced monk in an abbey library. Should he have heeded his own advice not to go treasure hunting?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>M. R. James, adapted by John Bowen</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321659435</lastupdated>
+  <seasonid>224751</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>2010081</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName> The Ash Tree</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1975-12-23</FirstAired>
+  <GuestStars>Edward Petherbridge, Preston Lockwood</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>An aristocrat inherits his family estate and is haunted by visions of his ancestor's role in a witchcraft trial.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>M. R. James, adapted by David Rudkin</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321804262</lastupdated>
+  <seasonid>224751</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>2010091</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Signalman</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1976-12-22</FirstAired>
+  <GuestStars>Denholm Elliott, Bernard Lloyd</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A railway signalman tells a curious traveller how he is being troubled by a ghostly spectre that seems to predict calamity.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Charles Dickens, adapted by Andrew Davies</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321804330</lastupdated>
+  <seasonid>224751</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>2010101</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Lawrence Gordon Clark</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Stigma</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1977-12-28</FirstAired>
+  <GuestStars>Kate Binchy, Peter Bowles, Maine Gordon, John Laurimore</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Whilst clearing the ground for a new lawn, a family find a huge flat rock in their garden. It is so heavy it needs a crane to remove it. In doing so, they release a spirit which has terrible consequences for the family.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Clive Exton</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1332562657</lastupdated>
+  <seasonid>224751</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>2010111</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName> The Ice House</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1978-12-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1295879243</lastupdated>
+  <seasonid>224751</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>2926621</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>A View From a Hill</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2005-12-23</FirstAired>
+  <GuestStars>Mark Letheren, Pip Torrens, David Burke</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A historian has a disturbing experience after borrowing a pair of binoculars belonging to a missing outcast and venturing up a notorious landmark.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>M. R. James, adapted by Peter Harness</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321804473</lastupdated>
+  <seasonid>224751</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>2926631</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Number 13</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2006-12-22</FirstAired>
+  <GuestStars>Greg Wise, Paul Freeman, David Burke</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>An academic researcher repudiates local superstitions surrounding a devilish house. However, repeated visions and noises during the night suggest he may be proved wrong.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>M. R. James, adapted by Justin Hopper</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321804541</lastupdated>
+  <seasonid>224751</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+<Episode>
+  <id>3534841</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Whistle and I'll Come to You</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>2010-12-24</FirstAired>
+  <GuestStars>John Hurt, Gemma Jones, Leslie Sharp</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Leaving his ill and ageing wife in a care home, a retired astronomer revisits one of their old coastal haunts, but after discovering a ring on the beach is soon haunted himself.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>M.R. James, adapted by Neil Cross</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321804764</lastupdated>
+  <seasonid>224751</seasonid>
+  <seriesid>153381</seriesid>
+</Episode>
+</Data>

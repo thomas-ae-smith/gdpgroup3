@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>80739</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>2004-03-10</FirstAired>
+  <Genre>|Documentary|Drama|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>BBC Two</Network>
+  <NetworkID></NetworkID>
+  <Overview>If... is a series of BBC drama-documentaries where each episode considers the potentially catastrophic political or social consequences that might arise from current trends in the United Kingdom. It uses a drama with interviews from experts, then has a discussion of the programme with a panel of experts from both sides of an argument.</Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>1</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>If...</SeriesName>
+  <Status>Ended</Status>
+  <added></added>
+  <addedBy></addedBy>
+  <banner>graphical/80739-g.jpg</banner>
+  <fanart></fanart>
+  <lastupdated>1348609128</lastupdated>
+  <poster>posters/80739-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>2187281</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The If... Debate: If Drugs Were Legal</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1273202192</lastupdated>
+  <seasonid>29087</seasonid>
+  <seriesid>80739</seriesid>
+</Episode>
+<Episode>
+  <id>339900</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>If... The Lights Go Out</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2004-03-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1348608705</lastupdated>
+  <seasonid>29088</seasonid>
+  <seriesid>80739</seriesid>
+</Episode>
+<Episode>
+  <id>339901</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>If... Things Don't Get Better</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2004-03-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1348608769</lastupdated>
+  <seasonid>29088</seasonid>
+  <seriesid>80739</seriesid>
+</Episode>
+<Episode>
+  <id>339902</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>If... The Generations Fall Out</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2004-03-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1348608798</lastupdated>
+  <seasonid>29088</seasonid>
+  <seriesid>80739</seriesid>
+</Episode>
+<Episode>
+  <id>339903</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>If... It Was a Woman's World</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2004-03-31</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1348608837</lastupdated>
+  <seasonid>29088</seasonid>
+  <seriesid>80739</seriesid>
+</Episode>
+<Episode>
+  <id>339904</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>If... We Don't Stop Eating</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2004-04-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1348608863</lastupdated>
+  <seasonid>29088</seasonid>
+  <seriesid>80739</seriesid>
+</Episode>
+<Episode>
+  <id>339905</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>If... Cloning Could Cure Us</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2004-12-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1348608955</lastupdated>
+  <seasonid>29089</seasonid>
+  <seriesid>80739</seriesid>
+</Episode>
+<Episode>
+  <id>339906</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>If... We Could Stop the Violence</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2004-12-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1348608994</lastupdated>
+  <seasonid>29089</seasonid>
+  <seriesid>80739</seriesid>
+</Episode>
+<Episode>
+  <id>339907</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Nick Copus</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>If... Drugs Were Legal</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2005-01-12</FirstAired>
+  <GuestStars>|Nila Aalia|Bronwen Davies|Juliet Ellis|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>It is 2015.
+
+If... Drugs Were Legal
+In the film, an ex-drugs policeman investigates two girls' deaths
+The government, persuaded by the vast economic cost of prohibition, has decided to legalise drugs.
+
+The UK, along with a coalition of progressive countries from Europe, Canada and Australia, has opted out of the UN treaties which control drugs.
+
+Much of the trade from possession to use, and production to supply, has been legalised.
+
+The drama opens with the collapse and subsequent deaths of two girls in a club which is licensed to sell drugs.
+
+In the scenario, most drugs are readily available, with government health warnings and lists of ingredients, from various outlets.
+
+Drugs of addiction, like heroin, are free but only available on prescription from Swiss-styled heroin clinics.
+
+Cocaine is still illegal.
+
+The whole trade is regulated by a new agency, called Ofdrug.
+
+The film follows the investigation into the two girls' deaths by an Ofdrug agent who works closely with an ex-drugs policeman.
+
+Experts such as former chief constable Francis Wilkinson argued the case for pro-legalisation, while David Raynes of the National Drug Prevention Alliance was one of the voices arguing against. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>|Nick Copus|J.C. Wilsher|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1348609029</lastupdated>
+  <seasonid>29089</seasonid>
+  <seriesid>80739</seriesid>
+</Episode>
+<Episode>
+  <id>339908</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>If... TV Goes Down the Tube</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2005-03-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1348609067</lastupdated>
+  <seasonid>29089</seasonid>
+  <seriesid>80739</seriesid>
+</Episode>
+<Episode>
+  <id>339909</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>If... The Toxic Timebomb Goes Off</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2005-03-31</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1348609101</lastupdated>
+  <seasonid>29089</seasonid>
+  <seriesid>80739</seriesid>
+</Episode>
+<Episode>
+  <id>339910</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>If... We Stopped Giving Aid to Africa</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2005-06-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1348609170</lastupdated>
+  <seasonid>29089</seasonid>
+  <seriesid>80739</seriesid>
+</Episode>
+<Episode>
+  <id>339911</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>If... The Oil Runs Out</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2006-05-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0814148</IMDB_ID>
+  <Language>en</Language>
+  <Overview>It is 2016 and the world is in crisis.
+
+Global supplies of oil cannot keep up with soaring demand and the price of petrol is going through the roof.
+
+The oil companies are in a desperate race to find any remaining oil reserves but what happens if there is no more out there?
+
+Combining expert interviews with a fictional story line, the drama-documentary examines how our lives will change as the price of fuel starts to spiral out of control. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1230951346</lastupdated>
+  <seasonid>29090</seasonid>
+  <seriesid>80739</seriesid>
+</Episode>
+</Data>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>248773</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired></FirstAired>
+  <Genre>|Documentary|</Genre>
+  <IMDB_ID>tt0197955</IMDB_ID>
+  <Language>en</Language>
+  <Network>Discovery</Network>
+  <NetworkID></NetworkID>
+  <Overview>Documentary that revisits the Titanic's resting place to continue to unravel the mystery as to what happened to the &quot;unsinkable&quot; ship on her maiden voyage. Scientists have found the missing third piece of the ship, and have disproven theories surrounding the disaster. The Titanic is photographed inch by inch to allow viewers to see the sight as never before.</Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>150</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Titanic: Answers from the Abyss</SeriesName>
+  <Status>Ended</Status>
+  <added>2011-05-15 12:10:21</added>
+  <addedBy>343085</addedBy>
+  <banner></banner>
+  <fanart></fanart>
+  <lastupdated>1305486967</lastupdated>
+  <poster></poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4100094</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Part One</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1305486952</lastupdated>
+  <seasonid>466028</seasonid>
+  <seriesid>248773</seriesid>
+</Episode>
+<Episode>
+  <id>4100095</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Part Two</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1305486958</lastupdated>
+  <seasonid>466028</seasonid>
+  <seriesid>248773</seriesid>
+</Episode>
+</Data>

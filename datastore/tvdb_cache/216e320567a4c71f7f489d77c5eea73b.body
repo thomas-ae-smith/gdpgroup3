@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>119151</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired></FirstAired>
+  <Genre></Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network></Network>
+  <NetworkID></NetworkID>
+  <Overview></Overview>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime></Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Gandhi</SeriesName>
+  <Status></Status>
+  <added>2009-10-17 07:52:22</added>
+  <addedBy>7840</addedBy>
+  <banner>graphical/119151-g.jpg</banner>
+  <fanart>fanart/original/119151-1.jpg</fanart>
+  <lastupdated>1317240084</lastupdated>
+  <poster></poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>1190091</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Chris Salt</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Making of the Mahatma</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2009-10-03</FirstAired>
+  <GuestStars>Mishal Husain</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Presented by BBC journalist Mishal Husain, whose grandparents were Muslims in India at the time of Independence, the series challenges idealized images of Gandhi.
+
+Gandhi's non-violent philosophy has inspired world leaders such as Nelson Mandela and President Obama and yet Mishal also uncovers a man torn by
+contradictions – the pacifist who backed war and Jihad; the holy man branded a racist; and the political campaigner who was astute and brilliant one moment
+and naive the next.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/119151/1190091.jpg</filename>
+  <lastupdated>1278117517</lastupdated>
+  <seasonid>131691</seasonid>
+  <seriesid>119151</seriesid>
+</Episode>
+<Episode>
+  <id>1190101</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Jonathan Mayo</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Rise to Fame</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2009-10-10</FirstAired>
+  <GuestStars>Mishal Husain</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>In the second part of the series, Mishal Husain traces Gandhi's transformation from obscure lawyer to father of the nation and discovers a more complicated and intriguing man than the saintly Hollywood version. Gandhi had to face unpopularity, political failure and British jails. But in 1930 he triumphs - launching the most astute campaign of the age - the 240-mile Salt March that succeeded in humiliating the British Raj.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/119151/1190101.jpg</filename>
+  <lastupdated>1278117633</lastupdated>
+  <seasonid>131691</seasonid>
+  <seriesid>119151</seriesid>
+</Episode>
+<Episode>
+  <id>1218591</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Emily Davis</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Road to Freedom</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2009-10-17</FirstAired>
+  <GuestStars>Mishal Husain</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>In the final episode, Mishal Husain explores the dramatic last years of Gandhi's life, which culminated in his death by an assassin's bullet. She gets to the bottom of an enduring mystery - why is Gandhi revered as Father of the Nation, when India turned its back on Gandhi's blueprint for the country?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/119151/1218591.jpg</filename>
+  <lastupdated>1281263104</lastupdated>
+  <seasonid>131691</seasonid>
+  <seriesid>119151</seriesid>
+</Episode>
+</Data>

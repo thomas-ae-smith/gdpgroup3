@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>150281</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek>Sunday</Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>2007-07-01</FirstAired>
+    <Genre>|Documentary|</Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network>PBS</Network>
+    <NetworkID></NetworkID>
+    <Overview>Justice is one of the most popular courses in Harvard’s history.  Nearly one thousand students pack Harvard’s historic Sanders Theatre to hear Professor Sandel talk about justice, equality, democracy, and citizenship. Now it’s your turn to take the same journey in moral reflection that has captivated more than 14,000 students, as Harvard opens its classroom to the world.</Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Justice: What's the Right Thing to Do?</SeriesName>
+    <Status>Ended</Status>
+    <added>2010-03-18 16:01:07</added>
+    <addedBy>153351</addedBy>
+    <banner>graphical/150281-g.jpg</banner>
+    <fanart>fanart/original/150281-1.jpg</fanart>
+    <lastupdated>1296332043</lastupdated>
+    <poster>posters/150281-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

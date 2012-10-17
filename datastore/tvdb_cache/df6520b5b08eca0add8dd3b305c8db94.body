@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>261735</id>
+  <Actors>|נמרוד הראל|</Actors>
+  <Airs_DayOfWeek>Saturday</Airs_DayOfWeek>
+  <Airs_Time>21:00</Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>2012-08-25</FirstAired>
+  <Genre>|Documentary|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>רשת</Network>
+  <NetworkID></NetworkID>
+  <Overview></Overview>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime>30</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Psycho</SeriesName>
+  <Status>Continuing</Status>
+  <added>2012-08-23 14:30:41</added>
+  <addedBy>253421</addedBy>
+  <banner>graphical/261735-g2.jpg</banner>
+  <fanart>fanart/original/261735-1.jpg</fanart>
+  <lastupdated>1347080961</lastupdated>
+  <poster></poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4384540</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2012-08-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1346041078</lastupdated>
+  <seasonid>499087</seasonid>
+  <seriesid>261735</seriesid>
+</Episode>
+<Episode>
+  <id>4393347</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2012-09-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1347079007</lastupdated>
+  <seasonid>499087</seasonid>
+  <seriesid>261735</seriesid>
+</Episode>
+</Data>

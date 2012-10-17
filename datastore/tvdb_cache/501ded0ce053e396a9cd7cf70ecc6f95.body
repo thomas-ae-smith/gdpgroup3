@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>225041</id>
+  <Actors>|Charles Dance|Emilia Fox|</Actors>
+  <Airs_DayOfWeek>Sunday</Airs_DayOfWeek>
+  <Airs_Time>20:00</Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>1997-01-05</FirstAired>
+  <Genre>|Drama|</Genre>
+  <IMDB_ID>tt0119991</IMDB_ID>
+  <Language>en</Language>
+  <Network>ITV</Network>
+  <NetworkID></NetworkID>
+  <Overview>Based on the Gothic romance novel by Daphne Du Maurier, Rebecca is a classic tale of love and hate. Maxim De Winter marries a woman half his age only a year after his first wife, the beautiful and accomplished Rebecca, dies. She finds herself in an aristocratic social world her middle class upbringing did not prepare her for, and housekeeper Mrs Danvers despises her for taking her darling Rebecca's place. But these are not the only problems to face...</Overview>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime>115</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Rebecca</SeriesName>
+  <Status>Ended</Status>
+  <added>2011-01-24 08:10:52</added>
+  <addedBy>9690</addedBy>
+  <banner></banner>
+  <fanart>fanart/original/225041-1.jpg</fanart>
+  <lastupdated>1343780165</lastupdated>
+  <poster>posters/225041-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>3535531</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Jim O'Brien</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Part One</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1997-01-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Based on the Gothic romance novel by Daphne Du Maurier, Rebecca is a classic tale of love and hate. Maxim De Winter marries a woman half his age only a year after his first wife, the beautiful and accomplished Rebecca, dies. She finds herself in an aristocratic social world her middle class upbringing did not prepare her for.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>5.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Daphne Du Maurier|Arthur Hopcraft|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/225041/3535531.jpg</filename>
+  <lastupdated>1343780193</lastupdated>
+  <seasonid>405111</seasonid>
+  <seriesid>225041</seriesid>
+</Episode>
+<Episode>
+  <id>3535541</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Jim O'Brien</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Part Two</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1997-01-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Second part in a two part adaptation of the Daphne Du Maurier thriller. In an effort to establish herself as the new mistress of Manderley, Mrs de Winter revives the mansion's famous fancy dress ball. She is encouraged by Mrs Danvers to copy a dress from a painting of a family ancestor, but her husband is furious. Danvers' taunting reaches a climax as she declares Rebecca is still ruler at the house, just as the wreck of her former mistress's boat is found - with a body in the cabin.
+</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>5.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Daphne Du Maurier|Arthur Hopcraft|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/225041/3535541.jpg</filename>
+  <lastupdated>1343780203</lastupdated>
+  <seasonid>405111</seasonid>
+  <seriesid>225041</seriesid>
+</Episode>
+</Data>

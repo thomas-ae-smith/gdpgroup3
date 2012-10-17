@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>78527</id>
+    <Actors>|Peta Wilson|Roy Dupuis|Eugene Robert Glazer|Alberta Watson|Don Francks|Matthew Ferguson|</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating>TV-14</ContentRating>
+    <FirstAired>1997-01-13</FirstAired>
+    <Genre>|Action and Adventure|</Genre>
+    <IMDB_ID>tt0118379</IMDB_ID>
+    <Language>en</Language>
+    <Network>USA Network</Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating>8.9</Rating>
+    <RatingCount>14</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID>922</SeriesID>
+    <SeriesName>La Femme Nikita</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/78527-g2.jpg</banner>
+    <fanart>fanart/original/78527-5.jpg</fanart>
+    <lastupdated>1348911065</lastupdated>
+    <poster>posters/78527-3.jpg</poster>
+    <zap2it_id>SH204146</zap2it_id>
+  </Series>
+</Data>

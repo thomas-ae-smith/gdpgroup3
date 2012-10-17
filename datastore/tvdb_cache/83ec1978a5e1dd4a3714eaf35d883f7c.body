@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>70443</id>
+    <Actors>|Jack Kelly|James Garner|Robert Colbert|Roger Moore|</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>1957-09-22</FirstAired>
+    <Genre>|Action and Adventure|</Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network>ABC</Network>
+    <NetworkID></NetworkID>
+    <Overview>Maverick is a comedy-western television series created by Roy Huggins that ran from September 22, 1957 to July 8, 1962 on ABC and featured James Garner, Jack Kelly, Roger Moore, and Robert Colbert as the poker-playing traveling Mavericks (Bret, Bart, Beau, &amp; Brent). Moore and Colbert were later additions, though there were never more than two current Mavericks in the series at any given time, and sometimes only one. The series' primary sponsor for the first few seasons was Kaiser Aluminum, and their &quot;quilted&quot; aluminum foil was widely advertised in commercials shown on Maverick.</Overview>
+    <Rating>9.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID>1020</SeriesID>
+    <SeriesName>Maverick</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/70443-g.jpg</banner>
+    <fanart>fanart/original/70443-1.jpg</fanart>
+    <lastupdated>1342851709</lastupdated>
+    <poster>posters/70443-3.jpg</poster>
+    <zap2it_id>SH002837</zap2it_id>
+  </Series>
+</Data>

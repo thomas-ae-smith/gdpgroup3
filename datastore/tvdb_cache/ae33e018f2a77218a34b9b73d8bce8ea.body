@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>74279</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>1974-05-01</FirstAired>
+  <Genre></Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>BBC One</Network>
+  <NetworkID></NetworkID>
+  <Overview></Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime></Runtime>
+  <SeriesID>26268</SeriesID>
+  <SeriesName>Dial M for Murder</SeriesName>
+  <Status>Ended</Status>
+  <added></added>
+  <addedBy></addedBy>
+  <banner></banner>
+  <fanart></fanart>
+  <lastupdated>1163101692</lastupdated>
+  <poster></poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>142434</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Gerald Blake|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>If You Knew Susie</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1974-05-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>7199</seasonid>
+  <seriesid>74279</seriesid>
+</Episode>
+<Episode>
+  <id>142435</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Simon Langton|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Contract</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1974-05-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Roy Clarke|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>7199</seasonid>
+  <seriesid>74279</seriesid>
+</Episode>
+<Episode>
+  <id>142436</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Gerald Blake|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Vineyard</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1974-06-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>7199</seasonid>
+  <seriesid>74279</seriesid>
+</Episode>
+<Episode>
+  <id>142437</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Voice</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1974-06-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>7199</seasonid>
+  <seriesid>74279</seriesid>
+</Episode>
+<Episode>
+  <id>142438</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Murder on Demand</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1974-06-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>7199</seasonid>
+  <seriesid>74279</seriesid>
+</Episode>
+<Episode>
+  <id>142439</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Man in the Middle</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1974-06-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>7199</seasonid>
+  <seriesid>74279</seriesid>
+</Episode>
+<Episode>
+  <id>142440</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jonathan Alwyn|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Dead Connection</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1974-07-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>7199</seasonid>
+  <seriesid>74279</seriesid>
+</Episode>
+<Episode>
+  <id>142441</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Whatever's Peter Playing At?</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1974-07-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>7199</seasonid>
+  <seriesid>74279</seriesid>
+</Episode>
+<Episode>
+  <id>142442</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Both Hands Free</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1974-07-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>7199</seasonid>
+  <seriesid>74279</seriesid>
+</Episode>
+<Episode>
+  <id>142443</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Firing Point</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>1974-07-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>7199</seasonid>
+  <seriesid>74279</seriesid>
+</Episode>
+<Episode>
+  <id>142444</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Gerald Blake|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Should Anyone Answer</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>1974-08-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>7199</seasonid>
+  <seriesid>74279</seriesid>
+</Episode>
+<Episode>
+  <id>142445</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Peter Moffatt|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Frame</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>1974-08-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>7199</seasonid>
+  <seriesid>74279</seriesid>
+</Episode>
+<Episode>
+  <id>142446</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Recording Angel</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>1974-08-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>7199</seasonid>
+  <seriesid>74279</seriesid>
+</Episode>
+</Data>

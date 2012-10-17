@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>73873</id>
+  <Actors>|Jeffrey Pierce|Michael Filipowich|Patricia McKenzie|Marie-Julie Rivest|Tyrone Benskin|Danny Keogh|Michele Burgers|David Dennis|Graham Clarke|Langley Kirkwood|Rolanda Marais|</Actors>
+  <Airs_DayOfWeek>Saturday</Airs_DayOfWeek>
+  <Airs_Time>8:00 PM</Airs_Time>
+  <ContentRating>TV-14</ContentRating>
+  <FirstAired>2005-04-16</FirstAired>
+  <Genre>|Drama|Science-Fiction|</Genre>
+  <IMDB_ID>tt0408378</IMDB_ID>
+  <Language>en</Language>
+  <Network>Space</Network>
+  <NetworkID></NetworkID>
+  <Overview>Charlie Jade is a rogue private detective in a world dominated by greedy multinational corporations. When Charlie sees the corpse of a beautiful young woman he realizes she embodies the impossible: she has no identity, something inconceivable in Charlie's world. While tracking her suspected killer, the trail leads Charlie to a secret desert facility. A massive explosion propels him into a parallel universe, our own chaotic twenty-first century world where he is both baffled by its differences and seduced by its similarities. Charlie is soon drawn into a conflict that not only involves his home universe and the one he now inhabits but also includes another, a pristine pacifist universe with unsuspected terror at its heart.</Overview>
+  <Rating>7.6</Rating>
+  <RatingCount>5</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID>24902</SeriesID>
+  <SeriesName>Charlie Jade</SeriesName>
+  <Status>Ended</Status>
+  <added></added>
+  <addedBy></addedBy>
+  <banner>graphical/73873-g.jpg</banner>
+  <fanart>fanart/original/73873-3.jpg</fanart>
+  <lastupdated>1340113261</lastupdated>
+  <poster>posters/73873-2.jpg</poster>
+  <zap2it_id>SH734074</zap2it_id>
+</Series>
+<Episode>
+  <id>305110</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Can of Worms (Special)</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2005-07-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0538848</IMDB_ID>
+  <Language>en</Language>
+  <Overview>When Charlie disappears, Karl fears the worst. He heads to the pub to drown his sorrows and is joined by a most unlikely visitor - a Grey-suited man with some words of comfort.
+Note: This is a Charlie Jade recap episode. Only 20% of the episode is new material.</Overview>
+  <ProductionCode>121</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season>1</airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1296196376</lastupdated>
+  <seasonid>21335</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>131252</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|T.J. Scott|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Big Bang</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2005-04-16</FirstAired>
+  <GuestStars>|Graham Clarke|David Dennis|Greg Latter|</GuestStars>
+  <IMDB_ID>tt0822437</IMDB_ID>
+  <Language>en</Language>
+  <Overview>While on a hunt for a women with no identity. Detective Charlie Jade is shot into a strange parallel universe</Overview>
+  <ProductionCode>101</ProductionCode>
+  <Rating>5.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Stephen Zollar|Robert Wertheimer|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/131252.jpg</filename>
+  <lastupdated>1270340242</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>131253</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|T.J. Scott|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Sand</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2005-04-16</FirstAired>
+  <GuestStars>|Sean Michael|</GuestStars>
+  <IMDB_ID>tt0538847</IMDB_ID>
+  <Language>en</Language>
+  <Overview>While on a hunt for a women with no identity. Detective Charlie Jade is shot into a strange parallel universe</Overview>
+  <ProductionCode>102</ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Stephen Zollar|Robert Wertheimer|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/131253.jpg</filename>
+  <lastupdated>1207350015</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>131254</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Jimmy Kaufman</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>You Are Here</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2005-04-23</FirstAired>
+  <GuestStars>Claire Berlein|Greg Latter|Gene Kuhn|Guy de Lancey|Augusto Palacios|Wayne Harrison|Lynita Crofford|Monde Theu|Wiseman Sithule|Anthony Latimer|Deidre Wolhuter|Michael Copley|Bryan Heydendrych|Andre Roothman|Liam Cundill|Aubrey Shelton|Maruwan Gasant|Jonath</GuestStars>
+  <IMDB_ID>tt0822442</IMDB_ID>
+  <Language>en</Language>
+  <Overview>In the search for answers regarding the explosion, Charlie teams up with journalist Karl Lubinsky.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Guy Mullally</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/131254.jpg</filename>
+  <lastupdated>1207350407</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>131255</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Power of Suggestion</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2005-04-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0822439</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Charlie's investigation lands him in the centre of 01 Boxer's insidious conspiracy to take over Vexcor in Betaverse.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/131255.jpg</filename>
+  <lastupdated>1207350589</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>131256</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>And Not a Drop to Drink</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2005-05-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0822427</IMDB_ID>
+  <Language>en</Language>
+  <Overview>When Charlie sees 01 pour water on his head, then literally vanish before his eyes, his probing into the bizarre incident turns up evidence that contaminated water supplies have induced visions and psychic powers in several residents of the nearby Vexcor facility.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/131256.jpg</filename>
+  <lastupdated>1207350933</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>131257</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Darrell Roodt</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Dirty Laundry</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2005-05-14</FirstAired>
+  <GuestStars>Willem Breedt|Abena Ayivor|Ian Bruce|Momelezi Ntshiba|Chris April|Vusi Kunene|Moage Modise|Nonku Ndlovu|Bart Fouche|Greg Latter|Aletta Bezuidenhout|Andre Bierling|Antony Stone|Omar William Hogben|Didier Tshifutshi|Charlie Swelendawo</GuestStars>
+  <IMDB_ID>tt0822432</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Charlie searches for Themba Makande, a civil rights crusader.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Stephen Zollar</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/131257.jpg</filename>
+  <lastupdated>1207351525</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>131258</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Diamants</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2005-05-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0788352</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Charlie's hunt for his artificial diamond ring - stolen from the shop where he pawned it to buy a car - leads him to Eckman, a ruthless diamond merchant who has been quietly manufacturing cultured diamonds for Vexcor. Not only is Eckman undermining the Betaverse diamond industry, but he's unwittingly working with Vexcor to create enough artificial diamond chips to implant in every Betaverse citizen.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/131258.jpg</filename>
+  <lastupdated>1207390038</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>131259</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Devotion</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2005-05-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0822431</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Charlie investigates the case of a new missing person in Cape Town and finds that once again, a local mystery is linked to Vexcorp. Reena is faced with a difficult decision when she meets a young woman who is dying of AIDS. 01 Boxer makes an important trade with his father, at a high price. Also, in a series of flashbacks, Charlie remembers his days working for Vexcorp Security Services.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/131259.jpg</filename>
+  <lastupdated>1207390181</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>131260</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Betrayal</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2005-06-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0822429</IMDB_ID>
+  <Language>en</Language>
+  <Overview>While 01 recovers in Gamma, Charlie takes his investigation of Vexcor to the next step. Karl has an unfortunate meeting with an informant, Reena visits Vexcor HR.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/131260.jpg</filename>
+  <lastupdated>1207393704</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>131261</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Identity</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2005-06-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0822434</IMDB_ID>
+  <Language>en</Language>
+  <Overview>While tracking some stolen Vexcor property, Charlie runs into somebody unexpected from his past.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/131261.jpg</filename>
+  <lastupdated>1207393921</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>305100</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Alain Desrochers|Michele Burgers|Danny Keogh|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Thicker Than Water</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>2005-06-18</FirstAired>
+  <GuestStars>|Steven McFarlane|Anton Hoon|Alex McGregor|Nina Stewart|Lisa-Marie Schneider|Langley Kirkwood|Graham Clarke|Nicholas Andrews|</GuestStars>
+  <IMDB_ID>tt0822440</IMDB_ID>
+  <Language>en</Language>
+  <Overview>With help from his friends, Charlie daringly breaks into Vexcor to try and find information to help him get home.</Overview>
+  <ProductionCode>111</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Guy Mullally|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/305100.jpg</filename>
+  <lastupdated>1207396106</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>305101</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Erik Candel|Tyrone Benskin|Patricia McKenzie|Marie-Julie Rivest|Danny Keogh|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Choosing Sides</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>2005-06-25</FirstAired>
+  <GuestStars>|Rolanda Marais|Dorette Potgieter|Janet Du Plessis|Lisa-Marie Schneider|Guy de Lancey|Warrick Grier|Ronald France|Langley Kirkwood|</GuestStars>
+  <IMDB_ID>tt0822430</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Charlie decides to have a face to face with 01 Boxer but when he gets to 01's club he learns the police have the same idea.</Overview>
+  <ProductionCode>112</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Collin Oliphant|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/305101.jpg</filename>
+  <lastupdated>1207394091</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>305102</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Through A Mirror Darkly</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>2005-07-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Charlie and 01 have a real heart-to-heart while Reena diffuses an explosive situation. Jasmine's day at work is murder.</Overview>
+  <ProductionCode>113</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Denis McGrath|</Writer>
+  <absolute_number>0</absolute_number>
+  <filename>episodes/73873/305102.jpg</filename>
+  <lastupdated>1207397955</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>305103</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Enemy Of My Enemy</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>2005-07-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0822438</IMDB_ID>
+  <Language>en</Language>
+  <Overview>After receiving a package with information on Vexcor, Charlie and Karl track the anonymous source, Reena.
+01 and Julius come to an arrangement.</Overview>
+  <ProductionCode>114</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Craig Gardner|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/305103.jpg</filename>
+  <lastupdated>1207396697</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>305104</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Things Unseen</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>2005-07-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0822441</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Charlie takes Blues Paddock into his confidence and learns he's being hunted. Reena comes face to face with her programmer and, in Alpha, Jasmine and Tukarrs get closer.</Overview>
+  <ProductionCode>115</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/305104.jpg</filename>
+  <lastupdated>1207396939</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>305105</id>
+  <Combined_episodenumber>16</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Shortening of the Way</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired>2005-07-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0866520</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Charlie goes to see an old friend for help controlling his visions while Reena goes to see an old friend for help controlling herself.</Overview>
+  <ProductionCode>116</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/305105.jpg</filename>
+  <lastupdated>1207397119</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>305106</id>
+  <Combined_episodenumber>17</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Spin</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired>2005-07-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0408378</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Finally home Charlie must re-adjust to life in Alpha and find a way to save a friend he has inadvertantly put on Vexcor's naughty list. Brion Boxer visits 01's family in Gamma.</Overview>
+  <ProductionCode>117</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Dennis Venter|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/305106.jpg</filename>
+  <lastupdated>1207397307</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>305107</id>
+  <Combined_episodenumber>18</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Bedtime Story</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired>2005-08-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0822428</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Back in Alpha, Charlie considers how he has been changed by his time in Beta. 01 meets with a mysterious associate.</Overview>
+  <ProductionCode>118</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Dennis Venter|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/305107.jpg</filename>
+  <lastupdated>1207349418</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>305108</id>
+  <Combined_episodenumber>19</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Flesh</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired>2005-08-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0822433</IMDB_ID>
+  <Language>en</Language>
+  <Overview>With Essa and 01 both vying for control of Vexcor, Charlie works with Sew Sew to see that it's the devil he knows that takes the throne.
+In Beta:  Karl, Reena and Blues continue their own quest to bring down Vexcor.</Overview>
+  <ProductionCode>119</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/305108.jpg</filename>
+  <lastupdated>1207397814</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+<Episode>
+  <id>305109</id>
+  <Combined_episodenumber>20</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Ouroboros</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired>2005-08-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0822435</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Season Finale: Charlie and his allies must desperately find a way to keep the link from activating and destroying Beta but one of their own has other plans. Can Vexcor and 01 be stopped in time?</Overview>
+  <ProductionCode>120</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/73873/305109.jpg</filename>
+  <lastupdated>1207397931</lastupdated>
+  <seasonid>6594</seasonid>
+  <seriesid>73873</seriesid>
+</Episode>
+</Data>

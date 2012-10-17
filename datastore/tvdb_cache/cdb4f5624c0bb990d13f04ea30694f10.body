@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>251414</id>
+  <Actors>|Lars Ranthe|Jeannie Mortensen|Anne Marie Helger|Ib Thykier|Jacob Christensen|Niels Skousen|Peter Steen|Torben Hundahl|</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>1984-01-06</FirstAired>
+  <Genre>|Children|Science-Fiction|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>DR1</Network>
+  <NetworkID></NetworkID>
+  <Overview>The main character in the series is ten-year-old Birger, who collects the comic book series Thunderboy. When his parents discover one day that the first issue is worth 10,000 kroner, the family searches the entire house for his copy but fails to find it. In frustration, Birger kicks the furniture in his room and discovers that the room functions as a spaceship. He takes off, and in outer space discovers a supervillain named Barry Slisk, who had stolen his comic book. Slisk has his hideout in a black hole and Birger must try to thwart his evil plans. In the course of doing so he meets a beautiful girl named Iris, who helps him.</Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>30</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Crash - The Menace from the Black Hole</SeriesName>
+  <Status>Ended</Status>
+  <added>2011-08-25 22:19:00</added>
+  <addedBy>244491</addedBy>
+  <banner></banner>
+  <fanart></fanart>
+  <lastupdated>1335871766</lastupdated>
+  <poster>posters/251414-2.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4185309</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Making of Crash</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1984-04-19</FirstAired>
+  <GuestStars>Egon Andersen, Pia Andersen, Per Barth, Britta Bennicke, Sejr Brockmann, Søren Buus, Jakob Christensen, Henrik Feltov, Hans Gjerding, Anne Marie Helger, Torben Hundahl, Lars Hybel, Birgit Jensen, Grete Josephsen, Birger-Kofoed-Sørensen</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season>1</airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1335867277</lastupdated>
+  <seasonid>472846</seasonid>
+  <seriesid>251414</seriesid>
+</Episode>
+<Episode>
+  <id>4158477</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Carsten Overskov</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>A Kick Up</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1984-01-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt0389599</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Birger finds out one day, that his room at his parents house can fly into outer space and that he can steer it with his table lamp. On his interstellar journey he meets Iris who flies on a giant hand and he is taken to a huge space station on the edge of a black hole.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Carsten Overskov</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335866313</lastupdated>
+  <seasonid>472847</seasonid>
+  <seriesid>251414</seriesid>
+</Episode>
+<Episode>
+  <id>4158478</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Carsten Overskov</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Suction from the black hole</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1984-01-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Carsten Overskov</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335866489</lastupdated>
+  <seasonid>472847</seasonid>
+  <seriesid>251414</seriesid>
+</Episode>
+<Episode>
+  <id>4158479</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Carsten Overskov</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The grand plan</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1984-01-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Carsten Overskov</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335866477</lastupdated>
+  <seasonid>472847</seasonid>
+  <seriesid>251414</seriesid>
+</Episode>
+<Episode>
+  <id>4158480</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Carsten Overskov</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The troubled planet</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1984-01-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Carsten Overskov</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335866506</lastupdated>
+  <seasonid>472847</seasonid>
+  <seriesid>251414</seriesid>
+</Episode>
+<Episode>
+  <id>4158481</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Carsten Overskov</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The great sacrifice</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1984-02-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Carsten Overskov</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335866512</lastupdated>
+  <seasonid>472847</seasonid>
+  <seriesid>251414</seriesid>
+</Episode>
+<Episode>
+  <id>4158482</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Carsten Overskov</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>A leap of death</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1984-02-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Carsten Overskov</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335866518</lastupdated>
+  <seasonid>472847</seasonid>
+  <seriesid>251414</seriesid>
+</Episode>
+<Episode>
+  <id>4158483</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Carsten Overskov</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Massacre</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1984-02-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Carsten Overskov</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335866524</lastupdated>
+  <seasonid>472847</seasonid>
+  <seriesid>251414</seriesid>
+</Episode>
+<Episode>
+  <id>4158484</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Carsten Overskov</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>A Viking in the closet</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1984-02-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Carsten Overskov</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335866529</lastupdated>
+  <seasonid>472847</seasonid>
+  <seriesid>251414</seriesid>
+</Episode>
+<Episode>
+  <id>4158485</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Carsten Overskov</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Journey into the black hole</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1984-03-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Carsten Overskov</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335866534</lastupdated>
+  <seasonid>472847</seasonid>
+  <seriesid>251414</seriesid>
+</Episode>
+<Episode>
+  <id>4158486</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Carsten Overskov</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The wild hunt</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>1984-03-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Carsten Overskov</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335866540</lastupdated>
+  <seasonid>472847</seasonid>
+  <seriesid>251414</seriesid>
+</Episode>
+<Episode>
+  <id>4158487</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Carsten Overskov</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The robots' hour of destiny</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>1984-03-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Carsten Overskov</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335866545</lastupdated>
+  <seasonid>472847</seasonid>
+  <seriesid>251414</seriesid>
+</Episode>
+<Episode>
+  <id>4158488</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Carsten Overskov</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Who kills who?</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>1984-03-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Carsten Overskov</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335866550</lastupdated>
+  <seasonid>472847</seasonid>
+  <seriesid>251414</seriesid>
+</Episode>
+<Episode>
+  <id>4158489</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Carsten Overskov</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Showdown</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>1984-03-31</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Carsten Overskov</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1335866556</lastupdated>
+  <seasonid>472847</seasonid>
+  <seriesid>251414</seriesid>
+</Episode>
+</Data>

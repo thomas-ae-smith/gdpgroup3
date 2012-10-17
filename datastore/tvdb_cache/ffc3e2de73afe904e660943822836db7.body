@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>85471</id>
+    <Actors>|Joe McFadden|Peter Capaldi|Bill Paterson|David Robb|Dougray Scott|Stella Gonet|Valerie Edmond|</Actors>
+    <Airs_DayOfWeek>Monday</Airs_DayOfWeek>
+    <Airs_Time>21:30</Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>1996-11-04</FirstAired>
+    <Genre>|Drama|</Genre>
+    <IMDB_ID>tt0115145</IMDB_ID>
+    <Language>en</Language>
+    <Network>BBC</Network>
+    <NetworkID></NetworkID>
+    <Overview>An adaptation of Iain Banks' acclaimed novel. It all begins when History student Prentice returns home to attend his grandmother’s funeral. As the McHoan family gathers together to mark the solemn occasion, old disagreements continue to fester and old acquaintances are renewed. Following the unexpected death of another close relative, Prentice begins to question the past: why did his Uncle Rory suddenly disappear and where did he go? Reading his Uncle Rory’s unpublished novel may provide the answers he is seeking but it also unearths some dark family secrets he didn’t bargain for.</Overview>
+    <Rating>9.0</Rating>
+    <RatingCount>4</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID>10904</SeriesID>
+    <SeriesName>The Crow Road</SeriesName>
+    <Status>Ended</Status>
+    <added>2009-03-14 01:56:40</added>
+    <addedBy>2897</addedBy>
+    <banner>graphical/85471-g.jpg</banner>
+    <fanart>fanart/original/85471-1.jpg</fanart>
+    <lastupdated>1340216596</lastupdated>
+    <poster>posters/85471-3.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

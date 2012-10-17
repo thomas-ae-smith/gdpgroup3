@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>116731</id>
+    <Actors>|Brian Blessed|Max Beesley|</Actors>
+    <Airs_DayOfWeek>Sunday</Airs_DayOfWeek>
+    <Airs_Time>21:00</Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>1997-11-01</FirstAired>
+    <Genre>|Drama|Mini-Series|</Genre>
+    <IMDB_ID>tt0123351</IMDB_ID>
+    <Language>en</Language>
+    <Network>BBC Two</Network>
+    <NetworkID></NetworkID>
+    <Overview>BBC adaptation of The History of Tom Jones by Henry Fielding.
+A new adaptation of the classic novel by Henry Fielding of the life, loves and adventures of the charming rascal Tom Jones. A foundling child born of a serving wench but allowed to grow up in the privileged surroundings of Squire Allworthy's household. This position allows him to grow up with, make the acquaintance of and eventually fall in love with the beautiful daughter of his wealthy neighbour, Sophia Western. However, the path to true love rarely runs smooth and family pressure, the difference in their parentage and 18th century social custom prevent the young lovers from being together. </Overview>
+    <Rating>8.5</Rating>
+    <RatingCount>2</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID>76963</SeriesID>
+    <SeriesName>The History of Tom Jones</SeriesName>
+    <Status>Ended</Status>
+    <added>2009-10-01 09:59:00</added>
+    <addedBy>8486</addedBy>
+    <banner>graphical/116731-g.jpg</banner>
+    <fanart>fanart/original/116731-1.jpg</fanart>
+    <lastupdated>1327822056</lastupdated>
+    <poster>posters/116731-2.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

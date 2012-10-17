@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>80357</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating>TV-Y</ContentRating>
+    <FirstAired>1981-07-23</FirstAired>
+    <Genre>|Animation|</Genre>
+    <IMDB_ID>tt0135114</IMDB_ID>
+    <Language>en</Language>
+    <Network>RTVE/TV Asahi</Network>
+    <NetworkID></NetworkID>
+    <Overview>Around the World with Willy Fog (original Spanish title La vuelta al mundo de Willy Fog) is a cartoon version of Around the World in Eighty Days by Jules Verne.</Overview>
+    <Rating>8.0</Rating>
+    <RatingCount>3</RatingCount>
+    <Runtime>25</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Around the World With Willy Fog</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/80357-g2.jpg</banner>
+    <fanart>fanart/original/80357-3.jpg</fanart>
+    <lastupdated>1350215838</lastupdated>
+    <poster>posters/80357-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

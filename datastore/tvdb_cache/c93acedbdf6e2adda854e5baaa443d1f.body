@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>205871</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>2008-11-16</FirstAired>
+    <Genre>|Documentary|</Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network>PBS</Network>
+    <NetworkID></NetworkID>
+    <Overview>The series follows Rudy along the canals of St. Petersburg, Russia, to the Taj Mahal in India, into the jungles of Thailand's Golden Triangle and inside the tango halls of Buenos Aires.</Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Rudy Maxa's World</SeriesName>
+    <Status>Continuing</Status>
+    <added>2010-11-16 17:11:45</added>
+    <addedBy>230361</addedBy>
+    <banner></banner>
+    <fanart></fanart>
+    <lastupdated>1326148990</lastupdated>
+    <poster></poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

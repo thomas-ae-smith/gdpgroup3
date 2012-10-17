@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>80344</id>
+    <Actors>|Lena Headey|Thomas Dekker|Summer Glau|Stephanie Chaves-Jacobsen|Garret Dillahunt|Brian Austin Green|Shirley Manson|Leven Rambin|Richard T. Jones|</Actors>
+    <Airs_DayOfWeek>Friday</Airs_DayOfWeek>
+    <Airs_Time>8:00 PM</Airs_Time>
+    <ContentRating>TV-14</ContentRating>
+    <FirstAired>2008-01-13</FirstAired>
+    <Genre>|Action and Adventure|Drama|Science-Fiction|</Genre>
+    <IMDB_ID>tt0851851</IMDB_ID>
+    <Language>en</Language>
+    <Network>FOX</Network>
+    <NetworkID></NetworkID>
+    <Overview>The series picks up four years after the events of Terminator 2: Judgment Day with John and Sarah Connor hiding from the government. After two years in one place Sarah decides they need a change of scenery. Cameron Phillips, a reprogrammed Terminator sent to protect John, informs them that Judgment Day was not stopped and will take place in 2011.</Overview>
+    <Rating>8.1</Rating>
+    <RatingCount>226</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID>68708</SeriesID>
+    <SeriesName>Terminator: The Sarah Connor Chronicles</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/80344-g11.jpg</banner>
+    <fanart>fanart/original/80344-18.jpg</fanart>
+    <lastupdated>1350160706</lastupdated>
+    <poster>posters/80344-11.jpg</poster>
+    <zap2it_id>SH931007</zap2it_id>
+  </Series>
+</Data>

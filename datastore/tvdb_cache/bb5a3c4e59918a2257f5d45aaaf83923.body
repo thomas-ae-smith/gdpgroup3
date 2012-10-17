@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>199071</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired></FirstAired>
+    <Genre>|Special Interest|</Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network>NRK1</Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Walkabout</SeriesName>
+    <Status>Ended</Status>
+    <added>2010-10-20 10:30:29</added>
+    <addedBy>35871</addedBy>
+    <banner></banner>
+    <fanart></fanart>
+    <lastupdated>1287773581</lastupdated>
+    <poster></poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

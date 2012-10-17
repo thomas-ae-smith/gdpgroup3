@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>85295</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek>Friday</Airs_DayOfWeek>
+    <Airs_Time>23:15</Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>2000-07-01</FirstAired>
+    <Genre>|Drama|</Genre>
+    <IMDB_ID>tt0335762</IMDB_ID>
+    <Language>en</Language>
+    <Network>TV Asahi</Network>
+    <NetworkID></NetworkID>
+    <Overview>Although 23 year old Yamada Naoko is a &quot;super&quot; magician, she is continously fired and constantly hounded by her landlady for the rent being late. After being fired once again, her boss shows her an ad of a physics professor, a non-believer of all things magical, offering money to anyone who can prove to him that magic is real. Desperately needing the money, Naoko accepts the challenge, which is how she comes to meet Professor Ueda. Falling prey to her simple magic tricks, Ueda is impressed, and enlists Naoko to help him uncover the tricks behind a local cult. Their hilarious antics, along with those of police officer Yabe, leads them onto further mysteries, all with tricks needing to be solved in sort of an &quot;X-Files&quot; meets &quot;Scooby-Doo&quot;... </Overview>
+    <Rating>8.5</Rating>
+    <RatingCount>2</RatingCount>
+    <Runtime>45</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Trick</SeriesName>
+    <Status>Ended</Status>
+    <added>2009-02-26 21:30:41</added>
+    <addedBy>1589</addedBy>
+    <banner>graphical/85295-g.jpg</banner>
+    <fanart>fanart/original/85295-1.jpg</fanart>
+    <lastupdated>1339794343</lastupdated>
+    <poster>posters/85295-2.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>72923</id>
+    <Actors>|Bill Mumy|Jonathan Harris|Guy Williams|Bob May|June Lockhart|Mark Goddard|Marta Kristen|Angela Cartwright|</Actors>
+    <Airs_DayOfWeek>Thursday</Airs_DayOfWeek>
+    <Airs_Time>7:30 pm</Airs_Time>
+    <ContentRating>TV-G</ContentRating>
+    <FirstAired>1965-09-01</FirstAired>
+    <Genre>|Science-Fiction|</Genre>
+    <IMDB_ID>tt0058824</IMDB_ID>
+    <Language>en</Language>
+    <Network>CBS</Network>
+    <NetworkID></NetworkID>
+    <Overview>The space family Robinson is sent on a five-year mission to find a new planet to colonize, but the voyage is sabotaged time and again by an inept stowaway, Dr. Zachary Smith. The family's spaceship, Jupiter II, also carries a friendly robot who endures an endless stream of abuse from Dr. Smith, but is a trusted companion of young Will Robinson (`Danger, Will Robinson' became the show's catchphrase). The sci-fi cult favorite was created by Irwin Allen, and inspired an uninspired 1998 movie. </Overview>
+    <Rating>6.8</Rating>
+    <RatingCount>8</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID>2099</SeriesID>
+    <SeriesName>Lost in Space</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/72923-g2.jpg</banner>
+    <fanart>fanart/original/72923-2.jpg</fanart>
+    <lastupdated>1350205603</lastupdated>
+    <poster>posters/72923-1.jpg</poster>
+    <zap2it_id>SH002675</zap2it_id>
+  </Series>
+</Data>

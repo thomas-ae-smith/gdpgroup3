@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>74843</id>
+    <Actors>|Michael Ealy|Oded Fehr|Henri Lubatti|Blake Shields|Melissa Sagemiller|Alex Nesic|James LeGros|Luis Chavez|</Actors>
+    <Airs_DayOfWeek>Sunday</Airs_DayOfWeek>
+    <Airs_Time>10:00 PM</Airs_Time>
+    <ContentRating>TV-MA</ContentRating>
+    <FirstAired>2005-09-04</FirstAired>
+    <Genre>|Drama|</Genre>
+    <IMDB_ID>tt0465353</IMDB_ID>
+    <Language>en</Language>
+    <Network>Showtime</Network>
+    <NetworkID></NetworkID>
+    <Overview>A chilling and unflinching look at all sides of a complicated issue, focusing on an African-American Muslim who joins an Islamic sleeper terrorist cell in the United States while working undercover for the FBI. Lift the veil of secrecy to reveal a riveting and authentic look at the war on terrorism. Explore the many facets of Islam and the repercussions of its extremism when it clashes with Western society.</Overview>
+    <Rating>8.2</Rating>
+    <RatingCount>20</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID>28827</SeriesID>
+    <SeriesName>Sleeper Cell</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/74843-g.jpg</banner>
+    <fanart>fanart/original/74843-7.jpg</fanart>
+    <lastupdated>1340306396</lastupdated>
+    <poster>posters/74843-1.jpg</poster>
+    <zap2it_id>SH786845</zap2it_id>
+  </Series>
+</Data>

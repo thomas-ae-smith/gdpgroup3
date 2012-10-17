@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>249285</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating>TV-G</ContentRating>
+  <FirstAired>2011-06-24</FirstAired>
+  <Genre>|Animation|Children|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>Syndicated</Network>
+  <NetworkID></NetworkID>
+  <Overview>&quot;Toy Story Toons&quot; is a revival of &quot;Toy Story Treats&quot;, based on the &quot;Toy Story&quot; trilogy. The first episode, &quot;Hawaiian Vacation&quot;, was released with &quot;Cars 2&quot;. A second episode, &quot;Small Fry&quot;, premiered in theaters before &quot;The Muppets&quot;. </Overview>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime>7</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Toy Story Toons</SeriesName>
+  <Status></Status>
+  <added>2011-06-05 15:55:48</added>
+  <addedBy>19052</addedBy>
+  <banner>graphical/249285-g2.jpg</banner>
+  <fanart>fanart/original/249285-1.jpg</fanart>
+  <lastupdated>1349946739</lastupdated>
+  <poster>posters/249285-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4110266</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Gary Rydstrom</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Hawaiian Vacation</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2011-06-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1850374</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The toys throw Ken and Barbie a Hawaiian vacation in Bonnie's room.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Erik Benson</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/249285/4110266.jpg</filename>
+  <lastupdated>1330437507</lastupdated>
+  <seasonid>467269</seasonid>
+  <seriesid>249285</seriesid>
+</Episode>
+<Episode>
+  <id>4110267</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Angus MacLane</Director>
+  <EpImgFlag>3</EpImgFlag>
+  <EpisodeName>Small Fry</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2011-11-23</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>While Bonnie’s toys are stuck at a restaurant with an annoying 3-inch-tall Buzz impersonator, the real Buzz is trapped at a support group for discarded toys. As Woody and the gang devise a way to rescue their friend, Buzz tries to escape the toy psychotherapy meeting.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Angus MacLane</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/249285/4110267.jpg</filename>
+  <lastupdated>1330437186</lastupdated>
+  <seasonid>467269</seasonid>
+  <seriesid>249285</seriesid>
+</Episode>
+<Episode>
+  <id>4415131</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Partysaurus Rex</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2012-10-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Rex is left out in the bathroom and makes friends with bath toys.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1349946800</lastupdated>
+  <seasonid>467269</seasonid>
+  <seriesid>249285</seriesid>
+</Episode>
+</Data>

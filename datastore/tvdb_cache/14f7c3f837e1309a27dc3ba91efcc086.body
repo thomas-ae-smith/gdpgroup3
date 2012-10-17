@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+<Series>
+<seriesid>250801</seriesid>
+<language>en</language>
+<SeriesName>Scream If You Know The Answer (US)</SeriesName>
+<Overview>Now Bert isn't the one screaming! Beginning Sunday, August 7 at 8:00 p.m., Bert the Conqueror host and thrill seeker, Bert Kreischer, challenges contestants to answer trivia questions, word games, charades and memory games all while riding amusement park thrill rides. This show literally takes the average game show to new heights.</Overview>
+<FirstAired>2011-08-03</FirstAired>
+<id>250801</id>
+</Series>
+<Series>
+<seriesid>146201</seriesid>
+<language>en</language>
+<SeriesName>Scream Awards</SeriesName>
+<banner>graphical/146201-g2.jpg</banner>
+<Overview>The first awards show for all the stars of horror, comic books, sci-fi and fantasy movies.</Overview>
+<FirstAired>2006-10-10</FirstAired>
+<id>146201</id>
+</Series>
+<Series>
+<seriesid>259306</seriesid>
+<language>en</language>
+<SeriesName>Scream Extreme</SeriesName>
+<id>259306</id>
+</Series>
+<Series>
+<seriesid>97441</seriesid>
+<language>en</language>
+<SeriesName>Scream Queens</SeriesName>
+<banner>graphical/97441-g.jpg</banner>
+<Overview>VH1 is looking for girls who have the best heart-wrenching scream in a new series called Scream Queens.  Ten unknown actresses compete for a role in the upcoming horror film, 'SAW VI' and their skills will be judged by a director from Lionsgate, along with Shawnee Smith (actress from previous SAW movies).</Overview>
+<FirstAired>2008-10-20</FirstAired>
+<IMDB_ID>tt1248289</IMDB_ID>
+<id>97441</id>
+</Series>
+</Data>

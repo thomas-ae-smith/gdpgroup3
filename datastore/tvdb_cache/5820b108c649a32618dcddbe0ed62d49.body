@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+<Series>
+<seriesid>210211</seriesid>
+<language>en</language>
+<SeriesName>Misery Bear</SeriesName>
+<banner>graphical/210211-g.jpg</banner>
+<Overview>A series of short films chronicling the life of the worlds most miserable bear. </Overview>
+<FirstAired>2010-12-12</FirstAired>
+<id>210211</id>
+</Series>
+<Series>
+<seriesid>247779</seriesid>
+<language>en</language>
+<SeriesName>Misery Guts</SeriesName>
+<id>247779</id>
+</Series>
+<Series>
+<seriesid>72363</seriesid>
+<language>en</language>
+<SeriesName>Misery Loves Company</SeriesName>
+<FirstAired>1995-10-01</FirstAired>
+<id>72363</id>
+</Series>
+</Data>

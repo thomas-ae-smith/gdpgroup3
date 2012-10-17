@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>136631</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek>Sunday</Airs_DayOfWeek>
+    <Airs_Time>22:15</Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>1971-04-18</FirstAired>
+    <Genre>|Drama|Mini-Series|</Genre>
+    <IMDB_ID>tt0066702</IMDB_ID>
+    <Language>en</Language>
+    <Network>BBC One</Network>
+    <NetworkID></NetworkID>
+    <Overview>Persuasion is a 1971 British television miniseries adaptation of the Jane Austen novel of the same name. It was produced by Granada Television foro the BBC and was directed by Howard Baker. The series stars Ann Firbank as Anne Elliott and Bryan Marshall as Captain Wentworth. It was originally aired in April 1971 in two episodes; each running approximately two hours.</Overview>
+    <Rating>9.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>55</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Persuasion</SeriesName>
+    <Status>Ended</Status>
+    <added>2010-01-20 11:20:46</added>
+    <addedBy>124861</addedBy>
+    <banner>graphical/136631-g.jpg</banner>
+    <fanart>fanart/original/136631-1.jpg</fanart>
+    <lastupdated>1284431232</lastupdated>
+    <poster>posters/136631-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

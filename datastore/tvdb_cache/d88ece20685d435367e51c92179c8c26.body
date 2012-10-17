@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>81337</id>
+    <Actors>|Stanisław Mikulski| Emil Karewicz| Bronisław Pawlik|</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>1968-10-10</FirstAired>
+    <Genre>|Action and Adventure|</Genre>
+    <IMDB_ID>tt0065035</IMDB_ID>
+    <Language>en</Language>
+    <Network>TVP SA</Network>
+    <NetworkID></NetworkID>
+    <Overview>The series about Polish-Russian spy in the Germany during the WWII.</Overview>
+    <Rating>8.5</Rating>
+    <RatingCount>2</RatingCount>
+    <Runtime>55</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>The Rate is Larger than Life</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/81337-g.jpg</banner>
+    <fanart>fanart/original/81337-1.jpg</fanart>
+    <lastupdated>1344400546</lastupdated>
+    <poster>posters/81337-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

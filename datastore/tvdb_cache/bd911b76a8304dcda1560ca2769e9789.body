@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>79552</id>
+  <Actors>|James McAvoy|Jessica Brooks|Julie Cox|Alec Newman|Alice Krige|Susan Sarandon|</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating>TV-PG</ContentRating>
+  <FirstAired>2003-03-16</FirstAired>
+  <Genre>|Mini-Series|Science-Fiction|</Genre>
+  <IMDB_ID>tt0287839</IMDB_ID>
+  <Language>en</Language>
+  <Network>SciFi</Network>
+  <NetworkID></NetworkID>
+  <Overview>Under Paul &quot;Muad'Dib&quot; Atreides' rule as Emperor, the planet Arrakis has enjoyed a renaissance. However, the revolution that Muad'dib inspired has transformed into a brutal jihad that has plunged all of humanity into a bitter, neverending cycle of interstellar war.
+
+Now a conspiracy on Arrakis threatens to rob Muad'Dib of his throne and his life. The future of all of humanity might well rest in the hands of Muad'dib's young, vulnerable heirs - Leto II and his sister, Ghanima. Idealistic young Leto, however, fiercely resists his destiny as a force for sweeping changes, both on Arrakis and in the universe at large.
+
+Unfortunately, the time for Leto to take action is drawing near, and friends and enemies are difficult to tell apart on Arrakis, where the only thing more precious than water is the Spice, a substance found only on Arrakis that makes possible interstellar space travel; extends life; and enables people who ingest it to have clairvoyant visions of distant places and of the future.
+
+With the rule of Arrakis and the freedom of all humanity hanging in the balance, Leto must risk sacrificing his own humanity in order to save those who would see him destroyed.</Overview>
+  <Rating>7.4</Rating>
+  <RatingCount>15</RatingCount>
+  <Runtime>90</Runtime>
+  <SeriesID>69658</SeriesID>
+  <SeriesName>Frank Herbert's Children of Dune</SeriesName>
+  <Status>Ended</Status>
+  <added></added>
+  <addedBy></addedBy>
+  <banner>graphical/79552-g4.jpg</banner>
+  <fanart>fanart/original/79552-5.jpg</fanart>
+  <lastupdated>1346618657</lastupdated>
+  <poster>posters/79552-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4232524</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Making Dune's Children: The VFX Revealed</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1325531582</lastupdated>
+  <seasonid>26975</seasonid>
+  <seriesid>79552</seriesid>
+</Episode>
+<Episode>
+  <id>312364</id>
+  <Combined_episodenumber>1.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>1.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Greg Yaitanes</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Messiah</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2003-03-16</FirstAired>
+  <GuestStars>|Alec Newman| Julie Cox| Edward Atterton| Ian McNeice| Barbora Kodetová| Steven Berkoff| Daniela Amavia| P.H. Moriarty| James McAvoy| Jessica Brooks| Jonathan Bruun| Rik Young| Martin McDougall| Alice Krige| Susan Sarandon| Marek Vasut|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>This episode starts 12 years after the first Dune miniseries. Duke Paul Atreides has become emperor. During an attack he is blinded but utilizes his &quot;visions of the future&quot; to see. Chani his concubine has given him twins - Leto II and Ghanima. When his children are attacked, Paul uses Leto's eyes to see and avert the danger, but in the process loses his psychic vision and becomes completely blind. In accordance with Fremen custom, he walks into the desert and leaves his children in the care of his sister, Alia.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.8</Rating>
+  <RatingCount>5</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Frank Herbert, John Harrison</Writer>
+  <absolute_number>1</absolute_number>
+  <filename>episodes/79552/312364.jpg</filename>
+  <lastupdated>1337427849</lastupdated>
+  <seasonid>16645</seasonid>
+  <seriesid>79552</seriesid>
+</Episode>
+<Episode>
+  <id>312365</id>
+  <Combined_episodenumber>2.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>2.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Greg Yaitanes</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Children</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2003-03-17</FirstAired>
+  <GuestStars>|Alec Newman| Julie Cox| Edward Atterton| Ian McNeice| Barbora Kodetová| Steven Berkoff| Daniela Amavia| P.H. Moriarty| James McAvoy| Jessica Brooks| Jonathan Bruun| Rik Young| Martin McDougall| Alice Krige| Susan Sarandon| Marek Vasut|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>As conspiracies to gain political power abound, Paul's power base is eroded from within and his highly ambitious sister, Alia is gaining a political foothold. Born aware of her ancestral memories, Alia is considered an abomination by the Bene Gesserit.
+The Lady Jessica, her mother returns to Dune (Arrakis) to visit her grandchildren Leto II and Ghanima. When one particular ancestor begins to possess Alia, Lady Jessica has to take refuge. Leto II and Ghanima devise a plan toward salvation.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.5</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Frank Herbert, John Harrison</Writer>
+  <absolute_number>2</absolute_number>
+  <filename>episodes/79552/312365.jpg</filename>
+  <lastupdated>1337428057</lastupdated>
+  <seasonid>16645</seasonid>
+  <seriesid>79552</seriesid>
+</Episode>
+<Episode>
+  <id>312366</id>
+  <Combined_episodenumber>3.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>3.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>Greg Yaitanes</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Golden Path</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2003-03-18</FirstAired>
+  <GuestStars>|Alec Newman| Julie Cox| Edward Atterton| Ian McNeice| Barbora Kodetovï¿½| Steven Berkoff| Daniela Amavia| P.H. Moriarty| James McAvoy| Jessica Brooks| Jonathan Bruun| Rik Young| Martin McDougall| Alice Krige| Susan Sarandon| Marek Vasut|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>As Alia becomes totally possessed she also has to deal with rebel Fremen. Ghanima, who survived an attack on her by House Corrino, is now engaged to Farad'n Corrino. Unexpectedly, Leto II returns from the desert being believed dead. While in the desert his body has absorbed some sandtrout, slowly mutating him into a sandworm. Alia resists possession by the baron while Irulan declines Jessica's offer to return with her to Caladan.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.5</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Frank Herbert, John Harrison</Writer>
+  <absolute_number>3</absolute_number>
+  <filename>episodes/79552/312366.jpg</filename>
+  <lastupdated>1337428405</lastupdated>
+  <seasonid>16645</seasonid>
+  <seriesid>79552</seriesid>
+</Episode>
+</Data>

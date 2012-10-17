@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>78090</id>
+  <Actors>|Brooke Langton|Eric Szmanda|Kelli Taylor|Mackenzie Gray|Jim Byrnes|Tim Curry|Joseph Bottoms|</Actors>
+  <Airs_DayOfWeek>Sunday</Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>1998-07-19</FirstAired>
+  <Genre>|Action and Adventure|Drama|Science-Fiction|</Genre>
+  <IMDB_ID>tt0163953</IMDB_ID>
+  <Language>en</Language>
+  <Network>USA Network</Network>
+  <NetworkID></NetworkID>
+  <Overview>Angela Bennett's a software engineer type who works from home and has few friends outside of cyberspace. Taking her first vacation in years she becomes embroiled in a web (sic) of computer espionage.</Overview>
+  <Rating>5.8</Rating>
+  <RatingCount>4</RatingCount>
+  <Runtime>45</Runtime>
+  <SeriesID>780</SeriesID>
+  <SeriesName>The Net</SeriesName>
+  <Status>Ended</Status>
+  <added></added>
+  <addedBy></addedBy>
+  <banner>graphical/780-g.jpg</banner>
+  <fanart>fanart/original/78090-2.jpg</fanart>
+  <lastupdated>1342970169</lastupdated>
+  <poster>posters/78090-2.jpg</poster>
+  <zap2it_id>SH269516</zap2it_id>
+</Series>
+<Episode>
+  <id>271497</id>
+  <Combined_episodenumber>1.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>1.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Bradford May|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Deleted</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1998-07-19</FirstAired>
+  <GuestStars>|William Katt|Brian Arnold|Lindsay Bourne|Cory Dagg|Lesley Ewen|Bradford May|Jane Perry|Peter Kelamis|Pamela Martin|Trevor Thompson|Kelli Taylor|Rick Ravanello|Adrian Hughes|</GuestStars>
+  <IMDB_ID>tt0658902</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Computer expert Angela Bennett has her identity stolen by a terrorist group after opening an unexpected email. She must stop them with the help of a stranger known only as the sorcerer but the problem deepens after her new identity is wanted by the FBI.</Overview>
+  <ProductionCode>161126</ProductionCode>
+  <Rating>6.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Irwin Winkler|Rob Cowan|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271497.jpg</filename>
+  <lastupdated>1318683487</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271498</id>
+  <Combined_episodenumber>2.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>2.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Jim Charleston|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>North by Northwestern</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1998-07-25</FirstAired>
+  <GuestStars>|Benz Antoine|Marc Baur|Gillian Carfra|Brenda Crichlow|Marrett Green|Kelsa Kinsly|Michael Kopsa|Dan Muldoon|Mark Schooley|Crystal Verge|Jeff Yagher|Kelli Taylor|</GuestStars>
+  <IMDB_ID>tt0658914</IMDB_ID>
+  <Language>en</Language>
+  <Overview>On her way to Chicago in search of her father, Angela gets detained by the police in Ohio who think that her laptop computer is a bomb. She befriends a cellmate who helps her escape the clutches of the Praetorians. The public defender assigned to Angela doubts her story until Trelawney catches up with him.</Overview>
+  <ProductionCode>161127</ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Jacob Epstein|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271498.jpg</filename>
+  <lastupdated>1313008081</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271499</id>
+  <Combined_episodenumber>3.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>3.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|George Mendeluk|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Transplant</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1998-08-01</FirstAired>
+  <GuestStars>|Jack Coleman|George Touliatos|Erin Fitzgerald|Linda Ko|</GuestStars>
+  <IMDB_ID>tt0658918</IMDB_ID>
+  <Language>en</Language>
+  <Overview>While in Chicago, Angela gets shot. Sorcerer with a doctor at a Chicago hospital but Angela gets involved in an organ harvest program that the Praetorians are heading up.</Overview>
+  <ProductionCode>161128</ProductionCode>
+  <Rating>6.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Deborah Pratt|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271499.jpg</filename>
+  <lastupdated>1313008169</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271500</id>
+  <Combined_episodenumber>6.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>6.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Helen Shaver|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Bulls and Bears</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1998-08-08</FirstAired>
+  <GuestStars>|Lee Garlington|Raoul Ganeev|</GuestStars>
+  <IMDB_ID>tt0658899</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Praetorians are trying to manipulate the stock market to raise $100 million cash to finance a Praetorian needed satellite from the Russians. Angela joins the stock brokerage to prevent the theft. Angela's voice activated computer is destroyed while Trelawney meets up the some really bad boys.</Overview>
+  <ProductionCode>161131</ProductionCode>
+  <Rating>6.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Larry Barber|Paul Barber|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271500.jpg</filename>
+  <lastupdated>1313008198</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271501</id>
+  <Combined_episodenumber>5.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>5.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Patrick Norris|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Death of an Angel</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1998-08-15</FirstAired>
+  <GuestStars>|Justin Louis|Kevin McNulty|Carly McKillip|Clyde Kusatsu|</GuestStars>
+  <IMDB_ID>tt0658901</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Angela stages her death in an attempt to regain her identity and freedom from the Praetorians. She takes residence at the university where her father was a professor. There she meets Kyle, an aspiring law student. When Kyle's uncle, who is a judge, is falsely accused of child pornography over the internet, Angela helps out.</Overview>
+  <ProductionCode>161130</ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Robert Bielak|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271501.jpg</filename>
+  <lastupdated>1313008380</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271502</id>
+  <Combined_episodenumber>7.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>7.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Adam Nimoy|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Kill the Buddha</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1998-08-22</FirstAired>
+  <GuestStars>|Michael Milhoun|Chilton Crane|D. Neil Mark|Clyde Kusatsu|</GuestStars>
+  <IMDB_ID>tt0658910</IMDB_ID>
+  <Language>en</Language>
+  <Overview>While working as a barmaid, Angela befriends the owner and becomes friends with him and his wife, who are an interracial couple. When Eric is murdered, Angela finds out they were policemen. Wanting not to get involved due to trying to protect herself from discovery by the Praetorians, Angela is torn between helping the widow and protecting herself.</Overview>
+  <ProductionCode>161132</ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Larry Barber|Paul Barber|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271502.jpg</filename>
+  <lastupdated>1313008442</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271503</id>
+  <Combined_episodenumber>8.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>8.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Bill Gereghty|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Fireball</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1998-08-29</FirstAired>
+  <GuestStars>|Benita Ha|Dean Tarrolly|Carla Boudreau|</GuestStars>
+  <IMDB_ID>tt0658905</IMDB_ID>
+  <Language>en</Language>
+  <Overview>An old college boyfriend of Angela's is involved in hacking state lotteries. Things get ugly when Daniel hacks with the lotteries under control of the Praetorians. Angela needs to help Daniel while preventing the Praetorians from winning all the lotteries.</Overview>
+  <ProductionCode>161133</ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|John Kirk|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271503.jpg</filename>
+  <lastupdated>1313008454</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271504</id>
+  <Combined_episodenumber>9.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>9.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Scott Paulin|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Jump Vector</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1998-10-03</FirstAired>
+  <GuestStars>|Paul Batten|Ross Partridge|Kimberly Unger|</GuestStars>
+  <IMDB_ID>tt0658909</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Angela poses as a river guide to learn more about a new program about to be released with a back door allowing the Praetorians access to any computer using this new operating system.</Overview>
+  <ProductionCode>161134</ProductionCode>
+  <Rating>6.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Karl Holman|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271504.jpg</filename>
+  <lastupdated>1313008494</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271505</id>
+  <Combined_episodenumber>10.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>10.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|David Winkler|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Go Like You Know</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1998-10-10</FirstAired>
+  <GuestStars>|Nick Corri|Scott Swanson|Rachel Hayward|Benz Antoine|Graham Shiels|</GuestStars>
+  <IMDB_ID>tt0658906</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Angela joins forces with a streetwise guy to fight a cyber terrorist who is overloading power grids on the east coast.</Overview>
+  <ProductionCode>161135</ProductionCode>
+  <Rating>5.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Larry Barber|Paul Barber|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271505.jpg</filename>
+  <lastupdated>1313008518</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271506</id>
+  <Combined_episodenumber>11.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>11.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Peter DeLuise|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Harvest</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>1998-10-17</FirstAired>
+  <GuestStars>|Diana Stevan|Richard Ian Cox|Richard Cox|</GuestStars>
+  <IMDB_ID>tt0658907</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Angela meets Sorcerer! A bizarre cult calling itself Harvest Sun has the interest of the Praetorians. While Angela tries to get through to the cult members, she finally meets Sorcerer and is quite surprised!</Overview>
+  <ProductionCode>161136</ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|John Kirk|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271506.jpg</filename>
+  <lastupdated>1313008551</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271507</id>
+  <Combined_episodenumber>12.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>12.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Michael Robison|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Diamonds Aren't Forever</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>1998-11-28</FirstAired>
+  <GuestStars>|Mark Holden|L. Harvey Gold|Zach Galligan|</GuestStars>
+  <IMDB_ID>tt0658903</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Angela and Sorcerer counter a Praetorian plan to bring down the world diamond market.</Overview>
+  <ProductionCode>161137</ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Tracy Keenan Wynn|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271507.jpg</filename>
+  <lastupdated>1313008573</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271508</id>
+  <Combined_episodenumber>13.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>13.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Neill Fearnley|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Pandora's Box</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>1998-12-05</FirstAired>
+  <GuestStars>|Joe Pascual|Ken Tremblett|Mark Dobies|Deanna Milligan|Benita Ha|Anthony F. Ingram|Gaetana Korbin|</GuestStars>
+  <IMDB_ID>tt0658915</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Angela and Sorcerer need to stop a Praetorian plot to dump nuclear waste in the world's oceans.</Overview>
+  <ProductionCode>161138</ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Karl Homan|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271508.jpg</filename>
+  <lastupdated>1313008595</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271509</id>
+  <Combined_episodenumber>14.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>14.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|David Winkler|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Sample</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>1998-12-12</FirstAired>
+  <GuestStars>|Jason Clarke|Tanja Reichert|A. J. Bond|Ona Grauer|</GuestStars>
+  <IMDB_ID>tt0658917</IMDB_ID>
+  <Language>en</Language>
+  <Overview>A friend of Jacob's is murdered for trying to publish a negative review on a music web site. The Praetorians are involved in an elaborate scheme to control the world's music.</Overview>
+  <ProductionCode>161144</ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|John Kirk|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271509.jpg</filename>
+  <lastupdated>1313008632</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271510</id>
+  <Combined_episodenumber>15.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>15.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Jefferson Kibbee|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Lucy's Life</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>1998-12-20</FirstAired>
+  <GuestStars>|Lisa Robin Kelly|Marya Delver|Colin Cunningham|Gina Chiarelli</GuestStars>
+  <IMDB_ID>tt0658912</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Praetorians set up a camera accessible via the Internet in a student's dorm in an attempt to trap Angela.</Overview>
+  <ProductionCode>161145</ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Larry Barber|Paul Barber|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271510.jpg</filename>
+  <lastupdated>1313008656</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271511</id>
+  <Combined_episodenumber>16.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>16.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Les Landau|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Pay the Line</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>1999-01-09</FirstAired>
+  <GuestStars>|Larry Manetti|Zinaid Memisevic|Belen Greene|Erin Chandler|</GuestStars>
+  <IMDB_ID>tt0658916</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Jacob gets involved in on-line gambling scheme and gets in over his head. He needs Angela's help to pay his debts back and they wind up in Las Vegas in some high stakes gambling. Meanwhile, Trelawney is told he has to clean up the mess he left behind with Hearney.</Overview>
+  <ProductionCode>161146</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Lawrence Meyers|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271511.jpg</filename>
+  <lastupdated>1313008693</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271512</id>
+  <Combined_episodenumber>17.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>17.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Oscar Costo|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Lunatic Fringe</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired>1999-01-16</FirstAired>
+  <GuestStars>|Jeffrey Combs|Mark Acheson|Richard Ian Cox|Kelly Fiddick|Andrew Guy|Scott Heindl|Dion Luther|Ian Marsh|Ingrid Torrance|Stefanie von Pfetten|</GuestStars>
+  <IMDB_ID>tt0658913</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Angela is concerned about Jacob's obsession with an internet cult leader.</Overview>
+  <ProductionCode>161147</ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Thomas E. Daniels|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271512.jpg</filename>
+  <lastupdated>1313008727</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271513</id>
+  <Combined_episodenumber>18.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>18.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Helaine Head|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>In Dreams</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired>1999-01-23</FirstAired>
+  <GuestStars>|Katharine Isabelle|Jody Thompson|Robyn Driscoll|Roger Barnes|Peter Yunker|Brennan Elliott|</GuestStars>
+  <IMDB_ID>tt0658908</IMDB_ID>
+  <Language>en</Language>
+  <Overview>A 14-year-old girl with a photographic memory holds the key to a Praetorian code.</Overview>
+  <ProductionCode>161148</ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Allison Hock|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271513.jpg</filename>
+  <lastupdated>1313008751</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271514</id>
+  <Combined_episodenumber>4.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>4.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Randall Zisk|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Y2K: Total System Failure</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired>1999-01-30</FirstAired>
+  <GuestStars>|Jad Mager|Chris Owens|Lois Dellar|Dmitry Chepovetsky|Fulvio Cecere|</GuestStars>
+  <IMDB_ID>tt0658919</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Angela has to try and stop the seemingly unstoppable Millenium Bug after a programmer is killed who was close to finding the solution.</Overview>
+  <ProductionCode>161129</ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Nan Hagan|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271514.jpg</filename>
+  <lastupdated>1313008811</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271515</id>
+  <Combined_episodenumber>19.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>19.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|E.J. Forester|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Zero</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired>1999-03-06</FirstAired>
+  <GuestStars>|Nick Corri|Bruce Abbott|Jill Teed|Frida Betrani|Damian Perkins|</GuestStars>
+  <IMDB_ID>tt0658920</IMDB_ID>
+  <Language>en</Language>
+  <Overview>A sinister new drug leads Angela and Jacob to a showdown with the Praetorians. Angela becomes an FBI CIC agent.</Overview>
+  <ProductionCode>161149</ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Larry Barber|Paul Barber|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271515.jpg</filename>
+  <lastupdated>1313008836</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271516</id>
+  <Combined_episodenumber>20.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>20.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Peter DeLuise|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Last Man Standing</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired>1999-03-13</FirstAired>
+  <GuestStars>|Lee Reherman|Bruce Abbott|Jill Teed|Tom McBeath|Dwayne Johnson|Sarah Deakins|Rick Faraci|</GuestStars>
+  <IMDB_ID>tt0658911</IMDB_ID>
+  <Language>en</Language>
+  <Overview>New CIC agent Angela must put a stop to cybercast wrestling matches fought to the death.</Overview>
+  <ProductionCode>161150</ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Karl Holman|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271516.jpg</filename>
+  <lastupdated>1313008856</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271517</id>
+  <Combined_episodenumber>21.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>21.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Anson Williams|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Chem Club</EpisodeName>
+  <EpisodeNumber>21</EpisodeNumber>
+  <FirstAired>1999-03-20</FirstAired>
+  <GuestStars>|Jeremy Renner|Bruce Abbott|Kett Turton|Donna Yamamoto|</GuestStars>
+  <IMDB_ID>tt0658900</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Angela and Jacob go to high school to find the young creators of a chemical weapon.</Overview>
+  <ProductionCode>161151</ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|John Kirk|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271517.jpg</filename>
+  <lastupdated>1313008876</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+<Episode>
+  <id>271518</id>
+  <Combined_episodenumber>22.0</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber>22.0</DVD_episodenumber>
+  <DVD_season>1</DVD_season>
+  <Director>|Scott Paulin|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>eye-see-you.com</EpisodeName>
+  <EpisodeNumber>22</EpisodeNumber>
+  <FirstAired>1999-03-27</FirstAired>
+  <GuestStars>|Cameron Thor|Rick Boggs|Bruce Abbott|Gabrielle Miller|Kevin Blatch|Yee Jee Tso|</GuestStars>
+  <IMDB_ID>tt0658904</IMDB_ID>
+  <Language>en</Language>
+  <Overview>Angela and Walter are in hot pursuit of a clever murderer who spies on his victims using the internet.</Overview>
+  <ProductionCode>161152</ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Wolfe Bowart|Chris Adams|Ken Lang|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/78090/271518.jpg</filename>
+  <lastupdated>1313008896</lastupdated>
+  <seasonid>14267</seasonid>
+  <seriesid>78090</seriesid>
+</Episode>
+</Data>

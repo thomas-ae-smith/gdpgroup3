@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>118881</id>
+    <Actors>|Simon Talbot|</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>2007-02-15</FirstAired>
+    <Genre>|Comedy|</Genre>
+    <IMDB_ID>tt1042453</IMDB_ID>
+    <Language>en</Language>
+    <Network>TV 2</Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating>10.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>40</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Comedy Fight Club</SeriesName>
+    <Status>Continuing</Status>
+    <added>2009-10-15 06:54:19</added>
+    <addedBy>64851</addedBy>
+    <banner>text/118881.jpg</banner>
+    <fanart>fanart/original/118881-1.jpg</fanart>
+    <lastupdated>1349335258</lastupdated>
+    <poster>posters/118881-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

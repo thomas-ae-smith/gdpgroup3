@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>168841</id>
+    <Actors>|Edwige Pierre|Hela Gruel|Robert Etcheverry|Werner Umberg|</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>1973-03-27</FirstAired>
+    <Genre>|Action and Adventure|</Genre>
+    <IMDB_ID>tt0168296</IMDB_ID>
+    <Language>en</Language>
+    <Network>ZDF</Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating>5.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>25</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Árpád, the Gypsy</SeriesName>
+    <Status>Ended</Status>
+    <added>2010-06-11 06:41:11</added>
+    <addedBy>183721</addedBy>
+    <banner>graphical/168841-g.jpg</banner>
+    <fanart>fanart/original/168841-1.jpg</fanart>
+    <lastupdated>1280906464</lastupdated>
+    <poster>posters/168841-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>258898</id>
+    <Actors>|The Dingo|Daniel Kass|</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating>TV-MA</ContentRating>
+    <FirstAired>2008-09-30</FirstAired>
+    <Genre>|Comedy|Reality|Sport|</Genre>
+    <IMDB_ID>tt1302810</IMDB_ID>
+    <Language>en</Language>
+    <Network></Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>The adventures of Danny and the Dingo</SeriesName>
+    <Status>Continuing</Status>
+    <added>2012-05-11 05:35:34</added>
+    <addedBy>75551</addedBy>
+    <banner>graphical/258898-g.jpg</banner>
+    <fanart>fanart/original/258898-3.jpg</fanart>
+    <lastupdated>1336834269</lastupdated>
+    <poster>posters/258898-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>256579</id>
+  <Actors>|Mike Myres|Dana Carvey|</Actors>
+  <Airs_DayOfWeek>Friday</Airs_DayOfWeek>
+  <Airs_Time>7.00.PM</Airs_Time>
+  <ContentRating>TV-14</ContentRating>
+  <FirstAired></FirstAired>
+  <Genre>|Comedy|Drama|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>CBS</Network>
+  <NetworkID></NetworkID>
+  <Overview></Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>30</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Waynes World The Series</SeriesName>
+  <Status>Continuing</Status>
+  <added>2012-02-29 04:11:14</added>
+  <addedBy>359471</addedBy>
+  <banner></banner>
+  <fanart></fanart>
+  <lastupdated>1330520737</lastupdated>
+  <poster></poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4275775</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Steven Speilberg</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Wafflebot</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars>Dee Bradley Baker (The Wafflebot)</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Wayne And Garth Relized That They Are Gonna Get a Wafflebot For Garths Mother For Her Birthday Thinking The Wafflebot Is Evil</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Mike Myres</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1330518116</lastupdated>
+  <seasonid>486343</seasonid>
+  <seriesid>256579</seriesid>
+</Episode>
+<Episode>
+  <id>4275776</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Steven Speilberg</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Car Wars</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Wayne And Garth Decides To Go The Movie Theatre But There Car Broke And Decides To Ride A Taxi</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Mike Myres</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1330518358</lastupdated>
+  <seasonid>486343</seasonid>
+  <seriesid>256579</seriesid>
+</Episode>
+<Episode>
+  <id>4275777</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Steven Speilberg</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Leprechun Returns</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars>Warick Davis (The Leprecahun)</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Wayne Tells The Scary Story That Garth Is Afraid Of Leprechauns</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Mike Myres</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1330520574</lastupdated>
+  <seasonid>486343</seasonid>
+  <seriesid>256579</seriesid>
+</Episode>
+<Episode>
+  <id>4275778</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Steven Speilberg</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Getting Drunk</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2009-06-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Wayne And Garth Bunk Of School And Drinks 5 Red Bulls A Day</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Mike Myres</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1330518526</lastupdated>
+  <seasonid>486343</seasonid>
+  <seriesid>256579</seriesid>
+</Episode>
+<Episode>
+  <id>4275779</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Steven Speilberg</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>A Halloween Special</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Its Halloween And Wayne And Garth Does A Halloween Special Of His SNL Sketch</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Mike Myres</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1330520660</lastupdated>
+  <seasonid>486343</seasonid>
+  <seriesid>256579</seriesid>
+</Episode>
+<Episode>
+  <id>4275780</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Steven Speilberg</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Mr Doughnut Head Man Strikes Back</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars>Patrick Stewart (Mr Doughtnut Head Man)</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Garth Discovers That His Doughnut Friend Is Eaten In The Doughnut Cafe</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Mike Myres</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1330520768</lastupdated>
+  <seasonid>486343</seasonid>
+  <seriesid>256579</seriesid>
+</Episode>
+</Data>

@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>74463</id>
+  <Actors>|Darren McGavin|Simon Oakland|Jack Grinnage|Ruth McDevitt|</Actors>
+  <Airs_DayOfWeek>Friday</Airs_DayOfWeek>
+  <Airs_Time>10:00 PM</Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>1974-09-01</FirstAired>
+  <Genre>|Drama|Science-Fiction|Fantasy|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>ABC</Network>
+  <NetworkID></NetworkID>
+  <Overview>Kolchak was originally two made-for-TV movies that aired in the early 70's, and featured the adventures of Carl Kolchak, a down-on-the heels reporter who ran afoul of a vampire in Las Vegas and an alchemist in Seattle. These movies proved popular enough that they were spun off into a series, which placed Kolchak in Chicago with the Independent News Service. Each week for 20 weeks he investigated various supernatural and supranatural creatures, ranging from aliens to vampires to Aztec sacrificial cults. Although it only lasted one season on ABC, Kolchak has remained a cult favorite and been kept alive through the efforts of creator Jeffrey Grant Rice, Mark Dawidziak, and the folks at Moonstone Comics, who have two Kolchak comics going (see Links). There's an anthology of Kolchak stories coming out this year and discussion of a new Night Stalker (2005) series produced by The X-Files's Frank Spotnitz for ABC.</Overview>
+  <Rating>9.0</Rating>
+  <RatingCount>7</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID>2694</SeriesID>
+  <SeriesName>Kolchak: The Night Stalker</SeriesName>
+  <Status>Ended</Status>
+  <added></added>
+  <addedBy></addedBy>
+  <banner>graphical/2694-g.jpg</banner>
+  <fanart>fanart/original/74463-2.jpg</fanart>
+  <lastupdated>1340589741</lastupdated>
+  <poster>posters/74463-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>348703</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>John Llewellyn Moxey</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Night Stalker</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1972-01-11</FirstAired>
+  <GuestStars>Charles McGraw|Stanley Adams|Elisha Cook Jr.|Barry Atwater|Carol Lynley|Ralph Meeker|Claude Akins|Kent Smith|Larry Linville|Jordan Rhodes</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A vampire stalks Las Vegas by night, and only a reporter believes that he is anything other then a serial killer.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer>Richard Matheson</Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode>1</airsbefore_episode>
+  <airsbefore_season>1</airsbefore_season>
+  <filename>episodes/74463/348703.jpg</filename>
+  <lastupdated>1330089039</lastupdated>
+  <seasonid>21925</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>348704</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Dan Curtis</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Night Strangler</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1973-01-16</FirstAired>
+  <GuestStars>Jo Ann Pflug|Scott Brady|Wally Cox|Margaret Hamilton|John Carradine|Nina Wayne|Ivor Francis|Richard Anderson|Virginia Peters|Kate Murtagh|Regina Parton</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A serial killer is on the loose in Seattle, a killer who drains small amounts of blood from the women he strangles. Only reporter Carl Kolchak suspects that the killer's abilities and origins may be supernatural in origin - but can he stop the killings before the murderer disappears for good?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer>Richard Matheson</Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode>1</airsbefore_episode>
+  <airsbefore_season>1</airsbefore_season>
+  <filename>episodes/74463/348704.jpg</filename>
+  <lastupdated>1330089503</lastupdated>
+  <seasonid>21925</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146396</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Allen Baron|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Ripper</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1974-09-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A serial killer who preys on women haunts Chicago, and Kolchak comes to believe that the killer is in fact the original Jack the Ripper, a seemingly immortal killer who has killed women in many cities over the last century. The reporter must track the killer to the old house where he has taken up residence and put an end to his existence once and for all.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Rudolph Borchert|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146396.jpg</filename>
+  <lastupdated>1302313928</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146397</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Alexander Grasshoff|Zekial Marko|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Zombie</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1974-09-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A voodoo priestess animates her dead son to take revenge on the gangsters that killed him.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Zekial Marko|David Chase|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146397.jpg</filename>
+  <lastupdated>1199558608</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146398</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Allen Baron|Dennis Clark|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>They Have Been, They Are, They Will Be...</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1974-09-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A bizarre alien presence invisibly sweeps through Chicago, killing a petty thief and a UFO nut. The alien or aliens have the strength of a hurricane, generate a massive electromagnetic field, steal lead and electronic equipment, and suck the bone marrow out of humans and animals alike. Kolchak must track the alien(s) from an electronics warehouse to an observatory to Lincoln Park and drive them off before they kill again. His camera seems to hold the key to the creatures' weakness, although initially Carl is wrong in guessing what the weakness is. Carl follows the aliens and manages to keep them from feeding on him before they depart once and for all.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Rudolph Borchert|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146398.jpg</filename>
+  <lastupdated>1199558847</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146399</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Don Weis|Bill Stratton|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Vampire</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1974-10-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Catherine Rawlins, a female victim of Janos Skorzeny (the vampire from the original Night Stalker TV movie) is accidentally resurrected outside Las Vegas, and makes her way to Los Angeles. She takes up her old profession of call girl and Carl wrangles an assignment there to investigate.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|David Chase|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146399.jpg</filename>
+  <lastupdated>1199559068</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146400</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Allen Baron|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Werewolf</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1974-11-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Bernhardt Stieglitz, a NATO soldier bitten by a wolf, leaves a string of murder victims behind him. When Vincenzo is forced to abort his long-awaited vacation and report on the last cruise of an ocean liner, the USS Hanover, Carl takes his place, only to find that Stieglitz is one of the passengers on board...and the full moon is rising. Trapped aboard the liner, Kolchak must use a shotgun and silver buckshot to kill the creature once and for all.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Paul Playdon|David Chase|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146400.jpg</filename>
+  <lastupdated>1199560006</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146401</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Don Weis|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Firefall</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1974-11-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A series of mysterious deaths plague the life of conductor Ryder Bond. In each case, the victim is incinerated by supernaturally hot flames. As Kolchak investigates, he finds out that an arsonist, Frankie Markoff, was a fan of Bond's, and was killed in a penny arcade. His funeral procession crossed Bond's car, allowing the spirit to become a &quot;&quot;doppelganger&quot;&quot; and try to take over Bond's life. Each victim was burned to death when they fell asleep, and if Bond goes to sleep the doppelganger will take him over for good. Fighting sleep himself, Kolchak must exhume Markoff's body and reunite it with his restless spirit before he too bursts into flame.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Bill S. Ballinger|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146401.jpg</filename>
+  <lastupdated>1199562866</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146402</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Allen Baron|Tim Maschler|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Devil's Platform</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1974-11-15</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A series of mysterious deaths plague the election trail of Sen. Robert Palmer, as does a mysterious black dog with a pentagram for a dog tag. Carl investigates and finds that the Senator has made a pact with Satan in return for the ability to assume the form of an indestructible black mastiff, and destroy his enemies both within his own party and opposing him. Kolchak must confront Palmer and destroy the pentagram before Palmer kills him.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|David Chase|Donn Mullally|Rudolph Borchert|Larry Markes|Norm Liebmann|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146402.jpg</filename>
+  <lastupdated>1199560339</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146403</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Alexander Grasshoff|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Bad Medicine</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1974-11-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A series of suicides among high-society matrons coincides with a bizarre jewel theft by a towering Indian who mysteriously disappears when cornered. Kolchak investigates and finds that the Indian is a &quot;&quot;diablero,&quot;&quot; a cursed cliff-dwelling Indian medicine man condemned to walk the earth gathering an eternal horde of jewels. The diablero can change shape into the form of a coyote or crow, and hypnotize anyone with its eyes. Carl must seek the diablero in the highest place he can find, and turn the power of its eyes against it.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|L. Ford Neale|John Huff|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146403.jpg</filename>
+  <lastupdated>1199560544</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146404</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Gordon Hessler|Alvin L. Friedman|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Spanish Moss Murders</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1974-12-06</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A series of apparently unrelated deaths involve each victim being crushed to death, and covered in wet, slimy Spanish Moss. Upon investigation, Kolchak discovers that each victim was related to Paul Langois, a hot-tempered Cajun. However, Langois has an iron-clad alibi: he's been the subject of a sleep experiment and been kept asleep for several weeks. Eventual, Carl realizes that somehow Langois' sleep state has caused him to manifest a subconscious &quot;&quot;boogey-man&quot;&quot; from the Cajun bayou: Peremalfait, a huge creature covered in Spanish Moss that crushes the life right out of you. Peremalfait &quot;&quot;kills&quot;&quot; Langois to prevent him from being woken up, and Kolchak must travel into the sewers of Chicago to kill Peremalfait with the only thing that can destroy it: a spear made out of bayou gum wood.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Alvin R. Friedman|David Chase|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146404.jpg</filename>
+  <lastupdated>1200503823</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146405</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Alexander Grasshoff|Arthur Rowe|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Energy Eater</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>1974-12-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Several Indian construction workers are killed during high-rise work on a new hospital. They leave the job, and the hospital is completed. However, a series of strange electrocutions continue to plague the hospital after its grand opening. Kolchak investigates and finds that a &quot;&quot;bear-god&quot;&quot; spirit, Matchemonedo, was resurrected from its burial spot beneath Lake Michigan by the hospital construction. Now the creature, which feeds on energy, is beginning to awaken. Kolchak must convince the hospital officials to re-refrigerate the &quot;&quot;bear-god&quot;&quot; and drive it back into hibernation before it awakens once and for all.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Arthur Rowe|Rudolph Borchert|Robert Earll|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146405.jpg</filename>
+  <lastupdated>1199825668</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146406</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Michael Caffey|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Horror in the Heights</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>1974-12-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>In the Chicago &quot;&quot;Heights&quot;&quot; district, elderly citizens are found dead: stripped to the bone, apparently by rats. Upon investigation, Kolchak finds a more sinister reason behind the murders: a rakshasa, a Hindu demon that can entrance its victims by taking the form of the person they trust most. Carl finds an elderly rakshasa hunter, who entrusts him with the only thing that can kill the rakshasa: crossbow bolts blessed by a priest of Brahma. However, to defeat the creature Kolchak must be able to bring himself to shoot whoever it is that he trusts the most.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Jimmy Sangster|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146406.jpg</filename>
+  <lastupdated>1200370768</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146407</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Gene Levitt|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Mr. R.I.N.G.</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>1975-01-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Kolchak writes an obituary for a deceased scientist, but soon becomes involved in further investigation when no one can give him a straight answer on how the scientist died. Meanwhile, a mysterious figure goes on a rampage throughout Chicago, stealing morticians' wax and Halloween masks. Kolchak eventually finds out that the scientist was working on Project R.I.N.G.: the development of an artificially intelligent robot. R.I.N.G. killed his creator rather than be shut down, and now the government is hunting it. Kolchak must find where the robot is hiding and reveal the story before the government catch up to R.I.N.G.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|L. Ford Neale|John Huff|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146407.jpg</filename>
+  <lastupdated>1200370864</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146408</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Robert Scheerer|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Primal Scream</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>1975-01-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>In a oil company's laboratory, the air conditioning fails, and a primate creature attacks a scientist. The creature, and others like it, begin going on a rampage throughout Chicago. The oil company was experimenting with cell samples brought back from the Antarctic, which began growing when exposed to heat. Now these bizarre missing links are wrecking havoc. Despite the government cover-up, Kolchak investigates, and must track the creatures down to their lair beneath the old nuclear-research labs of the 50's.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Bill S. Ballinger|David Chase|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146408.jpg</filename>
+  <lastupdated>1199560998</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146409</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Don Weis|</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Trevi Collection</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>1975-01-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A fashion industry spy is thrown to his death from a room filled with nothing but mannequins as Carl looks on from the street below. This is but the first in a series of strange murders that point to a supernatural origin: apparently Madame Trevi, a leading designer in the fashion industry, is using witchcraft to stop those who oppose her. With the aid of a witches' coven, Carl is pointed to the source of Trevi's power and destroys it, only to find who the witch truly is. Armed with a mojo bag, Carl must confront the witch and publicly accuse her to strip her of her powers.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Rudolph Borchert|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146409.jpg</filename>
+  <lastupdated>1290550246</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146410</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Bruce Kessler|Bob Gale|Robert Zemeckis|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Chopper</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>1975-01-31</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The strange disappearance of an antique motorcycle is the first indication of trouble. What follows are a rash of murders where each victim is decapitated with superhuman force by what witnesses report is a headless motorcyclist. As Kolchak investigates, he discovers that the victims were all members of a cycle gang back in the 50's. A prank they played on a rival gang member, Harold &quot;&quot;Swordsman&quot;&quot; Baker, resulted in his unintentional decapitation. Baker's ghost killed several of their gang back in the 50's until his head was reunited with the rest of his corpse. However, the cemetary where Baker was interred was dug up and his head and body separated once more. Now, Kolchak must reunite the head and body once more before the headless cyclist finishes off the gang.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Robert Zemeckis|Bob Gale|Steve Fisher|David Chase|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146410.jpg</filename>
+  <lastupdated>1199561137</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146411</id>
+  <Combined_episodenumber>16</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Don Weis|Stephen Lord|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Demon in Lace</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired>1975-02-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>On a college campus, young men are dying of heart attacks. According to witnesses, they are last seen with young women who apparently died shortly before meeting the men. When Kolchak investigates, he finds that the men were associated with Professor Spate, who is researching an ancient Middle East tablet, and that a series of similar deaths plagued his expedition to recover the tablet. The tablet is tied to a supernatural creature known as a succubus, who possesses young women at the moment of their death and then reveals her true visage to men, frightening them to death and feeding upon their energies. Kolchak must destroy the tablet to destroy the succubus once and for all.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Michael Kozoll|Stephen Lord|David Chase|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146411.jpg</filename>
+  <lastupdated>1199561318</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146412</id>
+  <Combined_episodenumber>17</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Don McDougall|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Legacy of Terror</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired>1975-02-14</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Physically fit specimens (an Air Force pilot, a football player, a cop) are all being targeted for a grisly death: their hearts are being cut from their chests while they're still alive, with a dull blade, on higher and higher flights of steps. Kolchak investigates and spots a strange feathered creature near the scene of one of the murders. He finds out that an ancient Aztec cult is trying to resurrect their ancient god, Nanautzin, the Lord of the Smoking Mirror. Since his destruction at the hands of the Conquistadores 520 years ago (the Aztec millennia), his worshippers must sacrifice the hearts of five worthy victims every 52 years. Upon the completion of the final cycle, Nanautzin will be restored to life. However, the final death must be  a &quot;&quot;perfect sacrifice&quot;&quot;: a willing victim who is given his every wish for a year before his final death. Pepe, a box boy, is the &quot;&quot;perfect sacrifice&quot;&quot; and Carl must track him to the highest staircase in Chicago and convince him to back out of the sacrifice.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Arthur Rowe|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146412.jpg</filename>
+  <lastupdated>1199561560</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146413</id>
+  <Combined_episodenumber>18</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Vincent McEveety|Paul Magistretti|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Knightly Murders</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired>1975-03-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Various Chicago citizenry are being killed with medieval weaponry. Upon investigating, Kolchak finds that they were all tied to the conversion of a small museum into a disco. It turns out that the museum houses the armor of Guy de Metancourt, a misanthrope who swore upon his death that his final resting place would never know gaiety and laughter. Now, his ghostly armor animates and kills those who would disrupt his resting place. The only way for Kolchak to stop the unchivalrous knight is to destroy it with a holy axe blessed by the pope.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|David Chase|Michael Kozoll|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146413.jpg</filename>
+  <lastupdated>1199561734</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146414</id>
+  <Combined_episodenumber>19</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Don McDougall|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Youth Killer</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired>1975-03-14</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Young swinging patrons of an exclusive dating service are turning up, dead of old age. The police don't believe they are the same persons, but Kolchak investigates and discovers that the head of the dating service is actually Helen of Troy, who sacrifices perfect young victims to Hecate, her patron goddess, in return for eternal youth and beauty. The fact that Helen is unaware one of the victims had a glass eye and lied about it on their form proves vital to Kolchak when he accidentally dons one of the rings that lets Helen sacrifice her victims in the appropriate manner.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Rudolph Borchert|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146414.jpg</filename>
+  <lastupdated>1199561876</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+<Episode>
+  <id>146415</id>
+  <Combined_episodenumber>20</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Seymour Robbie|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Sentry</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired>1975-03-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The government is keen to hush up a series of mysterious deaths at the Merrymount Institute, an underground archival facility. When Carl investigates, he determines that the victims were ripped apart as if attacked by a crocodile or other large lizard. He eventually discovers that the workers excavated a series of strange egg-like objects, and that the eggs' mother, a large prehistoric lizard, is attempting to retrieve them. Fleeing for his life, Carl must return the eggs to the mother and fend her off.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|L. Ford Neale|John Huff|</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/74463/146415.jpg</filename>
+  <lastupdated>1199562113</lastupdated>
+  <seasonid>7495</seasonid>
+  <seriesid>74463</seriesid>
+</Episode>
+</Data>

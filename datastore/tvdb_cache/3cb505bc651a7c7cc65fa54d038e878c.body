@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>219541</id>
+    <Actors>|Akio Ohtsuka |Junko Iwao|Ryusei Nakao|</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating>TV-PG</ContentRating>
+    <FirstAired>1994-03-02</FirstAired>
+    <Genre>|Action and Adventure|Children|Comedy|</Genre>
+    <IMDB_ID>1051943</IMDB_ID>
+    <Language>en</Language>
+    <Network>NHK</Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating>10.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID>18621</SeriesID>
+    <SeriesName>Montana Jones</SeriesName>
+    <Status>Ended</Status>
+    <added>2011-01-08 10:52:05</added>
+    <addedBy>287861</addedBy>
+    <banner>graphical/219541-g.jpg</banner>
+    <fanart>fanart/original/219541-1.jpg</fanart>
+    <lastupdated>1344120570</lastupdated>
+    <poster>posters/219541-2.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

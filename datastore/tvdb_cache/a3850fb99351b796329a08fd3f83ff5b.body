@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>83916</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek>Tuesday</Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>2003-01-14</FirstAired>
+  <Genre>|Documentary|</Genre>
+  <IMDB_ID>tt0376899</IMDB_ID>
+  <Language>en</Language>
+  <Network>ZDF</Network>
+  <NetworkID></NetworkID>
+  <Overview>The Eastern Front experienced the viciousness of war on a scale of unimaginable horror and brutality. The bloodiest and most savage fighting took place in Stalingrad between August 1942 and February 1943. Stalin’s city on the Volga had military significance for Hitler. It carried the name of his enemy and therefore had to be destroyed.
+
+The ensuing battle sealed the fates of hundreds of thousands of soldiers and civilians and marked the turning point of World War II. It was the beginning of the end for Nazi Germany. In 3 parts, documentary filmmakers Sebastian Dehnhardt, Christian Deick and Jorg Mullner reveal new historical facts while touching the emotions of their audience with new, moving eyewitness accounts and confessions from some of the last survivors.</Overview>
+  <Rating>8.3</Rating>
+  <RatingCount>3</RatingCount>
+  <Runtime>55</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Stalingrad</SeriesName>
+  <Status>Ended</Status>
+  <added>2008-11-30 07:15:29</added>
+  <addedBy>6377</addedBy>
+  <banner>graphical/83916-g4.jpg</banner>
+  <fanart>fanart/original/83916-1.jpg</fanart>
+  <lastupdated>1333106041</lastupdated>
+  <poster>posters/83916-2.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>2143571</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Recollections</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1272397426</lastupdated>
+  <seasonid>37672</seasonid>
+  <seriesid>83916</seriesid>
+</Episode>
+<Episode>
+  <id>2143591</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Video Interview With Dr. Guido Knopp</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1272397452</lastupdated>
+  <seasonid>37672</seasonid>
+  <seriesid>83916</seriesid>
+</Episode>
+<Episode>
+  <id>2143601</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>0</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Stalingrad Today</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>0</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <airsafter_season></airsafter_season>
+  <airsbefore_episode></airsbefore_episode>
+  <airsbefore_season></airsbefore_season>
+  <filename></filename>
+  <lastupdated>1272397464</lastupdated>
+  <seasonid>37672</seasonid>
+  <seriesid>83916</seriesid>
+</Episode>
+<Episode>
+  <id>411638</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jörg Müllner|Friedrich Scherer|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Attack</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2003-01-14</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1153526</IMDB_ID>
+  <Language>en</Language>
+  <Overview>This episode gives the context for Germany’s invasion of the Soviet Union and the confident German advance across the country to the Stalingrad and the Volga River. There, the Germans found bitter cold. They bombed the city mercilessly, but the Red Army imbedded itself and cunningly used snipers to keep the Germans off balance.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83916/411638.jpg</filename>
+  <lastupdated>1314707846</lastupdated>
+  <seasonid>37674</seasonid>
+  <seriesid>83916</seriesid>
+</Episode>
+<Episode>
+  <id>411640</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Christian Deck|Stefan Mausbach|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Kessel</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2003-01-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1153527</IMDB_ID>
+  <Language>en</Language>
+  <Overview>“Kessel” is the German word for “cauldron,” which is how the German soldiers referred to the area in which they ended up trapped when the Russians cut off their supply lines and surrounded them after they had marched into the city. The Germans had overextended their military in Hitler’s haste to conquer all of the Soviet Union. Here, they fought the Russians for several grueling months through sub-zero temperatures, dealing with disease and hunger. His commanders forbidden to surrender, Hitler was determined to conquer the city that bore his enemy’s name.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83916/411640.jpg</filename>
+  <lastupdated>1314707871</lastupdated>
+  <seasonid>37674</seasonid>
+  <seriesid>83916</seriesid>
+</Episode>
+<Episode>
+  <id>411642</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Sebastian Denhardt|Manfred Oldenburg|</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The Doom</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2003-01-28</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1153528</IMDB_ID>
+  <Language>en</Language>
+  <Overview>The conclusion deals with the Germans’ growing desperation to get out, as they resort to cannibalism to survive. They eventually surrendered and the last part of the film details the grueling march to prisoner-of-war camps. Nearly one million died during the campaign</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83916/411642.jpg</filename>
+  <lastupdated>1314707894</lastupdated>
+  <seasonid>37674</seasonid>
+  <seriesid>83916</seriesid>
+</Episode>
+</Data>

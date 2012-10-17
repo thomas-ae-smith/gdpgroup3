@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>113271</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>2009-09-09</FirstAired>
+  <Genre>|Drama|</Genre>
+  <IMDB_ID>tt1495980</IMDB_ID>
+  <Language>en</Language>
+  <Network>BBC Two</Network>
+  <NetworkID></NetworkID>
+  <Overview>On 12 September 2008 the heads of Wall Street's three biggest investment banks are summoned to a late afternoon meeting at the New York Federal Reserve. After six months of turmoil in the world's financial markets Lehman Brothers, the fourth biggest player on Wall Street, is on life support and the government is about to pull the plug.
+
+As Lehman CEO Dick Fuld waits anxiously in his 7th Avenue headquarters for news from the Fed, US Treasury Secretary Hank Paulson drops a bombshell - Lehman Brothers is not too big to fail and this time there will be no public money for a bailout. After 42 years with the firm he calls the mothership, Fuld's time is running out.
+
+Drama going behind closed doors to tell the story of three days that shook the world.</Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>The Last Days of Lehman Brothers</SeriesName>
+  <Status>Ended</Status>
+  <added>2009-09-10 14:45:04</added>
+  <addedBy>28051</addedBy>
+  <banner></banner>
+  <fanart>fanart/original/113271-1.jpg</fanart>
+  <lastupdated>1335248897</lastupdated>
+  <poster>posters/113271-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>1066761</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Last Days of Lehman Brothers</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1257861556</lastupdated>
+  <seasonid>116771</seasonid>
+  <seriesid>113271</seriesid>
+</Episode>
+</Data>

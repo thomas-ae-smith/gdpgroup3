@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>249057</id>
+  <Actors>|Rachael Leigh Cook|Bianca Lawson|Eric Balfour|Ian Somerhalder|</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired></FirstAired>
+  <Genre>|Action and Adventure|Drama|</Genre>
+  <IMDB_ID>tt0363333</IMDB_ID>
+  <Language>en</Language>
+  <Network>The WB</Network>
+  <NetworkID></NetworkID>
+  <Overview>Rachael Leigh cook stars as a Gaia Moore, a woman born without the gene for fear. Gaia's mother was murdered and her father is an antiterrorist operative in hiding. She is recruited by her godfather to join the FBI specialized crime division in New York. Ian Somerhalder stars as a criminal-turned-FBI agent.</Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>40</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Fearless</SeriesName>
+  <Status>Ended</Status>
+  <added>2011-05-27 00:56:02</added>
+  <addedBy>343632</addedBy>
+  <banner>graphical/249057-g.jpg</banner>
+  <fanart></fanart>
+  <lastupdated>1308480793</lastupdated>
+  <poster></poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4105807</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Blair Hayes</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Pilot</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Gaia starts her first day in the FBI specialized crime division and is assigned the investigation of a counterfeiting scheme.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Jenna Bans|Jeremy Carver|Evan Charnov|Jeremy R. Littman|Vincent Ngo|Francine Pascal|Stacy Rukeyser</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/249057/4105807.jpg</filename>
+  <lastupdated>1306510749</lastupdated>
+  <seasonid>466728</seasonid>
+  <seriesid>249057</seriesid>
+</Episode>
+</Data>

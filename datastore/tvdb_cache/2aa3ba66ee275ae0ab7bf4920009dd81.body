@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>159191</id>
+    <Actors>|Moisés Torner|Guillem d'Efack|Agueda Font|</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>1985-12-29</FirstAired>
+    <Genre>|Science-Fiction|</Genre>
+    <IMDB_ID>0449737</IMDB_ID>
+    <Language>en</Language>
+    <Network></Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Manuscript of the Second Source</SeriesName>
+    <Status>Ended</Status>
+    <added>2010-04-25 04:12:24</added>
+    <addedBy>154071</addedBy>
+    <banner>graphical/159191-g.jpg</banner>
+    <fanart></fanart>
+    <lastupdated>1272281642</lastupdated>
+    <poster>posters/159191-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

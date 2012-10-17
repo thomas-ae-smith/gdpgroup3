@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>83382</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>2008-01-16</FirstAired>
+    <Genre>|Documentary|</Genre>
+    <IMDB_ID>tt1595437</IMDB_ID>
+    <Language>en</Language>
+    <Network>BBC Two</Network>
+    <NetworkID></NetworkID>
+    <Overview>Documentary series about extraordinary ordinary people and everyday dramas.</Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>40</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Wonderland</SeriesName>
+    <Status>Ended</Status>
+    <added>2008-10-11 14:59:38</added>
+    <addedBy>5080</addedBy>
+    <banner>graphical/83382-g2.jpg</banner>
+    <fanart>fanart/original/83382-1.jpg</fanart>
+    <lastupdated>1349819411</lastupdated>
+    <poster>posters/83382-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

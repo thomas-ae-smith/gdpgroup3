@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>146341</id>
+  <Actors>|Eddie Izzard|</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired></FirstAired>
+  <Genre>|Documentary|Sport|</Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>BBC Three</Network>
+  <NetworkID></NetworkID>
+  <Overview>Last summer one of Britain’s best-loved comedians, Eddie Izzard, completed the ultimate challenge of human endurance as he completed a staggering 43 marathons in 51 days around the UK for Sport Relief.
+
+An inspiring and, at times, emotional journey of discovery was captured on film and Eddie Izzard: Marathon Man, is a three-part documentary following Eddie’s epic endeavour.</Overview>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Eddie Izzard: Marathon Man</SeriesName>
+  <Status>Ended</Status>
+  <added>2010-03-05 08:13:39</added>
+  <addedBy>52141</addedBy>
+  <banner>text/146341.jpg</banner>
+  <fanart>fanart/original/146341-1.jpg</fanart>
+  <lastupdated>1343358019</lastupdated>
+  <poster>posters/146341-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>1825421</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>3</EpImgFlag>
+  <EpisodeName>Episode 1</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2010-03-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Last summer comedian Eddie Izzard completed 43 marathons in 51 days around the UK in aid of Sport Relief. This programme finds out how he managed to finish the gruelling endurance challenge after just five weeks of training. In the first episode, Eddie sets off from London and begins to struggle against severe weather and an unforgiving terrain. He makes a moving return to his old house in Skewen, South Wales, and faces an epic climb into the Brecon Beacons</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/146341/1825421.jpg</filename>
+  <lastupdated>1269181628</lastupdated>
+  <seasonid>204921</seasonid>
+  <seriesid>146341</seriesid>
+</Episode>
+<Episode>
+  <id>1854901</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Episode 2</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2010-03-10</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The physical and mental strain of running consecutive marathons begins to take its toll on the comedian. He has run from London to Wales and completed 10 marathons, but with 33 to go, agonising injuries result in him being told to slow down and walk, while atrocious weather and gruelling roads force him to embark on an extreme diet</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/146341/1854901.jpg</filename>
+  <lastupdated>1307834365</lastupdated>
+  <seasonid>204921</seasonid>
+  <seriesid>146341</seriesid>
+</Episode>
+<Episode>
+  <id>1854911</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Episode 3</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2010-03-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The comedian tackles his final 17 marathons in 19 days, travelling from Glasgow to London and being joined along the way by Denise Van Outen and Frank Skinner. Heading south he deals with extreme temperatures, painful stomach problems and insomnia, before suffering his worst injury so far and facing a race against time to make it to the finish line. Last in the series</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/146341/1854911.jpg</filename>
+  <lastupdated>1307834220</lastupdated>
+  <seasonid>204921</seasonid>
+  <seriesid>146341</seriesid>
+</Episode>
+</Data>

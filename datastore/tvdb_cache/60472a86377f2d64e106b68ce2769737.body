@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>83132</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek>Sunday</Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating>TV-MA</ContentRating>
+    <FirstAired>2008-09-21</FirstAired>
+    <Genre>|Animation|Comedy|</Genre>
+    <IMDB_ID>tt0870980</IMDB_ID>
+    <Language>en</Language>
+    <Network>G4</Network>
+    <NetworkID></NetworkID>
+    <Overview>Spaceballs: The Animated Series is an animated adaption of the movie Space Balls, both created by Mel Brooks. Like the movie, the show is a parody of science fiction movies and television show. </Overview>
+    <Rating>4.3</Rating>
+    <RatingCount>3</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID>76199</SeriesID>
+    <SeriesName>Spaceballs: The Animated Series</SeriesName>
+    <Status>Ended</Status>
+    <added>2008-09-21 16:47:54</added>
+    <addedBy>830</addedBy>
+    <banner>graphical/83132-g3.jpg</banner>
+    <fanart>fanart/original/83132-1.jpg</fanart>
+    <lastupdated>1342935927</lastupdated>
+    <poster>posters/83132-2.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

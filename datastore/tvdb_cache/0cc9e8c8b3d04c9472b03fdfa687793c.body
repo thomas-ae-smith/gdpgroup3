@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>248533</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek>Thursday</Airs_DayOfWeek>
+    <Airs_Time>09:00 PM</Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>2011-06-02</FirstAired>
+    <Genre>|Comedy|</Genre>
+    <IMDB_ID>tt1893438</IMDB_ID>
+    <Language>en</Language>
+    <Network>Showcase</Network>
+    <NetworkID></NetworkID>
+    <Overview>Almost Heroes follows Terry who returns home after hearing of his father’s death to help his younger brother Peter tie up loose ends and hopefully, sell the family business: a comic book store called the Silver Salmon. He arrives to find the store in financial ruin and his brother incapable of making any decision other than which super power he wished he had. The brothers put their differences aside to revive the business along with the help of the mall security guard Boyd, childhood friend Bernie and property manager Rayna.</Overview>
+    <Rating>7.5</Rating>
+    <RatingCount>2</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Almost Heroes</SeriesName>
+    <Status>Continuing</Status>
+    <added>2011-05-06 10:16:09</added>
+    <addedBy>104261</addedBy>
+    <banner>graphical/248533-g.jpg</banner>
+    <fanart>fanart/original/248533-2.jpg</fanart>
+    <lastupdated>1350433284</lastupdated>
+    <poster>posters/248533-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>100471</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>2009-06-21</FirstAired>
+    <Genre>|Documentary|</Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network>Five</Network>
+    <NetworkID></NetworkID>
+    <Overview>Three-part documentary series looking at human breasts and genitals and problems associated with them experienced by some people.</Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Private Parts</SeriesName>
+    <Status>Ended</Status>
+    <added>2009-06-21 15:09:20</added>
+    <addedBy>83</addedBy>
+    <banner>graphical/100471-g.jpg</banner>
+    <fanart></fanart>
+    <lastupdated>1333146274</lastupdated>
+    <poster></poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

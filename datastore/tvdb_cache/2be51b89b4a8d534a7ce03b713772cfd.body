@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>127401</id>
+    <Actors>|Jesse Ventura|June Sarpong|Michael Braverman|Alex Piper|Daniel Kucan|</Actors>
+    <Airs_DayOfWeek>Wednesday</Airs_DayOfWeek>
+    <Airs_Time>10:00 pm</Airs_Time>
+    <ContentRating>TV-14</ContentRating>
+    <FirstAired>2009-12-02</FirstAired>
+    <Genre>|Documentary|</Genre>
+    <IMDB_ID>tt1572498</IMDB_ID>
+    <Language>en</Language>
+    <Network>truTV</Network>
+    <NetworkID></NetworkID>
+    <Overview>Jesse Ventura and a team of expert investigators are on a mission to examine some of the most frightening and mysterious conspiracy allegations of our time. They examine available evidence as well as talking to experts and eyewitnesses to learn more about such topics as global warming, possible 9/11 cover-ups, secret government weapons and apocalyptic prophecies. &quot;This is my personal journey,&quot; Ventura says, &quot;to prove that there is more to these stories than you know about.&quot;</Overview>
+    <Rating>9.9</Rating>
+    <RatingCount>7</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Conspiracy Theory with Jesse Ventura</SeriesName>
+    <Status>Ended</Status>
+    <added>2009-12-07 09:43:03</added>
+    <addedBy>1375</addedBy>
+    <banner>graphical/127401-g3.jpg</banner>
+    <fanart>fanart/original/127401-2.jpg</fanart>
+    <lastupdated>1349345422</lastupdated>
+    <poster>posters/127401-1.jpg</poster>
+    <zap2it_id>SH01203034</zap2it_id>
+  </Series>
+</Data>

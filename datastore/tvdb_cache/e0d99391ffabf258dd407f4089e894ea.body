@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>98441</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired></FirstAired>
+    <Genre>|Animation|Children|</Genre>
+    <IMDB_ID>tt0480094</IMDB_ID>
+    <Language>en</Language>
+    <Network></Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>1</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Splash the frog</SeriesName>
+    <Status>Ended</Status>
+    <added>2009-06-09 10:48:28</added>
+    <addedBy>4103</addedBy>
+    <banner></banner>
+    <fanart></fanart>
+    <lastupdated>1246872426</lastupdated>
+    <poster></poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

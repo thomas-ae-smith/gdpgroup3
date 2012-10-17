@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>76442</id>
+  <Actors>|Jack Palance|Stuart Erwin|</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>1963-09-01</FirstAired>
+  <Genre></Genre>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Network>ABC</Network>
+  <NetworkID></NetworkID>
+  <Overview></Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>60</Runtime>
+  <SeriesID>4146</SeriesID>
+  <SeriesName>The Greatest Show on Earth</SeriesName>
+  <Status>Ended</Status>
+  <added></added>
+  <addedBy></addedBy>
+  <banner></banner>
+  <fanart></fanart>
+  <lastupdated>1163101692</lastupdated>
+  <poster></poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>194693</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Lion on Fire</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1963-09-17</FirstAired>
+  <GuestStars>|Harry Guardino|Jean Freeman|Alfred Ryder|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>002</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194694</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Silent Love, Secret Love</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1963-09-24</FirstAired>
+  <GuestStars>|Tuesday Weld|Ruth Roman|Robert Webber|Russ Tamblyn|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>5108-1</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194695</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>No Middle Ground for Harry Kyle</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1963-10-01</FirstAired>
+  <GuestStars>|Jose Ferrer|Martha Scott|Joey Walsh|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>005</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194696</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Don't Look Down, Don't Look Back</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1963-10-08</FirstAired>
+  <GuestStars>|Gilbert Roland|Brenda Vaccaro|Bradford Dillman|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>004</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194697</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Garve</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1963-10-15</FirstAired>
+  <GuestStars>|Hugh A. O'Brien|Harold J. Stone|Peggy McCay|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>007</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194698</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Loser</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1963-10-22</FirstAired>
+  <GuestStars>|Sal Mineo|Eddie Albert|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>5108-9</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194699</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Uncaged</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1963-10-29</FirstAired>
+  <GuestStars>|Fabian|James Coburn|Zeme North|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A circus aerialist is charged with robbery and murder.</Overview>
+  <ProductionCode>5108-8</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194700</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Arthur Hiller|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Circus Never Came to Town</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1963-11-05</FirstAired>
+  <GuestStars>|Cliff Robertson|Frank Sutton|David Winters|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Mentally retarded Willie Simple still harbors his childlike daydream of becoming a clown. Slate takes pity on him, giving the boy a job although he has been warned that he might cause problems.</Overview>
+  <ProductionCode>5108-3</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|Calvin Clements|Robert Rafelson|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194701</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>An Echo of Faded Velvet</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1963-11-12</FirstAired>
+  <GuestStars>|Anthony Franciosa|Felicia Farr|John Astin|John Baer|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>006</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194702</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Hanging Man</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>1963-11-19</FirstAired>
+  <GuestStars>|Ricardo Montalban|Michael Parks|Fay Spain|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>011</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194703</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Leaves in the Wind</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>1963-11-26</FirstAired>
+  <GuestStars>|Nina Foch|Paul Hartman|Marlyn Mason|Paul Comi|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>5108-10</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194704</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Wrecker</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>1963-12-03</FirstAired>
+  <GuestStars>|Dean Stockwell|Dennis Hopper|Luana Anders|Karl Swenson|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>013</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194705</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Lady in Limbo</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>1963-12-10</FirstAired>
+  <GuestStars>|Lucille Ball|Roger C. Carmel|Bill Mumy|Irene Tedrow|Robert F. Simon|Dabbs Greer|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>014</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194706</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>A Black Dress for Gina</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired>1963-12-17</FirstAired>
+  <GuestStars>|Geraldine Brooks|Michael Constantine|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>5108-12</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194707</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Where the Wire Ends</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired>1964-01-07</FirstAired>
+  <GuestStars>|Dorothy Malone|Alejandro Rey|John Dehner|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>015</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194708</id>
+  <Combined_episodenumber>16</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Corsicans Don't Cry</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired>1964-01-14</FirstAired>
+  <GuestStars>|Steven Hill|Billy Gray|Patricia Breslin|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>016</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194709</id>
+  <Combined_episodenumber>17</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Big Man from Nairobi</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired>1964-01-21</FirstAired>
+  <GuestStars>|Cornel Wilde|Ellen Burstyn|Billy Curtis|William Sargent|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>017</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194710</id>
+  <Combined_episodenumber>18</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Show Must Go On-- to Orange City</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired>1964-01-28</FirstAired>
+  <GuestStars>|Martha Hyer|Ruby Keeler|Hans Difflipp|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>018</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194711</id>
+  <Combined_episodenumber>19</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>A Place to Belong</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired>1964-02-11</FirstAired>
+  <GuestStars>|Louis Jourdan|Jeremy Slate|Leslie Wales|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>019</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194712</id>
+  <Combined_episodenumber>20</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Man in a Hole</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired>1964-02-18</FirstAired>
+  <GuestStars>|Jack Lord|Phyllis Avery|Russell Johnson|Arte Johnson|Cathie Merchant|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>020</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194713</id>
+  <Combined_episodenumber>21</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Clancy</EpisodeName>
+  <EpisodeNumber>21</EpisodeNumber>
+  <FirstAired>1964-02-25</FirstAired>
+  <GuestStars>|Edmond O'Brien|Maggie McNamara|Marta Kristen|Larry Storch|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>021</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194714</id>
+  <Combined_episodenumber>22</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Last of the Strongmen</EpisodeName>
+  <EpisodeNumber>22</EpisodeNumber>
+  <FirstAired>1964-03-03</FirstAired>
+  <GuestStars>|Red Buttons|Bruce Dern|Walter Brooke|John Dennis|Billy Curtis|Red Buttons|Marianna Hill|Bruce Dern|Marianna Hill|Bernie Hamilton|Nick Wolcuff|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>023</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194715</id>
+  <Combined_episodenumber>23</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Night the Monkey Died</EpisodeName>
+  <EpisodeNumber>23</EpisodeNumber>
+  <FirstAired>1964-03-10</FirstAired>
+  <GuestStars>|Yvonne DeCarlo|Martin Landau|Barbara Bain|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>024</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194716</id>
+  <Combined_episodenumber>24</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Of Blood, Sawdust, and a Bucket of Tears</EpisodeName>
+  <EpisodeNumber>24</EpisodeNumber>
+  <FirstAired>1964-03-17</FirstAired>
+  <GuestStars>|Arthur O'Connell|Julie Newmar|Henry Beckman|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>022</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194717</id>
+  <Combined_episodenumber>25</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Rosetta</EpisodeName>
+  <EpisodeNumber>25</EpisodeNumber>
+  <FirstAired>1964-03-24</FirstAired>
+  <GuestStars>|Dwayne Hickman|Annette Funicello|Cecil Kellaway|William Demerest|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>026</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194718</id>
+  <Combined_episodenumber>26</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>The Glorious Days of the Used to Be</EpisodeName>
+  <EpisodeNumber>26</EpisodeNumber>
+  <FirstAired>1964-03-31</FirstAired>
+  <GuestStars>|Betty Hutton|Don Ameche|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>025</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194719</id>
+  <Combined_episodenumber>27</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Love the Giver</EpisodeName>
+  <EpisodeNumber>27</EpisodeNumber>
+  <FirstAired>1964-04-07</FirstAired>
+  <GuestStars>|James Whitmore|Brandon de Wilde|Susan Silo|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>027</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194720</id>
+  <Combined_episodenumber>28</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>This Train Don't Stop Till It Gets There</EpisodeName>
+  <EpisodeNumber>28</EpisodeNumber>
+  <FirstAired>1964-04-14</FirstAired>
+  <GuestStars>|Agnes Moorehead|Andrew Duggan|Spring Byington|Rory Calhoun|J. Pat O'Malley|Sheree North|Sally Kellerman|Deborah Walley|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>028</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194721</id>
+  <Combined_episodenumber>29</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>There Are No Problems, Only Opportunities</EpisodeName>
+  <EpisodeNumber>29</EpisodeNumber>
+  <FirstAired>1964-04-21</FirstAired>
+  <GuestStars>|Barry Nelson|Joanna Moore|Edgar Bergen|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode>029</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+<Episode>
+  <id>194722</id>
+  <Combined_episodenumber>30</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>|Jack Palance|</Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>You're All Right, Ivy</EpisodeName>
+  <EpisodeNumber>30</EpisodeNumber>
+  <FirstAired>1964-04-28</FirstAired>
+  <GuestStars>|Buster Keaton|Barbara Pepper|Joe Zboran|Joan Blondell|Buster Keaton|Joe E. Brown|Lynn Loring|Ted Bessell|Joe E. Brown|Joe Weston|Larry Montaigne|Lynn Loring|Ted Bessell|Betsy Jones-Moreland|Joan Blondell|</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Joan Blondell, Buster Keaton and Joe E. Brown portray a trio of veteran performers, now reduced to handling menial chores around the circus. Slate's most pressing problem, however, is an uninterested young man who's been turned over to him to &quot;&quot;learn the business.&quot;&quot; Over this barrier of gloom climbs spirited and ambitious Ivy Hatch, who has run away from home to join the circus. Ivy has one drawback: She doesn't have any special talent.</Overview>
+  <ProductionCode>5108-30R</ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>|William Wood|</Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1163101692</lastupdated>
+  <seasonid>10416</seasonid>
+  <seriesid>76442</seriesid>
+</Episode>
+</Data>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>180731</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating>TV-G</ContentRating>
+    <FirstAired></FirstAired>
+    <Genre>|Documentary|</Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network>Animal Planet</Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>25</Runtime>
+    <SeriesID>75732</SeriesID>
+    <SeriesName>Dark Days In Monkey City</SeriesName>
+    <Status>Ended</Status>
+    <added>2010-08-05 11:41:56</added>
+    <addedBy>2828</addedBy>
+    <banner></banner>
+    <fanart></fanart>
+    <lastupdated>1281033903</lastupdated>
+    <poster></poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

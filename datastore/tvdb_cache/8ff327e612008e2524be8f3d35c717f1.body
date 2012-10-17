@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>248950</id>
+    <Actors>|Amanda Peet|Jeffrey Tambor|David Walton|Joey King|Margo Harshman|Matt Letscher|</Actors>
+    <Airs_DayOfWeek>Wednesday</Airs_DayOfWeek>
+    <Airs_Time>9:00 PM</Airs_Time>
+    <ContentRating>TV-14</ContentRating>
+    <FirstAired>2012-03-21</FirstAired>
+    <Genre>|Comedy|</Genre>
+    <IMDB_ID>tt1839417</IMDB_ID>
+    <Language>en</Language>
+    <Network>NBC</Network>
+    <NetworkID></NetworkID>
+    <Overview>A single-camera romantic comedy about a recently divorced “type A” single mother (Peet) who tries hard not to fall for the sexy “surfer-dude” contractor she hires to re-do her kitchen.</Overview>
+    <Rating>8.0</Rating>
+    <RatingCount>2</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID>http://www.tv.com/shows/bent-2011/</SeriesID>
+    <SeriesName>Bent</SeriesName>
+    <Status>Ended</Status>
+    <added>2011-05-22 06:35:40</added>
+    <addedBy>235881</addedBy>
+    <banner>graphical/248950-g4.jpg</banner>
+    <fanart>fanart/original/248950-3.jpg</fanart>
+    <lastupdated>1340168102</lastupdated>
+    <poster>posters/248950-3.jpg</poster>
+    <zap2it_id>EP01419133</zap2it_id>
+  </Series>
+</Data>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>78331</id>
+    <Actors>|John Hart|Lon Chaney Jr.|</Actors>
+    <Airs_DayOfWeek>Wednesday</Airs_DayOfWeek>
+    <Airs_Time>19:00</Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>1957-04-03</FirstAired>
+    <Genre>|Drama|</Genre>
+    <IMDB_ID>tt0050026</IMDB_ID>
+    <Language>en</Language>
+    <Network>Syndicated</Network>
+    <NetworkID></NetworkID>
+    <Overview>Hawkeye and the Last of the Mohicans was set in New York's Hudson Valley during the French and Indian war in the 1750's and depicted the adventures of Hawkeye and his Indian blood brother Chingachgook, the last member of the Mohican tribe. The series based on stories by James Fenimore Cooper.</Overview>
+    <Rating>8.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID>8559</SeriesID>
+    <SeriesName>Hawkeye and the Last of the Mohicans</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner></banner>
+    <fanart>fanart/original/78331-1.jpg</fanart>
+    <lastupdated>1297972904</lastupdated>
+    <poster>posters/78331-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

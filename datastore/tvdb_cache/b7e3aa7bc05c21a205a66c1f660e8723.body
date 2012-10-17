@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>256493</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating>TV-G</ContentRating>
+    <FirstAired></FirstAired>
+    <Genre>|Documentary|</Genre>
+    <IMDB_ID>tt1747305</IMDB_ID>
+    <Language>en</Language>
+    <Network>PBS</Network>
+    <NetworkID></NetworkID>
+    <Overview>While chronicling Feinstein’s fabulous but exhausting life on the road—150 performances a year, all over the country—Michael Feinstein’s American Songbook delves into cultural history to reveal how popular music reflected different eras in the 20th century and shaped the style, attitude and self-image of America for more than a century.</Overview>
+    <Rating>9.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Michael Feinstein's American Songbook</SeriesName>
+    <Status>Continuing</Status>
+    <added>2012-02-26 22:10:17</added>
+    <addedBy>347160</addedBy>
+    <banner></banner>
+    <fanart>fanart/original/256493-1.jpg</fanart>
+    <lastupdated>1330324645</lastupdated>
+    <poster></poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

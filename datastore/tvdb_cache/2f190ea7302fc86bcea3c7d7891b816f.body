@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>253979</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>1996-11-24</FirstAired>
+    <Genre></Genre>
+    <IMDB_ID>tt0118308</IMDB_ID>
+    <Language>en</Language>
+    <Network>ITV</Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>105</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Emma</SeriesName>
+    <Status>Ended</Status>
+    <added>2011-11-28 12:04:13</added>
+    <addedBy>121441</addedBy>
+    <banner></banner>
+    <fanart></fanart>
+    <lastupdated>1345225776</lastupdated>
+    <poster></poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>252201</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>2007-01-01</FirstAired>
+    <Genre>|Documentary|</Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network>Discovery</Network>
+    <NetworkID></NetworkID>
+    <Overview>From the Ice Age and Woolly Mammoth to the Oceans and Rainforests, Discovery looks at all that is incredible about our World. See the world's greatest rivers, mightiest mountains, hidden caves and caverns and vast deserts. This collection is a fascinating exploration of what it takes to exist in some of the world's most unforgiving landscapes.</Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>The Natural World</SeriesName>
+    <Status>Ended</Status>
+    <added>2011-09-26 07:23:48</added>
+    <addedBy>302161</addedBy>
+    <banner>graphical/252201-g.jpg</banner>
+    <fanart></fanart>
+    <lastupdated>1330101143</lastupdated>
+    <poster></poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

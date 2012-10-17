@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>159191</id>
+  <Actors>|Moisés Torner|Guillem d'Efack|Agueda Font|</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>1985-12-29</FirstAired>
+  <Genre>|Science-Fiction|</Genre>
+  <IMDB_ID>0449737</IMDB_ID>
+  <Language>en</Language>
+  <Network></Network>
+  <NetworkID></NetworkID>
+  <Overview></Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>30</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Manuscript of the Second Source</SeriesName>
+  <Status>Ended</Status>
+  <added>2010-04-25 04:12:24</added>
+  <addedBy>154071</addedBy>
+  <banner>graphical/159191-g.jpg</banner>
+  <fanart></fanart>
+  <lastupdated>1272281642</lastupdated>
+  <poster>posters/159191-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>2126261</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ricart Reguant</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1985-12-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>0449737</IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Xesc Barceló (quionista), Manuel de Pedrolo (guion,novela)</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/159191/2126261.jpg</filename>
+  <lastupdated>1272196904</lastupdated>
+  <seasonid>236701</seasonid>
+  <seriesid>159191</seriesid>
+</Episode>
+<Episode>
+  <id>2126271</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ricart Reguant</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Xesc Barceló (quionista), Manuel de Pedrolo (guion,novela)</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/159191/2126271.jpg</filename>
+  <lastupdated>1272198202</lastupdated>
+  <seasonid>236701</seasonid>
+  <seriesid>159191</seriesid>
+</Episode>
+<Episode>
+  <id>2126281</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ricart Reguant</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Xesc Barceló (quionista), Manuel de Pedrolo (guion,novela)</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/159191/2126281.jpg</filename>
+  <lastupdated>1272198484</lastupdated>
+  <seasonid>236701</seasonid>
+  <seriesid>159191</seriesid>
+</Episode>
+<Episode>
+  <id>2126321</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ricart Reguant</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Xesc Barceló (quionista), Manuel de Pedrolo (guion,novela)</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/159191/2126321.jpg</filename>
+  <lastupdated>1272222257</lastupdated>
+  <seasonid>236701</seasonid>
+  <seriesid>159191</seriesid>
+</Episode>
+<Episode>
+  <id>2126331</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ricart Reguant</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Xesc Barceló (quionista), Manuel de Pedrolo (guion,novela)</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/159191/2126331.jpg</filename>
+  <lastupdated>1272221829</lastupdated>
+  <seasonid>236701</seasonid>
+  <seriesid>159191</seriesid>
+</Episode>
+<Episode>
+  <id>2126341</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ricart Reguant</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Xesc Barceló (quionista), Manuel de Pedrolo (guion,novela)</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/159191/2126341.jpg</filename>
+  <lastupdated>1272221925</lastupdated>
+  <seasonid>236701</seasonid>
+  <seriesid>159191</seriesid>
+</Episode>
+<Episode>
+  <id>2126361</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ricart Reguant</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName></EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Xesc Barceló (quionista), Manuel de Pedrolo (guion,novela)</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/159191/2126361.jpg</filename>
+  <lastupdated>1272222192</lastupdated>
+  <seasonid>236701</seasonid>
+  <seriesid>159191</seriesid>
+</Episode>
+</Data>

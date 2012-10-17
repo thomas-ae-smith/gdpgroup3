@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>112501</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating>TV-14</ContentRating>
+  <FirstAired>1998-08-25</FirstAired>
+  <Genre>|Animation|Science-Fiction|</Genre>
+  <IMDB_ID>tt0346226</IMDB_ID>
+  <Language>en</Language>
+  <Network></Network>
+  <NetworkID></NetworkID>
+  <Overview>Sent to jail after being accused of murdering Getter Robo creator Dr. Saotome, Ryoma Nagare must once again team up with his former comrades and pilot Getter Robo when Saotome returns from the dead and threatens humanity by unleashing his greatest creation - the Shin Dragon. Their efforts, however, are in vain as they fail to stop a nuclear warhead from hitting Shin Dragon, resulting in a massive Getter Ray contamination that wipes out 99% of the planet's population. Thirteen years after this great catastrophe, mankind continues to fight for survival against the Invaders. Out of the remains of the nuclear blast comes Shin Getter, piloted by the artificial human Go. With remnants of the Japanese military by his side, Go - along with co-pilots Kei and Gai - must use Shin Getter to exterminate the Invaders once and for all.</Overview>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <Runtime>25</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Getter Robo: Armageddon</SeriesName>
+  <Status>Ended</Status>
+  <added>2009-09-06 12:12:00</added>
+  <addedBy>67391</addedBy>
+  <banner>graphical/112501-g.jpg</banner>
+  <fanart>fanart/original/112501-2.jpg</fanart>
+  <lastupdated>1317662446</lastupdated>
+  <poster>posters/112501-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>1054481</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>From Beyond the Grave</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>1998-08-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/112501/1054481.jpg</filename>
+  <lastupdated>1317556872</lastupdated>
+  <seasonid>114861</seasonid>
+  <seriesid>112501</seriesid>
+</Episode>
+<Episode>
+  <id>1054491</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Shin Dragon: God or Devil?</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>1998-11-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/112501/1054491.jpg</filename>
+  <lastupdated>1317556905</lastupdated>
+  <seasonid>114861</seasonid>
+  <seriesid>112501</seriesid>
+</Episode>
+<Episode>
+  <id>1054501</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Goodbye, Getters!</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>1998-11-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/112501/1054501.jpg</filename>
+  <lastupdated>1317556933</lastupdated>
+  <seasonid>114861</seasonid>
+  <seriesid>112501</seriesid>
+</Episode>
+<Episode>
+  <id>1054511</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>After the Blast</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>1998-12-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/112501/1054511.jpg</filename>
+  <lastupdated>1317557063</lastupdated>
+  <seasonid>114861</seasonid>
+  <seriesid>112501</seriesid>
+</Episode>
+<Episode>
+  <id>1054521</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The New Generation</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>1998-12-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/112501/1054521.jpg</filename>
+  <lastupdated>1317557091</lastupdated>
+  <seasonid>114861</seasonid>
+  <seriesid>112501</seriesid>
+</Episode>
+<Episode>
+  <id>1054531</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Awful Truth</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>1999-01-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/112501/1054531.jpg</filename>
+  <lastupdated>1317557113</lastupdated>
+  <seasonid>114861</seasonid>
+  <seriesid>112501</seriesid>
+</Episode>
+<Episode>
+  <id>1054541</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Into the Dragon</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>1999-01-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/112501/1054541.jpg</filename>
+  <lastupdated>1317557137</lastupdated>
+  <seasonid>114861</seasonid>
+  <seriesid>112501</seriesid>
+</Episode>
+<Episode>
+  <id>1054551</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Blood and Ice</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>1999-02-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/112501/1054551.jpg</filename>
+  <lastupdated>1317557160</lastupdated>
+  <seasonid>114861</seasonid>
+  <seriesid>112501</seriesid>
+</Episode>
+<Episode>
+  <id>1054561</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Battleground: Manhattan</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>1999-02-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/112501/1054561.jpg</filename>
+  <lastupdated>1317557181</lastupdated>
+  <seasonid>114861</seasonid>
+  <seriesid>112501</seriesid>
+</Episode>
+<Episode>
+  <id>1054571</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>War in the Pacific</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>1999-03-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/112501/1054571.jpg</filename>
+  <lastupdated>1317557201</lastupdated>
+  <seasonid>114861</seasonid>
+  <seriesid>112501</seriesid>
+</Episode>
+<Episode>
+  <id>1054581</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Overload!</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>1999-03-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/112501/1054581.jpg</filename>
+  <lastupdated>1317557222</lastupdated>
+  <seasonid>114861</seasonid>
+  <seriesid>112501</seriesid>
+</Episode>
+<Episode>
+  <id>1054591</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Help from the Stars</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>1999-05-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/112501/1054591.jpg</filename>
+  <lastupdated>1317557241</lastupdated>
+  <seasonid>114861</seasonid>
+  <seriesid>112501</seriesid>
+</Episode>
+<Episode>
+  <id>1054601</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Evolution's End</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>1999-05-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/112501/1054601.jpg</filename>
+  <lastupdated>1317557286</lastupdated>
+  <seasonid>114861</seasonid>
+  <seriesid>112501</seriesid>
+</Episode>
+</Data>

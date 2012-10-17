@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>226111</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek>Thursday</Airs_DayOfWeek>
+    <Airs_Time>10:00 PM</Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>2006-07-06</FirstAired>
+    <Genre>|Documentary|Drama|</Genre>
+    <IMDB_ID>tt0805945</IMDB_ID>
+    <Language>en</Language>
+    <Network>Discovery</Network>
+    <NetworkID></NetworkID>
+    <Overview>Sensing Murder is the television series in the United States, broadcasted on the Discovery Channel, in which alleged psychics are asked to act as psychic detectives to help solve famous unsolved murder cases. The psychics have not managed to solve any of the cases, although they have uncovered facts that only police knew about. They have in some cases provided actual names of persons related to the area the crime was committed to police, names of persons confirmed by serving or ex-serving police officers to have existed and resided in close proximity to locations of crimes around the time they were committed.</Overview>
+    <Rating>7.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Discovery Channel - Sensing Murder</SeriesName>
+    <Status>Ended</Status>
+    <added>2011-01-28 03:50:51</added>
+    <addedBy>274641</addedBy>
+    <banner></banner>
+    <fanart>fanart/original/226111-1.jpg</fanart>
+    <lastupdated>1344370008</lastupdated>
+    <poster>posters/226111-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

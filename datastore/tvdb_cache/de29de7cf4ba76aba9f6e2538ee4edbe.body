@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>80949</id>
+    <Actors>|Anders Baasmo C|Edward Tobia Schultheiss|Kyrre Hellum|</Actors>
+    <Airs_DayOfWeek>Monday</Airs_DayOfWeek>
+    <Airs_Time>9:35pm</Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>2005-02-14</FirstAired>
+    <Genre>|Action and Adventure|Mini-Series|</Genre>
+    <IMDB_ID>tt0450940</IMDB_ID>
+    <Language>en</Language>
+    <Network>TV 2</Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating>9.0</Rating>
+    <RatingCount>3</RatingCount>
+    <Runtime>50</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Ran</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>text/80949.jpg</banner>
+    <fanart>fanart/original/80949-1.jpg</fanart>
+    <lastupdated>1327156135</lastupdated>
+    <poster>posters/80949-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

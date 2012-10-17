@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>78435</id>
+    <Actors>|Charles Lawrence|Gus Wickie|Jack Mercer|Jackson Beck|Mae Questel|Margie Hines|William Costello|William Penell|</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating>TV-G</ContentRating>
+    <FirstAired>1933-07-01</FirstAired>
+    <Genre>|Animation|</Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network></Network>
+    <NetworkID></NetworkID>
+    <Overview>Popeye started out as a character in the daily comic strip, Thimble Theatre in 1929. In the early 30's Max and Dave Fleischer made him the star of his own cartoon. Bluto, Popeye's rival, will do anything it takes to get Olive Oyl, Popeye's girlfriend. Popeye is always willing to get her out of trouble. </Overview>
+    <Rating>7.5</Rating>
+    <RatingCount>2</RatingCount>
+    <Runtime>5</Runtime>
+    <SeriesID>8921</SeriesID>
+    <SeriesName>Popeye</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/78435-g2.jpg</banner>
+    <fanart>fanart/original/78435-1.jpg</fanart>
+    <lastupdated>1345059203</lastupdated>
+    <poster>posters/78435-1.jpg</poster>
+    <zap2it_id>SH019825</zap2it_id>
+  </Series>
+</Data>

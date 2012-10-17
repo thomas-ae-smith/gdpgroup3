@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>117761</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek>Tuesday</Airs_DayOfWeek>
+    <Airs_Time>22:00</Airs_Time>
+    <ContentRating>TV-14</ContentRating>
+    <FirstAired></FirstAired>
+    <Genre>|Documentary|</Genre>
+    <IMDB_ID>tt1348027</IMDB_ID>
+    <Language>en</Language>
+    <Network>truTV</Network>
+    <NetworkID></NetworkID>
+    <Overview>Go behind the scenes of Rehab, the hottest party in the world's sexiest city. Get an inside look at how security and staff indulge big-spending customers but still keep the chaos under control.</Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Rehab: Party at the Hard Rock Hotel</SeriesName>
+    <Status></Status>
+    <added>2009-10-08 07:52:47</added>
+    <addedBy>4103</addedBy>
+    <banner>graphical/117761-g.jpg</banner>
+    <fanart></fanart>
+    <lastupdated>1327951304</lastupdated>
+    <poster></poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

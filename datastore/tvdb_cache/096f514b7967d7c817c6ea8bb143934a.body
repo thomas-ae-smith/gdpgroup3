@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>257431</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek>Saturday</Airs_DayOfWeek>
+    <Airs_Time>21.00</Airs_Time>
+    <ContentRating>TV-G</ContentRating>
+    <FirstAired>2009-04-11</FirstAired>
+    <Genre>|Drama|</Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network>TVBS</Network>
+    <NetworkID></NetworkID>
+    <Overview>Pi Zi and Ying Xiong are two cops who are as different as day and night. One does nothing except for drinking coffee and living a luxurious lifestyle while waiting for information from dubious sources to crack his cases. Another believes law and justice are the pillars of society and is constantly on the street catching criminals… a little overzealously for his superior’s liking. When a case brought these two top crime solvers together, sparks flied and a little light peeked into this dark city where the nation’s President is on friendly terms with the local mafia and twins kill people while drinking milkshake.</Overview>
+    <Rating>10.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Black and White</SeriesName>
+    <Status>Ended</Status>
+    <added>2012-03-21 09:43:45</added>
+    <addedBy>280711</addedBy>
+    <banner>graphical/257431-g.jpg</banner>
+    <fanart>fanart/original/257431-2.jpg</fanart>
+    <lastupdated>1332502396</lastupdated>
+    <poster>posters/257431-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

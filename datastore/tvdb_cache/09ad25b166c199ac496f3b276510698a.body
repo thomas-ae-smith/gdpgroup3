@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+<Series>
+<seriesid>80344</seriesid>
+<language>en</language>
+<SeriesName>Terminator: The Sarah Connor Chronicles</SeriesName>
+<banner>graphical/80344-g11.jpg</banner>
+<Overview>The series picks up four years after the events of Terminator 2: Judgment Day with John and Sarah Connor hiding from the government. After two years in one place Sarah decides they need a change of scenery. Cameron Phillips, a reprogrammed Terminator sent to protect John, informs them that Judgment Day was not stopped and will take place in 2011.</Overview>
+<FirstAired>2008-01-13</FirstAired>
+<IMDB_ID>tt0851851</IMDB_ID>
+<zap2it_id>SH931007</zap2it_id>
+<id>80344</id>
+</Series>
+<Series>
+<seriesid>108241</seriesid>
+<language>en</language>
+<SeriesName>Terminator Salvation: The Machinima Series</SeriesName>
+<banner>graphical/108241-g.jpg</banner>
+<Overview>In the year 2016, Resistance fighter Blair Williams embarks on a deadly mission to search for a threat that is weakening humanity’s defense against the self-aware artificial intelligence called Skynet and their lethal Terminators.</Overview>
+<FirstAired>2009-05-18</FirstAired>
+<IMDB_ID>tt1446633</IMDB_ID>
+<id>108241</id>
+</Series>
+</Data>

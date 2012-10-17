@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>83266</id>
+  <Actors>|Dennis Hopper|Jocko Sims|Ross McCall|Clare Carey|Brian Tee|Arlene Tur|Luis Chavez|Nick E. Tarabay|Moran Atias|</Actors>
+  <Airs_DayOfWeek>Friday</Airs_DayOfWeek>
+  <Airs_Time>10 PM</Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>2008-10-17</FirstAired>
+  <Genre>|Drama|</Genre>
+  <IMDB_ID>tt1178636</IMDB_ID>
+  <Language>en</Language>
+  <Network>Starz!</Network>
+  <NetworkID></NetworkID>
+  <Overview>This drama, developed by Lionsgate for Starz, is a small screen version of the Paul Haggis helmed feature about race relations in LA.</Overview>
+  <Rating>7.4</Rating>
+  <RatingCount>5</RatingCount>
+  <Runtime>50</Runtime>
+  <SeriesID>22528</SeriesID>
+  <SeriesName>Crash</SeriesName>
+  <Status>Ended</Status>
+  <added>2008-10-02 15:56:10</added>
+  <addedBy>830</addedBy>
+  <banner>graphical/83266-g2.jpg</banner>
+  <fanart>fanart/original/83266-1.jpg</fanart>
+  <lastupdated>1330980184</lastupdated>
+  <poster>posters/83266-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>393101</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Sanford Bookstaver</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Crash</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2008-10-17</FirstAired>
+  <GuestStars>Michael Fairman|John Walcutt|Emily Foxler|Chris Maher|Cynthia Ruffin|Tom Wright|Kelvin Han Yee|Loren Hayes|D.B. Sweeney</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Premiere. Axel investigates a K-Town murder. Officers Kenny and Bebe collide with a mysterious woman. Ben (Dennis Hopper) hires a limo driver from South Central. And Christine insists that her father move in.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/393101.jpg</filename>
+  <lastupdated>1324151744</lastupdated>
+  <seasonid>35733</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>393102</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Robert Moresco</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Doctor Is In</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2008-10-17</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Christine and Peter argue about the remodel of the bathroom, while Lou complains about his nurse. Anthony can’t quite understand Ben’s unusual friendship with the doctor. And Axel’s investigation gets complicated, as he takes steps to insure that Eddie doesn’t share his knowledge of the K-Town murders.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/393102.jpg</filename>
+  <lastupdated>1324151778</lastupdated>
+  <seasonid>35733</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>393103</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Robert Moresco</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Panic</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2008-10-24</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The cops investigate a shooting of one of their own. Christine is taken with her new architect. Ben gives Anthony a shot at the big time. And a young Guatemalan man begins his perilous journey to the U.S.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/393103.jpg</filename>
+  <lastupdated>1324151804</lastupdated>
+  <seasonid>35733</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>393104</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Robert Moresco</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Railroaded</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2008-10-31</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ben's doctor takes a tumble, but Eddie turns up to help. Anthony samples the show business lifestyle. Kenny's obsession affects his marriage. And Christine wonders if she's taken on too much. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>5.3</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/393104.jpg</filename>
+  <lastupdated>1324151828</lastupdated>
+  <seasonid>35733</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>403522</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Your Ass Belongs to the Gypsies</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2008-11-07</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A wildfire rages near Peter's failing development. Kenny digs a deeper hole, bending the law to make a problem go away. And Ben's life takes an unexpected and traumatic turn.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/403522.jpg</filename>
+  <lastupdated>1324151868</lastupdated>
+  <seasonid>35733</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>403523</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Clusterfuck</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2008-11-14</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Megan sneaks out with Charles, and Christine and Peter have a blazing row. Annoyed with Ben, Anthony hooks up with an old gang buddy. And Kenny and Bebe interrupt a hold-up at Roger's barbershop. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/403523.jpg</filename>
+  <lastupdated>1324151897</lastupdated>
+  <seasonid>35733</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>403524</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Los Muertos</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2008-11-21</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ben makes a reluctant Anthony drive him deep into the desert to see his shaman. Cesar takes his first steps on American soil, only to be faced with relentless hunger, thirst and endless desert.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/403524.jpg</filename>
+  <lastupdated>1324151928</lastupdated>
+  <seasonid>35733</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>403525</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Three Men and a Bebe</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2008-12-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Cesar considers his past and the dangerous journey that brought him to Los Angeles. Amy and Kenny's marriage takes a turn for the worse, making Kenny wonder why he ever pursued Inez.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/403525.jpg</filename>
+  <lastupdated>1324151954</lastupdated>
+  <seasonid>35733</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>403526</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Pissing in the SandBox</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2008-12-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ben wants to take his company back from his daughter. A new detective causes a few upsets at the precinct. And when Eddie helps a Korean man, he finds a young girl in desperate trouble. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/403526.jpg</filename>
+  <lastupdated>1324151986</lastupdated>
+  <seasonid>35733</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>416203</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Future is Free</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2008-12-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Cesar gets a job in a car wash, while Christine learns more about Peter's departure. A K-Town rapist is questioned, Jules gives Ben a challenge, and Kenny tries to makes amends with Amy.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/416203.jpg</filename>
+  <lastupdated>1324152019</lastupdated>
+  <seasonid>35733</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>418350</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>F-36, Sprint Left, T-4</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>2008-12-26</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Kenny and Amy begin counseling. Eddie runs into more trouble as an EMT. Ben hires an MBA graduate to help him with new ideas. And Cooper thinks he has Axel right where he wants him.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.7</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/418350.jpg</filename>
+  <lastupdated>1324152053</lastupdated>
+  <seasonid>35733</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>418351</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Ring Dings</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>2009-01-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Doubts are raised in the precinct when Axel is questioned about the K-Town shootings. Kenny is left holding the kids for once. And Ben learns some disturbing news about his former business partner.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/418351.jpg</filename>
+  <lastupdated>1324152080</lastupdated>
+  <seasonid>35733</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>418352</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>The Pain Won't Stop</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>2009-01-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Anthony and Ben visit Ben's old partner, while Eddie confronts Mr. Park. Bebe joins the search for Axel, Christine tries to re-enter the job market, and Inez crosses the line with Kenny.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/418352.jpg</filename>
+  <lastupdated>1324152109</lastupdated>
+  <seasonid>35733</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>806941</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>You Set the Scene</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2009-09-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Former music mogul Ben Cendars returns to L.A. from a year's stint in rehab. Billionaire entrepreneur Seth Blanchard plans on bringing L.A. an NFL football team.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/806941.jpg</filename>
+  <lastupdated>1324152280</lastupdated>
+  <seasonid>83511</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>1124441</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Andrew Bernstein</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Always See Your Face</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2009-09-25</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Seth enlists security guard Kenny Battaglia on his quest to discover the meaning of his bizarre visions. Bo Olinville gets offered a position coaching Tyler.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/1124441.jpg</filename>
+  <lastupdated>1324152312</lastupdated>
+  <seasonid>83511</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>1124451</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Stefan Schwartz</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>The World's A Mess, It's In My Kiss</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2009-10-02</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ben’s investigation into his daughter’s murder leads to a shocking source for black-market surveillance tapes. Inez and Jimmy pay off Jimmy’s gambling debts.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/1124451.jpg</filename>
+  <lastupdated>1324152340</lastupdated>
+  <seasonid>83511</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>1124461</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Stefan Schwartz</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Can't Explain</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2009-10-09</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ben and Anthony visit the athletic club where Cassie was murdered, but are dissuaded from investigating further. Eddie ridicules advice Bo gives Tyler, which prompts Bo to prove his macho prowess. </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/1124461.jpg</filename>
+  <lastupdated>1324152359</lastupdated>
+  <seasonid>83511</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>1176751</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Bill Eagles</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>You, I'll Be Following</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2009-10-16</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Seth moves into an eco-friendly loft where he announces a dramatic venture for the future betterment of Los Angeles. Kenny strikes up a friendship with Tess, who runs a homeless center.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/1176751.jpg</filename>
+  <lastupdated>1324152386</lastupdated>
+  <seasonid>83511</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>1176761</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Vincent Misiano</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>No Matter What You Do </EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2009-10-30</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ben visits his ex-wife (Peggy Lipton) and her husband (Keith Carradine) and stumbles into a crisis of desperation. Inez is romanced by a new man, while Jimmy ends up in a violent conflict.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/1176761.jpg</filename>
+  <lastupdated>1324152413</lastupdated>
+  <seasonid>83511</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>1274781</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>John Behring</Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Johnny Hit and Run Pauline</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2009-11-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Bo explodes as Wendy pushes him to admit he wants to sell the hobby shop. Inez's new man, a rich Englishman, takes her to London on a romantic interlude. Kenny takes Tess on a date.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer>Adam Levy</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/1274781.jpg</filename>
+  <lastupdated>1324152440</lastupdated>
+  <seasonid>83511</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>1302411</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Lovers In Captivity</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired>2009-11-13</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Seth gets a visit from a televangelist who wants to join forces. Ben rebuilds his relationship with Suzy as he continues to look for a murderer. Wendy is jealous of Bo's relationship with Lily.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/1302411.jpg</filename>
+  <lastupdated>1324152514</lastupdated>
+  <seasonid>83511</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>1316371</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Endangered Species</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired>2009-11-20</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ben Cendars (Dennis Hopper) and Anthony Adams (Jocko Sims) track down coke-dealer Roxanne Thigpen (Tania Raymonde), who was close friends with Cassie, and Anthony shares his own disappointments with Ben.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/1316371.jpg</filename>
+  <lastupdated>1324152545</lastupdated>
+  <seasonid>83511</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>1348031</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Master of Puppets</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2009-11-27</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ben and Anthony force Roxanne into withdrawal with the hope that she'll disclose more about Cassie's death. Seth mounts a town hall event to muster support for his homeless project.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>5.7</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/1348031.jpg</filename>
+  <lastupdated>1324152587</lastupdated>
+  <seasonid>83511</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>1358781</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Calm Like a Bomb</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired>2009-12-04</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Seth grows more convinced that God is manifesting through him, although Kenny becomes more doubtful of the illusions. Inez meets a Hollywood director who holds out the promise of a new career.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/1358781.jpg</filename>
+  <lastupdated>1324152618</lastupdated>
+  <seasonid>83511</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>1398601</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>All Alone Or ...</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired>2009-12-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Kenney and Maggie pressure Seth to agree to an operation for his brain tumor. Director Bauer Lermontov takes Inez to the Cinematheque's Moving Picture Ball to fast-track her acting career.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>5.7</Rating>
+  <RatingCount>3</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/1398601.jpg</filename>
+  <lastupdated>1324152653</lastupdated>
+  <seasonid>83511</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+<Episode>
+  <id>1420151</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Los Angeles</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired>2009-12-18</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>A group of Charles Manson fanatics reveal what happened  to Ben's daughter; Seth has a party to celebrate his homeless city project; a Hollywood director offers Inez relationship advice; honors for Wendy's work in a project may be interrupted.                                       </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>6.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/83266/1420151.jpg</filename>
+  <lastupdated>1324152682</lastupdated>
+  <seasonid>83511</seasonid>
+  <seriesid>83266</seriesid>
+</Episode>
+</Data>

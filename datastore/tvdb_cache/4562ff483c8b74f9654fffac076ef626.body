@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>116201</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired></FirstAired>
+    <Genre></Genre>
+    <IMDB_ID></IMDB_ID>
+    <Language>en</Language>
+    <Network></Network>
+    <NetworkID></NetworkID>
+    <Overview></Overview>
+    <Rating></Rating>
+    <RatingCount>0</RatingCount>
+    <Runtime></Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Sierra Center Stage</SeriesName>
+    <Status></Status>
+    <added>2009-09-28 09:52:13</added>
+    <addedBy>7188</addedBy>
+    <banner>graphical/116201-g.jpg</banner>
+    <fanart></fanart>
+    <lastupdated>1254274972</lastupdated>
+    <poster></poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

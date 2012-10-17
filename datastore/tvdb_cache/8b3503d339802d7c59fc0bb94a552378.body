@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>252854</id>
+  <Actors>|Amy Huberman|Emun Elliott|Stephen Wight|</Actors>
+  <Airs_DayOfWeek>Monday</Airs_DayOfWeek>
+  <Airs_Time>9:30 pm</Airs_Time>
+  <ContentRating>TV-MA</ContentRating>
+  <FirstAired>2011-10-17</FirstAired>
+  <Genre>|Comedy|</Genre>
+  <IMDB_ID>tt2071322</IMDB_ID>
+  <Language>en</Language>
+  <Network>Comedy Central</Network>
+  <NetworkID></NetworkID>
+  <Overview>The series is focused around three friends, Alice, Mitch and Richie who return home from a night out celebrating Alice's birthday and end up having a Threesome, which results in Richie getting Alice pregnant. Instead of splitting up, the three friends decide to raise the baby as a trio.</Overview>
+  <Rating>7.3</Rating>
+  <RatingCount>3</RatingCount>
+  <Runtime>25</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Threesome</SeriesName>
+  <Status>Continuing</Status>
+  <added>2011-10-16 04:13:26</added>
+  <addedBy>268771</addedBy>
+  <banner>graphical/252854-g2.jpg</banner>
+  <fanart>fanart/original/252854-1.jpg</fanart>
+  <lastupdated>1350392980</lastupdated>
+  <poster>posters/252854-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4189243</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Catherine Morshead|Ian FitzGibbon</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Episode One</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2011-10-17</FirstAired>
+  <GuestStars>Lu Corfield</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Alice turns 30. The three have a drug-addled threesome. Alice gets pregnant. She and Mitch decide to get rid of it. Mitch changes his mind. Mitch and Richie race to stop Alice at the clinic. More happens but that would spoil it before you see it.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>4</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Tom MacRae</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/252854/4189243.jpg</filename>
+  <lastupdated>1331132121</lastupdated>
+  <seasonid>476581</seasonid>
+  <seriesid>252854</seriesid>
+</Episode>
+<Episode>
+  <id>4189731</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ian FitzGibbon</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Episode Two</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2011-10-17</FirstAired>
+  <GuestStars>Pauline McLynn|Amanda Rawnsley</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>And now our threesome have to figure out how to explain their unusually triangular relationship to the world. And most crucially – to Alice’s domineering and not entirely nice mother Lorraine (who is not fond of Mitch but adores Richie). But how to explain the threeway daddy-mummy-daddy set up? </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Tom MacRae</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/252854/4189731.jpg</filename>
+  <lastupdated>1331132201</lastupdated>
+  <seasonid>476581</seasonid>
+  <seriesid>252854</seriesid>
+</Episode>
+<Episode>
+  <id>4193550</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ian FitzGibbon</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Episode Three</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2011-10-24</FirstAired>
+  <GuestStars>Adam Garcia</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Alice, Mitch and Richie attend their first antenatal class. To everyone’s surprise Alice and Richie are hopeless and Mitch is an amazing proto-father. Alice and Richie go into panic mode about their suitability as future parents, and so Mitch entrusts them with a robot baby from the antenatal class to practice on. All they have to do is feed it, rock it, change it – and not totally destroy it.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Tom MacRae</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/252854/4193550.jpg</filename>
+  <lastupdated>1331132242</lastupdated>
+  <seasonid>476581</seasonid>
+  <seriesid>252854</seriesid>
+</Episode>
+<Episode>
+  <id>4193551</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ian FitzGibbon</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Episode Four</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2011-10-31</FirstAired>
+  <GuestStars>Travis Oliver|James Puddephatt|Ian FitzGibbon|Santam Bhogal</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Mitch still hasn’t got a job, and now his lack of funds is starting to become a problem. Alice needs reliable support more than anything right now – the full reality of what’s about to pop out of her in six months time is starting to hit home, and with the impending 12 Week Scan they’re actually going to get to see their baby for the first time. It’s time for Mitch to step up to the plate. Unfortunately for Mitch, he spectacularly fails to do so.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Tom MacRae</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/252854/4193551.jpg</filename>
+  <lastupdated>1331132317</lastupdated>
+  <seasonid>476581</seasonid>
+  <seriesid>252854</seriesid>
+</Episode>
+<Episode>
+  <id>4193552</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ian FitzGibbon</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Episode Five</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2011-11-07</FirstAired>
+  <GuestStars>Adam Garcia|Emma Handy</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>To Alice's amazement - Richie and Dave are now dating! Proper boyfriends and everything. With Richie's birthday approaching a day of fun, fun, fun is being planned. But when Dave reveals he has alternative plans for Richie, tensions arise between the friends as Alice and Mitch conspire to keep Richie to themselves.
+When plans backfire, Richie ends up leaving Alice and Mitch to spend the day with Dave, who unveils his own special birthday surprise. But that means Richie leaving Alice and Mitch on the night they've planned so hard for so long to make special. Who is Richie going to choose?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Tom MacRae</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/252854/4193552.jpg</filename>
+  <lastupdated>1331132360</lastupdated>
+  <seasonid>476581</seasonid>
+  <seriesid>252854</seriesid>
+</Episode>
+<Episode>
+  <id>4193553</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ian FitzGibbon</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Episode Six</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2011-11-14</FirstAired>
+  <GuestStars>Pauline McLynn|Joanna Roth|Paddy Navin|Gemma Whelan</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Alice, just a month from popping, has decided to throw a baby-shower, and so Lorraine (Alice's mum), Sue (Mitch's mum) and Jenny (Richie's mum) converge on the flat to deluge her with presents and attention. Alice in turn has taken to baking, not-swearing and dressing like a proper woman. Mitch and Richie are horrified.
+Mitch and Richie escape for the evening to a local bar, and run into Wendy; a ballsy, feisty, fabulous girl who reminds them very much of a pre-pregnancy Alice. Spending time with Wendy is wonderful, but it's like cheating on Alice.
+Mitch and Richie vow to call off the 'affair', but when Princess Lullaby Dreamtime - a nauseating baby shower gift - arrives in the flat, the combination of that, Alice and The Mothers are more than Mitch and Richie can bear. How long can they hold out before they're drawn back into Wendy's arms, and how will Alice react when the two women finally meet?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Tom MacRae</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/252854/4193553.jpg</filename>
+  <lastupdated>1331132404</lastupdated>
+  <seasonid>476581</seasonid>
+  <seriesid>252854</seriesid>
+</Episode>
+<Episode>
+  <id>4193554</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director>Ian FitzGibbon</Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Episode Seven</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2011-11-21</FirstAired>
+  <GuestStars>Pauline McLynn|Joanna Roth|Paddy Navin|Linda John Pierre|Adam Levy</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The threesome prepares for Alice's 'Final Push Party' with some questionable costume choices from the boys...</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>7.5</Rating>
+  <RatingCount>2</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer>Tom MacRae</Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/252854/4193554.jpg</filename>
+  <lastupdated>1331132480</lastupdated>
+  <seasonid>476581</seasonid>
+  <seriesid>252854</seriesid>
+</Episode>
+<Episode>
+  <id>4403081</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Back to School</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2012-10-01</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Mitch has decided it’s time to get a career, and fancies training as a teacher. The problem is he doesn’t have the grades to get into teacher training college, so has to go back to school to re-sit the exam. 
+
+Mitch finds himself in a classroom full of sixteen year olds, including bad-boy Chris who quickly leads Mitch astray. It’s up to Mitch’s naively optimistic young teacher and his ‘parents’ Alice and Richie to keep him on the straight and narrow, so that the student may yet become the teacher.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>8.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/252854/4403081.jpg</filename>
+  <lastupdated>1350342603</lastupdated>
+  <seasonid>501379</seasonid>
+  <seriesid>252854</seriesid>
+</Episode>
+<Episode>
+  <id>4403082</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Vacuum</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired>2012-10-08</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>It’s Richie’s first day back at work after paternity leave, and Mitch and Alice are worried they won’t be able to cope without him. Richie is more worried about his idiotic new PA Billy (Jonny Sweet). 
+
+After experiencing the First Day Back From Hell, Richie returns exhausted to the flat, only to get into an argument with Mitch for not appreciating his efforts as a domestic goddess. After the argument unexpectedly escalates into accidental violence, Richie discovers that only Billy can help undo the mess his home life has become.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/252854/4403082.jpg</filename>
+  <lastupdated>1350249939</lastupdated>
+  <seasonid>501379</seasonid>
+  <seriesid>252854</seriesid>
+</Episode>
+<Episode>
+  <id>4406912</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>1</EpImgFlag>
+  <EpisodeName>Alice's Friend</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired>2012-10-15</FirstAired>
+  <GuestStars>Robert Webb|Ruth Bradley</GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Alice is getting a little lonely but it doesn't take her long to meet mum-chum Julie. What dark secret is her useless husband Colin hiding?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/252854/4406912.jpg</filename>
+  <lastupdated>1350393046</lastupdated>
+  <seasonid>501379</seasonid>
+  <seriesid>252854</seriesid>
+</Episode>
+<Episode>
+  <id>4406913</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>TBC</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired>2012-10-22</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1348789567</lastupdated>
+  <seasonid>501379</seasonid>
+  <seriesid>252854</seriesid>
+</Episode>
+<Episode>
+  <id>4406914</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>TBC</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired>2012-10-29</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1348789592</lastupdated>
+  <seasonid>501379</seasonid>
+  <seriesid>252854</seriesid>
+</Episode>
+<Episode>
+  <id>4406915</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>TBC</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired>2012-11-05</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1348789613</lastupdated>
+  <seasonid>501379</seasonid>
+  <seriesid>252854</seriesid>
+</Episode>
+<Episode>
+  <id>4406916</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>2</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>TBC</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired>2012-11-12</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>2</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1348789639</lastupdated>
+  <seasonid>501379</seasonid>
+  <seriesid>252854</seriesid>
+</Episode>
+</Data>

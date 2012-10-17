@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>75134</id>
+    <Actors>|Roger Moore|</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating>TV-PG</ContentRating>
+    <FirstAired>1962-10-01</FirstAired>
+    <Genre>|Action and Adventure|</Genre>
+    <IMDB_ID>tt0055701</IMDB_ID>
+    <Language>en</Language>
+    <Network>ITV1</Network>
+    <NetworkID></NetworkID>
+    <Overview>Simon Templar is The Saint - adored by women, feared by his adversaries and a constant thorn in the side of police forces everywhere.  A smooth-talking adventurer, the Saint goes in where angels fear to tread.  Always where the action is, he courts danger with a smile, but his charm can sometimes be a lethal weapon. The Saint is always on a mission of mercy or intrigue, with a beautiful woman close at hand.  He's Sir Lancelot without armor.  A formidable enemy, an unwavering friend.    (distributed world-wide by ITC)</Overview>
+    <Rating>7.5</Rating>
+    <RatingCount>8</RatingCount>
+    <Runtime>60</Runtime>
+    <SeriesID>3049</SeriesID>
+    <SeriesName>The Saint</SeriesName>
+    <Status>Ended</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/3049-g.jpg</banner>
+    <fanart>fanart/original/75134-3.jpg</fanart>
+    <lastupdated>1342971924</lastupdated>
+    <poster>posters/75134-3.jpg</poster>
+    <zap2it_id>SH004386</zap2it_id>
+  </Series>
+</Data>
