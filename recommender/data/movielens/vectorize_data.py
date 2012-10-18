@@ -53,7 +53,7 @@ with open("ratings.dat", "rb") as RATINGS:
 			except KeyError:
 				pass
 
-tvdb = tvdb_api.Tvdb(cache="../../datastore/tvdb_cache")
+tvdb = tvdb_api.Tvdb(cache="../../../datastore/tvdb_cache")
 
 # Populate movies dict
 with open("movies.dat", "rb") as MOVIES:
