@@ -13,3 +13,27 @@ function output_json($content) {
 	echo json_encode($content);
 	exit;
 }
+
+function get_params($res, $type, $param_list) {
+	foreach ($param_list as $param => $default) {
+		switch ($type) {
+			case 'get':
+				$contents = $res->get($param);
+				break;
+			case 'post':
+				$contents = $res->post($param);
+                                break;
+			case 'put':
+				$contents = $res->put($param);
+                                break;
+			default:
+			case 'all':
+				$contents = $res->params($param);
+                                break;
+		}
+
+		$processed_params[$param] = is_null($contents) ? $default : $contents;
+	}
+
+	return $processed_params;
+}
