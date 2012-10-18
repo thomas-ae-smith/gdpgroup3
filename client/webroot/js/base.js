@@ -44,32 +44,59 @@ function htmlEscape(str) {
 
 
 	$(document).ready(function () {
-		var channels = y4.channels = {
-			"c4": new y4.Channel({ title: "Channel 4", url: "c4", icon: "img/ids/c4.svg" }),
-			"e4": new y4.Channel({ title: "E4", url: "e4", icon: "img/ids/e4.svg" }),
-			"m4": new y4.Channel({ title: "More4", url: "m4", icon: "img/ids/more4.svg" }),
-			"f4": new y4.Channel({ title: "Film4", url: "film4", icon: "img/ids/film4.svg" }),
-			"4music": new y4.Channel({ title: "4music", url: "4music", icon: "img/ids/4music.svg" }),
-			"stv": new y4.Channel({ title: "studentTV", url: "studentTV", icon: "img/ids/studenttv.svg" })
-		};
+		var channelData = [
+			{ id: "c4", title: "Channel 4", service: "your4", url: "c4.stream", icon: "img/ids/c4.svg" },
+			{ id: "e4", title: "E4", service: "your4", url: "e4.stream", icon: "img/ids/e4.svg" },
+			{ id: "m4", title: "More4", service: "your4", url: "m4.stream", icon: "img/ids/more4.svg" },
+			{ id: "f4", title: "Film4", service: "your4", url: "film4.stream", icon: "img/ids/film4.svg" },
+			{ id: "4music", title: "4music", service: "your4", url: "4music.stream", icon: "img/ids/4music.svg" },
+			{ id: "stv", title: "studentTV", service: "your4", url: "studentTV.stream", icon: "img/ids/studenttv.svg" }
+		];
+
+		var advertData = [
+			{ id: "guinness", type: "video", service: "vod", url: "ad-guinness.mp4" },
+			{ id: "gocompare", type: "video", service: "vod", url: "ad-gocompare.mp4" },
+			{ id: "justdance", type: "video", service: "vod", url: "ad-justdance.mp4" },
+			{ id: "stags", type: "still", url: "img/stags-promo.jpg", duration: 3000 },
+			{ id: "your4-sting", type: "still", url: "img/logo-frame.png", duration: 1000 }
+		];
+
+		var channels = _.map(channelData, function (channel) {
+			return new y4.Channel({
+				id: channel.id,
+				title: channel.title,
+				icon: channel.icon,
+				media: new y4.Video({
+					service: channel.service,
+					url: channel.url
+				})
+			});
+		});
+		
+		var adverts = _.map(advertData, function (advert) {
+			var media;
+			if (advert.type === "video") {
+				media = new y4.Video({ service: advert.service, url: advert.url });
+			} else if (advert.type === "still") {
+				media = new y4.Still({ url: advert.url, duration: advert.duration });
+			} else {
+				y4.error("Invalid advert type");
+			}
+			return new y4.Advert({
+				id: advert.id,
+				media: media,
+				overlay: null
+			});
+		})
+
 		var app = y4.app = new y4.App({
-			server: "152.78.144.19:1935/your4",
+			server: "152.78.144.19:1935",
 			channels: channels,
-			channelsOrdered: [channels["c4"], channels["e4"], channels["m4"], channels["f4"], channels["4music"], channels["stv"]]
+			adverts: adverts
 		});
 
-		app.on("start", function () {
-			var logoFrame = new y4.StillScene({ image: "img/logo-frame.png" });
-			app.setPlaylist([
-				{ scene: channels["c4"], duration: 5000 },
-				// Program break -> sponser message, c4 promo ad and channel sting should still be included
-				{ scene: logoFrame, duration: 2000 },
-				{ scene: new y4.StillScene({ text: "Some advert" }), duration: 2000 },
-				{ scene: new y4.StillScene({ text: "Another advert" }), duration: 2000 },
-				{ scene: new y4.StillScene({ text: "Yet another advert" }), duration: 2000 },
-				{ scene: channels["c4"] }
-			]);
-		});
+		//app.on("start", function () {
+		//});
 
 		$('#container').html("").append(app.render().el);
 	});

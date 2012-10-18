@@ -24,17 +24,15 @@
 			var that = this;
 			that.player.blackLayer.show();
 			that.player.videoLayer.set(scene).unmute();
-			that.player.blackLayer.hide();
-			setTimeout(function () {
-				that.player.blackLayer.hide();
-			}, 1500);
 
-			if (duration) {
-				setTimeout(function () {
-					that.player.videoLayer.mute().set(null);
-					that.player.blackLayer.show();
-				}, duration);
-			}
+			that.player.videoLayer.on("started", function () {
+				that.player.blackLayer.hide();
+			}).on("finished", function () {
+				that.player.blackLayer.show();
+				that.player.videoLayer.mute().set(null);
+			});
+
+			// that.videoLayer.setDuration???
 		},
 
 		setStillScene: function (scene, duration) {
@@ -42,11 +40,13 @@
 			that.player.blackLayer.show();
 			that.player.stillLayer.set(scene).show();
 
-			if (duration) {
+			that.player.stillLayer.on("loaded", function () {
+				that.player.blackLayer.hide();
 				setTimeout(function () {
+					that.player.blackLayer.show();
 					that.player.stillLayer.hide();
 				}, duration);
-			}
+			});
 
 		},
 
@@ -79,7 +79,7 @@
 					if (item.duration) {
 						setTimeout(function () {
 							if (playlist.length) { playItem(playlist.shift()); }
-						}, item.duration);
+						}, item.duration + overplay);
 					}
 				};
 
