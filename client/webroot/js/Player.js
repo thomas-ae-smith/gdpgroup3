@@ -24,7 +24,36 @@
 		},
 		stop: function () {
 
-		}
+		},
+		setVideoScene: function (scene) {
+			var that = this;
+			//this.blackLayer.show();
+			this.videoLayer.set(scene).unmute();
+
+			/*scene.on("started", function () {
+				that.blackLayer.hide();
+			}).on("finished", function () {
+				that.blackLayer.show();
+				that.videoLayer.mute().set(null);
+			});
+*/
+			// that.videoLayer.setDuration???
+		},
+
+		setStillScene: function (still) {
+			var that = this;
+			//this.blackLayer.show();
+			this.stillLayer.set(still).show();
+
+			/*this.stillLayer.on("loaded", function () {
+				that.blackLayer.hide();
+				setTimeout(function () {
+					that.blackLayer.show();
+					that.stillLayer.hide();
+				}, duration);
+			});*/
+
+		},
 	});
 
 	y4.VideoLayer = Backbone.View.extend({
@@ -43,7 +72,8 @@
 			return this;
 		},
 		set: function (scene) {
-			this.video.setUrl(scene ? scene.service : "", scene ? scene.url : "");
+			console.log(scene.media)
+			this.video.setUrl(scene ? scene.media.service : "", scene ? scene.media.url : "");
 			return this;
 		},
 		render: function () {
@@ -52,23 +82,6 @@
 		}
 	});
 
-	y4.StillLayer = y4.BlackLayer.extend({
-		className: "still-layer",
-		zIndex: 2,
-		set: function (scene) {
-			this.$el.html("").append(scene.render().el);
-			return this;
-		}
-	});
-
-	y4.OverlayLayer = y4.Layer.extend({
-		className: "overlay-layer",
-		zIndex: 3,
-		set: function (overlay) {
-			return this;
-		};
-	});
-	
 	y4.BlackLayer = Backbone.View.extend({
 		className: "black-layer",
 		zIndex: 4,
@@ -85,5 +98,23 @@
 			return this;
 		}
 	});
+
+	y4.StillLayer = y4.BlackLayer.extend({
+		className: "still-layer",
+		zIndex: 2,
+		set: function (scene) {
+			this.$el.html("").append(scene.media.render().el);
+			return this;
+		}
+	});
+
+	y4.OverlayLayer = Backbone.View.extend({
+		className: "overlay-layer",
+		zIndex: 3,
+		set: function (overlay) {
+			return this;
+		}
+	});
+	
 
 }(this.y4));

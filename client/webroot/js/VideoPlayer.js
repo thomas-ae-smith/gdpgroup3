@@ -11,7 +11,7 @@
 		}
 	});
 
-	y4.HtmlVideoPlayer = y4.Video.extend({
+	y4.HtmlVideoPlayer = y4.VideoPlayer.extend({
 		play: function () { this.videoEl.play(); },
 		stop: function() { this.videoEl.pause(); },
 		setUrl: function (service, url) {
@@ -35,15 +35,15 @@
 		}
 	});
 
-	y4.FlashVideoPlayer = y4.Video.extend({
+	y4.FlashVideoPlayer = y4.VideoPlayer.extend({
 		play: function () { console.log("TODO") },
 		stop: function () { console.log("TODO") },
 		setUrl: function (service, url) {
-			console.log("J")
 			console.trace();
 			if (this.url === url && this.service === service) { return; }
 			this.service = service;
 			this.url = url;
+			console.log("Video: rtmp://" + this.options.server + '/' + this.service + "/" + this.url)
 			this.render();
 			return this;
 		},
