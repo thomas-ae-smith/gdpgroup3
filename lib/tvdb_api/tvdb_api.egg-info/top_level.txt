@@ -1,4 +1,0 @@
-tvdb_api
-tvdb_ui
-tvdb_exceptions
-tvdb_cache
