@@ -42,7 +42,6 @@ def get_programme_vector(title):
 
 		for genre in filter(None, tvdb_genres.split('|')):
 			genre_vec[_genre_convert[genre.rstrip()]] = 1
-		movies[movieid] = genre_vec
 		if not tvdb_genres:
 			print("Empty genre list returned by tvdb: "+title)
 	except AttributeError:
@@ -75,7 +74,7 @@ def get_epg(lookahead=3600):
 					).format(
 						earliestTime=time_now,
 						latestTime=time_now+lookahead)
-	query_warlock = ('INSERT INTO your4(id, channel, vector, length, start_time)'
+	query_warlock = ('INSERT INTO programmes(id, channel, vector, length, start_time)'
 			'VALUES (%s, %s, %s, %s, %s)')
 
 	try:

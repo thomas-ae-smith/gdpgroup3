@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>80379</id>
+    <Actors>|Kaley Cuoco|Jim Parsons|Johnny Galecki|Kunal Nayyar|Simon Helberg|Melissa Rauch|Mayim Bialik|Sara Gilbert|Aarti Mann|Kevin Sussman|</Actors>
+    <Airs_DayOfWeek>Thursday</Airs_DayOfWeek>
+    <Airs_Time>8:00 PM</Airs_Time>
+    <ContentRating>TV-PG</ContentRating>
+    <FirstAired>2007-09-01</FirstAired>
+    <Genre>|Comedy|</Genre>
+    <IMDB_ID>tt0898266</IMDB_ID>
+    <Language>en</Language>
+    <Network>CBS</Network>
+    <NetworkID></NetworkID>
+    <Overview>Leonard Hofstadter and Sheldon Cooper are brilliant physicists, the kind of &quot;beautiful minds&quot; that understand how the universe works. But none of that genius helps them interact with people, especially women. All this begins to change when a free-spirited beauty named Penny moves in next door. Sheldon, Leonard's roommate, is quite content spending his nights playing Klingon Boggle with their socially dysfunctional friends, fellow CalTech scientists Howard Wolowitz and Raj Koothrappali. However, Leonard sees in Penny a whole new universe of possibilities... including love.</Overview>
+    <Rating>9.2</Rating>
+    <RatingCount>720</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID>58056</SeriesID>
+    <SeriesName>The Big Bang Theory</SeriesName>
+    <Status>Continuing</Status>
+    <added></added>
+    <addedBy></addedBy>
+    <banner>graphical/80379-g13.jpg</banner>
+    <fanart>fanart/original/80379-20.jpg</fanart>
+    <lastupdated>1350578980</lastupdated>
+    <poster>posters/80379-19.jpg</poster>
+    <zap2it_id>EP00931182</zap2it_id>
+  </Series>
+</Data>
