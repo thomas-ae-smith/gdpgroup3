@@ -1,4 +1,4 @@
-#!/usr/local/bin/python2.7
+#!/usr/bin/python2.7
 
 from __future__ import print_function
 
@@ -74,7 +74,7 @@ def get_epg(lookahead=3600):
 					).format(
 						earliestTime=time_now,
 						latestTime=time_now+lookahead)
-	query_warlock = ('INSERT INTO programmes(id, channel, vector, length, start_time)'
+	query_local = ('INSERT INTO programmes(id, channel, vector, length, start_time)'
 			'VALUES (%s, %s, %s, %s, %s)')
 
 	try:
@@ -91,16 +91,20 @@ def get_epg(lookahead=3600):
 	conn_inqb8r.close()
 
 	try:
-		conn_warlock = mysql.connector.connect(user='your4',
-											password='2zVGP58Z5YttvAxV',
-											database='your4')
-		cursor_warlock = conn_warlock.cursor()
+		conn_local = mysql.connector.connect(user=credentials['username'],
+											password=credentials['password'],
+											database=credentials['db'],
+											host=credentials['host'],
+											port=credentials['port'])
+		cursor_local = conn_local.cursor()
 		for (key, chanID, genre, _type, name, duration, startTime, rating) in cursor_inqb8r:
 			vector = pickle.dumps(get_programme_vector(name))
-			cursor_warlock.execute(query_warlock, (key, chanID, vector, duration, startTime))
+			cursor_local.execute(query_local, (key, chanID, vector, duration, startTime))
 	except:	# If anything goes wrong, close the connection!
 		conn_inqb8r.close()
 		raise
 	conn_inqb8r.close()
 
-get_epg()
+# If called from the commandline.
+if __name__ == "__main__":
+	get_epg()

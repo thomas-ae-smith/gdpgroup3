@@ -17,9 +17,11 @@ query = (	'SELECT `vector` '
 			'FROM `users` '
 			'WHERE `id` = %s')
 
-conn = mysql.connector.connect(user='your4',
-							password='2zVGP58Z5YttvAxV',
-							database='your4')
+conn = mysql.connector.connect(user=credentials['username'],
+							password=credentials['password'],
+							database=credentials['db'],
+							host=credentials['host'],
+							port=credentials['port'])
 cursor = conn.cursor()
 
 cursor.execute(query, args.user_id)

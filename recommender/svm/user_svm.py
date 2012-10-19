@@ -15,8 +15,7 @@ DATA_CACHE = os.path.join("cache", "data_cache")
 def classify_user(v):
 	"""Given a vector `v` of user demographics, returns the initial vector 
 	for the users preferences."""
-	pdb.set_trace() # TODO: Implement.
-	return None
+	return [0.0] * 20
 
 def get_datasets():
 	"""Returns a tuple (a, b).
