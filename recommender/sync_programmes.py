@@ -3,11 +3,12 @@
 from __future__ import print_function
 
 import pdb
-import pickle
 import time
 
 import mysql.connector
 import tvdb_api
+
+from datastore.credentials import credentials
 
 _tvdb = tvdb_api.Tvdb(cache="tvdb_cache")
 
@@ -74,8 +75,10 @@ def get_epg(lookahead=3600):
 					).format(
 						earliestTime=time_now,
 						latestTime=time_now+lookahead)
-	query_local = ('INSERT INTO programmes(id, channel, vector, length, start_time)'
-			'VALUES (%s, %s, %s, %s, %s)')
+	query_local = (	"REPLACE INTO programmes "
+						"(id, channel, vector, length, start_time, name) "
+					"VALUES "
+						"(%s, %s, %s, %s, %s, %s)")
 
 	try:
 		conn_inqb8r = mysql.connector.connect(user='teamgdp',
@@ -97,13 +100,17 @@ def get_epg(lookahead=3600):
 											host=credentials['host'],
 											port=credentials['port'])
 		cursor_local = conn_local.cursor()
-		for (key, chanID, genre, _type, name, duration, startTime, rating) in cursor_inqb8r:
-			vector = pickle.dumps(get_programme_vector(name))
-			cursor_local.execute(query_local, (key, chanID, vector, duration, startTime))
+		for response in cursor_inqb8r:
+			(key, chanID, genre, _type, name,
+				duration, startTime, rating) = response
+			vector = ", ".join(str(e) for e in get_programme_vector(name))
+			cursor_local.execute(query_local,
+				(key, chanID, vector, duration, startTime, name))
 	except:	# If anything goes wrong, close the connection!
-		conn_inqb8r.close()
+		conn_local.close()
 		raise
-	conn_inqb8r.close()
+	conn_local.commit()
+	conn_local.close()
 
 # If called from the commandline.
 if __name__ == "__main__":

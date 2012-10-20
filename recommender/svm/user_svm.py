@@ -10,12 +10,24 @@ from PyML.classifiers.svm import SVR
 ML_INPUTS = "data/movielens/ml_data.inputs"
 ML_OUTPUTS = "data/movielens/ml_data.outputs"
 SVM_CACHE = os.path.join("cache", "svr_cache")
-DATA_CACHE = os.path.join("cache", "data_cache")
 
 def classify_user(v):
 	"""Given a vector `v` of user demographics, returns the initial vector 
 	for the users preferences."""
-	return [0.0] * 20
+
+	assert len(v) == 2
+
+	dataset = VectorDataSet([[int(v[0]), v[1]]], numericLabels=True)
+
+	vector = []
+	try:
+		for classifier in _svrs:
+			vector.append(classifier.classify(dataset, 0))
+	except AttributeError as err:
+		print("AttributeError; did you forget to train the SVM?")
+		pdb.set_trace()
+
+	return vector
 
 def get_datasets():
 	"""Returns a tuple (a, b).
@@ -68,8 +80,16 @@ def test(validations=5):
 	with open("svm_test_results.p", "w") as results_f:
 		pickle.dump(results, results_f)
 
-def _get_svrs():
+def _get_svr(dataset):
+	svr = SVR()
+	svr.train(dataset)
+	return svr
+
+def _get_svrs(no_cache=False):
 	datasets = get_datasets()
+
+	if no_cache:
+		return [_get_svr(ds) for ds in datasets]
 
 	svrs = []
 	try:
@@ -78,8 +98,8 @@ def _get_svrs():
 				svrs.append(SVR())
 				svrs[ds_num].load(cache_f, datasets[ds_num])
 	except IOError: # Cache miss; build new SVRs
-		for ds_num, ds in enumerate(datasets):
-			svrs.append(SVR())
+		for ds in datasets:
+			svrs.append(_get_svr(ds))
 
 	return svrs
 

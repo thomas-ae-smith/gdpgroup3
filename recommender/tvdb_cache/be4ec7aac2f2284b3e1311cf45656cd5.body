@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+  <Series>
+    <id>250235</id>
+    <Actors>||</Actors>
+    <Airs_DayOfWeek></Airs_DayOfWeek>
+    <Airs_Time></Airs_Time>
+    <ContentRating></ContentRating>
+    <FirstAired>2010-04-19</FirstAired>
+    <Genre>|Game Show|</Genre>
+    <IMDB_ID>tt1640240</IMDB_ID>
+    <Language>en</Language>
+    <Network>GSN</Network>
+    <NetworkID></NetworkID>
+    <Overview>Similar to The Dating Game, Baggage gives three contestants the chance to win the eye of a prospective date. The contestants carry three suitcases onstage, a small, medium, and large one. Each suitcase contains an embarrassing, unique, or weird proposition the contestant may have.Once the three contestants are pared down to one, the potential dater must admit to a fault of his or her own.</Overview>
+    <Rating>9.0</Rating>
+    <RatingCount>1</RatingCount>
+    <Runtime>30</Runtime>
+    <SeriesID></SeriesID>
+    <SeriesName>Baggage</SeriesName>
+    <Status>Continuing</Status>
+    <added>2011-07-16 05:56:14</added>
+    <addedBy>345603</addedBy>
+    <banner>graphical/250235-g.jpg</banner>
+    <fanart>fanart/original/250235-1.jpg</fanart>
+    <lastupdated>1344461462</lastupdated>
+    <poster>posters/250235-1.jpg</poster>
+    <zap2it_id></zap2it_id>
+  </Series>
+</Data>

@@ -43,6 +43,8 @@ def add_user(gender, age, debug=False):
 	cursor.close()
 	conn.close()
 
+	print("Added user with vector: "+vector)
+
 # If called from the commandline
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser(description="Adds a new user to the "

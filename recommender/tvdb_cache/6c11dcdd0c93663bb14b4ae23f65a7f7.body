@@ -1,0 +1,6303 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data><Series>
+  <id>250235</id>
+  <Actors>||</Actors>
+  <Airs_DayOfWeek></Airs_DayOfWeek>
+  <Airs_Time></Airs_Time>
+  <ContentRating></ContentRating>
+  <FirstAired>2010-04-19</FirstAired>
+  <Genre>|Game Show|</Genre>
+  <IMDB_ID>tt1640240</IMDB_ID>
+  <Language>en</Language>
+  <Network>GSN</Network>
+  <NetworkID></NetworkID>
+  <Overview>Similar to The Dating Game, Baggage gives three contestants the chance to win the eye of a prospective date. The contestants carry three suitcases onstage, a small, medium, and large one. Each suitcase contains an embarrassing, unique, or weird proposition the contestant may have.Once the three contestants are pared down to one, the potential dater must admit to a fault of his or her own.</Overview>
+  <Rating>9.0</Rating>
+  <RatingCount>1</RatingCount>
+  <Runtime>30</Runtime>
+  <SeriesID></SeriesID>
+  <SeriesName>Baggage</SeriesName>
+  <Status>Continuing</Status>
+  <added>2011-07-16 05:56:14</added>
+  <addedBy>345603</addedBy>
+  <banner>graphical/250235-g.jpg</banner>
+  <fanart>fanart/original/250235-1.jpg</fanart>
+  <lastupdated>1344461462</lastupdated>
+  <poster>posters/250235-1.jpg</poster>
+  <zap2it_id></zap2it_id>
+</Series>
+<Episode>
+  <id>4203195</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Steve</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired>2010-04-19</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID>tt1648251</IMDB_ID>
+  <Language>en</Language>
+  <Overview>What is Steve's Baggage? Polygamy, Homosexuality, or an obnoxious tattoo? Steve will review and choose one of three female contestants based solely on their baggage.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1331206777</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203196</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Shana</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>What is Shana's Baggage? Poker addiction, sugar daddy, or alien abduction?
+</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1331206762</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203197</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 3</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321106615</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203198</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 4</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321106636</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203199</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 5</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321106652</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203200</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 6</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321106664</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203201</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 7</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321106676</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203202</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 8</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321106688</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203203</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 9</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321106698</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203204</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 10</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired>2010-05-03</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1334494848</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203205</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 11</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321106721</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203206</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 12</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321106765</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203207</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 13</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321106772</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203208</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 14</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321106780</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203209</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 15</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321106790</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203210</id>
+  <Combined_episodenumber>16</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 16</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321106823</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203211</id>
+  <Combined_episodenumber>17</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 17</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321106828</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4203212</id>
+  <Combined_episodenumber>18</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 18</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1321106849</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4302243</id>
+  <Combined_episodenumber>19</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode 19</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1333862699</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4282193</id>
+  <Combined_episodenumber>24</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Chrissy</EpisodeName>
+  <EpisodeNumber>24</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Does Chrissy have a Santa fantasy, is she a vandal, or addicted to the lottery?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1331206745</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4282194</id>
+  <Combined_episodenumber>31</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>BJ</EpisodeName>
+  <EpisodeNumber>31</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Is BJ a nudist? Has he been arrested 22 times? Was he a kissing cousin?
+</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1331206728</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4282195</id>
+  <Combined_episodenumber>32</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Cougar</EpisodeName>
+  <EpisodeNumber>32</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will this cougar catch a cub or does she have too much baggage?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1331206694</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4282196</id>
+  <Combined_episodenumber>35</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Aimee</EpisodeName>
+  <EpisodeNumber>35</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will Aimee find her attentive, highly ambitious, and wickedly smart Prince Charming?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1331206673</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4282191</id>
+  <Combined_episodenumber>37</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Hope</EpisodeName>
+  <EpisodeNumber>37</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Does Hope prefer porn to sex, did she ruin a friend's wedding, or throw her ex boyfriend's TV in the swimming pool?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1331206634</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4282192</id>
+  <Combined_episodenumber>38</Combined_episodenumber>
+  <Combined_season>1</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Janie</EpisodeName>
+  <EpisodeNumber>38</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Did Janie pawn mom's jewelry, fake infertility to get out of a relationship, or did she get arrested for public sex?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>1</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1331206615</lastupdated>
+  <seasonid>478288</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374112</id>
+  <Combined_episodenumber>1</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 1</EpisodeName>
+  <EpisodeNumber>1</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will Cory find a girl he can take back to the east coast?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457576</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374113</id>
+  <Combined_episodenumber>2</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 2</EpisodeName>
+  <EpisodeNumber>2</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Two dorks will walk out the door; will Anna find what she's looking for?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457590</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374114</id>
+  <Combined_episodenumber>3</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 3</EpisodeName>
+  <EpisodeNumber>3</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Yvette needs a guy who can keep up with her and keep her satisfied.  Which one of these guys will get to see her big red bag?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457604</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374115</id>
+  <Combined_episodenumber>4</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 4</EpisodeName>
+  <EpisodeNumber>4</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Which one of these ladies will sing Kevin's tune?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457617</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374116</id>
+  <Combined_episodenumber>5</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 5</EpisodeName>
+  <EpisodeNumber>5</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Can this chef find someone who can spice up his life?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457631</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374117</id>
+  <Combined_episodenumber>6</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 6</EpisodeName>
+  <EpisodeNumber>6</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will Erik find the fervently fun-loving female of his fantasies?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457645</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374118</id>
+  <Combined_episodenumber>7</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 7</EpisodeName>
+  <EpisodeNumber>7</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Shawnekia's hoping to find her soulmate in the studio today!  Which Baggage will she be able to handle?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457658</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374119</id>
+  <Combined_episodenumber>8</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 8</EpisodeName>
+  <EpisodeNumber>8</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Adrianna is looking for love.  Will she find it with he, she, or she?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457672</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374120</id>
+  <Combined_episodenumber>9</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 9</EpisodeName>
+  <EpisodeNumber>9</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Colin has an unorthodox use for the vaccuum cleaner. Can Eva overlook that kind of baggage?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457685</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374121</id>
+  <Combined_episodenumber>10</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 10</EpisodeName>
+  <EpisodeNumber>10</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Which of these weird appetites can Cibi see himself having dinner with?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457699</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374122</id>
+  <Combined_episodenumber>11</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 11</EpisodeName>
+  <EpisodeNumber>11</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>The Cougars and Cubs episode of Baggage.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457712</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374123</id>
+  <Combined_episodenumber>12</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 12</EpisodeName>
+  <EpisodeNumber>12</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will Leah find a man who is adventurous but still chivalrous on Baggage?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457725</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374124</id>
+  <Combined_episodenumber>13</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 13</EpisodeName>
+  <EpisodeNumber>13</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Stephen's here to find a girl who doesn't take herself too seriously.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457739</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374125</id>
+  <Combined_episodenumber>14</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 14</EpisodeName>
+  <EpisodeNumber>14</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Matthew needs a girl who really knows how to use his yo-yo.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457752</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374126</id>
+  <Combined_episodenumber>15</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 15</EpisodeName>
+  <EpisodeNumber>15</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Erin's hoping to find a multi-lingual man who can speak her language.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457767</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374127</id>
+  <Combined_episodenumber>16</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 16</EpisodeName>
+  <EpisodeNumber>16</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Trae's simply looking for a fun and flirty fling.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457780</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374128</id>
+  <Combined_episodenumber>17</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 17</EpisodeName>
+  <EpisodeNumber>17</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will Jessica be picking her man up at a gay club, coaxing him on to an airplane, or following him into a Port-A-Potty?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457794</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374129</id>
+  <Combined_episodenumber>18</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 18</EpisodeName>
+  <EpisodeNumber>18</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Raul's a baseball fan- will one of these girls find him to be a good catch?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457829</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374130</id>
+  <Combined_episodenumber>19</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 19</EpisodeName>
+  <EpisodeNumber>19</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Drinie's dreaming of an open-minded world explorer. Will she find the kind of guy she's after?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457843</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374131</id>
+  <Combined_episodenumber>20</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 20</EpisodeName>
+  <EpisodeNumber>20</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Only Baggage can make eating scorpions not look not that hard to deal with.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457858</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374132</id>
+  <Combined_episodenumber>21</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 21</EpisodeName>
+  <EpisodeNumber>21</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Denise has done the dating scene, and it's not going so well. Will she be walking out of here with a new date?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457874</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374133</id>
+  <Combined_episodenumber>22</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 22</EpisodeName>
+  <EpisodeNumber>22</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Geoff wants to get with a goal-driven gal.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457888</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374134</id>
+  <Combined_episodenumber>23</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 23</EpisodeName>
+  <EpisodeNumber>23</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Michelle needs a guy who's irresistibly interesting. Will one of them be her knight in shining armor?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457901</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374135</id>
+  <Combined_episodenumber>24</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 24</EpisodeName>
+  <EpisodeNumber>24</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Erin's out for an hombre who can operate on her level.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457914</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374136</id>
+  <Combined_episodenumber>25</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 25</EpisodeName>
+  <EpisodeNumber>25</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will Alvin find someone who can keep him grounded?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457928</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374137</id>
+  <Combined_episodenumber>26</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 26</EpisodeName>
+  <EpisodeNumber>26</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Nicole's trying to find a cat-loving man with a knack for nerdiness.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457941</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374138</id>
+  <Combined_episodenumber>27</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 27</EpisodeName>
+  <EpisodeNumber>27</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will Chris find someone he can take home to Grandma?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457954</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374139</id>
+  <Combined_episodenumber>28</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 28</EpisodeName>
+  <EpisodeNumber>28</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Jenny can leg press 450 pounds.  Which two men will she stomp out?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457968</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374140</id>
+  <Combined_episodenumber>29</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 29</EpisodeName>
+  <EpisodeNumber>29</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Sam needs a man who can get his hands dirty.  Which one of these three will she be digging?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457981</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374141</id>
+  <Combined_episodenumber>30</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 30</EpisodeName>
+  <EpisodeNumber>30</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Christopher's a firefighter looking for someone to fan his flames.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344457994</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374142</id>
+  <Combined_episodenumber>31</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 31</EpisodeName>
+  <EpisodeNumber>31</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Bri the novelist is looking for storybook romance.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344458008</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374143</id>
+  <Combined_episodenumber>32</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 32</EpisodeName>
+  <EpisodeNumber>32</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Shane's looking for an adventurous lady who can live life on the edge.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344458021</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374144</id>
+  <Combined_episodenumber>33</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 33</EpisodeName>
+  <EpisodeNumber>33</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Todd's a car salesman.  Will he find someone who can drive him wild?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344458034</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374145</id>
+  <Combined_episodenumber>34</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 34</EpisodeName>
+  <EpisodeNumber>34</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Rachel is a radio show host who just needs someone who knows how to listen.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344458045</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374146</id>
+  <Combined_episodenumber>35</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 35</EpisodeName>
+  <EpisodeNumber>35</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Robert loves the ladies- will one of these contestants accept his Baggage?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344458059</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374147</id>
+  <Combined_episodenumber>36</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 36</EpisodeName>
+  <EpisodeNumber>36</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will Ilissa be wooed by expansive brocabulary? Find out on Baggage!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344458072</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374148</id>
+  <Combined_episodenumber>37</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 37</EpisodeName>
+  <EpisodeNumber>37</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Courtney's an abstract painter. Will she find someone whose brushstrokes align with hers?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344458084</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374149</id>
+  <Combined_episodenumber>38</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 38</EpisodeName>
+  <EpisodeNumber>38</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Jen's an ex-rower- will one of these men float her boat?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344458097</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374150</id>
+  <Combined_episodenumber>39</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 39</EpisodeName>
+  <EpisodeNumber>39</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Tim's jumped out of a plane over 200 times.  Will one of these ladies give him butterflies?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344458111</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4283106</id>
+  <Combined_episodenumber>40</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag>2</EpImgFlag>
+  <EpisodeName>Episode # 40</EpisodeName>
+  <EpisodeNumber>40</EpisodeNumber>
+  <FirstAired>2011-07-11</FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will Sean find a lady whose lifestyle lines up with his?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename>episodes/250235/4283106.jpg</filename>
+  <lastupdated>1344458124</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374151</id>
+  <Combined_episodenumber>41</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 41</EpisodeName>
+  <EpisodeNumber>41</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Maggie's an independent girl who needs a guy that's just as driven. Will one of these guys be a good fit?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344458137</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374152</id>
+  <Combined_episodenumber>42</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 42</EpisodeName>
+  <EpisodeNumber>42</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will Jackson be eating grasshoppers, hanging out with Princess Leia, or sitting in the dark? Find out on Baggage!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344458151</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374153</id>
+  <Combined_episodenumber>43</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 43</EpisodeName>
+  <EpisodeNumber>43</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Tia's a party planner- can she plan on leaving with a handsome fellow tonight?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344458164</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374154</id>
+  <Combined_episodenumber>44</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 44</EpisodeName>
+  <EpisodeNumber>44</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459042</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374155</id>
+  <Combined_episodenumber>45</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 45</EpisodeName>
+  <EpisodeNumber>45</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459075</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374156</id>
+  <Combined_episodenumber>46</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 46</EpisodeName>
+  <EpisodeNumber>46</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459089</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374157</id>
+  <Combined_episodenumber>47</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 47</EpisodeName>
+  <EpisodeNumber>47</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459103</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374158</id>
+  <Combined_episodenumber>48</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 48</EpisodeName>
+  <EpisodeNumber>48</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459114</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374159</id>
+  <Combined_episodenumber>49</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 49</EpisodeName>
+  <EpisodeNumber>49</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will J.R. find the cheerleader-type girl of his dreams?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459128</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374160</id>
+  <Combined_episodenumber>50</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 50</EpisodeName>
+  <EpisodeNumber>50</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459142</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374161</id>
+  <Combined_episodenumber>51</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 51</EpisodeName>
+  <EpisodeNumber>51</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>James a former nerd who's finally getting a chance at the beauty queens!  Check it out on this special episode of Baggage.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459156</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374162</id>
+  <Combined_episodenumber>52</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 52</EpisodeName>
+  <EpisodeNumber>52</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will one of these ladies become the girl next door in Kevin's heart?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459170</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374163</id>
+  <Combined_episodenumber>53</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 53</EpisodeName>
+  <EpisodeNumber>53</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Tasha's looking for some guys that can subscribe to her no-meathead diet.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459184</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374164</id>
+  <Combined_episodenumber>54</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 54</EpisodeName>
+  <EpisodeNumber>54</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Which one of these ladies will pin ex-NFL player Terry down?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459197</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374165</id>
+  <Combined_episodenumber>55</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 55</EpisodeName>
+  <EpisodeNumber>55</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Kevin's been selected as one of the Hottest Bachelors by a nationwide magazine.  Will he be out of the single scene by the end of this episode?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459211</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374166</id>
+  <Combined_episodenumber>56</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 56</EpisodeName>
+  <EpisodeNumber>56</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Natalie needs a man who can put her in her place.  Which one of these guys will pick her up?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459225</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374167</id>
+  <Combined_episodenumber>57</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 57</EpisodeName>
+  <EpisodeNumber>57</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459238</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374168</id>
+  <Combined_episodenumber>58</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 58</EpisodeName>
+  <EpisodeNumber>58</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Stephanie needs a versatile man who's up for anything.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459253</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374169</id>
+  <Combined_episodenumber>59</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 59</EpisodeName>
+  <EpisodeNumber>59</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459267</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374170</id>
+  <Combined_episodenumber>60</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 60</EpisodeName>
+  <EpisodeNumber>60</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459280</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374171</id>
+  <Combined_episodenumber>61</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 61</EpisodeName>
+  <EpisodeNumber>61</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459294</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374172</id>
+  <Combined_episodenumber>62</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 62</EpisodeName>
+  <EpisodeNumber>62</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459306</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374173</id>
+  <Combined_episodenumber>63</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 63</EpisodeName>
+  <EpisodeNumber>63</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459320</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374174</id>
+  <Combined_episodenumber>64</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 64</EpisodeName>
+  <EpisodeNumber>64</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459334</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374175</id>
+  <Combined_episodenumber>65</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 65</EpisodeName>
+  <EpisodeNumber>65</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459348</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374176</id>
+  <Combined_episodenumber>66</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 66</EpisodeName>
+  <EpisodeNumber>66</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459362</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374177</id>
+  <Combined_episodenumber>67</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 67</EpisodeName>
+  <EpisodeNumber>67</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459375</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374178</id>
+  <Combined_episodenumber>68</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 68</EpisodeName>
+  <EpisodeNumber>68</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459389</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374179</id>
+  <Combined_episodenumber>69</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 69</EpisodeName>
+  <EpisodeNumber>69</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Jennifer needs a ping pong partner- which one of these fellows will she pick?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459402</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374180</id>
+  <Combined_episodenumber>70</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 70</EpisodeName>
+  <EpisodeNumber>70</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Jim doesn't mind shaking it on the dance floor- will he find a woman who's just as confident?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459416</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374181</id>
+  <Combined_episodenumber>71</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 71</EpisodeName>
+  <EpisodeNumber>71</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Reality star Tiffany &quot;New York&quot; Pollard is trying her luck at love on Baggage!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459430</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374182</id>
+  <Combined_episodenumber>72</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 72</EpisodeName>
+  <EpisodeNumber>72</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>One dater. Three contestants.  A whole lot of Baggage!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459443</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374183</id>
+  <Combined_episodenumber>73</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 73</EpisodeName>
+  <EpisodeNumber>73</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ivy's always down for a swim.  Will one of these guys be diving into a date with her?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459457</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374184</id>
+  <Combined_episodenumber>74</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 74</EpisodeName>
+  <EpisodeNumber>74</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ashley's a comedian looking for a guy who can make her smile.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459471</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374185</id>
+  <Combined_episodenumber>75</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 75</EpisodeName>
+  <EpisodeNumber>75</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Dena writes songs and is hoping to find harmony with one lucky contestant tonight.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459485</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374186</id>
+  <Combined_episodenumber>76</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 76</EpisodeName>
+  <EpisodeNumber>76</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Ramsey's a musician looking for an inspiring gal.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459499</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374187</id>
+  <Combined_episodenumber>77</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 77</EpisodeName>
+  <EpisodeNumber>77</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Does Destiney's fate involve finding a man here on Baggage?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459513</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374188</id>
+  <Combined_episodenumber>78</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 78</EpisodeName>
+  <EpisodeNumber>78</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Elliott's been practicing aerial arts long enough that he no longer gets butterflies on the trapeze.  WIll one of these ladies give him the butterflies he's been missing out on?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459526</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374189</id>
+  <Combined_episodenumber>79</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 79</EpisodeName>
+  <EpisodeNumber>79</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459540</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374190</id>
+  <Combined_episodenumber>80</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 80</EpisodeName>
+  <EpisodeNumber>80</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459554</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374191</id>
+  <Combined_episodenumber>81</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 81</EpisodeName>
+  <EpisodeNumber>81</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459568</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374192</id>
+  <Combined_episodenumber>82</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 82</EpisodeName>
+  <EpisodeNumber>82</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459581</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374193</id>
+  <Combined_episodenumber>83</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 83</EpisodeName>
+  <EpisodeNumber>83</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>This Marine's looking for an easygoing girl with a bit of wit.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459595</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374194</id>
+  <Combined_episodenumber>84</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 84</EpisodeName>
+  <EpisodeNumber>84</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will this kick-boxer find a guy who gives her life a new spin?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459609</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374195</id>
+  <Combined_episodenumber>85</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 85</EpisodeName>
+  <EpisodeNumber>85</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will Robert find a girl he can make history with?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459631</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374196</id>
+  <Combined_episodenumber>86</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 86</EpisodeName>
+  <EpisodeNumber>86</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>It's a special beefcake episode of Baggage! Which one of these buff bros will wind up with Tanya?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459645</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374197</id>
+  <Combined_episodenumber>87</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 87</EpisodeName>
+  <EpisodeNumber>87</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Three contestants compete for one lady's heart one Baggage!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459659</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374198</id>
+  <Combined_episodenumber>88</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 88</EpisodeName>
+  <EpisodeNumber>88</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>It's a special beach body edition of Baggage!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459672</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374199</id>
+  <Combined_episodenumber>89</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 89</EpisodeName>
+  <EpisodeNumber>89</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Will Adrian the freestyle champion find a girl he can vibe with?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459687</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374200</id>
+  <Combined_episodenumber>90</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 90</EpisodeName>
+  <EpisodeNumber>90</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Brian's got to find a girl with pizzazz.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459698</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374201</id>
+  <Combined_episodenumber>91</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 91</EpisodeName>
+  <EpisodeNumber>91</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Take a trip down the shore: it's a Jersey-licious episode of Baggage!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459713</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374202</id>
+  <Combined_episodenumber>92</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 92</EpisodeName>
+  <EpisodeNumber>92</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Justin's a fisherman looking to hook a spontaneous lady.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459727</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374203</id>
+  <Combined_episodenumber>93</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 93</EpisodeName>
+  <EpisodeNumber>93</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Howdy, y'all! Get ready for a Cowboy-filled episode of Baggage.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459741</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374204</id>
+  <Combined_episodenumber>94</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 94</EpisodeName>
+  <EpisodeNumber>94</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Jasmine needs to find a guy who can handle cats, kids, and adventure.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459754</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374205</id>
+  <Combined_episodenumber>95</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 95</EpisodeName>
+  <EpisodeNumber>95</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Brad loves thrills- will one of these ladies make his heart beat?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459768</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374206</id>
+  <Combined_episodenumber>96</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 96</EpisodeName>
+  <EpisodeNumber>96</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>It's a &quot;Foreign Affairs&quot; episode of Baggage! </Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459782</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374207</id>
+  <Combined_episodenumber>97</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 97</EpisodeName>
+  <EpisodeNumber>97</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Liz needs to find a man who sets a good example.  Will one of these men pass her inspection?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459796</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374208</id>
+  <Combined_episodenumber>98</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 98</EpisodeName>
+  <EpisodeNumber>98</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Favorite contestants from the past are back for a second chance at love on this All-Star episode of Baggage!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459810</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374209</id>
+  <Combined_episodenumber>99</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 99</EpisodeName>
+  <EpisodeNumber>99</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Nathalie the illustrator is looking for a guy who can help her paint the town red.</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459823</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374210</id>
+  <Combined_episodenumber>100</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 100</EpisodeName>
+  <EpisodeNumber>100</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Michael needs a no-maintenance girl to chill with.  Will he find her here on Baggage?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459837</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374211</id>
+  <Combined_episodenumber>101</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 101</EpisodeName>
+  <EpisodeNumber>101</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Sexy seniors are here to strut their stuff on this episode of Baggage!</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459851</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374212</id>
+  <Combined_episodenumber>102</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 102</EpisodeName>
+  <EpisodeNumber>102</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview>Helen needs a well-kept guy who knows how to have fun.  Will she be finding her match today?</Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344459864</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374213</id>
+  <Combined_episodenumber>103</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 103</EpisodeName>
+  <EpisodeNumber>103</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460131</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374214</id>
+  <Combined_episodenumber>104</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 104</EpisodeName>
+  <EpisodeNumber>104</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460145</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374215</id>
+  <Combined_episodenumber>105</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 105</EpisodeName>
+  <EpisodeNumber>105</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460158</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374216</id>
+  <Combined_episodenumber>106</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 106</EpisodeName>
+  <EpisodeNumber>106</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460171</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374217</id>
+  <Combined_episodenumber>107</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 107</EpisodeName>
+  <EpisodeNumber>107</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460185</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374218</id>
+  <Combined_episodenumber>108</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 108</EpisodeName>
+  <EpisodeNumber>108</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460198</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374219</id>
+  <Combined_episodenumber>109</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 109</EpisodeName>
+  <EpisodeNumber>109</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460211</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374220</id>
+  <Combined_episodenumber>110</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 110</EpisodeName>
+  <EpisodeNumber>110</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460244</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374221</id>
+  <Combined_episodenumber>111</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 111</EpisodeName>
+  <EpisodeNumber>111</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460258</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374222</id>
+  <Combined_episodenumber>112</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 112</EpisodeName>
+  <EpisodeNumber>112</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460271</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374223</id>
+  <Combined_episodenumber>113</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 113</EpisodeName>
+  <EpisodeNumber>113</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460285</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374224</id>
+  <Combined_episodenumber>114</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 114</EpisodeName>
+  <EpisodeNumber>114</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460298</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374225</id>
+  <Combined_episodenumber>115</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 115</EpisodeName>
+  <EpisodeNumber>115</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460312</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374226</id>
+  <Combined_episodenumber>116</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 116</EpisodeName>
+  <EpisodeNumber>116</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460325</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374227</id>
+  <Combined_episodenumber>117</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 117</EpisodeName>
+  <EpisodeNumber>117</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460338</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374228</id>
+  <Combined_episodenumber>118</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 118</EpisodeName>
+  <EpisodeNumber>118</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460352</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374229</id>
+  <Combined_episodenumber>119</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 119</EpisodeName>
+  <EpisodeNumber>119</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460365</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374230</id>
+  <Combined_episodenumber>120</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 120</EpisodeName>
+  <EpisodeNumber>120</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460379</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374231</id>
+  <Combined_episodenumber>121</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 121</EpisodeName>
+  <EpisodeNumber>121</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460392</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374232</id>
+  <Combined_episodenumber>122</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 122</EpisodeName>
+  <EpisodeNumber>122</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460405</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374233</id>
+  <Combined_episodenumber>123</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 123</EpisodeName>
+  <EpisodeNumber>123</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460419</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374234</id>
+  <Combined_episodenumber>124</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 124</EpisodeName>
+  <EpisodeNumber>124</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460435</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374235</id>
+  <Combined_episodenumber>125</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 125</EpisodeName>
+  <EpisodeNumber>125</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460449</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374236</id>
+  <Combined_episodenumber>126</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 126</EpisodeName>
+  <EpisodeNumber>126</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460462</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374237</id>
+  <Combined_episodenumber>127</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 127</EpisodeName>
+  <EpisodeNumber>127</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460476</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374238</id>
+  <Combined_episodenumber>128</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 128</EpisodeName>
+  <EpisodeNumber>128</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460489</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374239</id>
+  <Combined_episodenumber>129</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 129</EpisodeName>
+  <EpisodeNumber>129</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460501</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374240</id>
+  <Combined_episodenumber>130</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 130</EpisodeName>
+  <EpisodeNumber>130</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460515</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374241</id>
+  <Combined_episodenumber>131</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 131</EpisodeName>
+  <EpisodeNumber>131</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460528</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374242</id>
+  <Combined_episodenumber>132</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 132</EpisodeName>
+  <EpisodeNumber>132</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460539</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374243</id>
+  <Combined_episodenumber>133</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 133</EpisodeName>
+  <EpisodeNumber>133</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460553</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374244</id>
+  <Combined_episodenumber>134</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 134</EpisodeName>
+  <EpisodeNumber>134</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460566</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374245</id>
+  <Combined_episodenumber>135</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 135</EpisodeName>
+  <EpisodeNumber>135</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460579</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374246</id>
+  <Combined_episodenumber>136</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 136</EpisodeName>
+  <EpisodeNumber>136</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460593</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374247</id>
+  <Combined_episodenumber>137</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 137</EpisodeName>
+  <EpisodeNumber>137</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460606</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374248</id>
+  <Combined_episodenumber>138</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 138</EpisodeName>
+  <EpisodeNumber>138</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460620</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374249</id>
+  <Combined_episodenumber>139</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 139</EpisodeName>
+  <EpisodeNumber>139</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460637</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374250</id>
+  <Combined_episodenumber>140</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 140</EpisodeName>
+  <EpisodeNumber>140</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460650</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374251</id>
+  <Combined_episodenumber>141</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 141</EpisodeName>
+  <EpisodeNumber>141</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460664</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374252</id>
+  <Combined_episodenumber>142</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 142</EpisodeName>
+  <EpisodeNumber>142</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460678</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374253</id>
+  <Combined_episodenumber>143</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 143</EpisodeName>
+  <EpisodeNumber>143</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460691</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374254</id>
+  <Combined_episodenumber>144</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 144</EpisodeName>
+  <EpisodeNumber>144</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460709</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374255</id>
+  <Combined_episodenumber>145</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 145</EpisodeName>
+  <EpisodeNumber>145</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460723</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374256</id>
+  <Combined_episodenumber>146</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 146</EpisodeName>
+  <EpisodeNumber>146</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460737</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374257</id>
+  <Combined_episodenumber>147</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 147</EpisodeName>
+  <EpisodeNumber>147</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460751</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374258</id>
+  <Combined_episodenumber>148</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 148</EpisodeName>
+  <EpisodeNumber>148</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460764</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374259</id>
+  <Combined_episodenumber>149</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 149</EpisodeName>
+  <EpisodeNumber>149</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460777</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374260</id>
+  <Combined_episodenumber>150</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 150</EpisodeName>
+  <EpisodeNumber>150</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460790</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374261</id>
+  <Combined_episodenumber>151</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 151</EpisodeName>
+  <EpisodeNumber>151</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460803</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374262</id>
+  <Combined_episodenumber>152</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 152</EpisodeName>
+  <EpisodeNumber>152</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460817</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374263</id>
+  <Combined_episodenumber>153</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 153</EpisodeName>
+  <EpisodeNumber>153</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460830</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374264</id>
+  <Combined_episodenumber>154</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 154</EpisodeName>
+  <EpisodeNumber>154</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460843</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374265</id>
+  <Combined_episodenumber>155</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 155</EpisodeName>
+  <EpisodeNumber>155</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460856</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374266</id>
+  <Combined_episodenumber>156</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 156</EpisodeName>
+  <EpisodeNumber>156</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460869</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374267</id>
+  <Combined_episodenumber>157</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 157</EpisodeName>
+  <EpisodeNumber>157</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460883</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374268</id>
+  <Combined_episodenumber>158</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 158</EpisodeName>
+  <EpisodeNumber>158</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460899</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374269</id>
+  <Combined_episodenumber>159</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 159</EpisodeName>
+  <EpisodeNumber>159</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460914</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374270</id>
+  <Combined_episodenumber>160</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 160</EpisodeName>
+  <EpisodeNumber>160</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460927</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374271</id>
+  <Combined_episodenumber>161</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 161</EpisodeName>
+  <EpisodeNumber>161</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460940</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374272</id>
+  <Combined_episodenumber>162</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 162</EpisodeName>
+  <EpisodeNumber>162</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460954</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374273</id>
+  <Combined_episodenumber>163</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 163</EpisodeName>
+  <EpisodeNumber>163</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460967</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374274</id>
+  <Combined_episodenumber>164</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 164</EpisodeName>
+  <EpisodeNumber>164</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460981</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374275</id>
+  <Combined_episodenumber>165</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 165</EpisodeName>
+  <EpisodeNumber>165</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344460994</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374276</id>
+  <Combined_episodenumber>166</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 166</EpisodeName>
+  <EpisodeNumber>166</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461007</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374277</id>
+  <Combined_episodenumber>167</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 167</EpisodeName>
+  <EpisodeNumber>167</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461021</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374278</id>
+  <Combined_episodenumber>168</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 168</EpisodeName>
+  <EpisodeNumber>168</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461034</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374279</id>
+  <Combined_episodenumber>169</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 169</EpisodeName>
+  <EpisodeNumber>169</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461047</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374280</id>
+  <Combined_episodenumber>170</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 170</EpisodeName>
+  <EpisodeNumber>170</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461060</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374281</id>
+  <Combined_episodenumber>171</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 171</EpisodeName>
+  <EpisodeNumber>171</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461077</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374282</id>
+  <Combined_episodenumber>172</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 172</EpisodeName>
+  <EpisodeNumber>172</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461090</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374283</id>
+  <Combined_episodenumber>173</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 173</EpisodeName>
+  <EpisodeNumber>173</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461103</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374284</id>
+  <Combined_episodenumber>174</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 174</EpisodeName>
+  <EpisodeNumber>174</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461117</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374285</id>
+  <Combined_episodenumber>175</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 175</EpisodeName>
+  <EpisodeNumber>175</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461130</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374286</id>
+  <Combined_episodenumber>176</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 176</EpisodeName>
+  <EpisodeNumber>176</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461143</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374287</id>
+  <Combined_episodenumber>177</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 177</EpisodeName>
+  <EpisodeNumber>177</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461156</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374288</id>
+  <Combined_episodenumber>178</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 178</EpisodeName>
+  <EpisodeNumber>178</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461170</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374289</id>
+  <Combined_episodenumber>179</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 179</EpisodeName>
+  <EpisodeNumber>179</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461183</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374290</id>
+  <Combined_episodenumber>180</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 180</EpisodeName>
+  <EpisodeNumber>180</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461196</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374291</id>
+  <Combined_episodenumber>181</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 181</EpisodeName>
+  <EpisodeNumber>181</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461210</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374292</id>
+  <Combined_episodenumber>182</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 182</EpisodeName>
+  <EpisodeNumber>182</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461223</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374293</id>
+  <Combined_episodenumber>183</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 183</EpisodeName>
+  <EpisodeNumber>183</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461237</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374294</id>
+  <Combined_episodenumber>184</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 184</EpisodeName>
+  <EpisodeNumber>184</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461250</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374296</id>
+  <Combined_episodenumber>185</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 185</EpisodeName>
+  <EpisodeNumber>185</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461263</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374297</id>
+  <Combined_episodenumber>186</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 186</EpisodeName>
+  <EpisodeNumber>186</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461277</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374298</id>
+  <Combined_episodenumber>187</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 187</EpisodeName>
+  <EpisodeNumber>187</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461294</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374299</id>
+  <Combined_episodenumber>188</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 188</EpisodeName>
+  <EpisodeNumber>188</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461307</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374300</id>
+  <Combined_episodenumber>189</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 189</EpisodeName>
+  <EpisodeNumber>189</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461321</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374301</id>
+  <Combined_episodenumber>190</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 190</EpisodeName>
+  <EpisodeNumber>190</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461337</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374302</id>
+  <Combined_episodenumber>191</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 191</EpisodeName>
+  <EpisodeNumber>191</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461351</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374303</id>
+  <Combined_episodenumber>192</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 192</EpisodeName>
+  <EpisodeNumber>192</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461364</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374304</id>
+  <Combined_episodenumber>193</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 193</EpisodeName>
+  <EpisodeNumber>193</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461378</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374305</id>
+  <Combined_episodenumber>194</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 194</EpisodeName>
+  <EpisodeNumber>194</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461391</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374306</id>
+  <Combined_episodenumber>195</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 195</EpisodeName>
+  <EpisodeNumber>195</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461405</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374307</id>
+  <Combined_episodenumber>196</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 196</EpisodeName>
+  <EpisodeNumber>196</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461428</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374308</id>
+  <Combined_episodenumber>197</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 197</EpisodeName>
+  <EpisodeNumber>197</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461442</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374310</id>
+  <Combined_episodenumber>198</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 198</EpisodeName>
+  <EpisodeNumber>198</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461460</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+<Episode>
+  <id>4374311</id>
+  <Combined_episodenumber>199</Combined_episodenumber>
+  <Combined_season>3</Combined_season>
+  <DVD_chapter></DVD_chapter>
+  <DVD_discid></DVD_discid>
+  <DVD_episodenumber></DVD_episodenumber>
+  <DVD_season></DVD_season>
+  <Director></Director>
+  <EpImgFlag></EpImgFlag>
+  <EpisodeName>Episode # 199</EpisodeName>
+  <EpisodeNumber>199</EpisodeNumber>
+  <FirstAired></FirstAired>
+  <GuestStars></GuestStars>
+  <IMDB_ID></IMDB_ID>
+  <Language>en</Language>
+  <Overview></Overview>
+  <ProductionCode></ProductionCode>
+  <Rating></Rating>
+  <RatingCount>0</RatingCount>
+  <SeasonNumber>3</SeasonNumber>
+  <Writer></Writer>
+  <absolute_number></absolute_number>
+  <filename></filename>
+  <lastupdated>1344461510</lastupdated>
+  <seasonid>487193</seasonid>
+  <seriesid>250235</seriesid>
+</Episode>
+</Data>
