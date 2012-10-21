@@ -8,6 +8,6 @@ $app->get('/programmes', function() use ($app) {
 		)
 	);
 
-	$programmes = R::find('epg', 'start BETWEEN ? AND ?', array_values($params));
+	$programmes = R::find('programmes', 'start BETWEEN ? AND ?', array_values($params));
 	output_json(R::exportAll($programmes));
 });
