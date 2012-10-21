@@ -11,9 +11,9 @@
 	];
 
 	var advertData = [
-		//{ id: "guinness", type: "video", service: "vod", url: "ad-guinness.mp4" },
-		//{ id: "gocompare", type: "video", service: "vod", url: "ad-gocompare.mp4" },
-		//{ id: "justdance", type: "video", service: "vod", url: "ad-justdance.mp4" },
+		{ id: "guinness", type: "video", service: "vod", url: "ad-guinness.mp4" },
+		{ id: "gocompare", type: "video", service: "vod", url: "ad-gocompare.mp4" },
+		{ id: "justdance", type: "video", service: "vod", url: "ad-justdance.mp4" },
 		{ id: "nightlife-sloth", type: "still", image: "img/nightlife-sloth.jpg", duration: 3000 },
 		{ id: "your4-sting", type: "still", image: "img/logo-frame.png", duration: 1000 }
 	];

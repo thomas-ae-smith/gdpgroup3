@@ -59,10 +59,10 @@
 						autoBuffering: true,
 						accelerated: true,
 						onStart: function () {
-							this.trigger("started");
+							that.trigger("started");
 						},
 						onFinish: function () {
-							this.trigger("finished");
+							that.trigger("finished");
 						}
 					},
 					plugins: {
