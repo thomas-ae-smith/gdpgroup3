@@ -1,4 +1,5 @@
 .DS_Store
+recommender/tvdb_cache
 
 syntax: glob
 *.pyc

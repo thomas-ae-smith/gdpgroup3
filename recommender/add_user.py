@@ -11,13 +11,13 @@ import svm.user_svm
 
 import pdb
 
-def add_user(gender, age, debug=False):
+def add_user(age, gender, debug=False):
 	"""Given user demographics, adds a new user to persistant storage, along 
 	with a vector representing the users preferences, as returned by the 
 	SVM"""
 
 	# Get user vector
-	vector = svm.user_svm.classify_user([gender, age])
+	vector = svm.user_svm.classify_user(age, gender)
 	vector = ", ".join(str(e) for e in vector)
 
 	# Write to DB
@@ -50,12 +50,12 @@ if __name__ == "__main__":
 	parser = argparse.ArgumentParser(description="Adds a new user to the "
 		"database along with their preference vector initialised by the "
 		"recommender.")
-	parser.add_argument('gender', metavar='male', type=bool, help="The gender "
-						"of the user. True if male, false if female.")
-	parser.add_argument('age', metavar='age', type=int, help="The age of the "
+	parser.add_argument('age', metavar='age', type=float, help="The age of the "
 						"user in years.")
+	parser.add_argument('gender', metavar='gender', type=bool, help="The gender "
+						"of the user. True if male, false if female.")
 	parser.add_argument('-d', "--debug", action="store_true",
 						help="If true, breaks using pdb in a number of cases.")
 	args = parser.parse_args()
 
-	add_user(args.gender, args.age, args.debug)
+	add_user(args.age, args.gender, args.debug)

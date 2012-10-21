@@ -7,17 +7,16 @@ import pdb
 from PyML import VectorDataSet
 from PyML.classifiers.svm import SVR
 
+DEBUG = True
+DEFAULT_NO_CACHE = True
 ML_INPUTS = "data/movielens/ml_data.inputs"
 ML_OUTPUTS = "data/movielens/ml_data.outputs"
 SVM_CACHE = os.path.join("cache", "svr_cache")
 
-def classify_user(v):
-	"""Given a vector `v` of user demographics, returns the initial vector 
+def classify_user(gender, age):
+	"""Given user demographics, returns the initial vector 
 	for the users preferences."""
-
-	assert len(v) == 2
-
-	dataset = VectorDataSet([[int(v[0]), v[1]]], numericLabels=True)
+	dataset = VectorDataSet([[age, gender]])
 
 	vector = []
 	try:
@@ -26,6 +25,8 @@ def classify_user(v):
 	except AttributeError as err:
 		print("AttributeError; did you forget to train the SVM?")
 		pdb.set_trace()
+
+	if DEBUG: pdb.set_trace()
 
 	return vector
 
@@ -48,11 +49,15 @@ def get_datasets():
 
 	datasets = []
 	for output_index in xrange(output_length):
+		L = [v.tolist()[0][output_index] for v in out_matrix]
+		if DEBUG: pdb.set_trace()
 		dataset = VectorDataSet(in_matrix.tolist(),
-							L=[v.tolist()[0][output_index] for v in out_matrix],
-							numericLabels=True)
+								L=L,
+								numericLabels=True)
 		dataset.normalize()
 		datasets.append(dataset)
+
+	if DEBUG: pdb.set_trace()
 
 	return datasets
 
@@ -61,6 +66,7 @@ def retrain():
 	representation of the user preference vector has changed."""
 
 	datasets = get_datasets()
+
 	for ds_num, ds in enumerate(datasets):
 		_svrs[ds_num].train(ds)
 		_svrs[ds_num].save(SVM_CACHE+"."+str(ds_num))
@@ -82,10 +88,13 @@ def test(validations=5):
 
 def _get_svr(dataset):
 	svr = SVR()
+
+	if DEBUG: pdb.set_trace()
+
 	svr.train(dataset)
 	return svr
 
-def _get_svrs(no_cache=False):
+def _get_svrs(no_cache=DEFAULT_NO_CACHE):
 	datasets = get_datasets()
 
 	if no_cache:

@@ -4,7 +4,6 @@ from __future__ import division
 from __future__ import print_function
 
 import cPickle as pickle
-import pdb
 import sys
 
 import numpy
@@ -128,10 +127,13 @@ for userid, movieids in ratings.iteritems():
 		outputs += [meanMovieVec]
 
 assert len(inputs) == len(outputs)
-print("Written {p} patterns".format(p=len(inputs)))
+
+import pdb; pdb.set_trace()
 
 with open("ml_data.inputs", "wb") as INPUTS:
 	pickle.dump(numpy.matrix(inputs), INPUTS)
 
 with open("ml_data.outputs", "wb") as OUTPUTS:
 	pickle.dump(numpy.matrix(outputs), OUTPUTS)
+
+print("Written {p} patterns".format(p=len(inputs)))
