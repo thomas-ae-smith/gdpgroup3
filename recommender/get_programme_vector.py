@@ -3,11 +3,14 @@
 from __future__ import print_function
 
 import argparse
+import inspect
+import os
 import sys
 
 import tvdb_api
 
-_tvdb = tvdb_api.Tvdb(cache="tvdb_cache")
+_filepath = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+_tvdb = tvdb_api.Tvdb(cache=_filepath+"/tvdb_cache")
 
 _genre_convert = {
 	"Action and Adventure":0,
