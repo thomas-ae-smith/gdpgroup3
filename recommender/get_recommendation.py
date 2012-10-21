@@ -33,7 +33,7 @@ def get_user_vector(user_id):
 def get_upcoming_programmes(lookahead=300):
 	query = (	'SELECT `channel`, `vector` '
 				'FROM `programmes` '
-				'WHERE `start_time` '
+				'WHERE `start` '
 				'BETWEEN {start_time} '
 				'AND {end_time}'.format(
 					start_time=int(time.time()),
@@ -77,8 +77,10 @@ def get_recommendation(user_id, lookahead=300):
 # If called from the commandline.
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser(description="Given a user ID, returns a "
-		"channel recommended for the user to switch to after their current "
-		"programme has finished.")
+		"the channel of a programme recommended by the recommender which "
+		"starts within the period `TIME` specified (defualt 5 mins). Returns "
+		"-1 if there are no programmes in the database which start within "
+		"the specified time.")
 	parser.add_argument('user_id', metavar='uid', type=str,
 						help="The ID of a user")
 	parser.add_argument('-t', "--time", help="The greatest length of time, in "
