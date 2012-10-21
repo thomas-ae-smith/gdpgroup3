@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="lib/underscore.js"></script>
 	<script type="text/javascript" src="lib/backbone.js"></script>
 	<script type="text/javascript" src="lib/flowplayer.min.js"></script>
-	<script type="text/javascript" src="lib/bootstrap.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.min.js"></script>
 	<script>
 		// Hack to avoid iPad caching
 		document.write('<script type="text/javascript" src="js/base.js?' + Math.round(Math.random() * 10000000) + '"></' + "script>");
@@ -21,11 +21,34 @@
 	<div class="templates">
 		<script id="player-template" type="text/template">
 			<div class="start-screen">
-				<div class="logo-frame"><img src="img/logo-frame.png"></div>
+				<div class="logo-frame"><img src="img/homepage-splash.jpg"></div>
+				<div class="logon-outer">
+					<div class="logon-inner">
+						<button class="btn btn-large btn-primary facebook-button" type="button">Login with Facebook</button>
+						<div class="separator">
+							<span>OR SIGN IN</span>
+						</div>
+
+						<form class="login-form">
+							<div class="control-group">
+								<div class="controls">
+									<input type="text" id="inputEmail" placeholder="Email">
+								</div>
+							</div>
+							<div class="control-group">
+                                                                <div class="controls">
+                                                                        <input type="password" id="inputPassword" placeholder="Password">
+                                                                </div>
+                                                        </div>
+							<button class="btn btn-large login-button" type="button">Log in</button>
+							<button class="btn btn-large register-button" type="button">Register</button>
+						</form>
+					</div>
+				</div>
 				<div class="instruction"><strong>Touch to start</strong></div>
 			</div>
 			<div class="channels"></div>
-			<div class="controls">
+			<div class="player-controls">
 				<div class="left-controls">
 					<i class="icon-play"></i> 
 					<i class="icon-stop"></i>

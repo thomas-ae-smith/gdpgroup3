@@ -2,7 +2,7 @@ body {
 	overflow: hidden;
 }
 
-.controls {
+.player-controls {
 	position: absolute;
 	left: 0;
 	padding-left:140px;
@@ -16,15 +16,15 @@ body {
 	color: #fff;
 }
 
-.controls .left-controls {
+.player-controls .left-controls {
 	float: left;
 }
 
-.controls i {
+.player-controls i {
 	display: inline-block;
 }
 
-.controls i:hover {
+.player-controls i:hover {
 	color: #dedede;
 }
 
@@ -97,10 +97,71 @@ body {
 .start-screen .instruction strong {
 	font-size: 34px;
 	-webkit-animation-name: pulse;
-      -webkit-animation-duration: 1s;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: ease-in-out;
-      -webkit-animation-direction: alternate;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+
+.start-screen .logon-outer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 300px;
+	line-height: 22px;
+}
+
+.start-screen .logon-inner {
+	margin: 0 auto;
+	background: #000;
+        opacity: 0.6;
+        padding: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+	width: 500px;
+}
+
+.start-screen .logon-inner button {
+	width: 100%;
+}
+
+.start-screen .logon-inner .login-button {
+	margin-bottom: 5px;
+}
+
+.start-screen .logon-inner .separator {
+	border-top: 1px inset #fff;
+	height: 2px;
+	text-align: center;
+	margin: 25px 0 25px 0;
+}
+
+.start-screen .logon-inner .separator span {
+	position: relative;
+	display: inline-block;
+	font-weight: bold;
+	font-style: italic;
+	top: -12px;
+	background: #5C124A;
+	padding: 0 6px 0 6px;
+	font-size: 14px;
+	-webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+}
+
+.start-screen .logon-inner .login-form .control-group {
+	margin-bottom: 0;
+}
+
+.start-screen .logon-inner .login-form {
+	margin-bottom: 0;
+}
+
+.start-screen .logon-inner .login-form input {
+	width: 100%;
+	padding: 15px;
 }
 
 .log {

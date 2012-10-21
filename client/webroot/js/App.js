@@ -126,7 +126,7 @@
 		showOverlay: function () {
 			var that = this;
 			if (!this.overlayIsShown) {
-				this.$(".channels, .controls").fadeIn(200);
+				this.$(".channels, .player-controls").fadeIn(200);
 				this.overlayIsShown = true;
 			}
 			clearTimeout(this.hideOverlayTimeout);
@@ -137,7 +137,7 @@
 		},
 
 		hideOverlay: function () {
-			this.$(".channels, .controls").dequeue().fadeOut(200);
+			this.$(".channels, .player-controls").dequeue().fadeOut(200);
 			this.overlayIsShown = false;
 			return this;
 		},
