@@ -52,7 +52,7 @@ with open("ratings.dat", "rb") as RATINGS:
 			except KeyError:
 				pass
 
-tvdb = tvdb_api.Tvdb(cache="../../../datastore/tvdb_cache")
+tvdb = tvdb_api.Tvdb(cache="../../tvdb_cache")
 
 # Populate movies dict
 with open("movies.dat", "rb") as MOVIES:
@@ -83,6 +83,8 @@ with open("movies.dat", "rb") as MOVIES:
 		if movieid in _useful_movieids: # Only pull details if they're useful.
 			_done += 1
 			title = latin1_to_ascii(title.strip()[0:-7])
+			if title.lower().endswith(", the"):
+				title = "The "+title[:-5]
 			print("{done}/{togo}: ".format(done=_done, togo=len(_useful_movieids)),
 					end='')
 			try:
@@ -120,7 +122,7 @@ for userid, movieids in ratings.iteritems():
 	movieids = list(set(movieids) & set(movies.keys()))
 	if movieids:
 		movieVecs = [movies[mid] for mid in movieids]
-		meanMovieVec = [sum(v[n] for v in movieVecs)
+		meanMovieVec = [sum(v[n] for v in movieVecs)/len(movieVecs)
 						for n in xrange(len(movieVecs[0]))]
 
 		inputs += [users[userid]]
