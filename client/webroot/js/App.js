@@ -12,7 +12,27 @@
 			"click .icon-stop": "stop"
 		},
 		initialize: function (options) {
+			var that = this;
+
 			this.player = new y4.Player({ server: options.server });
+
+			this.advertCollection = new y4.AdvertCollection(undefined, { player: this.player });
+
+			this.channelCollection = new y4.ChannelCollection(undefined, { player: this.player });
+			this.vodCollection = new y4.VODCollection(undefined, { player: this.player });
+			this.programmeCollection = new y4.ProgrammeCollection(undefined, {
+				channelCollection: this.channelCollection,
+				vodCollection: this.vodCollection
+			});
+
+			this.personalChannel = new y4.PersonalChannel({
+				advertCollection: this.advertCollection,
+				programmeCollection: this.programmeCollection
+			});
+
+			this.on("start", function () {
+				that.personalChannel.start();
+			})
 
 			_.bindAll(this);
 		},
@@ -20,35 +40,6 @@
 		play: function () { this.player.play(); },
 		stop: function () { this.player.stop(); },
 
-		setVideoScene: function (scene, duration) {
-			var that = this;
-			that.player.blackLayer.show();
-			that.player.videoLayer.set(scene).unmute();
-			that.player.blackLayer.hide();
-			setTimeout(function () {
-				that.player.blackLayer.hide();
-			}, 1500);
-
-			if (duration) {
-				setTimeout(function () {
-					that.player.videoLayer.mute().set(null);
-					that.player.blackLayer.show();
-				}, duration);
-			}
-		},
-
-		setStillScene: function (scene, duration) {
-			var that = this;
-			that.player.blackLayer.show();
-			that.player.stillLayer.set(scene).show();
-
-			if (duration) {
-				setTimeout(function () {
-					that.player.stillLayer.hide();
-				}, duration);
-			}
-
-		},
 
 		setPlaylist: function (_playlist) {
 			var that = this,
@@ -79,7 +70,7 @@
 					if (item.duration) {
 						setTimeout(function () {
 							if (playlist.length) { playItem(playlist.shift()); }
-						}, item.duration);
+						}, item.duration + overplay);
 					}
 				};
 
