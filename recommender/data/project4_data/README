@@ -1,0 +1,1 @@
+Everything in this folder is mostly useless now; the movies cannot be linked to demographics data. It should be useful in building a similarity matrix, at any point, because the data coming out the end is a list of user IDs (IP addresses) against programmes they've watched.

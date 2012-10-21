@@ -1,0 +1,11 @@
+1:
+age in years
+
+2:
+gender; 1 is male, 0 is female
+
+3-23:
+length 21 binary vector representing an occupation
+
+24-42:
+length 18 binary vector representing genres belonging to a film rated 5 starts by preceeding user

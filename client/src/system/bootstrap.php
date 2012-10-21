@@ -1,9 +1,20 @@
 <?php
+ini_set('memory_limit', '1500M');
 
-require_once 'Tonic/Autoloader.php';
+require_once 'config.php';
 require_once 'rb.php';
 require_once 'common.php';
+set_db('your4');
 
-R::setup('mysql:host=77.244.130.51;dbname=inspirit_inqb8r','teamgdp','MountainDew2012');
-R::freeze(true);
+require 'Slim/Slim.php';
+\Slim\Slim::registerAutoloader();
+$app = new \Slim\Slim();
+
+$app->add(new \Slim\Middleware\ContentTypes());
+
+foreach (glob(__DIR__ . "/../resources/*.php") as $filename) {
+    include $filename;
+}
+
+$app->run();
 

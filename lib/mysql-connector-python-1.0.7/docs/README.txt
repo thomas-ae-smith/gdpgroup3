@@ -1,1 +1,0 @@
-Documentation will be made available on http://dev.mysql.com.

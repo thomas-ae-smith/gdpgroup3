@@ -1,18 +1,13 @@
 <?php
 
-/**
- * @uri /programmes
- */
+$app->get('/programmes', function() use ($app) {
+	$params = get_params($app->request(), 'get', 
+		array(
+			'date_start' => time() - 7*24*60*60,
+			'date_end' => time()
+		)
+	);
 
-class ProgrammeCollection extends Tonic\Resource {
-	/**
-	 * @method GET
-	 * @provides application/json
-	 * @json
-	 */
-
-	function list() {
-		$programmes = R::find('project4_epg');
-		return $programmes;
-	}
-}
+	$programmes = R::find('epg', 'start BETWEEN ? AND ?', array_values($params));
+	output_json(R::exportAll($programmes));
+});
