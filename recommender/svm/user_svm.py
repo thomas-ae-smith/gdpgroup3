@@ -47,17 +47,16 @@ def get_datasets():
 	input_length = len(in_matrix[0].T)
 	output_length = len(out_matrix[0].T)
 
+	if DEBUG: pdb.set_trace()
+
 	datasets = []
 	for output_index in xrange(output_length):
 		L = [v.tolist()[0][output_index] for v in out_matrix]
-		if DEBUG: pdb.set_trace()
 		dataset = VectorDataSet(in_matrix.tolist(),
 								L=L,
 								numericLabels=True)
 		dataset.normalize()
 		datasets.append(dataset)
-
-	if DEBUG: pdb.set_trace()
 
 	return datasets
 

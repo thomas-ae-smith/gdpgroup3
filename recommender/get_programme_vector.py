@@ -71,4 +71,4 @@ if __name__ == "__main__":
 	parser.add_argument('name', metavar='programme_name', type=str,
 						help="The name of the programme.")
 	args = parser.parse_args()
-	print(get_programme_vector(args.name))
+	print(",".join([str(e) for e in get_programme_vector(args.name)]))

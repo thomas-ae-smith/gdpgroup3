@@ -7,7 +7,7 @@ import argparse
 import mysql.connector
 
 from datastore.credentials import credentials
-import svm.user_svm
+import classifier.user_classifier # import svm.user_svm
 
 import pdb
 
@@ -16,9 +16,12 @@ def add_user(age, gender, debug=False):
 	with a vector representing the users preferences, as returned by the 
 	SVM"""
 
+	gender = gender == 'm' # True if male
+
 	# Get user vector
-	vector = svm.user_svm.classify_user(age, gender)
-	vector = ", ".join(str(e) for e in vector)
+	# vector = svm.user_svm.classify_user(age, gender)
+	vector = classifier.user_classifier.classify_user(age, gender)
+	vector = ",".join(str(e) for e in vector)
 
 	# Write to DB
 	query = ("INSERT INTO users(vector) "
@@ -52,10 +55,13 @@ if __name__ == "__main__":
 		"recommender.")
 	parser.add_argument('age', metavar='age', type=float, help="The age of the "
 						"user in years.")
-	parser.add_argument('gender', metavar='gender', type=bool, help="The gender "
-						"of the user. True if male, false if female.")
+	parser.add_argument('gender', metavar='gender', type=str, help="The gender "
+						"of the user. 'm' if male, 'f' if female.")
 	parser.add_argument('-d', "--debug", action="store_true",
 						help="If true, breaks using pdb in a number of cases.")
 	args = parser.parse_args()
+
+	args.gender = args.gender.lower()
+	assert args.gender in {'m', 'f'}
 
 	add_user(args.age, args.gender, args.debug)

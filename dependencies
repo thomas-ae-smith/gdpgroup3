@@ -1,4 +1,5 @@
-numpy
-pyml
-mysql-connector
-tvdb_api
+Python libraries:
+* numpy
+* pyml
+* mysql-connector
+* tvdb_api
