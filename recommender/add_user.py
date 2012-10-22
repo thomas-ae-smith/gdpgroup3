@@ -7,6 +7,7 @@ import argparse
 import mysql.connector
 
 from datastore.credentials import credentials
+from datastore.vector import vector_to_string
 import classifier.user_classifier # import svm.user_svm
 
 import pdb
@@ -23,7 +24,7 @@ def add_user(age, gender, name, debug=False, verbose=False):
 	# Get user vector
 	# vector = svm.user_svm.classify_user(age, gender)
 	vector = classifier.user_classifier.classify_user(age, gender)
-	vector = ",".join(str(e) for e in vector)
+	vector = vector_to_string(vector)
 
 	# Write to DB
 	query = ("INSERT INTO users(name, vector) "

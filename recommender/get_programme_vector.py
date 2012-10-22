@@ -9,7 +9,10 @@ import sys
 
 import tvdb_api
 
-_filepath = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+from datastore.vector import vector_to_string
+
+_filepath = os.path.dirname(os.path.abspath(
+				inspect.getfile(inspect.currentframe())))
 _tvdb = tvdb_api.Tvdb(cache=_filepath+"/tvdb_cache")
 
 _genre_convert = {
@@ -35,7 +38,7 @@ _genre_convert = {
 }
 
 def get_programme_vector(title):
-	"""Given a programme name, returns a vector representiong that programme 
+	"""Given a programme name, returns a vector representing that programme 
 	to be used by the recommender"""
 	genre_vec = [0] * len(_genre_convert)
 	try:
@@ -71,4 +74,4 @@ if __name__ == "__main__":
 	parser.add_argument('name', metavar='programme_name', type=str,
 						help="The name of the programme.")
 	args = parser.parse_args()
-	print(",".join([str(e) for e in get_programme_vector(args.name)]))
+	print(vector_to_string(get_programme_vector(args.name)))

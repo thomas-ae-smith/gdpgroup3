@@ -3,6 +3,7 @@
 from __future__ import print_function
 
 import argparse
+import pdb
 import sys
 import time
 
@@ -10,17 +11,9 @@ import mysql.connector
 import numpy
 
 from datastore.credentials import credentials
+from datastore.vector import string_to_vector
 
-def convert_vector(vector):
-	""" Given a string representing a vector returned from the datastore, 
-	returns a numpy array representation of the vector. The precision is capped 
-	to 12 s.f for the purpose of restricting each vector element inthe database 
-	to 14 characters plus 1 character for the separator."""
-	if vector.startswith('['):	# This is here for legacy reasons.
-		vector = vector[1:-1].split(", ")
-
-	cat = lambda s: round(float(s.strip()), 12)
-	return numpy.array([cat(e) for e in vector.split(",")])
+DEBUG = False
 
 def get_user_vector(user_id):
 	query = (	'SELECT `vector` '
@@ -41,7 +34,7 @@ def get_user_vector(user_id):
 		print("No user with the id {id}".format(id=user_id), file=sys.stderr)
 		exit(1)
 
-	vector = convert_vector(vector[0])
+	vector = string_to_vector(vector[0])
 
 	cursor.close()
 	conn.close()
@@ -68,7 +61,7 @@ def get_upcoming_programmes(lookahead=300):
 
 	channel_vectors = []
 	for channel, vector in cursor:
-		vector = convert_vector(vector)
+		vector = string_to_vector(vector)
 		channel_vectors.append((channel, vector))
 
 	if not channel_vectors:
@@ -90,17 +83,25 @@ def get_recommendation(user_id, lookahead=300):
 
 	best_recommendation = (float('inf'), -1)
 	for channel, vector in upcoming_programmes:
-		diff = user_vector - vector
-		distance = numpy.sqrt(numpy.dot(diff, diff)
+		try:
+			diff = user_vector - vector
+		except ValueError as err:
+			# If you've got here, then the vector being written to the database 
+			# is probably being truncated in writing. Make sure a full-length
+			# vector fits in the varchar length.
+			if DEBUG:
+				pdb.set_trace()
+			raise
+
+		distance = numpy.sqrt(numpy.dot(diff, diff))
 		# If the norm of the difference vector is the smallest so far...
 		if distance < best_recommendation[0]:
-			# ...recommend that programme
+			# ...recommend that programme.
 			best_recommendation = (distance, channel)
 
 	return best_recommendation[1]
 
-# If called from the commandline.
-if __name__ == "__main__":
+def _init_argparse():
 	parser = argparse.ArgumentParser(description="Given a user ID, returns a "
 		"the channel of a programme recommended by the recommender which "
 		"starts within the period `TIME` specified (defualt 5 mins). Returns "
@@ -112,7 +113,16 @@ if __name__ == "__main__":
 	parser.add_argument('-t', "--time", type=float, help="The greatest length "
 		"of time, in seconds, between right now and when the recommendation "
 		"begins. Default 300 (5 minutes).")
-	args = parser.parse_args()
+	parser.add_argument('-d', "--debug", action="store_true",
+						help="If true, breaks using pdb in a number of cases.")
+	return parser.parse_args()
+
+
+# If called from the commandline.
+if __name__ == "__main__":
+	args = _init_argparse()
+
+	DEBUG = args.debug
 
 	lookahead = args.time or 300
 	print(str(get_recommendation(args.user_id, lookahead)))
