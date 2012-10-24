@@ -31,11 +31,7 @@ def add_user(age, gender, name, debug=False, verbose=False):
 			"VALUES ('{name}', '{v}')".format(name=name, v=vector))
 
 	try:
-		conn = mysql.connector.connect(user=credentials['username'],
-									password=credentials['password'],
-									database=credentials['db'],
-									host=credentials['host'],
-									port=credentials['port'])
+		conn = mysql.connector.connect(**credentials)
 	except mysql.connector.errors.InterfaceError as err:
 		if debug:
 			pdb.set_trace()

@@ -20,11 +20,7 @@ def get_user_vector(user_id):
 				'FROM `users` '
 				'WHERE `id` = {id}'.format(
 					id=user_id))
-	conn = mysql.connector.connect(user=credentials['username'],
-								password=credentials['password'],
-								database=credentials['db'],
-								host=credentials['host'],
-								port=credentials['port'])
+	conn = mysql.connector.connect(**credentials)
 	cursor = conn.cursor()
 
 	cursor.execute(query)
@@ -41,6 +37,7 @@ def get_user_vector(user_id):
 
 	return vector
 
+# TODO: Filter out programmes called "Off air"
 def get_upcoming_programmes(lookahead=300):
 	query = (	'SELECT `channel`, `vector` '
 				'FROM `programmes` '
