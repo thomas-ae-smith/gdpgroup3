@@ -11,7 +11,7 @@ import mysql.connector
 import numpy
 
 from datastore.credentials import credentials
-from datastore.vector import string_to_vector
+from datastore import vector, interface
 
 DEBUG = False
 
@@ -47,19 +47,15 @@ def get_upcoming_programmes(lookahead=300):
 					start_time=int(time.time()),
 					end_time=int(time.time() + lookahead)))
 
-	conn = mysql.connector.connect(user=credentials['username'],
-								password=credentials['password'],
-								database=credentials['db'],
-								host=credentials['host'],
-								port=credentials['port'])
+	conn = mysql.connector.connect(**credentials)
 	cursor = conn.cursor()
 
 	cursor.execute(query)
 
 	channel_vectors = []
-	for channel, vector in cursor:
-		vector = string_to_vector(vector)
-		channel_vectors.append((channel, vector))
+	for channel, p_vector in cursor:
+		p_vector = vector.string_to_vector(p_vector)
+		channel_vectors.append((channel, p_vector))
 
 	if not channel_vectors:
 		print("No programmes in the database which start within the next {t} "
@@ -75,13 +71,13 @@ def get_recommendation(user_id, lookahead=300):
 	the recommender which starts within the next `lookahead` seconds. 
 	Retruns -1 if there are no programmes in the database to recommend."""
 
-	user_vector = get_user_vector(user_id)
+	user_vector = vector.string_to_vector(interface.get_user(user_id, ['vector']))
 	upcoming_programmes = get_upcoming_programmes(lookahead)
 
 	best_recommendation = (float('inf'), -1)
-	for channel, vector in upcoming_programmes:
+	for channel, p_vector in upcoming_programmes:
 		try:
-			diff = user_vector - vector
+			diff = user_vector - p_vector
 		except ValueError as err:
 			# If you've got here, then the vector being written to the database 
 			# is probably being truncated in writing. Make sure a full-length
