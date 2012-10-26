@@ -10,6 +10,7 @@ import sys
 import tvdb_api
 
 from datastore.vector import vector_to_string
+from strconvert import latin1_to_ascii
 
 _filepath = os.path.dirname(os.path.abspath(
 				inspect.getfile(inspect.currentframe())))
@@ -40,6 +41,7 @@ _genre_convert = {
 def get_programme_vector(title):
 	"""Given a programme name, returns a vector representing that programme 
 	to be used by the recommender"""
+	title = latin1_to_ascii(title)
 	genre_vec = [0] * len(_genre_convert)
 	try:
 		tvdb_genres = _tvdb[title]['genre']
