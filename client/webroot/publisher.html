@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Your4.tv - your custom TV channel</title>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/underscore.js"></script>
+	<script type="text/javascript" src="lib/backbone.js"></script>
+	<script type="text/javascript" src="lib/flowplayer.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.js"></script>
+	<script type="text/javascript" src="js/base.publisher.js"></script>
+</head>
+<body>
+	<div class="container">
+
+	</div>
+	<div id="templates">
+		<script type="text/html" id="main-template">
+			<div class="navbar">
+				<div class="navbar-inner">
+				<a class="brand" href="#">Your4.tv Advertisers Portal</a>
+					<ul class="nav">
+						<% _.map(links, function (link) { %>
+							<li class="<% if (link.active) { %>active<% } %>">
+								<a href="#<%= link.hash %>"><%= link.title %></a>
+							</li>
+						<% }); %>
+					</ul>
+				</div>
+			</div>
+			<ul class="breadcrumb">
+				<% _.map(breadcrumb, function (link, i) { %>
+					<li><a href="#<%= link.hash %>"><%= link.title %></a>
+						<span class="divider">/</span></li>
+				<% }); %>
+			</ul>
+			<h1 class="title"><%= title %></h1>
+			<div class="main-body"></div>
+			<div class="footer">Copyright Your4.tv</div>
+		</script>
+		<script type="text/html" id="home-template">
+			Put awesome stuff here
+		</script>
+		<script type="text/html" id="advert-list-template">
+		</script>
+		<script type="text/html" id="advert-list-item-template">
+		</script>
+		<script type="text/html" id="advert-template">
+		</script>
+		<script type="text/html" id="campaign-list-template">
+		</script>
+		<script type="text/html" id="campaign-list-item-template">
+		</script>
+		<script type="text/html" id="campaign-template">
+		</script>
+		<script type="text/html" id="campaign-target-template">
+		</script>
+	</div>
+</body>
+</html>
