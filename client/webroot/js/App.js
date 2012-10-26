@@ -14,6 +14,8 @@
 		initialize: function (options) {
 			var that = this;
 
+			this.login = new y4.Login();
+
 			this.player = new y4.Player({ server: options.server });
 
 			this.advertCollection = new y4.AdvertCollection(undefined, { player: this.player });
@@ -84,6 +86,7 @@
 			this.$el.html(playerTemplate());
 			this.renderChannelButtons();
 			this.$el.append(this.player.render().el);
+			this.$el.find('.logo-frame').append(this.login.render().el);
 
 			return this;
 		},
@@ -146,4 +149,34 @@
 			this.$(".log").html(msg + "<br>" + this.$(".log").html());
 		}
 	});
+
+	y4.Login = Backbone.View.extend({
+		className: "logon-outer",
+
+		render: function() {
+			var loginTemplate = _.template($('#login-template').html());
+			this.$el.html(loginTemplate());
+			return this;
+		}
+
+	});
+
+	y4.viewManager = {
+		showView: function(view) {
+			$('#container').html(view.render().el);		
+		}
+	}
+
+	y4.Router = Backbone.Router.extend({
+		
+		routes: {
+			"":	"default"
+		},
+
+		default: function() {
+			y4.viewManager.showView(y4.app);
+		}
+
+	});
+	
 }(this.y4));

@@ -48,7 +48,9 @@ function htmlEscape(str) {
 		var app = y4.app = new y4.App({
 			server: "152.78.144.19:1935"
 		});
-		$('#container').html("").append(app.render().el);
+
+		y4.router = new y4.Router();
+		Backbone.history.start();
 	});
 
 	$(document).on("touchstart", function(e){ 

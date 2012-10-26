@@ -104,11 +104,11 @@ body {
 }
 
 .start-screen .logon-outer {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 300px;
+	position:absolute;
 	line-height: 22px;
+	vertical-align:middle;
+	width:100%;
+	height:100%;
 }
 
 .start-screen .logon-inner {
@@ -120,6 +120,13 @@ body {
         -moz-border-radius: 10px;
         border-radius: 10px;
 	width: 500px;
+	height: 260px;
+	position:relative;
+	left: 50%;
+	top: 50%;
+	margin-left: -250px;
+	margin-top: -70px;
+	vertical-align:middle;
 }
 
 .start-screen .logon-inner button {
@@ -223,7 +230,9 @@ video {
 	height: 100%;
 }
 
-.logo-frame, .logo-frame img {
+.logo-frame {
+	background-size:cover;
+	background: url('/img/homepage-splash.jpg');
 	width: 100%;
 	height: 100%;
 }
