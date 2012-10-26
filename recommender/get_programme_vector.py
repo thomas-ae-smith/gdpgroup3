@@ -39,7 +39,7 @@ _genre_convert = {
 }
 
 def get_programme_vector(title):
-	"""Given a programme name, returns a vector representing that programme 
+	"""Given a programme name, returns a vector representing that programme
 	to be used by the recommender"""
 	title = latin1_to_ascii(title)
 	genre_vec = [0] * len(_genre_convert)
@@ -52,19 +52,18 @@ def get_programme_vector(title):
 			print("Empty genre list returned by tvdb: "+title, file=sys.stderr)
 	except AttributeError:
 		print("No 'genre' attribute returned by tvdb: "+title, file=sys.stderr)
-		genre_vec[_genre_convert['Unclassified']] = 1
 	except tvdb_api.tvdb_shownotfound:
 		print("Not found by tvdb: "+title, file=sys.stderr)
-		genre_vec[_genre_convert['Unclassified']] = 1
 	except KeyError:
 		print("KeyError returned by tvdb: "+title, file=sys.stderr)
-		genre_vec[_genre_convert['Unclassified']] = 1
 	except tvdb_api.tvdb_error:
 		print("Error 'tvdb_error', possibly malformed repsonse: "+title,
 				file=sys.stderr)
-		genre_vec[_genre_convert['Unclassified']] = 1
 	except IndexError:
-		print("IndexError returned by tvdb. WTF?!?!?!?: "+title, file=sys.stderr)
+		print("IndexError returned by tvdb; has the limit been "
+				"exceeded?: "+title, file=sys.stderr)
+
+	if not any(genre_vec):
 		genre_vec[_genre_convert['Unclassified']] = 1
 
 	return genre_vec
@@ -76,4 +75,4 @@ if __name__ == "__main__":
 	parser.add_argument('name', metavar='programme_name', type=str,
 						help="The name of the programme.")
 	args = parser.parse_args()
-	print(vector_to_string(get_programme_vector(args.name)))
+	print(vector_to_string(get_programme_vector(args.name)), end='')

@@ -115,7 +115,7 @@ def _init_argparse():
 		"-1 if there are no programmes in the database which start within "
 		"the specified time. Exits with status 1 if the user id given does "
 		"not exist in the database of users")
-	parser.add_argument('user_id', metavar='uid', type=str,
+	parser.add_argument('user_id', metavar='uid', type=int,
 						help="The ID of a user")
 	parser.add_argument('-n', "--name", action="store_true", help="Returns the "
 						"name, instead of the id, of the programme.")
@@ -137,4 +137,4 @@ if __name__ == "__main__":
 	if args.name:
 		recommendation = get_name(recommendation)
 
-	print(str(recommendation))
+	print(str(recommendation), end='')
