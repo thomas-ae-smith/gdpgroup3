@@ -21,3 +21,9 @@ $DB = array(
 foreach ($DB as $db => $db_info) {
 	$DB[$db]['string'] = "mysql:host=$db_info[host];port=$db_info[port];dbname=$db_info[db]";
 }
+
+$CONFIG['fb'] = array(
+	'appId' => '424893924242103',
+	'secret' => 'c648259db9304f6cc5abb49bedafa070',
+	'fileUpload' => 'false'
+);

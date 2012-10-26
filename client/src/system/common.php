@@ -37,3 +37,13 @@ function get_params($res, $type, $param_list) {
 
 	return $processed_params;
 }
+
+function fb_to_user($user_profile) {
+	$user = array();
+	$user['name'] = $user_profile['name'];
+	$user['gender'] = $user_profile['gender'];
+	$user['facebookId'] = $user_profile['id'];
+	$user['dob'] = $user_profile['birthday'];
+	$user['email'] = $user_profile['email'];
+	return $user;
+}

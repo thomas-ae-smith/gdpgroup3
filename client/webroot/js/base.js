@@ -45,6 +45,14 @@ function htmlEscape(str) {
 
 	$(document).ready(function () {
 		
+		FB.init({
+			appId      : '424893924242103', // App ID from the App Dashboard
+			channelUrl : '//'+window.location.hostname+'/channel.php', // Channel File for x-domain communication
+			status     : true, // check the login status upon init?
+			cookie     : true, // set sessions cookies to allow your server to access the session?
+			xfbml      : true  // parse XFBML tags on this page?
+		});
+
 		var app = y4.app = new y4.App({
 			server: "152.78.144.19:1935"
 		});

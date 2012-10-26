@@ -6,8 +6,6 @@
 		events: {
 			"mousemove": "showOverlay",
 			"touchstart": "showOverlay",
-			"click .start-screen": "start",
-			"touchstart .start-screen": "start",
 			"click .icon-play": "play",
 			"click .icon-stop": "stop"
 		},
@@ -34,8 +32,8 @@
 
 			this.on("start", function () {
 				that.personalChannel.start();
-			})
-
+			});
+				
 			_.bindAll(this);
 		},
 
@@ -152,6 +150,34 @@
 
 	y4.Login = Backbone.View.extend({
 		className: "logon-outer",
+		events: {
+			"click .facebook-button": "facebookLogin"
+		},
+
+		initialize: function() {
+			FB.getLoginStatus(function(response) {
+                                if (response.status === 'connected') {
+                                        this.facebookLoggedIn = true;
+                                } else if (response.status === 'not_authorized') {
+                                        this.facebookLoggedIn = false;
+                                } else {
+                                        this.facebookLoggedIn = false;
+                                }
+                        });
+		},
+
+		facebookLogin: function() {
+			if (!this.facebookLoggedIn) {
+				FB.login(function(response) {
+					if (response.authResponse) {
+						this.facebookLoggedIn = true;
+						FB.api('/me', function(response) {
+							console.log('Good to see you, ' + response.name + '.');
+						});
+					}					
+				}, {scope: 'user_birthday,email'});
+			}
+		},
 
 		render: function() {
 			var loginTemplate = _.template($('#login-template').html());
