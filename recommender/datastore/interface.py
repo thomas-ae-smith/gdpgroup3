@@ -7,6 +7,26 @@ def _field_string(fields):
 	comma-separated elements surrounded by backticks"""
 	return ','.join(['`'+f+'`' for f in fields]) or '*'
 
+def get_advert_pool(uid):
+	"""Given a user id, returns their advert pool; a set of adverts for which
+	the user fulfills all demographics requirements."""
+	query = (	"SELECT `campaign`.`id` "
+				"FROM `users`,
+					`c` AS `campaigns`
+					LEFT JOIN (`campaignAgeRanges`, `campaignBoundingBoxes`, "
+						"`campaignOccupations`, `campaignProgramme`, "
+						"`campaignTimes`) "
+					"ON (`campaign`.`id` = `campaignAgeRanges`.`campaign` "
+						"AND `campaign`.`id` = `campaignBoundingBoxes`.`campaign` "
+						"AND `campaign`.`id` = `campaignOccupations`.`campaign` "
+						"AND `campaign`.`id` = `campaignProgrammes`.`campaign`) "
+						"AND `campaign`.`id` = `campaignTimes`.`campaign`) "
+				"WHERE `users`.`id` = {u} "
+				"AND `users`.`dob` - CURDATE() BETWEEN `c`.`min` AND `c`.`max` "
+				"AND `users`.`lat` BETWEEN `c`.`north` AND `c`.`south` "
+				"AND `users`.`long` BETWEEN `c`.`east` AND `c`.`west` "
+				"AND `users`.`occupation` IN `c`.`occupation`").format(u=uid)
+
 def get_programme(pid, fields=[]):
 	"""Returns a tuple of the values of the given fields for a programme with 
 	the given id. If no fields are specified, all are returned."""

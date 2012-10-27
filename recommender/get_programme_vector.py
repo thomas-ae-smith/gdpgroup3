@@ -10,7 +10,7 @@ import sys
 import tvdb_api
 
 from datastore.vector import vector_to_string
-from strconvert import latin1_to_ascii
+from util.strconvert import latin1_to_ascii
 
 _filepath = os.path.dirname(os.path.abspath(
 				inspect.getfile(inspect.currentframe())))
