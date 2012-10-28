@@ -12,8 +12,10 @@ def _field_string(fields):
 	return ','.join(['`'+f+'`' for f in fields]) or '*'
 
 def get_advert_pool(uid, pid, when=datetime.now()):
-	"""Given a user id, returns their advert pool; a set of adverts for which
-	the user fulfills all demographics requirements."""
+	"""Given a user id, programme id and time, returns a pool of adverts whose
+	campaigns allow the advert to be shown to the given user during the given
+	programme at the given time. Advert ids are returned along with the
+	campaign nichenesses."""
 	query = (
 		"SELECT `u`.`dob`, `u`.`gender`, `u`.`occupation`, `u`.`lat`, "
 			"`u`.`long`, `p`.`id`, `p`.`channel`, `p`.`genre`, `p`.`live`, "
@@ -53,9 +55,9 @@ def get_advert_pool(uid, pid, when=datetime.now()):
 			restrict['endTime'], advertid, nicheness) = result
 
 		restriction_match = {
-			'schedule': lambda: True, #TODO
-			'gender': lambda: (user['gender'] ==
-				{0:user['gender'], 1:'male', 2:'female'}[restrict['gender']]),
+			'schedule': lambda: programme['live'] in restrict['schedule'],
+			'gender': lambda: user['gender'] in restrict['gender'],
+				# {'male':user['gender'], 'female':'male', 'both':'female'}[restrict['gender']]),
 			'minAge': lambda: calc_age(user['dob']) >= restrict['minAge'],
 			'maxAge': lambda: calc_age(user['dob']) <= restrict['maxAge'],
 			'minLong': lambda: user['long'] >= restrict['minLong'],
@@ -74,7 +76,7 @@ def get_advert_pool(uid, pid, when=datetime.now()):
 							for k, v in restrict.iteritems()])
 
 		if available:
-			adverts[advertid] = nicheness
+			adverts[advertid] = float(nicheness)
 
 	cursor.close()
 	conn.close()
