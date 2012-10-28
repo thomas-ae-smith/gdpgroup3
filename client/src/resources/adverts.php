@@ -1,13 +1,17 @@
 <?php
 
-$app->get('/adverts', function() use ($app) {
-	$params = get_params($app->request(), 'get',
-		array(
-			'date_start' => time() - 7*24*60*60,
-			'date_end' => time()
-		)
-	);
-
-	$programmes = R::find('programmes', 'start BETWEEN ? AND ?', array_values($params));
-	output_json(R::exportAll($programmes));
+$app->get('/adverts(/:id)', function($id = null) use ($app) {
+	if (is_null($id)) {
+		$adverts = R::find('adverts');
+		output_json(R::exportAll($adverts));
+	} else {
+		$adverts = R::find('adverts', 'id = ?', array($id));
+		$r = R::exportAll($adverts);
+		if (count($r) === 0) {
+                        header('HTTP/1.0 404 Not Found');
+                        output_json(array('error' => 'Could not find advert with that ID.'));
+		} else {
+			output_json($r[0]);
+		}
+	}
 });

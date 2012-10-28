@@ -14,7 +14,7 @@ set_db('your4');
 
 require 'Slim/Slim.php';
 \Slim\Slim::registerAutoloader();
-$app = new \Slim\Slim();
+$app = new \Slim\Slim(); 
 
 $app->add(new \Slim\Middleware\ContentTypes());
 

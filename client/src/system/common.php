@@ -2,6 +2,7 @@
 
 require_once 'config.php';
 require_once 'rb.php';
+require_once 'json-prettifier.php';
 
 function set_db($conf_name) {
 	global $DB;
@@ -10,7 +11,7 @@ function set_db($conf_name) {
 
 function output_json($content) {
 	header("Content-Type: application/json");
-	echo json_encode($content);
+	echo json_format(json_encode($content));
 	exit;
 }
 
