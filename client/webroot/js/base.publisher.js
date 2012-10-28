@@ -47,8 +47,12 @@
 		campaign: function (id) { this.app.goCampaign(id); }
 	});
 
-	y4p.Adverts = Backbone.Collection.extend({});
-	y4p.Campaigns = Backbone.Collection.extend({});
+	y4p.Adverts = Backbone.Collection.extend({
+		url: "http://www.your4.tv/api/adverts/"
+	});
+	y4p.Campaigns = Backbone.Collection.extend({
+		url: "http://www.your4.tv/api/campaigns/"
+	});
 
 	y4p.AdvertiserApp = Backbone.View.extend({
 		className: "app",
@@ -59,8 +63,8 @@
 		],
 		initialize: function () {
 			this.router = new y4p.Router({ app: this });
-			this.adverts = new y4p.Adverts(sample.adverts);
-			this.campaigns = new y4p.Campaigns(sample.campaigns);
+			this.adverts = new y4p.Adverts();
+			this.campaigns = new y4p.Campaigns();
 		},
 		goAdverts: function () {
 			var that = this,
@@ -71,8 +75,13 @@
 			return this.render(view);
 		},
 		goAdvert: function (id) {
-			var advert = this.adverts.get(id);
-			return this.render(new y4p.pages.AdvertFull({ advert: advert }));
+			var that = this,
+				advert = this.adverts.get(id),
+				view = new y4p.pages.AdvertFull({ advert: advert });
+			view.on("return", function () {
+				that.router.navigate("adverts", { trigger: true });
+			});
+			return this.render(view);
 		},
 		goCampaigns: function () {
 			return this.render(new y4p.pages.CampaignList({ campaigns: this.campaigns }));
@@ -120,7 +129,9 @@
 			return this;
 		},
 		start: function () {
-			Backbone.history.start();
+			$.when(this.adverts.fetch(), this.campaigns.fetch()).then(function () {
+				Backbone.history.start();
+			});
 			return this;
 		}
 	});
@@ -144,17 +155,16 @@
 		className: "advert-list",
 		initialize: function (options) {
 			this.adverts = options.adverts;
-			this.adverts.on("add", this.add, this)
-				.on("remove", this.remove, this);
+			this.adverts.on("addItem", this.add, this)
+				.on("removeItem", this.remove, this);
 			this.$items = [];
 		},
 		render: function () {
 			this.$el.html(y4p.templates["advert-list"]());
-			console.log(this.adverts)
-			this.adverts.each(this.add, this);
+			this.adverts.each(this.addItem, this);
 			return this;
 		},
-		add: function (advert) {
+		addItem: function (advert) {
 			var that = this,
 				$item = $(y4p.templates["advert-list-item"](advert.toJSON()));
 			this.$items[advert.id] = $item;
@@ -165,7 +175,7 @@
 				that.adverts.remove(advert);
 			});
 		},
-		remove: function (advert) {
+		removeItem: function (advert) {
 			this.$items[advert.id].fadeOut(200, function () {
 				$(this).remove();
 			});
@@ -177,20 +187,40 @@
 		events: {
 			"change #advert-overlay": "updatePreview",
 			"keyup #advert-overlay": "updatePreview",
+			"click .cancel": "cancel",
+			"submit form": "submit"
 		},
 		initialize: function (options) {
 			this.advert = options.advert;
 			this.title = "Advert: " + this.advert.get("title");
 		},
 		render: function () {
+			var that = this;
 			this.$el.html(y4p.templates["advert-full"](this.advert.toJSON()));
+			setTimeout(function () { that.updatePreview(); }, 100); // Erm.. HACK
 			return this;
 		},
 		updatePreview: _.throttle(function () {
-			console.log("HJ")
-			console.log(this.$("#advert-overlay-iframe"))
 			this.$("#advert-overlay-iframe")[0].contentWindow.update(this.$("#advert-overlay").val());
-		}, 500)
+		}, 500),
+		submit: function () {
+			var that = this;
+			this.advert.save({
+				title: this.$("#advert-title").val(),
+				//type: this
+				overlay: this.$("#advert-overlay").val()
+			}, {
+				success: function () {
+					that.$("form").html("Saved.");
+				},
+				error: function () {
+					that.$("form").prepend("Error saving")
+				}
+			});
+		},
+		cancel: function () {
+			this.trigger("return");
+		}
 	});
 
 	y4p.pages.CampaignList = y4p.Page.extend({
