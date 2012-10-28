@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Your4.tv - your custom TV channel</title>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		.container { margin-top: 20px; width: 900px; }
+		.live-preview {
+			position: relative;
+			width: 400px;
+			height: 250px;
+		}
+		.live-preview .video {
+			position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+			z-index: 1;
+			background: black;
+		}
+		.live-preview .overlay {
+			position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+			z-index: 2;
+		}
+		.live-preview .overlay iframe {
+			border: 0;
+		}
+	</style>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/underscore.js"></script>
+	<script type="text/javascript" src="lib/backbone.js"></script>
+	<script type="text/javascript" src="lib/flowplayer.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.js"></script>
+	<script type="text/javascript" src="js/base.publisher.js"></script>
+	<script>
+		$(document).ready(function () {
+			y4p.cacheTemplates();
+			var app = new y4p.AdvertiserApp();
+			$("body").append(app.start().el);
+		});
+	</script>
+</head>
+<body>
+	<div id="templates">
+		<script type="text/html" id="main-template">
+			<div class="navbar navbar-inverse navbar navbar-static-top">
+				<div class="navbar-inner">
+				<a class="brand" href="#">Your4.tv Advertisers Portal</a>
+					<ul class="nav">
+						<% _.map(links, function (link) { %>
+							<li class="<% if (link.active) { %>active<% } %>">
+								<a href="#<%= link.hash %>"><%= link.title %></a>
+							</li>
+						<% }); %>
+					</ul>
+				</div>
+			</div>
+			<div class="container">
+				<ul class="breadcrumb">
+					<% _.map(breadcrumb, function (link, i) { %>
+						<li><a href="#<%= link.hash %>"><%= link.title %></a>
+							<span class="divider">/</span></li>
+					<% }); %>
+				</ul>
+				<h1 class="title"><%= title %></h1>
+				<div class="main-body"></div>
+				<div class="footer">Copyright Your4.tv</div>
+			</div>
+		</script>
+		<script type="text/html" id="home-template">
+			Put awesome stuff here
+		</script>
+		<script type="text/html" id="advert-list-template">
+			<div class="toolbar"><button class="btn">Create</button></div>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Type</th>
+						<th>Title</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody class="list">
+				</tbody>
+			</table>
+		</script>
+		<script type="text/html" id="advert-list-item-template">
+			<tr>
+				<td></td>
+				<td><%= type %></td>
+				<td><%= title %></td>
+				<td><button class="btn edit">Edit</button> <button class="btn delete">Delete</button>
+			</tr>
+		</script>
+		<script type="text/html" id="advert-full-template">
+			<div class="row-fluid">
+				<div class="span6">
+					<form class="form-horizontal">
+						<div class="control-group">
+							<label class="control-label" for="advert-title">Title</label>
+							<div class="controls">
+								<input id="advert-title" type="text" value="<%= title %>">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="advert-type">Type</label>
+							<div class="controls">
+								<select id="advert-type">
+									<option value="video" <% if (type === "video") { print("selected"); } %>>Video</option>
+									<option calue="still" <% if (type === "still") { print("selected"); } %>>Still</option>
+								</select>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="advert-file">File</label>
+							<div class="controls">
+								<input type="file" id="advert-file">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="" for="advert-overlay">Overlay</label>
+							<textarea id="advert-overlay"><%= overlay %></textarea>
+						</div>
+						<div class="control-group">
+							<button type="submit" class="btn btn-primary">Save</button>
+							<button type="button" class="btn">Cancel</button>
+						</div>
+					</form>
+				</div>
+				<div class="span6">
+					Live preview:
+					<div class="live-preview">
+						<div class="video"></div>
+						<div class="overlay">
+							<iframe id="advert-overlay-iframe" width="100%" height="100%" src="overlay.html#<%= id %>"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
+		<script type="text/html" id="campaign-list-template">
+		</script>
+		<script type="text/html" id="campaign-list-item-template">
+		</script>
+		<script type="text/html" id="campaign-full-template">
+		</script>
+		<script type="text/html" id="campaign-target-template">
+		</script>
+	</div>
+</body>
+</html>
