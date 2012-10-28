@@ -1,23 +1,26 @@
 (function (root) {
+	"use strict";
+
 	var sample = {
 		adverts: [
-			{ id: 1, name: "Guinness", type: "video", url: "ad-guinness.mp4", thumbnail: "", overlay: "" },
-			{ id: 2, name: "Go Compare", type: "video", url: "ad-gocompare.mp4", thumbnail: "", overlay: "" },
-			{ id: 3, name: "Just Dance", type: "video", url: "ad-justdance.mp4", thumbnail: "", overlay: "" },
-			{ id: 4, name: "Blah blah", type: "video", url: "", thumbnail: "", overlay: "" },
-			{ id: 5, name: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.jpg", duration: 3000, overlay: "" },
-			{ id: 6, name: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.png", duration: 3000, overlay: "" },
-			{ id: 7, name: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.png", duration: 3000, overlay: "" },
-			{ id: 8, name: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.png", duration: 3000, overlay: "" }
+			{ id: 1, title: "Guinness", type: "video", url: "ad-guinness.mp4", thumbnail: "", overlay: "<b>this is a test</b>" },
+			{ id: 2, title: "Go Compare", type: "video", url: "ad-gocompare.mp4", thumbnail: "", overlay: "" },
+			{ id: 3, title: "Just Dance", type: "video", url: "ad-justdance.mp4", thumbnail: "", overlay: "" },
+			{ id: 4, title: "Blah blah", type: "video", url: "", thumbnail: "", overlay: "" },
+			{ id: 5, title: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.jpg", duration: 3000, overlay: "" },
+			{ id: 6, title: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.png", duration: 3000, overlay: "" },
+			{ id: 7, title: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.png", duration: 3000, overlay: "" },
+			{ id: 8, title: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.png", duration: 3000, overlay: "" }
 		],
 		campaigns: [
-			{ advertId: 1, name: "Campaign 1" }
+			{ advertId: 1, title: "Campaign 1" }
 		]
 	};
 
 
 	var y4p = root.y4p = {
-		templates: {}
+		templates: {},
+		pages: {}
 	};
 
 	y4p.cacheTemplates = function () {
@@ -47,7 +50,7 @@
 	y4p.Adverts = Backbone.Collection.extend({});
 	y4p.Campaigns = Backbone.Collection.extend({});
 
-	y4p.App = Backbone.View.extend({
+	y4p.AdvertiserApp = Backbone.View.extend({
 		className: "app",
 		links: [
 			{ title: "Home", hash: "" },
@@ -60,24 +63,30 @@
 			this.campaigns = new y4p.Campaigns(sample.campaigns);
 		},
 		goAdverts: function () {
-			return this.render("Adverts", new y4p.AdvertList({ adverts: this.adverts }));
+			var that = this,
+				view = new y4p.pages.AdvertList({ adverts: this.adverts });
+			view.on("select", function (id) {
+				that.router.navigate("adverts/" + id, { trigger: true });
+			}, this);
+			return this.render(view);
 		},
 		goAdvert: function (id) {
 			var advert = this.adverts.get(id);
-			return this.render("Advert: " + advert.get("title"), new y4p.AdvertFull({ advert: advert }));
+			return this.render(new y4p.pages.AdvertFull({ advert: advert }));
 		},
 		goCampaigns: function () {
-			return this.render("Campaigns" + new y4p.CampaignList({ campaigns: this.campaigns }));
+			return this.render(new y4p.pages.CampaignList({ campaigns: this.campaigns }));
 		},
 		goCampaign: function (id) {
 			var campaign = this.campaigns.get(id);
-			return this.render("Campaign: " + campaign.get("title"), new y4p.CampaignFull({ campaign: campaign }));
+			return this.render(new y4p.pages.CampaignFull({ campaign: campaign }));
 		},
 		home: function () {
-			return this.render("Home", new y4p.Home());
+			return this.render(new y4p.pages.Home());
 		},
-		render: function (title, view) {
-			var currHash = window.location.hash.substr(1),
+		render: function (page) {
+			var that = this,
+				currHash = window.location.hash.substr(1),
 				links = _.map(this.links, function (_link) {
 					var link = _.clone(_link);
 					if (link.hash === currHash || (link.hash.length > 0 && currHash.indexOf(link.hash) === 0)) {
@@ -87,77 +96,137 @@
 				}),
 				breadcrumb = _.chain(currHash.split("/")).map(function (part) {
 					var link = _.where(links, { hash: part });
-					return (!link || link[0].hash === "") ? null : link[0];
+					return (!link.length || link[0].hash === "") ? null : link[0];
 				}).reject(function (link) {
 					return link === null;
 				}).value();
+
 			breadcrumb.unshift(_.where(links, { hash: "" })[0]);
 			this.$el.html(y4p.templates.main({
-				title: title,
+				title: page.title,
 				links: links,
-				breadcrumb: breadcrumb
-			})).find(".main-body").append(view.render().el);
+				breadcrumb: breadcrumb,
+				sublinks: page.sublinks
+			})).find(".main-body").append(page.render().el);
+
+			page.on("change", function () {
+				that.render(page);
+			});
+
+			if (this.page) {
+				this.page.close();
+			}
+			this.page = page;
 			return this;
 		},
 		start: function () {
 			Backbone.history.start();
-			//this.router.navigate("", { trigger: true });
 			return this;
 		}
 	});
 
-	y4p.Home = Backbone.View.extend({
+	y4p.Page = Backbone.View.extend({
+		close: function () {
+			this.off().remove();
+		}
+	})
+
+	y4p.pages.Home = y4p.Page.extend({
+		title: "Home",
 		render: function () {
 			this.$el.html(y4p.templates.home());
 			return this;
 		}
 	});
 
-	y4p.AdvertList = Backbone.View.extend({
+	y4p.pages.AdvertList = y4p.Page.extend({
+		title: "Adverts",
 		className: "advert-list",
 		initialize: function (options) {
 			this.adverts = options.adverts;
 			this.adverts.on("add", this.add, this)
 				.on("remove", this.remove, this);
+			this.$items = [];
 		},
 		render: function () {
-			this.$el.html("");
-			_.each(this.adverts, this.add, this);
+			this.$el.html(y4p.templates["advert-list"]());
+			console.log(this.adverts)
+			this.adverts.each(this.add, this);
 			return this;
 		},
-		add: function () {
-
+		add: function (advert) {
+			var that = this,
+				$item = $(y4p.templates["advert-list-item"](advert.toJSON()));
+			this.$items[advert.id] = $item;
+			this.$(".list").append($item.fadeIn(200));
+			$item.find(".edit").click(function () {
+				that.trigger("select", advert.id);
+			}).end().find(".delete").click(function () {
+				that.adverts.remove(advert);
+			});
 		},
-		remove: function () {
-
+		remove: function (advert) {
+			this.$items[advert.id].fadeOut(200, function () {
+				$(this).remove();
+			});
+			delete this.$items[advert.id];
 		}
 	});
 
-	y4p.Advert = Backbone.View.extend({
+	y4p.pages.AdvertFull = y4p.Page.extend({
+		events: {
+			"change #advert-overlay": "updatePreview",
+			"keyup #advert-overlay": "updatePreview",
+		},
+		initialize: function (options) {
+			this.advert = options.advert;
+			this.title = "Advert: " + this.advert.get("title");
+		},
 		render: function () {
-			this.$el.html(y4p.templates["advert-full"]());
+			this.$el.html(y4p.templates["advert-full"](this.advert.toJSON()));
 			return this;
-		}
+		},
+		updatePreview: _.throttle(function () {
+			console.log("HJ")
+			console.log(this.$("#advert-overlay-iframe"))
+			this.$("#advert-overlay-iframe")[0].contentWindow.update(this.$("#advert-overlay").val());
+		}, 500)
 	});
 
-	y4p.CampaignList = Backbone.View.extend({
+	y4p.pages.CampaignList = y4p.Page.extend({
+		title: "Campaigns",
 		render: function () {
 			this.$el.html(y4p.templates["campaign-list"]());
 			return this;
 		}
 	});
 
-	y4p.Campaign = Backbone.View.extend({
+	y4p.pages.CampaignFull = y4p.Page.extend({
+		initialize: function (options) {
+			this.campaign = options.campaign;
+			this.title = "Campaign: " + this.campaign.get("title");
+		},
 		render: function () {
 			this.$el.html(y4p.templates["campaign-full"]());
 			return this;
 		}
 	});
 
-	$(document).ready(function () {
-		y4p.cacheTemplates();
-		var app = new y4p.App();
-		$(".container").append(app.start().el);
-	});
+	y4p.OverlayApp = Backbone.View.extend({
+		initialize: function () {
+			this.adverts = new y4p.Adverts(sample.adverts);
+		},
+		render: function () {
+			return this;
+		},
+		start: function () {
+			var advert = this.adverts.get(Number(window.location.hash.substr(1)));
+			$("body").html(advert.get("overlay"));
+			window.update = function (html) {
+				$("body").html(html);
+			}
+			return this;
+		}
+	})
 
 }(this))
