@@ -1,6 +1,6 @@
 <?php
 
-$app->get('/campaigns(/:id)', function($id = null) use ($app) {
+$app->get('/campaigns/(:id)', function($id = null) use ($app) {
 
 	if (!is_null($id)) {
 		$r = R::find('campaigns', 'id = ?', array($id));

@@ -4,6 +4,12 @@ require_once 'config.php';
 require_once 'rb.php';
 require_once 'json-prettifier.php';
 
+/** FIXME: PUT THIS SOMEWHERE ELSE? **/
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
+if("OPTIONS" == $_SERVER['REQUEST_METHOD']) { exit(0); }
+
 function set_db($conf_name) {
 	global $DB;
 	R::setup($DB[$conf_name]['string'], $DB[$conf_name]['username'], $DB[$conf_name]['password']);
