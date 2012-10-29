@@ -17,11 +17,22 @@
 		]
 	};
 
-
 	var y4p = root.y4p = {
 		templates: {},
 		pages: {}
 	};
+
+	y4p.language = {
+		type: {
+			"ageRanges": "Age ranges",
+			"boundingBoxes": "Locations",
+			"occupations": "Occupations",
+			"genres": "Genres",
+			"programmes": "Programmes"
+		}
+	};
+
+
 
 	y4p.cacheTemplates = function () {
 		_.each($("#templates > script"), function (el) {
@@ -88,13 +99,17 @@
 				view = new y4p.pages.AdvertList({ collection: this.adverts, app: this });
 			view.on("select", function (id) {
 				that.router.navigate("adverts/" + id, { trigger: true });
-			}, this);
+			}).on("create", function () {
+				that.router.navigate("adverts/new", { trigger: true })
+			});
 			return this.render(view);
 		},
 		goAdvert: function (id) {
 			var that = this,
-				advert = this.adverts.get(id),
-				view = new y4p.pages.AdvertFull({ advert: advert, app: this });
+				advert = /*id === "new" ? new y4p.Advert() :*/ this.adverts.get(id),
+				view = advert ?
+					new y4p.pages.AdvertFull({ advert: advert, app: this }) :
+					new y4p.pages.NotFound({ message: "Advert not found." });
 			view.on("return", function () {
 				that.router.navigate("adverts", { trigger: true });
 			});
@@ -105,12 +120,21 @@
 				view = new y4p.pages.CampaignList({ collection: this.campaigns, app: this });
 			view.on("select", function (id) {
 				that.router.navigate("campaigns/" + id, { trigger: true })
+			}).on("create", function () {
+				that.router.navigate("campaign/new", { trigger: true })
 			});
 			return this.render(view);
 		},
 		goCampaign: function (id) {
-			var campaign = this.campaigns.get(id);
-			return this.render(new y4p.pages.CampaignFull({ campaign: campaign, app: this }));
+			var that = this,
+				campaign = this.campaigns.get(id),
+				view = campaign ?
+					new y4p.pages.CampaignFull({ campaign: campaign, app: this }) :
+					new y4p.pages.NotFound({ message: "Campaign not found." });
+			view.on("return", function () {
+				that.router.navigate("campaigns", { trigger: true });
+			});
+			return this.render(view);
 		},
 		home: function () {
 			return this.render(new y4p.pages.Home({ app: this }));
@@ -159,13 +183,13 @@
 		}
 	});
 
-	y4p.Page = Backbone.View.extend({
+	y4p.View = Backbone.View.extend({
 		close: function () {
 			this.off().remove();
 		}
 	})
 
-	y4p.pages.Home = y4p.Page.extend({
+	y4p.pages.Home = y4p.View.extend({
 		title: "Home",
 		render: function () {
 			this.$el.html(y4p.templates.home());
@@ -173,35 +197,41 @@
 		}
 	});
 
-	y4p.pages.List = y4p.Page.extend({
+	y4p.pages.NotFound = y4p.View.extend({
+		title: "Not found",
+		render: function () {
+			this.$el.html(y4p.templates.notfound(_.extend({ message: "Page cannot be found." }, this.options)));
+			return this;
+		}
+	})
+
+	y4p.List = y4p.View.extend({
+		events: { "click .create": "create" },
+		create: function () { this.trigger("create"); },
 		initialize: function (options) {
-			if (options.collection) {
-				this.collections = [options.collection]
-			} else if (options.collections) {
-				this.collections = options.collections;
-			}
-			var that = this;
-			_.each(this.collections, function (collection) {
-				collection.on("addItem", that.add, that)
-					.on("removeItem", that.remove, that);
-			});
+			this.collection = options.collection
+			this.collection.on("addItem", this.add, this)
+				.on("removeItem", this.remove, this);
 			this.$items = [];
 		},
 		render: function () {
 			var that = this;
-			this.$el.html(y4p.templates[this.template]());
-			_.each(this.collections, function (collection) {
-				collection.each(function (model) {
-					that.addItem(model, undefined, true);
-				});
+			this.$el.html(y4p.templates[this.template](this.options));
+			this.collection.each(function (model) {
+				that.addItem(model, undefined, true);
 			});
+			if (this.collection.length === 0) { this.$("tr").hide(); }
 			return this;
 		},
 		addItem: function (model, options, noAnimation) {
 			var that = this,
-				$item = $(y4p.templates[this.itemTemplate](_.extend(model.toJSON(), options)));
+				$item = $(y4p.templates[this.itemTemplate](_.extend(model.toJSON(), options))),
+				$list = this.$(".list");
+
+			this.$("tr").show();
+			if (!$list.length) { $list = this.$el; }
 			this.$items[model.id] = $item;
-			this.$(".list").append($item.fadeIn(noAnimation ? 0 : 200));
+			$list.append($item.fadeIn(noAnimation ? 0 : 200));
 			$item.find(".edit").click(function () {
 				that.trigger("select", model.id);
 			}).end().find(".delete").click(function () {
@@ -213,40 +243,66 @@
 			this.$items[model.id].fadeOut(200, function () {
 				$(this).remove();
 			});
+			if (this.collection.length === 0) { this.$("tr").hide(); }
 			delete this.$items[model.id];
+			return this;
+		}
+	});
+
+	y4p.SuperList = y4p.View.extend({
+		events: { "click .create": "create" },
+		create: function () { this.trigger("create"); },
+		initialize: function (options) {
+			var that = this;
+			this.collections = options.collections;
+			this.lists = _.map(this.collections, function (collection, type) {
+				var SubList = y4p.List.extend({
+					className: that.listClassName,
+					template: that.listTemplate,
+					itemTemplate: that.listItemTemplate
+				});
+				return new SubList({ collection: collection, type: type });
+			});
+		},
+		render: function () {
+			var that = this;
+			this.$el.html(y4p.templates[this.template]());
+			_.each(this.lists, function (list) {
+				that.$(".list").append(list.render().$("tr"));
+			});
 			return this;
 		}
 	})
 
-	y4p.pages.AdvertList = y4p.pages.List.extend({
+	y4p.pages.AdvertList = y4p.List.extend({
 		title: "Adverts",
 		className: "advert-list",
 		template: "advert-list",
 		itemTemplate: "advert-list-item"
 	});
 
-	y4p.pages.CampaignList = y4p.pages.List.extend({
+	y4p.pages.CampaignList = y4p.List.extend({
 		title: "Campaigns",
 		className: "campaign-list",
 		template: "campaign-list",
 		itemTemplate: "campaign-list-item",
 		addItem: function (model) {
-			return y4p.pages.List.prototype.addItem.call(this, model, {
-				advert: this.options.app.adverts.get(model.get("advert")).toJSON()
+			return y4p.List.prototype.addItem.call(this, model, {
+				adverts: _.map(model.get("advert"), function (advert) {
+					return this.options.app.adverts.get(advert).toJSON()
+				})
 			});
 		}
 	});
 
-	y4p.TargetList = y4p.pages.List.extend({
-		className: "campaign-target-list",
-		template: "campaign-target-list",
-		itemTemplate: "campaign-target-list-item",
-		addItem: function (model) {
-			return y4p.pages.List.prototype.addItem.call(this, model, { type: "blah", details: JSON.stringify(model.toJSON()) });
-		}
+	y4p.TargetList = y4p.SuperList.extend({
+		template: "campaign-target-superlist",
+		listClassName: "campaign-target-list",
+		listTemplate: "campaign-target-list",
+		listItemTemplate: "campaign-target-list-item"
 	});
 
-	y4p.pages.AdvertFull = y4p.Page.extend({
+	y4p.pages.AdvertFull = y4p.View.extend({
 		events: {
 			"change #advert-overlay": "updatePreview",
 			"keyup #advert-overlay": "updatePreview",
@@ -288,14 +344,14 @@
 	});
 
 
-	y4p.pages.CampaignFull = y4p.Page.extend({
+	y4p.pages.CampaignFull = y4p.View.extend({
 		initialize: function (options) {
 			this.campaign = options.campaign;
 			this.title = "Campaign: " + this.campaign.get("title");
 		},
 		render: function () {
 			this.$el.html(y4p.templates["campaign-full"](_.extend({
-				adverts: this.options.app.adverts
+				allAdverts: this.options.app.adverts
 			}, this.campaign.toJSON())));
 
 			var targetList = new y4p.TargetList({ collections: this.campaign.targetCollections });

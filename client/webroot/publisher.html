@@ -24,6 +24,14 @@
 		.live-preview .overlay iframe {
 			border: 0;
 		}
+		.table td {
+			vertical-align: middle;
+		}
+		.footer {
+			color: #999;
+			font-size: 11px;
+			padding-top: 40px;
+		}
 	</style>
 	<script type="text/javascript" src="lib/jquery.js"></script>
 	<script type="text/javascript" src="lib/underscore.js"></script>
@@ -69,8 +77,11 @@
 		<script type="text/html" id="home-template">
 			Put awesome stuff here
 		</script>
+		<script type="text/html" id="notfound-template">
+			<%= message %>
+		</script>
 		<script type="text/html" id="advert-list-template">
-			<div class="toolbar"><button class="btn">Create</button></div>
+			<div class="toolbar"><button class="btn create">Create</button></div>
 			<table class="table table-striped">
 				<thead>
 					<tr>
@@ -86,7 +97,7 @@
 		</script>
 		<script type="text/html" id="advert-list-item-template">
 			<tr>
-				<td></td>
+				<td><img src="<%= thumbnail %>" width="120"></td>
 				<td><%= type %></td>
 				<td><%= title %></td>
 				<td><button class="btn edit">Edit</button> <button class="btn delete">Delete</button>
@@ -139,12 +150,11 @@
 			</div>
 		</script>
 		<script type="text/html" id="campaign-list-template">
-			<div class="toolbar"><button class="btn">Create</button></div>
 			<table class="table table-striped">
 				<thead>
 					<tr>
 						<th></th>
-						<th>Advert</th>
+						<th>Adverts</th>
 						<th>Title</th>
 						<th>Starts</th>
 						<th>Ends</th>
@@ -158,7 +168,7 @@
 		<script type="text/html" id="campaign-list-item-template">
 			<tr>
 				<td></td>
-				<td><%= advert.title %></td>
+				<td><%= _.reduce(adverts, function (memo, i) { return memo + (i ? "," : "") + print(advert.title); }, "") %></td>
 				<td><%= title %></td>
 				<td><%= startDate %></td>
 				<td><%= endDate %></td>
@@ -167,68 +177,73 @@
 		</script>
 		<script type="text/html" id="campaign-full-template">
 			<div class="row-fluid">
-				<div class="span6">
-					<form class="form-horizontal">
-						<div class="control-group">
-							<label class="control-label" for="campaign-title">Title</label>
-							<div class="controls">
-								<input id="campaign-title" type="text" value="<%= title %>">
+				<form class="form-horizontal">
+					<div class="control-group">
+						<label class="control-label" for="campaign-title">Title</label>
+						<div class="controls">
+							<input id="campaign-title" type="text" value="<%= title %>">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="campaign-advert">Adverts</label>
+						<div class="controls">
+							<div id="campaign-advert">
+								<% _.each(allAdverts.toJSON(), function (advert) { %>
+									<label class="checkbox">
+										<input type="checkbox" name="advert" value="<%= advert.id %>" <%= adverts.indexOf(advert.id) > -1 ? 'checked="true"' : '' %>> <%= advert.title %>
+									</label>
+								<% }); %>
 							</div>
 						</div>
-						<div class="control-group">
-							<label class="control-label" for="campaign-advert">Adverts</label>
-							<div class="controls">
-								<div id="campaign-advert">
-									<% _.each(adverts.toJSON(), function (advert) { %>
-										<label class="checkbox">
-											<input type="checkbox" name="advert" value="<%= advert.id %>"> <%= advert.title %>
-										</label>
-									<% }); %>
-								</div>
-							</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="campaign-starts">Starts</label>
+						<div class="controls">
+							<input type="text" id="campaign-starts" value="<%= startDate %>">
 						</div>
-						<div class="control-group">
-							<label class="control-label" for="campaign-starts">Starts</label>
-							<div class="controls">
-								<input type="text" id="campaign-starts" value="<%= startDate %>">
-							</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="campaign-ends">Starts</label>
+						<div class="controls">
+							<input type="text" id="campaign-ends" value="<%= startDate %>">
 						</div>
-						<div class="control-group">
-							<label class="control-label" for="campaign-ends">Starts</label>
-							<div class="controls">
-								<input type="text" id="campaign-ends" value="<%= startDate %>">
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="" for="advert-targets">Targets</label>
-							<div id="advert-targets"></div>
-						</div>
-						<div class="control-group">
-							<button type="submit" class="btn btn-primary">Save</button>
-							<button type="button" class="btn cancel">Cancel</button>
-						</div>
-					</form>
-				</div>
+					</div>
+					<div class="control-group">
+						<label class="" for="advert-targets">Targets</label>
+						<div id="advert-targets"></div>
+					</div>
+					<div class="control-group">
+						<button type="submit" class="btn btn-primary">Save</button>
+						<button type="button" class="btn cancel">Cancel</button>
+					</div>
+				</form>
 			</div>
 		</script>
-		<script type="text/html" id="campaign-target-list-template">
+		<script type="text/html" id="campaign-target-superlist-template">
 			<div class="toolbar"><button class="btn">Create</button></div>
 			<table class="table table-striped">
 				<thead>
 					<tr>
-						<th>Type</th>
 						<th>Details</th>
-						<th>Items</th>
+						<th>Actions</th>
 					</tr>
 				</thead>
 				<tbody class="list">
 				</tbody>
 			</table>
 		</script>
+		<script type="text/html" id="campaign-target-list-template">
+			<tr><th colspan="2"><%= y4p.language.type[type] %></th></tr>
+		</script>
 		<script type="text/html" id="campaign-target-list-item-template">
 			<tr>
-				<td><%= type %></td>
-				<td><%= details %></td>
+				<td>
+					<%= typeof minAge !== "undefined" ? "Age: " + minAge + " to " + maxAge + "<br>" : "" %>
+					<%= typeof minLat !== "undefined" ? "Location: Min latitute: " + minLat + "<br>" +
+																"Min longitude: " + minLong + "<br>" +
+																"Max latitute: " + maxLat + "<br>" +
+																"Max longitude: " + maxLong + "<br>" : "" %>
+				</td>
 				<td><button class="btn edit">Edit</button> <button class="btn delete">Delete</button>
 			</tr>
 		</script>
