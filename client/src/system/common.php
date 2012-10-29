@@ -46,11 +46,22 @@ function get_params($res, $type, $param_list) {
 }
 
 function fb_to_user($user_profile) {
+	$field_map = array (
+		'name' => 'name',
+		'gender' => 'gender',
+		'id' => 'facebookId',
+		'birthday' => 'dob',
+		'email' => 'email'
+	);
+
 	$user = array();
-	$user['name'] = $user_profile['name'];
-	$user['gender'] = $user_profile['gender'];
-	$user['facebookId'] = $user_profile['id'];
-	$user['dob'] = $user_profile['birthday'];
-	$user['email'] = $user_profile['email'];
+	array_walk($field_map, function($item, $key) use ($user_profile, &$user) {
+		$user[$item] = (array_key_exists($key, $user_profile) ? $user_profile[$key] : null);
+	}); 
+
+	if($user['dob'] != null) {
+		$user['dob'] = date('Y-m-d', strtotime($user['dob']));
+	}	
+
 	return $user;
 }

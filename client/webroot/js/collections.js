@@ -56,11 +56,27 @@
 			});
 		}
 	});
+
+	y4.UserModel = Backbone.Model.extend({
+		defaults: {
+			facebookId: null,
+			name: null,
+			email: null,
+			gender: null,
+			dob: null
+		}
+	});	
+
 	y4.ChannelModel = y4.ProgrammeModel.extend({
 		Scene: y4.Channel,
 	});
 	y4.VODModel = y4.ProgrammeModel.extend({
 		Scene: y4.VOD
+	});
+
+	y4.UserCollection = Backbone.Collection.extend({
+		url: '/api/users/',
+		model: y4.UserModel
 	});
 
 	y4.AdvertCollection = Backbone.Collection.extend({

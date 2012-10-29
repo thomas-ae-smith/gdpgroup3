@@ -148,35 +148,91 @@
 		}
 	});
 
+	y4.Register = Backbone.View.extend({
+
+		regFields: ["name","gender","dob","email"],
+
+		initialize: function() {
+			var that = this;
+			this.user = this.options.user;
+			if (!this.user) {
+				this.userCollection = new y4.UserCollection();
+				this.user = new y4.UserModel();
+				this.userCollection.add(this.user);
+			}
+
+		},
+
+		render: function() {
+			var registerTemplate = _.template($('#register-template').html());
+
+			var that = this;
+			var toRequest = _.filter(this.regFields, function(field) {
+				if (that.user.get(field) == null) {
+					return true;
+				}
+			});
+			this.$el.html(registerTemplate({user: this.user.toJSON(), req: toRequest, fields: this.regFields}));			
+
+			return this;
+		}
+	});
+
 	y4.Login = Backbone.View.extend({
 		className: "logon-outer",
 		events: {
-			"click .facebook-button": "facebookLogin"
+			"click .facebook-button": "facebookLogin",
+			"click .register-button": "normalLogin"
 		},
 
 		initialize: function() {
+			this.userCollection = new y4.UserCollection();
+			var that = this;
 			FB.getLoginStatus(function(response) {
                                 if (response.status === 'connected') {
-                                        this.facebookLoggedIn = true;
-                                } else if (response.status === 'not_authorized') {
-                                        this.facebookLoggedIn = false;
+                               		that.retrieveUser(); 
+				} else if (response.status === 'not_authorized') {
+                                        that.facebookLoggedIn = false;
                                 } else {
-                                        this.facebookLoggedIn = false;
+                                        that.facebookLoggedIn = false;
                                 }
                         });
 		},
 
 		facebookLogin: function() {
+			var that = this;
 			if (!this.facebookLoggedIn) {
+				$('.facebook-button').attr('disabled','disabled');
+				$('.facebook-button').text("Please wait...");
 				FB.login(function(response) {
 					if (response.authResponse) {
-						this.facebookLoggedIn = true;
-						FB.api('/me', function(response) {
-							console.log('Good to see you, ' + response.name + '.');
-						});
+						that.facebookLoggedIn = true;
+						that.retrieveUser();
 					}					
 				}, {scope: 'user_birthday,email'});
 			}
+		},
+	
+		// Crucial. Sets server side session and ensures user is registered.
+		retrieveUser: function() {
+			var that = this;
+			FB.api('/me', function(response) {
+				that.userModel = new y4.UserModel({id: response.id});
+				that.userCollection.add(that.userModel);
+				that.userModel.fetch({data:{type:"fb"}}).then(function() {
+					if (that.userModel.get("registered")) {
+						y4.app.start();
+					} else {
+						var registerView = new y4.Register({user: that.userModel});
+						that.$el.find(".logon-inner").html(registerView.render().el);
+					}
+				});
+			});
+		},
+
+		normalLogin: function() {
+			var registerView = new y4.Register();
+			this.$el.find(".logon-inner").html(registerView.render().el);
 		},
 
 		render: function() {

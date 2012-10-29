@@ -57,6 +57,22 @@
 					</form>
 			</div>
 		</script>
+		<script id="register-template" type="text/template">
+			We require more information from you before you can start using your4.tv.
+			<form class="register-form form-horizontal">
+			<% _.each(user, function(element, key) { %>
+				<% if (_.contains(fields, key)) { %>
+				<div class="control-group">
+					<label class="control-label" for="<%= key %>"><%= key %></label>
+					<div class="controls">
+						<input type="text" id="<%= key %>" value="<%= element %>" <%= _.contains(req, key) ? '' : ' disabled' %>>
+					</div>
+				</div>	
+				<% } %>
+			<% }); %>
+			<button class="btn btn-large btn-primary submit-registration" type="button">Register</button> 
+			</form>
+		</script>
 		<script id="html-video-template" type="text/template">
 			<video width="100%" height="100%" preload="auto">
 				<source src="" type="video/mp4"/>

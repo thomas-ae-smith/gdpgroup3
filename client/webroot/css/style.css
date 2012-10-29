@@ -137,6 +137,12 @@ body {
 	margin-bottom: 5px;
 }
 
+.start-screen .logon-inner .submit-registration {
+	position: absolute;
+	bottom: 10px;
+	width: 96%;
+}
+
 .start-screen .logon-inner .separator {
 	border-top: 1px inset #fff;
 	height: 2px;
@@ -158,17 +164,36 @@ body {
         border-radius: 3px;
 }
 
-.start-screen .logon-inner .login-form .control-group {
+.start-screen .logon-inner form .control-group {
 	margin-bottom: 0;
 }
 
-.start-screen .logon-inner .login-form {
+.start-screen .logon-inner form {
 	margin-bottom: 0;
+	text-align: left;
+	text-transform: capitalize;
 }
 
-.start-screen .logon-inner .login-form input {
+.start-screen .logon-inner form input {
 	width: 100%;
 	padding: 15px;
+}
+
+.start-screen .logon-inner .register-form {
+	margin-top: 15px;
+}
+
+.start-screen .logon-inner .register-form .control-label {
+	width: 80px;
+	margin-left: 0px;
+}
+
+.start-screen .logon-inner .register-form .control-group {
+	margin-bottom: 5px;
+}
+
+.start-screen .logon-inner .register-form .controls {
+	margin-left: 100px;	
 }
 
 .log {
