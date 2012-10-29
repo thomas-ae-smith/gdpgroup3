@@ -30,21 +30,23 @@ def get_user_nicheness(ageranges=[], boundingboxes=[], genders=[], occupations=[
 
 	if genders:
 		gender_constraints = ("`users`.`gender` "
-			"IN ({genders})".format(genders=",".join(genders)))
+			"IN ('{genders}')".format(genders=",".join(genders)))
 	else:
 		gender_constraints = ""
 
 	if occupations:
 		occupation_constraints = ("`users`.`occupation` "
-			"IN ({occupations})".format(occupations=",".join(occupations)))
+			"IN ('{occupations}')".format(occupations="','".join(occupations)))
 	else:
 		occupation_constraints = ""
 
 	constraints = [age_constraints, bb_constraints, gender_constraints, 
 		occupation_constraints]
-	query = ("SELECT COUNT(`id`) FROM `users` WHERE {}".format(
-			" AND ".join(filter(None, constraints)) or "1"))
-		
+	query = ("SELECT COUNT(`id`) FROM `users` WHERE ({})".format(
+			") AND (".join(filter(None, constraints)) or "1"))
+
+	import pdb; pdb.set_trace()
+
 	conn = mysql.connector.connect(**credentials)
 	cursor = conn.cursor()
 
@@ -92,8 +94,6 @@ def get_programme_nicheness(genres=[], programmes=[], times=[]):
 	if time_constraints:
 		time_constraints = "(" + " OR ".join(time_constraints) + ")"
 
-	
-
 	constraints = [genre_constraints, programme_constraints, time_constraints]
 	query = ("SELECT COUNT(`id`) FROM `programmes` WHERE {}".format(
 			" AND ".join(filter(None, constraints)) or "1"))
@@ -106,8 +106,6 @@ def get_programme_nicheness(genres=[], programmes=[], times=[]):
 
 	cursor.execute("SELECT COUNT(`id`) FROM `programmes` WHERE 1")
 	programmes_all = cursor.next()[0]
-
-	import pdb; pdb.set_trace()
 
 	return programmes_constrained / programmes_all
 
@@ -147,7 +145,7 @@ if __name__ == "__main__":
 		args.json = json.dumps({
 			'ageranges':[],
 			'boundingboxes':[],
-			'genders':[],
+			'genders':['male'],
 			'genres':[],
 			'occupations':[],
 			'programmes':[],
