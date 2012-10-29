@@ -6,10 +6,13 @@ import argparse
 import datetime
 from dateutil.relativedelta import relativedelta
 import json
+import time
 
 import mysql.connector
 
 from datastore.credentials import credentials
+
+DEBUG = False
 
 def get_user_nicheness(ageranges=[], boundingboxes=[], genders=[], occupations=[]):
 	now = datetime.datetime.now().date()
@@ -54,7 +57,9 @@ def get_user_nicheness(ageranges=[], boundingboxes=[], genders=[], occupations=[
 	return users_constrained / users_all
 
 def get_programme_nicheness(genres=[], programmes=[], times=[]):
-	now = datetime.datetime.now().date()
+	if (not all(genres)) or (not all(programmes)) or (not all(times)) and DEBUG:
+		print("At-least one input is false!")
+		import pdb; pdb.set_trace()
 
 	if genres:
 		genre_constraints = ("`programme`.`genre` "
@@ -68,11 +73,26 @@ def get_programme_nicheness(genres=[], programmes=[], times=[]):
 	else:
 		programme_constraints = ""
 
-	if times:
-		time_constraints = ("`programme`.`start` "
-			"IN ({times})".format(times=",".join(times)))
-	else:
-		time_constraints = ""
+	time_constraints = set()
+	for start, end, day in times:
+		constraint = []
+		if start:
+			constraint += ["FROM_UNIXTIME(`programmes`.`start`, '%T') "
+							"> {start}".format(start=start)]
+		if end:
+			constraint += ["FROM_UNIXTIME(`programmes`.`start`, '%T') "
+							"< {end}".format(end=end)]
+		if day:
+			constraint += ["FROM_UNIXTIME(`programmes`.`start`, '%w') "
+							"= {day}".format(day=day)]
+		if constraint:
+			constraint = "(" + " AND ".join(constraint) + ")"
+			import pdb; pdb.set_trace() # Currently untested; check value of `constraint` is OK.
+			time_constraints.add(constraint)
+	if time_constraints:
+		time_constraints = "(" + " OR ".join(time_constraints) + ")"
+
+	
 
 	constraints = [genre_constraints, programme_constraints, time_constraints]
 	query = ("SELECT COUNT(`id`) FROM `programmes` WHERE {}".format(
@@ -119,6 +139,9 @@ def _init_argparse():
 # If called from the commandline
 if __name__ == "__main__":
 	args = _init_argparse()
+
+	if args.debug:
+		DEBUG = True
 
 	if args.test:
 		args.json = json.dumps({

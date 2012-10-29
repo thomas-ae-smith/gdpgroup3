@@ -1,5 +1,7 @@
 #!/usr/bin/python2.7
 
+#TODO: Database has been updated; campaigns now have multiple ads. Reflect this. Return campaign ads with equal probability.
+
 from __future__ import print_function
 
 import argparse

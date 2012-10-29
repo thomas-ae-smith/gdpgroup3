@@ -1,7 +1,7 @@
-import mysql.connector
-
 import argparse
 from datetime import datetime
+
+import mysql.connector
 
 from credentials import credentials
 from util.calc_age import calc_age
