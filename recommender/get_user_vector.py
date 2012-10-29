@@ -7,9 +7,7 @@ import argparse
 from datastore.vector import vector_to_string
 import classifier.user_classifier
 
-MAX_NAME_LENGTH = 70
-
-def get_user_vector(age, gender, name): #, debug=False, verbose=False):
+def get_user_vector(age, gender): #, debug=False, verbose=False):
 	"""Given user demographics, adds a new user to persistant storage, along
 	with a vector representing the users preferences, as returned by the
 	SVM"""
@@ -28,8 +26,6 @@ def _init_argparse():
 						"user in years.")
 	parser.add_argument('gender', metavar='gender', type=str, help="The gender "
 						"of the user. 'm' if male, 'f' if female.")
-	parser.add_argument('name', metavar='name', type=str,
-						help="The users name.")
 	# parser.add_argument('-v', "--verbose", action="store_true",
 						# help="Prints more information.")
 	# parser.add_argument('-d', "--debug", action="store_true",
@@ -43,6 +39,5 @@ if __name__ == "__main__":
 	assert 0 < args.age < 100
 	args.gender = args.gender.lower()
 	assert args.gender in {'m', 'f'}
-	assert 0 < len(args.name) <= MAX_NAME_LENGTH
 
-	print(get_user_vector(args.age, args.gender, args.name), end='') #, args.debug, args.verbose)
+	print(get_user_vector(args.age, args.gender), end='')
