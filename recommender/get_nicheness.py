@@ -27,7 +27,7 @@ def get_user_nicheness(ageranges=[], boundingboxes=[], genders=[], occupations=[
 
 	if genders:
 		gender_constraints = ("`users`.`gender` "
-			"IN ({occupations})".format(occupations=",".join(occupations)))
+			"IN ({genders})".format(genders=",".join(genders)))
 	else:
 		gender_constraints = ""
 
@@ -51,16 +51,54 @@ def get_user_nicheness(ageranges=[], boundingboxes=[], genders=[], occupations=[
 	cursor.execute("SELECT COUNT(`id`) FROM `users` WHERE 1")
 	users_all = cursor.next()[0]
 
+	return users_constrained / users_all
+
+def get_programme_nicheness(genres=[], programmes=[], times=[]):
+	now = datetime.datetime.now().date()
+
+	if genres:
+		genre_constraints = ("`programme`.`genre` "
+			"IN ({genres})".format(genres=",".join(genres)))
+	else:
+		genre_constraints = ""
+
+	if programmes:
+		programme_constraints = ("`programme`.`id` "
+			"IN ({programmes})".format(programmes=",".join(programmes)))
+	else:
+		programme_constraints = ""
+
+	if times:
+		time_constraints = ("`programme`.`start` "
+			"IN ({times})".format(times=",".join(times)))
+	else:
+		time_constraints = ""
+
+	constraints = [genre_constraints, programme_constraints, time_constraints]
+	query = ("SELECT COUNT(`id`) FROM `programmes` WHERE {}".format(
+			" AND ".join(filter(None, constraints)) or "1"))
+		
+	conn = mysql.connector.connect(**credentials)
+	cursor = conn.cursor()
+
+	cursor.execute(query)
+	programmes_constrained = cursor.next()[0]
+
+	cursor.execute("SELECT COUNT(`id`) FROM `programmes` WHERE 1")
+	programmes_all = cursor.next()[0]
+
 	import pdb; pdb.set_trace()
 
-	return users_constrained / users_all
+	return programmes_constrained / programmes_all
 
 def get_nicheness(ageranges=[], boundingboxes=[], genders=[], genres=[],
 									occupations=[], programmes=[], times=[]):
 	user_nicheness = get_user_nicheness(ageranges, boundingboxes,
 											genders, occupations)
 
-	return 1
+	programme_nicheness = get_programme_nicheness(genres, programmes, times)
+
+	return user_nicheness * programme_nicheness
 
 def _init_argparse():
 	parser = argparse.ArgumentParser(description="Given a set of restrictions, "
