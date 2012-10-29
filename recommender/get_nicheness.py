@@ -16,17 +16,26 @@ DEBUG = False
 
 def get_user_nicheness(ageranges=[], boundingboxes=[], genders=[], occupations=[]):
 	now = datetime.datetime.now().date()
-	age_constraints = (" OR ".join([
-		"(`users`.`dob` BETWEEN '{y1}' AND '{y2}')".format(
-			y1=now-relativedelta(years=upper),
-			y2=now-relativedelta(years=lower))
-		for lower, upper in ageranges])) 
+
+	age_constraints = (") OR (".join([
+		" AND ".join(filter(None, [
+			"`users`.`dob` > '{lower}'" if maxage else None,
+			"`users`.`dob` < '{upper}'" if minage else None
+		])).format(upper=now-relativedelta(years=minage or 0),
+					lower=now-relativedelta(years=maxage or 0))
+	for minage, maxage in ageranges]))
+	age_constraints = "(" + age_constraints + ")" if age_constraints else None
 
 	bb_constraints = (" OR ".join([
-		"(`users`.`long` BETWEEN '{longmin}' AND '{longmax}' "
-		"AND `users`.`lat` BETWEEN '{latmin}' AND '{latmax}')".format(
-			longmin=longmin, longmax=longmax, latmin=latmin, latmax=latmax)
-		for latmin, latmax, longmin, longmax in boundingboxes]))
+		" AND ".join(filter(None, [
+			"`users`.`long` > '{longmin}'" if longmin else None,
+			"`users`.`long` < '{longmax}'" if longmax else None,
+			"`users`.`lat` > '{latmin}'" if latmin else None,
+			"`users`.`lat` < '{latmax}'" if latmax else None
+		])).format(longmin=longmin, longmax=longmax,
+						latmin=latmin, latmax=latmax)
+	for latmin, latmax, longmin, longmax in boundingboxes]))
+	bb_constraints = "(" + bb_constraints + ")" if bb_constraints else None
 
 	if genders:
 		gender_constraints = ("`users`.`gender` "
@@ -45,10 +54,10 @@ def get_user_nicheness(ageranges=[], boundingboxes=[], genders=[], occupations=[
 	query = ("SELECT COUNT(`id`) FROM `users` WHERE ({})".format(
 			") AND (".join(filter(None, constraints)) or "1"))
 
-	import pdb; pdb.set_trace()
-
 	conn = mysql.connector.connect(**credentials)
 	cursor = conn.cursor()
+
+	import pdb; pdb.set_trace()
 
 	cursor.execute(query)
 	users_constrained = cursor.next()[0]
@@ -59,19 +68,15 @@ def get_user_nicheness(ageranges=[], boundingboxes=[], genders=[], occupations=[
 	return users_constrained / users_all
 
 def get_programme_nicheness(genres=[], programmes=[], times=[]):
-	if (not all(genres)) or (not all(programmes)) or (not all(times)) and DEBUG:
-		print("At-least one input is false!")
-		import pdb; pdb.set_trace()
-
 	if genres:
-		genre_constraints = ("`programme`.`genre` "
-			"IN ({genres})".format(genres=",".join(genres)))
+		genre_constraints = ("`programmes`.`genre` "
+			"IN ('{genres}')".format(genres="','".join(genres)))
 	else:
 		genre_constraints = ""
 
 	if programmes:
-		programme_constraints = ("`programme`.`id` "
-			"IN ({programmes})".format(programmes=",".join(programmes)))
+		programme_constraints = ("`programmes`.`id` "
+			"IN ('{programmes}')".format(programmes="','".join(programmes)))
 	else:
 		programme_constraints = ""
 
@@ -109,8 +114,7 @@ def get_programme_nicheness(genres=[], programmes=[], times=[]):
 
 	return programmes_constrained / programmes_all
 
-def get_nicheness(ageranges=[], boundingboxes=[], genders=[], genres=[],
-									occupations=[], programmes=[], times=[]):
+def get_nicheness(ageranges=[], boundingboxes=[], genders=[], genres=[], occupations=[], programmes=[], times=[]):
 	user_nicheness = get_user_nicheness(ageranges, boundingboxes,
 											genders, occupations)
 
@@ -143,13 +147,13 @@ if __name__ == "__main__":
 
 	if args.test:
 		args.json = json.dumps({
-			'ageranges':[],
-			'boundingboxes':[],
+			'ageranges':[(None, 20), (50, None)],
+			'boundingboxes':[(51.28,51.686,-0.489,0.236)],
 			'genders':['male'],
-			'genres':[],
-			'occupations':[],
+			'genres':['0', '1', '4', '8', '12'],
+			'occupations':['0', '6', '8', '1', '9', '4'],
 			'programmes':[],
-			'times':[]
+			'times':[],
 		})
 
 	input_dict = json.loads(args.json)

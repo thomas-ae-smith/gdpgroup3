@@ -11,6 +11,7 @@ def _field_string(fields):
 	comma-separated elements surrounded by backticks"""
 	return ','.join(['`'+f+'`' for f in fields]) or '*'
 
+# TODO: Only return from current campaigns.
 def get_advert_pool(uid, pid, when=datetime.now()):
 	"""Given a user id, programme id and time, returns a pool of adverts whose
 	campaigns allow the advert to be shown to the given user during the given
