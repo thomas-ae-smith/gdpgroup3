@@ -1,12 +1,14 @@
 #!/usr/bin/python2.7
 
+# TODO: In calculating programme nicheness, use percentage of programme showing 
+# time, not percentage of shows covered.
+
 from __future__ import division, print_function
 
 import argparse
 import datetime
 from dateutil.relativedelta import relativedelta
 import json
-import time
 
 import mysql.connector
 
@@ -57,8 +59,6 @@ def get_user_nicheness(ageranges=[], boundingboxes=[], genders=[], occupations=[
 	conn = mysql.connector.connect(**credentials)
 	cursor = conn.cursor()
 
-	import pdb; pdb.set_trace()
-
 	cursor.execute(query)
 	users_constrained = cursor.next()[0]
 
@@ -83,18 +83,17 @@ def get_programme_nicheness(genres=[], programmes=[], times=[]):
 	time_constraints = set()
 	for start, end, day in times:
 		constraint = []
-		if start:
+		if start is not None:
 			constraint += ["FROM_UNIXTIME(`programmes`.`start`, '%T') "
-							"> {start}".format(start=start)]
-		if end:
+							"> '{start}'".format(start=start)]
+		if end is not None:
 			constraint += ["FROM_UNIXTIME(`programmes`.`start`, '%T') "
-							"< {end}".format(end=end)]
-		if day:
+							"< '{end}'".format(end=end)]
+		if day is not None:
 			constraint += ["FROM_UNIXTIME(`programmes`.`start`, '%w') "
 							"= {day}".format(day=day)]
 		if constraint:
 			constraint = "(" + " AND ".join(constraint) + ")"
-			import pdb; pdb.set_trace() # Currently untested; check value of `constraint` is OK.
 			time_constraints.add(constraint)
 	if time_constraints:
 		time_constraints = "(" + " OR ".join(time_constraints) + ")"
@@ -106,6 +105,8 @@ def get_programme_nicheness(genres=[], programmes=[], times=[]):
 	conn = mysql.connector.connect(**credentials)
 	cursor = conn.cursor()
 
+	import pdb; pdb.set_trace()
+
 	cursor.execute(query)
 	programmes_constrained = cursor.next()[0]
 
@@ -114,7 +115,8 @@ def get_programme_nicheness(genres=[], programmes=[], times=[]):
 
 	return programmes_constrained / programmes_all
 
-def get_nicheness(ageranges=[], boundingboxes=[], genders=[], genres=[], occupations=[], programmes=[], times=[]):
+def get_nicheness(ageranges=[], boundingboxes=[], genders=[], genres=[],
+					occupations=[], programmes=[], times=[]):
 	user_nicheness = get_user_nicheness(ageranges, boundingboxes,
 											genders, occupations)
 
@@ -153,7 +155,7 @@ if __name__ == "__main__":
 			'genres':['0', '1', '4', '8', '12'],
 			'occupations':['0', '6', '8', '1', '9', '4'],
 			'programmes':[],
-			'times':[],
+			'times':[(None, None, 0), ("10:00:00", "22:00:00", None)],
 		})
 
 	input_dict = json.loads(args.json)
