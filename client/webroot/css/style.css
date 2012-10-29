@@ -257,7 +257,7 @@ video {
 
 .logo-frame {
 	background-size:cover;
-	background: url('/img/homepage-splash.jpg');
+	background: url('../img/homepage-splash.jpg');
 	width: 100%;
 	height: 100%;
 }
