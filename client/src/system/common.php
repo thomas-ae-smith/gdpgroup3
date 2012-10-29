@@ -15,6 +15,21 @@ function set_db($conf_name) {
 	R::setup($DB[$conf_name]['string'], $DB[$conf_name]['username'], $DB[$conf_name]['password']);
 }
 
+function notFound($msg = 'Not found') {
+        header('HTTP/1.0 404 Not Found');
+        output_json(array('error' => $msg));
+}
+
+function invalid($msg = 'Invalid method') {
+        header('HTTP/1.1 405 Method Not Allowed');
+	output_json(array('error' => $msg));
+}
+
+function badRequest($msg = 'Bad request') {
+	header('HTTP/1.0 400 Bad Request', true, 400);
+	output_json(array('error' => $msg));
+}
+
 function output_json($content) {
 	header("Content-Type: application/json");
 	echo json_format(json_encode($content));

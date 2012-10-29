@@ -61,8 +61,7 @@ $app->get('/campaigns/(:id)', function($id = null) use ($app) {
 	
 	if (!is_null($id)) {
 		if (count($campaigns) === 0) {
-			header('HTTP/1.0 404 Not Found');
-			output_json(array('error' => 'Could not find campaign with that ID.'));
+			notFound('Could not find campaign with that ID.');
 		} else {
 			output_json($campaigns[0]);
 		}
@@ -71,11 +70,6 @@ $app->get('/campaigns/(:id)', function($id = null) use ($app) {
 	}
 
 });
-
-function notFound($msg = 'Not found') {
-	header('HTTP/1.0 404 Not Found');
-	output_json(array('error' => $msg));
-}
 
 $app->get('/campaigns/:id/adverts(/)', function ($id) use ($app) {
 	if (campaignExists($id)) {
