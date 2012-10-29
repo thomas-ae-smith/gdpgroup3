@@ -139,10 +139,98 @@
 			</div>
 		</script>
 		<script type="text/html" id="campaign-list-template">
+			<div class="toolbar"><button class="btn">Create</button></div>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Advert</th>
+						<th>Title</th>
+						<th>Starts</th>
+						<th>Ends</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody class="list">
+				</tbody>
+			</table>
 		</script>
 		<script type="text/html" id="campaign-list-item-template">
+			<tr>
+				<td></td>
+				<td><%= advert.title %></td>
+				<td><%= title %></td>
+				<td><%= startDate %></td>
+				<td><%= endDate %></td>
+				<td><button class="btn edit">Edit</button> <button class="btn delete">Delete</button>
+			</tr>
 		</script>
 		<script type="text/html" id="campaign-full-template">
+			<div class="row-fluid">
+				<div class="span6">
+					<form class="form-horizontal">
+						<div class="control-group">
+							<label class="control-label" for="campaign-title">Title</label>
+							<div class="controls">
+								<input id="campaign-title" type="text" value="<%= title %>">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="campaign-advert">Adverts</label>
+							<div class="controls">
+								<div id="campaign-advert">
+									<% _.each(adverts.toJSON(), function (advert) { %>
+										<label class="checkbox">
+											<input type="checkbox" name="advert" value="<%= advert.id %>"> <%= advert.title %>
+										</label>
+									<% }); %>
+								</div>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="campaign-starts">Starts</label>
+							<div class="controls">
+								<input type="text" id="campaign-starts" value="<%= startDate %>">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="campaign-ends">Starts</label>
+							<div class="controls">
+								<input type="text" id="campaign-ends" value="<%= startDate %>">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="" for="advert-targets">Targets</label>
+							<div id="advert-targets"></div>
+						</div>
+						<div class="control-group">
+							<button type="submit" class="btn btn-primary">Save</button>
+							<button type="button" class="btn cancel">Cancel</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</script>
+		<script type="text/html" id="campaign-target-list-template">
+			<div class="toolbar"><button class="btn">Create</button></div>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Type</th>
+						<th>Details</th>
+						<th>Items</th>
+					</tr>
+				</thead>
+				<tbody class="list">
+				</tbody>
+			</table>
+		</script>
+		<script type="text/html" id="campaign-target-list-item-template">
+			<tr>
+				<td><%= type %></td>
+				<td><%= details %></td>
+				<td><button class="btn edit">Edit</button> <button class="btn delete">Delete</button>
+			</tr>
 		</script>
 		<script type="text/html" id="campaign-target-template">
 		</script>

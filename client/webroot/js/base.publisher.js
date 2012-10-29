@@ -50,8 +50,25 @@
 	y4p.Adverts = Backbone.Collection.extend({
 		url: "http://www.your4.tv/api/adverts/"
 	});
+	y4p.Campaign = Backbone.Model.extend({
+		initialize: function () {
+			var that = this;
+			this.targetCollections = {};
+			_.each(this.get("targets"), function (targets, type) {
+				that.targetCollections[type] = new y4p.CampaignTargets(targets, { url: that.url() + "/targets/" + type + "/" });
+			});
+			console.log(this.targetCollections)
+		}
+	});
 	y4p.Campaigns = Backbone.Collection.extend({
+		model: y4p.Campaign,
 		url: "http://www.your4.tv/api/campaigns/"
+	});
+
+	y4p.CampaignTargets = Backbone.Collection.extend({
+		initialize: function (items, options) {
+			this.url = options.url;
+		}
 	});
 
 	y4p.AdvertiserApp = Backbone.View.extend({
@@ -64,11 +81,11 @@
 		initialize: function () {
 			this.router = new y4p.Router({ app: this });
 			this.adverts = new y4p.Adverts();
-			this.campaigns = new y4p.Campaigns();
+			this.campaigns = new y4p.Campaigns(undefined, { adverts: this.adverts });
 		},
 		goAdverts: function () {
 			var that = this,
-				view = new y4p.pages.AdvertList({ adverts: this.adverts });
+				view = new y4p.pages.AdvertList({ collection: this.adverts, app: this });
 			view.on("select", function (id) {
 				that.router.navigate("adverts/" + id, { trigger: true });
 			}, this);
@@ -77,21 +94,26 @@
 		goAdvert: function (id) {
 			var that = this,
 				advert = this.adverts.get(id),
-				view = new y4p.pages.AdvertFull({ advert: advert });
+				view = new y4p.pages.AdvertFull({ advert: advert, app: this });
 			view.on("return", function () {
 				that.router.navigate("adverts", { trigger: true });
 			});
 			return this.render(view);
 		},
 		goCampaigns: function () {
-			return this.render(new y4p.pages.CampaignList({ campaigns: this.campaigns }));
+			var that = this,
+				view = new y4p.pages.CampaignList({ collection: this.campaigns, app: this });
+			view.on("select", function (id) {
+				that.router.navigate("campaigns/" + id, { trigger: true })
+			});
+			return this.render(view);
 		},
 		goCampaign: function (id) {
 			var campaign = this.campaigns.get(id);
-			return this.render(new y4p.pages.CampaignFull({ campaign: campaign }));
+			return this.render(new y4p.pages.CampaignFull({ campaign: campaign, app: this }));
 		},
 		home: function () {
-			return this.render(new y4p.pages.Home());
+			return this.render(new y4p.pages.Home({ app: this }));
 		},
 		render: function (page) {
 			var that = this,
@@ -129,7 +151,8 @@
 			return this;
 		},
 		start: function () {
-			$.when(this.adverts.fetch(), this.campaigns.fetch()).then(function () {
+			var that = this;
+			$.when(this.adverts.fetch(), that.campaigns.fetch()).then(function () {
 				Backbone.history.start();
 			});
 			return this;
@@ -150,36 +173,76 @@
 		}
 	});
 
-	y4p.pages.AdvertList = y4p.Page.extend({
-		title: "Adverts",
-		className: "advert-list",
+	y4p.pages.List = y4p.Page.extend({
 		initialize: function (options) {
-			this.adverts = options.adverts;
-			this.adverts.on("addItem", this.add, this)
-				.on("removeItem", this.remove, this);
+			if (options.collection) {
+				this.collections = [options.collection]
+			} else if (options.collections) {
+				this.collections = options.collections;
+			}
+			var that = this;
+			_.each(this.collections, function (collection) {
+				collection.on("addItem", that.add, that)
+					.on("removeItem", that.remove, that);
+			});
 			this.$items = [];
 		},
 		render: function () {
-			this.$el.html(y4p.templates["advert-list"]());
-			this.adverts.each(this.addItem, this);
+			var that = this;
+			this.$el.html(y4p.templates[this.template]());
+			_.each(this.collections, function (collection) {
+				collection.each(function (model) {
+					that.addItem(model, undefined, true);
+				});
+			});
 			return this;
 		},
-		addItem: function (advert) {
+		addItem: function (model, options, noAnimation) {
 			var that = this,
-				$item = $(y4p.templates["advert-list-item"](advert.toJSON()));
-			this.$items[advert.id] = $item;
-			this.$(".list").append($item.fadeIn(200));
+				$item = $(y4p.templates[this.itemTemplate](_.extend(model.toJSON(), options)));
+			this.$items[model.id] = $item;
+			this.$(".list").append($item.fadeIn(noAnimation ? 0 : 200));
 			$item.find(".edit").click(function () {
-				that.trigger("select", advert.id);
+				that.trigger("select", model.id);
 			}).end().find(".delete").click(function () {
-				that.adverts.remove(advert);
+				that.collection.remove(model);
 			});
+			return this;
 		},
-		removeItem: function (advert) {
-			this.$items[advert.id].fadeOut(200, function () {
+		removeItem: function (model) {
+			this.$items[model.id].fadeOut(200, function () {
 				$(this).remove();
 			});
-			delete this.$items[advert.id];
+			delete this.$items[model.id];
+			return this;
+		}
+	})
+
+	y4p.pages.AdvertList = y4p.pages.List.extend({
+		title: "Adverts",
+		className: "advert-list",
+		template: "advert-list",
+		itemTemplate: "advert-list-item"
+	});
+
+	y4p.pages.CampaignList = y4p.pages.List.extend({
+		title: "Campaigns",
+		className: "campaign-list",
+		template: "campaign-list",
+		itemTemplate: "campaign-list-item",
+		addItem: function (model) {
+			return y4p.pages.List.prototype.addItem.call(this, model, {
+				advert: this.options.app.adverts.get(model.get("advert")).toJSON()
+			});
+		}
+	});
+
+	y4p.TargetList = y4p.pages.List.extend({
+		className: "campaign-target-list",
+		template: "campaign-target-list",
+		itemTemplate: "campaign-target-list-item",
+		addItem: function (model) {
+			return y4p.pages.List.prototype.addItem.call(this, model, { type: "blah", details: JSON.stringify(model.toJSON()) });
 		}
 	});
 
@@ -203,7 +266,8 @@
 		updatePreview: _.throttle(function () {
 			this.$("#advert-overlay-iframe")[0].contentWindow.update(this.$("#advert-overlay").val());
 		}, 500),
-		submit: function () {
+		submit: function (e) {
+			e.preventDefault();
 			var that = this;
 			this.advert.save({
 				title: this.$("#advert-title").val(),
@@ -223,13 +287,6 @@
 		}
 	});
 
-	y4p.pages.CampaignList = y4p.Page.extend({
-		title: "Campaigns",
-		render: function () {
-			this.$el.html(y4p.templates["campaign-list"]());
-			return this;
-		}
-	});
 
 	y4p.pages.CampaignFull = y4p.Page.extend({
 		initialize: function (options) {
@@ -237,7 +294,13 @@
 			this.title = "Campaign: " + this.campaign.get("title");
 		},
 		render: function () {
-			this.$el.html(y4p.templates["campaign-full"]());
+			this.$el.html(y4p.templates["campaign-full"](_.extend({
+				adverts: this.options.app.adverts
+			}, this.campaign.toJSON())));
+
+			var targetList = new y4p.TargetList({ collections: this.campaign.targetCollections });
+			this.$("#advert-targets").append(targetList.render().el);
+
 			return this;
 		}
 	});
