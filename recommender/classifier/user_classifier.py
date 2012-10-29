@@ -1,11 +1,15 @@
 from __future__ import print_function, division
 
 import cPickle as pickle
+import inspect
+import os
 
 import numpy
 
-ML_INPUTS = "data/movielens/ml_data.inputs"
-ML_OUTPUTS = "data/movielens/ml_data.outputs"
+_filepath = os.path.dirname(os.path.abspath(
+				inspect.getfile(inspect.currentframe())))
+ML_INPUTS = _filepath+"/../data/movielens/ml_data.inputs"
+ML_OUTPUTS = _filepath+"/../data/movielens/ml_data.outputs"
 
 def classify_user(age, gender):
 	"""Given user demographics, returns the initial vector 
