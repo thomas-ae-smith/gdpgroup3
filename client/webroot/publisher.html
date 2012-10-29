@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8">
 	<title>Your4.tv - your custom TV channel</title>
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -32,12 +33,20 @@
 			font-size: 11px;
 			padding-top: 40px;
 		}
+		.thumbnail-bg {
+			width: 120px;
+			height: 68px;
+			background: black;
+			line-height: 68px;
+		}
 	</style>
 	<script type="text/javascript" src="lib/jquery.js"></script>
 	<script type="text/javascript" src="lib/underscore.js"></script>
 	<script type="text/javascript" src="lib/backbone.js"></script>
 	<script type="text/javascript" src="lib/flowplayer.min.js"></script>
-	<script type="text/javascript" src="lib/bootstrap.js"></script>
+	<script type="text/javascript" src="lib/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="lib/jquery.iframe-transport.js"></script>
+	<script type="text/javascript" src="lib/jquery.fileupload.js"></script>
 	<script type="text/javascript" src="js/base.publisher.js"></script>
 	<script>
 		$(document).ready(function () {
@@ -85,10 +94,10 @@
 			<table class="table table-striped">
 				<thead>
 					<tr>
-						<th></th>
-						<th>Type</th>
+						<th width="130"></th>
+						<th width="80">Type</th>
 						<th>Title</th>
-						<th>Actions</th>
+						<th width="160">Actions</th>
 					</tr>
 				</thead>
 				<tbody class="list">
@@ -97,8 +106,8 @@
 		</script>
 		<script type="text/html" id="advert-list-item-template">
 			<tr>
-				<td><img src="<%= thumbnail %>" width="120"></td>
-				<td><%= type %></td>
+				<td><div class="thumbnail-bg"><img src="<%= thumbnail || "img/no-preview.png" %>" width="120"></div></td>
+				<td><%= y4p.language.advertType[type] %></td>
 				<td><%= title %></td>
 				<td><button class="btn edit">Edit</button> <button class="btn delete">Delete</button>
 			</tr>
@@ -125,7 +134,7 @@
 						<div class="control-group">
 							<label class="control-label" for="advert-file">File</label>
 							<div class="controls">
-								<input type="file" id="advert-file">
+								<input type="file" name="file" id="advert-file" data-url="http://www.your4.tv/api/files/">
 							</div>
 						</div>
 						<div class="control-group">

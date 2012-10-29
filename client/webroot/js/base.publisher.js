@@ -23,6 +23,10 @@
 	};
 
 	y4p.language = {
+		advertType: {
+			"video": "Video",
+			"still": "Image"
+		},
 		type: {
 			"ageRanges": "Age ranges",
 			"boundingBoxes": "Locations",
@@ -322,6 +326,28 @@
 			var that = this;
 			this.$el.html(y4p.templates["advert-full"](this.advert.toJSON()));
 			setTimeout(function () { that.updatePreview(); }, 100); // Erm.. HACK
+
+			console.log(this.$('#advert-file'))
+			this.$('#advert-file').fileupload({
+				dataType: 'json',
+				add: function (e, data) {
+					data.context = $('<p/>').text('Uploading...').appendTo(document.body);
+					data.submit();
+				},
+				done: function (e, data) {
+					that.advert.set({ url: data.result.url });
+					console.log(that.advert.get("url"))
+					console.log({ url: data.result.url })
+				},
+				progressall: function (e, data) {
+					var progress = parseInt(data.loaded / data.total * 100, 10);
+					console.log(progress)
+					$('#progress .bar').css(
+						'width',
+						progress + '%'
+					);
+				}
+			});
 			return this;
 		},
 		updatePreview: _.throttle(function () {
@@ -346,7 +372,8 @@
 			if (this.advert.has("id")) {
 				this.advert.save(attributes, options);
 			} else {
-				this.adverts.create(attributes, options);
+				this.advert.set(attributes);
+				this.adverts.create(this.advert, options);
 			}
 		},
 		cancel: function () {
