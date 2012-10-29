@@ -32,10 +32,10 @@ function getAllTargets($id) {
 }
 function getAdverts($id) {
 	$beans = R::find('campaignAdverts', ' campaign = ? ', array($id));
-	return array_map(function ($bean) { return $bean->id; }, $beans);
+	return array_map(function ($bean) { return $bean->id; }, array_values($beans));
 }
 function campaignExists($id) {
-	$bean = R::load('campaign', $id);
+	$bean = R::load('campaigns', $id);
 	return $bean->id > 0;
 }
 
