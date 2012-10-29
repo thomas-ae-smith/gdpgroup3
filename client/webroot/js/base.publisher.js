@@ -58,7 +58,11 @@
 		campaign: function (id) { this.app.goCampaign(id); }
 	});
 
+	y4p.Advert = Backbone.Model.extend({
+		defaults: { title: "", type: "", adverts: [], overlay: "" }
+	});
 	y4p.Adverts = Backbone.Collection.extend({
+		model: y4p.Advert,
 		url: "http://www.your4.tv/api/adverts/"
 	});
 	y4p.Campaign = Backbone.Model.extend({
@@ -106,7 +110,7 @@
 		},
 		goAdvert: function (id) {
 			var that = this,
-				advert = /*id === "new" ? new y4p.Advert() :*/ this.adverts.get(id),
+				advert = id === "new" ? new y4p.Advert() : this.adverts.get(id),
 				view = advert ?
 					new y4p.pages.AdvertFull({ advert: advert, app: this }) :
 					new y4p.pages.NotFound({ message: "Advert not found." });
@@ -311,6 +315,7 @@
 		},
 		initialize: function (options) {
 			this.advert = options.advert;
+			this.adverts = options.app.adverts;
 			this.title = "Advert: " + this.advert.get("title");
 		},
 		render: function () {
@@ -324,19 +329,25 @@
 		}, 500),
 		submit: function (e) {
 			e.preventDefault();
-			var that = this;
-			this.advert.save({
-				title: this.$("#advert-title").val(),
-				//type: this
-				overlay: this.$("#advert-overlay").val()
-			}, {
-				success: function () {
-					that.$("form").html("Saved.");
+			var that = this,
+				attributes = {
+					title: this.$("#advert-title").val(),
+					type: this.$("#advert-type").val(),
+					overlay: this.$("#advert-overlay").val()
 				},
-				error: function () {
-					that.$("form").prepend("Error saving")
-				}
-			});
+				options = {
+					success: function () {
+						that.$("form").html("Saved.");
+					},
+					error: function () {
+						that.$("form").prepend("Error saving")
+					}
+				};
+			if (this.advert.has("id")) {
+				this.advert.save(attributes, options);
+			} else {
+				this.adverts.create(attributes, options);
+			}
 		},
 		cancel: function () {
 			this.trigger("return");
@@ -370,7 +381,9 @@
 		},
 		start: function () {
 			var advert = this.adverts.get(Number(window.location.hash.substr(1)));
-			$("body").html(advert.get("overlay"));
+			if (advert) {
+				$("body").html(advert.get("overlay"));
+			}
 			window.update = function (html) {
 				$("body").html(html);
 			}
