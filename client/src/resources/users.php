@@ -1,6 +1,10 @@
 <?php
 
-$app->get('/users/:id', function($id) use ($app) {
+$app->post('/users(/)', function() use ($app) {
+	
+});
+
+$app->get('/users/:id(/)', function($id) use ($app) {
 	global $facebook;
 	
 	$params = get_params($app->request(), 'get',
@@ -18,18 +22,21 @@ $app->get('/users/:id', function($id) use ($app) {
 		if ($user_id && $user_id == $id) {
 
 			// If the user is already in the DB load them into the session
-			$user = R::find('users', 'facebookId = ?', array($user_id));
+			$user = R::findOne('users', 'facebookId = ?', array($user_id));
 			if ($user) {
-					
 				if ($user->lastFbRefresh == null || strtotime($user->lastFbRefresh) < strtotime('-1 day')) {
         				$user_profile = $facebook->api('/me','GET');
-					$user->import(fb_to_user($user_profile), 'name,gender,dob,email');
-					$user->store();
+					$user_profile = fb_to_user($user_profile);
+					foreach (array('name','gender','dob','email') as $field) {
+						if ($user_profile[$field] != null) {
+							$user->setAttr($field, $user_profile[$field]);
+						}
+					}
+					R::store($user);
                                 }
 
-				if (!defined($_SESSION['user'])) {
-					$_SESSION['user'] = $user;
-				}
+				$_SESSION['user'] = $user->export();
+				$_SESSION['user']['registered'] = true;
 
 				output_json($_SESSION['user']);
 			}
@@ -37,7 +44,27 @@ $app->get('/users/:id', function($id) use ($app) {
 			// If they aren't registered yet fetch their details and load into session
 			try {
 				$user_profile = $facebook->api('/me','GET');
-				$_SESSION['user'] = fb_to_user($user_profile);
+				$user_profile = fb_to_user($user_profile);
+				$user_profile['registered'] = false;
+
+				$complete = true;
+				foreach(array('name','gender','dob','email') as $field) {
+					if (!isset($user_profile[$field])) {
+						$complete = false;
+						break;	
+					}
+				}
+
+				if ($complete) {
+					$bean = R::dispense('users');
+					$bean->import($user_profile);
+					R::store($bean);
+				
+					$user_profile['registered'] = true;
+				}
+
+				
+				$_SESSION['user'] = $user_profile;
 				output_json($_SESSION['user']);
 			} catch(FacebookApiException $e) {
 				output_json(array('error' => $e->getType()+': '+$e->getMessage()));			
