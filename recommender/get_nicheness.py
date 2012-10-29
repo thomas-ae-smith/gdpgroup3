@@ -15,25 +15,26 @@ import mysql.connector
 from datastore.credentials import credentials
 
 DEBUG = False
+VERBOSE = False
 
 def get_user_nicheness(ageranges=[], boundingboxes=[], genders=[], occupations=[]):
 	now = datetime.datetime.now().date()
 
 	age_constraints = (") OR (".join([
 		" AND ".join(filter(None, [
-			"`users`.`dob` > '{lower}'" if maxage else None,
-			"`users`.`dob` < '{upper}'" if minage else None
+			"`users`.`dob` => '{lower}'" if maxage else None,
+			"`users`.`dob` <= '{upper}'" if minage else None
 		])).format(upper=now-relativedelta(years=minage or 0),
 					lower=now-relativedelta(years=maxage or 0))
 	for minage, maxage in ageranges]))
 	age_constraints = "(" + age_constraints + ")" if age_constraints else None
 
-	bb_constraints = (" OR ".join([
+	bb_constraints = (") OR (".join([
 		" AND ".join(filter(None, [
-			"`users`.`long` > '{longmin}'" if longmin else None,
-			"`users`.`long` < '{longmax}'" if longmax else None,
-			"`users`.`lat` > '{latmin}'" if latmin else None,
-			"`users`.`lat` < '{latmax}'" if latmax else None
+			"`users`.`long` => '{longmin}'" if longmin else None,
+			"`users`.`long` <= '{longmax}'" if longmax else None,
+			"`users`.`lat` => '{latmin}'" if latmin else None,
+			"`users`.`lat` <= '{latmax}'" if latmax else None
 		])).format(longmin=longmin, longmax=longmax,
 						latmin=latmin, latmax=latmax)
 	for latmin, latmax, longmin, longmax in boundingboxes]))
@@ -58,6 +59,9 @@ def get_user_nicheness(ageranges=[], boundingboxes=[], genders=[], occupations=[
 
 	conn = mysql.connector.connect(**credentials)
 	cursor = conn.cursor()
+
+	if VERBOSE:
+		print("User nicheness query: {q}".format(q=query))
 
 	cursor.execute(query)
 	users_constrained = cursor.next()[0]
@@ -85,18 +89,18 @@ def get_programme_nicheness(genres=[], programmes=[], times=[]):
 		constraint = []
 		if start is not None:
 			constraint += ["FROM_UNIXTIME(`programmes`.`start`, '%T') "
-							"> '{start}'".format(start=start)]
+							"=> '{start}'".format(start=start)]
 		if end is not None:
 			constraint += ["FROM_UNIXTIME(`programmes`.`start`, '%T') "
-							"< '{end}'".format(end=end)]
+							"<= '{end}'".format(end=end)]
 		if day is not None:
 			constraint += ["FROM_UNIXTIME(`programmes`.`start`, '%w') "
 							"= {day}".format(day=day)]
 		if constraint:
-			constraint = "(" + " AND ".join(constraint) + ")"
+			constraint = " AND ".join(constraint)
 			time_constraints.add(constraint)
 	if time_constraints:
-		time_constraints = "(" + " OR ".join(time_constraints) + ")"
+		time_constraints = "(" + ") OR (".join(time_constraints) + ")"
 
 	constraints = [genre_constraints, programme_constraints, time_constraints]
 	query = ("SELECT COUNT(`id`) FROM `programmes` WHERE {}".format(
@@ -105,7 +109,8 @@ def get_programme_nicheness(genres=[], programmes=[], times=[]):
 	conn = mysql.connector.connect(**credentials)
 	cursor = conn.cursor()
 
-	import pdb; pdb.set_trace()
+	if VERBOSE:
+		print("Programme nicheness query: {q}".format(q=query))
 
 	cursor.execute(query)
 	programmes_constrained = cursor.next()[0]
@@ -127,11 +132,50 @@ def get_nicheness(ageranges=[], boundingboxes=[], genders=[], genres=[],
 def _init_argparse():
 	parser = argparse.ArgumentParser(description="Given a set of restrictions, "
 		"returns the nicheness of a campaign with those restrictions. Store "
-		"this value in the 'nicheness' attribute of each campaign.")
-	group = parser.add_mutually_exclusive_group()
-	group.add_argument('-j', '--json', type=str,
-						help="An input string in json format.")
-	group.add_argument('-t', "--test", action='store_true',
+		"this value in the 'nicheness' attribute of each campaign. "
+		"Restrictions can be specified either individual lists with flags, or "
+		"through a JSON string.")
+	json_or_flags = parser.add_mutually_exclusive_group()
+
+
+	flags_group = json_or_flags.add_argument_group()
+	flags_group.add_argument('-a', '--age_ranges', nargs='?', type=int,
+		help="A list of age ranges, which is split into pairs of (minage, "
+		"maxage). Bounds are inclusive. Must be of even length. -1 is taken to "
+		"mean unbounded. Example: '-1 10 20 25 60 -1' is split into "
+		"(unbounded-10), (20-25), (60-unbounded).")
+	flags_group.add_argument('-b', '--bounding_boxes', nargs='?', type=float,
+		help="A list of bounding boxes, given by a list of sequences of four "
+		"numbers representing the bounds on a bounding box, of format: "
+		"(latmin, latmax, longmin, longmax). Must be a multiple of 4. If a "
+		"sequence of 4n numbers is given, this will be used as n bounding "
+		"boxes.")
+	flags_group.add_argument('-g', '-genders', nargs='?', type=str,
+		choices=['m', 'f', 'male', 'female'], help="A list of genders.")
+	flags_group.add_argument('-G', '--genres', nargs='?', type=int,
+		help="A list of genre ids from the genres table in the database.")
+	flags_group.add_argument('-o', '--occupations', nargs='?', type=int,
+		help="A list of occupation ids from the occupations table.")
+	flags_group.add_argument('-p', '--programmes', nargs='?', type=int,
+		help="A list of programme ids from the programmes table.")
+	flags_group.add_argument('-t', '--times', nargs='?', type=str,
+		help="A list of time/day restrictions. Each restriction is a triple, "
+		"of the form (startTime, endTime, day), where the times are strings "
+		"between 00:00:00-23:59:59. day is an int 0-6 representing a weekday. "
+		"The list must have 3n elements representing n restrictions.")
+
+	json_or_flags.add_argument('-j', '--json', type=str,
+						help="An input string in json format. Required format: "
+						"{\n"
+						"\t'ageranges':[(minage, maxage)],\n"
+						"\t'boundingboxes':[(latmin, latmax, longmin, longmax)],\n"
+						"\t'genders':[genders],\n"
+						"\t'genres':[genre_ids],\n"
+						"\t'occupations':[occupation_ids],\n"
+						"\t'programmes':[programme_ids],\n"
+						"\t'times':[(start_time, end_time, weekday)]\n"
+						"}")
+	json_or_flags.add_argument('-T', "--test", action='store_true',
 						help="Runs using an example set of constraints for "
 						"testing purposes.")
 	parser.add_argument('-v', "--verbose", action='store_true',
@@ -147,14 +191,17 @@ if __name__ == "__main__":
 	if args.debug:
 		DEBUG = True
 
+	if args.verbose:
+		VERBOSE = True
+
 	if args.test:
 		args.json = json.dumps({
 			'ageranges':[(None, 20), (50, None)],
-			'boundingboxes':[(51.28,51.686,-0.489,0.236)],
+			'boundingboxes':[(None,51.686,-0.489,0.236)],
 			'genders':['male'],
 			'genres':['0', '1', '4', '8', '12'],
 			'occupations':['0', '6', '8', '1', '9', '4'],
-			'programmes':[],
+			'programmes':['1', '2', '3', '4', '5', '6'],
 			'times':[(None, None, 0), ("10:00:00", "22:00:00", None)],
 		})
 
