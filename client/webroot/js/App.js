@@ -190,14 +190,15 @@
 			this.userCollection = new y4.UserCollection();
 			var that = this;
 			FB.getLoginStatus(function(response) {
-                                if (response.status === 'connected') {
-                               		that.retrieveUser(); 
+				if (response.status === 'connected') {
+					that.$el.html($('<img/>').attr('src','/img/spinner.gif'));
+					that.retrieveUser();
 				} else if (response.status === 'not_authorized') {
-                                        that.facebookLoggedIn = false;
-                                } else {
-                                        that.facebookLoggedIn = false;
-                                }
-                        });
+					that.facebookLoggedIn = false;
+				} else {
+					that.facebookLoggedIn = false;
+				}
+			});
 		},
 
 		facebookLogin: function() {
