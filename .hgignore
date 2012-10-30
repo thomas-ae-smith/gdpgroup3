@@ -3,4 +3,6 @@ recommender/tvdb_cache
 
 syntax: glob
 *.pyc
+*.mp4
+*.flv
 *~
