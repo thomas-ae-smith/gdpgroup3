@@ -104,29 +104,29 @@ body {
 }
 
 .start-screen .logon-outer {
-	position:absolute;
 	line-height: 22px;
-	vertical-align:middle;
-	width:100%;
-	height:100%;
+	text-align: center;
+}
+
+.start-screen .logon-outer:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	min-height:650px;
+	vertical-align: middle;
+	margin-right: -0.25em;
 }
 
 .start-screen .logon-inner {
-	margin: 0 auto;
 	background: #000;
         opacity: 0.6;
         padding: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         border-radius: 10px;
-	width: 500px;
-	height: 260px;
-	position:relative;
-	left: 50%;
-	top: 50%;
-	margin-left: -250px;
-	margin-top: -70px;
 	vertical-align:middle;
+	display: inline-block;
+	width:500px;
 }
 
 .start-screen .logon-inner button {
@@ -138,9 +138,7 @@ body {
 }
 
 .start-screen .logon-inner .submit-registration {
-	position: absolute;
-	bottom: 10px;
-	width: 96%;
+	margin-top:10px;
 }
 
 .start-screen .logon-inner .separator {
@@ -260,4 +258,5 @@ video {
 	background: url('../img/homepage-splash.jpg');
 	width: 100%;
 	height: 100%;
+	position: absolute;
 }
