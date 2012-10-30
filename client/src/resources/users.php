@@ -1,9 +1,9 @@
 <?php
 
-$app->post('/users(/)', function() use ($app) {
+$app->put('/users/:id(/)', function($id) use ($app) {
 	
 });
-
+	
 $app->get('/users/:id(/)', function($id) use ($app) {
 	global $facebook;
 	
@@ -79,7 +79,26 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 });
 
 
-$app->get('/users', function() use ($app) {
+$app->delete('/users/:id(/)', function($id) use ($app) {
+	global $facebook;
+	if (array_key_exists('user', $_SESSION)) {
+		if ($_SESSION['user']['facebookId'] != null) {
+			$user = R::load('users',$_SESSION['user']['id']);
+			if ($_SESSION['user']['facebookId'] = $user->facebookId) {
+				$token = $facebook->getAccessToken();
+				$graph_url = "https://graph.facebook.com/me/permissions?method=delete&access_token=" . $token;
+				$result = json_decode(file_get_contents($graph_url));
+				if($result) {
+					session_destroy();
+				}
+			} else {
+				output_json("fail");
+			}
+		} else {
+			session_destroy();
+		}
+	}
 
+	output_json('success');
 });
 

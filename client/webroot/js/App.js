@@ -154,7 +154,7 @@
 
 		initialize: function() {
 			var that = this;
-			this.user = this.options.user;
+				this.user = this.options.user;
 			if (!this.user) {
 				this.userCollection = new y4.UserCollection();
 				this.user = new y4.UserModel();
@@ -186,6 +186,7 @@
 		},
 
 		initialize: function() {
+			_.bindAll(this, 'logout');
 			this.userCollection = new y4.UserCollection();
 			var that = this;
 			FB.getLoginStatus(function(response) {
@@ -233,6 +234,14 @@
 		normalLogin: function() {
 			var registerView = new y4.Register();
 			this.$el.find(".logon-inner").html(registerView.render().el);
+		},
+
+		logout: function() {
+			this.userModel.destroy().then(function(response) {
+				if (response == "success") {
+					window.location = 'http://'+window.location.hostname;
+				}
+			});
 		},
 
 		render: function() {
