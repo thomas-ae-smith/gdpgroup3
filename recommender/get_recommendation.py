@@ -5,7 +5,7 @@ from __future__ import print_function
 import argparse
 import pdb
 import sys
-import time
+from time import time
 
 import mysql.connector
 import numpy
@@ -37,46 +37,37 @@ def get_user_vector(user_id):
 
 	return vector
 
-# TODO: Filter out programmes called "Off air"
-def get_upcoming_programmes(lookahead=300):
-	query = (	'SELECT `id`, `vector` '
-				'FROM `programmes` '
-				'WHERE `start` '
-				'BETWEEN {start_time} '
-				'AND {end_time}'.format(
-					start_time=int(time.time()),
-					end_time=int(time.time() + lookahead)))
-
+def get_name(pid):
+	query = "SELECT `name` FROM `programmes` WHERE `id` = {pid}".format(pid=pid)
 	conn = mysql.connector.connect(**credentials)
 	cursor = conn.cursor()
-
 	cursor.execute(query)
 
-	channel_vectors = []
-	for p_id, p_vector in cursor:
-		p_vector = vector.string_to_vector(p_vector)
-		channel_vectors.append((p_id, p_vector))
-
-	if not channel_vectors:
-		print("No programmes in the database which start within the next {t} "
-				"seconds!".format(t=lookahead), file=sys.stderr)
+	name = cursor.next()[0]
 
 	cursor.close()
 	conn.close()
 
-	return channel_vectors
+	return name
 
-def get_recommendation(user_id, lookahead=300):
+def get_recommendation(userId, startTime=time(), lookahead=300):
 	"""Given a userid, returns the programme id for a programme recommended
 	by the recommender which starts within the next `lookahead` seconds.
 	Returns -1 if there are no programmes in the database which start within
 	the required time."""
 
-	user_vector = vector.string_to_vector(interface.get_user(user_id, ['vector']))
-	upcoming_programmes = get_upcoming_programmes(lookahead)
+	user_vector = vector.string_to_vector(interface.get_user(userId, ['vector']))
+	upcoming_programmes = interface.get_upcoming_programmes(
+							startTime=startTime, lookahead=lookahead)
+
+	if not upcoming_programmes:
+		print("No programmes in the database which start between {start} "
+				"and {end}".format(start=startTime, end=startTime+lookahead),
+				file=sys.stderr)
 
 	best_recommendation = (float('inf'), -1)
 	for p_id, p_vector in upcoming_programmes:
+		p_vector = vector.string_to_vector(p_vector)
 		try:
 			diff = user_vector - p_vector
 		except ValueError as err:
@@ -95,33 +86,23 @@ def get_recommendation(user_id, lookahead=300):
 
 	return best_recommendation[1]
 
-def get_name(pid):
-	query = "SELECT `name` FROM `programmes` WHERE `id` = {pid}".format(pid=pid)
-	conn = mysql.connector.connect(**credentials)
-	cursor = conn.cursor()
-	cursor.execute(query)
-
-	name = cursor.next()[0]
-
-	cursor.close()
-	conn.close()
-
-	return name
-
 def _init_argparse():
-	parser = argparse.ArgumentParser(description="Given a user ID, returns a "
-		"the channel of a programme recommended by the recommender which "
-		"starts within the period `TIME` specified (defualt 5 mins). Returns "
-		"-1 if there are no programmes in the database which start within "
-		"the specified time. Exits with status 1 if the user id given does "
-		"not exist in the database of users")
+	parser = argparse.ArgumentParser(description="Returns a recommended "
+		"programme id for a particular user which starts within a period of "
+		"time. Defaults to within the next 5 minutes from right now. Returns "
+		"-1 if no programmes exist int he database which start within the "
+		"specified time period. Exits with status 1 if the user does not exist "
+		"in the users table.")
 	parser.add_argument('user_id', metavar='uid', type=int,
 						help="The ID of a user")
+	parser.add_argument('-t', "--time", type=int, default=int(time()),
+		help="A unix timestamp of the lower bound on the start time of a "
+		"programme to be recommended")
+	parser.add_argument('-l', "--lookahead", type=int, default=300,
+		help="The time, in seconds, after --time in which a recommended "
+		"programme may start. Defaults to 300 (5 minutes).")
 	parser.add_argument('-n', "--name", action="store_true", help="Returns the "
 						"name, instead of the id, of the programme.")
-	parser.add_argument('-t', "--time", type=float, help="The greatest length "
-		"of time, in seconds, between right now and when the recommendation "
-		"begins. Default 300 (5 minutes).")
 	parser.add_argument('-d', "--debug", action="store_true",
 						help="If true, breaks using pdb in a number of cases.")
 	return parser.parse_args()
@@ -132,8 +113,8 @@ if __name__ == "__main__":
 
 	DEBUG = args.debug
 
-	lookahead = args.time or 300
-	recommendation = get_recommendation(args.user_id, lookahead)
+	recommendation = get_recommendation(args.user_id, startTime=args.time,
+										lookahead=args.lookahead)
 	if args.name:
 		recommendation = get_name(recommendation)
 
