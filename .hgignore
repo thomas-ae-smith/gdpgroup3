@@ -1,6 +1,7 @@
 .DS_Store
 recommender/tvdb_cache
-
 syntax: glob
+client/webroot/img/stills/**
+client/webroot/img/thumbs/**
 *.pyc
 *~
