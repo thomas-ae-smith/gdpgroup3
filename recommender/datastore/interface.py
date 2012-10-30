@@ -1,5 +1,6 @@
 import argparse
 from datetime import datetime
+from time import time
 
 import mysql.connector
 
@@ -84,6 +85,29 @@ def get_advert_pool(uid, pid, when=datetime.now()):
 
 	return adverts
 
+def get_upcoming_programmes(startTime=time(), lookahead=300):
+	query = (	"SELECT `id`, `vector` "
+				"FROM `programmes` "
+				"WHERE `programmes`.`name` != 'Off air' "
+				"AND `start` "
+				"BETWEEN {start_time} "
+				"AND {end_time}".format(
+					start_time=int(startTime),
+					end_time=int(startTime + lookahead)))
+
+	conn = mysql.connector.connect(**credentials)
+	cursor = conn.cursor()
+
+	cursor.execute(query)
+
+	channel_vectors = [(p_id, p_vector) for p_id, p_vector in cursor]
+
+	cursor.close()
+	conn.close()
+
+	return channel_vectors
+
+
 def get_programme(pid, fields=[]):
 	"""Returns a tuple of the values of the given fields for a programme with
 	the given id. If no fields are specified, all are returned."""
@@ -98,6 +122,7 @@ def get_programme(pid, fields=[]):
 	conn.close()
 	return results
 
+# TODO: Properly return entire list, and modify ALL files which use this (urgh...)
 def get_user(userid, fields=[]):
 	"""Returns a tuple of the values of the given fields for a user with
 	the given id. If no fields are specified, all are returned."""

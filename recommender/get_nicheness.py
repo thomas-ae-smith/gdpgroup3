@@ -22,7 +22,7 @@ def get_user_nicheness(ageranges=[], boundingboxes=[], genders=[], occupations=[
 
 	age_constraints = (") OR (".join([
 		" AND ".join(filter(None, [
-			"`users`.`dob` => '{lower}'" if maxage else None,
+			"`users`.`dob` >= '{lower}'" if maxage else None,
 			"`users`.`dob` <= '{upper}'" if minage else None
 		])).format(upper=now-relativedelta(years=minage or 0),
 					lower=now-relativedelta(years=maxage or 0))
@@ -31,9 +31,9 @@ def get_user_nicheness(ageranges=[], boundingboxes=[], genders=[], occupations=[
 
 	bb_constraints = (") OR (".join([
 		" AND ".join(filter(None, [
-			"`users`.`long` => '{longmin}'" if longmin else None,
+			"`users`.`long` >= '{longmin}'" if longmin else None,
 			"`users`.`long` <= '{longmax}'" if longmax else None,
-			"`users`.`lat` => '{latmin}'" if latmin else None,
+			"`users`.`lat` >= '{latmin}'" if latmin else None,
 			"`users`.`lat` <= '{latmax}'" if latmax else None
 		])).format(longmin=longmin, longmax=longmax,
 						latmin=latmin, latmax=latmax)
@@ -89,7 +89,7 @@ def get_programme_nicheness(genres=[], programmes=[], times=[]):
 		constraint = []
 		if start is not None:
 			constraint += ["FROM_UNIXTIME(`programmes`.`start`, '%T') "
-							"=> '{start}'".format(start=start)]
+							">= '{start}'".format(start=start)]
 		if end is not None:
 			constraint += ["FROM_UNIXTIME(`programmes`.`start`, '%T') "
 							"<= '{end}'".format(end=end)]
@@ -127,44 +127,58 @@ def get_nicheness(ageranges=[], boundingboxes=[], genders=[], genres=[],
 
 	programme_nicheness = get_programme_nicheness(genres, programmes, times)
 
+	if VERBOSE:
+		print("User nicheness:\t{u}".format(u=user_nicheness))
+		print("Programme nicheness:\t{p}".format(p=programme_nicheness))
+
+
 	return user_nicheness * programme_nicheness
 
 def _init_argparse():
-	parser = argparse.ArgumentParser(description="Given a set of restrictions, "
-		"returns the nicheness of a campaign with those restrictions. Store "
-		"this value in the 'nicheness' attribute of each campaign. "
+	def int_or_null(_int):
+		if _int == "":
+			return None
+		else:
+			return int(_int)
+
+	parser = argparse.ArgumentParser(description="Given a set of restrictions "
+		"in json, returns the nicheness of a campaign with those restrictions. "
+		"Store this value in the 'nicheness' attribute of each campaign. "
 		"Restrictions can be specified either individual lists with flags, or "
 		"through a JSON string.")
+
+	"""
 	json_or_flags = parser.add_mutually_exclusive_group()
-
-
 	flags_group = json_or_flags.add_argument_group()
-	flags_group.add_argument('-a', '--age_ranges', nargs='?', type=int,
+	flags_group.add_argument('-a', '--age_ranges', nargs='*', type=int_or_null,
 		help="A list of age ranges, which is split into pairs of (minage, "
 		"maxage). Bounds are inclusive. Must be of even length. -1 is taken to "
 		"mean unbounded. Example: '-1 10 20 25 60 -1' is split into "
 		"(unbounded-10), (20-25), (60-unbounded).")
-	flags_group.add_argument('-b', '--bounding_boxes', nargs='?', type=float,
+	flags_group.add_argument('-b', '--bounding_boxes', nargs='*', type=int_or_null,
 		help="A list of bounding boxes, given by a list of sequences of four "
 		"numbers representing the bounds on a bounding box, of format: "
 		"(latmin, latmax, longmin, longmax). Must be a multiple of 4. If a "
 		"sequence of 4n numbers is given, this will be used as n bounding "
 		"boxes.")
-	flags_group.add_argument('-g', '-genders', nargs='?', type=str,
+	flags_group.add_argument('-g', '--genders', nargs='*', type=str,
 		choices=['m', 'f', 'male', 'female'], help="A list of genders.")
-	flags_group.add_argument('-G', '--genres', nargs='?', type=int,
+	flags_group.add_argument('-G', '--genres', nargs='*', type=int,
 		help="A list of genre ids from the genres table in the database.")
-	flags_group.add_argument('-o', '--occupations', nargs='?', type=int,
+	flags_group.add_argument('-o', '--occupations', nargs='*', type=int,
 		help="A list of occupation ids from the occupations table.")
-	flags_group.add_argument('-p', '--programmes', nargs='?', type=int,
+	flags_group.add_argument('-p', '--programmes', nargs='*', type=int,
 		help="A list of programme ids from the programmes table.")
-	flags_group.add_argument('-t', '--times', nargs='?', type=str,
+	flags_group.add_argument('-t', '--times', nargs='*', type=str,
 		help="A list of time/day restrictions. Each restriction is a triple, "
 		"of the form (startTime, endTime, day), where the times are strings "
 		"between 00:00:00-23:59:59. day is an int 0-6 representing a weekday. "
 		"The list must have 3n elements representing n restrictions.")
+	if args.times:
+		args.times = map(lambda s: None if s=="" else s, args.times)
+	"""
 
-	json_or_flags.add_argument('-j', '--json', type=str,
+	parser.add_argument('json', type=str,
 						help="An input string in json format. Required format: "
 						"{\n"
 						"\t'ageranges':[(minage, maxage)],\n"
@@ -175,14 +189,29 @@ def _init_argparse():
 						"\t'programmes':[programme_ids],\n"
 						"\t'times':[(start_time, end_time, weekday)]\n"
 						"}")
-	json_or_flags.add_argument('-T', "--test", action='store_true',
+	parser.add_argument('-T', "--test", action='store_true',
 						help="Runs using an example set of constraints for "
-						"testing purposes.")
+						"testing purposes, overriding any other input.")
 	parser.add_argument('-v', "--verbose", action='store_true',
 						help="Prints more information to stdout.")
 	parser.add_argument('-d', "--debug", action="store_true",
 						help="If true, breaks using pdb in a number of cases.")
+
 	return parser.parse_args()
+
+def tupleify(_list,tupleSize):
+	if _list is not None:
+		assert len(_list) % tupleSize == 0
+
+		tupleList = []
+		for n in xrange(int(len(_list) / tupleSize)):
+			_tuple = tuple(_list[n+pos] for pos in xrange(tupleSize))
+			_tuple = map(lambda s: None if s=='' else s, _tuple)
+			tupleList += [_tuple]
+
+		return tupleList
+	else:
+		return []
 
 # If called from the commandline
 if __name__ == "__main__":
@@ -190,12 +219,11 @@ if __name__ == "__main__":
 
 	if args.debug:
 		DEBUG = True
-
 	if args.verbose:
 		VERBOSE = True
 
 	if args.test:
-		args.json = json.dumps({
+		input_dict = {
 			'ageranges':[(None, 20), (50, None)],
 			'boundingboxes':[(None,51.686,-0.489,0.236)],
 			'genders':['male'],
@@ -203,8 +231,8 @@ if __name__ == "__main__":
 			'occupations':['0', '6', '8', '1', '9', '4'],
 			'programmes':['1', '2', '3', '4', '5', '6'],
 			'times':[(None, None, 0), ("10:00:00", "22:00:00", None)],
-		})
-
-	input_dict = json.loads(args.json)
+		}
+	else:
+		input_dict = json.loads(args.json)
 
 	print(get_nicheness(**input_dict), end='')
