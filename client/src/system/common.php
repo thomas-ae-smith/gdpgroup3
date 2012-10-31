@@ -16,18 +16,22 @@ function set_db($conf_name) {
 }
 
 function notFound($msg = 'Not found') {
-        header('HTTP/1.0 404 Not Found');
+        header('HTTP/1.0 404 Not Found', true, 404);
         output_json(array('error' => $msg));
 }
 
 function invalid($msg = 'Invalid method') {
-        header('HTTP/1.1 405 Method Not Allowed');
+        header('HTTP/1.1 405 Method Not Allowed', true, 405);
 	output_json(array('error' => $msg));
 }
 
 function badRequest($msg = 'Bad request') {
 	header('HTTP/1.0 400 Bad Request', true, 400);
 	output_json(array('error' => $msg));
+}
+
+function noContent() {
+	header('HTTP/1.1 204 No Content', true, 204);
 }
 
 function output_json($content) {

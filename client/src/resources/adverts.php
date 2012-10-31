@@ -39,3 +39,13 @@ $app->post('/adverts(/)', function () use ($app) {
 	$advert = R::dispense('adverts');
 	setAdvert($advert, $req);
 });
+
+$app->delete('/adverts/:id', function ($id) use ($app) {
+	$advert = R::load('adverts', $id);
+	if (!$advert->id) {
+		notFound('Could not find advert with that ID)');
+	} else {
+		R::trash($advert);
+		noContent();
+	}
+});
