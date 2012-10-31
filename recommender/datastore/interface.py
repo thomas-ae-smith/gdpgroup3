@@ -1,6 +1,7 @@
 import argparse
 import datetime
 from time import time
+import random
 
 import mysql.connector
 
@@ -21,7 +22,7 @@ def _time_from_seconds(total_seconds):
 	return time_
 
 # TODO: Only return from current campaigns.
-def get_advert_pool(uid, pid, when=None):
+def get_campaign_pool(uid, pid, when=None):
 	if when is None:
 		when = datetime.datetime.now()
 	"""Given a user id, programme id and time, returns a pool of adverts whose
@@ -97,6 +98,25 @@ def get_advert_pool(uid, pid, when=None):
 	conn.close()
 
 	return adverts
+
+def get_ad(campaignId):
+	query = (	"SELECT `id` "
+				"FROM `campaignAdverts` "
+				"WHERE `campaign` = {campaignId}".format(
+					campaignId=campaignId))
+				
+	conn = mysql.connector.connect(**credentials)
+	cursor = conn.cursor()
+
+	cursor.execute(query)
+
+	ads = [response[0] for response in cursor]
+
+	cursor.close()
+	conn.close()
+
+	return random.choice(ads or [-1])
+
 
 def get_upcoming_programmes(startTime=time(), lookahead=300):
 	query = (	"SELECT `id`, `vector` "

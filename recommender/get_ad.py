@@ -13,9 +13,9 @@ from datastore import interface
 DEBUG = False
 VERBOSE = False
 
-def get_advertisement(uid, pid, when=time()):
+def get_campaign(uid, pid, when=time()):
 	# Get all adverts available for a given user, programme and time.
-	advert_pool = interface.get_advert_pool(uid, pid, when)
+	advert_pool = interface.get_campaign_pool(uid, pid, when)
 
 	if not advert_pool:
 		if VERBOSE:
@@ -71,4 +71,10 @@ if __name__ == "__main__":
 	DEBUG = args.debug
 	VERBOSE = args.verbose
 
-	print(get_advertisement(args.uid, args.pid, args.time), end='')
+	campaign = get_campaign(args.uid, args.pid, args.time)
+	ad = interface.get_ad(campaign)
+	if ad == -1:
+		print("Recommended campaign {c} has no corresponding adverts!".format(
+				c=campaign), file=sys.stderr)
+
+	print(ad, end='')
