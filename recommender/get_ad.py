@@ -2,10 +2,9 @@
 
 #TODO: Database has been updated; campaigns now have multiple ads. Reflect this. Return campaign ads with equal probability.
 
-from __future__ import print_function
+from __future__ import print_function, division
 
 import argparse
-from datetime import datetime
 from random import random
 from time import time
 
@@ -14,18 +13,18 @@ from datastore import interface
 DEBUG = False
 VERBOSE = False
 
-def get_advertisement(uid, pid, when=datetime.now()):
+def get_advertisement(uid, pid, when=time()):
 	# Get all adverts available for a given user, programme and time.
 	advert_pool = interface.get_advert_pool(uid, pid, when)
 
 	if not advert_pool:
 		if VERBOSE:
-			print("No valid adverts returned for uid={uid}, pid={pid}, "
+			print("No valid campaigns returned for uid={uid}, pid={pid}, "
 				"when={when}:".format(uid=uid, pid=pid, when=when))
 		return -1
 
 	if VERBOSE:
-		print("Valid adverts for uid={uid}, pid={pid}, "
+		print("Valid campaigns for uid={uid}, pid={pid}, "
 			"when={when}:".format(uid=uid, pid=pid, when=when))
 		for ad_id, nicheness in advert_pool.iteritems():
 			print("{ad}\t\t{nicheness}".format(ad=ad_id, nicheness=nicheness))
@@ -68,9 +67,8 @@ def _init_argparse():
 # If called from the commandline.
 if __name__ == "__main__":
 	args = _init_argparse()
-	args.time = datetime.utcfromtimestamp(args.time)
 
 	DEBUG = args.debug
 	VERBOSE = args.verbose
 
-	print(get_advertisement(args.uid, args.pid, ), end='')
+	print(get_advertisement(args.uid, args.pid, args.time), end='')
