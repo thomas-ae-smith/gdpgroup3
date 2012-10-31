@@ -40,7 +40,6 @@ function campaignExists($id) {
 }
 
 $app->get('/campaigns/(:id)', function($id = null) use ($app) {
-
 	if (!is_null($id)) {
 		$r = R::find('campaigns', 'id = ?', array($id));
 	} else {
@@ -48,55 +47,75 @@ $app->get('/campaigns/(:id)', function($id = null) use ($app) {
 	}
 
 	$campaigns = array_map(function ($campaign) {
-
 		$id = $campaign['id'];
 		$campaign['gender'] = preg_split('@,@', $campaign['gender'], NULL, PREG_SPLIT_NO_EMPTY); // don't allow set [""]
 		$campaign['schedule'] = preg_split('@,@', $campaign['schedule'], NULL, PREG_SPLIT_NO_EMPTY);
 		$campaign['adverts'] = getAdverts($id);
 		$campaign['targets'] = getAllTargets($id);
 		return $campaign;
-
 	}, R::exportAll($r));
 
 	
 	if (!is_null($id)) {
-		if (count($campaigns) === 0) {
-			notFound('Could not find campaign with that ID.');
-		} else {
-			output_json($campaigns[0]);
-		}
+		if (count($campaigns) === 0) { return notFound('Could not find campaign with that ID.'); }
+		output_json($campaigns[0]);
 	} else {
 		output_json($campaigns);
 	}
-
 });
 
 $app->get('/campaigns/:id/adverts(/)', function ($id) use ($app) {
-	if (campaignExists($id)) {
-		output_json(getAdverts($id));
-	} else {
-		notFound('Campaign not found.');
-	}
+	if (campaignExists($id)) { return notFound('Campaign not found.'); }
+	output_json(getAdverts($id));
 });
 
 $app->get('/campaigns/:id/targets(/)', function ($id) use ($app) {
-	if (campaignExists($id)) {
-		output_json(getAllTargets($id));
-	} else {
-		notFound('Campaign not found.');
-	}
+	if (campaignExists($id)) { return notFound('Campaign not found.'); }
+	output_json(getAllTargets($id));
 });
 
 $app->get('/campaigns/:id/targets/:type(/)', function ($id, $type) use ($app, $targetTables) {
-	if (campaignExists($id)) {
-		$r = getTargets($id, $type);
-	
-		if ($r === false) {
-			notFound('No such type.');
-		} else {
-			output_json($r);
-		}
-	} else {
-		notFound('Campaign not found.');
-	}
+	if (!campaignExists($id)) { return notFound('Campaign not found.'); }
+	$r = getTargets($id, $type);	
+	if ($r === false) { return notFound('No such type.'); }
+	output_json($r);
 });
+
+$app->put('/campaigns/:id', function ($id) use ($app) {
+        $req = $app->request()->getBody();
+        $campaign = R::load('campaigns', $id);
+        setCampaign($campaign, $req);
+});
+
+$app->post('/campaigns(/)', function () {
+        $req = $app->request()->getBody();
+        $campaign = R::dispense('campaigns');
+        setCampaign($campaign, $req);
+});
+
+function setCampaign($campaign, $req) {
+	$campaign->title = $req['title'];
+	$campaign->startDate = $req['startDate'];
+	$campaign->endDate = $req['endDate'];
+	
+	//$campaign->schedule = $req['schedule'];
+	//$campaign->gender = $req['gender'];
+
+	$campaign->sharedAdverts = array_map(function ($id) {
+		return R::load('adverts', $id);
+	}, $req['adverts']);
+
+	$campaignId = R::store($campaign);
+	
+	//if (isset($req['adverts'])) {
+	//	array_walk($req['adverts'], function ($advert) {
+	//		if (!$advert['id']) {
+	//			$campaignAdvert = R::dispense('campaignAdverts');
+	//			$campaignAdvert->campaign = $campaignAdvert;
+	//			$campaignAdvert->advert = $advert['advert'];
+	//		}
+	//	});
+	//}
+        output_json($campaign->export());
+
+}
