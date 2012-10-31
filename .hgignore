@@ -6,4 +6,5 @@ client/webroot/img/thumbs/**
 *.pyc
 *.mp4
 *.flv
+*.swp
 *~

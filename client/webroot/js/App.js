@@ -13,7 +13,7 @@
 			var that = this;
 
 			this.login = new y4.Login();
-
+			this.showSpinner();
 			this.player = new y4.Player({ server: options.server });
 
 			this.advertCollection = new y4.AdvertCollection(undefined, { player: this.player });
@@ -145,6 +145,26 @@
 
 		log: function (msg) {
 			this.$(".log").html(msg + "<br>" + this.$(".log").html());
+		},
+
+		showSpinner: function(opts) {
+			if (!opts) {
+				opts = {
+					lines: 13,
+					length: 21,
+					width: 4,
+					speed: 1.4,
+					color: '#fff'
+				};
+			}
+
+			this.spinner = new Spinner(opts).spin($('body')[0]);
+		},
+
+		hideSpinner: function(opts) {
+			if (this.spinner) {
+				this.spinner.stop();
+			}
 		}
 	});
 
@@ -191,12 +211,15 @@
 			var that = this;
 			FB.getLoginStatus(function(response) {
 				if (response.status === 'connected') {
-					that.$el.html($('<img/>').attr('src','/img/spinner.gif'));
 					that.retrieveUser();
 				} else if (response.status === 'not_authorized') {
 					that.facebookLoggedIn = false;
+					y4.app.hideSpinner();
+					that.renderLogin();
 				} else {
 					that.facebookLoggedIn = false;
+					y4.app.hideSpinner();
+					that.renderLogin();
 				}
 			});
 		},
@@ -228,6 +251,7 @@
 						var registerView = new y4.Register({user: that.userModel});
 						that.$el.find(".logon-inner").html(registerView.render().el);
 					}
+					y4.app.hideSpinner();
 				});
 			});
 		},
@@ -246,9 +270,12 @@
 		},
 
 		render: function() {
+			return this;
+		},
+
+		renderLogin: function() {
 			var loginTemplate = _.template($('#login-template').html());
 			this.$el.html(loginTemplate());
-			return this;
 		}
 
 	});
