@@ -14,6 +14,7 @@ from datastore.credentials import credentials
 from datastore import vector, interface
 
 DEBUG = False
+VERBOSE = False
 
 def get_user_vector(user_id):
 	query = (	'SELECT `vector` '
@@ -56,7 +57,7 @@ def get_recommendation(userId, startTime=time(), lookahead=300):
 	Returns -1 if there are no programmes in the database which start within
 	the required time."""
 
-	user_vector = vector.string_to_vector(interface.get_user(userId, ['vector']))
+	user_vector = vector.string_to_vector(interface.get_user(userId, ['vector'])[0])
 	upcoming_programmes = interface.get_upcoming_programmes(
 							startTime=startTime, lookahead=lookahead)
 
@@ -83,6 +84,13 @@ def get_recommendation(userId, startTime=time(), lookahead=300):
 		if distance < best_recommendation[0]:
 			# ...recommend that programme.
 			best_recommendation = (distance, p_id)
+			if VERBOSE:
+				best_vector = p_vector
+
+	if VERBOSE:
+		print("User vector: {v}".format(v=user_vector))
+		print("Closest programme vector: {v}".format(v=best_vector))
+		print("Distance: {d}".format(d=best_recommendation[0]))
 
 	return best_recommendation[1]
 
@@ -105,13 +113,16 @@ def _init_argparse():
 						"name, instead of the id, of the programme.")
 	parser.add_argument('-d', "--debug", action="store_true",
 						help="If true, breaks using pdb in a number of cases.")
+	parser.add_argument('-v', "--verbose", action="store_true",
+						help="Prints more information to stdout.")
 	return parser.parse_args()
 
 # If called from the commandline.
 if __name__ == "__main__":
 	args = _init_argparse()
 
-	DEBUG = args.debug
+	DEBUG = bool(args.debug)
+	VERBOSE = bool(args.verbose)
 
 	recommendation = get_recommendation(args.user_id, startTime=args.time,
 										lookahead=args.lookahead)

@@ -164,8 +164,13 @@ def get_user(userid, fields=[]):
 				'WHERE `id`='+str(userid))
 	conn = mysql.connector.connect(**credentials)
 	cursor = conn.cursor()
-	cursor.execute(query)
-	results = cursor.fetchall()[0][0]
+	try:
+		cursor.execute(query)
+	except mysql.connector.errors.ProgrammingError:
+		cursor.close()
+		conn.close()
+		raise Exception("Error executing mysql query: {q}".format(q=query))
+	results = cursor.fetchall()[0]
 	cursor.close()
 	conn.close()
 	return results
