@@ -90,3 +90,12 @@ function fb_to_user($user_profile) {
 	$user['vector'] = $out[0];
 	return $user;
 }
+
+function ifsetor(&$variable, $default = null) {
+    if (isset($variable)) {
+        $tmp = $variable;
+    } else {
+        $tmp = $default;
+    }
+    return $tmp;
+}
