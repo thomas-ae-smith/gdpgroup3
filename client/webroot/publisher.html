@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8">
 	<title>Your4.tv - your custom TV channel</title>
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/leaflet.css">
+	<link rel="stylesheet" href="lib/leaflet.draw.css">
 	<style>
 		.container { margin-top: 20px; width: 900px; }
 		.live-preview {
 			position: relative;
-			width: 400px;
+			width: 100%;
 			height: 250px;
 		}
 		.live-preview .video {
@@ -24,12 +27,75 @@
 		.live-preview .overlay iframe {
 			border: 0;
 		}
+		.table td {
+			vertical-align: middle;
+		}
+		.footer {
+			color: #999;
+			font-size: 11px;
+			padding-top: 40px;
+		}
+		.thumbnail-bg {
+			position: relative;
+			width: 120px;
+			height: 68px;
+			background: black;
+			line-height: 68px;
+			overflow: hidden;
+		}
+		.thumbnail-bg .icon.still { background: #33CCCC; }
+		.thumbnail-bg .icon.video { background: #FF4040; }
+		.thumbnail-bg .icon {
+			position: absolute;
+			bottom: 2px;
+			right: 2px;
+			background: #fff;
+			padding: 0 1px;
+			line-height: 18px;
+			opacity: 0.8;
+			border-radius: 3px;
+		}
+		.toolbar {
+			margin-top: -50px;
+			margin-bottom: 40px;
+			text-align: right;
+		}
+		h1.title {
+			border-bottom: 1px solid #DDD;
+			padding-bottom: 5px;
+		}
+		.advert-list tr {
+			cursor: pointer;
+		}
+		.advert-list tr:hover td {
+			background-color: #DEE2E2 !important;
+		}
+		.advert-full #advert-overlay {
+			position: relative;
+			width: 100%;
+			height: 400px;
+		}
+		.ace-container {
+			position: absolute;
+			top: 0; left: 0; right: 0; bottom: 0;
+		}
+		.ace-monokai .ace_marker-layer .ace_active_line {
+			background: rgba(255, 255, 255, 0.02) !important;
+		}
+		.tab-pane, .tab-pane .map {
+			height: 400px;
+		}
 	</style>
 	<script type="text/javascript" src="lib/jquery.js"></script>
 	<script type="text/javascript" src="lib/underscore.js"></script>
 	<script type="text/javascript" src="lib/backbone.js"></script>
-	<script type="text/javascript" src="lib/flowplayer.min.js"></script>
 	<script type="text/javascript" src="lib/bootstrap.js"></script>
+	<script type="text/javascript" src="lib/leaflet.js"></script>
+	<script type="text/javascript" src="lib/leaflet.draw.js"></script>
+	<script type="text/javascript" src="lib/flowplayer.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="lib/jquery.iframe-transport.js"></script>
+	<script type="text/javascript" src="lib/jquery.fileupload.js"></script>
 	<script type="text/javascript" src="js/base.publisher.js"></script>
 	<script>
 		$(document).ready(function () {
@@ -69,15 +135,16 @@
 		<script type="text/html" id="home-template">
 			Put awesome stuff here
 		</script>
+		<script type="text/html" id="notfound-template">
+			<%= message %>
+		</script>
 		<script type="text/html" id="advert-list-template">
-			<div class="toolbar"><button class="btn">Create</button></div>
-			<table class="table table-striped">
+			<div class="toolbar"><button class="btn create">Create</button></div>
+			<table class="table">
 				<thead>
 					<tr>
-						<th></th>
-						<th>Type</th>
-						<th>Title</th>
-						<th>Actions</th>
+						<th width="200" colspan="2">Advert</th>
+						<th width="160">Actions</th>
 					</tr>
 				</thead>
 				<tbody class="list">
@@ -86,15 +153,25 @@
 		</script>
 		<script type="text/html" id="advert-list-item-template">
 			<tr>
-				<td></td>
-				<td><%= type %></td>
+				<td width="130"><div class="thumbnail-bg">
+					<img src="<%= thumbnail || "img/no-preview.png" %>" width="120">
+					<div class="icon <%= type %>" data-title="<%= y4p.language.advertType[type] %>">
+						<i class="icon-<%= type === "still" ? "camera" : (type === "video" ? "film" : "") %>"></i>
+					</div>
+				</div></td>
 				<td><%= title %></td>
 				<td><button class="btn edit">Edit</button> <button class="btn delete">Delete</button>
 			</tr>
 		</script>
 		<script type="text/html" id="advert-full-template">
+			<div class="toolbar">
+				<button type="button" class="btn cancel">Cancel</button>
+				<button type="submit" class="btn submit btn-primary">Save</button>
+			</div>
 			<div class="row-fluid">
 				<div class="span6">
+					<p>Enter details about the advert below.</p>
+					<br>
 					<form class="form-horizontal">
 						<div class="control-group">
 							<label class="control-label" for="advert-title">Title</label>
@@ -107,23 +184,15 @@
 							<div class="controls">
 								<select id="advert-type">
 									<option value="video" <% if (type === "video") { print("selected"); } %>>Video</option>
-									<option calue="still" <% if (type === "still") { print("selected"); } %>>Still</option>
+									<option value="still" <% if (type === "still") { print("selected"); } %>>Still</option>
 								</select>
 							</div>
 						</div>
 						<div class="control-group">
 							<label class="control-label" for="advert-file">File</label>
 							<div class="controls">
-								<input type="file" id="advert-file">
+								<input type="file" name="file" id="advert-file" data-url="http://www.your4.tv/api/files/">
 							</div>
-						</div>
-						<div class="control-group">
-							<label class="" for="advert-overlay">Overlay</label>
-							<textarea id="advert-overlay"><%= overlay %></textarea>
-						</div>
-						<div class="control-group">
-							<button type="submit" class="btn btn-primary">Save</button>
-							<button type="button" class="btn">Cancel</button>
 						</div>
 					</form>
 				</div>
@@ -132,20 +201,155 @@
 					<div class="live-preview">
 						<div class="video"></div>
 						<div class="overlay">
-							<iframe id="advert-overlay-iframe" width="100%" height="100%" src="overlay.html#<%= id %>"></iframe>
+							<iframe id="advert-overlay-iframe" width="100%" height="100%" src="overlay.html#<%= typeof id !== "undefined" ? id : "" %>"></iframe>
 						</div>
 					</div>
 				</div>
 			</div>
+			<label class="" for="advert-overlay">Overlay</label>
+			<div id="advert-overlay"><div class="ace-container"><%= htmlEscape(overlay) %></div></div>
 		</script>
 		<script type="text/html" id="campaign-list-template">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Adverts</th>
+						<th>Title</th>
+						<th>Starts</th>
+						<th>Ends</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody class="list">
+				</tbody>
+			</table>
 		</script>
 		<script type="text/html" id="campaign-list-item-template">
+			<tr>
+				<td></td>
+				<td><%= _.reduce(adverts, function (memo, i) { return memo + (i ? "," : "") + print(advert.title); }, "") %></td>
+				<td><%= title %></td>
+				<td><%= startDate %></td>
+				<td><%= endDate %></td>
+				<td><button class="btn edit">Edit</button> <button class="btn delete">Delete</button>
+			</tr>
 		</script>
 		<script type="text/html" id="campaign-full-template">
+			<div class="toolbar">
+				<button type="button" class="btn cancel">Cancel</button>
+				<button type="submit" class="btn submit btn-primary">Save</button>
+			</div>
+			<div class="message"></div>
+			<div class="row-fluid">
+				<form class="form-horizontal">
+					<div class="control-group">
+						<label class="control-label" for="campaign-title">Title</label>
+						<div class="controls">
+							<input id="campaign-title" type="text" value="<%= title %>">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="campaign-advert">Adverts</label>
+						<div class="controls">
+							<div id="campaign-advert">
+								<% _.each(allAdverts.toJSON(), function (advert) { %>
+									<label class="checkbox">
+										<input type="checkbox" name="advert" value="<%= advert.id %>" <%= adverts.indexOf(Number(advert.id)) > -1 ? 'checked="true"' : '' %>> <%= advert.title %>
+									</label>
+								<% }); %>
+							</div>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="campaign-starts">Starts</label>
+						<div class="controls">
+							<input type="text" id="campaign-starts" value="<%= startDate %>">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="campaign-ends">Starts</label>
+						<div class="controls">
+							<input type="text" id="campaign-ends" value="<%= startDate %>">
+						</div>
+					</div>
+					<div class="control-group">
+						<h2 class="">Targets</h2>
+						<p>Customise your target demographic and when your advert should appear using the tools below.</p>
+						<div id="campaign-targets">
+							<ul class="nav nav-tabs target-tabs">
+								<li><a data-toggle="tab" href="#tab-profile">Viewer profile</a></li>
+								<li><a data-toggle="tab" href="#tab-location">Viewer location</a></li>
+								<li><a data-toggle="tab" href="#tab-schedule">Scheduling</a></li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="tab-profile">
+									<div id="campaign-genders">
+										<label class="checkbox"><input type="checkbox" name="advert" value="male" <%= targets.genders.indexOf("male") > -1 ? 'checked="true"' : '' %>> Male</label>
+										<label class="checkbox"><input type="checkbox" name="advert" value="female" <%= targets.genders.indexOf("female") > -1 ? 'checked="true"' : '' %>> Female</label>
+									</div>
+									<div id="campaign-age-ranges">
+										Age ranges
+									</div>
+									<div id="campaign-occupations">
+										Occupations
+									</div>
+								</div>
+								<div class="tab-pane" id="tab-location">
+									<div id="campaign-locations">
+										<div class="map"></div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab-schedule">
+									<div id="campaign-schedules">
+										<label class="checkbox"><input type="checkbox" value="live" <%= targets.schedules.indexOf("live") > -1 ? 'checked="true"' : '' %>> Live TV</label>
+										<label class="checkbox"><input type="checkbox" value="vod" <%= targets.schedules.indexOf("vod") > -1 ? 'checked="true"' : '' %>> Video On-Demand</label>
+									</div>
+									<div id="campaign-times">
+										Times
+									</div>
+									<div id="campaign-genres">
+										Genres
+									</div>
+									<div id="campaign-programmes">
+										Programmes
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
 		</script>
-		<script type="text/html" id="campaign-target-template">
+		<script type="text/html" id="campaign-target-superlist-template">
+			<div class="toolbar"><button class="btn create">Create</button></div>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Details</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody class="list">
+				</tbody>
+			</table>
+		</script>
+		<script type="text/html" id="campaign-target-list-template">
+			<tr><th colspan="2"><%= y4p.language.type[type] %></th></tr>
+		</script>
+		<script type="text/html" id="campaign-target-list-item-template">
+			<tr>
+				<td>
+					<%= typeof minAge !== "undefined" ? "Age: " + minAge + " to " + maxAge + "<br>" : "" %>
+					<%= typeof minLat !== "undefined" ? "Location: Min latitute: " + minLat + "<br>" +
+																"Min longitude: " + minLong + "<br>" +
+																"Max latitute: " + maxLat + "<br>" +
+																"Max longitude: " + maxLong + "<br>" : "" %>
+				</td>
+				<td><button class="btn edit">Edit</button> <button class="btn delete">Delete</button>
+			</tr>
 		</script>
 	</div>
+	<script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
