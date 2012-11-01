@@ -1,13 +1,12 @@
 <?php
 
-$app->get('/programmes', function() use ($app) {
-	$params = get_params($app->request(), 'get', 
-		array(
-			'date_start' => time() - 7*24*60*60,
-			'date_end' => time()
-		)
-	);
-
-	$programmes = R::find('programmes', 'start BETWEEN ? AND ?', array_values($params));
-	output_json(R::exportAll($programmes));
+$app->get('/programmes(/)', function() use ($app) {
+	$programmes = R::find('programmes');
+	output_json(array_map(function ($programme) {
+		return array(
+			'id' => $programme->id,
+			'name' => $programme->name
+		);
+	}, $programmes));
+	//output_json(R::exportAll($programmes));
 });
