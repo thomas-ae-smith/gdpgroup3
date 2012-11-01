@@ -48,7 +48,7 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 				$user_profile['registered'] = false;
 
 				$complete = true;
-				foreach(array('name','gender','dob','email') as $field) {
+				foreach(array('name','gender','dob','email','occupation') as $field) {
 					if (!isset($user_profile[$field])) {
 						$complete = false;
 						break;	

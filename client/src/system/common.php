@@ -80,9 +80,11 @@ function fb_to_user($user_profile) {
 	
 	$dob_parts = explode("/", $user['dob']);
 
-	if($user['dob'] != null) {
+	if ($user['dob'] != null) {
 		$user['dob'] = date('Y-m-d', strtotime($user['dob']));
-	}	
+	}
+
+	$user['occupation'] = null;
 
 	$age = (date("md", date("U", mktime(0, 0, 0, $dob_parts[0], $dob_parts[1], $dob_parts[2]))) > date("md") ? ((date("Y")-$dob_parts[2])-1):(date("Y")-$dob_parts[2]));
 	$gender = substr($user['gender'], 0, 1);
