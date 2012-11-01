@@ -5,7 +5,7 @@ from __future__ import print_function
 import argparse
 import pdb
 import sys
-from time import time
+import time
 
 import mysql.connector
 import numpy
@@ -44,27 +44,38 @@ def get_name(pid):
 	cursor = conn.cursor()
 	cursor.execute(query)
 
-	name = cursor.next()[0]
+	try:
+		name = cursor.next()[0]
+	except StopIteration:
+		name = "No programme with id {id}".format(id=pid)
 
 	cursor.close()
 	conn.close()
 
 	return name
 
-def get_recommendation(userId, startTime=time(), lookahead=300):
+def get_recommendation(userId, startTime=None, lookahead=300):
 	"""Given a userid, returns the programme id for a programme recommended
 	by the recommender which starts within the next `lookahead` seconds.
 	Returns -1 if there are no programmes in the database which start within
 	the required time."""
 
+	if startTime is None:
+		startTime = time.time()
+
 	user_vector = vector.string_to_vector(interface.get_user(userId, ['vector'])[0])
 	upcoming_programmes = interface.get_upcoming_programmes(
 							startTime=startTime, lookahead=lookahead)
+
+	if VERBOSE:
+		total_programmes = len(upcoming_programmes)
+		distances = []
 
 	if not upcoming_programmes:
 		print("No programmes in the database which start between {start} "
 				"and {end}".format(start=startTime, end=startTime+lookahead),
 				file=sys.stderr)
+		return -1
 
 	best_recommendation = (float('inf'), -1)
 	for p_id, p_vector in upcoming_programmes:
@@ -80,6 +91,8 @@ def get_recommendation(userId, startTime=time(), lookahead=300):
 			raise
 
 		distance = numpy.sqrt(numpy.dot(diff, diff))
+		if VERBOSE:
+			distances += [distance]
 		# If the norm of the difference vector is the smallest so far...
 		if distance < best_recommendation[0]:
 			# ...recommend that programme.
@@ -91,6 +104,8 @@ def get_recommendation(userId, startTime=time(), lookahead=300):
 		print("User vector: {v}".format(v=user_vector))
 		print("Closest programme vector: {v}".format(v=best_vector))
 		print("Distance: {d}".format(d=best_recommendation[0]))
+		print("Total programmes: {n}".format(n=total_programmes))
+		print("Average distance: {d}".format(d=sum(distances)/len(distances)))
 
 	return best_recommendation[1]
 
@@ -103,7 +118,7 @@ def _init_argparse():
 		"in the users table.")
 	parser.add_argument('user_id', metavar='uid', type=int,
 						help="The ID of a user")
-	parser.add_argument('-t', "--time", type=int, default=int(time()),
+	parser.add_argument('-t', "--time", type=int, default=None,
 		help="A unix timestamp of the lower bound on the start time of a "
 		"programme to be recommended")
 	parser.add_argument('-l', "--lookahead", type=int, default=300,
