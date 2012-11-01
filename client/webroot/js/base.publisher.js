@@ -1,21 +1,14 @@
+function htmlEscape(str) {
+    return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+}
+
 (function (root) {
 	"use strict";
-
-	var sample = {
-		adverts: [
-			{ id: 1, title: "Guinness", type: "video", url: "ad-guinness.mp4", thumbnail: "", overlay: "<b>this is a test</b>" },
-			{ id: 2, title: "Go Compare", type: "video", url: "ad-gocompare.mp4", thumbnail: "", overlay: "" },
-			{ id: 3, title: "Just Dance", type: "video", url: "ad-justdance.mp4", thumbnail: "", overlay: "" },
-			{ id: 4, title: "Blah blah", type: "video", url: "", thumbnail: "", overlay: "" },
-			{ id: 5, title: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.jpg", duration: 3000, overlay: "" },
-			{ id: 6, title: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.png", duration: 3000, overlay: "" },
-			{ id: 7, title: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.png", duration: 3000, overlay: "" },
-			{ id: 8, title: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.png", duration: 3000, overlay: "" }
-		],
-		campaigns: [
-			{ advertId: 1, title: "Campaign 1" }
-		]
-	};
 
 	var y4p = root.y4p = {
 		templates: {},
@@ -52,14 +45,19 @@
 			"adverts": "adverts",
 			"adverts/:id": "advert",
 			"campaigns": "campaigns",
-			"campaigns/:id": "campaign"
+			"campaigns/:id": "campaign",
+			"*notFound": "notFound" // http://stackoverflow.com/questions/11236338/is-there-a-way-to-catch-all-non-matched-routes-with-backbone
 		},
 		initialize: function (options) { this.app = options.app; },
 		home: function () { this.app.home(); },
 		adverts: function () { this.app.goAdverts(); },
 		advert: function (id) { this.app.goAdvert(id); },
 		campaigns: function () { this.app.goCampaigns(); },
-		campaign: function (id) { this.app.goCampaign(id); }
+		campaign: function (id) { this.app.goCampaign(id); },
+		notFound: function () {
+			this.app.render(new y4p.pages.NotFound({ message: "Page not found." }));
+		}
+
 	});
 
 	y4p.Advert = Backbone.Model.extend({
@@ -76,7 +74,6 @@
 			_.each(this.get("targets"), function (targets, type) {
 				that.targetCollections[type] = new y4p.CampaignTargets(targets, { url: that.url() + "/targets/" + type + "/" });
 			});
-			console.log(this.targetCollections)
 		}
 	});
 	y4p.Campaigns = Backbone.Collection.extend({
@@ -171,9 +168,13 @@
 				breadcrumb: breadcrumb,
 				sublinks: page.sublinks
 			})).find(".main-body").append(page.render().el);
+			window.title = "Your 4 - " + page.title;
 
 			page.on("change", function () {
 				that.render(page);
+			}).on("title", function (title) {
+				that.$(".title").html("Your 4 - " + title);
+				window.title = title;
 			});
 
 			if (this.page) {
@@ -186,6 +187,8 @@
 			var that = this;
 			$.when(this.adverts.fetch(), that.campaigns.fetch()).then(function () {
 				Backbone.history.start();
+			}).fail(function () {
+				that.$el.html('<div class="alert alert-error" style="width: 700px; margin: 40px auto;"><b>Error while loading page.</b></div>')
 			});
 			return this;
 		}
@@ -197,7 +200,14 @@
 		}
 	})
 
-	y4p.pages.Home = y4p.View.extend({
+	y4p.Page = y4p.View.extend({
+		setTitle: function (title) {
+			this.title = title;
+			this.trigger("title", title);
+		}
+	})
+
+	y4p.pages.Home = y4p.Page.extend({
 		title: "Home",
 		render: function () {
 			this.$el.html(y4p.templates.home());
@@ -205,7 +215,7 @@
 		}
 	});
 
-	y4p.pages.NotFound = y4p.View.extend({
+	y4p.pages.NotFound = y4p.Page.extend({
 		title: "Not found",
 		render: function () {
 			this.$el.html(y4p.templates.notfound(_.extend({ message: "Page cannot be found." }, this.options)));
@@ -218,8 +228,8 @@
 		create: function () { this.trigger("create"); },
 		initialize: function (options) {
 			this.collection = options.collection
-			this.collection.on("addItem", this.add, this)
-				.on("removeItem", this.remove, this);
+			this.collection.on("add", this.addItem, this)
+				.on("remove", this.removeItem, this);
 			this.$items = [];
 		},
 		render: function () {
@@ -240,10 +250,16 @@
 			if (!$list.length) { $list = this.$el; }
 			this.$items[model.id] = $item;
 			$list.append($item.fadeIn(noAnimation ? 0 : 200));
-			$item.find(".edit").click(function () {
+			$item.click(function () {
 				that.trigger("select", model.id);
-			}).end().find(".delete").click(function () {
-				that.collection.remove(model);
+			}).find(".edit").click(function () {
+				that.trigger("select", model.id);
+			}).end().find(".delete").click(function (e) {
+				if (confirm("Are you sure you wish to delete this advert?")) {
+					model.destroy();
+				}
+				e.preventDefault();
+				e.stopPropagation();
 			});
 			return this;
 		},
@@ -282,14 +298,14 @@
 		}
 	})
 
-	y4p.pages.AdvertList = y4p.List.extend({
+	y4p.pages.AdvertList = y4p.Page.extend(y4p.List.prototype).extend({
 		title: "Adverts",
 		className: "advert-list",
 		template: "advert-list",
 		itemTemplate: "advert-list-item"
 	});
 
-	y4p.pages.CampaignList = y4p.List.extend({
+	y4p.pages.CampaignList = y4p.Page.extend(y4p.List.prototype).extend({
 		title: "Campaigns",
 		className: "campaign-list",
 		template: "campaign-list",
@@ -310,12 +326,11 @@
 		listItemTemplate: "campaign-target-list-item"
 	});
 
-	y4p.pages.AdvertFull = y4p.View.extend({
+	y4p.pages.AdvertFull = y4p.Page.extend({
+		className: "advert-full",
 		events: {
-			"change #advert-overlay": "updatePreview",
-			"keyup #advert-overlay": "updatePreview",
 			"click .cancel": "cancel",
-			"submit form": "submit"
+			"click .submit": "submit"
 		},
 		initialize: function (options) {
 			this.advert = options.advert;
@@ -327,7 +342,6 @@
 			this.$el.html(y4p.templates["advert-full"](this.advert.toJSON()));
 			setTimeout(function () { that.updatePreview(); }, 100); // Erm.. HACK
 
-			console.log(this.$('#advert-file'))
 			this.$('#advert-file').fileupload({
 				dataType: 'json',
 				add: function (e, data) {
@@ -348,10 +362,22 @@
 					);
 				}
 			});
+
+			this.overlayEditor = ace.edit(this.$("#advert-overlay .ace-container")[0]);
+			this.overlayEditor.setTheme("ace/theme/monokai");
+			this.overlayEditor.getSession().setMode("ace/mode/html");
+
+			this.overlayEditor.getSession().on('change', function () {
+				that.updatePreview();
+			});
+
 			return this;
 		},
 		updatePreview: _.throttle(function () {
-			this.$("#advert-overlay-iframe")[0].contentWindow.update(this.$("#advert-overlay").val());
+			var update = this.$("#advert-overlay-iframe")[0].contentWindow.update;
+			if (update) {
+				update(this.overlayEditor.getValue());
+			}
 		}, 500),
 		submit: function (e) {
 			e.preventDefault();
@@ -359,7 +385,7 @@
 				attributes = {
 					title: this.$("#advert-title").val(),
 					type: this.$("#advert-type").val(),
-					overlay: this.$("#advert-overlay").val()
+					overlay: this.overlayEditor.getValue()
 				},
 				options = {
 					success: function () {
@@ -382,26 +408,110 @@
 	});
 
 
-	y4p.pages.CampaignFull = y4p.View.extend({
+	y4p.pages.CampaignFull = y4p.Page.extend({
+		className: "campaign-full",
+		events: {
+			"click .cancel": "cancel",
+			"click .submit": "submit"
+		},
 		initialize: function (options) {
 			this.campaign = options.campaign;
 			this.title = "Campaign: " + this.campaign.get("title");
 		},
 		render: function () {
+			var that = this;
 			this.$el.html(y4p.templates["campaign-full"](_.extend({
 				allAdverts: this.options.app.adverts
 			}, this.campaign.toJSON())));
 
-			var targetList = new y4p.TargetList({ collections: this.campaign.targetCollections });
-			this.$("#advert-targets").append(targetList.render().el);
+			var map = this.locationMap = L.map(this.$("#tab-locations .map")[0]).setView([54.805, -3.59], 5);
+			L.tileLayer('http://{s}.tile.cloudmade.com/1b189a705e22441c86cdb384a5bc7837/997/256/{z}/{x}/{y}.png', {
+				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+				maxZoom: 18
+			}).addTo(map);
+			setTimeout(function () { map.invalidateSize(); });
 
+			var drawControl = new L.Control.Draw({
+				position: 'topright',
+				polyline: false
+			});
+			map.addControl(drawControl);
+
+			this.$(".target-tabs a").click(function (e) {
+				e.preventDefault();
+				$(this).tab('show');
+				map.invalidateSize();
+			});
+
+			return this;
+		},
+		submit: function (e) {
+			var that = this,
+				attributes = {
+					title: this.$("#campaign-title").val(),
+					startDate: this.$("#campaign-starts").val(),
+					endDate: this.$("#campaign-ends").val(),
+					adverts: _.map(this.$("#campaign-advert :checked"), function (el) {
+						return Number($(el).val());
+					})
+				},
+				options = {
+					success: function () {
+						that.$("form").html("Saved.");
+					},
+					error: function () {
+						that.$("form").prepend("Error saving")
+					}
+				};
+			if (this.campaign.has("id")) {
+				this.campaign.save(attributes, options);
+			} else {
+				this.campaign.set(attributes);
+				this.campaign.create(this.campaign, options);
+			}
+		},
+		cancel: function () {
+			this.trigger("return");
+		}
+	});
+
+	y4p.TargetDialog = Backbone.View.extend({
+		events: {
+			"click .add": "add",
+			"click .cancel": "hide"
+		},
+		initialize: function (options) {
+			this.campaign = options.campaign;
+		},
+		render: function () {
+			var that = this;
+			this.$el.html(y4p.templates["target-dialog"]).find(".modal").modal();
+			$('.modal').on('hidden', function () {
+				that.remove();
+			})
+			return this;
+		},
+		add: function () {
+			this.campaign.set({
+
+			});
+			this.hide();
+			return this;
+		},
+		hide: function () {
+			this.$('.modal').modal('hide');
+			return this;
+		},
+		show: function () {
+			this.$('.modal').modal('show');
 			return this;
 		}
 	});
 
 	y4p.OverlayApp = Backbone.View.extend({
 		initialize: function () {
-			this.adverts = new y4p.Adverts(sample.adverts);
+			this.adverts = new y4p.Adverts();
+			//this.adverts.fetch();
 		},
 		render: function () {
 			return this;
@@ -412,6 +522,7 @@
 				$("body").html(advert.get("overlay"));
 			}
 			window.update = function (html) {
+				console.log("hj", $("body"), html)
 				$("body").html(html);
 			}
 			return this;
