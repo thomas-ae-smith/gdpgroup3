@@ -240,6 +240,7 @@
 				<button type="button" class="btn cancel">Cancel</button>
 				<button type="submit" class="btn submit btn-primary">Save</button>
 			</div>
+			<div class="message"></div>
 			<div class="row-fluid">
 				<form class="form-horizontal">
 					<div class="control-group">
@@ -254,7 +255,7 @@
 							<div id="campaign-advert">
 								<% _.each(allAdverts.toJSON(), function (advert) { %>
 									<label class="checkbox">
-										<input type="checkbox" name="advert" value="<%= advert.id %>" <%= adverts.indexOf(advert.id) > -1 ? 'checked="true"' : '' %>> <%= advert.title %>
+										<input type="checkbox" name="advert" value="<%= advert.id %>" <%= adverts.indexOf(Number(advert.id)) > -1 ? 'checked="true"' : '' %>> <%= advert.title %>
 									</label>
 								<% }); %>
 							</div>
@@ -274,34 +275,45 @@
 					</div>
 					<div class="control-group">
 						<h2 class="">Targets</h2>
+						<p>Customise your target demographic and when your advert should appear using the tools below.</p>
 						<div id="campaign-targets">
 							<ul class="nav nav-tabs target-tabs">
-								<li><a data-toggle="tab" href="#tab-genders">Genders</a></li>
-								<li><a data-toggle="tab" href="#tab-age-ranges">Age ranges</a></li>
-								<li><a data-toggle="tab" href="#tab-occupations">Occupations</a></li>
-								<li><a data-toggle="tab" href="#tab-locations">Locations</a></li>
-								<li><a data-toggle="tab" href="#tab-genres">Genres</a></li>
-								<li><a data-toggle="tab" href="#tab-programmes">Programmes</a></li>
-								<li><a data-toggle="tab" href="#tab-times">Times</a></li>
+								<li><a data-toggle="tab" href="#tab-profile">Viewer profile</a></li>
+								<li><a data-toggle="tab" href="#tab-location">Viewer location</a></li>
+								<li><a data-toggle="tab" href="#tab-schedule">Scheduling</a></li>
 							</ul>
 							<div class="tab-content">
-								<div class="tab-pane" id="tab-genders">
-									<label class="checkbox"><input type="checkbox" name="advert" value="male"> Male</label>
-									<label class="checkbox"><input type="checkbox" name="advert" value="female"> Female</label>
+								<div class="tab-pane active" id="tab-profile">
+									<div id="campaign-genders">
+										<label class="checkbox"><input type="checkbox" name="advert" value="male" <%= targets.genders.indexOf("male") > -1 ? 'checked="true"' : '' %>> Male</label>
+										<label class="checkbox"><input type="checkbox" name="advert" value="female" <%= targets.genders.indexOf("female") > -1 ? 'checked="true"' : '' %>> Female</label>
+									</div>
+									<div id="campaign-age-ranges">
+										Age ranges
+									</div>
+									<div id="campaign-occupations">
+										Occupations
+									</div>
 								</div>
-								<div class="tab-pane" id="tab-age-ranges">
-									wth
+								<div class="tab-pane" id="tab-location">
+									<div id="campaign-locations">
+										<div class="map"></div>
+									</div>
 								</div>
-								<div class="tab-pane" id="tab-occupations">
-								</div>
-								<div class="tab-pane active" id="tab-locations">
-									<div class="map"></div>
-								</div>
-								<div class="tab-pane" id="tab-genres">
-								</div>
-								<div class="tab-pane" id="tab-programmes">
-								</div>
-								<div class="tab-pane" id="tab-times">
+								<div class="tab-pane" id="tab-schedule">
+									<div id="campaign-schedules">
+										<label class="checkbox"><input type="checkbox" value="live" <%= targets.schedules.indexOf("live") > -1 ? 'checked="true"' : '' %>> Live TV</label>
+										<label class="checkbox"><input type="checkbox" value="vod" <%= targets.schedules.indexOf("vod") > -1 ? 'checked="true"' : '' %>> Video On-Demand</label>
+									</div>
+									<div id="campaign-times">
+										Times
+									</div>
+									<div id="campaign-genres">
+										Genres
+									</div>
+									<div id="campaign-programmes">
+										Programmes
+									</div>
 								</div>
 							</div>
 						</div>
@@ -336,20 +348,6 @@
 				</td>
 				<td><button class="btn edit">Edit</button> <button class="btn delete">Delete</button>
 			</tr>
-		</script>
-		<script type="text/html" id="target-dialog-template">
-			<div class="modal hide fade">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h3>Add a target</h3>
-				</div>
-				<div class="modal-body">
-				</div>
-				<div class="modal-footer">
-					<button class="btn cancel">Close</button>
-					<button class="btn add btn-primary">Add</button>
-				</div>
-			</div
 		</script>
 	</div>
 	<script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>

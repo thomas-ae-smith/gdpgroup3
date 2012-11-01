@@ -273,31 +273,6 @@ function htmlEscape(str) {
 		}
 	});
 
-	y4p.SuperList = y4p.View.extend({
-		events: { "click .create": "create" },
-		create: function () { this.trigger("create"); },
-		initialize: function (options) {
-			var that = this;
-			this.collections = options.collections;
-			this.lists = _.map(this.collections, function (collection, type) {
-				var SubList = y4p.List.extend({
-					className: that.listClassName,
-					template: that.listTemplate,
-					itemTemplate: that.listItemTemplate
-				});
-				return new SubList({ collection: collection, type: type });
-			});
-		},
-		render: function () {
-			var that = this;
-			this.$el.html(y4p.templates[this.template]());
-			_.each(this.lists, function (list) {
-				that.$(".list").append(list.render().$("tr"));
-			});
-			return this;
-		}
-	})
-
 	y4p.pages.AdvertList = y4p.Page.extend(y4p.List.prototype).extend({
 		title: "Adverts",
 		className: "advert-list",
@@ -317,13 +292,6 @@ function htmlEscape(str) {
 				})
 			});
 		}
-	});
-
-	y4p.TargetList = y4p.SuperList.extend({
-		template: "campaign-target-superlist",
-		listClassName: "campaign-target-list",
-		listTemplate: "campaign-target-list",
-		listItemTemplate: "campaign-target-list-item"
 	});
 
 	y4p.pages.AdvertFull = y4p.Page.extend({
@@ -424,7 +392,7 @@ function htmlEscape(str) {
 				allAdverts: this.options.app.adverts
 			}, this.campaign.toJSON())));
 
-			var map = this.locationMap = L.map(this.$("#tab-locations .map")[0]).setView([54.805, -3.59], 5);
+			var map = this.locationMap = L.map(this.$("#campaign-locations .map")[0]).setView([54.805, -3.59], 5);
 			L.tileLayer('http://{s}.tile.cloudmade.com/1b189a705e22441c86cdb384a5bc7837/997/256/{z}/{x}/{y}.png', {
 				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
 				maxZoom: 18
@@ -433,15 +401,54 @@ function htmlEscape(str) {
 
 			var drawControl = new L.Control.Draw({
 				position: 'topright',
-				polyline: false
+				polyline: false,
+				polygon: false,
+				circle: false,
+				marker: false,
+				rectangle: {
+					shapeOptions: {
+						clickable: true,
+						color: "blue"
+					}
+				}
 			});
 			map.addControl(drawControl);
+
+			var drawnItems = new L.LayerGroup(),
+				selectedRectangle;
+			map.on('draw:rectangle-created', function (e) {
+				drawnItems.addLayer(e.rect);
+				e.rect.on("mousemove", function () {
+					if (selectedRectangle) {
+						selectedRectangle.setStyle({
+							color: "blue",
+							fillColor: "blue"
+						});
+					}
+					e.rect.setStyle({
+						color: "red",
+						fillColor: "red"
+					});
+					selectedRectangle = e.rect;
+				})
+			});
+			map.addLayer(drawnItems);
 
 			this.$(".target-tabs a").click(function (e) {
 				e.preventDefault();
 				$(this).tab('show');
 				map.invalidateSize();
 			});
+
+			var Occupations = Backbone.Collection.extend({ url: "http://www.your4.tv/api/occupations/" }),
+				occupations = new Occupations();
+
+			occupations.fetch().then(function () {
+				occupations.each(function (occupation) {
+					that.$("#campaign-occupations").append('<label class="checkbox"><input type="checkbox" value="' + occupation.id + '"' +
+								(that.campaign.get("targets").occupations.indexOf(occupation.id) > -1 ? ' checked="true"' : "") + '>' + occupation.get("name") + '</label>');
+				});
+			})
 
 			return this;
 		},
@@ -453,14 +460,38 @@ function htmlEscape(str) {
 					endDate: this.$("#campaign-ends").val(),
 					adverts: _.map(this.$("#campaign-advert :checked"), function (el) {
 						return Number($(el).val());
-					})
+					}),
+					targets: {
+						genders: _.map(this.$("#campaign-genders :checked"), function (el) {
+							return $(el).val();
+						}),
+						schedules: _.map(this.$("#campaign-schedules :checked"), function (el) {
+							return $(el).val();
+						}),
+						ageRanges: [],
+						occupations: _.map(this.$("#campaign-occupations :checked"), function (el) {
+							return $(el).val();
+						}),
+						boundingBoxes: [],
+						genres: [],
+						programmes: _.map(this.$("#campaign-occupations :checked"), function (el) {
+							return $(el).val();
+						}),
+						times: []
+					}
 				},
 				options = {
 					success: function () {
-						that.$("form").html("Saved.");
+						that.$(".message").show().html('<div class="alert alert-success">Saved.</div>');
+						setTimeout(function () {
+							that.$(".message").fadeOut();
+						}, 2000);
 					},
 					error: function () {
-						that.$("form").prepend("Error saving")
+						that.$(".message").show().html('<div class="alert alert-error">Error saving</div>')
+						setTimeout(function () {
+							that.$(".message").fadeOut();
+						}, 2000);
 					}
 				};
 			if (this.campaign.has("id")) {
@@ -472,39 +503,6 @@ function htmlEscape(str) {
 		},
 		cancel: function () {
 			this.trigger("return");
-		}
-	});
-
-	y4p.TargetDialog = Backbone.View.extend({
-		events: {
-			"click .add": "add",
-			"click .cancel": "hide"
-		},
-		initialize: function (options) {
-			this.campaign = options.campaign;
-		},
-		render: function () {
-			var that = this;
-			this.$el.html(y4p.templates["target-dialog"]).find(".modal").modal();
-			$('.modal').on('hidden', function () {
-				that.remove();
-			})
-			return this;
-		},
-		add: function () {
-			this.campaign.set({
-
-			});
-			this.hide();
-			return this;
-		},
-		hide: function () {
-			this.$('.modal').modal('hide');
-			return this;
-		},
-		show: function () {
-			this.$('.modal').modal('show');
-			return this;
 		}
 	});
 
