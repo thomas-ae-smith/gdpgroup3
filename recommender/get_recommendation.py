@@ -4,6 +4,7 @@ from __future__ import print_function
 
 import argparse
 import pdb
+import random
 import sys
 import time
 
@@ -70,6 +71,7 @@ def get_recommendation(userId, startTime=None, lookahead=300):
 	if VERBOSE:
 		total_programmes = len(upcoming_programmes)
 		distances = []
+		vectors = []
 
 	if not upcoming_programmes:
 		print("No programmes in the database which start between {start} "
@@ -77,7 +79,7 @@ def get_recommendation(userId, startTime=None, lookahead=300):
 				file=sys.stderr)
 		return -1
 
-	best_recommendation = (float('inf'), -1)
+	best_recommendations = [(float('inf'), -1)]
 	for p_id, p_vector in upcoming_programmes:
 		p_vector = vector.string_to_vector(p_vector)
 		try:
@@ -94,15 +96,23 @@ def get_recommendation(userId, startTime=None, lookahead=300):
 		if VERBOSE:
 			distances += [distance]
 		# If the norm of the difference vector is the smallest so far...
-		if distance < best_recommendation[0]:
+		if distance < best_recommendations[0][0]:
 			# ...recommend that programme.
-			best_recommendation = (distance, p_id)
+			best_recommendations = [(distance, p_id)]
 			if VERBOSE:
-				best_vector = p_vector
+				vectors = [p_vector]
+		elif distance == best_recommendations[0][0]:
+			# Incase of a draw, recommend a random one of the set.
+			best_recommendations += [(distance, p_id)]
+			if VERBOSE:
+				vectors += [p_vector]
+
+	best_index = random.randint(0, len(best_recommendations)-1)
+	best_recommendation = best_recommendations[0]
 
 	if VERBOSE:
 		print("User vector: {v}".format(v=user_vector))
-		print("Closest programme vector: {v}".format(v=best_vector))
+		print("Closest programme vector: {v}".format(v=vectors[best_index]))
 		print("Distance: {d}".format(d=best_recommendation[0]))
 		print("Total programmes: {n}".format(n=total_programmes))
 		print("Average distance: {d}".format(d=sum(distances)/len(distances)))
