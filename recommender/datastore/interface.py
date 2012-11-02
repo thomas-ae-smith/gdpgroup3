@@ -82,14 +82,14 @@ def get_campaign_pool(uid, pid, when=None):
 			"`c_b`.`minLong`, `c_b`.`maxLong`, `c_b`.`minLat`, `c_b`.`maxLat`, "
 			"`c_g`.`genre`, `c_o`.`occupation`, `c_p`.`programme`, "
 			"`c_t`.`dayOfWeek`, `c_t`.`startTime`, `c_t`.`endTime`, "
-			"`c`.`id`, `c`.`nicheness`" #TODO: Return actual nicheness.
+			"`c`.`id`, `c`.`nicheness`"
 		"FROM `users` AS u, `programmes` as p, `campaigns` as c "
-		"LEFT JOIN `campaignAgeRanges`     AS c_a ON `c`.`id`=`c_a`.`campaign` "
-		"LEFT JOIN `campaignBoundingBoxes` AS c_b ON `c`.`id`=`c_b`.`campaign` "
-		"LEFT JOIN `campaignGenres`        AS c_g ON `c`.`id`=`c_g`.`campaign` "
-		"LEFT JOIN `campaignOccupations`   AS c_o ON `c`.`id`=`c_o`.`campaign` "
-		"LEFT JOIN `campaignProgrammes`    AS c_p ON `c`.`id`=`c_p`.`campaign` "
-		"LEFT JOIN `campaignTimes`         AS c_t ON `c`.`id`=`c_t`.`campaign` "
+		"LEFT JOIN `agerange`     AS c_a ON `c`.`id`=`c_a`.`campaign` "
+		"LEFT JOIN `boundingbox` AS c_b ON `c`.`id`=`c_b`.`campaign` "
+		"LEFT JOIN `campaigns_genres`        AS c_g ON `c`.`id`=`c_g`.`campaign` "
+		"LEFT JOIN `campaigns_occupations`   AS c_o ON `c`.`id`=`c_o`.`campaign` "
+		"LEFT JOIN `campaigns_programmes`    AS c_p ON `c`.`id`=`c_p`.`campaign` "
+		"LEFT JOIN `time`         AS c_t ON `c`.`id`=`c_t`.`campaign` "
 		"WHERE `u`.`id` = {id} "
 		"AND `c`.`startDate` <= {when} "
 		"AND {when} <= `c`.`endDate`").format(id=uid, when=when)
@@ -142,7 +142,7 @@ def get_campaign_pool(uid, pid, when=None):
 
 def get_ad(campaignId):
 	query = (	"SELECT `id` "
-				"FROM `campaignAdverts` "
+				"FROM `adverts_campaigns` "
 				"WHERE `campaign` = {campaignId}".format(
 					campaignId=campaignId))
 				
