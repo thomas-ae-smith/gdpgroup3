@@ -72,7 +72,7 @@ def get_user_nicheness(ageranges=(), boundingboxes=(), genders=(), occupations=(
 
 	return users_constrained / users_all
 
-def get_programme_nicheness(genres=[], programmes=[], times=[]):
+def get_programme_nicheness(genres=(), programmes=(), times=()):
 	if genres:
 		genre_constraints = ("`programmes`.`genre` "
 			"IN ('{genres}')".format(genres="','".join(genres)))
@@ -121,8 +121,8 @@ def get_programme_nicheness(genres=[], programmes=[], times=[]):
 
 	return programmes_constrained / programmes_all
 
-def get_nicheness(ageranges=[], boundingboxes=[], genders=[], genres=[],
-					occupations=[], programmes=[], times=[]):
+def get_nicheness(ageranges=(), boundingboxes=(), genders=(), genres=(),
+					occupations=(), programmes=(), times=()):
 	user_nicheness = get_user_nicheness(ageranges, boundingboxes,
 											genders, occupations)
 
