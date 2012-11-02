@@ -82,8 +82,15 @@
 		.ace-monokai .ace_marker-layer .ace_active_line {
 			background: rgba(255, 255, 255, 0.02) !important;
 		}
+		.tab-pane {
+			border-bottom: 1px solid #DDD;
+		}
 		.tab-pane, .tab-pane .map {
 			height: 400px;
+		}
+		.list {
+			max-height: 300px;
+			overflow: auto;
 		}
 	</style>
 	<script type="text/javascript" src="lib/jquery.js"></script>
@@ -241,85 +248,100 @@
 				<button type="submit" class="btn submit btn-primary">Save</button>
 			</div>
 			<div class="message"></div>
-			<div class="row-fluid">
-				<form class="form-horizontal">
-					<div class="control-group">
-						<label class="control-label" for="campaign-title">Title</label>
-						<div class="controls">
-							<input id="campaign-title" type="text" value="<%= title %>">
+			<form class="form-horizontal">
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="control-group">
+							<label class="control-label" for="campaign-title">Title</label>
+							<div class="controls">
+								<input id="campaign-title" type="text" value="<%= title %>">
+							</div>
 						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="campaign-advert">Adverts</label>
-						<div class="controls">
-							<div id="campaign-advert">
-								<% _.each(allAdverts.toJSON(), function (advert) { %>
-									<label class="checkbox">
-										<input type="checkbox" name="advert" value="<%= advert.id %>" <%= adverts.indexOf(Number(advert.id)) > -1 ? 'checked="true"' : '' %>> <%= advert.title %>
-									</label>
-								<% }); %>
+						<div class="control-group">
+							<label class="control-label" for="campaign-starts">Starts</label>
+							<div class="controls">
+								<input type="text" id="campaign-starts" value="<%= startDate %>">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="campaign-ends">Starts</label>
+							<div class="controls">
+								<input type="text" id="campaign-ends" value="<%= startDate %>">
 							</div>
 						</div>
 					</div>
-					<div class="control-group">
-						<label class="control-label" for="campaign-starts">Starts</label>
-						<div class="controls">
-							<input type="text" id="campaign-starts" value="<%= startDate %>">
+					<div class="span6">
+						<div class="control-group">
+							<label class="control-label" for="campaign-advert">Adverts</label>
+							<div class="controls">
+								<div id="campaign-advert">
+									<% _.each(allAdverts.toJSON(), function (advert) { %>
+										<label class="checkbox">
+											<input type="checkbox" name="advert" value="<%= advert.id %>" <%= adverts.indexOf(Number(advert.id)) > -1 ? 'checked="true"' : '' %>> <%= advert.title %>
+										</label>
+									<% }); %>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="control-group">
-						<label class="control-label" for="campaign-ends">Starts</label>
-						<div class="controls">
-							<input type="text" id="campaign-ends" value="<%= startDate %>">
-						</div>
-					</div>
-					<div class="control-group">
-						<h2 class="">Targets</h2>
-						<p>Customise your target demographic and when your advert should appear using the tools below.</p>
-						<div id="campaign-targets">
-							<ul class="nav nav-tabs target-tabs">
-								<li><a data-toggle="tab" href="#tab-profile">Viewer profile</a></li>
-								<li><a data-toggle="tab" href="#tab-location">Viewer location</a></li>
-								<li><a data-toggle="tab" href="#tab-schedule">Scheduling</a></li>
-							</ul>
-							<div class="tab-content">
-								<div class="tab-pane active" id="tab-profile">
-									<div id="campaign-genders">
+				</div>
+				<h2 class="">Targets</h2>
+				<p>Customise your target demographic and when your advert should appear using the tools below.</p>
+				<div id="campaign-targets">
+					<ul class="nav nav-tabs target-tabs">
+						<li><a data-toggle="tab" href="#tab-profile">Viewer profile</a></li>
+						<li><a data-toggle="tab" href="#tab-location">Viewer location</a></li>
+						<li><a data-toggle="tab" href="#tab-schedule">Scheduling</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane" id="tab-profile">
+							<div class="row-fluid">
+								<div class="span4">
+									<h3>Genders</h3>
+									<div id="campaign-genders" class="list">
 										<label class="checkbox"><input type="checkbox" name="advert" value="male" <%= targets.genders.indexOf("male") > -1 ? 'checked="true"' : '' %>> Male</label>
 										<label class="checkbox"><input type="checkbox" name="advert" value="female" <%= targets.genders.indexOf("female") > -1 ? 'checked="true"' : '' %>> Female</label>
 									</div>
-									<div id="campaign-age-ranges">
-										Age ranges
-									</div>
-									<div id="campaign-occupations">
-										Occupations
-									</div>
 								</div>
-								<div class="tab-pane" id="tab-location">
-									<div id="campaign-locations">
-										<div class="map"></div>
-									</div>
+								<div class="span4">
+									<h3>Age ranges</h3>
+									<div id="campaign-age-ranges" class="list"></div>
 								</div>
-								<div class="tab-pane" id="tab-schedule">
+								<div class="span4">
+									<h3>Occupations</h3>
+									<div id="campaign-occupations" class="list"></div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="tab-location">
+							<div id="campaign-locations">
+								<div class="map"></div>
+							</div>
+						</div>
+						<div class="tab-pane" id="tab-schedule">
+							<div class="row-fluid">
+								<div class="span4">
+									<h3>Schedules</h3>
 									<div id="campaign-schedules">
 										<label class="checkbox"><input type="checkbox" value="live" <%= targets.schedules.indexOf("live") > -1 ? 'checked="true"' : '' %>> Live TV</label>
 										<label class="checkbox"><input type="checkbox" value="vod" <%= targets.schedules.indexOf("vod") > -1 ? 'checked="true"' : '' %>> Video On-Demand</label>
 									</div>
-									<div id="campaign-times">
-										Times
-									</div>
-									<div id="campaign-genres">
-										Genres
-									</div>
-									<div id="campaign-programmes">
-										Programmes
-									</div>
+									<h3>Times</h3>
+									<div id="campaign-times"></div>
+								</div>
+								<div class="span4">
+									<h3>Genres</h3>
+									<div id="campaign-genres" class="list"></div>
+								</div>
+								<div class="span4">
+									<h3>Programmes</h3>
+									<div id="campaign-programmes" class="list"></div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</form>
-			</div>
+				</div>
+			</form>
 		</script>
 		<script type="text/html" id="campaign-target-superlist-template">
 			<div class="toolbar"><button class="btn create">Create</button></div>

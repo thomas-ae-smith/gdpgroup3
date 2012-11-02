@@ -23,12 +23,12 @@ function htmlEscape(str) {
 	} else {
 		y4.browser = "unknown";
 	}
-	
+
 	// Should HTML5 videos be used?
 	y4.useHtmlVideo = htmlVideoBrowsers.indexOf(y4.browser) > -1;
 
 	_.each(scripts, function (script, i) {
-		document.write('<script type="text/javascript" src="' + script + '?' + Math.round(Math.random() * 10000000) + '"></script>'); 
+		document.write('<script type="text/javascript" src="' + script + '?' + Math.round(Math.random() * 10000000) + '"></script>');
 	});
 	_.each(styles, function (style) {
 		document.write('<link type="text/css" rel="stylesheet" href="' + style + '?' + Math.round(Math.random() * 10000000) + '">');
@@ -44,7 +44,7 @@ function htmlEscape(str) {
 
 
 	$(document).ready(function () {
-		
+
 		FB.init({
 			appId      : '424893924242103', // App ID from the App Dashboard
 			channelUrl : '//'+window.location.hostname+'/channel.php', // Channel File for x-domain communication
@@ -61,8 +61,8 @@ function htmlEscape(str) {
 		Backbone.history.start();
 	});
 
-	$(document).on("touchstart", function(e){ 
-	    e.preventDefault(); 
+	$(document).on("touchstart", function(e){
+	    e.preventDefault();
 	});
 
 })(this);

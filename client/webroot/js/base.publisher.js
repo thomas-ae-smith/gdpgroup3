@@ -7,6 +7,10 @@ function htmlEscape(str) {
             .replace(/>/g, '&gt;');
 }
 
+function capitalize(str) {
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+
 (function (root) {
 	"use strict";
 
@@ -59,6 +63,12 @@ function htmlEscape(str) {
 		}
 
 	});
+
+	var nameComparator = function (model) { return model.get("name").replace(/^the /i, ""); };
+
+	y4p.Occupations = Backbone.Collection.extend({ url: "http://www.your4.tv/api/occupations/", comparator: nameComparator });
+	y4p.Programmes = Backbone.Collection.extend({ url: "http://www.your4.tv/api/programmes/", comparator: nameComparator });
+	y4p.Genres = Backbone.Collection.extend({ url: "http://www.your4.tv/api/genres/", comparator: nameComparator });
 
 	y4p.Advert = Backbone.Model.extend({
 		defaults: { title: "", type: "", adverts: [], overlay: "" }
@@ -397,7 +407,10 @@ function htmlEscape(str) {
 				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
 				maxZoom: 18
 			}).addTo(map);
-			setTimeout(function () { map.invalidateSize(); });
+			setTimeout(function () {
+				that.$(".target-tabs a").eq(0).click();
+				map.invalidateSize();
+			});
 
 			var drawControl = new L.Control.Draw({
 				position: 'topright',
@@ -440,15 +453,29 @@ function htmlEscape(str) {
 				map.invalidateSize();
 			});
 
-			var Occupations = Backbone.Collection.extend({ url: "http://www.your4.tv/api/occupations/" }),
-				occupations = new Occupations();
+			var occupations = new y4p.Occupations(),
+				programmes = new y4p.Programmes(),
+				genres = new y4p.Genres();
 
 			occupations.fetch().then(function () {
 				occupations.each(function (occupation) {
 					that.$("#campaign-occupations").append('<label class="checkbox"><input type="checkbox" value="' + occupation.id + '"' +
-								(that.campaign.get("targets").occupations.indexOf(occupation.id) > -1 ? ' checked="true"' : "") + '>' + occupation.get("name") + '</label>');
+								(that.campaign.get("targets").occupations.indexOf(occupation.id) > -1 ? ' checked="true"' : "") + '>' + capitalize(occupation.get("name")) + '</label>');
 				});
-			})
+			});
+			programmes.fetch().then(function () {
+				programmes.each(function (programme) {
+					console.log(programme)
+					that.$("#campaign-programmes").append('<label class="checkbox"><input type="checkbox" value="' + programme.id + '"' +
+								(that.campaign.get("targets").programmes.indexOf(programme.id) > -1 ? ' checked="true"' : "") + '>' + capitalize(programme.get("name")) + '</label>');
+				});
+			});
+			genres.fetch().then(function () {
+				genres.each(function (genre) {
+					that.$("#campaign-genres").append('<label class="checkbox"><input type="checkbox" value="' + genre.id + '"' +
+								(that.campaign.get("targets").genres.indexOf(genre.id) > -1 ? ' checked="true"' : "") + '>' + capitalize(genre.get("name")) + '</label>');
+				});
+			});
 
 			return this;
 		},
@@ -473,8 +500,10 @@ function htmlEscape(str) {
 							return $(el).val();
 						}),
 						boundingBoxes: [],
-						genres: [],
-						programmes: _.map(this.$("#campaign-occupations :checked"), function (el) {
+						genres: _.map(this.$("#campaign-genres :checked"), function (el) {
+							return $(el).val();
+						}),
+						programmes: _.map(this.$("#campaign-programmes :checked"), function (el) {
 							return $(el).val();
 						}),
 						times: []
