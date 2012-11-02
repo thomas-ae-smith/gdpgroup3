@@ -3,9 +3,9 @@
 $targetTables = array(
 	'ageRanges' => array('name' => 'ownAgerange', 'fields' => array('minAge', 'maxAge')),
 	'boundingBoxes' => array('name' => 'ownBoundingbox', 'fields' => array('minLat', 'minLong', 'maxLat', 'maxLong')),
-	'genres' => array('name' => 'sharedGenres', 'fields' => array('genre')),
+	'genres' => array('name' => 'sharedGenres', 'ids' => true),
 	'occupations' => array('name' => 'sharedOccupations', 'ids' => true),
-	'programmes' => array('name' => 'sharedProgrammes', 'fields' => array('programme'))
+	'programmes' => array('name' => 'sharedProgrammes', 'ids' => true)
 );
 
 function getTargets(&$bean, $type) {
@@ -144,7 +144,7 @@ function setCampaign($campaign, $req) {
                 $maxLat = $r['maxLat'];
                 $minLong = $r['minLong'];
                 $maxLong = $r['maxLong'];
-		$bean = R::findOne('boundingbox', ' minLat = ?, maxLat = ?, minLong = ?, maxLong = ? ', array($minLat, $maxLat, $minLong, $maxLong));
+		$bean = R::findOne('boundingbox', ' minLat = ? AND maxLat = ? AND minLong = ? AND maxLong = ? ', array($minLat, $maxLat, $minLong, $maxLong));
 		if (!$bean) {
       	   		$bean = R::dispense('boundingbox');
                 	$bean->minLat = $r['minLat'];
@@ -159,7 +159,7 @@ function setCampaign($campaign, $req) {
                 $dayOfWeek = $r['dayOfWeek'];
 		$startTime = $r['startTime'];
                 $endTime = $r['endTime'];
-		$bean = R::findOne('time', ' dayOfWeek = ?, startTime = ?, endTime = ? ', array($dayOfWeek, $startTime, $endTime));
+		$bean = R::findOne('time', ' dayOfWeek = ? AND startTime = ? AND endTime = ? ', array($dayOfWeek, $startTime, $endTime));
 		if (!$bean) {
 	                $bean = R::dispense('time');
 	                $bean->dayOfWeek = $r['dayOfWeek'];
