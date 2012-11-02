@@ -21,6 +21,52 @@ def _time_from_seconds(total_seconds):
 	time_ = datetime.time(hours, minutes, seconds)
 	return time_
 
+def read_db(query):
+	try:
+		conn = mysql.connector.connect(**credentials)
+		cursor = conn.cursor()
+
+		cursor.execute(query)
+		result = cursor.fetchall()
+	except:
+		raise Exception("Error executing mysql query: {q}".format(q=query))
+	finally:
+		cursor.close()
+		conn.close()
+
+	return result
+	
+def write_db(query):
+	try:
+		conn = mysql.connector.connect(**credentials)
+		cursor = conn.cursor()
+
+		cursor.execute(query)
+		conn.commit()
+	except:
+		raise Exception("Error executing mysql query: {q}".format(q=query))
+	finally:
+		cursor.close()
+		conn.close()
+
+def add_advert_blacklist(userId, advertId):
+	query = (	"INSERT INTO `blacklistAdvert` "
+					"(`user`, `advert`) "
+				"VALUES "
+					"('{uid}', '{aid}')".format(
+						uid=userId, aid=advertId))
+
+	response = write_db(query)
+
+def add_programme_blacklist(userId, programmeId):
+	query = (	"INSERT INTO `blacklistProgramme` "
+					"(`user`, `programme`) "
+				"VALUES "
+					"('{uid}', '{pid}')".format(
+						uid=userId, pid=programmeId))
+
+	response = write_db(query)
+
 # TODO: Only return from current campaigns.
 def get_campaign_pool(uid, pid, when=None):
 	if when is None:
@@ -50,12 +96,10 @@ def get_campaign_pool(uid, pid, when=None):
 		# "AND `c_t`.`startTime` <= {when} "
 		# "AND {when} <= `c_t`.`endTime` "
 
-	conn = mysql.connector.connect(**credentials)
-	cursor = conn.cursor()
-	cursor.execute(query)
+	response = read_db(query)
 
 	adverts = {}
-	for result in cursor:
+	for fields in response:
 		user = {}
 		programme = {}
 		restrict = {}
@@ -66,7 +110,7 @@ def get_campaign_pool(uid, pid, when=None):
 			restrict['minLong'], restrict['maxLong'], restrict['minLat'],
 			restrict['maxLat'], restrict['genre'], restrict['occupation'],
 			restrict['programme'], restrict['dayOfWeek'], restrict['startTime'],
-			restrict['endTime'], campaignid, nicheness) = result
+			restrict['endTime'], campaignid, nicheness) = response
 
 		dt = datetime.datetime.utcfromtimestamp(when)
 		restriction_match = {
@@ -94,9 +138,6 @@ def get_campaign_pool(uid, pid, when=None):
 		if available:
 			adverts[campaignid] = float(nicheness)
 
-	cursor.close()
-	conn.close()
-
 	return adverts
 
 def get_ad(campaignId):
@@ -105,17 +146,12 @@ def get_ad(campaignId):
 				"WHERE `campaign` = {campaignId}".format(
 					campaignId=campaignId))
 				
-	conn = mysql.connector.connect(**credentials)
-	cursor = conn.cursor()
+	response = read_db(query)
 
-	cursor.execute(query)
+	# 'or [-1]' sets 'campaigns' to [-1] if no campaigns are returned.
+	campaigns = [fields[0] for fields in response] or [-1]
 
-	ads = [response[0] for response in cursor]
-
-	cursor.close()
-	conn.close()
-
-	return random.choice(ads or [-1])
+	return random.choice(campaigns)
 
 
 def get_upcoming_programmes(startTime=time(), lookahead=300):
@@ -128,15 +164,9 @@ def get_upcoming_programmes(startTime=time(), lookahead=300):
 					start_time=int(startTime),
 					end_time=int(startTime + lookahead)))
 
-	conn = mysql.connector.connect(**credentials)
-	cursor = conn.cursor()
+	response = read_db(query)
 
-	cursor.execute(query)
-
-	channel_vectors = [(p_id, p_vector) for p_id, p_vector in cursor]
-
-	cursor.close()
-	conn.close()
+	channel_vectors = [(p_id, p_vector) for p_id, p_vector in response]
 
 	return channel_vectors
 
@@ -147,12 +177,12 @@ def get_programme(pid, fields=[]):
 	query = (	'SELECT '+_field_string(fields)+' '
 				'FROM `programmes` '
 				'WHERE `id`='+str(pid))
-	conn = mysql.connector.connect(**credentials)
-	cursor = conn.cursor()
-	cursor.execute(query)
-	results = cursor.fetchall()[0][0]
-	cursor.close()
-	conn.close()
+
+	response = read_db(query)
+
+	# TODO: this doesn't return arbitrary fields.
+	results = response[0][0]
+
 	return results
 
 # TODO: Properly return entire list, and modify ALL files which use this (urgh...)
@@ -162,18 +192,10 @@ def get_user(userid, fields=[]):
 	query = (	'SELECT '+_field_string(fields)+' '
 				'FROM `users` '
 				'WHERE `id`='+str(userid))
-	conn = mysql.connector.connect(**credentials)
-	cursor = conn.cursor()
-	try:
-		cursor.execute(query)
-	except mysql.connector.errors.ProgrammingError:
-		cursor.close()
-		conn.close()
-		raise Exception("Error executing mysql query: {q}".format(q=query))
-	results = cursor.fetchall()[0]
+	response = read_db(query)
 	cursor.close()
 	conn.close()
-	return results
+	return response
 
 def set_user(userid, fields=[], vals=[]):
 	assert len(fields) == len(vals)
@@ -181,9 +203,4 @@ def set_user(userid, fields=[], vals=[]):
 	changes = ', '.join("{}='{}'".format(e[0], e[1]) for e in zip(fields, vals))
 	query = "UPDATE `users` SET {c} WHERE `id`={id}".format(c=changes, id=userid)
 
-	conn = mysql.connector.connect(**credentials)
-	cursor = conn.cursor()
-	cursor.execute(query)
-	conn.commit()
-	cursor.close()
-	conn.close()
+	write_db(query)

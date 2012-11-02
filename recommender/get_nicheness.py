@@ -17,16 +17,17 @@ from datastore.credentials import credentials
 DEBUG = False
 VERBOSE = False
 
-def get_user_nicheness(ageranges=[], boundingboxes=[], genders=[], occupations=[]):
+def get_user_nicheness(ageranges=(), boundingboxes=(), genders=(), occupations=()):
 	now = datetime.datetime.now().date()
 
-	age_constraints = (") OR (".join([
+	age_constraints = ") OR (".join([
 		" AND ".join(filter(None, [
 			"`users`.`dob` >= '{lower}'" if maxage else None,
 			"`users`.`dob` <= '{upper}'" if minage else None
-		])).format(upper=now-relativedelta(years=minage or 0),
-					lower=now-relativedelta(years=maxage or 0))
-	for minage, maxage in ageranges]))
+		])).format(upper=now - relativedelta(years=minage or 0),
+					lower=now - relativedelta(years=maxage or 0))
+	for minage, maxage in ageranges])
+
 	age_constraints = "(" + age_constraints + ")" if age_constraints else None
 
 	bb_constraints = (") OR (".join([
