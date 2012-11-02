@@ -170,10 +170,7 @@
 
 	y4.Register = Backbone.View.extend({
 
-		regFields: ["name","gender","dob","email","occupation"],
-		occupations: ["other","academic/educator","artist","clerical/admin","student","customer service","doctor/health care","executive/managerial",
-					  "farmer","homemaker","at school","lawyer","programmer","retired","sales/marketing","scientist","self-employed","technician/engineer",
-					  "tradesman/craftsman","unemployed","writer"],
+		regFields: ["name","gender","dob","email","occupation","password"],
 		events: {
 			"change .register-form input": "changeField",
 			"change .register-form select": "changeField",
@@ -184,25 +181,39 @@
 
 		initialize: function() {
 			var that = this;
-				this.user = this.options.user;
+			this.user = this.options.user;
 			if (!this.user) {
 				this.userCollection = new y4.UserCollection();
 				this.user = new y4.UserModel();
 				this.userCollection.add(this.user);
 			}
 
+			this.occupations = new y4.OccupationCollection();
+
 		},
 
 		render: function() {
 			var registerTemplate = _.template($('#register-template').html());
-
+			
+			if (this.user.get('facebookId') != null) {
+				this.regFields.pop();
+			}
+			
 			var that = this;
 			var toRequest = _.filter(this.regFields, function(field) {
-				if (that.user.get(field) == null) {
+				field = that.user.get(field);
+				if (field == null || typeof(field) === 'undefined') {
 					return true;
 				}
 			});
-			this.$el.html(registerTemplate({user: this.user.toJSON(), req: toRequest, fields: this.regFields, occupations: this.occupations}));			
+
+			this.$el.html(registerTemplate({user: this.user.toJSON(), req: toRequest, fields: this.regFields, occupations: this.occupations}));
+			this.occupations.fetch().then(function() {
+				var occSelect = $('.register-form :input[name="occupation"]');
+				that.occupations.each(function(occupation) {
+					occSelect.append($('<option>', {value: occupation.get('id')}).text(occupation.get('name')));		
+				});
+			});
 
 			return this;
 		},
@@ -214,7 +225,8 @@
 
 		submitReg: function() {
 			var that = this;
-			this.user.save({success: function() {
+			this.user.save(undefined, {success: function() {
+				y4.login.userModel = that.user;
 				y4.app.start();	
 			}, error: function(model, response) {
 				that.$el.prepend(response);
@@ -226,7 +238,7 @@
 		className: "logon-outer",
 		events: {
 			"click .facebook-button": "facebookLogin",
-			"click .register-button": "normalLogin"
+			"click .register-button": "renderReg"
 		},
 
 		initialize: function() {
@@ -272,17 +284,16 @@
 					if (that.userModel.get("registered")) {
 						y4.app.start();
 					} else {
-						var registerView = new y4.Register({user: that.userModel});
-						$(".logo-frame").html(registerView.render().el);
+						that.renderReg(undefined, that.userModel);
 					}
 					y4.app.hideSpinner();
 				});
 			});
 		},
 
-		normalLogin: function() {
-			var registerView = new y4.Register();
-			this.$el.find(".logon-inner").html(registerView.render().el);
+		renderReg: function(e, user) {
+			var registerView = new y4.Register({user: user});
+			$(".logo-frame").html(registerView.render().el);
 		},
 
 		logout: function() {

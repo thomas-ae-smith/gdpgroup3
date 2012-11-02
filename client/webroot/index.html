@@ -62,23 +62,21 @@
 			<div class="logon-inner">
 				We require more information from you before you can start using your4.tv.
 				<form class="register-form form-horizontal">
-				<% _.each(user, function(element, key) { %>
-					<% if (_.contains(fields, key)) { %>
+				<% _.each(fields, function(field) { %>
 					<div class="control-group">
-						<label class="control-label" for="<%= key %>"><%= key %></label>
+						<label class="control-label" for="<%= field %>"><%= field %></label>
 						<div class="controls">
-							<% if (key == "occupation") { %>
-							<select id="<%= key %>" name="<%= key %>" <%= _.contains(req, key) ? '' : ' disabled' %>>
+							<% if (field == "occupation") { %>
+							<select id="<%= field %>" name="<%= field %>" <%= _.contains(req, field) ? '' : ' disabled' %>>
 								<% _.each(occupations, function(occupation) { %>
 									<option value="occupation"><%= occupation %></option>
 								<% }); %>
 							</select>
 							<% } else { %>
-							<input type="text" id="<%= key %>" name="<%= key %>" value="<%= element %>" <%= _.contains(req, key) ? '' : ' disabled' %>>
+							<input type="text" id="<%= field %>" name="<%= field %>" value="<%= user[field] %>" <%= _.contains(req, field) ? '' : ' disabled' %>>
 							<% } %>
 						</div>
 					</div>	
-					<% } %>
 				<% }); %>
 					<button class="btn btn-large btn-primary submit-registration" type="button">Register</button> 
 				</form>

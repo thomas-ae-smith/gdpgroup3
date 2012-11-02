@@ -4,7 +4,7 @@ function getIdType($id) {
 	return strstr($id, 'fb-') ? 'fb' : 'local';
 }
 
-$app->put('/users/:id(/)', function($id) use ($app) {
+function processUser($app, $id) {
 	global $facebook;
 
 	$type = getIdType($id);
@@ -19,6 +19,7 @@ $app->put('/users/:id(/)', function($id) use ($app) {
 				$user = R::dispense('users');
 				$user_profile = $facebook->api('/me','GET');
 				$user->import(fb_to_user($user_profile));
+				$user->lastFbRefresh = date('Y-m-d h:i:s');
 			}
 		} else {
 			forbidden();
@@ -39,14 +40,17 @@ $app->put('/users/:id(/)', function($id) use ($app) {
 	}
 
 	$new_vals = array();
+	
+	$req = $app->request()->getBody();
 	foreach ($use_fields as $field) {
-		$field_content = $app->request()->put($field);
+		$field_content = $req[$field];
 		if (isset($field_content)) {
 			if ($field == "password") {
 				$user->salt = substr(sha1(mt_rand()),0,22); //22 char salt for crypt
 				$user->password = crypt($field_content,'$2a$10$'. $user->salt);
+			} else {
+				$user->setAttr($field, $field_content);
 			}
-			$user->setAttr($field, $field_content);
 			$new_vals[] = $field;
 		} else if ($field != "password") {
 			badRequest();
@@ -61,7 +65,15 @@ $app->put('/users/:id(/)', function($id) use ($app) {
 
 	output_json($_SESSION['user']);
 
+}
+
+$app->put('/users/:id(/)', function($id) use ($app) {
+	processUser($app, $id);
 });
+
+$app->post('/users(/)', function() use ($app) {
+	processUser($app, null);
+}); 
 	
 $app->get('/users/:id(/)', function($id) use ($app) {
 	global $facebook;
@@ -87,8 +99,9 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 							$user->setAttr($field, $user_profile[$field]);
 						}
 					}
+					$user->lastFbRefresh = date('Y-m-d h:i:s');
 					R::store($user);
-                                }
+				}
 
 				$_SESSION['user'] = $user->export();
 				$_SESSION['user']['registered'] = true;
@@ -102,23 +115,6 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 				$user_profile = fb_to_user($user_profile);
 				$user_profile['registered'] = false;
 
-				$complete = true;
-				foreach(array('name','gender','dob','email','occupation') as $field) {
-					if (!isset($user_profile[$field])) {
-						$complete = false;
-						break;	
-					}
-				}
-
-				if ($complete) {
-					$bean = R::dispense('users');
-					$bean->import($user_profile);
-					R::store($bean);
-				
-					$user_profile['registered'] = true;
-				}
-
-				
 				$_SESSION['user'] = $user_profile;
 				output_json($_SESSION['user']);
 			} catch(FacebookApiException $e) {
