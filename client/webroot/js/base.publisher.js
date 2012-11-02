@@ -85,11 +85,27 @@ function pad (number, size) {
 		url: "http://www.your4.tv/api/adverts/"
 	});
 	y4p.Campaign = Backbone.Model.extend({
+		defaults: {
+			title: "",
+			startDate: 0,
+			endDate: 0,
+			adverts: [], // FIXME: WRONG
+			targets: { // FIXME: WRONG!!!
+				ageRanges: [],
+				boundingBoxes: [],
+				times: [],
+				genres: [],
+				occupations: [],
+				programmes: [],
+				genders: [],
+				schedules: []
+			}
+		},
 		initialize: function () {
 			var that = this;
 			this.targetCollections = {};
 			_.each(this.get("targets"), function (targets, type) {
-				that.targetCollections[type] = new y4p.CampaignTargets(targets, { url: that.url() + "/targets/" + type + "/" });
+				that.targetCollections[type] = new y4p.CampaignTargets(targets, { /*url: that.url() + "/targets/" + type + "/"*/ });
 			});
 		}
 	});
@@ -143,13 +159,13 @@ function pad (number, size) {
 			view.on("select", function (id) {
 				that.router.navigate("campaigns/" + id, { trigger: true })
 			}).on("create", function () {
-				that.router.navigate("campaign/new", { trigger: true })
+				that.router.navigate("campaigns/new", { trigger: true })
 			});
 			return this.render(view);
 		},
 		goCampaign: function (id) {
 			var that = this,
-				campaign = this.campaigns.get(id),
+				campaign = id === "new" ? new y4p.Campaign() : this.campaigns.get(id),
 				view = campaign ?
 					new y4p.pages.CampaignFull({ campaign: campaign, app: this }) :
 					new y4p.pages.NotFound({ message: "Campaign not found." });
@@ -401,6 +417,7 @@ function pad (number, size) {
 		},
 		initialize: function (options) {
 			this.campaign = options.campaign;
+			this.campaigns = options.app.campaigns;
 			this.title = "Campaign: " + this.campaign.get("title");
 		},
 		render: function () {
@@ -686,7 +703,7 @@ function pad (number, size) {
 				this.campaign.save(attributes, options);
 			} else {
 				this.campaign.set(attributes);
-				this.campaign.create(this.campaign, options);
+				this.campaigns.create(this.campaign, options);
 			}
 		},
 		cancel: function () {
