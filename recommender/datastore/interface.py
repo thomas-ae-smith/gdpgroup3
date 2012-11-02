@@ -69,12 +69,13 @@ def add_programme_blacklist(userId, programmeId):
 
 # TODO: Only return from current campaigns.
 def get_campaign_pool(uid, pid, when=None):
-	if when is None:
-		when = datetime.datetime.now()
 	"""Given a user id, programme id and time, returns a pool of adverts whose
 	campaigns allow the advert to be shown to the given user during the given
 	programme at the given time. Advert ids are returned along with the
 	campaign nichenesses."""
+	if when is None:
+		when = datetime.datetime.now()
+
 	query = (
 		"SELECT `u`.`dob`, `u`.`gender`, `u`.`occupation`, `u`.`lat`, "
 			"`u`.`long`, `p`.`id`, `p`.`channel`, `p`.`genre`, `p`.`live`, "
@@ -118,10 +119,10 @@ def get_campaign_pool(uid, pid, when=None):
 			'gender': lambda: user['gender'] in restrict['gender'],
 			'minAge': lambda: calc_age(user['dob']) >= restrict['minAge'],
 			'maxAge': lambda: calc_age(user['dob']) <= restrict['maxAge'],
-			'minLong': lambda: user['long'] >= restrict['minLong'],
-			'maxLong': lambda: user['long'] <= restrict['maxLong'],
-			'minLat': lambda: user['lat'] >= restrict['minLat'],
-			'maxLat': lambda: user['lat'] <= restrict['maxLat'],
+			'minLong': lambda: user['long'] >= float(restrict['minLong']),
+			'maxLong': lambda: user['long'] <= float(restrict['maxLong']),
+			'minLat': lambda: user['lat'] >= float(restrict['minLat']),
+			'maxLat': lambda: user['lat'] <= float(restrict['maxLat']),
 			'genre': lambda: programme['genre'] == restrict['genre'],
 			'occupation': lambda: user['occupation'] == restrict['occupation'],
 			'programme': lambda: programme['id'] == restrict['programme'],
