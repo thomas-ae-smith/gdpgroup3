@@ -402,7 +402,11 @@ function capitalize(str) {
 				allAdverts: this.options.app.adverts
 			}, this.campaign.toJSON())));
 
-			var map = this.locationMap = L.map(this.$("#campaign-locations .map")[0]).setView([54.805, -3.59], 5);
+			var map = this.locationMap = L.map(this.$("#campaign-locations .map")[0], {
+				center: [54.805, -3.59],
+				zoom: 5,
+				scrollWheelZoom: false
+			})
 			L.tileLayer('http://{s}.tile.cloudmade.com/1b189a705e22441c86cdb384a5bc7837/997/256/{z}/{x}/{y}.png', {
 				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
 				maxZoom: 18
@@ -428,24 +432,37 @@ function capitalize(str) {
 			map.addControl(drawControl);
 
 			var drawnItems = new L.LayerGroup(),
-				selectedRectangle;
-			map.on('draw:rectangle-created', function (e) {
-				drawnItems.addLayer(e.rect);
-				e.rect.on("mousemove", function () {
-					if (selectedRectangle) {
-						selectedRectangle.setStyle({
-							color: "blue",
-							fillColor: "blue"
+				mapRects = this.mapRects = [],
+				selectedRectangle,
+				addRectangle = function (rect) {
+					drawnItems.addLayer(rect);
+					mapRects.push(rect);
+					rect.on("mousemove", function () {
+						if (selectedRectangle) {
+							selectedRectangle.setStyle({
+								color: "blue",
+								fillColor: "blue"
+							});
+						}
+						rect.setStyle({
+							color: "red",
+							fillColor: "red"
 						});
-					}
-					e.rect.setStyle({
-						color: "red",
-						fillColor: "red"
+						selectedRectangle = rect;
 					});
-					selectedRectangle = e.rect;
-				})
+				};
+			map.on('draw:rectangle-created', function (e) {
+				addRectangle(e.rect);
 			});
 			map.addLayer(drawnItems);
+
+			_.each(this.campaign.get("targets").boundingBoxes, function (bb) {
+				console.log("J")
+				var sw = new L.LatLng(bb.minLat, bb.minLong),
+					ne = new L.LatLng(bb.maxLat, bb.maxLong),
+					rect = L.rectangle(new L.LatLngBounds(sw, ne), { color: "blue", fillColor: "blue" });
+				addRectangle(rect);
+			})
 
 			this.$(".target-tabs a").click(function (e) {
 				e.preventDefault();
@@ -465,7 +482,6 @@ function capitalize(str) {
 			});
 			programmes.fetch().then(function () {
 				programmes.each(function (programme) {
-					console.log(programme)
 					that.$("#campaign-programmes").append('<label class="checkbox"><input type="checkbox" value="' + programme.id + '"' +
 								(that.campaign.get("targets").programmes.indexOf(programme.id) > -1 ? ' checked="true"' : "") + '>' + capitalize(programme.get("name")) + '</label>');
 				});
@@ -474,6 +490,48 @@ function capitalize(str) {
 				genres.each(function (genre) {
 					that.$("#campaign-genres").append('<label class="checkbox"><input type="checkbox" value="' + genre.id + '"' +
 								(that.campaign.get("targets").genres.indexOf(genre.id) > -1 ? ' checked="true"' : "") + '>' + capitalize(genre.get("name")) + '</label>');
+				});
+			});
+
+			var agesSelected = _.reduce(this.campaign.get("targets").ageRanges, function (memo, ageRange) {
+				var min = Number(ageRange.minAge),
+					max = Number(ageRange.maxAge);
+				_.times(max - min + 1, function (i) {
+					memo.push(min + i);
+				});
+				return memo;
+			}, []);
+			console.log(agesSelected)
+
+			var $bitrange = this.$("#campaign-age-ranges .bit-range"),
+				$bitmarkers = this.$("#campaign-age-ranges .bit-markers"),
+				ages = this.ages = {},
+				mouseMode = 0;
+			$(document).mouseup(function(){
+				mouseMode = 0;
+			});
+			_.times(101, function (i) {
+				console.log(i, agesSelected.indexOf(i) > -1)
+				ages[i] = agesSelected.indexOf(i) > -1;
+				var $bitbox = $('<div class="bit-box"></div>')
+					.css({ left: i + "%", zIndex: i })
+					.toggleClass("selected", ages[i]);
+				$bitrange.append($bitbox);
+
+				if (i % 10 === 0) {
+					var $marker = $('<div class="bit-marker">' + i + '</div>').css({ left: i + "%" });
+					$bitmarkers.append($marker);
+					$bitbox.addClass("marker");
+				}
+
+				$bitbox.mousedown(function () {
+					mouseMode = ages[i] ? 2 : 1;
+				}).mousemove(function (e) {
+					if (mouseMode === 0) { return; }
+					ages[i] = mouseMode === 1;
+					$bitbox.toggleClass("selected", ages[i]);
+					e.preventDefault();
+					return false;
 				});
 			});
 
@@ -495,11 +553,33 @@ function capitalize(str) {
 						schedules: _.map(this.$("#campaign-schedules :checked"), function (el) {
 							return $(el).val();
 						}),
-						ageRanges: [],
+						ageRanges: _.chain(that.ages).reduce(function (memo, v, age) {
+							if (v) { memo.push(age); }
+							return memo;
+						}, []).sort().reduce(function (memo, _age) {
+							var age = Number(_age),
+								last = memo[memo.length - 1];
+							if (!last || last.maxAge !== age - 1) {
+								memo.push({ minAge: age, maxAge: age });
+							} else {
+								last.maxAge = age;
+							}
+							return memo;
+						}, []).value(),
 						occupations: _.map(this.$("#campaign-occupations :checked"), function (el) {
 							return $(el).val();
 						}),
-						boundingBoxes: [],
+						boundingBoxes: _.map(this.mapRects, function (rect) {
+							var bounds = rect.getBounds(),
+								se = bounds.getSouthEast(),
+								nw = bounds.getNorthWest();
+							return {
+								maxLat: nw.lat, // north
+								maxLong: se.lng, // east
+								minLat: se.lat, // south
+								minLong: nw.lng // west
+							};
+						}),
 						genres: _.map(this.$("#campaign-genres :checked"), function (el) {
 							return $(el).val();
 						}),
