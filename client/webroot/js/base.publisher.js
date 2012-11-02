@@ -11,6 +11,13 @@ function capitalize(str) {
     return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 }
 
+// Prefix 0's to a number
+function pad (number, size) {
+	number = String(number);
+	while (number.length < size) { number = "0" + number; }
+	return number;
+}
+
 (function (root) {
 	"use strict";
 
@@ -501,7 +508,18 @@ function capitalize(str) {
 				});
 				return memo;
 			}, []);
-			console.log(agesSelected)
+			var timesSelected = _.reduce(this.campaign.get("targets").times, function (memo, daytime) {
+				var day = Number(daytime.dayOfWeek),
+					startTime = daytime.startTime.split(":"),
+					endTime = daytime.endTime.split(":");
+				console.log(startTime, endTime)
+				startTime = Number(startTime[0]) * 4 + Number(startTime[1]) / 15;
+				endTime = Number(endTime[0]) * 4 + Number(endTime[1]) / 15;
+				_.times(endTime - startTime + 1, function (i) {
+					memo[day].push(startTime + i);
+				});
+				return memo;
+			}, {0:[],1:[],2:[],3:[],4:[],5:[],6:[]}); // Really got to clean this up...
 
 			var $bitrange = this.$("#campaign-age-ranges .bit-range"),
 				$bitmarkers = this.$("#campaign-age-ranges .bit-markers"),
@@ -511,7 +529,6 @@ function capitalize(str) {
 				mouseMode = 0;
 			});
 			_.times(101, function (i) {
-				console.log(i, agesSelected.indexOf(i) > -1)
 				ages[i] = agesSelected.indexOf(i) > -1;
 				var $bitbox = $('<div class="bit-box"></div>')
 					.css({ left: i + "%", zIndex: i })
@@ -535,6 +552,39 @@ function capitalize(str) {
 				});
 			});
 
+			var days = that.days = {};
+			_.times(7, function (d) {
+				var times = days[d] = {},
+					$day = that.$("#campaign-times .day").eq(d),
+					$bitrange = $day.find(".bit-range"),
+					$bitmarkers = $day.find(".bit-markers");
+				_.times(96, function (i) {
+					times[i] = timesSelected[d].indexOf(i) > -1;
+					var $bitbox = $('<div class="bit-box"></div>')
+						.css({ left: (i * (100 / 96)) + "%", zIndex: i })
+						.toggleClass("selected", times[i]);
+					$bitrange.append($bitbox);
+
+					if (i % 8 === 0) {
+						var $marker = $('<div class="bit-marker">' + i / 4 + ':00</div>')
+							.css({ left: (i * (100 / 96)) + "%" });
+						$bitmarkers.append($marker);
+						$bitbox.addClass("marker");
+					}
+
+					$bitbox.mousedown(function () {
+						mouseMode = times[i] ? 2 : 1;
+					}).mousemove(function (e) {
+						if (mouseMode === 0) { return; }
+						times[i] = mouseMode === 1;
+						$bitbox.toggleClass("selected", times[i]);
+						e.preventDefault();
+						return false;
+					});
+				});
+			});
+
+
 			return this;
 		},
 		submit: function (e) {
@@ -554,11 +604,12 @@ function capitalize(str) {
 							return $(el).val();
 						}),
 						ageRanges: _.chain(that.ages).reduce(function (memo, v, age) {
-							if (v) { memo.push(age); }
+							if (v) { memo.push(Number(age)); }
 							return memo;
-						}, []).sort().reduce(function (memo, _age) {
-							var age = Number(_age),
-								last = memo[memo.length - 1];
+						}, []).sortBy(function (age) {
+							return age;
+						}).reduce(function (memo, age) {
+							var last = memo[memo.length - 1];
 							if (!last || last.maxAge !== age - 1) {
 								memo.push({ minAge: age, maxAge: age });
 							} else {
@@ -586,7 +637,35 @@ function capitalize(str) {
 						programmes: _.map(this.$("#campaign-programmes :checked"), function (el) {
 							return $(el).val();
 						}),
-						times: []
+						times: _.chain(that.days).reduce(function (memo, times, day) {
+							_.each(times, function (v, i) {
+								if (v) { memo.push({ day: Number(day), time: i / 4 }); }
+							});
+							return memo;
+						}, []).sortBy(function (daytime) {
+							return daytime.day * 24 + daytime.time;
+						}).reduce(function (memo, daytime) {
+							var day = daytime.day,
+								time = daytime.time,
+								last = memo[memo.length - 1];
+							if (!last || last.day !== day || last.endTime !== time - 0.25) {
+								memo.push({
+									day: day,
+									startTime: time,
+									endTime: time
+								});
+							} else {
+								last.endTime = time;
+							}
+							return memo;
+						}, []).map(function (daytime) {
+							//console.log(daytime.endTime, pad(Math.floor(daytime.endTime), 2) + ":" + pad((daytime.endTime % 1) * 60, 2) + ":00")
+							return {
+								dayOfWeek: daytime.day,
+								startTime: pad(Math.floor(daytime.startTime), 2) + ":" + pad((daytime.startTime % 1) * 60, 2) + ":00",
+								endTime: pad(Math.floor(daytime.endTime), 2) + ":" + pad((daytime.endTime % 1) * 60, 2) + ":00"
+							};
+						}).value()
 					}
 				},
 				options = {
