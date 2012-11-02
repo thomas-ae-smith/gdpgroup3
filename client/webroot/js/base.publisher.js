@@ -1,27 +1,39 @@
+function htmlEscape(str) {
+    return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+}
+
+function capitalize(str) {
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+
 (function (root) {
 	"use strict";
-
-	var sample = {
-		adverts: [
-			{ id: 1, title: "Guinness", type: "video", url: "ad-guinness.mp4", thumbnail: "", overlay: "<b>this is a test</b>" },
-			{ id: 2, title: "Go Compare", type: "video", url: "ad-gocompare.mp4", thumbnail: "", overlay: "" },
-			{ id: 3, title: "Just Dance", type: "video", url: "ad-justdance.mp4", thumbnail: "", overlay: "" },
-			{ id: 4, title: "Blah blah", type: "video", url: "", thumbnail: "", overlay: "" },
-			{ id: 5, title: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.jpg", duration: 3000, overlay: "" },
-			{ id: 6, title: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.png", duration: 3000, overlay: "" },
-			{ id: 7, title: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.png", duration: 3000, overlay: "" },
-			{ id: 8, title: "SUSU Nightlife", type: "still", url: "img/nightlife-sloth.png", duration: 3000, overlay: "" }
-		],
-		campaigns: [
-			{ advertId: 1, title: "Campaign 1" }
-		]
-	};
-
 
 	var y4p = root.y4p = {
 		templates: {},
 		pages: {}
 	};
+
+	y4p.language = {
+		advertType: {
+			"video": "Video",
+			"still": "Image"
+		},
+		type: {
+			"ageRanges": "Age ranges",
+			"boundingBoxes": "Locations",
+			"occupations": "Occupations",
+			"genres": "Genres",
+			"programmes": "Programmes"
+		}
+	};
+
+
 
 	y4p.cacheTemplates = function () {
 		_.each($("#templates > script"), function (el) {
@@ -37,18 +49,53 @@
 			"adverts": "adverts",
 			"adverts/:id": "advert",
 			"campaigns": "campaigns",
-			"campaigns/:id": "campaign"
+			"campaigns/:id": "campaign",
+			"*notFound": "notFound" // http://stackoverflow.com/questions/11236338/is-there-a-way-to-catch-all-non-matched-routes-with-backbone
 		},
 		initialize: function (options) { this.app = options.app; },
 		home: function () { this.app.home(); },
 		adverts: function () { this.app.goAdverts(); },
 		advert: function (id) { this.app.goAdvert(id); },
 		campaigns: function () { this.app.goCampaigns(); },
-		campaign: function (id) { this.app.goCampaign(id); }
+		campaign: function (id) { this.app.goCampaign(id); },
+		notFound: function () {
+			this.app.render(new y4p.pages.NotFound({ message: "Page not found." }));
+		}
+
 	});
 
-	y4p.Adverts = Backbone.Collection.extend({});
-	y4p.Campaigns = Backbone.Collection.extend({});
+	var nameComparator = function (model) { return model.get("name").replace(/^the /i, ""); };
+
+	y4p.Occupations = Backbone.Collection.extend({ url: "http://www.your4.tv/api/occupations/", comparator: nameComparator });
+	y4p.Programmes = Backbone.Collection.extend({ url: "http://www.your4.tv/api/programmes/", comparator: nameComparator });
+	y4p.Genres = Backbone.Collection.extend({ url: "http://www.your4.tv/api/genres/", comparator: nameComparator });
+
+	y4p.Advert = Backbone.Model.extend({
+		defaults: { title: "", type: "", adverts: [], overlay: "" }
+	});
+	y4p.Adverts = Backbone.Collection.extend({
+		model: y4p.Advert,
+		url: "http://www.your4.tv/api/adverts/"
+	});
+	y4p.Campaign = Backbone.Model.extend({
+		initialize: function () {
+			var that = this;
+			this.targetCollections = {};
+			_.each(this.get("targets"), function (targets, type) {
+				that.targetCollections[type] = new y4p.CampaignTargets(targets, { url: that.url() + "/targets/" + type + "/" });
+			});
+		}
+	});
+	y4p.Campaigns = Backbone.Collection.extend({
+		model: y4p.Campaign,
+		url: "http://www.your4.tv/api/campaigns/"
+	});
+
+	y4p.CampaignTargets = Backbone.Collection.extend({
+		initialize: function (items, options) {
+			this.url = options.url;
+		}
+	});
 
 	y4p.AdvertiserApp = Backbone.View.extend({
 		className: "app",
@@ -59,30 +106,53 @@
 		],
 		initialize: function () {
 			this.router = new y4p.Router({ app: this });
-			this.adverts = new y4p.Adverts(sample.adverts);
-			this.campaigns = new y4p.Campaigns(sample.campaigns);
+			this.adverts = new y4p.Adverts();
+			this.campaigns = new y4p.Campaigns(undefined, { adverts: this.adverts });
 		},
 		goAdverts: function () {
 			var that = this,
-				view = new y4p.pages.AdvertList({ adverts: this.adverts });
+				view = new y4p.pages.AdvertList({ collection: this.adverts, app: this });
 			view.on("select", function (id) {
 				that.router.navigate("adverts/" + id, { trigger: true });
-			}, this);
+			}).on("create", function () {
+				that.router.navigate("adverts/new", { trigger: true })
+			});
 			return this.render(view);
 		},
 		goAdvert: function (id) {
-			var advert = this.adverts.get(id);
-			return this.render(new y4p.pages.AdvertFull({ advert: advert }));
+			var that = this,
+				advert = id === "new" ? new y4p.Advert() : this.adverts.get(id),
+				view = advert ?
+					new y4p.pages.AdvertFull({ advert: advert, app: this }) :
+					new y4p.pages.NotFound({ message: "Advert not found." });
+			view.on("return", function () {
+				that.router.navigate("adverts", { trigger: true });
+			});
+			return this.render(view);
 		},
 		goCampaigns: function () {
-			return this.render(new y4p.pages.CampaignList({ campaigns: this.campaigns }));
+			var that = this,
+				view = new y4p.pages.CampaignList({ collection: this.campaigns, app: this });
+			view.on("select", function (id) {
+				that.router.navigate("campaigns/" + id, { trigger: true })
+			}).on("create", function () {
+				that.router.navigate("campaign/new", { trigger: true })
+			});
+			return this.render(view);
 		},
 		goCampaign: function (id) {
-			var campaign = this.campaigns.get(id);
-			return this.render(new y4p.pages.CampaignFull({ campaign: campaign }));
+			var that = this,
+				campaign = this.campaigns.get(id),
+				view = campaign ?
+					new y4p.pages.CampaignFull({ campaign: campaign, app: this }) :
+					new y4p.pages.NotFound({ message: "Campaign not found." });
+			view.on("return", function () {
+				that.router.navigate("campaigns", { trigger: true });
+			});
+			return this.render(view);
 		},
 		home: function () {
-			return this.render(new y4p.pages.Home());
+			return this.render(new y4p.pages.Home({ app: this }));
 		},
 		render: function (page) {
 			var that = this,
@@ -108,9 +178,13 @@
 				breadcrumb: breadcrumb,
 				sublinks: page.sublinks
 			})).find(".main-body").append(page.render().el);
+			window.title = "Your 4 - " + page.title;
 
 			page.on("change", function () {
 				that.render(page);
+			}).on("title", function (title) {
+				that.$(".title").html("Your 4 - " + title);
+				window.title = title;
 			});
 
 			if (this.page) {
@@ -120,14 +194,26 @@
 			return this;
 		},
 		start: function () {
-			Backbone.history.start();
+			var that = this;
+			$.when(this.adverts.fetch(), that.campaigns.fetch()).then(function () {
+				Backbone.history.start();
+			}).fail(function () {
+				that.$el.html('<div class="alert alert-error" style="width: 700px; margin: 40px auto;"><b>Error while loading page.</b></div>')
+			});
 			return this;
 		}
 	});
 
-	y4p.Page = Backbone.View.extend({
+	y4p.View = Backbone.View.extend({
 		close: function () {
 			this.off().remove();
+		}
+	})
+
+	y4p.Page = y4p.View.extend({
+		setTitle: function (title) {
+			this.title = title;
+			this.trigger("title", title);
 		}
 	})
 
@@ -139,90 +225,411 @@
 		}
 	});
 
-	y4p.pages.AdvertList = y4p.Page.extend({
-		title: "Adverts",
-		className: "advert-list",
+	y4p.pages.NotFound = y4p.Page.extend({
+		title: "Not found",
+		render: function () {
+			this.$el.html(y4p.templates.notfound(_.extend({ message: "Page cannot be found." }, this.options)));
+			return this;
+		}
+	})
+
+	y4p.List = y4p.View.extend({
+		events: { "click .create": "create" },
+		create: function () { this.trigger("create"); },
 		initialize: function (options) {
-			this.adverts = options.adverts;
-			this.adverts.on("add", this.add, this)
-				.on("remove", this.remove, this);
+			this.collection = options.collection
+			this.collection.on("add", this.addItem, this)
+				.on("remove", this.removeItem, this);
 			this.$items = [];
 		},
 		render: function () {
-			this.$el.html(y4p.templates["advert-list"]());
-			console.log(this.adverts)
-			this.adverts.each(this.add, this);
+			var that = this;
+			this.$el.html(y4p.templates[this.template](this.options));
+			this.collection.each(function (model) {
+				that.addItem(model, undefined, true);
+			});
+			if (this.collection.length === 0) { this.$("tr").hide(); }
 			return this;
 		},
-		add: function (advert) {
+		addItem: function (model, options, noAnimation) {
 			var that = this,
-				$item = $(y4p.templates["advert-list-item"](advert.toJSON()));
-			this.$items[advert.id] = $item;
-			this.$(".list").append($item.fadeIn(200));
-			$item.find(".edit").click(function () {
-				that.trigger("select", advert.id);
-			}).end().find(".delete").click(function () {
-				that.adverts.remove(advert);
+				$item = $(y4p.templates[this.itemTemplate](_.extend(model.toJSON(), options))),
+				$list = this.$(".list");
+
+			this.$("tr").show();
+			if (!$list.length) { $list = this.$el; }
+			this.$items[model.id] = $item;
+			$list.append($item.fadeIn(noAnimation ? 0 : 200));
+			$item.click(function () {
+				that.trigger("select", model.id);
+			}).find(".edit").click(function () {
+				that.trigger("select", model.id);
+			}).end().find(".delete").click(function (e) {
+				if (confirm("Are you sure you wish to delete this advert?")) {
+					model.destroy();
+				}
+				e.preventDefault();
+				e.stopPropagation();
 			});
+			return this;
 		},
-		remove: function (advert) {
-			this.$items[advert.id].fadeOut(200, function () {
+		removeItem: function (model) {
+			this.$items[model.id].fadeOut(200, function () {
 				$(this).remove();
 			});
-			delete this.$items[advert.id];
+			if (this.collection.length === 0) { this.$("tr").hide(); }
+			delete this.$items[model.id];
+			return this;
+		}
+	});
+
+	y4p.pages.AdvertList = y4p.Page.extend(y4p.List.prototype).extend({
+		title: "Adverts",
+		className: "advert-list",
+		template: "advert-list",
+		itemTemplate: "advert-list-item"
+	});
+
+	y4p.pages.CampaignList = y4p.Page.extend(y4p.List.prototype).extend({
+		title: "Campaigns",
+		className: "campaign-list",
+		template: "campaign-list",
+		itemTemplate: "campaign-list-item",
+		addItem: function (model) {
+			return y4p.List.prototype.addItem.call(this, model, {
+				adverts: _.map(model.get("advert"), function (advert) {
+					return this.options.app.adverts.get(advert).toJSON()
+				})
+			});
 		}
 	});
 
 	y4p.pages.AdvertFull = y4p.Page.extend({
+		className: "advert-full",
 		events: {
-			"change #advert-overlay": "updatePreview",
-			"keyup #advert-overlay": "updatePreview",
+			"click .cancel": "cancel",
+			"click .submit": "submit"
 		},
 		initialize: function (options) {
 			this.advert = options.advert;
+			this.adverts = options.app.adverts;
 			this.title = "Advert: " + this.advert.get("title");
 		},
 		render: function () {
+			var that = this;
 			this.$el.html(y4p.templates["advert-full"](this.advert.toJSON()));
+			setTimeout(function () { that.updatePreview(); }, 100); // Erm.. HACK
+
+			this.$('#advert-file').fileupload({
+				dataType: 'json',
+				add: function (e, data) {
+					data.context = $('<p/>').text('Uploading...').appendTo(document.body);
+					data.submit();
+				},
+				done: function (e, data) {
+					that.advert.set({ url: data.result.url });
+					console.log(that.advert.get("url"))
+					console.log({ url: data.result.url })
+				},
+				progressall: function (e, data) {
+					var progress = parseInt(data.loaded / data.total * 100, 10);
+					console.log(progress)
+					$('#progress .bar').css(
+						'width',
+						progress + '%'
+					);
+				}
+			});
+
+			this.overlayEditor = ace.edit(this.$("#advert-overlay .ace-container")[0]);
+			this.overlayEditor.setTheme("ace/theme/monokai");
+			this.overlayEditor.getSession().setMode("ace/mode/html");
+
+			this.overlayEditor.getSession().on('change', function () {
+				that.updatePreview();
+			});
+
 			return this;
 		},
 		updatePreview: _.throttle(function () {
-			console.log("HJ")
-			console.log(this.$("#advert-overlay-iframe"))
-			this.$("#advert-overlay-iframe")[0].contentWindow.update(this.$("#advert-overlay").val());
-		}, 500)
-	});
-
-	y4p.pages.CampaignList = y4p.Page.extend({
-		title: "Campaigns",
-		render: function () {
-			this.$el.html(y4p.templates["campaign-list"]());
-			return this;
+			var update = this.$("#advert-overlay-iframe")[0].contentWindow.update;
+			if (update) {
+				update(this.overlayEditor.getValue());
+			}
+		}, 500),
+		submit: function (e) {
+			e.preventDefault();
+			var that = this,
+				attributes = {
+					title: this.$("#advert-title").val(),
+					type: this.$("#advert-type").val(),
+					overlay: this.overlayEditor.getValue()
+				},
+				options = {
+					success: function () {
+						that.$("form").html("Saved.");
+					},
+					error: function () {
+						that.$("form").prepend("Error saving")
+					}
+				};
+			if (this.advert.has("id")) {
+				this.advert.save(attributes, options);
+			} else {
+				this.advert.set(attributes);
+				this.adverts.create(this.advert, options);
+			}
+		},
+		cancel: function () {
+			this.trigger("return");
 		}
 	});
 
+
 	y4p.pages.CampaignFull = y4p.Page.extend({
+		className: "campaign-full",
+		events: {
+			"click .cancel": "cancel",
+			"click .submit": "submit"
+		},
 		initialize: function (options) {
 			this.campaign = options.campaign;
 			this.title = "Campaign: " + this.campaign.get("title");
 		},
 		render: function () {
-			this.$el.html(y4p.templates["campaign-full"]());
+			var that = this;
+			this.$el.html(y4p.templates["campaign-full"](_.extend({
+				allAdverts: this.options.app.adverts
+			}, this.campaign.toJSON())));
+
+			var map = this.locationMap = L.map(this.$("#campaign-locations .map")[0], {
+				center: [54.805, -3.59],
+				zoom: 5,
+				scrollWheelZoom: false
+			})
+			L.tileLayer('http://{s}.tile.cloudmade.com/1b189a705e22441c86cdb384a5bc7837/997/256/{z}/{x}/{y}.png', {
+				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+				maxZoom: 18
+			}).addTo(map);
+			setTimeout(function () {
+				that.$(".target-tabs a").eq(0).click();
+				map.invalidateSize();
+			});
+
+			var drawControl = new L.Control.Draw({
+				position: 'topright',
+				polyline: false,
+				polygon: false,
+				circle: false,
+				marker: false,
+				rectangle: {
+					shapeOptions: {
+						clickable: true,
+						color: "blue"
+					}
+				}
+			});
+			map.addControl(drawControl);
+
+			var drawnItems = new L.LayerGroup(),
+				mapRects = this.mapRects = [],
+				selectedRectangle,
+				addRectangle = function (rect) {
+					drawnItems.addLayer(rect);
+					mapRects.push(rect);
+					rect.on("mousemove", function () {
+						if (selectedRectangle) {
+							selectedRectangle.setStyle({
+								color: "blue",
+								fillColor: "blue"
+							});
+						}
+						rect.setStyle({
+							color: "red",
+							fillColor: "red"
+						});
+						selectedRectangle = rect;
+					});
+				};
+			map.on('draw:rectangle-created', function (e) {
+				addRectangle(e.rect);
+			});
+			map.addLayer(drawnItems);
+
+			_.each(this.campaign.get("targets").boundingBoxes, function (bb) {
+				console.log("J")
+				var sw = new L.LatLng(bb.minLat, bb.minLong),
+					ne = new L.LatLng(bb.maxLat, bb.maxLong),
+					rect = L.rectangle(new L.LatLngBounds(sw, ne), { color: "blue", fillColor: "blue" });
+				addRectangle(rect);
+			})
+
+			this.$(".target-tabs a").click(function (e) {
+				e.preventDefault();
+				$(this).tab('show');
+				map.invalidateSize();
+			});
+
+			var occupations = new y4p.Occupations(),
+				programmes = new y4p.Programmes(),
+				genres = new y4p.Genres();
+
+			occupations.fetch().then(function () {
+				occupations.each(function (occupation) {
+					that.$("#campaign-occupations").append('<label class="checkbox"><input type="checkbox" value="' + occupation.id + '"' +
+								(that.campaign.get("targets").occupations.indexOf(occupation.id) > -1 ? ' checked="true"' : "") + '>' + capitalize(occupation.get("name")) + '</label>');
+				});
+			});
+			programmes.fetch().then(function () {
+				programmes.each(function (programme) {
+					that.$("#campaign-programmes").append('<label class="checkbox"><input type="checkbox" value="' + programme.id + '"' +
+								(that.campaign.get("targets").programmes.indexOf(programme.id) > -1 ? ' checked="true"' : "") + '>' + capitalize(programme.get("name")) + '</label>');
+				});
+			});
+			genres.fetch().then(function () {
+				genres.each(function (genre) {
+					that.$("#campaign-genres").append('<label class="checkbox"><input type="checkbox" value="' + genre.id + '"' +
+								(that.campaign.get("targets").genres.indexOf(genre.id) > -1 ? ' checked="true"' : "") + '>' + capitalize(genre.get("name")) + '</label>');
+				});
+			});
+
+			var agesSelected = _.reduce(this.campaign.get("targets").ageRanges, function (memo, ageRange) {
+				var min = Number(ageRange.minAge),
+					max = Number(ageRange.maxAge);
+				_.times(max - min + 1, function (i) {
+					memo.push(min + i);
+				});
+				return memo;
+			}, []);
+			console.log(agesSelected)
+
+			var $bitrange = this.$("#campaign-age-ranges .bit-range"),
+				$bitmarkers = this.$("#campaign-age-ranges .bit-markers"),
+				ages = this.ages = {},
+				mouseMode = 0;
+			$(document).mouseup(function(){
+				mouseMode = 0;
+			});
+			_.times(101, function (i) {
+				console.log(i, agesSelected.indexOf(i) > -1)
+				ages[i] = agesSelected.indexOf(i) > -1;
+				var $bitbox = $('<div class="bit-box"></div>')
+					.css({ left: i + "%", zIndex: i })
+					.toggleClass("selected", ages[i]);
+				$bitrange.append($bitbox);
+
+				if (i % 10 === 0) {
+					var $marker = $('<div class="bit-marker">' + i + '</div>').css({ left: i + "%" });
+					$bitmarkers.append($marker);
+					$bitbox.addClass("marker");
+				}
+
+				$bitbox.mousedown(function () {
+					mouseMode = ages[i] ? 2 : 1;
+				}).mousemove(function (e) {
+					if (mouseMode === 0) { return; }
+					ages[i] = mouseMode === 1;
+					$bitbox.toggleClass("selected", ages[i]);
+					e.preventDefault();
+					return false;
+				});
+			});
+
 			return this;
+		},
+		submit: function (e) {
+			var that = this,
+				attributes = {
+					title: this.$("#campaign-title").val(),
+					startDate: this.$("#campaign-starts").val(),
+					endDate: this.$("#campaign-ends").val(),
+					adverts: _.map(this.$("#campaign-advert :checked"), function (el) {
+						return Number($(el).val());
+					}),
+					targets: {
+						genders: _.map(this.$("#campaign-genders :checked"), function (el) {
+							return $(el).val();
+						}),
+						schedules: _.map(this.$("#campaign-schedules :checked"), function (el) {
+							return $(el).val();
+						}),
+						ageRanges: _.chain(that.ages).reduce(function (memo, v, age) {
+							if (v) { memo.push(age); }
+							return memo;
+						}, []).sort().reduce(function (memo, _age) {
+							var age = Number(_age),
+								last = memo[memo.length - 1];
+							if (!last || last.maxAge !== age - 1) {
+								memo.push({ minAge: age, maxAge: age });
+							} else {
+								last.maxAge = age;
+							}
+							return memo;
+						}, []).value(),
+						occupations: _.map(this.$("#campaign-occupations :checked"), function (el) {
+							return $(el).val();
+						}),
+						boundingBoxes: _.map(this.mapRects, function (rect) {
+							var bounds = rect.getBounds(),
+								se = bounds.getSouthEast(),
+								nw = bounds.getNorthWest();
+							return {
+								maxLat: nw.lat, // north
+								maxLong: se.lng, // east
+								minLat: se.lat, // south
+								minLong: nw.lng // west
+							};
+						}),
+						genres: _.map(this.$("#campaign-genres :checked"), function (el) {
+							return $(el).val();
+						}),
+						programmes: _.map(this.$("#campaign-programmes :checked"), function (el) {
+							return $(el).val();
+						}),
+						times: []
+					}
+				},
+				options = {
+					success: function () {
+						that.$(".message").show().html('<div class="alert alert-success">Saved.</div>');
+						setTimeout(function () {
+							that.$(".message").fadeOut();
+						}, 2000);
+					},
+					error: function () {
+						that.$(".message").show().html('<div class="alert alert-error">Error saving</div>')
+						setTimeout(function () {
+							that.$(".message").fadeOut();
+						}, 2000);
+					}
+				};
+			if (this.campaign.has("id")) {
+				this.campaign.save(attributes, options);
+			} else {
+				this.campaign.set(attributes);
+				this.campaign.create(this.campaign, options);
+			}
+		},
+		cancel: function () {
+			this.trigger("return");
 		}
 	});
 
 	y4p.OverlayApp = Backbone.View.extend({
 		initialize: function () {
-			this.adverts = new y4p.Adverts(sample.adverts);
+			this.adverts = new y4p.Adverts();
+			//this.adverts.fetch();
 		},
 		render: function () {
 			return this;
 		},
 		start: function () {
 			var advert = this.adverts.get(Number(window.location.hash.substr(1)));
-			$("body").html(advert.get("overlay"));
+			if (advert) {
+				$("body").html(advert.get("overlay"));
+			}
 			window.update = function (html) {
+				console.log("hj", $("body"), html)
 				$("body").html(html);
 			}
 			return this;
