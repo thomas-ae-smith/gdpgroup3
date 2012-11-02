@@ -80,16 +80,16 @@ def get_campaign_pool(uid, pid, when=None):
 			"`u`.`long`, `p`.`id`, `p`.`channel`, `p`.`genre`, `p`.`live`, "
 			"`c`.`schedule`, `c`.`gender`, `c_a`.`minAge`, `c_a`.`maxAge`, "
 			"`c_b`.`minLong`, `c_b`.`maxLong`, `c_b`.`minLat`, `c_b`.`maxLat`, "
-			"`c_g`.`genre`, `c_o`.`occupation`, `c_p`.`programme`, "
+			"`c_g`.`genres_id`, `c_o`.`occupations_id`, `c_p`.`programmes_id`, "
 			"`c_t`.`dayOfWeek`, `c_t`.`startTime`, `c_t`.`endTime`, "
 			"`c`.`id`, `c`.`nicheness`"
 		"FROM `users` AS u, `programmes` as p, `campaigns` as c "
-		"LEFT JOIN `agerange`     AS c_a ON `c`.`id`=`c_a`.`campaign` "
-		"LEFT JOIN `boundingbox` AS c_b ON `c`.`id`=`c_b`.`campaign` "
-		"LEFT JOIN `campaigns_genres`        AS c_g ON `c`.`id`=`c_g`.`campaign` "
-		"LEFT JOIN `campaigns_occupations`   AS c_o ON `c`.`id`=`c_o`.`campaign` "
-		"LEFT JOIN `campaigns_programmes`    AS c_p ON `c`.`id`=`c_p`.`campaign` "
-		"LEFT JOIN `time`         AS c_t ON `c`.`id`=`c_t`.`campaign` "
+		"LEFT JOIN `agerange`     AS c_a ON `c`.`id`=`c_a`.`campaigns_id` "
+		"LEFT JOIN `boundingbox` AS c_b ON `c`.`id`=`c_b`.`campaigns_id` "
+		"LEFT JOIN `campaigns_genres`        AS c_g ON `c`.`id`=`c_g`.`campaigns_id` "
+		"LEFT JOIN `campaigns_occupations`   AS c_o ON `c`.`id`=`c_o`.`campaigns_id` "
+		"LEFT JOIN `campaigns_programmes`    AS c_p ON `c`.`id`=`c_p`.`campaigns_id` "
+		"LEFT JOIN `time`         AS c_t ON `c`.`id`=`c_t`.`campaigns_id` "
 		"WHERE `u`.`id` = {id} "
 		"AND `c`.`startDate` <= {when} "
 		"AND {when} <= `c`.`endDate`").format(id=uid, when=when)
@@ -171,7 +171,7 @@ def get_upcoming_programmes(startTime=time(), lookahead=300):
 	return channel_vectors
 
 
-def get_programme(pid, fields=[]):
+def get_programme(pid, fields=()):
 	"""Returns a tuple of the values of the given fields for a programme with
 	the given id. If no fields are specified, all are returned."""
 	query = (	'SELECT '+_field_string(fields)+' '
@@ -180,24 +180,19 @@ def get_programme(pid, fields=[]):
 
 	response = read_db(query)
 
-	# TODO: this doesn't return arbitrary fields.
-	results = response[0][0]
+	return response[0]
 
-	return results
-
-# TODO: Properly return entire list, and modify ALL files which use this (urgh...)
-def get_user(userid, fields=[]):
+def get_user(userid, fields=()):
 	"""Returns a tuple of the values of the given fields for a user with
 	the given id. If no fields are specified, all are returned."""
+
 	query = (	'SELECT '+_field_string(fields)+' '
 				'FROM `users` '
 				'WHERE `id`='+str(userid))
 	response = read_db(query)
-	cursor.close()
-	conn.close()
-	return response
+	return response[0]
 
-def set_user(userid, fields=[], vals=[]):
+def set_user(userid, fields=(), vals=()):
 	assert len(fields) == len(vals)
 
 	changes = ', '.join("{}='{}'".format(e[0], e[1]) for e in zip(fields, vals))
