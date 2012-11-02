@@ -172,7 +172,8 @@ body {
 	text-transform: capitalize;
 }
 
-.start-screen .logon-inner form input {
+.start-screen .logon-inner form input,
+.start-screen .logon-inner form select {
 	width: 100%;
 	padding: 15px;
 }

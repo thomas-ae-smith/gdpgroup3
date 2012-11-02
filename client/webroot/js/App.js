@@ -170,7 +170,17 @@
 
 	y4.Register = Backbone.View.extend({
 
-		regFields: ["name","gender","dob","email"],
+		regFields: ["name","gender","dob","email","occupation"],
+		occupations: ["other","academic/educator","artist","clerical/admin","student","customer service","doctor/health care","executive/managerial",
+					  "farmer","homemaker","at school","lawyer","programmer","retired","sales/marketing","scientist","self-employed","technician/engineer",
+					  "tradesman/craftsman","unemployed","writer"],
+		events: {
+			"change .register-form input": "changeField",
+			"change .register-form select": "changeField",
+			"click .submit-registration": "submitReg"
+		},
+
+		className: "logon-outer",
 
 		initialize: function() {
 			var that = this;
@@ -192,9 +202,23 @@
 					return true;
 				}
 			});
-			this.$el.html(registerTemplate({user: this.user.toJSON(), req: toRequest, fields: this.regFields}));			
+			this.$el.html(registerTemplate({user: this.user.toJSON(), req: toRequest, fields: this.regFields, occupations: this.occupations}));			
 
 			return this;
+		},
+
+		changeField: function(e) {
+			var target = $(e.currentTarget);
+			this.user.set(target.attr('name'),target.val());
+		},
+
+		submitReg: function() {
+			var that = this;
+			this.user.save({success: function() {
+				y4.app.start();	
+			}, error: function(model, response) {
+				that.$el.prepend(response);
+			}});
 		}
 	});
 
@@ -242,14 +266,14 @@
 		retrieveUser: function() {
 			var that = this;
 			FB.api('/me', function(response) {
-				that.userModel = new y4.UserModel({id: response.id});
+				that.userModel = new y4.UserModel({id: 'fb-'+response.id});
 				that.userCollection.add(that.userModel);
-				that.userModel.fetch({data:{type:"fb"}}).then(function() {
+				that.userModel.fetch().then(function() {
 					if (that.userModel.get("registered")) {
 						y4.app.start();
 					} else {
 						var registerView = new y4.Register({user: that.userModel});
-						that.$el.find(".logon-inner").html(registerView.render().el);
+						$(".logo-frame").html(registerView.render().el);
 					}
 					y4.app.hideSpinner();
 				});

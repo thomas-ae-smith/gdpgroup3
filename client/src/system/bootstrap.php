@@ -18,7 +18,8 @@ $app = new \Slim\Slim();
 
 $app->add(new \Slim\Middleware\ContentTypes());
 
-foreach (glob(__DIR__ . "/../resources/*.php") as $filename) {
+$paths = array_merge(glob(__DIR__ . "/../models/*.php"), glob(__DIR__ . "/../resources/*.php"));
+foreach ($paths as $filename) {
     include $filename;
 }
 
