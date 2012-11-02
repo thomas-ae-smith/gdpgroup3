@@ -78,6 +78,15 @@ $app->post('/users(/)', function() use ($app) {
 $app->get('/users/:id(/)', function($id) use ($app) {
 	global $facebook;
 	
+	$active_session = false;
+	if ($id == 'me' && isset($_SESSION['user']['id'])) {
+		$id = $_SESSION['user']['id'];
+		$active_session = true;
+	} else {
+		badRequest();
+		exit;
+	}
+
 	$type = getIdType($id);
 	$id = str_replace('fb-', '', $id);
 
@@ -125,7 +134,9 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 		}
 
 	} else if ($type == 'local') {
-		output_json("local");
+		if ($active_session) {
+			output_json($_SESSION['user']);
+		}
 	}
 });
 

@@ -92,7 +92,7 @@ $app->put('/campaigns/:id', function ($id) use ($app) {
 	output_json(getCampaign($campaign));
 });
 
-$app->post('/campaigns(/)', function () {
+$app->post('/campaigns(/)', function () use ($app) {
         $req = $app->request()->getBody();
         $campaign = R::dispense('campaigns');
         setCampaign($campaign, $req);

@@ -226,7 +226,7 @@
 		submitReg: function() {
 			var that = this;
 			this.user.save(undefined, {success: function() {
-				y4.login.userModel = that.user;
+				y4.app.login.userModel = that.user;
 				y4.app.start();	
 			}, error: function(model, response) {
 				that.$el.prepend(response);
@@ -245,19 +245,25 @@
 			_.bindAll(this, 'logout');
 			this.userCollection = new y4.UserCollection();
 			var that = this;
-			FB.getLoginStatus(function(response) {
-				if (response.status === 'connected') {
-					that.retrieveUser();
-				} else if (response.status === 'not_authorized') {
-					that.facebookLoggedIn = false;
-					y4.app.hideSpinner();
-					that.renderLogin();
-				} else {
-					that.facebookLoggedIn = false;
-					y4.app.hideSpinner();
-					that.renderLogin();
-				}
-			});
+			this.userModel = new y4.UserModel({id: 'me'});
+			this.userCollection.add(that.userModel);
+			this.userModel.fetch({success: function() {
+				y4.app.start();
+			}, error: function() {
+				FB.getLoginStatus(function(response) {
+					if (response.status === 'connected') {
+						that.retrieveUser();
+					} else if (response.status === 'not_authorized') {
+						that.facebookLoggedIn = false;
+						y4.app.hideSpinner();
+						that.renderLogin();
+					} else {
+						that.facebookLoggedIn = false;
+						y4.app.hideSpinner();
+						that.renderLogin();
+					}
+				});	
+			}});
 		},
 
 		facebookLogin: function() {
