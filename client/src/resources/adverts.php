@@ -10,16 +10,15 @@ $app->get('/adverts(/)', function() use ($app) {
 $app->get('/adverts/:id', function ($id) use ($app) {
 	$advert = R::load('adverts', $id);
 	if (!$advert->id) {
-                notFound('Could not find advert with that ID.');
-        } else {
-                output_json($advert->export());
-        }
-
+		notFound('Could not find advert with that ID.');
+	} else {
+		output_json($advert->export());
+	}
 });
 
 $app->put('/adverts/:id', function ($id) use ($app) {
 	$req = $app->request()->getBody();
-        $advert = R::load('adverts', $id);
+	$advert = R::load('adverts', $id);
 	setAdvert($advert, $req);
 });
 
