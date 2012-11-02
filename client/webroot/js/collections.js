@@ -57,13 +57,16 @@
 		}
 	});
 
+	y4.OccupationModel = Backbone.Model.extend({});
+
 	y4.UserModel = Backbone.Model.extend({
 		defaults: {
 			facebookId: null,
 			name: null,
 			email: null,
 			gender: null,
-			dob: null
+			dob: null,
+			occupation: null
 		}
 	});	
 
@@ -77,6 +80,11 @@
 	y4.UserCollection = Backbone.Collection.extend({
 		url: '/api/users/',
 		model: y4.UserModel
+	});
+
+	y4.OccupationCollection = Backbone.Collection.extend({
+		url: "/api/occupations/",
+		model: y4.OccupationModel
 	});
 
 	y4.AdvertCollection = Backbone.Collection.extend({

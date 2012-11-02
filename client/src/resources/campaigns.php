@@ -3,9 +3,10 @@
 $targetTables = array(
 	'ageRanges' => array('name' => 'ownAgerange', 'fields' => array('minAge', 'maxAge')),
 	'boundingBoxes' => array('name' => 'ownBoundingbox', 'fields' => array('minLat', 'minLong', 'maxLat', 'maxLong')),
-	'genres' => array('name' => 'sharedGenres', 'fields' => array('genre')),
+	'times' => array('name' => 'ownTime', 'fields' => array('dayOfWeek', 'startTime', 'endTime')),
+	'genres' => array('name' => 'sharedGenres', 'ids' => true),
 	'occupations' => array('name' => 'sharedOccupations', 'ids' => true),
-	'programmes' => array('name' => 'sharedProgrammes', 'fields' => array('programme'))
+	'programmes' => array('name' => 'sharedProgrammes', 'ids' => true)
 );
 
 function getTargets(&$bean, $type) {
@@ -91,7 +92,7 @@ $app->put('/campaigns/:id', function ($id) use ($app) {
 	output_json(getCampaign($campaign));
 });
 
-$app->post('/campaigns(/)', function () {
+$app->post('/campaigns(/)', function () use ($app) {
         $req = $app->request()->getBody();
         $campaign = R::dispense('campaigns');
         setCampaign($campaign, $req);
@@ -144,7 +145,7 @@ function setCampaign($campaign, $req) {
                 $maxLat = $r['maxLat'];
                 $minLong = $r['minLong'];
                 $maxLong = $r['maxLong'];
-		$bean = R::findOne('boundingbox', ' minLat = ?, maxLat = ?, minLong = ?, maxLong = ? ', array($minLat, $maxLat, $minLong, $maxLong));
+		$bean = R::findOne('boundingbox', ' minLat = ? AND maxLat = ? AND minLong = ? AND maxLong = ? ', array($minLat, $maxLat, $minLong, $maxLong));
 		if (!$bean) {
       	   		$bean = R::dispense('boundingbox');
                 	$bean->minLat = $r['minLat'];
@@ -159,7 +160,7 @@ function setCampaign($campaign, $req) {
                 $dayOfWeek = $r['dayOfWeek'];
 		$startTime = $r['startTime'];
                 $endTime = $r['endTime'];
-		$bean = R::findOne('time', ' dayOfWeek = ?, startTime = ?, endTime = ? ', array($dayOfWeek, $startTime, $endTime));
+		$bean = R::findOne('time', ' dayOfWeek = ? AND startTime = ? AND endTime = ? ', array($dayOfWeek, $startTime, $endTime));
 		if (!$bean) {
 	                $bean = R::dispense('time');
 	                $bean->dayOfWeek = $r['dayOfWeek'];
@@ -167,7 +168,7 @@ function setCampaign($campaign, $req) {
 	                $bean->endTime = $r['endTime'];
 		}
                 return $bean;
-        }, ifsetor($req['targets']['time'], array()));
+        }, ifsetor($req['targets']['times'], array()));
 
 	$campaign->sharedGenres = array_map(function ($id) {
 		return R::load('genres', $id);

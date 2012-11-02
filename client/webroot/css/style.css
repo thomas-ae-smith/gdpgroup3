@@ -177,6 +177,10 @@ body {
 	padding: 15px;
 }
 
+.start-screen .logon-inner form select {
+	width: 100%;
+}
+
 .start-screen .logon-inner .register-form {
 	margin-top: 15px;
 }

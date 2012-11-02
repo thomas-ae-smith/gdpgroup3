@@ -59,20 +59,28 @@
 			</div>
 		</script>
 		<script id="register-template" type="text/template">
-			We require more information from you before you can start using your4.tv.
-			<form class="register-form form-horizontal">
-			<% _.each(user, function(element, key) { %>
-				<% if (_.contains(fields, key)) { %>
-				<div class="control-group">
-					<label class="control-label" for="<%= key %>"><%= key %></label>
-					<div class="controls">
-						<input type="text" id="<%= key %>" value="<%= element %>" <%= _.contains(req, key) ? '' : ' disabled' %>>
-					</div>
-				</div>	
-				<% } %>
-			<% }); %>
-			<button class="btn btn-large btn-primary submit-registration" type="button">Register</button> 
-			</form>
+			<div class="logon-inner">
+				We require more information from you before you can start using your4.tv.
+				<form class="register-form form-horizontal">
+				<% _.each(fields, function(field) { %>
+					<div class="control-group">
+						<label class="control-label" for="<%= field %>"><%= field %></label>
+						<div class="controls">
+							<% if (field == "occupation") { %>
+							<select id="<%= field %>" name="<%= field %>" <%= _.contains(req, field) ? '' : ' disabled' %>>
+								<% _.each(occupations, function(occupation) { %>
+									<option value="occupation"><%= occupation %></option>
+								<% }); %>
+							</select>
+							<% } else { %>
+							<input type="text" id="<%= field %>" name="<%= field %>" value="<%= user[field] %>" <%= _.contains(req, field) ? '' : ' disabled' %>>
+							<% } %>
+						</div>
+					</div>	
+				<% }); %>
+					<button class="btn btn-large btn-primary submit-registration" type="button">Register</button> 
+				</form>
+			</div>
 		</script>
 		<script id="html-video-template" type="text/template">
 			<video width="100%" height="100%" preload="auto">

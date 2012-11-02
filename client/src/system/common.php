@@ -34,6 +34,10 @@ function noContent() {
 	header('HTTP/1.1 204 No Content', true, 204);
 }
 
+function forbidden() {
+	header('HTTP/1.1 403 Forbidden', true, 403);
+}
+
 function output_json($content) {
 	header("Content-Type: application/json");
 	echo json_format(json_encode($content));

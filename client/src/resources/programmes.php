@@ -7,6 +7,6 @@ $app->get('/programmes(/)', function() use ($app) {
 			'id' => $programme->id,
 			'name' => $programme->name
 		);
-	}, $programmes));
+	}, array_values($programmes)));
 	//output_json(R::exportAll($programmes));
 });
