@@ -9,7 +9,7 @@ from datastore import interface
 DEBUG = False
 VERBOSE = False
 
-def add_programme_blacklist(userId, programmeId):
+def add_blacklist_programme(userId, programmeId):
 	interface.add_programme_blacklist(userId, programmeId)
 
 def _init_argparse():
@@ -31,4 +31,4 @@ if __name__ == "__main__":
 	DEBUG = bool(args.debug)
 	VERBOSE = bool(args.verbose)
 
-	add_programme_blacklist(args.userid, args.programmeid)
+	add_blacklist_programme(args.userid, args.programmeid)

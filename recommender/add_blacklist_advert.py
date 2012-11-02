@@ -31,4 +31,4 @@ if __name__ == "__main__":
 	DEBUG = bool(args.debug)
 	VERBOSE = bool(args.verbose)
 
-	add_programme_blacklist(args.userid, args.advertid)
+	add_blacklist_advert(args.userid, args.advertid)
