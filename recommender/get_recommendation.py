@@ -65,8 +65,10 @@ def get_recommendation(userId, startTime=None, lookahead=300):
 		startTime = time.time()
 
 	user_vector = vector.string_to_vector(interface.get_user(userId, ['vector'])[0])
-	upcoming_programmes = interface.get_upcoming_programmes(
-							startTime=startTime, lookahead=lookahead)
+	upcoming_programmes = interface.get_programme_pool(
+							userId,
+							startTime=startTime,
+							lookahead=lookahead)
 
 	if VERBOSE:
 		total_programmes = len(upcoming_programmes)

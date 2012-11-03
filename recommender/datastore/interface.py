@@ -155,15 +155,20 @@ def get_ad(campaignId):
 	return random.choice(campaigns)
 
 
-def get_upcoming_programmes(startTime=time(), lookahead=300):
-	query = (	"SELECT `id`, `vector` "
+def get_programme_pool(userId, startTime=time(), lookahead=300):
+	query = (	"SELECT `programmes`.`id`, `programmes`.`vector` "
 				"FROM `programmes` "
 				"WHERE `programmes`.`name` != 'Off air' "
-				"AND `start` "
-				"BETWEEN {start_time} "
-				"AND {end_time}".format(
-					start_time=int(startTime),
-					end_time=int(startTime + lookahead)))
+				"AND `start` BETWEEN {start_time} AND {end_time} "
+				"AND `programmes`.`id` NOT IN ("
+					"SELECT `programme` "
+					"FROM `blacklistProgramme` "
+					"WHERE `blacklistProgramme`.`user` = {uid}"
+				")".format(uid=userId,
+						start_time=int(startTime),
+						end_time=int(startTime + lookahead)))
+
+	print(query)
 
 	response = read_db(query)
 
