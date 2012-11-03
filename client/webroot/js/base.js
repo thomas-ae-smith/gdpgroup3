@@ -9,7 +9,7 @@
 		cacheTemplates: function () {
 			_.each($("#templates > script"), function (el) {
 				var $el = $(el);
-				y4p.templates[$el.attr("id").replace("-template", "")] = _.template($el.html());
+				y4.templates[$el.attr("id").replace("-template", "")] = _.template($el.html());
 			});
 		},
 	};

@@ -17,3 +17,12 @@ function pad (number, size) {
 	while (number.length < size) { number = "0" + number; }
 	return number;
 }
+
+
+function now () {
+    return (new Date()).getTime();
+}
+
+function error (msg) {
+    console.error(msg)
+}

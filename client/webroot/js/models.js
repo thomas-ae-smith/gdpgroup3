@@ -113,7 +113,7 @@
 			var that = this;
 			this.targetCollections = {};
 			_.each(this.get("targets"), function (targets, type) {
-				that.targetCollections[type] = new y4p.CampaignTargets(targets, { /*url: that.url() + "/targets/" + type + "/"*/ });
+				that.targetCollections[type] = new y4.CampaignTargets(targets, { /*url: that.url() + "/targets/" + type + "/"*/ });
 			});
 		}
 	});

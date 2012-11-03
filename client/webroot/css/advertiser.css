@@ -1,0 +1,125 @@
+.container { margin-top: 20px; width: 900px; }
+		.live-preview {
+			position: relative;
+			width: 100%;
+			height: 250px;
+		}
+		.live-preview .video {
+			position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+			z-index: 1;
+			background: black;
+		}
+		.live-preview .overlay {
+			position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+			z-index: 2;
+		}
+		.live-preview .overlay iframe {
+			border: 0;
+		}
+		.table td {
+			vertical-align: middle;
+		}
+		.footer {
+			color: #999;
+			font-size: 11px;
+			padding-top: 40px;
+		}
+		.thumbnail-bg {
+			position: relative;
+			width: 120px;
+			height: 68px;
+			background: black;
+			line-height: 68px;
+			overflow: hidden;
+		}
+		.thumbnail-bg .icon.still { background: #33CCCC; }
+		.thumbnail-bg .icon.video { background: #FF4040; }
+		.thumbnail-bg .icon {
+			position: absolute;
+			bottom: 2px;
+			right: 2px;
+			background: #fff;
+			padding: 0 1px;
+			line-height: 18px;
+			opacity: 0.8;
+			border-radius: 3px;
+		}
+		.toolbar {
+			margin-top: -50px;
+			margin-bottom: 40px;
+			text-align: right;
+		}
+		h1.title {
+			border-bottom: 1px solid #DDD;
+			padding-bottom: 5px;
+		}
+		.advert-list tr {
+			cursor: pointer;
+		}
+		.advert-list tr:hover td {
+			background-color: #DEE2E2 !important;
+		}
+		.advert-full #advert-overlay {
+			position: relative;
+			width: 100%;
+			height: 400px;
+		}
+		.ace-container {
+			position: absolute;
+			top: 0; left: 0; right: 0; bottom: 0;
+		}
+		.ace-monokai .ace_marker-layer .ace_active_line {
+			background: rgba(255, 255, 255, 0.02) !important;
+		}
+		.map {
+			height: 480px;
+		}
+		.list {
+			max-height: 390px;
+			overflow: auto;
+		}
+		.bit-range, .bit-range .bit-box {
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		.bit-range {
+			position: relative;
+			height: 20px;
+			width: 100%;
+			overflow: hidden;
+		}
+		.bit-range .bit-box {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 20px;
+			background: #ccc;
+		}
+		.bit-box.marker {
+			border-left: 1px solid white;
+		}
+		.bit-box.marker.selected {
+			border-left: 1px solid #ff6666;
+		}
+
+		.bit-range .bit-box.selected {
+			background: red;
+		}
+		.bit-markers {
+			position: relative;
+			height: 20px;
+			margin-top: 4px;
+			text-align: center;
+		}
+		.bit-markers .bit-marker {
+			position: absolute;
+			top: 0;
+			font-size: 12px;/*
+			-webkit-transform: rotate(-90deg);
+			-moz-transform: rotate(-90deg);*/
+			margin-left: -7px;
+		}

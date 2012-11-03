@@ -40,13 +40,13 @@
 			//	that.personalChannel.start();
 			//});
 
-			FB.init({
+			/*FB.init({
 				appId      : '424893924242103', // App ID from the App Dashboard
 				channelUrl : '//'+window.location.hostname+'/channel.php', // Channel File for x-domain communication
 				status     : true, // check the login status upon init?
 				cookie     : true, // set sessions cookies to allow your server to access the session?
 				xfbml      : true  // parse XFBML tags on this page?
-			});
+			});*/
 
 			y4.router = new Router();
 			// Wait until App has initialised before starting

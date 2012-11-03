@@ -6,7 +6,7 @@
 $requires = array(
 	'all' => array(
 		'styles' => array(),
-		'scripts' => array('lib/jquery', 'lib/underscore.js', 'lib/backbone.js', 'js/base', 'js/models.js')
+		'scripts' => array('js/base', 'js/utils.js', 'js/language.js', 'lib/jquery', 'lib/underscore.js', 'lib/backbone.js', 'js/models.js')
 	),
 	'your4' => array(
 		'styles' => array('css/bootstrap.min.css', 'css/font-awesome.css', 'css/style.css'),
@@ -15,19 +15,21 @@ $requires = array(
 			'js/your4/auth-views.js')
 	),
 	'advertiser' => array(
-		'styles' => array('css/bootstrap.min.css'),
-		'scripts' => array('js/apps/Advertiser')
+		'styles' => array('css/advertiser.css', 'css/bootstrap.min.css', 'lib/leaflet.css', 'lib/leaflet.draw.css'),
+		'scripts' => array('js/advertiser/App', 'http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js',
+			'lib/bootstrap.js', 'lib/leaflet.js', 'lib/leaflet.draw.js', 'lib/flowplayer.min.js',
+			'lib/jquery.ui.widget.js', 'lib/jquery.iframe-transport.js', 'lib/jquery.fileupload.js')
 	),
 	'overlay' => array(
 		'styles' => array(),
-		'scripts' => array('js/apps/Overlay')
+		'scripts' => array('js/overlay/App')
 	)
 );
 
 $uri = $_SERVER['REQUEST_URI'];
-if (strpos($uri, 'publisher.html') !== false) {
+if (strpos($uri, 'publisher.php') !== false) {
 	$site = 'advertiser';
-} else if (strpos($uri, 'overlay.html') !== false) {
+} else if (strpos($uri, 'overlay.php') !== false) {
 	$site = 'overlay';
 } else {
 	$site = 'your4';
@@ -57,15 +59,17 @@ $scripts = array_merge($requires['all']['scripts'], $requires[$site]['scripts'])
 	?>
 	<script type="text/javascript">
 		$(document).ready(function () {
+			y4.cacheTemplates();
 			// Start the app
 			y4.app = new y4.App();
+			$("#container").html("").append(y4.app.start().el);
 		});
 	</script>
 </head>
 <body>
 	<div id="fb-root"></div>
 	<div id="container"><div class="loading">Loading...</div></div>
-	<div class="templates">
+	<div id="templates">
 		<?php include('js/templates.html'); ?>
 	</div>
 </body>
