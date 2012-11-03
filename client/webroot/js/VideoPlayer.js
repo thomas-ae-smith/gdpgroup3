@@ -2,7 +2,7 @@
 (function(y4) {
 	"use strict";
 
-	y4.VideoPlayer = Backbone.View.extend({
+	y4.VideoPlayerView = Backbone.View.extend({
 		className: "video-container",
 		initialize: function (options) {
 			this.options = _.extend({
@@ -11,7 +11,7 @@
 		}
 	});
 
-	y4.HtmlVideoPlayer = y4.VideoPlayer.extend({
+	y4.HtmlVideoPlayerView = y4.VideoPlayer.extend({
 		play: function () { this.videoEl.play(); },
 		stop: function() { this.videoEl.pause(); },
 		setUrl: function (service, url) {
@@ -24,7 +24,7 @@
 			return this;
 		},
 		render: function () {
-			var that = this, 
+			var that = this,
 			template = _.template($("#html-video-template").html());
 
 			this.$el.html(template(this.options));
@@ -35,7 +35,7 @@
 		}
 	});
 
-	y4.FlashVideoPlayer = y4.VideoPlayer.extend({
+	y4.FlashVideoPlayerView = y4.VideoPlayer.extend({
 		play: function () { console.log("TODO") },
 		stop: function () { console.log("TODO") },
 		setUrl: function (service, url) {

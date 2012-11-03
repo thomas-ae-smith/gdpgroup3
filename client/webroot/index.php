@@ -6,12 +6,13 @@
 $requires = array(
 	'all' => array(
 		'styles' => array(),
-		'scripts' => array('lib/jquery', 'lib/underscore.js', 'lib/backbone.js', 'js/base')
+		'scripts' => array('lib/jquery', 'lib/underscore.js', 'lib/backbone.js', 'js/base', 'js/models.js')
 	),
 	'your4' => array(
 		'styles' => array('css/bootstrap.min.css', 'css/font-awesome.css', 'css/style.css'),
 		'scripts' => array('lib/flowplayer.min.js', 'lib/bootstrap.js', 'lib/spin.min.js',
-			'http://connect.facebook.net/en_US/all.js', 'js/apps/Your4')
+			'http://connect.facebook.net/en_US/all.js', 'js/your4/App.js',
+			'js/your4/auth-views.js')
 	),
 	'advertiser' => array(
 		'styles' => array('css/bootstrap.min.css'),
@@ -23,8 +24,6 @@ $requires = array(
 	)
 );
 
-$htmlVideoBrowsers = array('iPad');
-
 $uri = $_SERVER['REQUEST_URI'];
 if (strpos($uri, 'publisher.html') !== false) {
 	$site = 'advertiser';
@@ -34,8 +33,8 @@ if (strpos($uri, 'publisher.html') !== false) {
 	$site = 'your4';
 }
 
-$styles = $requires['all']['styles'] + $requires[$site]['styles'];
-$scripts = $requires['all']['scripts'] + $requires[$site]['scripts'];
+$styles = array_merge($requires['all']['styles'], $requires[$site]['styles']);
+$scripts = array_merge($requires['all']['scripts'], $requires[$site]['scripts']);
 
 ?><!DOCTYPE html>
 <html>
@@ -57,8 +56,10 @@ $scripts = $requires['all']['scripts'] + $requires[$site]['scripts'];
 		}
 	?>
 	<script type="text/javascript">
-		// Start the app
-		new y4.App();
+		$(document).ready(function () {
+			// Start the app
+			y4.app = new y4.App();
+		});
 	</script>
 </head>
 <body>

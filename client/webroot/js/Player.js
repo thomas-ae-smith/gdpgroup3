@@ -5,10 +5,10 @@
 	y4.Player = Backbone.View.extend({
 		className: "player",
 		initialize: function (options) {
-			this.videoLayer = new y4.VideoLayer({ server: options.server });
-			this.blackLayer = new y4.BlackLayer();
-			this.stillLayer = new y4.StillLayer();
-			this.overlayLayer = new y4.OverlayLayer();
+			this.videoLayer = new y4.VideoLayerView({ server: options.server });
+			this.blackLayer = new y4.BlackLayerView();
+			this.stillLayer = new y4.StillLayerView();
+			this.overlayLayer = new y4.OverlayLayerView();
 		},
 		render: function () {
 			this.$el.html("").append(
@@ -56,12 +56,12 @@
 		},
 	});
 
-	y4.VideoLayer = Backbone.View.extend({
+	y4.VideoLayerView = Backbone.View.extend({
 		className: "video-layer",
 		zIndex: 1,
 		initialize: function (options) {
 			var VideoPlayer = y4.useHtmlVideo ? y4.HtmlVideoPlayer : y4.FlashVideoPlayer;
-			this.video = new VideoPlayer({ server: options.server });
+			this.video = new VideoPlayerView({ server: options.server });
 		},
 		mute: function () {
 			console.log("TODO");
@@ -82,7 +82,7 @@
 		}
 	});
 
-	y4.BlackLayer = Backbone.View.extend({
+	y4.BlackLayerView = Backbone.View.extend({
 		className: "black-layer",
 		zIndex: 4,
 		show: function () {
@@ -99,7 +99,7 @@
 		}
 	});
 
-	y4.StillLayer = y4.BlackLayer.extend({
+	y4.StillLayerView = y4.BlackLayer.extend({
 		className: "still-layer",
 		zIndex: 2,
 		set: function (scene) {
@@ -108,13 +108,13 @@
 		}
 	});
 
-	y4.OverlayLayer = Backbone.View.extend({
+	y4.OverlayLayerView = Backbone.View.extend({
 		className: "overlay-layer",
 		zIndex: 3,
 		set: function (overlay) {
 			return this;
 		}
 	});
-	
+
 
 }(this.y4));
