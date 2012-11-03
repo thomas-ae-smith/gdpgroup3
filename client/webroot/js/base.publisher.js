@@ -1,23 +1,3 @@
-function htmlEscape(str) {
-    return String(str)
-            .replace(/&/g, '&amp;')
-            .replace(/"/g, '&quot;')
-            .replace(/'/g, '&#39;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;');
-}
-
-function capitalize(str) {
-    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-}
-
-// Prefix 0's to a number
-function pad (number, size) {
-	number = String(number);
-	while (number.length < size) { number = "0" + number; }
-	return number;
-}
-
 (function (root) {
 	"use strict";
 
@@ -73,52 +53,7 @@ function pad (number, size) {
 
 	var nameComparator = function (model) { return model.get("name").replace(/^the /i, ""); };
 
-	y4p.Occupations = Backbone.Collection.extend({ url: "http://www.your4.tv/api/occupations/", comparator: nameComparator });
-	y4p.Programmes = Backbone.Collection.extend({ url: "http://www.your4.tv/api/programmes/", comparator: nameComparator });
-	y4p.Genres = Backbone.Collection.extend({ url: "http://www.your4.tv/api/genres/", comparator: nameComparator });
 
-	y4p.Advert = Backbone.Model.extend({
-		defaults: { title: "", type: "", adverts: [], overlay: "" }
-	});
-	y4p.Adverts = Backbone.Collection.extend({
-		model: y4p.Advert,
-		url: "http://www.your4.tv/api/adverts/"
-	});
-	y4p.Campaign = Backbone.Model.extend({
-		defaults: {
-			title: "",
-			startDate: 0,
-			endDate: 0,
-			adverts: [], // FIXME: WRONG
-			targets: { // FIXME: WRONG!!!
-				ageRanges: [],
-				boundingBoxes: [],
-				times: [],
-				genres: [],
-				occupations: [],
-				programmes: [],
-				genders: [],
-				schedules: []
-			}
-		},
-		initialize: function () {
-			var that = this;
-			this.targetCollections = {};
-			_.each(this.get("targets"), function (targets, type) {
-				that.targetCollections[type] = new y4p.CampaignTargets(targets, { /*url: that.url() + "/targets/" + type + "/"*/ });
-			});
-		}
-	});
-	y4p.Campaigns = Backbone.Collection.extend({
-		model: y4p.Campaign,
-		url: "http://www.your4.tv/api/campaigns/"
-	});
-
-	y4p.CampaignTargets = Backbone.Collection.extend({
-		initialize: function (items, options) {
-			this.url = options.url;
-		}
-	});
 
 	y4p.AdvertiserApp = Backbone.View.extend({
 		className: "app",
