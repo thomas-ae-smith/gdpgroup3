@@ -1,4 +1,5 @@
 import argparse
+import collections
 import datetime
 from time import time
 import random
@@ -13,13 +14,12 @@ def _field_string(fields):
 	comma-separated elements surrounded by backticks"""
 	return ','.join(['`'+f+'`' for f in fields]) or '*'
 
-def _time_from_seconds(total_seconds):
-	hours = total_seconds // 3600
-	minutes = (total_seconds % 3600) // 60
-	seconds = (total_seconds % 3600) % 60
-
-	time_ = datetime.time(hours, minutes, seconds)
-	return time_
+def _time_from_str(timestr):
+	hours, minutes, seconds = [int(t) for t in timestr.split(":")]
+	assert 0 <= hours <= 24
+	assert 0 <= minutes <= 60
+	assert 0 <= seconds <= 60
+	return datetime.time(hours, minutes, seconds)
 
 def read_db(query):
 	try:
@@ -76,45 +76,46 @@ def get_campaign_pool(uid, pid, when=None):
 	if when is None:
 		when = datetime.datetime.now()
 
-	query = (
-		"SELECT `u`.`dob`, `u`.`gender`, `u`.`occupation`, `u`.`lat`, "
-			"`u`.`long`, `p`.`id`, `p`.`channel`, `p`.`genre`, `p`.`live`, "
-			"`c`.`schedule`, `c`.`gender`, `c_a`.`minAge`, `c_a`.`maxAge`, "
+	# "AND `c_t`.`startTime` <= {when} "
+	# "AND {when} <= `c_t`.`endTime` "
+
+	user_fields = ['dob', 'gender', 'occupation', 'lat', 'long']
+	user = {user_fields[index]:val for index, val in
+							enumerate(get_user(uid, user_fields))}
+
+	programme_fields = ['id', 'channel', 'genre', 'live']
+	programme = {programme_fields[index]:val for index, val in
+							enumerate(get_programme(pid, programme_fields))}
+
+	campaign_query = (
+		"SELECT `c`.`schedule`, `c`.`gender`, `c_a`.`minAge`, `c_a`.`maxAge`, "
 			"`c_b`.`minLong`, `c_b`.`maxLong`, `c_b`.`minLat`, `c_b`.`maxLat`, "
 			"`c_g`.`genres_id`, `c_o`.`occupations_id`, `c_p`.`programmes_id`, "
-			"`c_t`.`dayOfWeek`, `c_t`.`startTime`, `c_t`.`endTime`, "
-			"`c`.`id`, `c`.`nicheness`"
-		"FROM `users` AS u, `programmes` as p, `campaigns` as c "
-		"LEFT JOIN `agerange`     AS c_a ON `c`.`id`=`c_a`.`campaigns_id` "
-		"LEFT JOIN `boundingbox` AS c_b ON `c`.`id`=`c_b`.`campaigns_id` "
-		"LEFT JOIN `campaigns_genres`        AS c_g ON `c`.`id`=`c_g`.`campaigns_id` "
-		"LEFT JOIN `campaigns_occupations`   AS c_o ON `c`.`id`=`c_o`.`campaigns_id` "
-		"LEFT JOIN `campaigns_programmes`    AS c_p ON `c`.`id`=`c_p`.`campaigns_id` "
-		"LEFT JOIN `time`         AS c_t ON `c`.`id`=`c_t`.`campaigns_id` "
-		"WHERE `u`.`id` = {id} "
-		"AND `c`.`startDate` <= {when} "
-		"AND {when} <= `c`.`endDate`").format(id=uid, when=when)
-		# "AND `c_t`.`startTime` <= {when} "
-		# "AND {when} <= `c_t`.`endTime` "
+			"`c_t`.`dayOfWeek`, `c_t`.`startTime`, `c_t`.`endTime`, `c`.`id`, "
+			"`c`.`nicheness`"
+		"FROM `campaigns` as c "
+		"LEFT JOIN `time`              AS c_t ON `c`.`id`=`c_t`.`campaigns_id` "
+		"LEFT JOIN `agerange`          AS c_a ON `c`.`id`=`c_a`.`campaigns_id` "
+		"LEFT JOIN `boundingbox`       AS c_b ON `c`.`id`=`c_b`.`campaigns_id` "
+		"LEFT JOIN `campaigns_genres`  AS c_g ON `c`.`id`=`c_g`.`campaigns_id` "
+		"LEFT JOIN `campaigns_programmes`  AS c_p "
+			"ON `c`.`id`=`c_p`.`campaigns_id` "
+		"LEFT JOIN `campaigns_occupations` AS c_o "
+			"ON `c`.`id`=`c_o`.`campaigns_id` "
+		"WHERE {when} BETWEEN `c`.`startDate` AND `c`.`endDate`"
+	).format(when=when)
 
-	response = read_db(query)
+	response = read_db(campaign_query)
 
-	adverts = {}
+	restriction_fields = ['schedule', 'gender', 'minAge', 'maxAge', 'minLong',
+						'maxLong', 'minLat', 'maxLat', 'genre', 'occupation',
+						'programme', 'dayOfWeek', 'startTime', 'endTime']
+	campaigns = {}
 	for fields in response:
-		user = {}
-		programme = {}
-		restrict = {}
-		(user['dob'], user['gender'], user['occupation'], user['lat'],
-			user['long'], programme['id'], programme['channel'],
-			programme['genre'], programme['live'], restrict['schedule'],
-			restrict['gender'], restrict['minAge'], restrict['maxAge'],
-			restrict['minLong'], restrict['maxLong'], restrict['minLat'],
-			restrict['maxLat'], restrict['genre'], restrict['occupation'],
-			restrict['programme'], restrict['dayOfWeek'], restrict['startTime'],
-			restrict['endTime'], campaignid, nicheness) = response
-
+		restrict = dict(zip(restriction_fields, fields[:-2]))
+		campaignid, nicheness = fields[-2:]
 		dt = datetime.datetime.utcfromtimestamp(when)
-		restriction_match = {
+		restrict_match = {
 			'schedule': lambda: programme['live'] in restrict['schedule'],
 			'gender': lambda: user['gender'] in restrict['gender'],
 			'minAge': lambda: calc_age(user['dob']) >= restrict['minAge'],
@@ -127,24 +128,24 @@ def get_campaign_pool(uid, pid, when=None):
 			'occupation': lambda: user['occupation'] == restrict['occupation'],
 			'programme': lambda: programme['id'] == restrict['programme'],
 			'dayOfWeek': lambda: dt.isoweekday() == restrict['dayOfWeek'],
-			'startTime': lambda: dt.time() >= _time_from_seconds(
-												restrict['startTime'].seconds),
-			'endTime': lambda: dt.time() <= _time_from_seconds(
-													restrict['endTime'].seconds)
+			'startTime': lambda: dt.time() >= _time_from_str(
+												restrict['startTime']),
+			'endTime': lambda: dt.time() <= _time_from_str(
+												restrict['endTime'])
 		}
 
-		available = all([v is None or restriction_match[k]()
+		available = all([v is None or restrict_match[k]()
 							for k, v in restrict.iteritems()])
 
 		if available:
-			adverts[campaignid] = float(nicheness)
+			campaigns[campaignid] = float(nicheness)
 
-	return adverts
+	return campaigns
 
 def get_ad(campaignId):
-	query = (	"SELECT `id` "
+	query = (	"SELECT `adverts_id` "
 				"FROM `adverts_campaigns` "
-				"WHERE `campaign` = {campaignId}".format(
+				"WHERE `campaigns_id` = {campaignId}".format(
 					campaignId=campaignId))
 				
 	response = read_db(query)

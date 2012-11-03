@@ -7,6 +7,7 @@ from __future__ import print_function, division
 import argparse
 from random import random
 from time import time
+import sys
 
 from datastore import interface
 
@@ -15,24 +16,25 @@ VERBOSE = False
 
 def get_campaign(uid, pid, when=time()):
 	# Get all adverts available for a given user, programme and time.
-	advert_pool = interface.get_campaign_pool(uid, pid, when)
+	campaign_pool = interface.get_campaign_pool(uid, pid, when)
 
-	if not advert_pool:
-		if VERBOSE:
-			print("No valid campaigns returned for uid={uid}, pid={pid}, "
-				"when={when}:".format(uid=uid, pid=pid, when=when))
+	if not campaign_pool:
+		print("No valid campaigns returned for uid={uid}, pid={pid}, "
+				"when={when}:".format(uid=uid, pid=pid, when=when),
+				file=sys.stderr)
 		return -1
 
 	if VERBOSE:
 		print("Valid campaigns for uid={uid}, pid={pid}, "
 			"when={when}:".format(uid=uid, pid=pid, when=when))
-		for ad_id, nicheness in advert_pool.iteritems():
-			print("{ad}\t\t{nicheness}".format(ad=ad_id, nicheness=nicheness))
+		for campaign_id, nicheness in campaign_pool.iteritems():
+			print("{campaign}\t\t{nicheness}".format(campaign=campaign_id,
+														nicheness=nicheness))
 
-	# Pick an advert with a probability based on the nicheness.
-	advertids, nichenesses = zip(*advert_pool.iteritems())
-	roulette = {sum(nichenesses[:n+1]):advertids[n]
-					for n in xrange(len(advertids))}
+	# Pick a campaign with a probability based on the nicheness.
+	campaignids, nichenesses = zip(*campaign_pool.iteritems())
+	roulette = {sum(nichenesses[:n+1]):campaignids[n]
+					for n in xrange(len(campaignids))}
 	roulette_spin = random() * sum(nichenesses) 
 
 	for k, v in roulette.iteritems():
