@@ -93,14 +93,21 @@ body {
       }
     }
 
-.start-container .instruction {
+
+.start-container .tap-start {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 70%;
+	top: 0;
+	bottom: 0;
+	z-index: 20;
 }
 
-.start-container .instruction strong {
+.start-container .tap-start b {
+	position: absolute;
+	top: 70%; left: 0; right: 0;
+	text-align: center;
+	color: white;
 	font-size: 34px;
 	-webkit-animation-name: pulse;
 	-webkit-animation-duration: 1s;

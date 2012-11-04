@@ -8,7 +8,9 @@
 			"mousemove .player-layer": "showControls",
 			"touchstart .player-layer": "showControls",
 			"click .icon-play": "play",
-			"click .icon-stop": "stop"
+			"click .icon-stop": "stop",
+			"click .tap-start": "startUserPlaylist",
+			"touchstart .tap-start": "startUserPlaylist",
 		},
 		initialize: function () {
 			var that = this;
@@ -21,15 +23,23 @@
 				adverts: this.adverts,
 				programmes: this.programmes
 			});
-			$(document).on("touchstart", function(e){
-			    e.preventDefault(); // Prevents scrolling
-			});
+
 			FB.init({
 				appId      : '424893924242103', // App ID from the App Dashboard
 				channelUrl : '//'+window.location.hostname+'/channel.php', // Channel File for x-domain communication
 				status     : true, // check the login status upon init?
 				cookie     : true, // set sessions cookies to allow your server to access the session?
 				xfbml      : true  // parse XFBML tags on this page?
+			});
+
+			$(document).on("touchstart", function (e) {
+				e.preventDefault(); // Prevents scrolling
+			});
+
+			// HACK
+			this.user = new y4.User({
+				id: 1,
+				name: "never do this"
 			});
 
 		},
@@ -47,12 +57,11 @@
 			this.users.add(user);
 
 			user.fetch().done(function () {
+				// User is logged in :)
 				that.user = user;
 				fetchUserDfd.resolve();
 			}).fail(function () {
-				fetchUserDfd.resolve();
-				return;
-				console.log("HJKLGBULIVGHJLVhj")
+				// Check to see if user is logged in via FB
 				FB.getLoginStatus(function (response) {
 					if (response.status === 'connected') {
 						that.retrieveFbUser().then(function () {
@@ -71,6 +80,10 @@
 						that.renderLogin();
 					}*/
 				});
+				setTimeout(function () { // HACK, no (documented) way to tell if FB.getLoginStatus has failed
+					console.log("Resorting to hack");
+					fetchUserDfd.resolve();
+				}, 2000);
 			});
 			$.when(fetchUserDfd).done(function () {
 				that.hideSpinner();
@@ -111,18 +124,22 @@
 			});
 			return dfd;
 		},
+		startUserPlaylist: function () {
+			return this.goPlay(this.user.id);
+		},
 		showStartScreen: function () {
 			this.$(".start-screen-layer").show();
 			this.$(".player-layer").hide();
 			return this;
 		},
 		goStart: function () {
-			this.showStartScreen();
+			this.showStartScreen().$('.start-container')
+				.html('<div class="tap-start"><b>Tap to start.</b></div>');
 			return this;
 		},
 		goLogin: function () {
 			var login = new y4.LoginView({ app: this });
-			this.goStart().$('.start-container').html("")
+			this.showStartScreen().$('.start-container').html("")
 				.append(login.render().el);
 			login.on("login", function (o) {
 				o.username
@@ -134,7 +151,7 @@
 		},
 		goRegister: function () {
 			var register = new y4.RegisterView();
-			this.goStart().$('.start-container').html("")
+			this.showStartScreen().$('.start-container').html("")
 				.append(register.render().el);
 			register.on("register", function () {
 
@@ -149,9 +166,9 @@
 			});
 			return this;
 		},
-		goPlay: function (id) {
+		goPlay: function (userId) {
 			var that = this,
-				playlist = new y4.Playlist({ id: id });
+				playlist = new y4.Playlist({ id: userId });
 			this.showSpinner();
 			this.playlists.add(playlist);
 			$.when(this.adverts.fetch(), that.campaigns.fetch()).done(function () {
@@ -216,7 +233,7 @@
 		initialize: function (options) { this.app = options.app; },
 		start: function () {
 			if (!this.app.user) {
-				this.app.goLogin();
+				this.app.router.navigate("login", { trigger: true });
 			} else {
 				this.app.goStart();
 			}
