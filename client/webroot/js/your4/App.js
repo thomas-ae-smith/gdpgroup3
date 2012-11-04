@@ -24,13 +24,13 @@
 			$(document).on("touchstart", function(e){
 			    e.preventDefault(); // Prevents scrolling
 			});
-			/*FB.init({
+			FB.init({
 				appId      : '424893924242103', // App ID from the App Dashboard
 				channelUrl : '//'+window.location.hostname+'/channel.php', // Channel File for x-domain communication
 				status     : true, // check the login status upon init?
 				cookie     : true, // set sessions cookies to allow your server to access the session?
 				xfbml      : true  // parse XFBML tags on this page?
-			});*/
+			});
 
 		},
 		render: function () {
@@ -95,11 +95,11 @@
 		},
 		// Crucial. Sets server side session and ensures user is registered.
 		retrieveFbUser: function () {
-			var that = this
+			var that = this,
 				dfd = new $.Deferred();
 			FB.api('/me', function (response) {
 				var user = new y4.User({ id: 'fb-' + response.id });
-				that.users.add(that.user);
+				that.users.add(user);
 				user.fetch().then(function () {
 					if (user.get("registered")) {
 						that.user = user
