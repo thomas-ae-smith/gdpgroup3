@@ -220,8 +220,8 @@
 			return this;
 		},
 
-		play: function () { this.player.play(); },
-		stop: function () { this.player.stop(); },
+		play: function () { this.player.play(); return this; },
+		stop: function () { this.player.stop(); return this; },
 
 	});
 

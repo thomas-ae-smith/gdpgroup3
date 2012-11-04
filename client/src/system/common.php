@@ -80,8 +80,8 @@ function fb_to_user($user_profile) {
 	$user = array();
 	array_walk($field_map, function($item, $key) use ($user_profile, &$user) {
 		$user[$item] = (array_key_exists($key, $user_profile) ? $user_profile[$key] : null);
-	}); 
-	
+	});
+
 	$dob_parts = explode("/", $user['dob']);
 
 	if ($user['dob'] != null) {
