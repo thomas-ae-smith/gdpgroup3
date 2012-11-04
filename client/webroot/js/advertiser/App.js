@@ -1,126 +1,7 @@
-function htmlEscape(str) {
-    return String(str)
-            .replace(/&/g, '&amp;')
-            .replace(/"/g, '&quot;')
-            .replace(/'/g, '&#39;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;');
-}
-
-function capitalize(str) {
-    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-}
-
-// Prefix 0's to a number
-function pad (number, size) {
-	number = String(number);
-	while (number.length < size) { number = "0" + number; }
-	return number;
-}
-
-(function (root) {
+(function (y4) {
 	"use strict";
 
-	var y4p = root.y4p = {
-		templates: {},
-		pages: {}
-	};
-
-	y4p.language = {
-		advertType: {
-			"video": "Video",
-			"still": "Image"
-		},
-		type: {
-			"ageRanges": "Age ranges",
-			"boundingBoxes": "Locations",
-			"occupations": "Occupations",
-			"genres": "Genres",
-			"programmes": "Programmes"
-		}
-	};
-
-
-
-	y4p.cacheTemplates = function () {
-		_.each($("#templates > script"), function (el) {
-			var $el = $(el);
-			y4p.templates[$el.attr("id").replace("-template", "")] = _.template($el.html());
-		});
-	}
-
-
-	y4p.Router = Backbone.Router.extend({
-		routes: {
-			"": "home",
-			"adverts": "adverts",
-			"adverts/:id": "advert",
-			"campaigns": "campaigns",
-			"campaigns/:id": "campaign",
-			"*notFound": "notFound" // http://stackoverflow.com/questions/11236338/is-there-a-way-to-catch-all-non-matched-routes-with-backbone
-		},
-		initialize: function (options) { this.app = options.app; },
-		home: function () { this.app.home(); },
-		adverts: function () { this.app.goAdverts(); },
-		advert: function (id) { this.app.goAdvert(id); },
-		campaigns: function () { this.app.goCampaigns(); },
-		campaign: function (id) { this.app.goCampaign(id); },
-		notFound: function () {
-			this.app.render(new y4p.pages.NotFound({ message: "Page not found." }));
-		}
-
-	});
-
-	var nameComparator = function (model) { return model.get("name").replace(/^the /i, ""); };
-
-	y4p.Occupations = Backbone.Collection.extend({ url: "http://www.your4.tv/api/occupations/", comparator: nameComparator });
-	y4p.Programmes = Backbone.Collection.extend({ url: "http://www.your4.tv/api/programmes/", comparator: nameComparator });
-	y4p.Genres = Backbone.Collection.extend({ url: "http://www.your4.tv/api/genres/", comparator: nameComparator });
-
-	y4p.Advert = Backbone.Model.extend({
-		defaults: { title: "", type: "", adverts: [], overlay: "" }
-	});
-	y4p.Adverts = Backbone.Collection.extend({
-		model: y4p.Advert,
-		url: "http://www.your4.tv/api/adverts/"
-	});
-	y4p.Campaign = Backbone.Model.extend({
-		defaults: {
-			title: "",
-			startDate: 0,
-			endDate: 0,
-			adverts: [], // FIXME: WRONG
-			targets: { // FIXME: WRONG!!!
-				ageRanges: [],
-				boundingBoxes: [],
-				times: [],
-				genres: [],
-				occupations: [],
-				programmes: [],
-				genders: [],
-				schedules: []
-			}
-		},
-		initialize: function () {
-			var that = this;
-			this.targetCollections = {};
-			_.each(this.get("targets"), function (targets, type) {
-				that.targetCollections[type] = new y4p.CampaignTargets(targets, { /*url: that.url() + "/targets/" + type + "/"*/ });
-			});
-		}
-	});
-	y4p.Campaigns = Backbone.Collection.extend({
-		model: y4p.Campaign,
-		url: "http://www.your4.tv/api/campaigns/"
-	});
-
-	y4p.CampaignTargets = Backbone.Collection.extend({
-		initialize: function (items, options) {
-			this.url = options.url;
-		}
-	});
-
-	y4p.AdvertiserApp = Backbone.View.extend({
+	y4.App = Backbone.View.extend({
 		className: "app",
 		links: [
 			{ title: "Home", hash: "" },
@@ -128,13 +9,13 @@ function pad (number, size) {
 			{ title: "Campaigns", hash: "campaigns"  }
 		],
 		initialize: function () {
-			this.router = new y4p.Router({ app: this });
-			this.adverts = new y4p.Adverts();
-			this.campaigns = new y4p.Campaigns(undefined, { adverts: this.adverts });
+			this.router = new Router({ app: this });
+			this.adverts = new y4.Adverts();
+			this.campaigns = new y4.Campaigns(undefined, { adverts: this.adverts });
 		},
 		goAdverts: function () {
 			var that = this,
-				view = new y4p.pages.AdvertList({ collection: this.adverts, app: this });
+				view = new y4.pages.AdvertList({ collection: this.adverts, app: this });
 			view.on("select", function (id) {
 				that.router.navigate("adverts/" + id, { trigger: true });
 			}).on("create", function () {
@@ -144,10 +25,10 @@ function pad (number, size) {
 		},
 		goAdvert: function (id) {
 			var that = this,
-				advert = id === "new" ? new y4p.Advert() : this.adverts.get(id),
+				advert = id === "new" ? new y4.Advert() : this.adverts.get(id),
 				view = advert ?
-					new y4p.pages.AdvertFull({ advert: advert, app: this }) :
-					new y4p.pages.NotFound({ message: "Advert not found." });
+					new y4.pages.AdvertFull({ advert: advert, app: this }) :
+					new y4.pages.NotFound({ message: "Advert not found." });
 			view.on("return", function () {
 				that.router.navigate("adverts", { trigger: true });
 			});
@@ -155,7 +36,7 @@ function pad (number, size) {
 		},
 		goCampaigns: function () {
 			var that = this,
-				view = new y4p.pages.CampaignList({ collection: this.campaigns, app: this });
+				view = new y4.pages.CampaignList({ collection: this.campaigns, app: this });
 			view.on("select", function (id) {
 				that.router.navigate("campaigns/" + id, { trigger: true })
 			}).on("create", function () {
@@ -165,17 +46,17 @@ function pad (number, size) {
 		},
 		goCampaign: function (id) {
 			var that = this,
-				campaign = id === "new" ? new y4p.Campaign() : this.campaigns.get(id),
+				campaign = id === "new" ? new y4.Campaign() : this.campaigns.get(id),
 				view = campaign ?
-					new y4p.pages.CampaignFull({ campaign: campaign, app: this }) :
-					new y4p.pages.NotFound({ message: "Campaign not found." });
+					new y4.pages.CampaignFull({ campaign: campaign, app: this }) :
+					new y4.pages.NotFound({ message: "Campaign not found." });
 			view.on("return", function () {
 				that.router.navigate("campaigns", { trigger: true });
 			});
 			return this.render(view);
 		},
 		home: function () {
-			return this.render(new y4p.pages.Home({ app: this }));
+			return this.render(new y4.pages.Home({ app: this }));
 		},
 		render: function (page) {
 			var that = this,
@@ -195,7 +76,7 @@ function pad (number, size) {
 				}).value();
 
 			breadcrumb.unshift(_.where(links, { hash: "" })[0]);
-			this.$el.html(y4p.templates.main({
+			this.$el.html(y4.templates.main({
 				title: page.title,
 				links: links,
 				breadcrumb: breadcrumb,
@@ -227,36 +108,61 @@ function pad (number, size) {
 		}
 	});
 
-	y4p.View = Backbone.View.extend({
+	var Router = Backbone.Router.extend({
+		routes: {
+			"": "home",
+			"adverts": "adverts",
+			"adverts/:id": "advert",
+			"campaigns": "campaigns",
+			"campaigns/:id": "campaign",
+			"*notFound": "notFound" // http://stackoverflow.com/questions/11236338/is-there-a-way-to-catch-all-non-matched-routes-with-backbone
+		},
+		initialize: function (options) { this.app = options.app; },
+		home: function () { this.app.home(); },
+		adverts: function () { this.app.goAdverts(); },
+		advert: function (id) { this.app.goAdvert(id); },
+		campaigns: function () { this.app.goCampaigns(); },
+		campaign: function (id) { this.app.goCampaign(id); },
+		notFound: function () {
+			this.app.render(new y4.pages.NotFound({ message: "Page not found." }));
+		}
+
+	});
+
+}(this.y4));
+(function (root) {
+	"use strict";
+
+	y4.View = Backbone.View.extend({
 		close: function () {
 			this.off().remove();
 		}
 	})
 
-	y4p.Page = y4p.View.extend({
+	y4.Page = y4.View.extend({
 		setTitle: function (title) {
 			this.title = title;
 			this.trigger("title", title);
 		}
 	})
 
-	y4p.pages.Home = y4p.Page.extend({
+	y4.pages.Home = y4.Page.extend({
 		title: "Home",
 		render: function () {
-			this.$el.html(y4p.templates.home());
+			this.$el.html(y4.templates.home());
 			return this;
 		}
 	});
 
-	y4p.pages.NotFound = y4p.Page.extend({
+	y4.pages.NotFound = y4.Page.extend({
 		title: "Not found",
 		render: function () {
-			this.$el.html(y4p.templates.notfound(_.extend({ message: "Page cannot be found." }, this.options)));
+			this.$el.html(y4.templates.notfound(_.extend({ message: "Page cannot be found." }, this.options)));
 			return this;
 		}
 	})
 
-	y4p.List = y4p.View.extend({
+	y4.List = y4.View.extend({
 		events: { "click .create": "create" },
 		create: function () { this.trigger("create"); },
 		initialize: function (options) {
@@ -267,7 +173,7 @@ function pad (number, size) {
 		},
 		render: function () {
 			var that = this;
-			this.$el.html(y4p.templates[this.template](this.options));
+			this.$el.html(y4.templates[this.template](this.options));
 			this.collection.each(function (model) {
 				that.addItem(model, undefined, true);
 			});
@@ -276,7 +182,7 @@ function pad (number, size) {
 		},
 		addItem: function (model, options, noAnimation) {
 			var that = this,
-				$item = $(y4p.templates[this.itemTemplate](_.extend(model.toJSON(), options))),
+				$item = $(y4.templates[this.itemTemplate](_.extend(model.toJSON(), options))),
 				$list = this.$(".list");
 
 			this.$("tr").show();
@@ -306,20 +212,20 @@ function pad (number, size) {
 		}
 	});
 
-	y4p.pages.AdvertList = y4p.Page.extend(y4p.List.prototype).extend({
+	y4.pages.AdvertList = y4.Page.extend(y4.List.prototype).extend({
 		title: "Adverts",
 		className: "advert-list",
 		template: "advert-list",
 		itemTemplate: "advert-list-item"
 	});
 
-	y4p.pages.CampaignList = y4p.Page.extend(y4p.List.prototype).extend({
+	y4.pages.CampaignList = y4.Page.extend(y4.List.prototype).extend({
 		title: "Campaigns",
 		className: "campaign-list",
 		template: "campaign-list",
 		itemTemplate: "campaign-list-item",
 		addItem: function (model) {
-			return y4p.List.prototype.addItem.call(this, model, {
+			return y4.List.prototype.addItem.call(this, model, {
 				adverts: _.map(model.get("advert"), function (advert) {
 					return this.options.app.adverts.get(advert).toJSON()
 				})
@@ -327,7 +233,7 @@ function pad (number, size) {
 		}
 	});
 
-	y4p.pages.AdvertFull = y4p.Page.extend({
+	y4.pages.AdvertFull = y4.Page.extend({
 		className: "advert-full",
 		events: {
 			"click .cancel": "cancel",
@@ -340,7 +246,7 @@ function pad (number, size) {
 		},
 		render: function () {
 			var that = this;
-			this.$el.html(y4p.templates["advert-full"](this.advert.toJSON()));
+			this.$el.html(y4.templates["advert-full"](this.advert.toJSON()));
 			setTimeout(function () { that.updatePreview(); }, 100); // Erm.. HACK
 
 			this.$('#advert-file').fileupload({
@@ -409,7 +315,7 @@ function pad (number, size) {
 	});
 
 
-	y4p.pages.CampaignFull = y4p.Page.extend({
+	y4.pages.CampaignFull = y4.Page.extend({
 		className: "campaign-full",
 		events: {
 			"click .cancel": "cancel",
@@ -422,7 +328,7 @@ function pad (number, size) {
 		},
 		render: function () {
 			var that = this;
-			this.$el.html(y4p.templates["campaign-full"](_.extend({
+			this.$el.html(y4.templates["campaign-full"](_.extend({
 				allAdverts: this.options.app.adverts
 			}, this.campaign.toJSON())));
 
@@ -494,9 +400,9 @@ function pad (number, size) {
 				map.invalidateSize();
 			});
 
-			var occupations = new y4p.Occupations(),
-				programmes = new y4p.Programmes(),
-				genres = new y4p.Genres();
+			var occupations = new y4.Occupations(),
+				programmes = new y4.Programmes(),
+				genres = new y4.Genres();
 
 			occupations.fetch().then(function () {
 				occupations.each(function (occupation) {
@@ -711,25 +617,6 @@ function pad (number, size) {
 		}
 	});
 
-	y4p.OverlayApp = Backbone.View.extend({
-		initialize: function () {
-			this.adverts = new y4p.Adverts();
-			//this.adverts.fetch();
-		},
-		render: function () {
-			return this;
-		},
-		start: function () {
-			var advert = this.adverts.get(Number(window.location.hash.substr(1)));
-			if (advert) {
-				$("body").html(advert.get("overlay"));
-			}
-			window.update = function (html) {
-				console.log("hj", $("body"), html)
-				$("body").html(html);
-			}
-			return this;
-		}
-	})
+
 
 }(this))

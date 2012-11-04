@@ -1,11 +1,11 @@
 (function(y4) {
 	"use strict";
-	
-	y4.Media = Backbone.View.extend({
+
+	y4.MediaView = Backbone.View.extend({
 
 	});
 
-	y4.Video = y4.Media.extend({
+	y4.VideoView = y4.Media.extend({
 		type: "video",
 		initialize: function (options) {
 			options = _.extend({}, options);
@@ -18,7 +18,7 @@
 		start: function () {}
 	});
 
-	y4.Still = y4.Media.extend({
+	y4.StillView = y4.Media.extend({
 		type: "still",
 		className: "still-frame",
 		events: {
@@ -33,7 +33,7 @@
 		},
 		render: function () {
 			this.$el.html("")
-			
+
 			if (this.image) {
 				this.$el.append('<div class="image-frame"><img src="' + this.image + '"></div>');
 			}
