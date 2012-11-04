@@ -19,12 +19,12 @@
 			var that = this;
 			this.user = this.options.user;
 			if (!this.user) {
-				this.userCollection = new y4.Users();
+				this.users = new y4.Users();
 				this.user = new y4.User();
-				this.userCollection.add(this.user);
+				this.users.add(this.user);
 			}
 
-			this.occupations = new y4.OccupationCollection();
+			this.occupations = new y4.Occupations();
 
 		},
 
@@ -47,7 +47,7 @@
 			this.occupations.fetch().then(function() {
 				var occSelect = $('.register-form :input[name="occupation"]');
 				that.occupations.each(function(occupation) {
-					occSelect.append($('<option>', {value: occupation.get('id')}).text(occupation.get('name')));
+					occSelect.append($('<option>', {value: occupation.get('id')}).text(capitalize(occupation.get('name'))));
 				});
 			});
 

@@ -55,7 +55,7 @@
 				console.log("HJKLGBULIVGHJLVhj")
 				FB.getLoginStatus(function (response) {
 					if (response.status === 'connected') {
-						that.retrieveFBUser().then(function () {
+						that.retrieveFbUser().then(function () {
 							fetchUserDfd.resolve();
 						});
 					} else {
@@ -81,15 +81,20 @@
 			return this;
 		},
 		fbLogin: function () {
+			var that = this,
+				dfd = new $.Deferred();
 			FB.login(function (response) {
 				if (response.authResponse) {
 					that.facebookLoggedIn = true;
-					that.retrieveUser();
+					that.retrieveFbUser().then(function () {
+						dfd.resolve();
+					});
 				}
 			}, { scope: 'user_birthday,email' });
+			return dfd;
 		},
 		// Crucial. Sets server side session and ensures user is registered.
-		retrieveFBUser: function () {
+		retrieveFbUser: function () {
 			var that = this
 				dfd = new $.Deferred();
 			FB.api('/me', function (response) {
