@@ -1,10 +1,23 @@
 <?php
 
 
-
 $app->get('/adverts(/)', function() use ($app) {
-	$adverts = R::find('adverts');
-	output_json(R::exportAll($adverts));
+	$userId = $app->request()->get('user');
+	$programmeId = $app->request()->get('programme');
+	if ($userId && $programmeId) {
+		$user = R::load('users', $userId);
+		if (!$user->id) { return notFound('User with that ID not found.'); }
+		$programme = R::load('programmes', $programmeId);
+		if (!$programme->id) { return notFound('Programme with that ID not found.'); }
+		unset($out);
+		exec('python ../../../recommender/get_ad.py ' . $user->id . ' ' . $programme->id . ' ' . time(), $out);
+		$advertId = $out[0];
+		$advert = R::load('adverts', $advertId);
+		output_json(array($advert->export()));
+	} else {
+		$adverts = R::find('adverts');
+		output_json(R::exportAll($adverts));
+	}
 });
 
 $app->get('/adverts/:id', function ($id) use ($app) {
