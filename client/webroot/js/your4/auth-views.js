@@ -4,7 +4,7 @@
 
 
 
-	y4.Register = Backbone.View.extend({
+	y4.RegisterView = Backbone.View.extend({
 
 		regFields: ["name","gender","dob","email","occupation","password"],
 		events: {
@@ -70,36 +70,15 @@
 		}
 	});
 
-	y4.Login = Backbone.View.extend({
+	y4.LoginView = Backbone.View.extend({
 		className: "logon-outer",
 		events: {
 			"click .facebook-button": "facebookLogin",
-			"click .register-button": "renderReg"
+			"click .register-button": "register"
 		},
 
-		initialize: function() {
-			_.bindAll(this, 'logout');
-			this.userCollection = new y4.Users();
-			var that = this;
-			this.userModel = new y4.User({id: 'me'});
-			this.userCollection.add(that.userModel);
-			this.userModel.fetch({success: function() {
-				y4.app.start();
-			}, error: function() {
-				FB.getLoginStatus(function(response) {
-					if (response.status === 'connected') {
-						that.retrieveUser();
-					} else if (response.status === 'not_authorized') {
-						that.facebookLoggedIn = false;
-						y4.app.hideSpinner();
-						that.renderLogin();
-					} else {
-						that.facebookLoggedIn = false;
-						y4.app.hideSpinner();
-						that.renderLogin();
-					}
-				});
-			}});
+		initialize: function (options) {
+			this.app = options.app;
 		},
 
 		facebookLogin: function() {
@@ -116,45 +95,22 @@
 			}
 		},
 
-		// Crucial. Sets server side session and ensures user is registered.
-		retrieveUser: function() {
-			var that = this;
-			FB.api('/me', function(response) {
-				that.userModel = new y4.User({id: 'fb-'+response.id});
-				that.userCollection.add(that.userModel);
-				that.userModel.fetch().then(function() {
-					if (that.userModel.get("registered")) {
-						y4.app.start();
-					} else {
-						that.renderReg(undefined, that.userModel);
-					}
-					y4.app.hideSpinner();
-				});
-			});
+		register: function () {
+			this.app.router.navigate("register", { trigger: true });
 		},
 
-		renderReg: function(e, user) {
-			var registerView = new y4.Register({user: user});
-			$(".logo-frame").html(registerView.render().el);
-		},
-
-		logout: function() {
-			this.userModel.destroy().then(function(response) {
-				if (response == "success") {
-					window.location = 'http://'+window.location.hostname;
-				}
+		login: function () {
+			this.trigger("login", {
+				username: "",
+				password: ""
 			});
 		},
 
 		render: function() {
-			return this;
-		},
-
-		renderLogin: function() {
-			var loginTemplate = _.template($('#login-template').html());
+			var loginTemplate = y4.templates['login'];
 			this.$el.html(loginTemplate());
+			return this;
 		}
-
 	});
 
 }(this.y4));

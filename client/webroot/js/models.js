@@ -151,6 +151,13 @@
 
 	});
 
+	y4.Playlist = Backbone.Model.extend({});
+	y4.Playlists = Backbone.Collection.extend({
+		url: "http://www.your4.tv/api/playlists/",
+		model: y4.Playlist
+	});
+
+
 	/*y4.Channel = y4.ProgrammeModel.extend({
 		Scene: y4.Channel,
 	});

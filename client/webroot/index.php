@@ -6,13 +6,18 @@
 $requires = array(
 	'all' => array(
 		'styles' => array(),
-		'scripts' => array('js/base', 'js/utils.js', 'js/language.js', 'lib/jquery', 'lib/underscore.js', 'lib/backbone.js', 'js/models.js')
+		'scripts' => array('js/base.js', 'js/utils.js', 'js/language.js', 'lib/jquery', 'lib/underscore.js', 'lib/backbone.js', 'js/models.js')
 	),
+	//'your4' => array(
+	//	'styles' => array('css/bootstrap.min.css', 'css/font-awesome.css', 'css/style.css'),
+	//	'scripts' => array('lib/flowplayer.min.js', 'lib/bootstrap.js', 'lib/spin.min.js',
+	//		 'js/your4/App.js',
+	//		'js/your4/auth-views.js')
+	//),
 	'your4' => array(
-		'styles' => array('css/bootstrap.min.css', 'css/font-awesome.css', 'css/style.css'),
+		'styles' => array('css/bootstrap.min.css', 'css/font-awesome.css', 'css/your4.css'),
 		'scripts' => array('lib/flowplayer.min.js', 'lib/bootstrap.js', 'lib/spin.min.js',
-			'http://connect.facebook.net/en_US/all.js', 'js/your4/App.js',
-			'js/your4/auth-views.js')
+			'js/your4/App.js', 'js/your4/auth-views.js', /*'http://connect.facebook.net/en_US/all.js'*/)
 	),
 	'advertiser' => array(
 		'styles' => array('css/advertiser.css', 'css/bootstrap.min.css', 'lib/leaflet.css', 'lib/leaflet.draw.css'),
@@ -27,10 +32,12 @@ $requires = array(
 );
 
 $uri = $_SERVER['REQUEST_URI'];
-if (strpos($uri, 'publisher.php') !== false) {
+if (strpos($uri, 'advertiser.php') !== false) {
 	$site = 'advertiser';
 } else if (strpos($uri, 'overlay.php') !== false) {
 	$site = 'overlay';
+} else if (strpos($uri, 'client.php') !== false) {
+	$site = 'client';
 } else {
 	$site = 'your4';
 }
