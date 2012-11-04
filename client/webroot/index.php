@@ -8,16 +8,11 @@ $requires = array(
 		'styles' => array(),
 		'scripts' => array('js/base.js', 'js/utils.js', 'js/language.js', 'lib/jquery', 'lib/underscore.js', 'lib/backbone.js', 'js/models.js')
 	),
-	//'your4' => array(
-	//	'styles' => array('css/bootstrap.min.css', 'css/font-awesome.css', 'css/style.css'),
-	//	'scripts' => array('lib/flowplayer.min.js', 'lib/bootstrap.js', 'lib/spin.min.js',
-	//		 'js/your4/App.js',
-	//		'js/your4/auth-views.js')
-	//),
 	'your4' => array(
 		'styles' => array('css/bootstrap.min.css', 'css/font-awesome.css', 'css/your4.css'),
 		'scripts' => array('lib/flowplayer.min.js', 'lib/bootstrap.js', 'lib/spin.min.js',
-			'js/your4/App.js', 'js/your4/auth-views.js', 'http://connect.facebook.net/en_US/all.js')
+			'js/your4/App.js', 'js/player.js', 'js/your4/auth-views.js',
+			'http://connect.facebook.net/en_US/all.js')
 	),
 	'advertiser' => array(
 		'styles' => array('css/advertiser.css', 'css/bootstrap.min.css', 'lib/leaflet.css', 'lib/leaflet.draw.css'),

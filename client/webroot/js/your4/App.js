@@ -16,13 +16,7 @@
 			var that = this;
 			this.router = new Router({ app: this });
 			this.users = new y4.Users();
-			this.programmes = new y4.Programmes();
-			this.campaigns = new y4.Campaigns();
-			this.adverts = new y4.Adverts();
-			this.playlists = new y4.Playlists({
-				adverts: this.adverts,
-				programmes: this.programmes
-			});
+			this.player = new y4.PlayerView({ server: wowzaServer });
 
 			FB.init({
 				appId      : '424893924242103', // App ID from the App Dashboard
@@ -38,13 +32,14 @@
 
 			// HACK
 			this.user = new y4.User({
-				id: 1,
+				id: 8,
 				name: "never do this"
 			});
 
 		},
 		render: function () {
 			this.$el.html(y4.templates['your4-main']());
+			this.$(".player-container").html("").append(this.player.render().el);
 			return this;
 		},
 		start: function () {
@@ -168,17 +163,25 @@
 		},
 		goPlay: function (userId) {
 			var that = this,
-				playlist = new y4.Playlist({ id: userId });
+				playlist = new y4.Playlist({ user: this.user });
+
 			this.showSpinner();
-			this.playlists.add(playlist);
-			$.when(this.adverts.fetch(), that.campaigns.fetch()).done(function () {
-				playlist.fetch().then(function () {
-					that.hideSpinner();
-					that.$(".start-screen-layer").hide();
-					that.$(".player-layer").show();
-					that.play().showControls();
-				});
+
+			playlist.start().then(function () {
+				that.playlist = playlist;
+				that.hideSpinner();
+				that.$(".start-screen-layer").hide();
+				that.$(".player-layer").show();
+				that.play().showControls();
+
 			});
+			playlist.on("programme", function (programme) {
+				console.log(programme)
+				that.player.setProgramme(programme);
+			}).on("advert", function (advert) {
+				that.player.setAdvert(advert);
+			});
+
 			return this;
 		},
 		showSpinner: function(opts) {

@@ -1,18 +1,16 @@
 (function (y4) {
 	"use strict";
 
-	var channelData = [
-		{ id: "c4", title: "Channel 4", service: "your4", url: "c4.stream", icon: "img/ids/c4.svg" },
-		{ id: "e4", title: "E4", service: "your4", url: "e4.stream", icon: "img/ids/e4.svg" },
-		{ id: "m4", title: "More4", service: "your4", url: "m4.stream", icon: "img/ids/more4.svg" },
-		{ id: "f4", title: "Film4", service: "your4", url: "film4.stream", icon: "img/ids/film4.svg" },
-		{ id: "4music", title: "4music", service: "your4", url: "4music.stream", icon: "img/ids/4music.svg" },
-		{ id: "stv", title: "studentTV", service: "your4", url: "studentTV.stream", icon: "img/ids/studenttv.svg" }
-	];
-
-	var vodData = [
-		{ id: "sample", title: "Sample", service: "vod", url: "sample.mp4" }
-	];
+	y4.bootstrap = {
+		channels: [
+			{ id: "518974809", title: "Channel 4", service: "your4", url: "c4.stream", icon: "img/ids/c4.svg" },
+			{ id: "e4", title: "E4", service: "your4", url: "e4.stream", icon: "img/ids/e4.svg" },
+			{ id: "m4", title: "More4", service: "your4", url: "m4.stream", icon: "img/ids/more4.svg" },
+			{ id: "f4", title: "Film4", service: "your4", url: "film4.stream", icon: "img/ids/film4.svg" },
+			{ id: "4music", title: "4music", service: "your4", url: "4music.stream", icon: "img/ids/4music.svg" },
+			{ id: "stv", title: "studentTV", service: "your4", url: "studentTV.stream", icon: "img/ids/studenttv.svg" }
+		]
+	};
 
 	// Order by name
 	var nameComparator = function (model) {
@@ -151,10 +149,52 @@
 
 	});
 
-	y4.Playlist = Backbone.Model.extend({});
-	y4.Playlists = Backbone.Collection.extend({
-		url: "http://www.your4.tv/api/playlists/",
-		model: y4.Playlist
+	y4.Playlist = Backbone.Model.extend({
+		initialize: function (options) {
+			this.user = options.user;
+			this.programmes = new y4.Programmes();
+			this.adverts = new y4.Adverts();
+		},
+		start: function () {
+			if (this.poller) { return; }
+			var that = this,
+				dfd = this.programmeRecommendation();
+
+			this.poller = setInterval(function () {
+				that.poll();
+			}, 20000);
+			return dfd;
+		},
+		stop: function () {
+			clearTimeout(this.poller);
+		},
+		poll: function () {
+			this.programmes.at(0).fetch().then(function () {
+				// check advert start
+			});
+		},
+		programmeRecommendation: function () {
+			var that = this;
+			// FIXME: this must always put 1 programme in the collection
+			return this.programmes.fetch({
+				data: {
+					user: this.user.id
+				}
+			}).then(function () {
+				that.trigger("programme", that.programmes.at(0));
+			});
+		},
+		advertRecommendation: function () {
+			var that = this;
+			return this.adverts.fetch({
+				data: {
+					user: this.user.id,
+					programme: this.programmes.at(0).id
+				}
+			}).then(function () {
+				that.trigger("advert", that.adverts.at(0));
+			});
+		}
 	});
 
 
