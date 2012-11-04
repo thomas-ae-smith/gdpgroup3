@@ -72,13 +72,21 @@
 					}*/
 				});
 			});
-			$.when(fetchUserDfd, this.adverts.fetch(), that.campaigns.fetch()).done(function () {
-				that.render().hideSpinner();
+			$.when(fetchUserDfd).done(function () {
+				that.hideSpinner();
 				Backbone.history.start();
 			}).fail(function () {
 				that.$el.html('<div class="alert alert-error" style="width: 700px; margin: 40px auto;"><b>Error while loading page.</b></div>')
 			});
 			return this;
+		},
+		fbLogin: function () {
+			FB.login(function (response) {
+				if (response.authResponse) {
+					that.facebookLoggedIn = true;
+					that.retrieveUser();
+				}
+			}, { scope: 'user_birthday,email' });
 		},
 		// Crucial. Sets server side session and ensures user is registered.
 		retrieveFBUser: function () {
@@ -141,11 +149,13 @@
 				playlist = new y4.Playlist({ id: id });
 			this.showSpinner();
 			this.playlists.add(playlist);
-			playlist.fetch().then(function () {
-				that.hideSpinner();
-				that.$(".start-screen-layer").hide();
-				that.$(".player-layer").show();
-				that.play().showControls();
+			$.when(this.adverts.fetch(), that.campaigns.fetch()).done(function () {
+				playlist.fetch().then(function () {
+					that.hideSpinner();
+					that.$(".start-screen-layer").hide();
+					that.$(".player-layer").show();
+					that.play().showControls();
+				});
 			});
 			return this;
 		},
@@ -155,10 +165,11 @@
 				length: 21,
 				width: 4,
 				speed: 1.4,
-				color: '#fff'
+				color: '#fff',
+				top: $(window).innerHeight() / 2
 			}, opts);
 			this.hideSpinner(); // Hide any existing spinner
-			this.spinner = new Spinner(opts).spin($('body')[0]);
+			this.spinner = new Spinner(opts).spin($('#container')[0]);
 		},
 
 		hideSpinner: function(opts) {

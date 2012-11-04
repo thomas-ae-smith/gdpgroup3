@@ -84,14 +84,12 @@
 		facebookLogin: function() {
 			var that = this;
 			if (!this.facebookLoggedIn) {
-				$('.facebook-button').attr('disabled','disabled');
-				$('.facebook-button').text("Please wait...");
-				FB.login(function(response) {
-					if (response.authResponse) {
-						that.facebookLoggedIn = true;
-						that.retrieveUser();
-					}
-				}, {scope: 'user_birthday,email'});
+				this.$('.facebook-button').attr('disabled', 'disabled')
+					.text("Please wait...");
+				this.app.fbLogin().then(function () {
+					that.$('.facebook-button').removeAttr('disabled')
+						.text("Login with Facebook");
+				});
 			}
 		},
 
@@ -100,10 +98,11 @@
 		},
 
 		login: function () {
-			this.trigger("login", {
-				username: "",
-				password: ""
+			var user = new User({
+				email: $("#inputEmail").val(),
+				password: $("#inputPassword").val() // or whatever
 			});
+			// ...
 		},
 
 		render: function() {

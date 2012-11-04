@@ -93,14 +93,14 @@ body {
       }
     }
 
-.start-screen .instruction {
+.start-container .instruction {
 	position: absolute;
 	left: 0;
 	right: 0;
 	top: 70%;
 }
 
-.start-screen .instruction strong {
+.start-container .instruction strong {
 	font-size: 34px;
 	-webkit-animation-name: pulse;
 	-webkit-animation-duration: 1s;
@@ -109,12 +109,12 @@ body {
 	-webkit-animation-direction: alternate;
 }
 
-.start-screen .logon-outer {
+.start-container .logon-outer {
 	line-height: 22px;
 	text-align: center;
 }
 
-.start-screen .logon-outer:before {
+.start-container .logon-outer:before {
 	content: '';
 	display: inline-block;
 	height: 100%;
@@ -123,7 +123,7 @@ body {
 	margin-right: -0.25em;
 }
 
-.start-screen .logon-inner {
+.start-container .logon-inner {
 	background: #000;
         opacity: 0.6;
         padding: 10px;
@@ -135,26 +135,26 @@ body {
 	width:500px;
 }
 
-.start-screen .logon-inner button {
+.start-container .logon-inner button {
 	width: 100%;
 }
 
-.start-screen .logon-inner .login-button {
+.start-container .logon-inner .login-button {
 	margin-bottom: 5px;
 }
 
-.start-screen .logon-inner .submit-registration {
+.start-container .logon-inner .submit-registration {
 	margin-top:10px;
 }
 
-.start-screen .logon-inner .separator {
+.start-container .logon-inner .separator {
 	border-top: 1px inset #fff;
 	height: 2px;
 	text-align: center;
 	margin: 25px 0 25px 0;
 }
 
-.start-screen .logon-inner .separator span {
+.start-container .logon-inner .separator span {
 	position: relative;
 	display: inline-block;
 	font-weight: bold;
@@ -168,39 +168,40 @@ body {
         border-radius: 3px;
 }
 
-.start-screen .logon-inner form .control-group {
+.start-container .logon-inner form .control-group {
 	margin-bottom: 0;
 }
 
-.start-screen .logon-inner form {
+.start-container .logon-inner form {
 	margin-bottom: 0;
 	text-align: left;
 	text-transform: capitalize;
 }
 
-.start-screen .logon-inner form input {
+.start-container .logon-inner form input {
 	width: 100%;
 	padding: 15px;
+	box-sizing: border-box;
 }
 
-.start-screen .logon-inner form select {
+.start-container .logon-inner form select {
 	width: 100%;
 }
 
-.start-screen .logon-inner .register-form {
+.start-container .logon-inner .register-form {
 	margin-top: 15px;
 }
 
-.start-screen .logon-inner .register-form .control-label {
+.start-container .logon-inner .register-form .control-label {
 	width: 80px;
 	margin-left: 0px;
 }
 
-.start-screen .logon-inner .register-form .control-group {
+.start-container .logon-inner .register-form .control-group {
 	margin-bottom: 5px;
 }
 
-.start-screen .logon-inner .register-form .controls {
+.start-container .logon-inner .register-form .controls {
 	margin-left: 100px;
 }
 
@@ -243,7 +244,7 @@ body {
 }
 
 .player .still-frame,
-.start-screen .still-frame {
+.start-container .still-frame {
 	/*background: #221199;*/
 	position: absolute;
 	top: 80px;
@@ -253,7 +254,7 @@ body {
 }
 
 .player .still-frame img,
-.start-screen .still-frame img {
+.start-container .still-frame img {
 	width: 100%;
 	height: 100%;
 }
@@ -271,4 +272,7 @@ video {
 	width: 100%;
 	height: 100%;
 	position: absolute;
+}
+
+.start-container {
 }
