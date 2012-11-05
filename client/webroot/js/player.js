@@ -11,7 +11,7 @@
 			this.stillLayer = new y4.StillLayerView();
 			this.overlayLayer = new y4.OverlayLayerView();
 			this.channels = new y4.Channels(y4.bootstrap.channels);
-			that.blackLayer.show();
+			this.blackLayer.show();
 			this.videoLayer.on("set", function () {
 				that.videoLayer.show();
 			}).on("start", function () {

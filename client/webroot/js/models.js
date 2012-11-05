@@ -174,11 +174,11 @@
 		},
 		next: function () {
 			switch (this.nextType) {
-			case "programme";
-				that.trigger("programme", that.programmes.at(0));
+			case "programme":
+				this.trigger("programme", this.programmes.at(0));
 				break;
 			case "advert":
-				that.trigger("advert", that.adverts.at(0));
+				this.trigger("advert", this.adverts.at(0));
 				break;
 			}
 		}
