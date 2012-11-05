@@ -81,13 +81,13 @@
 			return this;
 		},
 		render: function () {
-			this.hide();
+			this.hide().$el.css({ zIndex: this.zIndex });
 			return this;
 		}
 	});
 
-	y4.VideoLayerView = LayerView.extend({
-		className: "video-layer",
+	var VideoLayerView = LayerView.extend({
+		className: "player-layer video-layer",
 		zIndex: 1,
 		mute: function () {
 			console.log("TODO");
@@ -99,7 +99,7 @@
 		}
 	});
 
-	y4.HtmlVideoLayerView = y4.VideoLayerView.extend({
+	y4.HtmlVideoLayerView = VideoLayerView.extend({
 		play: function () { this.videoEl.play(); },
 		stop: function() { this.videoEl.pause(); },
 		set: function (service, url) {
@@ -112,10 +112,11 @@
 			return this;
 		},
 		render: function () {
-			var that = this,
+			LayerView.prototype.render.call(this);
+
 			template = _.template($("#html-video-template").html());
 
-			this.hide().$el.html(template(this.options));
+			this.$el.html(template(this.options));
 			this.$video = this.$("video");
 			this.videoEl = this.$video[0];
 
@@ -123,7 +124,7 @@
 		}
 	});
 
-	y4.FlashVideoLayerView = y4.VideoLayerView.extend({
+	y4.FlashVideoLayerView = VideoLayerView.extend({
 		play: function () { console.log("TODO") },
 		stop: function () { console.log("TODO") },
 		set: function (service, url) {
@@ -136,62 +137,69 @@
 			return this;
 		},
 		render: function () {
-			var template = _.template($("#flash-video-template").html());
+			LayerView.prototype.render.call(this);
+			var that = this,
+				template = _.template($("#flash-video-template").html());
 
-			this.hide().$el.html(template({
-				config: {
-					clip: {
-						url: 'mp4:' + this.url,
-						provider: 'rtmp',
-						autoPlay: true,
-						autoBuffering: true,
-						accelerated: true,
-						onStart: function () {
-							console.log("HJIO");
-							that.trigger("start");
-						},
-						onFinish: function () {
-							that.trigger("finish");
-						}
+			this.hide().$el.html(template());
+			console.log( this.$('.flash-video-container'));
+			this.$('.flash-video-container').flowplayer({
+				src: "lib/flowplayer.swf",
+				wmode: "opaque"
+			}, {
+				clip: {
+					url: 'mp4:' + this.url,
+					scaling: "fit",
+					provider: 'y4',
+					autoPlay: true,
+					autoBuffering: true,
+					accelerated: true,
+					onStart: function () {
+						console.log("HJIO");
+						that.trigger("start");
 					},
-					plugins: {
-						rtmp: {
-							url: 'lib/flowplayer.rtmp.swf',
-							netConnectionUrl: 'rtmp://' + this.options.server + '/' + this.service
-						},
-						controls: null
-					},
-					canvas: {
-						background: '#ff0000',
-						backgroundGradient: 'none'
+					onFinish: function () {
+						that.trigger("finish");
 					}
+				},
+				plugins: {
+					y4: {
+						url: 'lib/flowplayer.rtmp.swf',
+						netConnectionUrl: 'rtmp://' + this.options.server + '/' + this.service
+					},
+					controls: null
+				},
+				canvas: {
+					background: '#ff0000',
+					backgroundGradient: 'none'
 				}
-			}));
+			});
 
 			return this;
 		}
 	});
 
 	y4.BlackLayerView = LayerView.extend({
-		className: "black-layer",
+		className: "player-layer black-layer",
 		zIndex: 4
 	});
 
 	y4.StillLayerView = LayerView.extend({
-		className: "still-layer",
+		className: "player-layer still-layer",
 		zIndex: 2,
 		set: function (url) {
 			this.$("img.still").attr("src", url);
 			return this;
 		},
 		render: function () {
+			LayerView.prototype.render.call(this);
 			this.hide().$el.html(templates["still-layer"]);
 			return this;
 		}
 	});
 
 	y4.OverlayLayerView = LayerView.extend({
-		className: "overlay-layer",
+		className: "player-layer overlay-layer",
 		zIndex: 3,
 		set: function (url) {
 			this.$("iframe").attr("href", url);

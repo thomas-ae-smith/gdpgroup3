@@ -149,11 +149,12 @@
 			this.showStartScreen().$('.start-container').html("")
 				.append(register.render().el);
 
-			register.on("register", function () {
+			register.on("register", function (user) {
+				that.user = user;
 				if (callback) {
 					callback();
 				} else {
-					that.startNav();
+					that.router.navigate("play", { trigger: true });
 				}
 			});
 			return this;

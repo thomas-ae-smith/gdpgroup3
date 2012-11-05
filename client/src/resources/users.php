@@ -9,7 +9,6 @@ function processUser($app, $id) {
 
 	$type = getIdType($id);
 	$id = str_replace('fb-', '', $id);
-
 	if ($type == 'fb') {
 		$use_fields = array("occupation");
 		$fb_id = $facebook->getUser();
@@ -39,8 +38,6 @@ function processUser($app, $id) {
 		}
 	}
 
-	$new_vals = array();
-	
 	$req = $app->request()->getBody();
 	foreach ($use_fields as $field) {
 		$field_content = $req[$field];
@@ -51,11 +48,14 @@ function processUser($app, $id) {
 			} else {
 				$user->setAttr($field, $field_content);
 			}
-			$new_vals[] = $field;
 		} else if ($field != "password") {
 			badRequest();
 			exit;
 		}
+	}
+
+	if ($type == 'local' && $app->request()->isPost()) {
+		$user->vector = get_user_vector($user->dob, $user->gender);
 	}
 
 	R::store($user);
@@ -87,13 +87,13 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 		}
 
 		// Force processing via facebook if facebook user
-		if ($type == 'local' && !is_null($_SESSION['user']['facebookId'])) {
+		if ($type == 'local' && isset($_SESSION['user']['facebookId'])) {
 			$type = 'fb';
 			$id = $_SESSION['user']['facebookId'];
 		}
 
 		$query_str = $type == 'fb' ? 'facebookId = ?' : 'id = ?';
-		if ($_SESSION['user']['registered']) {
+		if (isset($_SESSION['user']['registered'])) {
 			$db_user = R::findOne('users', $query_str, array($id));
 			if (is_null($db_user)) {
 				logout();
@@ -111,7 +111,7 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 		if ($user_id && $user_id == $id) {
 
 			// If the user is already in the DB load them into the session
-			$user = R::findOne('users', 'facebookId = ?', array($user_id));
+			$user = $db_user;
 			if ($user) {
 				if ($user->lastFbRefresh == null || strtotime($user->lastFbRefresh) < strtotime('-1 day')) {
         			$user_profile = $facebook->api('/me','GET');
@@ -146,10 +146,11 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 			output_json(array('error' => 'No valid client side cookie'));
 		}
 
-	} else if ($type == 'local') {
-		if ($active_session) {
-			output_json($_SESSION['user']);
-		}
+	} else if ($type == 'local' && isset($_SESSION['user']['registered'])) {
+		$_SESSION['user'] = $db_user->export();
+		output_json($_SESSION['user']);
+	} else {
+		notFound();
 	}
 });
 
@@ -166,10 +167,6 @@ function logout() {
 
 
 $app->delete('/users/:id(/)', function($id) use ($app) {
-	if ($_SESSION['user']['id'] == $id) {
-		logout();
-	} else {
-		badRequest();
-	}
+	logout();
 });
 

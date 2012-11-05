@@ -223,8 +223,11 @@ body {
 }
 
 .player {
-	position: relative;
-	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 .player .video-container {
@@ -235,19 +238,16 @@ body {
 	bottom: 0;
 }
 
-.player .black-layer,
-.player .still-layer {
+.player .player-layer {
 	position: absolute;
-	z-index: 2;
-	background: black;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
-	color: red;
-	font-size: 30px;
-	line-height: 100px;
-	text-align: center;
+}
+
+.player .still-layer, .player.black-layer {
+	background: black;
 }
 
 .player .still-frame,

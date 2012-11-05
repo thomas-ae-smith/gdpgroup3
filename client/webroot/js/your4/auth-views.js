@@ -62,7 +62,7 @@
 		submitReg: function() {
 			var that = this;
 			this.user.save(undefined, {success: function() {
-				that.trigger("register");
+				that.trigger("register",that.user);
 			}, error: function(model, response) {
 				that.$el.prepend(response);
 			}});
