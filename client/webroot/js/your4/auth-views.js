@@ -88,6 +88,8 @@
 				this.app.fbLogin().then(function () {
 					that.$('.facebook-button').removeAttr('disabled')
 						.text("Login with Facebook");
+					console.log("play");
+					that.app.router.navigate("play", { trigger: true });
 				});
 			}
 		},

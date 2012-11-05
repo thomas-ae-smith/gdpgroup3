@@ -59,35 +59,31 @@
 			var that = this;
 			this.render().showSpinner();
 
-			var fetchUserDfd = new $.Deferred();
-
 			this.user.set('id','me');
 			this.user.fetch().done(function () {
 				// User is logged in :)
-				fetchUserDfd.resolve();
+				that.startNav();
 			}).fail(function () {
 				// Check to see if user is logged in via FB
 				FB.getLoginStatus(function (response) {
 					if (response.status === 'connected') {
 						that.retrieveFbUser().then(function () {
-							fetchUserDfd.resolve();
+							that.startNav();
 						});
 					} else if (response.status === 'not_authorized') {
-						that.hideSpinner();
-						that.goLogin();
+						that.startNav();
+						that.router.navigate("login", { trigger: true });
 					} else {
-						that.hideSpinner();
-						that.goLogin();
+						that.startNav();
+						that.router.navigate("login", { trigger: true });
 					}
 				});
 			});
-			$.when(fetchUserDfd).done(function () {
-				that.hideSpinner();
-				Backbone.history.start();
-			}).fail(function () {
-				that.$el.html('<div class="alert alert-error" style="width: 700px; margin: 40px auto;"><b>Error while loading page.</b></div>')
-			});
 			return this;
+		},
+		startNav: function() {
+			this.hideSpinner();
+			Backbone.history.start();
 		},
 		fbLogin: function () {
 			var that = this,
@@ -110,7 +106,7 @@
 				that.user.fetch().then(function () {
 					if (that.user.get("registered") == false) {
 						that.hideSpinner();
-						that.goRegister(dfd);
+						that.goRegisterFB(dfd);
 					} else {
 						dfd.resolve();
 					}
@@ -119,7 +115,7 @@
 			return dfd;
 		},
 		startUserPlaylist: function () {
-			return this.goPlay(this.user.id);
+			return this.router.navigate("play", { trigger: true });
 		},
 		showStartScreen: function () {
 			this.$(".start-screen-layer").show();
@@ -143,21 +139,30 @@
 			});
 			return this;
 		},
-		goRegister: function (dfd) {
-			var register = new y4.RegisterView({user: this.user});
+		goRegisterFB: function (dfd) {
+			this.goRegister({user: this.user}, dfd.resolve);
+		},
+		goRegister: function (data, callback) {
+			var that = this;
+
+			var register = new y4.RegisterView(data);
 			this.showStartScreen().$('.start-container').html("")
 				.append(register.render().el);
 
 			register.on("register", function () {
-				dfd.resolve();
+				if (callback) {
+					callback();
+				} else {
+					that.startNav();
+				}
 			});
 			return this;
 		},
 		goLogout: function () {
-			this.user.destroy().then(function(response) {
-				if (response === "success") {
-					this.navigate('', { trigger: true });
-				}
+			var that = this;
+			console.log("FFKL:");
+			this.user.destroy().done(function(response) {
+				that.router.navigate('login', { trigger: true });
 			});
 			return this;
 		},
@@ -230,7 +235,8 @@
 			"login": "login",
 			"register": "register",
 			"logout": "logout",
-			"play/:id": "play"
+			"play/:id": "play",
+			"play": "play"
 		},
 		initialize: function (options) { this.app = options.app; },
 		start: function () {
@@ -244,6 +250,7 @@
 		register: function () { this.app.goRegister(); },
 		logout: function () { this.app.goLogout(); },
 		play: function (id) {
+			id = id || this.app.user.id;
 			//if (!this.app.user) { return this.unauthorized(); };
 			this.app.goPlay(id);
 		},

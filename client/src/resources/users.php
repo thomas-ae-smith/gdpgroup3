@@ -97,7 +97,6 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 			$db_user = R::findOne('users', $query_str, array($id));
 			if (is_null($db_user)) {
 				logout();
-				badRequest();
 			}
 		}
 	} else if (isset($_SESSION['user']['id']) || $type != 'fb') {
@@ -159,7 +158,7 @@ function logout() {
 	$token = $facebook->getAccessToken();
 	if ($token) {
 		$graph_url = "https://graph.facebook.com/me/permissions?method=delete&access_token=" . $token;
-		$result = json_decode(file_get_contents($graph_url));
+		$result = @file_get_contents($graph_url);
 	}
 
 	session_destroy();
@@ -169,7 +168,6 @@ function logout() {
 $app->delete('/users/:id(/)', function($id) use ($app) {
 	if ($_SESSION['user']['id'] == $id) {
 		logout();
-		output_json();
 	} else {
 		badRequest();
 	}

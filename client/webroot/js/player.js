@@ -5,16 +5,17 @@
 	y4.PlayerView = Backbone.View.extend({
 		className: "player",
 		initialize: function (options) {
-			var VideoLayer = y4.useHtmlVideo ? y4.HtmlVideoLayerView : y4.FlashVideoLayerView;
+			var that = this,
+				VideoLayer = y4.useHtmlVideo ? y4.HtmlVideoLayerView : y4.FlashVideoLayerView;
 			this.videoLayer = new VideoLayer({ server: options.server });
 			this.blackLayer = new y4.BlackLayerView();
 			this.stillLayer = new y4.StillLayerView();
 			this.overlayLayer = new y4.OverlayLayerView();
 			this.channels = new y4.Channels(y4.bootstrap.channels);
-			this.blackLayer.show();
 			this.videoLayer.on("set", function () {
 				that.videoLayer.show();
 			}).on("start", function () {
+				console.log("JK")
 				that.blackLayer.hide();
 			}).on("finish", function () {
 				that.blackLayer.show();
@@ -32,10 +33,9 @@
 		render: function () {
 			this.$el.html("").append(
 				this.videoLayer.render().el,
-				this.blackLayer.render().el,
+				this.blackLayer.render().show().el,
 				this.stillLayer.render().el,
 				this.overlayLayer.render().el);
-
 			return this;
 		},
 
@@ -127,12 +127,12 @@
 		play: function () { console.log("TODO") },
 		stop: function () { console.log("TODO") },
 		set: function (service, url) {
-			console.trace();
 			if (this.url === url && this.service === service) { return; }
 			this.service = service;
 			this.url = url;
 			console.log("Video: rtmp://" + this.options.server + '/' + this.service + "/" + this.url)
 			this.render();
+			this.trigger("set");
 			return this;
 		},
 		render: function () {
@@ -147,10 +147,11 @@
 						autoBuffering: true,
 						accelerated: true,
 						onStart: function () {
-							that.trigger("started");
+							console.log("HJIO");
+							that.trigger("start");
 						},
 						onFinish: function () {
-							that.trigger("finished");
+							that.trigger("finish");
 						}
 					},
 					plugins: {

@@ -6,7 +6,7 @@
 	y4.bootstrap = {
 		channels: [
 			{ id: "518974809", title: "Channel 4", service: "your4", url: "c4.stream", icon: "img/ids/c4.svg" },
-			{ id: "e4", title: "E4", service: "your4", url: "e4.stream", icon: "img/ids/e4.svg" },
+			{ id: "518975484", title: "E4", service: "your4", url: "e4.stream", icon: "img/ids/e4.svg" },
 			{ id: "m4", title: "More4", service: "your4", url: "m4.stream", icon: "img/ids/more4.svg" },
 			{ id: "f4", title: "Film4", service: "your4", url: "film4.stream", icon: "img/ids/film4.svg" },
 			{ id: "4music", title: "4music", service: "your4", url: "4music.stream", icon: "img/ids/4music.svg" },
@@ -129,6 +129,7 @@
 				dfd = this.programmeRecommendation();
 
 			dfd.then(function () {
+				that.nextType = "programme";
 				that.next();
 			});
 
