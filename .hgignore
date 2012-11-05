@@ -9,3 +9,11 @@ client/webroot/img/thumbs/**
 *.flv
 *.swp
 *~
+docs/*.acn
+docs/*.aux
+docs/*.glo
+docs/*.ist
+docs/*.log
+docs/*.out
+docs/*.pdf
+docs/*.toc

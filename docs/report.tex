@@ -1,0 +1,243 @@
+
+\documentclass[12pt,a4paper,twoside, titlepage, openright, cleardoublepage=empty]{article}
+\usepackage[left=35mm, right=24mm, top=24mm, bottom=24mm]{geometry}
+\usepackage{parskip} % http://www.tex.ac.uk/cgi-bin/texfaq2html?label=parskip
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.4cm}
+\usepackage{listings}
+\lstset{basicstyle=\scriptsize}
+\usepackage[colorlinks=false,pdfborder={0 0 0}]{hyperref}
+\usepackage{natbib}
+\bibliographystyle{agsm}
+\usepackage{bibunits}
+\usepackage{bibentry}
+%\renewcommand{\bibsection}
+\usepackage[usenames]{color}
+\definecolor{urlcolor}{rgb}{0,0.08,0.45}
+\usepackage{url}
+\newcommand{\link}[2]{{#1}\footnote{{#1} - \footurl{#2} }}
+\newcommand{\footurl}[1]{\color{urlcolor}{\underline{\url{#1}}}}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancy}
+\usepackage[acronym,style=list]{glossaries}
+\makeglossaries
+\usepackage{lscape}
+\usepackage{subfig}
+\usepackage{tabularx}
+\captionsetup[figure]{labelfont=it,textfont={it}}
+\captionsetup[table]{labelfont=it,textfont={it}}
+\usepackage{multicol}
+\usepackage{emptypage}
+
+\begin{document}
+
+\pagenumbering{roman}
+
+
+\begin{titlepage}
+
+\begin{center}
+
+\textsc{\large{Electronics and Computer Science}}
+
+\large{Faculty of Physical and Applied Sciences}
+
+\large{University of Southampton}\\[3.5cm]
+
+\large{Authors: Peter West (pw9g09@ecs.soton.ac.uk)
+		Peter West (pw9g09@ecs.soton.ac.uk)
+		Peter West (pw9g09@ecs.soton.ac.uk)
+		Peter West (pw9g09@ecs.soton.ac.uk)
+		Peter West (pw9g09@ecs.soton.ac.uk)}
+
+\large{Date: \today}\\[4.0cm]
+
+\textsc{\LARGE Your4.tv - A TV streaming Service Designed for Recommendations of Programmes and Adverts}\\[4.5cm]
+
+\large{Project Supervisors: David Tarrant (???@ecs.soton.ac.uk)
+		Lelie Carr (???@ecs.soton.ac.uk)}
+
+\large{Customer: inqb8r (http://inqb8r???/)}
+
+\vfill
+
+\large{A project report submitted for the award of}\\[0.0cm]
+
+\large{MEng Software Engineering}
+
+\end{center}
+
+\end{titlepage}
+
+
+\cleardoublepage
+
+\abstract{}
+
+\cleardoublepage
+
+\section{Acknowledgments}
+
+\cleardoublepage
+\setcounter{tocdepth}{2}
+\tableofcontents
+\newpage
+\cleardoublepage
+\setcounter{page}{0}
+\pagenumbering{arabic}
+\cleardoublepage
+
+\section{Introduction}
+Current TV streaming services - such as BBC iPlayer and 4oD - allow users to watch either Live TV or programmes that have been shown previously. This can be done via a web-interface on a computer. iPlayer and 4oD both have apps available for other platforms, such as the Sony PS3 and Android smartphones[check].
+
+The customer, inqb8r, run a service called Project4, which similar to above, is a TV streaming service which also offers previously shown programmes. The service is aimed at students (specifically designed to be used on JA.NET) and shows Channel 4, four of its sister channels - E4, More4, 4Music and Film4 - and its own channel, studentTV.
+
+\cleardoublepage
+
+
+\section{Motivation}
+
+the "HYPOTHESIS"
+
+\section{Background}
+
+\subsection{inqb8r}
+
+\subsection{Project4}
+
+\subsection{Streaming services}
+
+\subsection{Advertisement}
+
+\subsection{Programme Recommendation}
+
+\subsection{Mobile devices}
+
+\cleardoublepage
+
+\section{Prestudy: Survey}
+
+\subsection{How People Consume TV Streaming Services}
+Details about the survey
+
+\subsection{Analysis}
+Survey result analysis
+
+... suggests that the product we propose will improve the ...
+
+\cleardoublepage
+
+\section{Project Management}
+
+The team consists of five people, who have worked together on a scripting project previously. It was thus understood each others skills, which allowed tasks to be allocated effectively from the start. The team members are:
+\begin{enumerate}
+\item \textit{Dexter Lowe} (Software Engineering MEng, Part 4): worked with enterprise systems, strong experience with Java, very familiar with Eclipse
+\item \textit{Jim Skinner} (Computer Science MEng, Part 4): knowledgeable in areas of machine-learning, strong experience with Python
+\item \textit{Tom Smith} (Computer Science MEng, Part 4): has experience with data-visualisation, strong experience with JavaScript
+\item \textit{Adam Thomas} (Computer Science MEng, Part 4): experienced web developer, strong experience with JavaScript and PHP
+\item \textit{Peter West} (Software Engineering MEng, Part 4): knowledgeable in user-interface design, strong experience with JavaScript and PHP
+\end{enumerate}
+
+During the first week on the project, the team made preparations for the project to begin and compiled a brief (see Appendix~\ref{}) that would describe the deliverable product. This started with a team meeting to discuss the specification that the client had provided, allowing the team to establish what discussion would need to take place with the customer and supervisors. This was key to agreeing on a project that would be achievable within the time and resource constraints.
+
+During the meeting (attended by supervisor Les Carr and, from inqb8r, Peter Wood and Nick Culley),
+
+\subsection{Task Allocation}
+Team leader: Peter West
+etc
+
+\subsection{Time Management}
+The time spent on this project was constrained to 10 weeks.
+
+\subsubsection{Critical Path Analysis}
+
+\subsubsection{Gantt Charts}
+Version 1 (project start)
+Version 2 (mid project)
+Version 3 (final)
+
+\subsection{Techniques}
+It was possible that during the project
+
+\subsection{Risk Analysis}
+
+\cleardoublepage
+
+\section{Design}
+
+\subsection{System Layers}
+The user must be able to access the app via a web browser.
+
+It was decided that the TV and programme streams should be delivered to the client via Wowza media server, which would be run on a Windows server. Peter Wood (inqb8r) has had extensive experience with Wowza, and was able promptly to have the server configured to stream, releaving us of any lengthy configuring that might have had to take place with any other system. Additionally, inqb8r were able to provide us with a licensed Wowza server.
+
+LAMP server
+
+\subsection{Programme recommendation}
+
+\subsection{Adverts}
+
+\subsubsection{Advertiser - creating adverts}
+
+\subsubsection{Viewer - consuming adverts}
+
+\subsection{Streaming}
+Each programme will be recorded using the EPG data. Since adverts will be replaced by ones recommended to viewers, it must be known when adverts are due to start and finish. This information is available as a GPI[?] pulse, sent by Channel 4 [more technical details]
+
+- detail of stream origin and how many systems it goes through before reaching us
+- detail about any delay this may cause
+- what limitations are imposed by this? is useful data stripped? does the delay cause inaccuracies?
+
+
+\cleardoublepage
+
+\section{Implementation}
+
+\subsection{Languages and Techniques}
+As this project involved interacting with many different systems, a diverse range of programming languages were used.
+
+\subsubsection{Client-side web interfaces}
+\begin{enumerate}
+\item \textit{HTML}
+\item \textit{CSS}
+\item \textit{JavaScript}
+\end{enumerate}
+
+\subsubsection{Server-side and data-layer}
+\begin{enumerate}
+\item \textit{PHP}
+\item \textit{Python}
+\end{enumerate}
+
+Communication between server and client is done through a REST interface.
+
+\subsubsection{Streaming server}
+\begin{enumerate}
+\item \textit{Java} to interface with the Wowza streaming server
+\item \textit{Python} to interpret to GPI[?] pulse in order to establish when breaks in live programmes are
+\end{enumerate}
+
+\subsection{Libraries and Frameworks}
+
+\subsection{Code Statistics}
+Lines of code in JS, PHP, Java, Python, HTML, CSS etc
+
+\cleardoublepage
+
+\section{User Study}
+
+\cleardoublepage
+
+\section{Analysis}
+
+\cleardoublepage
+
+\section{Discussion}
+\subsection{Summary}
+\subsection{Limitations}
+\subsection{Further Work}
+\subsection{Conclusion}
+
+\end{document}
