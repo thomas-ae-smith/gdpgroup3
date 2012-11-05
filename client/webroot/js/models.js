@@ -28,24 +28,8 @@
 	});
 
 
-	y4.Programme = Backbone.Model.extend({
-		/*scene: function () {
-			var that = this,
-				mj = this.toJSON();
-			return new this.Scene({
-				id: mj.id,
-				title: mj.title,
-				player: that.collection.player,
-				media: new y4.Video({
-					service: mj.service,
-					url: mj.url
-				})
-			});
-		}*/
-	});
 	y4.Programmes = Backbone.Collection.extend({
 		url: "http://www.your4.tv/api/programmes/",
-		model: y4.Programme,
 		comparator: nameComparator
 	});
 
@@ -64,25 +48,7 @@
 			type: "",
 			adverts: [],
 			overlay: ""
-		},
-		// Generate a scene view
-		//scene: function () {
-		/*	var mj = this.toJSON(),
-				media;
-			if (mj.type === "video") {
-				media = new y4.VideoSceneView({ service: mj.service, url: mj.url });
-			} else if (mj.type === "still") {
-				media = new y4.StillSceneView({ image: mj.url, duration: mj.duration  });
-			} else {
-				y4.error("Invalid advert type");
-			}
-			return new y4.AdvertView({
-				id: mj.id,
-				player: this.collection.player,
-				media: media,
-				overlay: null
-			});
-		}*/
+		}
 	});
 	y4.Adverts = Backbone.Collection.extend({
 		url: "http://www.your4.tv/api/adverts/",
@@ -160,9 +126,14 @@
 			var that = this,
 				dfd = this.programmeRecommendation();
 
+			dfd.then(function () {
+				that.next();
+			});
+
 			this.poller = setInterval(function () {
 				that.poll();
 			}, 20000);
+
 			return dfd;
 		},
 		stop: function () {
@@ -180,8 +151,6 @@
 				data: {
 					user: this.user.id
 				}
-			}).then(function () {
-				that.trigger("programme", that.programmes.at(0));
 			});
 		},
 		advertRecommendation: function () {
@@ -191,65 +160,28 @@
 					user: this.user.id,
 					programme: this.programmes.at(0).id
 				}
-			}).then(function () {
-				that.trigger("advert", that.adverts.at(0));
 			});
-		}
-	});
-
-
-	/*y4.Channel = y4.ProgrammeModel.extend({
-		Scene: y4.Channel,
-	});
-	y4.VODModel = y4.ProgrammeModel.extend({
-		Scene: y4.VOD
-	});*/
-
-/*
-	y4.AdvertCollection = Backbone.Collection.extend({
-		model: y4.AdvertModel,
-		initialize: function (models, options) {
-			this.player = options.player;
-			this.reset(advertData);
-			//this.user = options.user;
 		},
-		advert: function (duration) {
-			// TODO Query to advert recommender with duration + this.user.preferences
-			return this.at(Math.floor(this.length * Math.random()));
-		}
-	});
-
-	y4.ProgrammeCollection = Backbone.Collection.extend({
-		model: y4.ProgrammeModel,
-		initialize: function (models, options) {
-			this.channelCollection = options.channelCollection;
-			this.vodCollection = options.vodCollection;
+		fetchNext: function () {
+			this.nextType = "programme"; // Work this out from advert times
+			switch (this.nextType) {
+			case "programme": return this.programmeRecommendation();
+			case "advert": return this.advertRecommendation();
+			}
 		},
-		programme: function () {
-			// TODO Query programme recommender
-			var i = Math.random();
-			if (i < 0.7) {
-				return this.channelCollection.at(Math.floor(this.channelCollection.length * Math.random()));
-			} else {
-				return this.vodCollection.at(Math.floor(this.vodCollection.length * Math.random()));
+		nextHasExpired: function () {
+			return false;
+		},
+		next: function () {
+			switch (this.nextType) {
+			case "programme";
+				that.trigger("programme", that.programmes.at(0));
+				break;
+			case "advert":
+				that.trigger("advert", that.adverts.at(0));
+				break;
 			}
 		}
 	});
-
-	y4.ChannelCollection = Backbone.Collection.extend({
-		model: y4.ChannelModel,
-		initialize: function (models, options) {
-			this.player = options.player;
-			this.reset(channelData);
-		}
-	});
-
-	y4.VODCollection = Backbone.Collection.extend({
-		model: y4.VODModel,
-		initialize: function (models, options) {
-			this.player = options.player;
-			this.reset(vodData);
-		}
-	});*/
 
 }(this.y4));

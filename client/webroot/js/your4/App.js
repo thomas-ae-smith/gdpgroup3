@@ -36,6 +36,21 @@
 				name: "never do this"
 			});
 
+			this.player.on("beforefinish", function () {
+				that.playlist.fetchNext();
+			}).on("finish", function () {
+				// Check if the next programme/advert can still be shown at
+				// this time (that no more than 5 seconds has elapsed since
+				// beforefinish)
+				if (that.playlist.nextHasExpired()) {
+					that.playlist.fetchNext().then(function () {
+						that.player.next();
+					});
+				} else {
+					that.player.next();
+				}
+			});
+
 		},
 		render: function () {
 			this.$el.html(y4.templates['your4-main']());
@@ -176,7 +191,6 @@
 
 			});
 			playlist.on("programme", function (programme) {
-				console.log(programme)
 				that.player.setProgramme(programme);
 			}).on("advert", function (advert) {
 				that.player.setAdvert(advert);

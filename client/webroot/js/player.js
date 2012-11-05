@@ -11,6 +11,23 @@
 			this.stillLayer = new y4.StillLayerView();
 			this.overlayLayer = new y4.OverlayLayerView();
 			this.channels = new y4.Channels(y4.bootstrap.channels);
+			that.blackLayer.show();
+			this.videoLayer.on("set", function () {
+				that.videoLayer.show();
+			}).on("start", function () {
+				that.blackLayer.hide();
+			}).on("finish", function () {
+				that.blackLayer.show();
+				that.videoLayer.hide();
+			});
+			this.stillLayer.on("set", function () {
+				that.stillLayer.show();
+			}).on("start", function () {
+				that.blackLayer.hide();
+			}).on("finish", function () {
+				that.blackLayer.show();
+				that.stillLayer.hide();
+			});
 		},
 		render: function () {
 			this.$el.html("").append(
@@ -23,6 +40,14 @@
 		},
 
 		setAdvert: function (advert) {
+			switch (advert.get("type")) {
+			case "still":
+				this.stillLayer.set(advert.get("url"));
+				break;
+			case "video":
+				this.videoLayer.set("advert", advert.get("id"));
+				break;
+			}
 
 		},
 		setProgramme: function (programme) {
@@ -33,6 +58,7 @@
 				this.videoLayer.set("your4", channel.get("url"));
 				break;
 			case "vod":
+				this.videoLayer.set("vod", programme.get("uid"));
 				break;
 			}
 		},
@@ -45,7 +71,22 @@
 		}
 	});
 
-	y4.VideoLayerView = Backbone.View.extend({
+	var LayerView = Backbone.View.extend({
+		show: function () {
+			this.$el.show();
+			return this;
+		},
+		hide: function () {
+			this.$el.hide();
+			return this;
+		},
+		render: function () {
+			this.hide();
+			return this;
+		}
+	});
+
+	y4.VideoLayerView = LayerView.extend({
 		className: "video-layer",
 		zIndex: 1,
 		mute: function () {
@@ -74,7 +115,7 @@
 			var that = this,
 			template = _.template($("#html-video-template").html());
 
-			this.$el.html(template(this.options));
+			this.hide().$el.html(template(this.options));
 			this.$video = this.$("video");
 			this.videoEl = this.$video[0];
 
@@ -97,7 +138,7 @@
 		render: function () {
 			var template = _.template($("#flash-video-template").html());
 
-			this.$el.html(template({
+			this.hide().$el.html(template({
 				config: {
 					clip: {
 						url: 'mp4:' + this.url,
@@ -130,36 +171,29 @@
 		}
 	});
 
-	y4.BlackLayerView = Backbone.View.extend({
+	y4.BlackLayerView = LayerView.extend({
 		className: "black-layer",
-		zIndex: 4,
-		show: function () {
-			this.$el.show();
-			return this;
-		},
-		hide: function () {
-			this.$el.hide();
+		zIndex: 4
+	});
+
+	y4.StillLayerView = LayerView.extend({
+		className: "still-layer",
+		zIndex: 2,
+		set: function (url) {
+			this.$("img.still").attr("src", url);
 			return this;
 		},
 		render: function () {
-			this.hide();
+			this.hide().$el.html(templates["still-layer"]);
 			return this;
 		}
 	});
 
-	y4.StillLayerView = y4.BlackLayerView.extend({
-		className: "still-layer",
-		zIndex: 2,
-		set: function (scene) {
-			this.$el.html("").append(scene.media.render().el);
-			return this;
-		}
-	});
-
-	y4.OverlayLayerView = Backbone.View.extend({
+	y4.OverlayLayerView = LayerView.extend({
 		className: "overlay-layer",
 		zIndex: 3,
-		set: function (overlay) {
+		set: function (url) {
+			this.$("iframe").attr("href", url);
 			return this;
 		}
 	});
