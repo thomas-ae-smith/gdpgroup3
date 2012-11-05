@@ -15,7 +15,9 @@
 		initialize: function () {
 			var that = this;
 			this.router = new Router({ app: this });
+			this.user = new y4.User();
 			this.users = new y4.Users();
+			this.users.add(this.user);
 			this.player = new y4.PlayerView({ server: wowzaServer });
 
 			FB.init({
@@ -30,11 +32,7 @@
 				e.preventDefault(); // Prevents scrolling
 			});
 
-			// HACK
-			this.user = new y4.User({
-				id: 8,
-				name: "never do this"
-			});
+			window.login = this;
 
 			this.player.on("beforefinish", function () {
 				that.playlist.fetchNext();
@@ -61,14 +59,11 @@
 			var that = this;
 			this.render().showSpinner();
 
-			var fetchUserDfd = new $.Deferred(),
-				user = new y4.User({ id: 'me' });
+			var fetchUserDfd = new $.Deferred();
 
-			this.users.add(user);
-
-			user.fetch().done(function () {
+			this.user.set('id','me');
+			this.user.fetch().done(function () {
 				// User is logged in :)
-				that.user = user;
 				fetchUserDfd.resolve();
 			}).fail(function () {
 				// Check to see if user is logged in via FB
@@ -77,23 +72,14 @@
 						that.retrieveFbUser().then(function () {
 							fetchUserDfd.resolve();
 						});
+					} else if (response.status === 'not_authorized') {
+						that.hideSpinner();
+						that.goLogin();
 					} else {
-						fetchUserDfd.resolve();
+						that.hideSpinner();
+						that.goLogin();
 					}
-					/*else if (response.status === 'not_authorized') {
-						that.facebookLoggedIn = false;
-						y4.app.hideSpinner();
-						that.renderLogin();
-					} else {
-						that.facebookLoggedIn = false;
-						y4.app.hideSpinner();
-						that.renderLogin();
-					}*/
 				});
-				setTimeout(function () { // HACK, no (documented) way to tell if FB.getLoginStatus has failed
-					console.log("Resorting to hack");
-					fetchUserDfd.resolve();
-				}, 2000);
 			});
 			$.when(fetchUserDfd).done(function () {
 				that.hideSpinner();
@@ -108,7 +94,6 @@
 				dfd = new $.Deferred();
 			FB.login(function (response) {
 				if (response.authResponse) {
-					that.facebookLoggedIn = true;
 					that.retrieveFbUser().then(function () {
 						dfd.resolve();
 					});
@@ -121,15 +106,14 @@
 			var that = this,
 				dfd = new $.Deferred();
 			FB.api('/me', function (response) {
-				var user = new y4.User({ id: 'fb-' + response.id });
-				that.users.add(user);
-				user.fetch().then(function () {
-					if (user.get("registered")) {
-						that.user = user
+				that.user.set('id', 'fb-' + response.id);
+				that.user.fetch().then(function () {
+					if (that.user.get("registered") == false) {
+						that.hideSpinner();
+						that.goRegister(dfd);
 					} else {
-						//that.renderReg(undefined, that.userModel);
+						dfd.resolve();
 					}
-					dfd.resolve();
 				});
 			});
 			return dfd;
@@ -159,12 +143,13 @@
 			});
 			return this;
 		},
-		goRegister: function () {
-			var register = new y4.RegisterView();
+		goRegister: function (dfd) {
+			var register = new y4.RegisterView({user: this.user});
 			this.showStartScreen().$('.start-container').html("")
 				.append(register.render().el);
-			register.on("register", function () {
 
+			register.on("register", function () {
+				dfd.resolve();
 			});
 			return this;
 		},
