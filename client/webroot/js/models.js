@@ -1,5 +1,7 @@
 (function (y4) {
 	"use strict";
+	
+	var baseUrl = window.location.hostname;
 
 	y4.bootstrap = {
 		channels: [
@@ -18,18 +20,18 @@
 	};
 
 	y4.Occupations = Backbone.Collection.extend({
-		url: "http://www.your4.tv/api/occupations/",
+		url: "http://"+baseUrl+"/api/occupations/",
 		comparator: nameComparator
 	});
 
 	y4.Genres = Backbone.Collection.extend({
-		url: "http://www.your4.tv/api/genres/",
+		url: "http://"+baseUrl+"/api/genres/",
 		comparator: nameComparator
 	});
 
 
 	y4.Programmes = Backbone.Collection.extend({
-		url: "http://www.your4.tv/api/programmes/",
+		url: "http://"+baseUrl+"/api/programmes/",
 		comparator: nameComparator
 	});
 
@@ -51,7 +53,7 @@
 		}
 	});
 	y4.Adverts = Backbone.Collection.extend({
-		url: "http://www.your4.tv/api/adverts/",
+		url: "http://"+baseUrl+"/api/adverts/",
 		model: y4.Advert
 	});
 
@@ -82,7 +84,7 @@
 		}
 	});
 	y4.Campaigns = Backbone.Collection.extend({
-		url: "http://www.your4.tv/api/campaigns/",
+		url: "http://"+baseUrl+"/api/campaigns/",
 		model: y4.Campaign
 	});
 
@@ -107,7 +109,7 @@
 		}
 	});
 	y4.Users = Backbone.Collection.extend({
-		url: 'http://www.your4.tv/api/users/',
+		url: 'http://'+baseUrl+'/api/users/',
 		model: y4.User
 	});
 
