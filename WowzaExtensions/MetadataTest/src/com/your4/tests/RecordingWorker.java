@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -18,7 +19,7 @@ public class RecordingWorker extends Thread {
 		public TimerTask mTask;
 		public ModuleLiveStreamRecord rec;
 		public IApplicationInstance appInstance;
-		public HashMap<String, RecordingObj> currentRecordings;
+		private HashMap<String, RecordingObj> currentRecordings;
 	    public static final String dbUrl = "jdbc:mysql://77.244.130.51:3307/inspirit_inqb8r";
 	    public static final String dbClass = "com.mysql.jdbc.Driver";
 	    
@@ -28,12 +29,29 @@ public class RecordingWorker extends Thread {
 			rec = new ModuleLiveStreamRecord();
 			mTask = new TimerTask(){
 				private ResultSet rs;
+				private ArrayList<String> endedRecordings = new ArrayList<String>();
 				
 				public void run(){
                 	try {
-						Class.forName("com.mysql.jdbc.Driver");
-						
-	               		Connection con = DriverManager.getConnection (dbUrl, "teamgdp", "MountainDew2012");
+						//Detect any completed recordings
+	                    for (String rawID : currentRecordings.keySet()){
+	                        if (currentRecordings.get(rawID).hasEnded()){
+	                        	endedRecordings.add(rawID);
+	                        }
+	                    }
+	                    
+	                    //Remove completed recordings from active list
+	                    for (String rawID : endedRecordings){
+	                    	RecordingObj rec = currentRecordings.remove(rawID);
+	                        System.out.println(rec.getRawID());	
+	                    }
+	                    
+	                    //Reset completed list
+	                    endedRecordings.clear();
+	                    
+	                    //Pull new show information from the SQL database
+	                    Class.forName("com.mysql.jdbc.Driver");
+	                    Connection con = DriverManager.getConnection (dbUrl, "teamgdp", "MountainDew2012");
 	                    Statement stmt = con.createStatement();
 	                    rs = stmt.executeQuery("SELECT epg.key, epg.channelID, epg.rawID, "
 	                            + "CONCAT(epg.date, ' ', epg.start_time_GMT) as startTimeStamp, "
@@ -41,15 +59,7 @@ public class RecordingWorker extends Thread {
 	                            + "FROM inspirit_inqb8r.project4_epg as epg WHERE CONCAT(epg.date, ' ', epg.start_time_GMT) "
 	                            + "BETWEEN DATE_SUB('" + Utils.getCurrentTimeStamp() + "', INTERVAL 1 MINUTE) "
 	                            + "AND DATE_ADD('" + Utils.getCurrentTimeStamp() + "', INTERVAL 1 MINUTE);");
-	
-	                    //Stop any completed recordings
-	                    for (String rawID : currentRecordings.keySet()){
-	                        if (currentRecordings.get(rawID).hasEnded()){
-	                            RecordingObj rec = currentRecordings.remove(rawID);
-	                            System.out.println(rec.getRawID());
-	                        }
-	                    }
-	                    
+	                    	                    
 	                    //Start any new recordings needed
 	                    while (rs.next()) {
 	                        if (!(currentRecordings.containsKey(rs.getString("rawID")))){
