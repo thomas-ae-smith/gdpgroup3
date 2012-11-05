@@ -43,8 +43,8 @@ function processUser($app, $id) {
 		$field_content = $req[$field];
 		if (isset($field_content)) {
 			if ($field == "password") {
-				$user->salt = substr(sha1(mt_rand()),0,22); //22 char salt for crypt
-				$user->password = crypt($field_content,'$2a$10$'. $user->salt);
+				$salt = substr(sha1(mt_rand()),0,22); //22 char salt for crypt
+				$user->password = crypt($field_content,'$2a$10$'. $salt);
 			} else {
 				$user->setAttr($field, $field_content);
 			}
@@ -161,11 +161,18 @@ $app->get('/users/', function() use ($app) {
 		badRequest();
 	}
 
-	$user = R::findOne('users','email = ?',array($pass));
-	if (is_null($user)) {
+	$user = R::findOne('users','email = ?',array($email));
+	if ($user == null) {
 		forbidden();
 	}
 
+	if($user->password == crypt($pass, substr($user->password, 0, 29))) {
+		$_SESSION['user'] = $user->export();
+		$_SESSION['user']['registered'] = true;
+		output_json($_SESSION['user']);
+	} else {
+		forbidden();
+	}
 });
 
 function logout() {
