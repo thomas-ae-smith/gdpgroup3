@@ -21,6 +21,7 @@ $app->get('/programmes(/)', function() use ($app) {
 			'name' => $programme->name,
 			'episode' => $programme->episode,
 			'type' => $programme->type,
+			'live' => $programme->live,
 			'timenow' => time()
 		)));
 		
