@@ -47,7 +47,7 @@
 
 \large{University of Southampton}\\[3.5cm]
 
-\large{Authors: Peter West (pw9g09@ecs.soton.ac.uk)
+\large{Authors: Peter West (pw9g09@ecs.soton.ac.uk) \
 		Peter West (pw9g09@ecs.soton.ac.uk)
 		Peter West (pw9g09@ecs.soton.ac.uk)
 		Peter West (pw9g09@ecs.soton.ac.uk)
@@ -179,7 +179,24 @@ LAMP server
 
 \subsection{Adverts}
 
-\subsubsection{Advertiser - creating adverts}
+Adverts will be targetted
+
+\subsubsection{Campaigns}
+
+Data about users will be collected such that adverts may be targetted towards certain demographics:
+\begin{enumerate}
+\item \textit{Age range}
+\item \textit{Gender}
+\item \textit{Location}
+\end{enumerate}
+
+Additionally, an advertiser may specify \textit{when} adverts should appear:
+\begin{enumerate}
+\item \textit{Time of day}
+\item \textit{Day of week}
+\item \textit{Programme that is on}
+\item \textit{Genre of programme that is on}
+\end{enumerate}
 
 \subsubsection{Viewer - consuming adverts}
 
@@ -213,6 +230,8 @@ As this project involved interacting with many different systems, a diverse rang
 
 Communication between server and client is done through a REST interface.
 
+Datebase is MySQL.
+
 \subsubsection{Streaming server}
 \begin{enumerate}
 \item \textit{Java} to interface with the Wowza streaming server
@@ -220,6 +239,30 @@ Communication between server and client is done through a REST interface.
 \end{enumerate}
 
 \subsection{Libraries and Frameworks}
+
+\subsection{Detailed Architecture}
+
+\subsubsection{Database structure}
+
+\subsubsection{Programme recommendation}
+
+\subsubsection{Advert selection}
+
+\subsubsection{REST services}
+
+\subsubsection{Playback}
+Plays HLS streams in HTML5 Video tag, or RTMP stream in Flash Video.
+
+The player must be capable to displaying two types of media: \textit{video} (for programmes and video adverts) and \textit{stills} (for adverts which consist of just one picture). Additionally, some adverts may have an overlay, which consists of some HTML specified by the advertiser. A challenge here is hiding the buffering of videos or loading of images. A solution is to hide any media until it has loaded. Layers:
+\begin{enumerate}
+\item \textit{Black layer}: used to hide any loading media
+\item \textit{Overlay layer}: an iFrame which will display the HTML that the advertiser has specified for the overlay
+\item \textit{Still layer}: an image that will display any still adverts
+\item \textit{Video layer}: the video component to show the video
+\end{enumerate}
+
+\subsubsection{Data visualisation}
+
 
 \subsection{Code Statistics}
 Lines of code in JS, PHP, Java, Python, HTML, CSS etc
