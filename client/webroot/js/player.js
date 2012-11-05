@@ -21,14 +21,14 @@
 				that.blackLayer.show();
 				that.videoLayer.hide();
 			});
-			this.stillLayer.on("set", function () {
+			/*this.stillLayer.on("set", function () {
 				that.stillLayer.show();
 			}).on("start", function () {
 				that.blackLayer.hide();
 			}).on("finish", function () {
 				that.blackLayer.show();
 				that.stillLayer.hide();
-			});
+			});*/
 		},
 		render: function () {
 			this.$el.html("").append(
@@ -87,7 +87,7 @@
 	});
 
 	var VideoLayerView = LayerView.extend({
-		className: "player-layer video-layer",
+		className: "layer-view video-layer",
 		zIndex: 1,
 		mute: function () {
 			console.log("TODO");
@@ -155,7 +155,6 @@
 					autoBuffering: true,
 					accelerated: true,
 					onStart: function () {
-						console.log("HJIO");
 						that.trigger("start");
 					},
 					onFinish: function () {
@@ -180,12 +179,12 @@
 	});
 
 	y4.BlackLayerView = LayerView.extend({
-		className: "player-layer black-layer",
+		className: "layer-view black-layer",
 		zIndex: 4
 	});
 
 	y4.StillLayerView = LayerView.extend({
-		className: "player-layer still-layer",
+		className: "layer-view still-layer",
 		zIndex: 2,
 		set: function (url) {
 			this.$("img.still").attr("src", url);
@@ -199,7 +198,7 @@
 	});
 
 	y4.OverlayLayerView = LayerView.extend({
-		className: "player-layer overlay-layer",
+		className: "layer-view overlay-layer",
 		zIndex: 3,
 		set: function (url) {
 			this.$("iframe").attr("href", url);

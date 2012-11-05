@@ -154,6 +154,20 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 	}
 });
 
+$app->get('/users/', function() use ($app) {
+	$email = $app->request()->get('email');
+	$pass = $app->request()->get('password');
+	if (!isset($email) || !isset($pass)) {
+		badRequest();
+	}
+
+	$user = R::findOne('users','email = ?',array($pass));
+	if (is_null($user)) {
+		forbidden();
+	}
+
+});
+
 function logout() {
 	global $facebook;
 	$token = $facebook->getAccessToken();

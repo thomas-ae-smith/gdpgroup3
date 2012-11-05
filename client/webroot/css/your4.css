@@ -238,7 +238,7 @@ body {
 	bottom: 0;
 }
 
-.player .player-layer {
+.player .layer-view {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -246,7 +246,7 @@ body {
 	bottom: 0;
 }
 
-.player .still-layer, .player.black-layer {
+.player .still-layer, .player .black-layer {
 	background: black;
 }
 
