@@ -78,17 +78,31 @@ $app->post('/users(/)', function() use ($app) {
 $app->get('/users/:id(/)', function($id) use ($app) {
 	global $facebook;
 	
-	$active_session = false;
-	if ($id == 'me' && isset($_SESSION['user']['id'])) {
-		$id = $_SESSION['user']['id'];
-		$active_session = true;
-	} else {
-		badRequest();
-		exit;
-	}
-
 	$type = getIdType($id);
 	$id = str_replace('fb-', '', $id);
+
+	if (isset($_SESSION['user']['id']) && ($id == 'me' || $_SESSION['user']['id'] == $id || ($type == 'fb' && $_SESSION['user']['facebookId'] == $id))) {
+		if ($id == 'me') {
+			$id = $_SESSION['user']['id'];
+		}
+
+		// Force processing via facebook if facebook user
+		if ($type == 'local' && !is_null($_SESSION['user']['facebookId'])) {
+			$type = 'fb';
+			$id = $_SESSION['user']['facebookId'];
+		}
+
+		$query_str = $type == 'fb' ? 'facebookId = ?' : 'id = ?';
+		if ($_SESSION['user']['registered']) {
+			$db_user = R::findOne('users', $query_str, array($id));
+			if (is_null($db_user)) {
+				logout();
+				badRequest();
+			}
+		}
+	} else if (isset($_SESSION['user']['id']) || $type != 'fb') {
+		badRequest();
+	}
 
 	// Fetching user by fb id
 	if ($type == 'fb') {
@@ -140,27 +154,24 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 	}
 });
 
-
-$app->delete('/users/:id(/)', function($id) use ($app) {
+function logout() {
 	global $facebook;
-	if (array_key_exists('user', $_SESSION)) {
-		if ($_SESSION['user']['facebookId'] != null) {
-			$user = R::load('users',$_SESSION['user']['id']);
-			if ($_SESSION['user']['facebookId'] = $user->facebookId) {
-				$token = $facebook->getAccessToken();
-				$graph_url = "https://graph.facebook.com/me/permissions?method=delete&access_token=" . $token;
-				$result = json_decode(file_get_contents($graph_url));
-				if($result) {
-					session_destroy();
-				}
-			} else {
-				output_json("fail");
-			}
-		} else {
-			session_destroy();
-		}
+	$token = $facebook->getAccessToken();
+	if ($token) {
+		$graph_url = "https://graph.facebook.com/me/permissions?method=delete&access_token=" . $token;
+		$result = json_decode(file_get_contents($graph_url));
 	}
 
-	output_json('success');
+	session_destroy();
+}
+
+
+$app->delete('/users/:id(/)', function($id) use ($app) {
+	if ($_SESSION['user']['id'] == $id) {
+		logout();
+		output_json();
+	} else {
+		badRequest();
+	}
 });
 
