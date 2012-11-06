@@ -62,8 +62,7 @@
 		submitReg: function() {
 			var that = this;
 			this.user.save(undefined, {success: function() {
-				y4.app.login.userModel = that.user;
-				y4.app.start();
+				that.trigger("register",that.user);
 			}, error: function(model, response) {
 				that.$el.prepend(response);
 			}});
@@ -74,6 +73,7 @@
 		className: "logon-outer",
 		events: {
 			"click .facebook-button": "facebookLogin",
+			"click .login-button": "normalLogin",
 			"click .register-button": "register"
 		},
 
@@ -89,6 +89,7 @@
 				this.app.fbLogin().then(function () {
 					that.$('.facebook-button').removeAttr('disabled')
 						.text("Login with Facebook");
+					that.app.router.navigate("play", { trigger: true });
 				});
 			}
 		},
@@ -97,12 +98,16 @@
 			this.app.router.navigate("register", { trigger: true });
 		},
 
-		login: function () {
-			var user = new User({
-				email: $("#inputEmail").val(),
-				password: $("#inputPassword").val() // or whatever
+		normalLogin: function () {
+			var that = this;
+			var users = new y4.Users();
+			var email = $('#inputEmail').val();
+			var password = $('#inputPassword').val();
+			users.fetch({data:{email: email, password: password}}).done(function() {
+				that.trigger("normalLogin", users.first());
+			}).fail(function(response) {
+				that.$el.prepend(response);
 			});
-			// ...
 		},
 
 		render: function() {
