@@ -9,6 +9,7 @@ $app->get('/programmes(/)', function() use ($app) {
 		}
 		unset($out);
 		exec('python ../../../recommender/get_recommendation.py -t 1351209900 ' . $user->id, $out);
+//		var_dump($out);
 		$programmeId = $out[1]; // Replace with 0 once get_recommender is fixed
 		$programme = R::load('programmes', $programmeId);
 		output_json(array(array(

@@ -62,8 +62,7 @@
 		submitReg: function() {
 			var that = this;
 			this.user.save(undefined, {success: function() {
-				y4.app.login.userModel = that.user;
-				y4.app.start();
+				that.trigger("register",that.user);
 			}, error: function(model, response) {
 				that.$el.prepend(response);
 			}});
@@ -89,6 +88,8 @@
 				this.app.fbLogin().then(function () {
 					that.$('.facebook-button').removeAttr('disabled')
 						.text("Login with Facebook");
+					console.log("play");
+					that.app.router.navigate("play", { trigger: true });
 				});
 			}
 		},

@@ -16,26 +16,32 @@ function set_db($conf_name) {
 }
 
 function notFound($msg = 'Not found') {
-        header('HTTP/1.0 404 Not Found', true, 404);
-        output_json(array('error' => $msg));
+    header('HTTP/1.0 404 Not Found', true, 404);
+    output_json(array('error' => $msg));
+	exit;
 }
 
 function invalid($msg = 'Invalid method') {
-        header('HTTP/1.1 405 Method Not Allowed', true, 405);
+    header('HTTP/1.1 405 Method Not Allowed', true, 405);
 	output_json(array('error' => $msg));
+	exit;
 }
 
 function badRequest($msg = 'Bad request') {
 	header('HTTP/1.0 400 Bad Request', true, 400);
 	output_json(array('error' => $msg));
+	exit;
 }
 
 function noContent() {
 	header('HTTP/1.1 204 No Content', true, 204);
+	exit;
 }
 
-function forbidden() {
+function forbidden($msg = "Access denied.") {
 	header('HTTP/1.1 403 Forbidden', true, 403);
+	output_json(array('error' => $msg));
+	exit;
 }
 
 function output_json($content) {
@@ -90,11 +96,16 @@ function fb_to_user($user_profile) {
 
 	$user['occupation'] = null;
 
-	$age = (date("md", date("U", mktime(0, 0, 0, $dob_parts[0], $dob_parts[1], $dob_parts[2]))) > date("md") ? ((date("Y")-$dob_parts[2])-1):(date("Y")-$dob_parts[2]));
-	$gender = substr($user['gender'], 0, 1);
-	exec("python ../../../recommender/get_user_vector.py $age $gender", $out);
-	$user['vector'] = $out[0];
+	$user['vector'] = get_user_vector($user['dob'], $user['gender']);
 	return $user;
+}
+
+function get_user_vector($dob, $gender) {
+	$gender = substr($gender, 0, 1);
+	$dob_parts = explode('-', $dob);
+	$age = (date("md", date("U", mktime(0, 0, 0, $dob_parts[1], $dob_parts[2], $dob_parts[0]))) > date("md") ? ((date("Y")-$dob_parts[0])-1):(date("Y")-$dob_parts[0]));
+	exec("python ../../../recommender/get_user_vector.py $age $gender", $out);
+	return $out[0];
 }
 
 function ifsetor(&$variable, $default = null) {

@@ -1,10 +1,12 @@
 (function (y4) {
 	"use strict";
+	
+	var baseUrl = window.location.hostname;
 
 	y4.bootstrap = {
 		channels: [
 			{ id: "518974809", title: "Channel 4", service: "your4", url: "c4.stream", icon: "img/ids/c4.svg" },
-			{ id: "e4", title: "E4", service: "your4", url: "e4.stream", icon: "img/ids/e4.svg" },
+			{ id: "518975484", title: "E4", service: "your4", url: "e4.stream", icon: "img/ids/e4.svg" },
 			{ id: "m4", title: "More4", service: "your4", url: "m4.stream", icon: "img/ids/more4.svg" },
 			{ id: "f4", title: "Film4", service: "your4", url: "film4.stream", icon: "img/ids/film4.svg" },
 			{ id: "4music", title: "4music", service: "your4", url: "4music.stream", icon: "img/ids/4music.svg" },
@@ -18,18 +20,18 @@
 	};
 
 	y4.Occupations = Backbone.Collection.extend({
-		url: "http://www.your4.tv/api/occupations/",
+		url: "http://"+baseUrl+"/api/occupations/",
 		comparator: nameComparator
 	});
 
 	y4.Genres = Backbone.Collection.extend({
-		url: "http://www.your4.tv/api/genres/",
+		url: "http://"+baseUrl+"/api/genres/",
 		comparator: nameComparator
 	});
 
 
 	y4.Programmes = Backbone.Collection.extend({
-		url: "http://www.your4.tv/api/programmes/",
+		url: "http://"+baseUrl+"/api/programmes/",
 		comparator: nameComparator
 	});
 
@@ -51,7 +53,7 @@
 		}
 	});
 	y4.Adverts = Backbone.Collection.extend({
-		url: "http://www.your4.tv/api/adverts/",
+		url: "http://"+baseUrl+"/api/adverts/",
 		model: y4.Advert
 	});
 
@@ -82,7 +84,7 @@
 		}
 	});
 	y4.Campaigns = Backbone.Collection.extend({
-		url: "http://www.your4.tv/api/campaigns/",
+		url: "http://"+baseUrl+"/api/campaigns/",
 		model: y4.Campaign
 	});
 
@@ -107,7 +109,7 @@
 		}
 	});
 	y4.Users = Backbone.Collection.extend({
-		url: 'http://www.your4.tv/api/users/',
+		url: 'http://'+baseUrl+'/api/users/',
 		model: y4.User
 	});
 
@@ -127,6 +129,7 @@
 				dfd = this.programmeRecommendation();
 
 			dfd.then(function () {
+				that.nextType = "programme";
 				that.next();
 			});
 
@@ -174,11 +177,11 @@
 		},
 		next: function () {
 			switch (this.nextType) {
-			case "programme";
-				that.trigger("programme", that.programmes.at(0));
+			case "programme":
+				this.trigger("programme", this.programmes.at(0));
 				break;
 			case "advert":
-				that.trigger("advert", that.adverts.at(0));
+				this.trigger("advert", this.adverts.at(0));
 				break;
 			}
 		}
