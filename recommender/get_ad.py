@@ -3,7 +3,7 @@
 from __future__ import print_function, division
 
 import argparse
-from random import random
+import random
 from time import time
 import sys
 
@@ -33,7 +33,8 @@ def get_ad(uid, pid, when=time()):
 					adverts=campaign.adverts))
 
 	# Pick a campaign with a probability based on the nicheness.
-	nicheness, adverts = sorted((c.nicheness, c.adverts) for c in advert_pool)
+	nicheness, adverts = zip(*sorted([(c.nicheness, c.adverts)
+										for c in advert_pool.values()]))
 
 	if sum(nicheness) == 0:
 		# Flatten and pick one randomly.
@@ -48,7 +49,7 @@ def get_ad(uid, pid, when=time()):
 				adset = ads
 				break
 
-	return random.choose(adset)
+	return random.choice(adset)
 			
 def _init_argparse():
 	parser = argparse.ArgumentParser(description="Given a userid, a programme "
