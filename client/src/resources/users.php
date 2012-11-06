@@ -111,7 +111,7 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 		if ($user_id && $user_id == $id) {
 
 			// If the user is already in the DB load them into the session
-			$user = $db_user;
+			$user = R::findOne('users', 'facebookId = ?', array($user_id));
 			if ($user) {
 				if ($user->lastFbRefresh == null || strtotime($user->lastFbRefresh) < strtotime('-1 day')) {
         			$user_profile = $facebook->api('/me','GET');
