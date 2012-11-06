@@ -21,11 +21,11 @@ $config = array(
 	)
 );
 $channels = array(
-	'Channel 4' => 'cbdj',
-	'4music' => 'cbdp',
-	'E4' => 'cbdn',
-	'Film4' => 'cbdm',
-	'More4' => 'cbdk'
+	'Channel 4' => array('cbdj', 518968274),
+	'4music' => array('cbdp', 518974999),
+	'E4' => array('cbdn', 518974809),
+	'Film4' => array('cbdm', 518974601),
+	'More4' => array('cbdk', 518974601)
 );
 
 date_default_timezone_set('UTC');
@@ -55,14 +55,14 @@ array_walk($genres, function ($genres, $categoryName) {
 
 echo " done.\n";
 
-array_walk($channels, function ($channelId, $channelName) use ($config) {
+array_walk($channels, function ($channelIds, $channelName) use ($config) {
 	echo "Importing $channelName...\n";
 	$percentComplete = 0;
 
 	$url = 'http://atlas.metabroadcast.com/3.0/schedule.json?apiKey=' .
 		$config['apiKey'] . '&publisher=' . $config['publisher'] .
 		'&from=now&to=now.plus.' . $config['hours'] .
-		'h&channel_id=' . $channelId . '&annotations=' .
+		'h&channel_id=' . $channelIds[0] . '&annotations=' .
 		implode(',', $config['data']);
 
 	echo "Fetching...";
@@ -72,11 +72,12 @@ array_walk($channels, function ($channelId, $channelName) use ($config) {
 	$items = $result->schedule[0]->items;
 	$l = count($items);
 
-	$channel = R::findOne('channel', ' uid = ? ', array($channelId));
+	$channel = R::findOne('channel', ' uid = ? ', array($channelIds[0]));
 
 	if (!$channel) {
 		$channel = R::dispense('channel');
-		$channel->uid = $channelId;
+		$channel->uid = $channelIds[0];
+		$channel->project4id = $channelIds[1];
 		$channel->name = $channelName;
 		R::store($channel);
 	}
