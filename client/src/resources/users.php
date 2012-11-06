@@ -13,9 +13,9 @@ function processUser($app, $id) {
 		$use_fields = array("occupation");
 		$fb_id = $facebook->getUser();
 		if ($fb_id && $fb_id == $id) {
-			$user = R::findOne('users', 'facebookId = ?', array($fb_id));
+			$user = R::findOne('user', 'facebookId = ?', array($fb_id));
 			if (!$user) {
-				$user = R::dispense('users');
+				$user = R::dispense('user');
 				$user_profile = $facebook->api('/me','GET');
 				$user->import(fb_to_user($user_profile));
 				$user->lastFbRefresh = date('Y-m-d h:i:s');
@@ -28,13 +28,13 @@ function processUser($app, $id) {
 		$use_fields = array("name","gender","dob","email","occupation","password");
 		if (isset($_SESSION['user']['id'])) {
 			if ($_SESSION['user']['id'] == $id) {
-				$user = R::dispense('users',$id);
+				$user = R::dispense('user',$id);
 			} else {
 				forbidden();
 				exit;
 			}
 		} else {
-			$user = R::dispense('users');
+			$user = R::dispense('user');
 		}
 	}
 
@@ -94,7 +94,7 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 
 		$query_str = $type == 'fb' ? 'facebookId = ?' : 'id = ?';
 		if (isset($_SESSION['user']['registered'])) {
-			$db_user = R::findOne('users', $query_str, array($id));
+			$db_user = R::findOne('user', $query_str, array($id));
 			if (is_null($db_user)) {
 				logout();
 			}
@@ -111,7 +111,7 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 		if ($user_id && $user_id == $id) {
 
 			// If the user is already in the DB load them into the session
-			$user = $db_user;
+			$user = R::findOne('user', 'facebookId = ?', array($user_id));
 			if ($user) {
 				if ($user->lastFbRefresh == null || strtotime($user->lastFbRefresh) < strtotime('-1 day')) {
         			$user_profile = $facebook->api('/me','GET');
@@ -161,7 +161,7 @@ $app->get('/users/', function() use ($app) {
 		badRequest();
 	}
 
-	$user = R::findOne('users','email = ?',array($email));
+	$user = R::findOne('user','email = ?',array($email));
 	if ($user == null) {
 		forbidden();
 	}

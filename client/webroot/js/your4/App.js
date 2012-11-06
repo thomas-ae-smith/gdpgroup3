@@ -128,15 +128,15 @@
 			return this;
 		},
 		goLogin: function () {
+			var that = this;
 			var login = new y4.LoginView({ app: this });
 			this.showStartScreen().$('.start-container').html("")
 				.append(login.render().el);
-			login.on("login", function (o) {
-				o.username
-				o.password
-			}).on("facebookLogin", function () {
-
+			login.on("normalLogin", function (user) {
+				that.user = user;
+				that.router.navigate("play", { trigger: true });
 			});
+
 			return this;
 		},
 		goRegisterFB: function (dfd) {
