@@ -67,17 +67,13 @@ def add_programme_blacklist(userId, programmeId):
 
 	response = write_db(query)
 
-# TODO: Only return from current campaigns.
-def get_campaign_pool(uid, pid, when=None):
+def get_advert_pool(uid, pid, when=None):
 	"""Given a user id, programme id and time, returns a pool of adverts whose
 	campaigns allow the advert to be shown to the given user during the given
 	programme at the given time. Advert ids are returned along with the
 	campaign nichenesses."""
 	if when is None:
 		when = datetime.datetime.now()
-
-	# "AND `c_t`.`startTime` <= {when} "
-	# "AND {when} <= `c_t`.`endTime` "
 
 	user_fields = ['dob', 'gender', 'occupation', 'lat', 'long']
 	user = {user_fields[index]:val for index, val in
@@ -87,17 +83,23 @@ def get_campaign_pool(uid, pid, when=None):
 	programme = {programme_fields[index]:val for index, val in
 							enumerate(get_programme(pid, programme_fields))}
 
+	blacklist_query = (	"SELECT `advert` "
+						"FROM `blacklistAdvert` "
+						"WHERE `user` = {uid}".format(uid=uid))
+	blacklisted_adverts = [str(row[0]) for row in read_db(blacklist_query)]
+
 	campaign_query = (
 		"SELECT `c`.`schedule`, `c`.`gender`, `c_a`.`minAge`, `c_a`.`maxAge`, "
 			"`c_b`.`minLong`, `c_b`.`maxLong`, `c_b`.`minLat`, `c_b`.`maxLat`, "
 			"`c_g`.`genres_id`, `c_o`.`occupations_id`, `c_p`.`programmes_id`, "
-			"`c_t`.`dayOfWeek`, `c_t`.`startTime`, `c_t`.`endTime`, `c`.`id`, "
-			"`c`.`nicheness`"
+			"`c_t`.`dayOfWeek`, `c_t`.`startTime`, `c_t`.`endTime`, "
+			"`a_c`.`adverts_id`, `c`.`id`, `c`.`nicheness`"
 		"FROM `campaigns` as c "
 		"LEFT JOIN `time`              AS c_t ON `c`.`id`=`c_t`.`campaigns_id` "
 		"LEFT JOIN `agerange`          AS c_a ON `c`.`id`=`c_a`.`campaigns_id` "
 		"LEFT JOIN `boundingbox`       AS c_b ON `c`.`id`=`c_b`.`campaigns_id` "
 		"LEFT JOIN `campaigns_genres`  AS c_g ON `c`.`id`=`c_g`.`campaigns_id` "
+		"LEFT JOIN `adverts_campaigns` AS a_c ON `c`.`id`=`a_c`.`campaigns_id` "
 		"LEFT JOIN `campaigns_programmes`  AS c_p "
 			"ON `c`.`id`=`c_p`.`campaigns_id` "
 		"LEFT JOIN `campaigns_occupations` AS c_o "
@@ -105,15 +107,19 @@ def get_campaign_pool(uid, pid, when=None):
 		"WHERE {when} BETWEEN `c`.`startDate` AND `c`.`endDate`"
 	).format(when=when)
 
-	response = read_db(campaign_query)
+	if blacklisted_adverts:
+		campaign_query += " AND `a_c`.`adverts_id` NOT IN {blacklist}".format(
+			blacklist="('{ads}')".format(ads="','".join(blacklisted_adverts)))
 
+	restrictions = read_db(campaign_query)
 	restriction_fields = ['schedule', 'gender', 'minAge', 'maxAge', 'minLong',
 						'maxLong', 'minLat', 'maxLat', 'genre', 'occupation',
 						'programme', 'dayOfWeek', 'startTime', 'endTime']
+	Campaign = collections.namedtuple('Campaign', ['nicheness','adverts'])
 	campaigns = {}
-	for fields in response:
-		restrict = dict(zip(restriction_fields, fields[:-2]))
-		campaignid, nicheness = fields[-2:]
+	for fields in restrictions:
+		restrict = dict(zip(restriction_fields, fields[:-3]))
+		advertid, campaignid, nicheness = fields[-3:]
 		dt = datetime.datetime.utcfromtimestamp(when)
 		restrict_match = {
 			'schedule': lambda: programme['live'] in restrict['schedule'],
@@ -138,7 +144,12 @@ def get_campaign_pool(uid, pid, when=None):
 							for k, v in restrict.iteritems()])
 
 		if available:
-			campaigns[campaignid] = float(nicheness)
+			import pdb; pdb.set_trace()
+			try:
+				campaigns[campaignid].adverts.append(advertid)
+			except KeyError:
+				campaigns[campaignid] = Campaign(nicheness=float(nicheness),
+												adverts=[int(advertid)])
 
 	return campaigns
 
@@ -157,19 +168,19 @@ def get_ad(campaignId):
 
 
 def get_programme_pool(userId, startTime=time(), lookahead=300):
-	query = (	"SELECT `programmes`.`id`, `programmes`.`vector` "
-				"FROM `programmes` "
-				"WHERE `programmes`.`name` != 'Off air' "
-				"AND `start` BETWEEN {start_time} AND {end_time} "
-				"AND `programmes`.`id` NOT IN ("
-					"SELECT `programme` "
-					"FROM `blacklistProgramme` "
-					"WHERE `blacklistProgramme`.`user` = {uid}"
+	query = (	"SELECT `programme`.`id`, `brand`.`vector` "
+				"FROM `broadcast` "
+					"LEFT JOIN `programme` ON (`programme`.`id` = `broadcast`.`programme_id`) "
+					"LEFT JOIN `brand` ON (`brand`.`brand_id` = `programme`.`brand_id`) "	
+						"WHERE `broadcast`.`time` BETWEEN {start_time} AND {end_time} "
+							"AND `programme`.`id` NOT IN ("
+								"SELECT `programme` "
+								"FROM `blacklistProgramme` "
+									"WHERE `blacklistProgramme`.`user` = {uid}"
 				")".format(uid=userId,
 						start_time=int(startTime),
 						end_time=int(startTime + lookahead)))
 
-	print(query)
 
 	response = read_db(query)
 
@@ -182,7 +193,7 @@ def get_programme(pid, fields=()):
 	"""Returns a tuple of the values of the given fields for a programme with
 	the given id. If no fields are specified, all are returned."""
 	query = (	'SELECT '+_field_string(fields)+' '
-				'FROM `programmes` '
+				'FROM `programme` '
 				'WHERE `id`='+str(pid))
 
 	response = read_db(query)
@@ -194,15 +205,15 @@ def get_user(userid, fields=()):
 	the given id. If no fields are specified, all are returned."""
 
 	query = (	'SELECT '+_field_string(fields)+' '
-				'FROM `users` '
+				'FROM `user` '
 				'WHERE `id`='+str(userid))
-	response = read_db(query)
+	response = read_db(query) or [None]
 	return response[0]
 
 def set_user(userid, fields=(), vals=()):
 	assert len(fields) == len(vals)
 
 	changes = ', '.join("{}='{}'".format(e[0], e[1]) for e in zip(fields, vals))
-	query = "UPDATE `users` SET {c} WHERE `id`={id}".format(c=changes, id=userid)
+	query = "UPDATE `user` SET {c} WHERE `id`={id}".format(c=changes, id=userid)
 
 	write_db(query)

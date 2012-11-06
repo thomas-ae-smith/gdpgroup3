@@ -1,7 +1,5 @@
 #!/usr/bin/python2.7
 
-#TODO: Database has been updated; campaigns now have multiple ads. Reflect this. Return campaign ads with equal probability.
-
 from __future__ import print_function, division
 
 import argparse
@@ -14,38 +12,44 @@ from datastore import interface
 DEBUG = False
 VERBOSE = False
 
-def get_campaign(uid, pid, when=time()):
+def get_ad(uid, pid, when=time()):
 	# Get all adverts available for a given user, programme and time.
-	campaign_pool = interface.get_campaign_pool(uid, pid, when)
+	advert_pool = interface.get_advert_pool(uid, pid, when)
 
-	if not campaign_pool:
-		print("No valid campaigns returned for uid={uid}, pid={pid}, "
+	if not advert_pool:
+		print("No valid adverts returned for uid={uid}, pid={pid}, "
 				"when={when}:".format(uid=uid, pid=pid, when=when),
 				file=sys.stderr)
 		return -1
 
 	if VERBOSE:
-		print("Valid campaigns for uid={uid}, pid={pid}, "
+		print("Valid adverts for uid={uid}, pid={pid}, "
 			"when={when}:".format(uid=uid, pid=pid, when=when))
-		for campaign_id, nicheness in campaign_pool.iteritems():
-			print("{campaign}\t\t{nicheness}".format(campaign=campaign_id,
-														nicheness=nicheness))
+		for campaignid, campaign in advert_pool.iteritems():
+			print("campaign:{campaign}, nicheness:{nicheness} "
+				"adverts:{adverts}".format(
+					campaign=campaignid,
+					nicheness=campaign.nicheness,
+					adverts=campaign.adverts))
 
 	# Pick a campaign with a probability based on the nicheness.
-	campaignids, nichenesses = zip(*campaign_pool.iteritems())
-	roulette = {sum(nichenesses[:n+1]):campaignids[n]
-					for n in xrange(len(campaignids))}
-	roulette_spin = random() * sum(nichenesses) 
+	nicheness, adverts = sorted((c.nicheness, c.adverts) for c in advert_pool)
 
-	for k, v in roulette.iteritems():
-		if roulette_spin <= k:
-			outcome = v
-			break
-		else:
-			pass
+	if sum(nicheness) == 0:
+		# Flatten and pick one randomly.
+		adset = [item for sublist in adverts for item in sublist]
+	else:
+		viewChance = [(sum(nicheness[:n+1])/sum(nicheness), adverts[n])
+						for n in xrange(len(nicheness))]
 
-	return outcome
+		r = random.random()
+		for n, ads in viewChance:
+			if r <= n:
+				adset = ads
+				break
 
+	return random.choose(adset)
+			
 def _init_argparse():
 	parser = argparse.ArgumentParser(description="Given a userid, a programme "
 		"id and a unix timestamp, returns the id of a targetted advert. If no "
@@ -73,10 +77,12 @@ if __name__ == "__main__":
 	DEBUG = args.debug
 	VERBOSE = args.verbose
 
-	campaign = get_campaign(args.uid, args.pid, args.time)
-	ad = interface.get_ad(campaign)
-	if ad == -1:
-		print("Recommended campaign {c} has no corresponding adverts!".format(
-				c=campaign), file=sys.stderr)
-
-	print(ad, end='')
+	ad_id = get_ad(args.uid, args.pid, args.time)
+	if ad_id == -1:
+		print("There are no suitable adverts to show to show to user {uid} "
+				"during programme {pid} at time {t}!".format(uid=args.uid,
+					pid=args.pid, t=args.time),
+				file=sys.stderr)
+		print("-1", end='')
+	else:
+		print(ad_id, end='')

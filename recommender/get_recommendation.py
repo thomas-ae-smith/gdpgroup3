@@ -40,7 +40,7 @@ def get_user_vector(user_id):
 	return vector
 
 def get_name(pid):
-	query = "SELECT `name` FROM `programmes` WHERE `id` = {pid}".format(pid=pid)
+	query = "SELECT `title` FROM `programme` WHERE `id` = {pid}".format(pid=pid)
 	conn = mysql.connector.connect(**credentials)
 	cursor = conn.cursor()
 	cursor.execute(query)
