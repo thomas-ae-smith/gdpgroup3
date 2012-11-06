@@ -79,9 +79,21 @@ def get_advert_pool(uid, pid, when=None):
 	user = {user_fields[index]:val for index, val in
 							enumerate(get_user(uid, user_fields))}
 
-	programme_fields = ['id', 'channel', 'genre', 'live']
-	programme = {programme_fields[index]:val for index, val in
-							enumerate(get_programme(pid, programme_fields))}
+	broadcast_fields = ['pid', 'live']
+	broadcast_query = ( "SELECT `programme`.`id`, if(`broadcast`.`time` > 1352225731.08, 'live', 'vod') "
+							"FROM `broadcast` "
+							"LEFT JOIN `programme` ON (`programme`.`id` = `broadcast`.`programme_id`) "
+								"WHERE `broadcast`.`programme_id` = {pid}"
+						).format(time=when, pid=pid)
+
+
+	broadcast = {broadcast_fields[index]:val for index, val in
+							enumerate(read_db(broadcast_query)[0])}
+	
+	#import pdb;pdb.set_trace()
+
+	genres_query = ("SELECT `genre_id` FROM `genre_programme` WHERE `programme_id` = {pid}").format(pid=pid)
+	genres = [field[0] for field in read_db(genres_query)]
 
 	blacklist_query = (	"SELECT `advert` "
 						"FROM `blacklistAdvert` "
@@ -122,7 +134,7 @@ def get_advert_pool(uid, pid, when=None):
 		advertid, campaignid, nicheness = fields[-3:]
 		dt = datetime.datetime.utcfromtimestamp(when)
 		restrict_match = {
-			'schedule': lambda: programme['live'] in restrict['schedule'],
+			'schedule': lambda: broadcast['live'] in restrict['schedule'],
 			'gender': lambda: user['gender'] in restrict['gender'],
 			'minAge': lambda: calc_age(user['dob']) >= restrict['minAge'],
 			'maxAge': lambda: calc_age(user['dob']) <= restrict['maxAge'],
@@ -130,9 +142,9 @@ def get_advert_pool(uid, pid, when=None):
 			'maxLong': lambda: user['long'] <= float(restrict['maxLong']),
 			'minLat': lambda: user['lat'] >= float(restrict['minLat']),
 			'maxLat': lambda: user['lat'] <= float(restrict['maxLat']),
-			'genre': lambda: programme['genre'] == restrict['genre'],
+			'genre': lambda: restrict['genre'] in genres,
 			'occupation': lambda: user['occupation'] == restrict['occupation'],
-			'programme': lambda: programme['id'] == restrict['programme'],
+			'programme': lambda: broadcast['pid'] == restrict['programme'],
 			'dayOfWeek': lambda: dt.isoweekday() == restrict['dayOfWeek'],
 			'startTime': lambda: dt.time() >= _time_from_str(
 												restrict['startTime']),
@@ -144,7 +156,6 @@ def get_advert_pool(uid, pid, when=None):
 							for k, v in restrict.iteritems()])
 
 		if available:
-			import pdb; pdb.set_trace()
 			try:
 				campaigns[campaignid].adverts.append(advertid)
 			except KeyError:
@@ -167,11 +178,11 @@ def get_ad(campaignId):
 	return random.choice(campaigns)
 
 
-def get_programme_pool(userId, startTime=time(), lookahead=300):
-	query = (	"SELECT `programme`.`id`, `brand`.`vector` "
+def get_broadcast_pool(userId, startTime=time(), lookahead=300):
+	query = (	"SELECT `broadcast`.`id`, `brand`.`vector` "
 				"FROM `broadcast` "
-					"LEFT JOIN `programme` ON (`programme`.`id` = `broadcast`.`programme_id`) "
-					"LEFT JOIN `brand` ON (`brand`.`brand_id` = `programme`.`brand_id`) "	
+					"INNER JOIN `programme` ON (`programme`.`id` = `broadcast`.`programme_id`) "
+					"INNER JOIN `brand` ON (`brand`.`id` = `programme`.`brand_id`) "	
 						"WHERE `broadcast`.`time` BETWEEN {start_time} AND {end_time} "
 							"AND `programme`.`id` NOT IN ("
 								"SELECT `programme` "

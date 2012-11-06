@@ -65,7 +65,7 @@ def get_recommendation(userId, startTime=None, lookahead=300):
 		startTime = time.time()
 
 	user_vector = vector.string_to_vector(interface.get_user(userId, ['vector'])[0])
-	upcoming_programmes = interface.get_programme_pool(
+	upcoming_programmes = interface.get_broadcast_pool(
 							userId,
 							startTime=startTime,
 							lookahead=lookahead)
@@ -136,8 +136,8 @@ def _init_argparse():
 	parser.add_argument('-l', "--lookahead", type=int, default=300,
 		help="The time, in seconds, after --time in which a recommended "
 		"programme may start. Defaults to 300 (5 minutes).")
-	parser.add_argument('-n', "--name", action="store_true", help="Returns the "
-						"name, instead of the id, of the programme.")
+	#parser.add_argument('-n', "--name", action="store_true", help="Returns the "
+	#					"name, instead of the id, of the programme.")
 	parser.add_argument('-d', "--debug", action="store_true",
 						help="If true, breaks using pdb in a number of cases.")
 	parser.add_argument('-v', "--verbose", action="store_true",
@@ -153,7 +153,7 @@ if __name__ == "__main__":
 
 	recommendation = get_recommendation(args.user_id, startTime=args.time,
 										lookahead=args.lookahead)
-	if args.name:
-		recommendation = get_name(recommendation)
+	#if args.name:
+	#	recommendation = get_name(recommendation)
 
 	print(str(recommendation), end='')
