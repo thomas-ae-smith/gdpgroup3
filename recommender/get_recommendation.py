@@ -83,6 +83,10 @@ def get_recommendation(userId, startTime=None, lookahead=300):
 
 	best_recommendations = [(float('inf'), -1)]
 	for p_id, p_vector in upcoming_programmes:
+		if not p_vector:
+			print("Programme {pid} does not have a vector!".format(pid=p_id),
+					file=sys.stderr)
+			continue
 		p_vector = vector.string_to_vector(p_vector)
 		try:
 			diff = user_vector - p_vector

@@ -181,13 +181,15 @@ def get_ad(campaignId):
 def get_broadcast_pool(userId, startTime=time(), lookahead=300):
 	query = (	"SELECT `broadcast`.`id`, `brand`.`vector` "
 				"FROM `broadcast` "
-					"INNER JOIN `programme` ON (`programme`.`id` = `broadcast`.`programme_id`) "
-					"INNER JOIN `brand` ON (`brand`.`id` = `programme`.`brand_id`) "	
-						"WHERE `broadcast`.`time` BETWEEN {start_time} AND {end_time} "
-							"AND `programme`.`id` NOT IN ("
-								"SELECT `programme` "
-								"FROM `blacklistProgramme` "
-									"WHERE `blacklistProgramme`.`user` = {uid}"
+				"INNER JOIN `programme` ON "
+					"(`programme`.`id` = `broadcast`.`programme_id`) "
+				"INNER JOIN `brand` ON "
+					"(`brand`.`id` = `programme`.`brand_id`) "	
+				"WHERE `broadcast`.`time` BETWEEN {start_time} AND {end_time} "
+				"AND `programme`.`id` NOT IN ("
+					"SELECT `programme` "
+					"FROM `blacklistProgramme` "
+					"WHERE `blacklistProgramme`.`user` = {uid}"
 				")".format(uid=userId,
 						start_time=int(startTime),
 						end_time=int(startTime + lookahead)))
