@@ -67,7 +67,7 @@ def add_programme_blacklist(userId, programmeId):
 
 	response = write_db(query)
 
-def get_advert_pool(uid, pid, when=None):
+def get_advert_pool(uid, pid, when=None, maxlen=None):
 	"""Given a user id, programme id and time, returns a pool of adverts whose
 	campaigns allow the advert to be shown to the given user during the given
 	programme at the given time. Advert ids are returned along with the
@@ -80,12 +80,13 @@ def get_advert_pool(uid, pid, when=None):
 							enumerate(get_user(uid, user_fields))}
 
 	broadcast_fields = ['pid', 'live']
-	broadcast_query = ( "SELECT `programme`.`id`, if(`broadcast`.`time` > 1352225731.08, 'live', 'vod') "
-							"FROM `broadcast` "
-							"LEFT JOIN `programme` ON (`programme`.`id` = `broadcast`.`programme_id`) "
-								"WHERE `broadcast`.`programme_id` = {pid}"
+	broadcast_query = ( "SELECT `programme`.`id`, "
+							"if(`broadcast`.`time`>{time}, 'live', 'vod') "
+						"FROM `broadcast` "
+						"LEFT JOIN `programme`"
+							"ON (`programme`.`id`=`broadcast`.`programme_id`) "
+						"WHERE `broadcast`.`programme_id` = {pid}"
 						).format(time=when, pid=pid)
-
 
 	broadcast = {broadcast_fields[index]:val for index, val in
 							enumerate(read_db(broadcast_query)[0])}
@@ -110,6 +111,7 @@ def get_advert_pool(uid, pid, when=None):
 		"LEFT JOIN `boundingbox`       AS c_b ON `c`.`id`=`c_b`.`campaigns_id` "
 		"LEFT JOIN `campaigns_genres`  AS c_g ON `c`.`id`=`c_g`.`campaigns_id` "
 		"LEFT JOIN `adverts_campaigns` AS a_c ON `c`.`id`=`a_c`.`campaigns_id` "
+		"LEFT JOIN `adverts`           AS a   ON `a`.`id`=`a_c`.`adverts_id` "
 		"LEFT JOIN `campaigns_programmes`  AS c_p "
 			"ON `c`.`id`=`c_p`.`campaigns_id` "
 		"LEFT JOIN `campaigns_occupations` AS c_o "
@@ -120,6 +122,13 @@ def get_advert_pool(uid, pid, when=None):
 	if blacklisted_adverts:
 		campaign_query += " AND `a_c`.`adverts_id` NOT IN {blacklist}".format(
 			blacklist="('{ads}')".format(ads="','".join(blacklisted_adverts)))
+
+	if maxlen != float('inf'):
+		campaign_query += " AND `a`.`duration` <= {maxlen}".format(
+							maxlen=maxlen)
+
+	import pdb; pdb.set_trace()
+
 
 	restrictions = read_db(campaign_query)
 	restriction_fields = ['schedule', 'gender', 'minAge', 'maxAge', 'minLong',

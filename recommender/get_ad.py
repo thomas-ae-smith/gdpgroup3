@@ -12,13 +12,14 @@ from datastore import interface
 DEBUG = False
 VERBOSE = False
 
-def get_ad(uid, pid, when=time()):
+def get_ad(uid, pid, when=time(), maxlen=float('inf')):
 	# Get all adverts available for a given user, programme and time.
-	advert_pool = interface.get_advert_pool(uid, pid, when)
+	advert_pool = interface.get_advert_pool(uid, pid, when, maxlen)
 
 	if not advert_pool:
 		print("No valid adverts returned for uid={uid}, pid={pid}, "
-				"when={when}:".format(uid=uid, pid=pid, when=when),
+				"when={when}, max_length={maxlen}!".format(
+					uid=uid, pid=pid, when=when, maxlen=maxlen),
 				file=sys.stderr)
 		return -1
 
@@ -62,7 +63,11 @@ def _init_argparse():
 	parser.add_argument('pid', metavar='programme_id', type=int,
 						help="The ID of the programme the user is currently "
 							"watching")
-	parser.add_argument('time', metavar='time', type=int, nargs='?',
+	parser.add_argument('max_length', metavar='max_length', type=float, nargs='?',
+						default=float('inf'), help="The maximum length of the "
+						"advert in seconds. Defaults to infinity. Can be set "
+						"to infinity by passing 0 or the empty string.")
+	parser.add_argument('start_time', metavar='start_time', type=int, nargs='?',
 						default=time(), help="A unix timestamp representing "
 						"when the advert is to be shown.")
 	parser.add_argument('-v', "--verbose", action="store_true",
@@ -78,11 +83,14 @@ if __name__ == "__main__":
 	DEBUG = args.debug
 	VERBOSE = args.verbose
 
-	ad_id = get_ad(args.uid, args.pid, args.time)
+	if not args.max_length:
+		args.max_length = float('inf')
+
+	ad_id = get_ad(args.uid, args.pid, args.start_time, args.max_length)
 	if ad_id == -1:
 		print("There are no suitable adverts to show to show to user {uid} "
 				"during programme {pid} at time {t}!".format(uid=args.uid,
-					pid=args.pid, t=args.time),
+					pid=args.pid, t=args.start_time),
 				file=sys.stderr)
 		print("-1", end='')
 	else:
