@@ -127,9 +127,9 @@ def get_recommendation(userId, startTime=None, lookahead=300):
 
 def _init_argparse():
 	parser = argparse.ArgumentParser(description="Returns a recommended "
-		"programme id for a particular user which starts within a period of "
+		"broadcast id for a particular user which starts within a period of "
 		"time. Defaults to within the next 5 minutes from right now. Returns "
-		"-1 if no programmes exist int he database which start within the "
+		"-1 if no broadcasts exist in the database which start within the "
 		"specified time period. Exits with status 1 if the user does not exist "
 		"in the users table.")
 	parser.add_argument('user_id', metavar='uid', type=int,

@@ -90,8 +90,6 @@ def get_advert_pool(uid, pid, when=None):
 	broadcast = {broadcast_fields[index]:val for index, val in
 							enumerate(read_db(broadcast_query)[0])}
 	
-	#import pdb;pdb.set_trace()
-
 	genres_query = ("SELECT `genre_id` FROM `genre_programme` WHERE `programme_id` = {pid}").format(pid=pid)
 	genres = [field[0] for field in read_db(genres_query)]
 
