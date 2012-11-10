@@ -104,6 +104,7 @@ function get_user_vector($dob, $gender) {
 	$gender = substr($gender, 0, 1);
 	$dob_parts = explode('-', $dob);
 	$age = (date("md", date("U", mktime(0, 0, 0, $dob_parts[1], $dob_parts[2], $dob_parts[0]))) > date("md") ? ((date("Y")-$dob_parts[0])-1):(date("Y")-$dob_parts[0]));
+	$age = min(100, max(0, $age));
 	exec("python ../../../recommender/get_user_vector.py $age $gender", $out);
 	return $out[0];
 }
