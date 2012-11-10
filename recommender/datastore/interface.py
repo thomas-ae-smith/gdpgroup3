@@ -1,13 +1,18 @@
+from __future__ import division, print_function
+
 import argparse
 import collections
 import datetime
 from time import time
 import random
+import sys
 
 import mysql.connector
 
 from credentials import credentials
 from util.calc_age import calc_age
+
+Campaign = collections.namedtuple('Campaign', ['nicheness','adverts'])
 
 def _field_string(fields):
 	"""Returns '*' if `fields` is empty, otherwise returns a string of
@@ -88,11 +93,18 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 						"WHERE `broadcast`.`programme_id` = {pid}"
 						).format(time=when, pid=pid)
 
-	broadcast = {broadcast_fields[index]:val for index, val in
-							enumerate(read_db(broadcast_query)[0])}
-	
-	genres_query = ("SELECT `genre_id` FROM `genre_programme` WHERE `programme_id` = {pid}").format(pid=pid)
-	genres = [field[0] for field in read_db(genres_query)]
+	try: 
+		broadcast = {broadcast_fields[index]:val for index, val in
+								enumerate(read_db(broadcast_query)[0])}
+	except IndexError: # If the programme does not exist in the db
+		if pid != 0:
+			print("There is no programme with id {pid}!".format(pid=pid),
+			file=sys.stderr)
+		pid = None # This is set to help debugging (all references to a programme 
+					# crash), and to mindicate the programme is nonexistant.
+	else:
+		genres_query = ("SELECT `genre_id` FROM `genre_programme` WHERE `programme_id` = {pid}").format(pid=pid)
+		genres = [field[0] for field in read_db(genres_query)]
 
 	blacklist_query = (	"SELECT `advert` "
 						"FROM `blacklistAdvert` "
@@ -131,14 +143,13 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 	restriction_fields = ['schedule', 'gender', 'minAge', 'maxAge', 'minLong',
 						'maxLong', 'minLat', 'maxLat', 'genre', 'occupation',
 						'programme', 'dayOfWeek', 'startTime', 'endTime']
-	Campaign = collections.namedtuple('Campaign', ['nicheness','adverts'])
 	campaigns = {}
 	for fields in restrictions:
 		restrict = dict(zip(restriction_fields, fields[:-3]))
 		advertid, campaignid, nicheness = fields[-3:]
 		dt = datetime.datetime.utcfromtimestamp(when)
 		restrict_match = {
-			'schedule': lambda: broadcast['live'] in restrict['schedule'],
+			'schedule': lambda: pid and broadcast['live'] in restrict['schedule'],
 			'gender': lambda: user['gender'] in restrict['gender'],
 			'minAge': lambda: calc_age(user['dob']) >= restrict['minAge'],
 			'maxAge': lambda: calc_age(user['dob']) <= restrict['maxAge'],
@@ -146,9 +157,9 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 			'maxLong': lambda: user['long'] <= float(restrict['maxLong']),
 			'minLat': lambda: user['lat'] >= float(restrict['minLat']),
 			'maxLat': lambda: user['lat'] <= float(restrict['maxLat']),
-			'genre': lambda: restrict['genre'] in genres,
+			'genre': lambda: pid and restrict['genre'] in genres,
 			'occupation': lambda: user['occupation'] == restrict['occupation'],
-			'programme': lambda: broadcast['pid'] == restrict['programme'],
+			'programme': lambda: pid and broadcast['pid'] == restrict['programme'],
 			'dayOfWeek': lambda: dt.isoweekday() == restrict['dayOfWeek'],
 			'startTime': lambda: dt.time() >= _time_from_str(
 												restrict['startTime']),
