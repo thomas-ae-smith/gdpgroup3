@@ -95,7 +95,6 @@
 			}).fail(function (msg) {
 				that.$('.error').show().html(msg);
 			});
-
 		},
 
 		register: function () {
