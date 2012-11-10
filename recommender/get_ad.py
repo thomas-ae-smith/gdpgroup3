@@ -87,11 +87,4 @@ if __name__ == "__main__":
 		args.max_length = float('inf')
 
 	ad_id = get_ad(args.uid, args.pid, args.start_time, args.max_length)
-	if ad_id == -1:
-		print("There are no suitable adverts to show to show to user {uid} "
-				"during programme {pid} at time {t}!".format(uid=args.uid,
-					pid=args.pid, t=args.start_time),
-				file=sys.stderr)
-		print("-1", end='')
-	else:
-		print(ad_id, end='')
+	print(ad_id, end='')
