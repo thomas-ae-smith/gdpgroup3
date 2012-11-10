@@ -17,3 +17,14 @@ docs/*.log
 docs/*.out
 docs/*.pdf
 docs/*.toc
+*.aux
+*.acn
+*.aux
+*.bbl
+*.blg
+*.glo
+*.ist
+*.log
+*.out
+*.pdf
+*.toc
