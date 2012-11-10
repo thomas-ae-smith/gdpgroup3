@@ -78,21 +78,83 @@
 		},
 
 		initialize: function (options) {
+
 			this.app = options.app;
+
+			this.users = new y4.Users();
+			this.user = new y4.User();
+			this.users.add(this.user);
+
+			this.handleLogin();
+
+		},
+
+		handleLogin: function() {
+			var that = this;
+
+			this.user.set('id', 'me');
+			this.user.fetch().done(function() {
+				that.setUser(that.user, true);
+			}).fail(function() {
+				FB.getLoginStatus(function (response) {
+					if (response.status === 'connected') {
+						that.getFbUser().done(function(existingSession) {
+							that.setUser(that.user, existingSession);
+						}).fail(function() {
+
+						});
+					} else {
+						that.setUser(null);
+					}
+				});
+			});
+
+		},
+
+		setUser: function(user, existingSession) {
+			this.trigger("setUser", user, existingSession);
+		},
+
+		getFbUser: function() {
+			var that = this,
+				dfd = $.Deferred();
+
+			FB.api('/me', function (response) {
+				that.user.set('id', 'fb-' + response.id);
+				that.user.fetch().done(function() {
+					if (that.user.get('registered')) {
+						dfd.resolve(true);
+					} else {
+						that.app.on("register", function(updatedUser) {
+							that.user = updatedUser;
+							dfd.resolve(false);
+						});
+						that.register();
+					}
+				}).fail(function() {
+					dfd.reject(null);
+				});
+			});
+
+			return dfd;
 		},
 
 		facebookLogin: function() {
 			var that = this;
-			if (!this.facebookLoggedIn) {
-				this.$('.facebook-button').attr('disabled', 'disabled')
-					.text("Please wait...");
-				this.app.fbLogin().then(function () {
-					that.$('.facebook-button').removeAttr('disabled')
-						.text("Login with Facebook");
-					that.app.router.navigate("play", { trigger: true });
-				});
-			}
+			this.$('.facebook-button').attr('disabled', 'disabled')
+				.text("Please wait...");
+
+			FB.login(function (response) {
+				if (response.authResponse) {
+					that.getFbUser().then(function() {
+						$('.facebook-button').removeAttr('disabled')
+							.text("Login with Facebook");
+						that.setUser(that.user);
+					});
+				}
+			}, { scope: 'user_birthday,email' });
 		},
+
 
 		register: function () {
 			this.app.router.navigate("register", { trigger: true });
@@ -104,7 +166,7 @@
 			var email = $('#inputEmail').val();
 			var password = $('#inputPassword').val();
 			users.fetch({data:{email: email, password: password}}).done(function() {
-				that.trigger("normalLogin", users.first());
+				that.setUser(that.users.first());
 			}).fail(function(response) {
 				that.$el.prepend(response);
 			});
@@ -114,7 +176,8 @@
 			var loginTemplate = y4.templates['login'];
 			this.$el.html(loginTemplate());
 			return this;
-		}
+		},
+
 	});
 
 }(this.y4));
