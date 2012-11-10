@@ -127,9 +127,6 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 		campaign_query += " AND `a`.`duration` <= {maxlen}".format(
 							maxlen=maxlen)
 
-	import pdb; pdb.set_trace()
-
-
 	restrictions = read_db(campaign_query)
 	restriction_fields = ['schedule', 'gender', 'minAge', 'maxAge', 'minLong',
 						'maxLong', 'minLat', 'maxLat', 'genre', 'occupation',
