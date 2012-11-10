@@ -11,11 +11,11 @@
 			this.blackLayer = new y4.BlackLayerView();
 			this.stillLayer = new y4.StillLayerView();
 			this.overlayLayer = new y4.OverlayLayerView();
-			this.channels = new y4.Channels(y4.bootstrap.channels);
+			this.channels = new y4.Channels();
+
 			this.videoLayer.on("set", function () {
 				that.videoLayer.show();
 			}).on("start", function () {
-				console.log("JK")
 				that.blackLayer.hide();
 			}).on("finish", function () {
 				that.blackLayer.show();
@@ -29,6 +29,11 @@
 				that.blackLayer.show();
 				that.stillLayer.hide();
 			});*/
+
+		},
+
+		load: function () {
+			return this.channels.fetch();
 		},
 		render: function () {
 			this.$el.html("").append(
@@ -51,15 +56,20 @@
 
 		},
 		setProgramme: function (programme) {
-			console.log(programme.get("live"), programme)
-			switch (programme.get("live")) {
-			case "live":
-				var channel = this.channels.get(programme.get("channel"));
+			console.log(programme.get("recordState"), programme)
+			switch (Number(programme.get("recordState"))) {
+			case 0:
+			case 1:
+				console.log("JK")
+				var channel = this.channels.get(programme.get("channel_id"));
+				console.log(channel)
 				this.videoLayer.set("your4", channel.get("url"));
 				break;
-			case "vod":
+			case 2:
 				this.videoLayer.set("vod", programme.get("uid"));
 				break;
+			case 3:
+				// Video deleted!!
 			}
 		},
 

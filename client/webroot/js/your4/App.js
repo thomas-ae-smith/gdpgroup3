@@ -69,7 +69,7 @@
 			var that = this;
 			this.render().showSpinner();
 
-			this.users.fetchLoggedInUser().always(function () {
+			$.when(this.users.fetchLoggedInUser(), this.player.load()).always(function () {
 				that.startNav();
 			});
 
@@ -138,7 +138,7 @@
 		},
 		renderPlay: function (userId) {
 			var that = this,
-				playlist = new y4.Playlist({ user: this.user });
+				playlist = new y4.Playlist({ user: this.user() });
 
 			this.showSpinner();
 

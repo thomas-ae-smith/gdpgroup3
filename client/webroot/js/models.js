@@ -230,7 +230,7 @@
 	});
 
 	y4.Channels = Backbone.Collection.extend({
-
+		url: 'http://'+baseUrl+'/api/channels/'
 	});
 
 	y4.Playlist = Backbone.Model.extend({
