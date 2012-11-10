@@ -7,6 +7,8 @@ $app->get('/channels(/)', function() use ($app) {
 			'id' => $channel->id,
 			'uid' => $channel->uid,
 			'name' => $channel->name,
+			'url' => $channel->url,
+			'project4id' => $channel->project4id
 		);
 	}, array_values($channels)));
 });

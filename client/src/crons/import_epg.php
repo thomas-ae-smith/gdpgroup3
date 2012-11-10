@@ -21,11 +21,11 @@ $config = array(
 	)
 );
 $channels = array(
-	'Channel 4' => array('cbdj', 518968274),
-	'4music' => array('cbdp', 518974999),
-	'E4' => array('cbdn', 518974809),
-	'Film4' => array('cbdm', 518974601),
-	'More4' => array('cbdk', 518975484)
+	'Channel 4' => array('cbdj', 518968274, 'c4.stream'),
+	'4music' => array('cbdp', 518974999, '4music.stream'),
+	'E4' => array('cbdn', 518974809, 'e4.stream'),
+	'Film4' => array('cbdm', 518974601, 'film4.stream'),
+	'More4' => array('cbdk', 518975484, 'm4.stream')
 );
 
 date_default_timezone_set('UTC');
@@ -78,6 +78,7 @@ array_walk($channels, function ($channelIds, $channelName) use ($config) {
 		$channel = R::dispense('channel');
 		$channel->uid = $channelIds[0];
 		$channel->project4id = $channelIds[1];
+		$channel->url = $channelIds[2];
 		$channel->name = $channelName;
 		R::store($channel);
 	}
