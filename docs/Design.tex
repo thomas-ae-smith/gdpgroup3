@@ -1,0 +1,41 @@
+\section{Design}
+
+\subsection{System Layers}
+The user must be able to access the app via a web browser.
+
+It was decided that the TV and programme streams should be delivered to the client via Wowza media server, which would be run on a Windows server. Peter Wood (inqb8r) has had extensive experience with Wowza, and was able promptly to have the server configured to stream, releaving us of any lengthy configuring that might have had to take place with any other system. Additionally, inqb8r were able to provide us with a licensed Wowza server.
+
+LAMP server
+
+\subsection{Programme recommendation}
+
+\subsection{Adverts}
+
+Adverts will be targetted
+
+\subsubsection{Campaigns}
+
+Data about users will be collected such that adverts may be targetted towards certain demographics:
+\begin{enumerate}
+\item \textit{Age range}
+\item \textit{Gender}
+\item \textit{Location}
+\end{enumerate}
+
+Additionally, an advertiser may specify \textit{when} adverts should appear:
+\begin{enumerate}
+\item \textit{Time of day}
+\item \textit{Day of week}
+\item \textit{Programme that is on}
+\item \textit{Genre of programme that is on}
+\end{enumerate}
+
+\subsubsection{Viewer - consuming adverts}
+
+\subsection{Streaming}
+Each programme will be recorded using the EPG data. Since adverts will be replaced by ones recommended to viewers, it must be known when adverts are due to start and finish. This information is available as a GPI[?] pulse, sent by Channel 4 [more technical details]
+
+- detail of stream origin and how many systems it goes through before reaching us
+- detail about any delay this may cause
+- what limitations are imposed by this? is useful data stripped? does the delay cause inaccuracies?
+

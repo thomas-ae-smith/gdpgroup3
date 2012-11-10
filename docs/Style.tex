@@ -1,0 +1,60 @@
+\documentclass[12pt,a4paper,twoside, titlepage]{article}
+\usepackage[left=35mm, right=24mm, top=24mm, bottom=24mm]{geometry}
+\usepackage{parskip} % http://www.tex.ac.uk/cgi-bin/texfaq2html?label=parskip
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.4cm}
+
+
+% Clickable references, glossary, footnotes etc.
+\usepackage[colorlinks=false,pdfborder={0 0 0}]{hyperref}
+
+% Bibliography
+\usepackage[numbers,sort&compress]{natbib}
+%\bibliographystyle{agsm}
+\bibliographystyle{plainnat}
+\usepackage{bibunits}
+\usepackage{bibentry}
+\renewcommand{\bibsection} % Make bibtex not print a heading for the references and appendix.
+
+% Blue Colored URLs
+\usepackage[usenames]{color}
+\definecolor{urlcolor}{rgb}{0,0.08,0.45}
+
+% You can footnote URLs with this utility command.
+\usepackage{url}
+\newcommand{\link}[2]{{#1}\footnote{{#1} - \footurl{#2} }}
+\newcommand{\footurl}[1]{\color{urlcolor}{\underline{\url{#1}}}}
+
+% Cool figure captions. %Must go before subfig due to clash.
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption} 
+
+% Fancy headers
+\usepackage{fancyhdr}
+% \setlength{\headheight}{15.2pt}
+\pagestyle{fancy}
+\headheight 35pt
+\lhead{your4.tv}
+
+% Fancy titles
+\usepackage{bold-extra}
+\usepackage[sc,bf,compact,small]{titlesec}
+
+% Pretty listings
+\usepackage{listings}
+\input{PrettyListings}
+% \lstset{basicstyle=\scriptsize}
+
+% Allow block comments within \begin{comment} ... \end{comment}
+\usepackage{comment}
+
+% Nice appendices
+\usepackage[titletoc,title]{appendix}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{lscape}
+\usepackage{subfig}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{emptypage}
+
