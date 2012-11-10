@@ -3,33 +3,45 @@
 
 	var wowzaServer = "152.78.144.19:1935";
 
+	y4.allowFacebookLogin = window.location.hostname.indexOf("your4.tv") > 0;
+
 	y4.App = Backbone.View.extend({
 		events: {
 			"mousemove .player-layer": "showControls",
 			"touchstart .player-layer": "showControls",
 			"click .icon-play": "play",
 			"click .icon-stop": "stop",
-			"click .tap-start": "startUserPlaylist",
-			"touchstart .tap-start": "startUserPlaylist",
+			"click .tap-start": "goPlay",
+			"touchstart .tap-start": "goPlay",
 		},
 		initialize: function () {
 			var that = this;
+
 			this.router = new Router({ app: this });
-			this.user = new y4.User();
 			this.users = new y4.Users();
-			this.users.add(this.user);
+
 			this.player = new y4.PlayerView({ server: wowzaServer });
 
-			FB.init({
-				appId      : '424893924242103', // App ID from the App Dashboard
-				channelUrl : '//'+window.location.hostname+'/channel.php', // Channel File for x-domain communication
-				status     : true, // check the login status upon init?
-				cookie     : true, // set sessions cookies to allow your server to access the session?
-				xfbml      : true  // parse XFBML tags on this page?
-			});
+			if (y4.allowFacebookLogin) {
+				FB.init({
+					appId      : '424893924242103', // App ID from the App Dashboard
+					channelUrl : '//'+window.location.hostname+'/channel.php', // Channel File for x-domain communication
+					status     : true, // check the login status upon init?
+					cookie     : true, // set sessions cookies to allow your server to access the session?
+					xfbml      : true  // parse XFBML tags on this page?
+				});
 
+				FB.Event.subscribe("auth.login", function(response) {
+					console.log("TODO: auth.login")
+				});
+				FB.Event.subscribe("auth.logout", function(response) {
+					console.log("TODO: auth.logout")
+				});
+			}
+
+			// Prevents scrolling
 			$(document).on("touchstart", function (e) {
-				e.preventDefault(); // Prevents scrolling
+				e.preventDefault();
 			});
 
 			this.player.on("beforefinish", function () {
@@ -50,68 +62,81 @@
 		},
 		render: function () {
 			this.$el.html(y4.templates['your4-main']());
-			this.$(".player-container").html("").append(this.player.render().el);
+			this.$(".player-container").append(this.player.render().el);
 			return this;
 		},
 		start: function () {
+			var that = this;
 			this.render().showSpinner();
-			this.goLogin();
+
+			this.users.fetchLoggedInUser().always(function () {
+				that.startNav();
+			});
 
 			return this;
 		},
 		startNav: function() {
 			this.hideSpinner();
+			// Starts the router
 			Backbone.history.start();
-		},
-		startUserPlaylist: function () {
-			return this.router.navigate("play", { trigger: true });
 		},
 		showStartScreen: function () {
 			this.$(".start-screen-layer").show();
 			this.$(".player-layer").hide();
 			return this;
 		},
-		goStart: function () {
+		goPlay: function () {
+			this.router.go("play");
+			return this;
+		},
+		renderStart: function () {
 			this.showStartScreen().$('.start-container')
 				.html('<div class="tap-start"><b>Tap to start.</b></div>');
 			return this;
 		},
-		goLogin: function () {
+		renderLogin: function () {
 			var that = this;
 			var login = new y4.LoginView({ app: this });
 
-			login.on("setUser", function (user, existingSession) {
-				that.user = user;
-				that.hideSpinner();
-				if (that.user == null) {
-					that.showStartScreen().$('.start-container').html("")
-						.append(login.render().el);
-				} else if (user.get('registered') && !existingSession) {
-					that.startUserPlaylist();
-				} else {
+			that.showStartScreen().$('.start-container').html("")
+				.append(login.render().el);
 
+			login.on("loggedIn", function () {
+				that.hideSpinner();
+				if (that.user().get('registered')/* && !existingSession*/) {
+					that.goPlay();
+				} else {
+					that.router.go("register");
 				}
 			});
 
 			return this;
 		},
-		goRegister: function () {
-			var that = this;
+		user: function () {
+			return this.users.loggedIn();
+		},
+		renderRegister: function () {
+			var that = this,
+				register = new y4.RegisterView({ app: this });
 
-			var register = new y4.RegisterView({app:this, user: this.user});
 			this.showStartScreen().$('.start-container').html("")
 				.append(register.render().el);
 
+			register.on("registered", function () {
+				that.hideSpinner();
+				that.goPlay();
+			});
+
 			return this;
 		},
-		goLogout: function () {
+		renderLogout: function () {
 			var that = this;
-			this.user.destroy().done(function(response) {
+			this.users.logout().done(function(response) {
 				that.router.navigate('login', { trigger: true });
 			});
 			return this;
 		},
-		goPlay: function (userId) {
+		renderPlay: function (userId) {
 			var that = this,
 				playlist = new y4.Playlist({ user: this.user });
 
@@ -123,8 +148,8 @@
 				that.$(".start-screen-layer").hide();
 				that.$(".player-layer").show();
 				that.play().showControls();
-
 			});
+
 			playlist.on("programme", function (programme) {
 				that.player.setProgramme(programme);
 			}).on("advert", function (advert) {
@@ -132,6 +157,9 @@
 			});
 
 			return this;
+		},
+		renderNotfound: function () {
+			this.showStartScreen().$('.start-container').html(y4.templates["y4-notfound"]());
 		},
 		showSpinner: function(opts) {
 			opts = _.extend({
@@ -181,26 +209,39 @@
 			"register": "register",
 			"logout": "logout",
 			"play/:id": "play",
-			"play": "play"
+			"play": "play",
+			"*notfound": "notfound"
 		},
 		initialize: function (options) { this.app = options.app; },
 		start: function () {
-			if (!this.app.user) {
-				this.app.router.navigate("login", { trigger: true });
-			} else {
-				this.app.goStart();
-			}
+			if (!this.app.users.loggedIn()) { return this.go("login"); }
+			this.app.renderStart();
 		},
-		login: function () { this.app.goLogin(); },
-		register: function () { this.app.goRegister(); },
-		logout: function () { this.app.goLogout(); },
+		login: function () {
+			if (this.app.users.loggedIn()) { return this.go(""); }
+			this.app.renderLogin();
+		},
+		register: function () {
+			if (this.app.users.loggedIn()) { return this.go(""); }
+			this.app.renderRegister();
+		},
+		logout: function () {
+			if (!this.app.users.loggedIn()) { return this.go(""); }
+			this.app.renderLogout();
+		},
 		play: function (id) {
-			id = id || this.app.user.id;
-			//if (!this.app.user) { return this.unauthorized(); };
-			this.app.goPlay(id);
+			if (!id && this.app.users.loggedIn()) {
+				id = this.app.users.loggedIn().id;
+			}
+			if (!id) { return this.go("login"); }
+			this.app.renderPlay(id);
 		},
-		unauthorized: function () {},
-		notfound: function () {}
+		go: function (hash) {
+			return this.navigate(hash, { trigger: true });
+		},
+		notfound: function () {
+			this.app.renderNotfound();
+		}
 	});
 
 }(this.y4));

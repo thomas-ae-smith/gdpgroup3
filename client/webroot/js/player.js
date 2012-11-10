@@ -142,7 +142,6 @@
 				template = _.template($("#flash-video-template").html());
 
 			this.hide().$el.html(template());
-			console.log( this.$('.flash-video-container'));
 			this.$('.flash-video-container').flowplayer({
 				src: "lib/flowplayer.swf",
 				wmode: "opaque"
