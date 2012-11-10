@@ -25,6 +25,7 @@
 			<span>OR SIGN IN</span>
 		</div>
 		<form class="login-form">
+			<div class="alert error alert-error" style="display:none;"></div>
 			<div class="control-group">
 				<div class="controls">
 					<input type="text" id="inputEmail" placeholder="Email">
@@ -40,9 +41,15 @@
 		</form>
 	</div>
 </script>
+<script type="text/html" id="y4-notfound-template">
+	<div class="logon-inner">
+		<h2>Page not found.</h2>
+	</div>
+</script>
 <script id="register-template" type="text/template">
 	<div class="logon-inner">
 		We require more information from you before you can start using your4.tv.
+		<div class="alert error alert-error" style="display:none;"></div>
 		<form class="register-form form-horizontal">
 		<% _.each(fields, function(field) { %>
 			<div class="control-group">
