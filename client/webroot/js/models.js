@@ -4,7 +4,8 @@
 	var baseUrl = window.location.hostname;
 
 	// Following should be removed
-	if (window.location.hostname === "your4.tv") {
+	var virtualenvs = ["users.ecs.soton.ac.uk", "linuxproj.ecs.soton.ac.uk", "localhost", "your4.tv"];
+	if (virtualenvs.indexOf(window.location.hostname) > -1) {
 		baseUrl = "www.your4.tv";
 	}
 
@@ -34,10 +35,13 @@
 		comparator: nameComparator
 	});
 
-
 	y4.Programmes = Backbone.Collection.extend({
 		url: "http://"+baseUrl+"/api/programmes/",
 		comparator: nameComparator
+	});
+
+	y4.Broadcasts = Backbone.Collection.extend({
+		url: "http://"+baseUrl+"/api/broadcasts/"
 	});
 
 
@@ -125,7 +129,7 @@
 	y4.Playlist = Backbone.Model.extend({
 		initialize: function (options) {
 			this.user = options.user;
-			this.programmes = new y4.Programmes();
+			this.broadcasts = new y4.Broadcasts();
 			this.adverts = new y4.Adverts();
 		},
 		start: function () {
@@ -148,14 +152,14 @@
 			clearTimeout(this.poller);
 		},
 		poll: function () {
-			this.programmes.at(0).fetch().then(function () {
+			this.broadcasts.at(0).fetch().then(function () {
 				// check advert start
 			});
 		},
 		programmeRecommendation: function () {
 			var that = this;
 			// FIXME: this must always put 1 programme in the collection
-			return this.programmes.fetch({
+			return this.broadcasts.fetch({
 				data: {
 					user: this.user.id
 				}
@@ -166,7 +170,7 @@
 			return this.adverts.fetch({
 				data: {
 					user: this.user.id,
-					programme: this.programmes.at(0).id
+					programme: this.broadcasts.at(0).id
 				}
 			});
 		},
@@ -183,7 +187,7 @@
 		next: function () {
 			switch (this.nextType) {
 			case "programme":
-				this.trigger("programme", this.programmes.at(0));
+				this.trigger("programme", this.broadcasts.at(0));
 				break;
 			case "advert":
 				this.trigger("advert", this.adverts.at(0));

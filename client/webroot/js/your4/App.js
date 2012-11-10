@@ -1,7 +1,8 @@
 (function (y4) {
 	"use strict";
 
-	var wowzaServer = "152.78.144.19:1935";
+	var wowzaServer = "152.78.144.19:1935",
+		allowFacebookLogin = window.location.hostname.indexOf("your4.tv") > 0;
 
 	y4.App = Backbone.View.extend({
 		events: {
@@ -14,25 +15,36 @@
 		},
 		initialize: function () {
 			var that = this;
+
 			this.router = new Router({ app: this });
 			this.user = new y4.User();
-			this.users = new y4.Users();
-			this.users.add(this.user);
+			this.users = new y4.Users([ this.user ]);
+
 			this.player = new y4.PlayerView({ server: wowzaServer });
 
-			FB.init({
-				appId      : '424893924242103', // App ID from the App Dashboard
-				channelUrl : '//'+window.location.hostname+'/channel.php', // Channel File for x-domain communication
-				status     : true, // check the login status upon init?
-				cookie     : true, // set sessions cookies to allow your server to access the session?
-				xfbml      : true  // parse XFBML tags on this page?
-			});
+			if (allowFacebookLogin) {
+				FB.init({
+					appId      : '424893924242103', // App ID from the App Dashboard
+					channelUrl : '//'+window.location.hostname+'/channel.php', // Channel File for x-domain communication
+					status     : true, // check the login status upon init?
+					cookie     : true, // set sessions cookies to allow your server to access the session?
+					xfbml      : true  // parse XFBML tags on this page?
+				});
 
+				FB.Event.subscribe("auth.login", function(response) {
+					console.log("TODO: auth.login")
+				});
+				FB.Event.subscribe("auth.logout", function(response) {
+					console.log("TODO: auth.logout")
+				});
+			}
+
+			// Prevents scrolling
 			$(document).on("touchstart", function (e) {
-				e.preventDefault(); // Prevents scrolling
+				e.preventDefault();
 			});
 
-			window.login = this;
+			window.login = this; // FIXME remove
 
 			this.player.on("beforefinish", function () {
 				that.playlist.fetchNext();
@@ -52,32 +64,37 @@
 		},
 		render: function () {
 			this.$el.html(y4.templates['your4-main']());
-			this.$(".player-container").html("").append(this.player.render().el);
+			this.$(".player-container").append(this.player.render().el);
 			return this;
 		},
 		start: function () {
 			var that = this;
 			this.render().showSpinner();
 
-			this.user.set('id','me');
-			this.user.fetch().done(function () {
+			this.user.set('id','me').fetch().done(function () {
 				// User is logged in :)
 				that.startNav();
 			}).fail(function () {
-				// Check to see if user is logged in via FB
-				FB.getLoginStatus(function (response) {
-					if (response.status === 'connected') {
-						that.retrieveFbUser().then(function () {
+				// If on your4.tv, we can check facebook
+				if (allowFacebookLogin) {
+					// Check to see if user is logged in via FB
+					FB.getLoginStatus(function (response) {
+						if (response.status === 'connected') {
+							that.retrieveFbUser().then(function () {
+								that.startNav();
+							});
+						} else if (response.status === 'not_authorized') {
 							that.startNav();
-						});
-					} else if (response.status === 'not_authorized') {
-						that.startNav();
-						that.router.navigate("login", { trigger: true });
-					} else {
-						that.startNav();
-						that.router.navigate("login", { trigger: true });
-					}
-				});
+							that.router.navigate("login", { trigger: true });
+						} else {
+							that.startNav();
+							that.router.navigate("login", { trigger: true });
+						}
+					});
+				} else {
+					that.startNav();
+					that.router.navigate("login", { trigger: true });
+				}
 			});
 			return this;
 		},
@@ -241,21 +258,36 @@
 		},
 		initialize: function (options) { this.app = options.app; },
 		start: function () {
-			if (!this.app.user) {
-				this.app.router.navigate("login", { trigger: true });
-			} else {
-				this.app.goStart();
+			if (!this.app.user || this.app.user.id === "me") {
+				return this.app.router.navigate("login", { trigger: true });
 			}
+			this.app.goStart();
 		},
-		login: function () { this.app.goLogin(); },
-		register: function () { this.app.goRegister(); },
-		logout: function () { this.app.goLogout(); },
+		login: function () {
+			if (this.app.user && this.app.user.id !== "me") {
+				return this.app.router.navigate("", { trigger: true });
+			}
+			this.app.goLogin();
+		},
+		register: function () {
+			if (this.app.user && this.app.user.id !== "me") {
+				return this.app.router.navigate("", { trigger: true });
+			}
+			this.app.goRegister();
+		},
+		logout: function () {
+			if (!this.app.user || this.app.user.id === "me") {
+				return this.app.router.navigate("", { trigger: true });
+			}
+			this.app.goLogout();
+		},
 		play: function (id) {
-			id = id || this.app.user.id;
-			//if (!this.app.user) { return this.unauthorized(); };
+			if (!id && this.app.user && this.app.user.id !== "me") {
+				id = this.app.user.id;
+			}
+			if (!id) { return this.app.router.navigate("login", { trigger: true }); }
 			this.app.goPlay(id);
 		},
-		unauthorized: function () {},
 		notfound: function () {}
 	});
 
