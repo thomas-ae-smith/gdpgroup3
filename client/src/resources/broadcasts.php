@@ -16,11 +16,12 @@ $app->get('/broadcasts(/)', function() use ($app) {
 		}
 		output_json(getBroadcast($broadcast));
 	} else {
-		$broadcast = R::find('broadcast');
+		$broadcasts = R::find('broadcast');
 		output_json(array_map(function ($broadcast) {
 			return array(
 				'id' => $broadcast->id,
-				'name' => $broadcast->name
+				'programme_id' => $broadcast->programme_id,
+				'channel_id' => $broadcast->channel_id
 			);
 		}, array_values($broadcasts)));
 	}
