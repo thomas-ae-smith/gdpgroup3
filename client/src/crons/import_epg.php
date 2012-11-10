@@ -25,7 +25,7 @@ $channels = array(
 	'4music' => array('cbdp', 518974999),
 	'E4' => array('cbdn', 518974809),
 	'Film4' => array('cbdm', 518974601),
-	'More4' => array('cbdk', 518974601)
+	'More4' => array('cbdk', 518975484)
 );
 
 date_default_timezone_set('UTC');
@@ -120,7 +120,7 @@ array_walk($channels, function ($channelIds, $channelName) use ($config) {
 						$brand = R::dispense('brand');
 						$brand->uid = $item->container->curie;
 						$brand->title = $item->container->title;
-						$brand->descriptions = $item->container->description;
+						$brand->description = $item->container->description;
 						unset($out);
 						exec('python ../../../recommender/get_programme_vector.py "' . $item->container->title . '"', $out);
 						$brand->vector = $out[0];
@@ -140,6 +140,18 @@ array_walk($channels, function ($channelIds, $channelName) use ($config) {
 						}
 						$programme->serie = $serie;
 					}
+				} else {
+					echo "  create new brand for " . $programme->title;
+					// If programme does not have a brand, create one for it
+					$brand = R::dispense('brand');
+					$brand->uid = 'y4::b-' . rand(0, 99999999999);
+					$brand->title = $programme->title;
+					$brand->description = $programme->description;
+					unset($out);
+					exec('python ../../../recommender/get_programme_vector.py "' . $brand->title . '"', $out);
+					$brand->vector = $out[0];
+					R::store($brand);
+					$programme->brand = $brand;
 				}
 				R::store($programme);
 			}

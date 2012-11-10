@@ -1,6 +1,6 @@
 <?php
 
-$app->get('/programmes(/)', function() use ($app) {
+$app->get('/broadcast(/)', function() use ($app) {
 	$userId = $app->request()->get('user');
 	if ($userId) {
 		$user = R::load('user', $userId);
@@ -9,52 +9,42 @@ $app->get('/programmes(/)', function() use ($app) {
 		}
 		unset($out);
 		exec('python ../../../recommender/get_recommendation.py ' . $user->id, $out);
-//		print('python ../../../recommender/get_recommendation.py -t 1351209900 ' . $user->id);
+		print('python ../../../recommender/get_recommendation.py ' . $user->id);
 		var_dump($out);
-		$programmeId = $out[0]; // Replace with 0 once get_recommender is fixed
-		$programme = R::load('programme', $programmeId);
-		output_json($programme->export());
-		exit;
-		output_json(array(array(
-			'id' => $programme->id,
-			'channel' => $programme->channel,
-			'start' => $programme->start,
-			'nextAdBreakStart' => 0,
-			'nextAdBreakEnds' => 0,
-			'duration' => $programme->length * 60,
-			'name' => $programme->name,
-			'episode' => $programme->episode,
-			'type' => $programme->type,
-			'live' => $programme->live,
-			'timenow' => time()
-		)));
-		
+		$broadcastId = $out[0]; // Replace with 0 once get_recommender is fixed
+		$broadcast = R::load('broadcast', $broadcastId);
+		output_json($broadcast->export());
 	} else {
-		$programmes = R::find('programmes');
-		output_json(array_map(function ($programme) {
+		$broadcast = R::find('broadcast');
+		output_json(array_map(function ($broadcast) {
 			return array(
-				'id' => $programme->id,
-				'name' => $programme->name
+				'id' => $broadcast->id,
+				'name' => $broadcast->name
 			);
-		}, array_values($programmes)));
-		//output_json(R::exportAll($programmes));
+		}, array_values($broadcasts)));
 	}
 });
-/*
-$app->get('/programmes/:id', function ($id) use ($app) {
+
+$app->get('/broadcasts/:id', function ($id) use ($app) {
 	global $DB;
-	$programme = R::load('programmes', $id);
-	if (!$programme->id) { return notFound('Programme with that ID not found.'); }
+	$broadcast = R::load('broadcast', $id);
+	if (!$broadcast) { return notFound('Broadcast with that ID not found.'); }
+	$channel = R::load('channel', $broadcast->channel_id);
 
-	$conn = new PDO($DB[$conf_name]['string'], $DB[$conf_name]['username'], $DB[$conf_name]['password']);
-	$moses = $conn->query('project4_mos', ' channel = ? AND break_start_GMT > ? AND break_end_GMT < ? ', array());
+	$conn = new PDO($DB['project4']['string'], $DB['project4']['username'], $DB['project4']['password']);
+	$q = $conn->prepare('SELECT * FROM project4_mos WHERE channel_ID = ? AND break_start_GMT > ? AND break_end_GMT < ?');
+	$q->execute(array($channel->project4id, $broadcast->time, $broadcast->time + $broadcast->duration));
+//	echo 'SELECT * FROM project4_mos WHERE channel_ID = ' . $channel->project4id . ' AND break_start_GMT > ' .  $broadcast->time . ' AND break_end_GMT < ' . ($broadcast->time + $broadcast->duration);
+//	var_dump($q->fetchAll());
 
-	output_json(array_merge($programme->export(), array(
+	output_json(array_merge($broadcast->export(), array(
 		'timenow' => time(),
 		'mos' => array_map(function ($mos) {
 			return array(
-				'start' => $mos->break11111
-		}, $moses)
+				'start' => $mos['break_start_GMT'],
+				'end' => $mos['break_end_GMT']
+			);
+		}, $q->fetchAll())
 	)));
 });
-*/
+
