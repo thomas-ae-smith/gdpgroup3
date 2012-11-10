@@ -30,13 +30,6 @@
 					cookie     : true, // set sessions cookies to allow your server to access the session?
 					xfbml      : true  // parse XFBML tags on this page?
 				});
-
-				FB.Event.subscribe("auth.login", function(response) {
-					console.log("TODO: auth.login")
-				});
-				FB.Event.subscribe("auth.logout", function(response) {
-					console.log("TODO: auth.logout")
-				});
 			}
 
 			// Prevents scrolling
