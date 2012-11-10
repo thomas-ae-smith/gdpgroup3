@@ -99,7 +99,7 @@
 		},
 		start: function () {
 			var that = this;
-			$.when(this.adverts.fetch(), that.campaigns.fetch()).then(function () {
+			$.when(this.adverts.fetch(), that.campaigns.fetch()).done(function () {
 				Backbone.history.start();
 			}).fail(function () {
 				that.$el.html('<div class="alert alert-error" style="width: 700px; margin: 40px auto;"><b>Error while loading page.</b></div>')

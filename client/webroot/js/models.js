@@ -1,7 +1,12 @@
 (function (y4) {
 	"use strict";
-	
+
 	var baseUrl = window.location.hostname;
+
+	// Following should be removed
+	if (window.location.hostname === "your4.tv") {
+		baseUrl = "www.your4.tv";
+	}
 
 	y4.bootstrap = {
 		channels: [
