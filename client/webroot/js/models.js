@@ -222,7 +222,20 @@
 
 		},
 		loginFB: function () {
+			var that = this,
+				dfd = $.Deferred();
 
+			if (y4.allowFacebookLogin) {
+				FB.login(function (response) {
+					if (response.authResponse) {
+						that.getFbUser().then(function() {
+							dfd.resolve();
+						});
+					}
+				}, { scope: 'user_birthday,email' });
+			} else {
+				dfd.reject("Facebook login disabled on this host.");
+			}
 		},
 		logout: function () {
 			return this.first().destroy();
