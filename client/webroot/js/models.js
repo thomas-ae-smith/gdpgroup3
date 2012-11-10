@@ -37,7 +37,7 @@
 
 	y4.Programmes = Backbone.Collection.extend({
 		url: "http://"+baseUrl+"/api/programmes/",
-		comparator: nameComparator
+		//comparator: nameComparator
 	});
 
 	y4.Broadcasts = Backbone.Collection.extend({
@@ -242,10 +242,10 @@
 		start: function () {
 			if (this.poller) { return; }
 			var that = this,
-				dfd = this.programmeRecommendation();
+				dfd = this.broadcastRecommendation();
 
 			dfd.then(function () {
-				that.nextType = "programme";
+				that.nextType = "broadcast";
 				that.next();
 			});
 
@@ -263,9 +263,9 @@
 				// check advert start
 			});
 		},
-		programmeRecommendation: function () {
+		broadcastRecommendation: function () {
 			var that = this;
-			// FIXME: this must always put 1 programme in the collection
+			// FIXME: this must always put 1 broadcast in the collection
 			return this.broadcasts.fetch({
 				data: {
 					user: this.user.id
@@ -282,9 +282,9 @@
 			});
 		},
 		fetchNext: function () {
-			this.nextType = "programme"; // Work this out from advert times
+			this.nextType = "broadcast"; // Work this out from advert times
 			switch (this.nextType) {
-			case "programme": return this.programmeRecommendation();
+			case "broadcast": return this.broadcastRecommendation();
 			case "advert": return this.advertRecommendation();
 			}
 		},
@@ -293,8 +293,8 @@
 		},
 		next: function () {
 			switch (this.nextType) {
-			case "programme":
-				this.trigger("programme", this.broadcasts.first());
+			case "broadcast":
+				this.trigger("broadcast", this.broadcasts.first());
 				break;
 			case "advert":
 				this.trigger("advert", this.adverts.first());

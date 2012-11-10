@@ -55,18 +55,23 @@
 			}
 
 		},
-		setProgramme: function (programme) {
-			console.log(programme.get("recordState"), programme)
-			switch (Number(programme.get("recordState"))) {
+		setBroadcast: function (broadcast) {
+			var programmes = new y4.Programmes([{ id: broadcast.get("programme_id") }]),
+				programme = programmes.first(),
+				log;
+			programme.fetch().done(function () {
+				console.log("Programme: " + programme.get("title") + " (" + log + ")");
+			});
+			switch (Number(broadcast.get("recordState"))) {
 			case 0:
 			case 1:
-				console.log("JK")
-				var channel = this.channels.get(programme.get("channel_id"));
-				console.log(channel)
+				var channel = this.channels.get(broadcast.get("channel_id"));
 				this.videoLayer.set("your4", channel.get("url"));
+				log = "live on " + channel.get("name");
 				break;
 			case 2:
-				this.videoLayer.set("vod", programme.get("uid"));
+				this.videoLayer.set("vod", broadcast.get("uid"));
+				log = "on-demand";
 				break;
 			case 3:
 				// Video deleted!!
@@ -141,7 +146,6 @@
 			if (this.url === url && this.service === service) { return; }
 			this.service = service;
 			this.url = url;
-			console.log("Video: rtmp://" + this.options.server + '/' + this.service + "/" + this.url)
 			this.render();
 			this.trigger("set");
 			return this;

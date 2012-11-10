@@ -150,8 +150,8 @@
 				that.play().showControls();
 			});
 
-			playlist.on("programme", function (programme) {
-				that.player.setProgramme(programme);
+			playlist.on("broadcast", function (broadcast) {
+				that.player.setBroadcast(broadcast);
 			}).on("advert", function (advert) {
 				that.player.setAdvert(advert);
 			});
