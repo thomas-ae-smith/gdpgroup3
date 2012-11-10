@@ -89,15 +89,13 @@
 			this.$('.facebook-button').attr('disabled', 'disabled')
 				.text("Please wait...");
 
-			FB.login(function (response) {
-				if (response.authResponse) {
-					that.getFbUser().then(function() {
-						$('.facebook-button').removeAttr('disabled')
-							.text("Login with Facebook");
-						that.setUser(that.user);
-					});
-				}
-			}, { scope: 'user_birthday,email' });
+			this.app.users.loginFB().done(function () {
+				that.$('.error').hide();
+				that.trigger("loggedIn");
+			}).fail(function (msg) {
+				that.$('.error').show().html(msg);
+			});
+
 		},
 
 		register: function () {
@@ -113,7 +111,7 @@
 				that.$('.error').hide();
 				that.trigger("loggedIn");
 			}).fail(function (response) {
-				that.$('.error').show().html(JSON.parse(response.responseText).error); // FIXME
+				that.$('.error').show().html(JSON.parse(response.responseText).error);
 			});
 		},
 
