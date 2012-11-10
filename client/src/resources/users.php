@@ -7,6 +7,8 @@ function getIdType($id) {
 function processUser($app, $id) {
 	global $facebook;
 
+	$req = $app->request()->getBody();
+
 	$type = getIdType($id);
 	$id = str_replace('fb-', '', $id);
 	if ($type == 'fb') {
@@ -33,12 +35,17 @@ function processUser($app, $id) {
 				forbidden();
 				exit;
 			}
-		} else {
+		} else { 
+			// Check if user with that email already exists
+			// FIXME: Should check before registering with facebook also
+			$existing_user = R::findOne('user', ' email = ? ', array($req['email']));
+			if ($existing_user) {
+				forbidden("Email address already in use.");
+			}
 			$user = R::dispense('user');
 		}
 	}
 
-	$req = $app->request()->getBody();
 	foreach ($use_fields as $field) {
 		$field_content = $req[$field];
 		if (isset($field_content)) {
@@ -100,7 +107,8 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 			}
 		}
 	} else if (isset($_SESSION['user']['id']) || $type != 'fb') {
-		badRequest();
+		notFound();
+		//badRequest();
 	}
 
 	// Fetching user by fb id
@@ -163,7 +171,7 @@ $app->get('/users/', function() use ($app) {
 
 	$user = R::findOne('user','email = ?',array($email));
 	if ($user == null) {
-		forbidden();
+		forbidden("Incorrect email or password.");
 	}
 
 	if($user->password == crypt($pass, substr($user->password, 0, 29))) {
@@ -171,7 +179,7 @@ $app->get('/users/', function() use ($app) {
 		$_SESSION['user']['registered'] = true;
 		output_json($_SESSION['user']);
 	} else {
-		forbidden();
+		forbidden("Incorrect email or password.");
 	}
 });
 

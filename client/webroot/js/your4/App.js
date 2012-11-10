@@ -32,8 +32,6 @@
 				e.preventDefault(); // Prevents scrolling
 			});
 
-			window.login = this;
-
 			this.player.on("beforefinish", function () {
 				that.playlist.fetchNext();
 			}).on("finish", function () {
@@ -56,63 +54,14 @@
 			return this;
 		},
 		start: function () {
-			var that = this;
 			this.render().showSpinner();
+			this.goLogin();
 
-			this.user.set('id','me');
-			this.user.fetch().done(function () {
-				// User is logged in :)
-				that.startNav();
-			}).fail(function () {
-				// Check to see if user is logged in via FB
-				FB.getLoginStatus(function (response) {
-					if (response.status === 'connected') {
-						that.retrieveFbUser().then(function () {
-							that.startNav();
-						});
-					} else if (response.status === 'not_authorized') {
-						that.startNav();
-						that.router.navigate("login", { trigger: true });
-					} else {
-						that.startNav();
-						that.router.navigate("login", { trigger: true });
-					}
-				});
-			});
 			return this;
 		},
 		startNav: function() {
 			this.hideSpinner();
 			Backbone.history.start();
-		},
-		fbLogin: function () {
-			var that = this,
-				dfd = new $.Deferred();
-			FB.login(function (response) {
-				if (response.authResponse) {
-					that.retrieveFbUser().then(function () {
-						dfd.resolve();
-					});
-				}
-			}, { scope: 'user_birthday,email' });
-			return dfd;
-		},
-		// Crucial. Sets server side session and ensures user is registered.
-		retrieveFbUser: function () {
-			var that = this,
-				dfd = new $.Deferred();
-			FB.api('/me', function (response) {
-				that.user.set('id', 'fb-' + response.id);
-				that.user.fetch().then(function () {
-					if (that.user.get("registered") == false) {
-						that.hideSpinner();
-						that.goRegisterFB(dfd);
-					} else {
-						dfd.resolve();
-					}
-				});
-			});
-			return dfd;
 		},
 		startUserPlaylist: function () {
 			return this.router.navigate("play", { trigger: true });
@@ -130,38 +79,33 @@
 		goLogin: function () {
 			var that = this;
 			var login = new y4.LoginView({ app: this });
-			this.showStartScreen().$('.start-container').html("")
-				.append(login.render().el);
-			login.on("normalLogin", function (user) {
+
+			login.on("setUser", function (user, existingSession) {
 				that.user = user;
-				that.router.navigate("play", { trigger: true });
+				that.hideSpinner();
+				if (that.user == null) {
+					that.showStartScreen().$('.start-container').html("")
+						.append(login.render().el);
+				} else if (user.get('registered') && !existingSession) {
+					that.startUserPlaylist();
+				} else {
+
+				}
 			});
 
 			return this;
 		},
-		goRegisterFB: function (dfd) {
-			this.goRegister({user: this.user}, dfd.resolve);
-		},
-		goRegister: function (data, callback) {
+		goRegister: function () {
 			var that = this;
 
-			var register = new y4.RegisterView(data);
+			var register = new y4.RegisterView({app:this, user: this.user});
 			this.showStartScreen().$('.start-container').html("")
 				.append(register.render().el);
 
-			register.on("register", function (user) {
-				that.user = user;
-				if (callback) {
-					callback();
-				} else {
-					that.router.navigate("play", { trigger: true });
-				}
-			});
 			return this;
 		},
 		goLogout: function () {
 			var that = this;
-			console.log("FFKL:");
 			this.user.destroy().done(function(response) {
 				that.router.navigate('login', { trigger: true });
 			});
