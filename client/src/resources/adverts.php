@@ -5,14 +5,16 @@ $app->get('/adverts(/)', function() use ($app) {
 	$userId = $app->request()->get('user');
 	$programmeId = $app->request()->get('programme');
 	if ($userId && $programmeId) {
-		$user = R::load('users', $userId);
+		$user = R::load('user', $userId);
 		if (!$user->id) { return notFound('User with that ID not found.'); }
-		$programme = R::load('programmes', $programmeId);
+		$programme = R::load('programme', $programmeId);
 		if (!$programme->id) { return notFound('Programme with that ID not found.'); }
 		unset($out);
 		exec('python ../../../recommender/get_ad.py ' . $user->id . ' ' . $programme->id . ' ' . time(), $out);
 		$advertId = $out[0];
 		$advert = R::load('adverts', $advertId);
+		print('python ../../../recommender/get_ad.py ' . $user->id . ' ' . $programme->id . ' ' . time());
+		if (!$advert->id) { return notFound('No suitable recommendation.'); }
 		output_json(array($advert->export()));
 	} else {
 		$adverts = R::find('adverts');
