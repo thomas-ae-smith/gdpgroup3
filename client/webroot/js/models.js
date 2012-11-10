@@ -239,14 +239,22 @@
 			this.broadcasts = new y4.Broadcasts();
 			this.adverts = new y4.Adverts();
 		},
-		start: function () {
-			if (this.poller) { return; }
+		start: function (advert, force) {
+			if (this.poller ) { return; }
 			var that = this,
 				dfd = this.broadcastRecommendation();
 
-			dfd.then(function () {
+			dfd.done(function () {
 				that.nextType = "broadcast";
 				that.next();
+			}).fail(function () {
+				// No suitable recommendation, show an advert
+				this.nextType = "advert";
+				that.fetchNext().done(function () {
+					that.next();
+				}).fail(function () {
+					console.error("Could not show advert");
+				})
 			});
 
 			this.poller = setInterval(function () {
@@ -277,15 +285,16 @@
 			return this.adverts.fetch({
 				data: {
 					user: this.user.id,
-					programme: this.broadcasts.first().id
+					programme: this.broadcasts.first() ?
+						this.broadcasts.first().id : null
 				}
 			});
 		},
 		fetchNext: function () {
-			this.nextType = "broadcast"; // Work this out from advert times
+			//this.nextType = "broadcast"; // Work this out from advert times
 			switch (this.nextType) {
 			case "broadcast": return this.broadcastRecommendation();
-			case "advert": return this.advertRecommendation();
+			case "advert": default: return this.advertRecommendation();
 			}
 		},
 		nextHasExpired: function () {
