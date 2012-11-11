@@ -18,7 +18,7 @@ $app->get('/adverts(/)', function() use ($app) {
 		output_json(array(getAdvert($advert)));
 	} else {
 		$adverts = R::find('advert');
-		output_json('getAdvert', $adverts);
+		output_json(array_map('getAdvert', array_values($adverts)));
 	}
 });
 
@@ -53,7 +53,13 @@ $app->delete('/adverts/:id', function ($id) use ($app) {
 });
 
 function getAdvert($advert) {
-	return $advert->export();
+	return array_merge($advert->export(), array(
+		'campaigns' => array_map('getCampaignSummary', array_values($advert->sharedCampaign))
+	));
+}
+
+function getCampaignSummary($campaign) {
+	return $campaign->export();
 }
 
 function setAdvert($advert, $req) {
