@@ -14,12 +14,12 @@
 			this.channels = new y4.Channels();
 
 			this.videoLayer.on("set", function () {
-				that.videoLayer.show();
+				//that.videoLayer.show();
 			}).on("start", function () {
 				that.blackLayer.hide();
 			}).on("finish", function () {
 				that.blackLayer.show();
-				that.videoLayer.hide();
+				//that.videoLayer.hide();
 			});
 			/*this.stillLayer.on("set", function () {
 				that.stillLayer.show();
@@ -38,9 +38,9 @@
 		render: function () {
 			this.$el.html("").append(
 				this.videoLayer.render().el,
-				this.blackLayer.render().show().el,
-				this.stillLayer.render().el,
-				this.overlayLayer.render().el);
+				this.blackLayer.render().el,
+				this.stillLayer.render().hide().el,
+				this.overlayLayer.render().hide().el);
 			return this;
 		},
 
@@ -97,7 +97,7 @@
 			return this;
 		},
 		render: function () {
-			this.hide().$el.css({ zIndex: this.zIndex });
+			this.$el.css({ zIndex: this.zIndex });
 			return this;
 		}
 	});
@@ -157,7 +157,7 @@
 			var that = this,
 				template = _.template($("#flash-video-template").html());
 
-			this.hide().$el.html(template());
+			this.$el.html(template());
 			this.$('.flash-video-container').flowplayer({
 				src: "lib/flowplayer.swf",
 				wmode: "opaque"

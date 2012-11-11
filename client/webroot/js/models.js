@@ -60,7 +60,6 @@
 		defaults: {
 			title: "",
 			type: "",
-			adverts: [],
 			overlay: ""
 		}
 	});
@@ -271,6 +270,8 @@
 				that.advert(advert).on("finish", function () {
 					dfd.resolve();
 				});
+			}).fail(function () {
+				dfd.resolve();
 			});
 			return dfd;
 		},
@@ -372,7 +373,7 @@
 					o.trigger("finish");
 				}, advert.get("duration") * 1000);
 
-
+			console.log(advert)
 			this.trigger("advert", advert);
 
 			return o;
@@ -405,7 +406,7 @@
 				data: {
 					user: this.user.id,
 					programme: broadcast ? broadcast.get("programme_id") : 0,
-					time_limit: broadcast ? Math.floor(broadcast.secondsTillStart()) : 0
+					time_limit: broadcast ? Math.max(1, Math.floor(broadcast.secondsTillStart())) : 0
 				}
 			}).done(function () {
 				dfd.resolve(that.adverts.first()); // TODO: check there is a first?
