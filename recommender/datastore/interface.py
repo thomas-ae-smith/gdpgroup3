@@ -80,7 +80,7 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 	if when is None:
 		when = datetime.datetime.now()
 
-	user_fields = ['dob', 'gender', 'occupation', 'lat', 'long']
+	user_fields = ['dob', 'gender', 'occupation_id', 'lat', 'long']
 	user = {user_fields[index]:val for index, val in
 							enumerate(get_user(uid, user_fields))}
 
@@ -142,7 +142,7 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 
 	restrictions = read_db(campaign_query)
 	restriction_fields = ['schedule', 'gender', 'minAge', 'maxAge', 'minLong',
-						'maxLong', 'minLat', 'maxLat', 'genre', 'occupation',
+						'maxLong', 'minLat', 'maxLat', 'genre', 'occupation_id',
 						'programme', 'dayOfWeek', 'startTime', 'endTime']
 	campaigns = {}
 	for fields in restrictions:
@@ -159,7 +159,7 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 			'minLat': lambda: user['lat'] >= float(restrict['minLat']),
 			'maxLat': lambda: user['lat'] <= float(restrict['maxLat']),
 			'genre': lambda: pid and restrict['genre'] in genres,
-			'occupation': lambda: user['occupation'] == restrict['occupation'],
+			'occupation_id': lambda: user['occupation_id'] == restrict['occupation_id'],
 			'programme': lambda: pid and broadcast['pid'] == restrict['programme'],
 			'dayOfWeek': lambda: dt.isoweekday() == restrict['dayOfWeek'],
 			'startTime': lambda: dt.time() >= _time_from_str(
