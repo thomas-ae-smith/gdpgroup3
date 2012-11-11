@@ -43,14 +43,22 @@ function getBroadcast($broadcast) {
 	$conn = new PDO($DB['project4']['string'], $DB['project4']['username'], $DB['project4']['password']);
 	$q = $conn->prepare('SELECT * FROM project4_mos WHERE channel_ID = ? AND break_start_GMT > ? AND break_end_GMT < ?');
 	$q->execute(array($channel->project4id, $broadcast->time, $broadcast->time + $broadcast->duration));
+	$rows = $q->fetchAll();
 
-	return array_merge($broadcast->export(), array(
+	$mosTimings = array();
+	if (count($rows) > 0) {
+		$mosTimings['mosStart'] = $rows[0]['epg_show_start_GMT'];
+//		$mosTimings['mosEnd'] = $rows[0]['epg_end_show
+	}
+
+	return array_merge($broadcast->export(), $mosTimings, array(
 		'timenow' => time(),
 		'mos' => array_map(function ($mos) {
 			return array(
+				'id' => $mos['key'],
 				'start' => $mos['break_start_GMT'],
 				'end' => $mos['break_end_GMT']
 			);
-		}, $q->fetchAll())
+		}, $rows)
 	));
 }
