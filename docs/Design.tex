@@ -9,7 +9,28 @@ LAMP server
 
 \subsection{Programme recommendation}
 
+To populate a users personal TV channel, your4.tv utilises a programme recommendation system. This system only recommends programmes, end is separate from the targetted advert retreiver (described in Section~\ref{sec:design_adverts}). At an abstract level, each programme is given a vector within a programme space, $\mathcal{P}$, where the vector describes what the programme is like. The concrete implementation of this used in your4.tv is that $\mathcal{P}$ is 19-dimentional, where each dimention represents one of the genres:
+\begin{center}
+	\emph{\footnotesize{
+		\begin{tabular}{c c c c c}
+			Action and Adventure & Animation & Children & Comedy & Documentary \\
+			Drama & Game Show & Home and Garden & Mini-Series & News \\
+			Reality & Science-Fiction & Fantasy & Soap & Special Interest \\
+			Sport & Talk Show & Western & Unclassified & 
+		\end{tabular} 
+	}}
+\end{center}
+where the genres belonging to a programme are pulled from the tvdb api\footnote{\url{http://thetvdb.com/wiki/index.php/Programmers_API}}, and the 19 dimentions are made up of the 18 possible tvdb genres plus `Unclassified', which is reserved for programmes which do not appear in the tvdb api. This was done because no training data could be obtained which used the Atlas genres, so instead all programmes (training and live) are given the genres listed by tvdb, allowing consistancy between the live and training data.
+
+Each programme has binary membership in one or more of the above genres (1 $\rightarrow$ belongs in genre; 0 $\rightarrow$ does not belong in genre). As an example, the programme `Grand Designs' has genres \emph{Documentary}, \emph{Home and Garden} and \emph{Reality}, so would be assigned the vector:
+\begin{center}
+	$0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0$
+\end{center}
+% This genre-space implementation of $\mathcal{P}$ is not the only possible implementation. 
+
+
 \subsection{Adverts}
+\label{sec:design_adverts}
 
 Adverts will be targetted
 
