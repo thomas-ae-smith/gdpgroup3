@@ -101,9 +101,10 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 			print("There is no programme with id {pid}!".format(pid=pid),
 			file=sys.stderr)
 		pid = None # This is set to help debugging (all references to a programme 
-					# crash), and to mindicate the programme is nonexistant.
+					# crash), and to indicate the programme is nonexistant.
 	else:
-		genres_query = ("SELECT `genre_id` FROM `genre_programme` WHERE `programme_id` = {pid}").format(pid=pid)
+		genres_query = ("SELECT `genre_id` FROM `genre_programme` WHERE "
+						"`programme_id` = {pid}").format(pid=pid)
 		genres = [field[0] for field in read_db(genres_query)]
 
 	blacklist_query = (	"SELECT `advert` "
@@ -166,6 +167,15 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 			'endTime': lambda: dt.time() <= _time_from_str(
 												restrict['endTime'])
 		}
+
+		if restrict['gender'] == set(['']):
+			restrict['gender'] = None
+
+		if restrict['schedule'] == set(['']):
+			restrict['schedule'] = None
+
+		#if not nicheness:
+			#import pdb; pdb.set_trace()
 
 		available = all([v is None or restrict_match[k]()
 							for k, v in restrict.iteritems()])
