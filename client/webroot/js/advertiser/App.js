@@ -261,26 +261,15 @@
 				that.trigger("edit", that.advert.id);
 			});
 
-			this.$('#advert-file').fileupload({
-				dataType: 'json',
-				add: function (e, data) {
-					data.context = $('<p/>').text('Uploading...').appendTo(document.body);
-					data.submit();
-				},
-				done: function (e, data) {
-					that.advert.set({ url: data.result.url });
-					console.log(that.advert.get("url"))
-					console.log({ url: data.result.url })
-				},
-				progressall: function (e, data) {
-					var progress = parseInt(data.loaded / data.total * 100, 10);
-					console.log(progress)
-					$('#progress .bar').css(
-						'width',
-						progress + '%'
-					);
-				}
-			});
+			var map = this.locationMap = L.map(this.$("#viewer-locations .map")[0], {
+				center: [54.805, -3.59],
+				zoom: 5,
+				scrollWheelZoom: false
+			})
+			L.tileLayer('http://{s}.tile.cloudmade.com/1b189a705e22441c86cdb384a5bc7837/997/256/{z}/{x}/{y}.png', {
+				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy <a href="http://cloudmade.com">CloudMade</a>',
+				maxZoom: 18
+			}).addTo(map);
 
 			return this;
 		}
