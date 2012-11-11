@@ -45,12 +45,13 @@
 		},
 
 		setAdvert: function (advert) {
+			console.log("Play advert", advert)
 			switch (advert.get("type")) {
 			case "still":
 				this.stillLayer.set(advert.get("url"));
 				break;
 			case "video":
-				this.videoLayer.set("advert", advert.get("id"));
+				this.videoLayer.set("vod", advert.get("url"));
 				break;
 			}
 
@@ -143,6 +144,7 @@
 		play: function () { console.log("TODO") },
 		stop: function () { console.log("TODO") },
 		set: function (service, url) {
+			console.log('rtmp://' + this.options.server + '/' + service, url);
 			if (this.url === url && this.service === service) { return; }
 			this.service = service;
 			this.url = url;

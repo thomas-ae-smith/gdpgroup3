@@ -9,17 +9,6 @@
 		baseUrl = "www.your4.tv";
 	}
 
-	y4.bootstrap = {
-		channels: [
-			{ id: "518974809", title: "Channel 4", service: "your4", url: "c4.stream", icon: "img/ids/c4.svg" },
-			{ id: "518975484", title: "E4", service: "your4", url: "e4.stream", icon: "img/ids/e4.svg" },
-			{ id: "m4", title: "More4", service: "your4", url: "m4.stream", icon: "img/ids/more4.svg" },
-			{ id: "f4", title: "Film4", service: "your4", url: "film4.stream", icon: "img/ids/film4.svg" },
-			{ id: "4music", title: "4music", service: "your4", url: "4music.stream", icon: "img/ids/4music.svg" },
-			{ id: "stv", title: "studentTV", service: "your4", url: "studentTV.stream", icon: "img/ids/studenttv.svg" }
-		]
-	};
-
 	// Order by name
 	var nameComparator = function (model) {
 		return model.get("name").replace(/^the /i, "");
@@ -40,8 +29,22 @@
 		//comparator: nameComparator
 	});
 
+	y4.Broadcast = Backbone.Model.extend({
+		initialize: function () {
+			this.timeOffset = ((new Date()).getTime() / 1000) - this.get("timenow");
+		},
+		started: function () {
+			console.log(this.timeOffset)
+			return ((new Date()).getTime() / 1000) + this.timeOffset > this.get("time");
+		},
+		secondsTillStart: function () {
+			return this.get("time") - (((new Date()).getTime() / 1000) + this.timeOffset)
+		}
+	});
+
 	y4.Broadcasts = Backbone.Collection.extend({
-		url: "http://"+baseUrl+"/api/broadcasts/"
+		url: "http://"+baseUrl+"/api/broadcasts/",
+		model: y4.Broadcast
 	});
 
 
@@ -253,78 +256,161 @@
 		initialize: function (options) {
 			this.user = options.user;
 			this.broadcasts = new y4.Broadcasts();
+			this.programmes = new y4.Programmes();
 			this.adverts = new y4.Adverts();
 		},
 		start: function (advert, force) {
-			if (this.poller ) { return; }
+			return this.recommend();
+		},
+
+		showAdvert: function (broadcast) {
+			console.log("Showing advert");
 			var that = this,
-				dfd = this.broadcastRecommendation();
-
-			dfd.done(function () {
-				that.nextType = "broadcast";
-				that.next();
-			}).fail(function () {
-				// No suitable recommendation, show an advert
-				this.nextType = "advert";
-				that.fetchNext().done(function () {
-					that.next();
-				}).fail(function () {
-					console.error("Could not show advert");
-				})
+				dfd = $.Deferred();
+			that.advertRecommendation(broadcast).done(function (advert) {
+				that.advert(advert).on("finish", function () {
+					dfd.resolve();
+				});
 			});
+			return dfd;
+		},
 
-			this.poller = setInterval(function () {
-				that.poll();
-			}, 20000);
+		startBroadcast: function (broadcast) {
+			console.log("Starting broadcast");
+			var that = this,
+				inAdBreak = false.
+				showAdBreakAdvert = function () {
+					that.showAdvert(broadcast).done(function () {
+						if (inAdBreak) { showAdBreakAdvert(); }
+					});
+				};
+			that.broadcast(broadcast).on("breakStart", function () {
+				inAdBreak = true;
+				showAdBreakAdvert();
+			}).on("breakFinish", function () {
+				inAdBreak = false;
+			}).on("finish", function () {
+				that.recommend();
+			});
+		},
+		// Shows adverts until broadcast has started
+		hasBroadcastStarted: function (broadcast) {
+			console.log("Checking broadcast");
+			var that = this;
+			if (broadcast.started()) {
+				this.startBroadcast(broadcast);
+			} else {
+				console.log("Broadcast not yet started - " + (broadcast.secondsTillStart() / 60) + " minutes to start");
+				this.showAdvert(broadcast).done(function () { that.hasBroadcastStarted(broadcast); });
+			}
+		},
+
+		recommend: function () {
+			console.log("Making recommendation");
+			var that = this,
+				dfd = $.Deferred();
+
+			this.broadcastRecommendation().done(function (broadcast) {
+				that.hasBroadcastStarted(broadcast);
+				dfd.resolve();
+			}).fail(function () {
+				that.programmeRecommendation().done(function (programme) {
+					dfd.resolve();
+					that.programme(programme).on("breakStart", function () {
+
+					}).on("finish", function () {
+						that.recommend();
+					});
+				}).fail(function () {
+					dfd.resolve();
+					that.showAdvert().done(function () {
+						that.recommend();
+					});
+				});
+			});
 
 			return dfd;
 		},
-		stop: function () {
-			clearTimeout(this.poller);
+
+		broadcast: function (broadcast) {
+			var o = _.extend({}, Backbone.Events),
+				mosStartTimers = {},
+				mosEndTimers = {},
+				endBroadcastTimer = setTimeout(function () {
+					clearTimeout(poller);
+					o.trigger("finish");
+				}, broadcast.get("duration") * 1000);
+
+			var poller = setInterval(function () {
+				broadcast.fetch().done(function () {
+					_.each(broadcast.get("mos"), function (mos) {
+						if (mosStartTimers[mos.id]) {
+							clearTimeout(mosStartTimers[mos.id]);
+							clearTimeout(mosEndTimers[mos.id])
+						}
+						mosStartTimers[mos.id] = setTimeout(function () {
+							o.trigger("breakStart");
+						}, (broadcast.get("timenow") - mos.start) * 1000);
+						mosEndTimers[mos.id] = setTimeout(function () {
+							o.trigger("breakFinish");
+						}, (broadcast.get("timenow") - mos.end) * 1000);
+					})
+				});
+			}, 60000);
+
+			this.trigger("broadcast", broadcast);
+
+			return o;
 		},
-		poll: function () {
-			this.broadcasts.first().fetch().then(function () {
-				// check advert start
-			});
+		programme: function (programme) {
+
 		},
+		advert: function (advert) {
+			var o = _.extend({}, Backbone.Events),
+				// TODO change with player event
+				endAdvertTimer = setTimeout(function () {
+					o.trigger("finish");
+				}, advert.get("duration") * 1000);
+
+
+			this.trigger("advert", advert);
+
+			return o;
+		},
+
 		broadcastRecommendation: function () {
-			var that = this;
-			// FIXME: this must always put 1 broadcast in the collection
-			return this.broadcasts.fetch({
-				data: {
-					user: this.user.id
-				}
-			});
+			var that = this,
+				dfd = $.Deferred();
+			this.broadcasts.fetch({
+				data: { user: this.user.id }
+			}).done(function () {
+				dfd.resolve(that.broadcasts.first()); // TODO: check there is a first?
+			}).fail(function () { dfd.reject(); });
+			return dfd;
 		},
-		advertRecommendation: function () {
-			var that = this;
-			return this.adverts.fetch({
+		programmeRecommendation: function () {
+			var that = this,
+				dfd = $.Deferred();
+			this.programmes.fetch({
+				data: { user: this.user.id }
+			}).done(function () {
+				dfd.reject(); // FIXME
+			}).fail(function () { dfd.reject(); });
+			return dfd;
+		},
+		advertRecommendation: function (broadcast) {
+			var that = this,
+				dfd = $.Deferred();
+			this.adverts.fetch({
 				data: {
 					user: this.user.id,
-					programme: this.broadcasts.first() ?
-						this.broadcasts.first().id : null
+					programme: broadcast ? broadcast.get("programme_id") : 0,
+					time_limit: broadcast ? Math.floor(broadcast.secondsTillStart()) : 0
 				}
-			});
-		},
-		fetchNext: function () {
-			//this.nextType = "broadcast"; // Work this out from advert times
-			switch (this.nextType) {
-			case "broadcast": return this.broadcastRecommendation();
-			case "advert": default: return this.advertRecommendation();
-			}
-		},
-		nextHasExpired: function () {
-			return false;
-		},
-		next: function () {
-			switch (this.nextType) {
-			case "broadcast":
-				this.trigger("broadcast", this.broadcasts.first());
-				break;
-			case "advert":
-				this.trigger("advert", this.adverts.first());
-				break;
-			}
+			}).done(function () {
+				dfd.resolve(that.adverts.first()); // TODO: check there is a first?
+			}).fail(function () { dfd.reject(); });
+			return dfd;
 		}
 	});
 
