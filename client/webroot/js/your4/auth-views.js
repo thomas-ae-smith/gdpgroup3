@@ -4,7 +4,7 @@
 
 	y4.RegisterView = Backbone.View.extend({
 
-		regFields: ["name","gender","dob","email","occupation","password"],
+		regFields: ["name","gender","dob","email","occupation_id","password"],
 		events: {
 			"change .register-form input": "changeField",
 			"change .register-form select": "changeField",
@@ -43,7 +43,7 @@
 			}));
 
 			this.occupations.fetch().then(function() {
-				var occSelect = $('.register-form :input[name="occupation"]');
+				var occSelect = that.$('.register-form :input[name="occupation_id"]');
 				that.occupations.each(function(occupation) {
 					occSelect.append($('<option>', {value: occupation.get('id')}).text(capitalize(occupation.get('name'))));
 				});

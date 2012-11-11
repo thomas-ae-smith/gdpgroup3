@@ -12,7 +12,7 @@ function processUser($app, $id) {
 	$type = getIdType($id);
 	$id = str_replace('fb-', '', $id);
 	if ($type == 'fb') {
-		$use_fields = array("occupation");
+		$use_fields = array("occupation_id");
 		$fb_id = $facebook->getUser();
 		if ($fb_id && $fb_id == $id) {
 			$user = R::findOne('user', 'facebookId = ?', array($fb_id));
@@ -27,7 +27,7 @@ function processUser($app, $id) {
 			exit;
 		}
 	} else {
-		$use_fields = array("name","gender","dob","email","occupation","password");
+		$use_fields = array("name","gender","dob","email","occupation_id","password");
 		if (isset($_SESSION['user']['id'])) {
 			if ($_SESSION['user']['id'] == $id) {
 				$user = R::dispense('user',$id);
