@@ -115,25 +115,25 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 	campaign_query = (
 		"SELECT `c`.`schedule`, `c`.`gender`, `c_a`.`minAge`, `c_a`.`maxAge`, "
 			"`c_b`.`minLong`, `c_b`.`maxLong`, `c_b`.`minLat`, `c_b`.`maxLat`, "
-			"`c_g`.`genres_id`, `c_o`.`occupations_id`, `c_p`.`programmes_id`, "
+			"`c_g`.`genres_id`, `c_o`.`occupation_id`, `c_p`.`programmes_id`, "
 			"`c_t`.`dayOfWeek`, `c_t`.`startTime`, `c_t`.`endTime`, "
-			"`a_c`.`adverts_id`, `c`.`id`, `c`.`nicheness`"
-		"FROM `campaigns` as c "
-		"LEFT JOIN `time`              AS c_t ON `c`.`id`=`c_t`.`campaigns_id` "
-		"LEFT JOIN `agerange`          AS c_a ON `c`.`id`=`c_a`.`campaigns_id` "
-		"LEFT JOIN `boundingbox`       AS c_b ON `c`.`id`=`c_b`.`campaigns_id` "
-		"LEFT JOIN `campaigns_genres`  AS c_g ON `c`.`id`=`c_g`.`campaigns_id` "
-		"LEFT JOIN `adverts_campaigns` AS a_c ON `c`.`id`=`a_c`.`campaigns_id` "
-		"LEFT JOIN `adverts`           AS a   ON `a`.`id`=`a_c`.`adverts_id` "
-		"LEFT JOIN `campaigns_programmes`  AS c_p "
-			"ON `c`.`id`=`c_p`.`campaigns_id` "
-		"LEFT JOIN `campaigns_occupations` AS c_o "
-			"ON `c`.`id`=`c_o`.`campaigns_id` "
+			"`a_c`.`advert_id`, `c`.`id`, `c`.`nicheness`"
+		"FROM `campaign` as c "
+		"LEFT JOIN `time`             AS c_t ON `c`.`id`=`c_t`.`campaign_id` "
+		"LEFT JOIN `agerange`         AS c_a ON `c`.`id`=`c_a`.`campaign_id` "
+		"LEFT JOIN `boundingbox`      AS c_b ON `c`.`id`=`c_b`.`campaign_id` "
+		"LEFT JOIN `campaign_genres`  AS c_g ON `c`.`id`=`c_g`.`campaign_id` "
+		"LEFT JOIN `advert_campaign` AS a_c ON `c`.`id`=`a_c`.`campaign_id` "
+		"LEFT JOIN `advert`          AS a   ON `a`.`id`=`a_c`.`advert_id` "
+		"LEFT JOIN `campaign_programmes`  AS c_p "
+			"ON `c`.`id`=`c_p`.`campaign_id` "
+		"LEFT JOIN `campaign_occupation` AS c_o "
+			"ON `c`.`id`=`c_o`.`campaign_id` "
 		"WHERE {when} BETWEEN `c`.`startDate` AND `c`.`endDate`"
 	).format(when=when)
 
 	if blacklisted_adverts:
-		campaign_query += " AND `a_c`.`adverts_id` NOT IN {blacklist}".format(
+		campaign_query += " AND `a_c`.`advert_id` NOT IN {blacklist}".format(
 			blacklist="('{ads}')".format(ads="','".join(blacklisted_adverts)))
 
 	if maxlen != float('inf'):
@@ -190,9 +190,9 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 	return campaigns
 
 def get_ad(campaignId):
-	query = (	"SELECT `adverts_id` "
-				"FROM `adverts_campaigns` "
-				"WHERE `campaigns_id` = {campaignId}".format(
+	query = (	"SELECT `advert_id` "
+				"FROM `advert_campaign` "
+				"WHERE `campaign_id` = {campaignId}".format(
 					campaignId=campaignId))
 				
 	response = read_db(query)
