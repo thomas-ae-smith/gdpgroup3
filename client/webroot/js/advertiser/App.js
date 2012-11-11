@@ -18,19 +18,25 @@
 				view = new y4.pages.AdvertList({ collection: this.adverts, app: this });
 			view.on("select", function (id) {
 				that.router.navigate("adverts/" + id, { trigger: true });
+			}).on("edit", function (id) {
+				that.router.navigate("adverts/" + id + "/edit", { trigger: true });
 			}).on("create", function () {
 				that.router.navigate("adverts/new", { trigger: true })
 			});
 			return this.render(view);
 		},
-		goAdvert: function (id) {
+		goAdvert: function (id, edit) {
 			var that = this,
 				advert = id === "new" ? new y4.Advert() : this.adverts.get(id),
 				view = advert ?
-					new y4.pages.AdvertFull({ advert: advert, app: this }) :
+						( edit ?
+						new y4.pages.AdvertEdit({ advert: advert, app: this }) :
+						new y4.pages.AdvertFull({ advert: advert, app: this }) ) :
 					new y4.pages.NotFound({ message: "Advert not found." });
 			view.on("return", function () {
 				that.router.navigate("adverts", { trigger: true });
+			}).on("edit", function (id) {
+				that.router.navigate("adverts/" + id + "/edit", { trigger: true });
 			});
 			return this.render(view);
 		},
@@ -113,6 +119,7 @@
 			"": "home",
 			"adverts": "adverts",
 			"adverts/:id": "advert",
+			"adverts/:id/edit": "editadvert",
 			"campaigns": "campaigns",
 			"campaigns/:id": "campaign",
 			"*notFound": "notFound" // http://stackoverflow.com/questions/11236338/is-there-a-way-to-catch-all-non-matched-routes-with-backbone
@@ -121,6 +128,7 @@
 		home: function () { this.app.home(); },
 		adverts: function () { this.app.goAdverts(); },
 		advert: function (id) { this.app.goAdvert(id); },
+		editadvert: function (id) { this.app.goAdvert(id, true); },
 		campaigns: function () { this.app.goCampaigns(); },
 		campaign: function (id) { this.app.goCampaign(id); },
 		notFound: function () {
@@ -191,8 +199,10 @@
 			$list.append($item.fadeIn(noAnimation ? 0 : 200));
 			$item.click(function () {
 				that.trigger("select", model.id);
-			}).find(".edit").click(function () {
+			}).find(".stats").click(function () {
 				that.trigger("select", model.id);
+			}).end().find(".edit").click(function () {
+				that.trigger("edit", model.id);
 			}).end().find(".delete").click(function (e) {
 				if (confirm("Are you sure you wish to delete this advert?")) {
 					model.destroy();
@@ -235,6 +245,54 @@
 
 	y4.pages.AdvertFull = y4.Page.extend({
 		className: "advert-full",
+		// events: {
+		// 	"click .edit": "edit"
+		// },
+		initialize: function (options) {
+			this.advert = options.advert;
+			this.adverts = options.app.adverts;
+			this.title = "Advert: " + this.advert.get("title");
+		},
+		render: function () {
+			var that = this;
+			this.$el.html(y4.templates["advert-full"](this.advert.toJSON()));
+
+			this.$(".edit").click(function () {
+				that.trigger("edit", that.advert.id);
+			});
+
+			this.$('#advert-file').fileupload({
+				dataType: 'json',
+				add: function (e, data) {
+					data.context = $('<p/>').text('Uploading...').appendTo(document.body);
+					data.submit();
+				},
+				done: function (e, data) {
+					that.advert.set({ url: data.result.url });
+					console.log(that.advert.get("url"))
+					console.log({ url: data.result.url })
+				},
+				progressall: function (e, data) {
+					var progress = parseInt(data.loaded / data.total * 100, 10);
+					console.log(progress)
+					$('#progress .bar').css(
+						'width',
+						progress + '%'
+					);
+				}
+			});
+
+			return this;
+		}
+		// ,
+		// edit: function (e) {
+		// 	e.preventDefault();
+		// 	this.router.navigate("adverts/" + this.advert.id + "/edit", { trigger: true });
+		// }
+	});
+
+	y4.pages.AdvertEdit = y4.Page.extend({
+		className: "advert-edit",
 		events: {
 			"click .cancel": "cancel",
 			"click .submit": "submit"
@@ -246,7 +304,7 @@
 		},
 		render: function () {
 			var that = this;
-			this.$el.html(y4.templates["advert-full"](this.advert.toJSON()));
+			this.$el.html(y4.templates["advert-edit"](this.advert.toJSON()));
 			setTimeout(function () { that.updatePreview(); }, 100); // Erm.. HACK
 
 			this.$('#advert-file').fileupload({

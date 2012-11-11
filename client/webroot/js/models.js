@@ -1,7 +1,8 @@
 (function (y4) {
 	"use strict";
 	
-	var baseUrl = window.location.hostname;
+	// var baseUrl = window.location.hostname + window.location.pathname;
+	var baseUrl = "your4.tv";
 
 	y4.bootstrap = {
 		channels: [

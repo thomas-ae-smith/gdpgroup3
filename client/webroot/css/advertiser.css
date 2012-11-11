@@ -59,7 +59,7 @@
 		.advert-list tr:hover td {
 			background-color: #DEE2E2 !important;
 		}
-		.advert-full #advert-overlay {
+		.advert-edit #advert-overlay {
 			position: relative;
 			width: 100%;
 			height: 400px;

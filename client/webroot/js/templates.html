@@ -118,7 +118,7 @@
 		<thead>
 			<tr>
 				<th width="200" colspan="2">Advert</th>
-				<th width="160">Actions</th>
+				<th width="240">Actions</th>
 			</tr>
 		</thead>
 		<tbody class="list">
@@ -134,10 +134,45 @@
 			</div>
 		</div></td>
 		<td><%= title %></td>
-		<td><button class="btn edit">Edit</button> <button class="btn delete">Delete</button>
+		<td><button class="btn stats">Stats</button> <button class="btn edit">Edit</button> <button class="btn delete">Delete</button>
 	</tr>
 </script>
 <script type="text/html" id="advert-full-template">
+	<div class="toolbar">
+		<button type="button" class="btn cancel">Cancel</button>
+		<button type="submit" class="btn edit btn-primary">Edit</button>
+	</div>
+	<div class="row-fluid">
+	Stats:
+	</div>
+	<div class="row-fluid">
+		<div class="span6 well">
+			Duration: <em><%= duration %></em> seconds
+			Views: <em>87</em>
+			Unique: <em>61</em>
+			Skipped: <em>20</em>
+			cumulative skipping
+			click through times
+			total no. viewed (/ unique)
+			heat map of clicks
+			location (by I.P)
+		</div>
+		<div class="span6 well"></div>
+	</div>
+	<div class="row-fluid">
+	Engagement:
+	</div>
+	<div class="row-fluid">
+		<div class="span2 well"></div>
+		<div class="span2 well"></div>
+		<div class="span2 well"></div>
+		<div class="span2 well"></div>
+		<div class="span2 well"></div>
+		<div class="span2 well"></div>
+	</div>
+
+</script>
+<script type="text/html" id="advert-edit-template">
 	<div class="toolbar">
 		<button type="button" class="btn cancel">Cancel</button>
 		<button type="submit" class="btn submit btn-primary">Save</button>
