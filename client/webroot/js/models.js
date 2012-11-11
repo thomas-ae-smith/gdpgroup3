@@ -237,6 +237,8 @@
 			} else {
 				dfd.reject("Facebook login disabled on this host.");
 			}
+
+			return dfd;
 		},
 		logout: function () {
 			return this.first().destroy();

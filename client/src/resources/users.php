@@ -106,7 +106,7 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 				logout();
 			}
 		}
-	} else if (isset($_SESSION['user']['id']) || $type != 'fb') {
+	} else if (isset($_SESSION['user']['id']) || $type !== 'fb') { // FIXME: this line and below prevent facebook login
 		notFound();
 		//badRequest();
 	}
