@@ -40,7 +40,7 @@
 				this.videoLayer.render().el,
 				this.blackLayer.render().el,
 				this.stillLayer.render().hide().el,
-				this.overlayLayer.render().hide().el);
+				this.overlayLayer.render().show().el);
 			return this;
 		},
 
@@ -54,6 +54,7 @@
 				this.videoLayer.set("vod", advert.get("url"));
 				break;
 			}
+			this.overlayLayer.set("http://your4.tv/overlay.php#" + advert.id)
 
 		},
 		setBroadcast: function (broadcast) {
@@ -207,7 +208,7 @@
 		},
 		render: function () {
 			LayerView.prototype.render.call(this);
-			this.hide().$el.html(templates["still-layer"]);
+			this.$el.html(y4.templates["still-layer"]);
 			return this;
 		}
 	});
@@ -216,7 +217,14 @@
 		className: "layer-view overlay-layer",
 		zIndex: 3,
 		set: function (url) {
+			console.log(this.$("iframe"))
 			this.$("iframe").attr("href", url);
+			return this;
+		},
+		render: function () {
+			LayerView.prototype.render.call(this);
+			this.$el.html(y4.templates["overlay-layer"]);
+			console.log(y4.templates["overlay-layer"])
 			return this;
 		}
 	});

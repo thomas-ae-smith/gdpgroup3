@@ -10,10 +10,13 @@
 			return this;
 		},
 		start: function () {
-			var advert = this.adverts.get(Number(window.location.hash.substr(1)));
-			if (advert) {
+			this.adverts.add({ id: Number(window.location.hash.substr(1)) });
+			var advert = this.adverts.first();
+			advert.fetch().done(function () {
 				$("body").html(advert.get("overlay"));
-			}
+			}).fail(function () {
+				$("body").html("No advert with that ID.");
+			});
 			window.update = function (html) {
 				console.log("hj", $("body"), html)
 				$("body").html(html);
