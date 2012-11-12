@@ -235,7 +235,19 @@
 			return dfd;
 		},
 		logout: function () {
-			return this.first().destroy();
+			var dfd = this.first().destroy().done(function() {
+				FB.getLoginStatus(function(response) {
+					if (response.status === 'connected') {
+						FB.logout(function(response) {
+							dfd.resolve();	
+						});
+					} else {
+						dfd.resolve();
+					}
+				});
+			});
+
+			return dfd;
 		}
 	});
 

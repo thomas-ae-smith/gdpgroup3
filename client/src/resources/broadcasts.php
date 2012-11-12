@@ -9,7 +9,7 @@ $app->get('/broadcasts(/)', function() use ($app) {
 		}
 		unset($out);
 		exec('python ../../../recommender/get_recommendation.py ' . $user->id, $out);
-		echo('python ../../../recommender/get_recommendation.py ' . $user->id);
+		//echo('python ../../../recommender/get_recommendation.py ' . $user->id);
 
 		$broadcastId = $out[0]; // Replace with 0 once get_recommender is fixed
 		$broadcast = R::load('broadcast', $broadcastId);

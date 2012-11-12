@@ -117,3 +117,33 @@ function ifsetor(&$variable, $default = null) {
     }
     return $tmp;
 }
+
+function postcode_to_coord($postcode) {
+	$url = "http://data.ordnancesurvey.co.uk/doc/postcodeunit/" . $postcode . '.json';
+
+	$headers = get_headers($url);
+
+	if (substr($headers[0], 9, 3) == '200') {
+		$postcode_data = @file_get_contents($url);
+	} else {
+		throw new Exception('Invalid postcode');
+	}
+
+	if ($postcode_data === false) {
+		throw new Exception('Error retrieving postcode coords');
+	}
+
+	$postcode_data = json_decode($postcode_data, true);
+
+	$postcode_unit_uri = 'http://data.ordnancesurvey.co.uk/id/postcodeunit/' . $postcode;
+	$postcode_pos_uri = 'http://www.w3.org/2003/01/geo/wgs84_pos#';
+	
+	$ret = array(
+		'lat' => $postcode_data[$postcode_unit_uri][$postcode_pos_uri . 'lat'][0]['value'],
+		'long' => $postcode_data[$postcode_unit_uri][$postcode_pos_uri . 'long'][0]['value']
+	);
+
+	return $ret;
+
+}
+

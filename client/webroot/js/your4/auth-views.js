@@ -4,7 +4,6 @@
 
 	y4.RegisterView = Backbone.View.extend({
 
-		regFields: ["name","gender","dob","email","occupation_id","password"],
 		events: {
 			"change .register-form input": "changeField",
 			"change .register-form select": "changeField",
@@ -18,6 +17,7 @@
 			this.app = options.app;
 			this.user = this.app.users.first() || new y4.User();
 			this.occupations = new y4.Occupations();
+			this.regFields = ["name","gender","dob","email","occupation_id","postcode","password"];
 		},
 
 		render: function() {
@@ -57,13 +57,17 @@
 			this.user.set(target.attr('name'),target.val());
 		},
 
-		submitReg: function() {
+		submitReg: function(e) {
 			var that = this;
+			var target = $(e.currentTarget);
+			target.attr("disabled","disabled").text("Please wait...");
 			this.app.users.register(this.user.toJSON()).done(function () {
 				that.$('.error').hide();
 				that.trigger("registered");
 			}).fail(function () {
 				that.$('.error').show().html(JSON.parse(response.responseText).error); // FIXME
+			}).always(function () {
+				target.removeAttr("disabled").text("Register");	
 			});
 		}
 	});

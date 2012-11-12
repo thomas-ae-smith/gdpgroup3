@@ -65,7 +65,7 @@
 						<% }); %>
 					</select>
 					<% } else { %>
-					<input type="text" id="<%= field %>" name="<%= field %>" value="<%= user[field] %>" <%= _.contains(req, field) ? '' : ' disabled' %>>
+					<input type="<%= field == "password" ? "password": "text" %>" id="<%= field %>" name="<%= field %>" value="<%= user[field] %>" <%= _.contains(req, field) ? '' : ' disabled' %>>
 					<% } %>
 				</div>
 			</div>

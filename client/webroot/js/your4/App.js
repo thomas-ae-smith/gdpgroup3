@@ -96,9 +96,10 @@
 			
 			login.on("loggedIn", function () {
 				that.hideSpinner();
-				if (that.user().get('registered')) {
+				var user = that.user();
+				if (user && user.get('registered')) {
 					that.goPlay();
-				} else {
+				} else {		
 					that.router.go("register");
 				}
 			});
@@ -225,7 +226,6 @@
 			this.app.renderRegister();
 		},
 		logout: function () {
-			if (!this.app.users.loggedIn()) { return this.go(""); }
 			this.app.renderLogout();
 		},
 		play: function (id) {

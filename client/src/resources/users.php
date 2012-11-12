@@ -12,7 +12,7 @@ function processUser($app, $id) {
 	$type = getIdType($id);
 	$id = str_replace('fb-', '', $id);
 	if ($type == 'fb') {
-		$use_fields = array("occupation_id");
+		$use_fields = array("occupation_id","postcode");
 		$fb_id = $facebook->getUser();
 		if ($fb_id && $fb_id == $id) {
 			$user = R::findOne('user', 'facebookId = ?', array($fb_id));
@@ -27,7 +27,7 @@ function processUser($app, $id) {
 			exit;
 		}
 	} else {
-		$use_fields = array("name","gender","dob","email","occupation_id","password");
+		$use_fields = array("name","gender","dob","email","occupation_id","postcode","password");
 		if (isset($_SESSION['user']['id'])) {
 			if ($_SESSION['user']['id'] == $id) {
 				$user = R::dispense('user',$id);
@@ -52,6 +52,11 @@ function processUser($app, $id) {
 			if ($field == "password") {
 				$salt = substr(sha1(mt_rand()),0,22); //22 char salt for crypt
 				$user->password = crypt($field_content,'$2a$10$'. $salt);
+			} else if ($field == "postcode") {
+				$field_content = strtoupper(str_replace(' ','',$field_content));
+				$coords = postcode_to_coord($field_content);
+				$user->lat = $coords['lat'];
+				$user->long = $coords['long'];
 			} else {
 				$user->setAttr($field, $field_content);
 			}
