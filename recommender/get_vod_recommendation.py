@@ -68,9 +68,9 @@ def get_vod_recommendation(userId):
 		"LEFT JOIN `brand` AS `b` "
 		"ON `b`.`id` = `p`.`brand_id` "
 		"WHERE `p`.`id` NOT IN ( "
-			"SELECT `programme` "
-			"FROM `blacklistProgramme` "
-			"WHERE `user`={uid})".format(uid=userId))
+			"SELECT `programme_id` "
+			"FROM `blacklist_programme` "
+			"WHERE `user_id`={uid})".format(uid=userId))
 
 	if VERBOSE:
 		total_programmes = len(programmes)
@@ -115,13 +115,13 @@ def get_vod_recommendation(userId):
 				vectors += [p_vector]
 
 	best_index = random.randint(0, len(best_recommendations)-1)
-	best_recommendation = best_recommendations[0]
+	best_recommendation = best_recommendations[best_index]
 
 	if VERBOSE:
 		print("User vector: {v}".format(v=user_vector))
 		print("Closest programme vector: {v}".format(v=vectors[best_index]))
 		print("Distance: {d}".format(d=best_recommendation[0]))
-		print("Programmes ties for best: {n}".format(n=len(best_recommendations)))
+		print("Programmes tied for best: {n}".format(n=len(best_recommendations)))
 		print("Total programmes: {n}".format(n=total_programmes))
 		print("Average distance: {d}".format(d=sum(distances)/len(distances)))
 

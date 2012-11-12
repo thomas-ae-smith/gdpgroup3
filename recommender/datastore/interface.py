@@ -55,20 +55,14 @@ def write_db(query):
 		conn.close()
 
 def add_advert_blacklist(userId, advertId):
-	query = (	"INSERT INTO `blacklistAdvert` "
-					"(`user`, `advert`) "
-				"VALUES "
-					"('{uid}', '{aid}')".format(
-						uid=userId, aid=advertId))
+	query = (	"INSERT INTO `blacklist_advert` (`user_id`, `advert_id`) "
+				"VALUES ('{uid}', '{aid}')".format(uid=userId, aid=advertId))
 
 	response = write_db(query)
 
 def add_programme_blacklist(userId, programmeId):
-	query = (	"INSERT INTO `blacklistProgramme` "
-					"(`user`, `programme`) "
-				"VALUES "
-					"('{uid}', '{pid}')".format(
-						uid=userId, pid=programmeId))
+	query = (	"INSERT INTO `blacklist_programme` (`user_id`, `programme_id`) "
+				"VALUES ('{uid}', '{pid}')".format(uid=userId, pid=programmeId))
 
 	response = write_db(query)
 
@@ -107,9 +101,9 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 						"`programme_id` = {pid}").format(pid=pid)
 		genres = [field[0] for field in read_db(genres_query)]
 
-	blacklist_query = (	"SELECT `advert` "
-						"FROM `blacklistAdvert` "
-						"WHERE `user` = {uid}".format(uid=uid))
+	blacklist_query = (	"SELECT `advert_id` "
+						"FROM `blacklist_advert` "
+						"WHERE `user_id` = {uid}".format(uid=uid))
 	blacklisted_adverts = [str(row[0]) for row in read_db(blacklist_query)]
 
 	campaign_query = (
@@ -212,9 +206,9 @@ def get_broadcast_pool(userId, startTime=time(), lookahead=300):
 					"(`brand`.`id` = `programme`.`brand_id`) "	
 				"WHERE `broadcast`.`time` BETWEEN {start_time} AND {end_time} "
 				"AND `programme`.`id` NOT IN ("
-					"SELECT `programme` "
-					"FROM `blacklistProgramme` "
-					"WHERE `blacklistProgramme`.`user` = {uid}"
+					"SELECT `programme_id` "
+					"FROM `blacklist_programme` "
+					"WHERE `blacklist_programme`.`user_id` = {uid}"
 				")".format(uid=userId,
 						start_time=int(startTime),
 						end_time=int(startTime + lookahead)))
