@@ -16,7 +16,7 @@
 		initialize: function (options) {
 			var that = this;
 			this.app = options.app;
-			this.user = this.app.user() || new y4.User();
+			this.user = this.app.users.first() || new y4.User();
 			this.occupations = new y4.Occupations();
 		},
 

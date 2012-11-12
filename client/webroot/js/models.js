@@ -180,14 +180,6 @@
 					var user = that.reset([{ id: 'fb-' + response.id }]).first();
 					user.fetch().done(function () {
 						dfd.resolve(user);
-						/*if (user.get('registered')) {
-							dfd.resolve(user);
-						} else {
-							user.on("register", function (user) {
-								dfd.resolve(user);
-							});
-							//that.register();
-						}*/
 					}).fail(function() {
 						dfd.reject();
 					});

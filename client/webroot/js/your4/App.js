@@ -93,10 +93,10 @@
 
 			that.showStartScreen().$('.start-container').html("")
 				.append(login.render().el);
-
+			
 			login.on("loggedIn", function () {
 				that.hideSpinner();
-				if (that.user().get('registered')/* && !existingSession*/) {
+				if (that.user().get('registered')) {
 					that.goPlay();
 				} else {
 					that.router.go("register");
@@ -207,7 +207,13 @@
 		},
 		initialize: function (options) { this.app = options.app; },
 		start: function () {
-			if (!this.app.users.loggedIn()) { return this.go("login"); }
+			if (!this.app.users.loggedIn()) {
+				if (this.app.users.first().get("registered") === false) {
+					return this.go("register");
+				}
+
+				return this.go("login");
+			}
 			this.app.renderStart();
 		},
 		login: function () {

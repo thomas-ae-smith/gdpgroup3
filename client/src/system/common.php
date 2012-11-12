@@ -94,7 +94,7 @@ function fb_to_user($user_profile) {
 		$user['dob'] = date('Y-m-d', strtotime($user['dob']));
 	}
 
-	$user['occupation'] = null;
+	$user['occupation_id'] = null;
 
 	$user['vector'] = get_user_vector($user['dob'], $user['gender']);
 	return $user;
