@@ -1,8 +1,5 @@
 #!/usr/bin/python2.7
 
-# TODO: In calculating programme nicheness, use percentage of programme showing 
-# time, not percentage of shows covered.
-
 from __future__ import division, print_function
 
 import argparse
@@ -22,8 +19,8 @@ def get_user_nicheness(ageranges=(), boundingboxes=(), genders=(), occupations=(
 
 	age_constraints = ") OR (".join([
 		" AND ".join(filter(None, [
-			"`users`.`dob` >= '{lower}'" if maxage else None,
-			"`users`.`dob` <= '{upper}'" if minage else None
+			"`user`.`dob` >= '{lower}'" if maxage else None,
+			"`user`.`dob` <= '{upper}'" if minage else None
 		])).format(upper=now - relativedelta(years=minage or 0),
 					lower=now - relativedelta(years=maxage or 0))
 	for minage, maxage in ageranges])
@@ -32,30 +29,30 @@ def get_user_nicheness(ageranges=(), boundingboxes=(), genders=(), occupations=(
 
 	bb_constraints = (") OR (".join([
 		" AND ".join(filter(None, [
-			"`users`.`long` >= '{longmin}'" if longmin else None,
-			"`users`.`long` <= '{longmax}'" if longmax else None,
-			"`users`.`lat` >= '{latmin}'" if latmin else None,
-			"`users`.`lat` <= '{latmax}'" if latmax else None
+			"`user`.`long` >= '{longmin}'" if longmin else None,
+			"`user`.`long` <= '{longmax}'" if longmax else None,
+			"`user`.`lat` >= '{latmin}'" if latmin else None,
+			"`user`.`lat` <= '{latmax}'" if latmax else None
 		])).format(longmin=longmin, longmax=longmax,
 						latmin=latmin, latmax=latmax)
 	for latmin, latmax, longmin, longmax in boundingboxes]))
 	bb_constraints = "(" + bb_constraints + ")" if bb_constraints else None
 
 	if genders:
-		gender_constraints = ("`users`.`gender` "
+		gender_constraints = ("`user`.`gender` "
 			"IN ('{genders}')".format(genders=",".join(genders)))
 	else:
 		gender_constraints = ""
 
 	if occupations:
-		occupation_constraints = ("`users`.`occupation` "
+		occupation_constraints = ("`user`.`occupation` "
 			"IN ('{occupations}')".format(occupations="','".join(occupations)))
 	else:
 		occupation_constraints = ""
 
 	constraints = [age_constraints, bb_constraints, gender_constraints, 
 		occupation_constraints]
-	query = ("SELECT COUNT(`id`) FROM `users` WHERE ({})".format(
+	query = ("SELECT COUNT(`id`) FROM `user` WHERE ({})".format(
 			") AND (".join(filter(None, constraints)) or "1"))
 
 	conn = mysql.connector.connect(**credentials)
@@ -67,45 +64,31 @@ def get_user_nicheness(ageranges=(), boundingboxes=(), genders=(), occupations=(
 	cursor.execute(query)
 	users_constrained = cursor.next()[0]
 
-	cursor.execute("SELECT COUNT(`id`) FROM `users` WHERE 1")
+	cursor.execute("SELECT COUNT(`id`) FROM `user` WHERE 1")
 	users_all = cursor.next()[0]
 
 	return users_constrained / users_all
 
-def get_programme_nicheness(genres=(), programmes=(), times=()):
+def get_programme_nicheness(genres=(), programmes=()):
 	if genres:
-		genre_constraints = ("`programmes`.`genre` "
-			"IN ('{genres}')".format(genres="','".join(genres)))
+		genre_list = "'{}'".format("','".join(genres))
+		genre_constraints = "`g_p`.`genre_id` IN ({})".format(genre_list)
 	else:
 		genre_constraints = ""
 
 	if programmes:
-		programme_constraints = ("`programmes`.`id` "
-			"IN ('{programmes}')".format(programmes="','".join(programmes)))
+		programmes_list = "'{}'".format("','".join(programmes))
+		programme_constraints = "`p`.`id` IN ({})".format(programmes_list)
 	else:
 		programme_constraints = ""
 
-	time_constraints = set()
-	for start, end, day in times:
-		constraint = []
-		if start is not None:
-			constraint += ["FROM_UNIXTIME(`programmes`.`start`, '%T') "
-							">= '{start}'".format(start=start)]
-		if end is not None:
-			constraint += ["FROM_UNIXTIME(`programmes`.`start`, '%T') "
-							"<= '{end}'".format(end=end)]
-		if day is not None:
-			constraint += ["FROM_UNIXTIME(`programmes`.`start`, '%w') "
-							"= {day}".format(day=day)]
-		if constraint:
-			constraint = " AND ".join(constraint)
-			time_constraints.add(constraint)
-	if time_constraints:
-		time_constraints = "(" + ") OR (".join(time_constraints) + ")"
-
-	constraints = [genre_constraints, programme_constraints, time_constraints]
-	query = ("SELECT COUNT(`id`) FROM `programmes` WHERE {}".format(
-			" AND ".join(filter(None, constraints)) or "1"))
+	constraints = [genre_constraints, programme_constraints]
+	query = (	"SELECT COUNT(`p`.`id`) "
+				"FROM `programme` as `p` "
+				"LEFT JOIN `genre_programme` as g_p "
+					"ON `p`.`id` = `g_p`.`programme_id` "
+				"WHERE "
+				"{}").format(" AND ".join(filter(None, constraints)) or "1")
 		
 	conn = mysql.connector.connect(**credentials)
 	cursor = conn.cursor()
@@ -113,27 +96,76 @@ def get_programme_nicheness(genres=(), programmes=(), times=()):
 	if VERBOSE:
 		print("Programme nicheness query: {q}".format(q=query))
 
-	cursor.execute(query)
-	programmes_constrained = cursor.next()[0]
+	try:
+		# Get the number of programmes covered by constraints
+		cursor.execute(query)
+		programmes_constrained = cursor.next()[0]
 
-	cursor.execute("SELECT COUNT(`id`) FROM `programmes` WHERE 1")
-	programmes_all = cursor.next()[0]
+		# Get the total number of programmes
+		cursor.execute("SELECT COUNT(`id`) FROM `programme` WHERE 1")
+		programmes_all = cursor.next()[0]
+	finally:
+		cursor.close()
+		conn.close()
 
+	# Return the percentage of programmes covered by constraints.
 	return programmes_constrained / programmes_all
+
+def get_time_nicheness(times):
+	overlapping_blocks = []
+	for start, end, day in times:
+		if start in {None, ''}:
+			start = 0
+		else:
+			hrs, mins, secs = [int(v) for v in start.split(':')]
+			start = secs + (60*mins) + (3600*secs)
+
+		if end in {None, ''}:
+			end = 60 * 60 * 24
+		else:
+			hrs, mins, secs = [int(v) for v in end.split(':')]
+			end = secs + (60*mins) + (3600*secs)
+
+		if end <= start:
+			continue
+
+		if day is not None:
+			day = day % 7
+			start += day * 60 * 60 * 24
+			end += day * 60 * 60 * 24
+			overlapping_blocks.append([start, end])
+		else:
+			for day in xrange(7):
+				addsecs = day * 60 * 60 * 24
+				overlapping_blocks.append([start+addsecs, end+addsecs])
+
+	nonoverlapping_blocks = []
+	for block_a in overlapping_blocks:
+		for block_b in overlapping_blocks:
+			nonoverlapping_block = block_a
+			if block_a[0] <= block_b[0] <= block_a[1]:
+				nonoverlapping_block[1] = max(block_a[1], block_b[1])
+			if block_a[0] <= block_b[1] <= block_a[1]:
+				nonoverlapping_block[0] = min(block_a[0], block_b[0])
+			nonoverlapping_blocks.append(nonoverlapping_block)
+
+	restricted_time = sum(block[1] - block[0] for block in nonoverlapping_blocks)
+	return restricted_time / (60*60*24*7)
 
 def get_nicheness(ageranges=(), boundingboxes=(), genders=(), genres=(),
 					occupations=(), programmes=(), times=()):
 	user_nicheness = get_user_nicheness(ageranges, boundingboxes,
 											genders, occupations)
 
-	programme_nicheness = get_programme_nicheness(genres, programmes, times)
+	programme_nicheness = get_programme_nicheness(genres, programmes)
+
+	time_nicheness = get_time_nicheness(times)
 
 	if VERBOSE:
 		print("User nicheness:\t{u}".format(u=user_nicheness))
 		print("Programme nicheness:\t{p}".format(p=programme_nicheness))
 
-
-	return user_nicheness * programme_nicheness
+	return 1 - ((1-user_nicheness)*(1-programme_nicheness)*(1-time_nicheness))
 
 def _init_argparse():
 	def int_or_null(_int):
