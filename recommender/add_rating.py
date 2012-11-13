@@ -7,7 +7,6 @@ import pdb
 from random import choice
 import sys
 
-import mysql.connector
 import numpy
 
 from datastore import interface, vector
@@ -49,7 +48,7 @@ def add_rating(user, programme, rating):
 		distance = abs(user_vector[i] - programme_vector[i])
 
 		# Move a magnitude relative to the rating and distance to rated programme.
-		if rating > 0:
+		if rating >= 0:
 			distance_to_move = distance*LEARNING_RATE*rating
 		else:
 			distance_to_move = (1-distance)*LEARNING_RATE*rating
@@ -62,6 +61,8 @@ def add_rating(user, programme, rating):
 		else:
 			# In-case distance is 0:
 			direction_to_move = -1
+			# Don't need to cover positive rating case because distance_to_move
+			# will be 0 anyway.
 
 		next_vector[i] += distance_to_move * direction_to_move
 
