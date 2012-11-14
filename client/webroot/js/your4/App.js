@@ -5,6 +5,10 @@
 
 	y4.allowFacebookLogin = window.location.hostname.indexOf("your4.tv") > 0;
 
+	y4.now = function () {
+		return (new Date()).getTime() / 1000;
+	};
+
 	y4.App = Backbone.View.extend({
 		events: {
 			"mousemove .player-layer": "showControls",
@@ -93,13 +97,13 @@
 
 			that.showStartScreen().$('.start-container').html("")
 				.append(login.render().el);
-			
+
 			login.on("loggedIn", function () {
 				that.hideSpinner();
 				var user = that.user();
 				if (user && user.get('registered')) {
 					that.goPlay();
-				} else {		
+				} else {
 					that.router.go("register");
 				}
 			});
@@ -132,11 +136,17 @@
 		},
 		renderPlay: function (userId) {
 			var that = this,
-				playlist = new y4.Playlist({ user: this.user() });
+				playlist = new y4.Playlist(undefined, { user: this.user() });
 
 			this.showSpinner();
 
-			playlist.start().then(function () {
+			this.player.setPlaylist(playlist);
+
+			playlist.on("ready", function () {
+				playlist.fill();
+			});
+			playlist.on("started", function () {
+				console.log("Started");
 				that.playlist = playlist;
 				that.hideSpinner();
 				that.$(".start-screen-layer").hide();
@@ -146,6 +156,8 @@
 
 			playlist.on("broadcast", function (broadcast) {
 				that.player.setBroadcast(broadcast);
+			}).on("programme", function (programme) {
+				that.player.setProgramme(programme);
 			}).on("advert", function (advert) {
 				that.player.setAdvert(advert);
 			});
@@ -180,7 +192,7 @@
 			}
 			clearTimeout(this.hideControlsTimeout);
 			this.hideControlsTimeout = setTimeout(function () {
-				that.hideControls();
+				//that.hideControls();
 			}, 1500);
 			return this;
 		},
