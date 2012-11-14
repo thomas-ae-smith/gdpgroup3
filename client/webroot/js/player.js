@@ -218,7 +218,7 @@
 		zIndex: 3,
 		set: function (url) {
 			console.log(this.$("iframe"))
-			this.$("iframe").attr("href", url);
+			this.$("iframe").attr("src", url);
 			return this;
 		},
 		render: function () {
