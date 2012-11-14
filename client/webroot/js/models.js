@@ -317,54 +317,6 @@
 		url: 'http://'+baseUrl+'/api/channels/'
 	});
 
-	y4.AdbreakAdverts = y4.Adverts.extend({
-		initialize: function (models, options) {
-			this.user = options.user;
-			this.programmeId = options.programmeId;
-		},
-		advertRecommendation: function (broadcast) {
-			return (new y4.Adverts()).recommendation(this.user.id, programmeId, timelimit);
-		},
-		fetchRecommendedAdvert: function (timelimit) {
-			var dfd = $.Deferred(),
-				adverts = new y4.Adverts();
-			adverts.fetch({
-				data: {
-					user: this.user,
-					programme: this.programme,
-					timelimit: timelimit
-				}
-			}).done(function () {
-				dfd.resolve(adverts.first());
-			}).fail(function () { dfd.reject(); });
-			return dfd;
-		},
-		setBreakDuration: function (s) {
-			var that = this,
-				dfd = $.Deferred(),
-				timeRemaining = s - this.totalDuration(),
-				addAdvert = function () {
-					if (timeRemaining <= 0) {
-						dfd.resolve();
-						return;
-					}
-					that.fetchRecommendedAdvert(timeRemaining).done(function () {
-						addAdvert();
-					}).fail(function () {
-						dfd.resolve();
-					});
-				};
-			this.duration = s;
-			addAdvert();
-			return dfd;
-		},
-		totalDuration: function () {
-			return this.reduce(function (memo, model) {
-				return memo + Number(model.get("duration"));
-			}, 0);
-		}
-	});
-
 	y4.ProgrammeSection = Backbone.Model.extend({
 
 	});
@@ -415,7 +367,7 @@
 		},
 
 		fill: function () {
-			return this.pushAdvert(this.breakDuration);
+			return this.pushAdvert(this.breakDuration - this.totalDuration());
 		},
 
 		duration: function () {
@@ -466,6 +418,17 @@
 				dfd.resolve(timelimit);
 			});
 			return dfd;
+		},
+
+		setDuration: function (duration) {
+			var sumDuration = 0;
+			// Keep only adverts that fit in the duration
+			this.reset(this.select(function (item) {
+				sumDuration += item.duration();
+				return sumDuration <= duration;
+			}));
+			// Fill up the ad break;
+			return this.fill();
 		},
 
 		pushAdvertRecommendation: function (timelimit, programmeId, excludeAdvertIds) {
@@ -619,7 +582,7 @@
 			console.log("Pushing " + programme.get("title"));
 			console.log("Filling break")
 			// Fill in time before start with adverts
-			this.pushAdverts(breakBeforeDuration, programme).done(function (timeleft) {
+			this.pushAdverts(breakBeforeDuration, programme).done(function () {
 				// Split programmes into sections with breaks for adverts
 				/*var sections = new y4.ProgrammeSections(undefined, {
 					programme: programme,
@@ -634,7 +597,7 @@
 				var item = new y4.PlaylistItem({
 					type: "programme",
 					item: programme,
-					time: that.broadcasterPlaylistEndTime() + timeleft
+					time: that.broadcasterPlaylistEndTime()
 				}, { timeOffset: that.timeOffset });
 
 				item.on("start", function () {
@@ -672,9 +635,12 @@
 				that.trigger("advert", advert);
 			}).on("ready", function () {
 				that.add(item);
+				dfd.resolve();
 			});
 
-			return adbreak.fill();
+			adbreak.fill();
+
+			return dfd;
 		},
 		pushBroadcastRecommendation: function (startTime) {
 			var that = this,
