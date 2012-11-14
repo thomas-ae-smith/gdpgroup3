@@ -5,6 +5,7 @@ $app->get('/adverts(/)', function() use ($app) {
 	$userId = intval($app->request()->get('user'));
 	$programmeId = intval($app->request()->get('programme'));
 	$timeLimit = intval($app->request()->get('time_limit'));
+	$excludeAdvertIds = $app->request()->get('exclude_adverts');
 	if (!$timeLimit) { $timeLimit = 0; }
 	if (!$programmeId) { $programmeId = 0; }
 	// If a user and programme is provided, provide one advert that is most suitable for them

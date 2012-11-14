@@ -55,17 +55,36 @@
 		<div class="alert error alert-error" style="display:none;"></div>
 		<form class="register-form form-horizontal">
 		<% _.each(fields, function(field) { %>
+			<% disabled =  _.contains(req, field) ? '' : ' disabled' %>
 			<div class="control-group">
 				<label class="control-label" for="<%= field %>"><%= field.replace('_id', '') %></label>
 				<div class="controls">
-					<% if (field == "occupation_id") { %>
-					<select id="<%= field %>" name="<%= field %>" <%= _.contains(req, field) ? '' : ' disabled' %>>
-						<% _.each(occupations, function(occupation) { %>
-							<option value="occupation"><%= occupation %></option>
-						<% }); %>
+					<% if (field == "gender") { %>
+					<select id="<%= field %>" name="<%= field %>" <%= disabled %>>
+						<option value="">Please select...</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
 					</select>
+					<% } else if (field == "occupation_id") { %>
+					<select id="<%= field %>" name="<%= field %>" <%= disabled %>>
+						<option value="">Please select...</option>
+					</select>
+					<% } else if (field == "dob") { %>
+					<div class="input-prepend pull-left">
+						<span class="add-on">Year</span>
+						<input class="date-split" type="text" id="year" name="year" value="<%= user['year'] %>" <%= disabled %>>
+					</div>
+					<div class="input-prepend pull-left">
+						<span class="add-on">Month</span>
+						<input class="date-split" type="text" id="month" name="month" value="<%= user['month'] %>" <%= disabled %>>
+					</div>
+					<div class="input-prepend pull-left">
+						<span class="add-on">Date</span>
+						<input class="date-split" type="text" id="date" name="date" value="<%= user['date'] %>" <%= disabled %>>
+					</div>
+
 					<% } else { %>
-					<input type="<%= field == "password" ? "password": "text" %>" id="<%= field %>" name="<%= field %>" value="<%= user[field] %>" <%= _.contains(req, field) ? '' : ' disabled' %>>
+					<input type="<%= field == "password" ? "password": "text" %>" id="<%= field %>" name="<%= field %>" value="<%= user[field] %>" <%= disabled %>>
 					<% } %>
 				</div>
 			</div>
