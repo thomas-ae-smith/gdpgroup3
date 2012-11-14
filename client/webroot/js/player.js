@@ -44,6 +44,14 @@
 			return this;
 		},
 
+		setPlaylist: function (playlist) {
+			if (this.playlistView) {
+				this.playlistView.close();// TODO
+			}
+			this.playlistView = new y4.PlaylistView({ playlist: playlist });
+			$(".playlist-container").html("").append(this.playlistView.render().el);
+		},
+
 		setAdvert: function (advert) {
 			console.log("Play advert", advert)
 			switch (advert.get("type")) {
@@ -225,6 +233,73 @@
 			LayerView.prototype.render.call(this);
 			this.$el.html(y4.templates["overlay-layer"]);
 			console.log(y4.templates["overlay-layer"])
+			return this;
+		}
+	});
+
+	y4.PlaylistView = Backbone.View.extend({
+		className: "playlist",
+		initialize: function (options) {
+			var that = this;
+			this.playlist = options.playlist;
+			this.playlist.on("add", this.addItem, this);
+			this.playlist.on("remove", this.removeItem, this);
+			this.itemViews = {};
+			this.updateTimer = setInterval(function () {
+				that.updateItemViews();
+			}, 1000);
+		},
+		render: function () {
+			this.$el.html('<div class="now-line"></div>');
+			return this;
+		},
+		close: function () {
+			clearTimeout(this.updateTimer);
+			this.off();
+			this.remove();
+			return this;
+		},
+		removeItem: function (item) {
+			this.itemViews[item.cid].close();
+		},
+		addItem: function (item) {
+			var view = new y4.PlaylistItemView({ item: item });
+			this.itemViews[item.cid] = view;
+			this.$el.append(view.render().el);
+		},
+		updateItemViews: function () {
+			_.each(this.itemViews, function (view) {
+				view.update();
+			});
+		}
+	});
+
+	y4.PlaylistItemView = Backbone.View.extend({
+		className: "playlist-item",
+		initialize: function (options) {
+			this.item = options.item;
+			this.item.on("change", this.render, this);
+		},
+		close: function () {
+			this.off();
+			this.remove();
+			this.item.off("change", this.render);
+			return this;
+		},
+		render: function () {
+			this.$el.html(y4.templates["playlist-item"](_.extend({
+				duration: this.item.duration(),
+				title: this.item.title(),
+				thumbnail: this.item.thumbnail()
+			})));
+			return this.update();
+		},
+		update: function () {
+			this.$el.css({
+				borderColor: this.item.get("type") === "adbreak" ? "yellow" : "white",
+				left: 50 + (this.item.localTime() - y4.now()) / 60 + "%",
+				width: this.item.duration() / 60 + "%"
+			});
 			return this;
 		}
 	});
