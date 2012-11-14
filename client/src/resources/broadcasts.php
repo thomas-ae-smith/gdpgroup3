@@ -2,14 +2,15 @@
 
 $app->get('/broadcasts(/)', function() use ($app) {
 	$userId = $app->request()->get('user');
+	$startTime = $app->request()->get('startTime') ?: time();
 	if ($userId) {
 		$user = R::load('user', $userId);
 		if (!$userId) {
 			return notFound('User with that ID not found.');
 		}
 		unset($out);
-		exec('python ../../../recommender/get_recommendation.py ' . $user->id, $out);
-		//echo('python ../../../recommender/get_recommendation.py ' . $user->id);
+		exec('python ../../../recommender/get_recommendation.py -t ' . $startTime . ' ' . $user->id, $out);
+		//echo('python ../../../recommender/get_recommendation.py -t ' . $startTime . ' ' . $user->id);
 
 		$broadcastId = $out[0]; // Replace with 0 once get_recommender is fixed
 		$broadcast = R::load('broadcast', $broadcastId);
@@ -55,6 +56,7 @@ function getBroadcast($broadcast) {
 
 	return array_merge($broadcast->export(), $mosTimings, array(
 		'timenow' => time(),
+		'duration' => $broadcast->programme->duration,
 		'mos' => array_map(function ($mos) {
 			return array(
 				'id' => $mos['key'],

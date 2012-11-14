@@ -1,22 +1,30 @@
 <?php
 
-function getSchedule($broadcast) {
+function getSchedule($broadcast, $state = null) {
 	$channel = R::load('channel', $broadcast->channel_id);
-	$programme = R::load('programme', $broadcast->programme_id);
+	$programme = $broadcast->programme;
+	if (!is_null($state) && $programme->recordState !== $state) {
+		return null;
+	}
 	return array(
 		'id' => $broadcast->id,
 		'programme_uid' => $programme->uid,
 		'channel_uid' => $channel->uid,
 		'timestamp' => $broadcast->time,
 		'duration' => $broadcast->duration,
-		'record_state' => $broadcast->recordState
+		'programmeRecordState' => $programme->recordState
 	);
 }
 
 $app->get('/schedule(/)', function() use ($app) {
+	$state = isset($_GET['recordState']) ? $_GET['recordState'] : null;
 	$interval = isset($_GET['interval']) ? intval($_GET['interval']) : 3600;
-	$broadcasts = R::find('broadcast', ' time > ? AND time < ? AND recordState = 0 ', array(time() - $interval, time() + $interval)); // next hour
-	output_json(array_map('getSchedule', array_values($broadcasts)));
+	$broadcasts = R::find('broadcast', ' time > ? AND time < ? ', array(time() - $interval, time() + $interval)); // next hour
+	output_json(array_values(array_filter(array_map(function ($item) use ($state) {
+		return getSchedule($item, $state);
+	}, $broadcasts), function ($item) {
+		return !is_null($item);
+	})));
 });
 
 $app->get('/schedule/:id(/)', function ($id) use ($app) {
@@ -29,7 +37,7 @@ $app->put('/schedule/:id(/)', function ($id) use ($app) {
 	$req = $app->request()->getBody();
 	$broadcast = R::load('broadcast', $id);
 	if (!$broadcast) { return notfound('Broadcast with that ID not found.'); }
-	$broadcast->recordState = $req['record_state'];
+	$broadcast->programme->recordState = $req['programmeRecordState'];
 	R::store($broadcast);
 	output_json(getSchedule($broadcast));
 });

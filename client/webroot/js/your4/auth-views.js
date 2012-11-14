@@ -5,8 +5,6 @@
 	y4.RegisterView = Backbone.View.extend({
 
 		events: {
-			"change .register-form input": "changeField",
-			"change .register-form select": "changeField",
 			"click .submit-registration": "submitReg"
 		},
 
@@ -35,11 +33,15 @@
 				}
 			});
 
+			var user = this.user.toJSON();
+			user.year = "";
+			user.date = "";
+			user.month = "";
+
 			this.$el.html(registerTemplate({
-				user: this.user.toJSON(),
+				user: user,
 				req: toRequest,
-				fields: this.regFields,
-				occupations: this.occupations
+				fields: this.regFields
 			}));
 
 			this.occupations.fetch().then(function() {
@@ -49,23 +51,30 @@
 				});
 			});
 
-			return this;
-		},
+			this.$('.register-form :input[name="gender"]').val(this.user.get('gender'));
 
-		changeField: function(e) {
-			var target = $(e.currentTarget);
-			this.user.set(target.attr('name'),target.val());
+			return this;
 		},
 
 		submitReg: function(e) {
 			var that = this;
+			
+			$('.register-form :input').each(function(index) {
+				that.user.set($(this).attr('name'), $(this).val());
+			});
+
+
 			var target = $(e.currentTarget);
 			target.attr("disabled","disabled").text("Please wait...");
 			this.app.users.register(this.user.toJSON()).done(function () {
 				that.$('.error').hide();
 				that.trigger("registered");
-			}).fail(function () {
-				that.$('.error').show().html(JSON.parse(response.responseText).error); // FIXME
+			}).fail(function (response) {
+				var errors = JSON.parse(response.responseText).error;
+				var errorBox = that.$('.error').show().html('');
+				_.each(errors, function(error) {
+					errorBox.append('<p>'+error+'</p>');
+				});
 			}).always(function () {
 				target.removeAttr("disabled").text("Register");	
 			});

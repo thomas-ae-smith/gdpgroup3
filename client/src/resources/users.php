@@ -8,7 +8,7 @@ function processUser($app, $id) {
 	global $facebook;
 
 	$req = $app->request()->getBody();
-
+	$new_user = false;
 	$type = getIdType($id);
 	$id = str_replace('fb-', '', $id);
 	if ($type == 'fb') {
@@ -17,6 +17,7 @@ function processUser($app, $id) {
 		if ($fb_id && $fb_id == $id) {
 			$user = R::findOne('user', 'facebookId = ?', array($fb_id));
 			if (!$user) {
+				$new_user = true;
 				$user = R::dispense('user');
 				$user_profile = $facebook->api('/me','GET');
 				$user->import(fb_to_user($user_profile));
@@ -35,35 +36,49 @@ function processUser($app, $id) {
 				forbidden();
 				exit;
 			}
-		} else { 
-			// Check if user with that email already exists
-			// FIXME: Should check before registering with facebook also
-			$existing_user = R::findOne('user', ' email = ? ', array($req['email']));
-			if ($existing_user) {
-				forbidden("Email address already in use.");
-			}
+		} else {
+			$new_user = true;
 			$user = R::dispense('user');
 		}
 	}
 
+	$current_email = $user->email;
+
 	foreach ($use_fields as $field) {
 		$field_content = $req[$field];
-		if (isset($field_content)) {
+		if (isset($field_content) && $field_content != "") {
 			if ($field == "password") {
 				$salt = substr(sha1(mt_rand()),0,22); //22 char salt for crypt
 				$user->password = crypt($field_content,'$2a$10$'. $salt);
 			} else if ($field == "postcode") {
 				$field_content = strtoupper(str_replace(' ','',$field_content));
-				$coords = postcode_to_coord($field_content);
-				$user->lat = $coords['lat'];
-				$user->long = $coords['long'];
+				try {
+					$coords = postcode_to_coord($field_content);
+					$user->lat = $coords['lat'];
+					$user->long = $coords['long'];
+				} catch (Exception $e) {
+					$errors[] = $e->getMessage();
+				}
 			} else {
 				$user->setAttr($field, $field_content);
 			}
-		} else if ($field != "password") {
-			badRequest();
-			exit;
+		} else if ($field != 'password' || ($field == 'password' && $new_user)) {
+			$errors[] = "$field is required";
 		}
+	}
+
+	if ($new_user || $user->email != $current_email) {
+		if (R::findOne('user', ' email = ? ', array($user->email))) {
+			$errors[] = "This email is in use";	
+		}
+	}
+
+	if ($user->occupation_id && !R::dispense('occupation', $user->occupation_id)) {
+		$errors[] = "Occupation not valid";
+	}
+
+	if (!empty($errors)) {
+		badRequest($errors);
 	}
 
 	if ($type == 'local' && $app->request()->isPost()) {
