@@ -56,6 +56,7 @@ function getBroadcast($broadcast) {
 
 	return array_merge($broadcast->export(), $mosTimings, array(
 		'timenow' => time(),
+		'duration' => $broadcast->programme->duration,
 		'mos' => array_map(function ($mos) {
 			return array(
 				'id' => $mos['key'],
