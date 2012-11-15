@@ -113,6 +113,14 @@
 			return "";
 		}
 	});
+
+	y4.Blank = Backbone.Model.extend({
+		duration: function () {
+			return Math.ceil(this.get("duration"));
+		},
+		title: function () { return ""; },
+		thumbnail: function () { return ""; }
+	});
 	y4.Adverts = Backbone.Collection.extend({
 		url: "http://"+baseUrl+"/api/adverts/",
 		model: y4.Advert,
@@ -452,7 +460,11 @@
 
 				dfd.resolve(advert);
 			}).fail(function () {
-				that.add({ type: "blank", time: timelimit }); // TODO handle blanks
+				that.add({
+					type: "blank",
+					time: that.totalDuration(),
+					item: new y4.Blank({ duration: timelimit })
+				});
 				dfd.reject();
 			});
 			return dfd;
