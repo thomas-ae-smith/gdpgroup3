@@ -1,5 +1,5 @@
 (function (y4) {
-	"use strict";
+	//"use strict";
 
 	var baseUrl = window.location.hostname;
 
@@ -112,6 +112,14 @@
 		thumbnail: function () {
 			return "";
 		}
+	});
+
+	y4.Blank = Backbone.Model.extend({
+		duration: function () {
+			return Math.ceil(this.get("duration"));
+		},
+		title: function () { return ""; },
+		thumbnail: function () { return ""; }
 	});
 	y4.Adverts = Backbone.Collection.extend({
 		url: "http://"+baseUrl+"/api/adverts/",
@@ -409,7 +417,7 @@
 				});
 
 			that.pushAdvertRecommendation(timelimit, programmeId, advertIds).done(function (advert) {
-				console.log("Added advert: " + advert.get("title"))
+				console.log("Added advert: " + advert.get("title") + " (" + advert.duration() + "s)")
 				that.pushAdvert(timelimit - advert.duration()).done(function (timeleft) {
 					dfd.resolve(timeleft);
 				});
@@ -451,7 +459,14 @@
 				that.add(item);
 
 				dfd.resolve(advert);
-			}).fail(function () { dfd.reject(); });
+			}).fail(function () {
+				that.add({
+					type: "blank",
+					time: that.totalDuration(),
+					item: new y4.Blank({ duration: timelimit })
+				});
+				dfd.reject();
+			});
 			return dfd;
 		}
 	})
@@ -462,7 +477,6 @@
 		initialize: function (models, options) {
 			var that = this;
 			this.user = options.user;
-			this.programmes = [];
 			/*this.reset([
 				{ type: "break", item: new y4.AdbreakAdverts() },
 				{ type: "broadcast", item: new y4.ProgrammeSection({ section: 0 }) },
@@ -482,6 +496,9 @@
 			this.fetchBroadcasterTime().done(function () {
 				that.trigger("ready");
 			});
+			setInterval(function () {
+				that.fill();
+			}, 60000);
 		},
 
 		fetchBroadcasterTime: function () {
@@ -506,9 +523,8 @@
 		},
 
 		broadcasterPlaylistEndTime: function () {
-			return this.broadcasterPlaylistStartTime() + this.reduce(function (memo, item) {
-				return memo + item.duration();
-			}, 0);
+			console.log(this.broadcasterPlaylistStartTime(), this.totalDuration())
+			return this.broadcasterPlaylistStartTime() + this.totalDuration();
 		},
 
 		start: function () {
@@ -525,17 +541,26 @@
 		},
 
 		totalDuration: function () {
-			return _(this.playlist).reduce(function (memo, item) {
-				return memo + Number(item.item.duration);
+			return this.reduce(function (memo, item) {
+				console.log("POP", item.get("partOfProgramme"), item, item.item.duration())
+				if (!item.get("partOfProgramme")) {
+					memo += Number(item.item.duration());
+				}
+				return memo;
 			}, 0);
 		},
 
 		programmeCount: function () {
-			return this.programmes.length;
+			return this.reduce(function (memo, item) {
+				if (item.get("type") === "programme") {
+					memo++;
+				}
+				return memo;
+			}, 0);
 		},
 
-		minPlaylistDuration: 60000, // 1 hour in advance
-		minNumberOfProgrammes: 2,
+		minPlaylistDuration: 7200, // 2 hours in advance
+		minNumberOfProgrammes: 4,
 
 		// Fill the playlist up to the minimum length or minimum number of programmes
 		fill: function () {
@@ -581,24 +606,16 @@
 
 			console.log("Pushing " + programme.get("title"));
 			console.log("Filling break")
+				console.log("BREAKS - ", programme)
 			// Fill in time before start with adverts
-			this.pushAdverts(breakBeforeDuration, programme).done(function () {
-				// Split programmes into sections with breaks for adverts
-				/*var sections = new y4.ProgrammeSections(undefined, {
-					programme: programme,
-					advertTimings: programme.advertTimings()
-				});
-				sections.each(function (section) {
-					var breakDuration = section.broadcasterTime() - that.broadcasterPlaylistEndTime();
-					that.pushAdverts(breakDuration, programme).done(function () {
+			this.pushAdverts(breakBeforeDuration, programme).dfd.done(function () {
 
-					})
-				});*/
-				var item = new y4.PlaylistItem({
-					type: "programme",
-					item: programme,
-					time: that.broadcasterPlaylistEndTime()
-				}, { timeOffset: that.timeOffset });
+				var time = that.broadcasterPlaylistEndTime(),
+					item = new y4.PlaylistItem({
+						type: "programme",
+						item: programme,
+						time: time
+					}, { timeOffset: that.timeOffset });
 
 				item.on("start", function () {
 					if (broadcast) {
@@ -609,11 +626,33 @@
 				});
 
 				that.add(item);
+
+				var breaks = {},
+					updateBreaks = function () {
+						// Remove old breaks
+						_.each(breaks, function (adbreak) {
+							that.remove(adbreak);
+						});
+						// Add new breaks
+						_.each(programme.get("adbreaks"), function (adbreak) {
+							var startTime = Number(adbreak.startTime) + time,
+								duration = adbreak.endTime - adbreak.startTime;
+							breaks[adbreak.id] = that.addAdverts(startTime, duration, programme, true).adbreak;
+						});
+					};
+
+				programme.on("change:adbreaks", function () {
+					updateBreaks();
+				});
+
+				updateBreaks();
+
+				dfd.resolve();
 			});
 
 			return dfd;
 		},
-		pushAdverts: function (duration, programme) {
+		addAdverts: function (time, duration, programme, partOfProgramme) {
 			console.log("Preparing advert break.");
 			var that = this,
 				dfd = $.Deferred(),
@@ -621,17 +660,17 @@
 					duration: duration,
 					userId: this.user.id,
 					programmeId: programme ? programme.id : 0,
-					startTime: that.broadcasterPlaylistEndTime(),
+					startTime: time,
 					timeOffset: that.timeOffset
 				}),
 				item = new y4.PlaylistItem({
 					type: "adbreak",
 					item: adbreak,
-					time: that.broadcasterPlaylistEndTime()
+					time: time,
+					partOfProgramme: partOfProgramme
 				}, { timeOffset: that.timeOffset });
 
 			adbreak.on("adStart", function (advert) {
-				console.log("HJKL:")
 				that.trigger("advert", advert);
 			}).on("ready", function () {
 				that.add(item);
@@ -640,7 +679,10 @@
 
 			adbreak.fill();
 
-			return dfd;
+			return { adbreak: adbreak, dfd: dfd };
+		},
+		pushAdverts: function (duration, programme) {
+			return this.addAdverts(this.broadcasterPlaylistEndTime(), duration, programme);
 		},
 		pushBroadcastRecommendation: function (startTime) {
 			var that = this,

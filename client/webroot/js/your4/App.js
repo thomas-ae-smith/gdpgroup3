@@ -1,5 +1,5 @@
 (function (y4) {
-	"use strict";
+	//"use strict";
 
 	var wowzaServer = "152.78.144.19:1935";
 
@@ -16,7 +16,8 @@
 			"click .icon-play": "play",
 			"click .icon-stop": "stop",
 			"click .tap-start": "goPlay",
-			"touchstart .tap-start": "goPlay",
+			"touchstart .tap-start": "startPlay",
+			"click .tap-start": "startPlay"
 		},
 		initialize: function () {
 			var that = this;
@@ -37,9 +38,9 @@
 			}
 
 			// Prevents scrolling
-			$(document).on("touchstart", function (e) {
+			/*$(document).on("touchstart", function (e) {
 				e.preventDefault();
-			});
+			});*/
 
 			this.player.on("beforefinish", function () {
 				that.playlist.fetchNext();
@@ -82,13 +83,18 @@
 			this.$(".player-layer").hide();
 			return this;
 		},
+		startPlay: function () {
+			this.$(".start-screen-layer").hide();
+			this.$(".player-layer").show();
+			this.play().showControls();
+			return this;
+		},
 		goPlay: function () {
 			this.router.go("play");
 			return this;
 		},
 		renderStart: function () {
-			this.showStartScreen().$('.start-container')
-				.html('<div class="tap-start"><b>Tap to start.</b></div>');
+			this.showStartScreen().$('.start-container');
 			return this;
 		},
 		renderLogin: function () {
@@ -149,9 +155,8 @@
 				console.log("Started");
 				that.playlist = playlist;
 				that.hideSpinner();
-				that.$(".start-screen-layer").hide();
-				that.$(".player-layer").show();
-				that.play().showControls();
+				that.showStartScreen().$('.start-container')
+					.html('<div class="tap-start"><b>Tap to start.</b></div>');
 			});
 
 			playlist.on("broadcast", function (broadcast) {

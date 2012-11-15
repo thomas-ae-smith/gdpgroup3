@@ -59,15 +59,20 @@ $scripts = array_merge($requires['all']['scripts'], $requires[$site]['scripts'])
 	<script type="text/javascript" src="' . $script . '?' . rand(0, 10000000) . '"></script>';
 		}
 
-		
-		echo '<script src="http://warlock.ecs.soton.ac.uk:8080/target/target-script-min.js#anonymous"></script>';
+		echo '<script src="http://warlock.ecs.soton.ac.uk:8080/target/target-script-min.js#' . $site . '"></script>';
 	?>
 	<script type="text/javascript">
+		window.onerror = function(message, url, linenumber) {
+			console.error("JavaScript error: " + message + " on line " + linenumber + " for " + url);
+		}
 		$(document).ready(function () {
-			y4.cacheTemplates();
-			// Start the app
-			y4.app = new y4.App();
-			$("#container").html("").append(y4.app.start().el);
+			setTimeout(function () {
+				y4.cacheTemplates();
+				// Start the app
+				y4.app = new y4.App();
+				$("#container").html("").append(y4.app.start().el);
+				console.log("starting")
+			}, 200);
 		});
 	</script>
 </head>

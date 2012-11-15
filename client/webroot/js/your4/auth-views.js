@@ -1,6 +1,6 @@
 
 (function(y4) {
-	"use strict";
+	//"use strict";
 
 	y4.RegisterView = Backbone.View.extend({
 
@@ -58,7 +58,7 @@
 
 		submitReg: function(e) {
 			var that = this;
-			
+
 			$('.register-form :input').each(function(index) {
 				that.user.set($(this).attr('name'), $(this).val());
 			});
@@ -76,7 +76,7 @@
 					errorBox.append('<p>'+error+'</p>');
 				});
 			}).always(function () {
-				target.removeAttr("disabled").text("Register");	
+				target.removeAttr("disabled").text("Register");
 			});
 		}
 	});
@@ -91,6 +91,7 @@
 
 		initialize: function (options) {
 			this.app = options.app;
+			console.log("JK")
 		},
 
 		setUser: function(user, existingSession) {
@@ -111,6 +112,7 @@
 		},
 
 		register: function () {
+			console.log("HJK")
 			this.app.router.navigate("register", { trigger: true });
 		},
 
@@ -123,6 +125,7 @@
 				that.$('.error').hide();
 				that.trigger("loggedIn");
 			}).fail(function (response) {
+				console.log(response)
 				that.$('.error').show().html(JSON.parse(response.responseText).error);
 			});
 		},
