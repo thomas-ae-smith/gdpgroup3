@@ -14,21 +14,21 @@
 			this.channels = new y4.Channels();
 
 			this.videoLayer.on("set", function () {
-				//that.videoLayer.show();
+				that.videoLayer.show();
 			}).on("start", function () {
 				that.blackLayer.hide();
 			}).on("finish", function () {
-				that.blackLayer.show();
-				//that.videoLayer.hide();
+				//that.blackLayer.show();
+				that.videoLayer.hide();
 			});
-			/*this.stillLayer.on("set", function () {
+			this.stillLayer.on("set", function () {
 				that.stillLayer.show();
 			}).on("start", function () {
-				that.blackLayer.hide();
+				//that.blackLayer.hide();
 			}).on("finish", function () {
 				that.blackLayer.show();
-				that.stillLayer.hide();
-			});*/
+				//that.stillLayer.hide();
+			});
 
 		},
 
@@ -66,26 +66,12 @@
 
 		},
 		setBroadcast: function (broadcast) {
-			var programmes = new y4.Programmes([{ id: broadcast.get("programme_id") }]),
-				programme = programmes.first(),
-				log;
-			programme.fetch().done(function () {
-				console.log("Programme: " + programme.get("title") + " (" + log + ")");
-			});
-			switch (Number(broadcast.get("recordState"))) {
-			case 0:
-			case 1:
-				var channel = this.channels.get(broadcast.get("channel_id"));
-				this.videoLayer.set("your4", channel.get("url"));
-				log = "live on " + channel.get("name");
-				break;
-			case 2:
-				this.videoLayer.set("vod", broadcast.get("uid"));
-				log = "on-demand";
-				break;
-			case 3:
-				// Video deleted!!
-			}
+			var channel = this.channels.get(broadcast.get("channel_id"));
+			this.videoLayer.set("your4", channel.get("url"));
+		},
+
+		setProgramme: function (programme) {
+			this.videoLayer.set("vod", programme.get("uid"));
 		},
 
 		play: function () {
@@ -128,10 +114,11 @@
 		play: function () { this.videoEl.play(); },
 		stop: function() { this.videoEl.pause(); },
 		set: function (service, url) {
+			console.log("http://" + this.options.server + "/" + service + "/" + url + "/playlist.m3u8");
 			if (this.url === url && this.service == service) { return; }
 			var that = this;
 			this.url = url;
-			this.$video.attr("src", "http://" + this.options.server + "/" + this.service + "/" + url + "/playlist.m3u8");
+			this.$video.attr("src", "http://" + this.options.server + "/" + service + "/" + url + "/playlist.m3u8");
 			this.videoEl.load();
 			this.play();
 			return this;
@@ -139,11 +126,18 @@
 		render: function () {
 			LayerView.prototype.render.call(this);
 
-			var template = _.template($("#html-video-template").html());
+			var that = this,
+				template = _.template($("#html-video-template").html());
 
 			this.$el.html(template(this.options));
 			this.$video = this.$("video");
 			this.videoEl = this.$video[0];
+
+			this.$video.on("play", function () {
+				that.trigger("start");
+			}).on("ended", function () {
+				that.trigger("finish");
+			});
 
 			return this;
 		}
