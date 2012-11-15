@@ -19,6 +19,14 @@ $app->get('/programmes(/)', function() use ($app) {
 $app->get('/programmes/:id', function ($id) use ($app) {
 	$programme = R::load('programme', $id);
 	if (!$programme) { return notFound('Programme with that ID not found.'); }
-	output_json($programme->export());
+	output_json(array_merge($programme->export(), array(
+		'adbreaks' => array_map(function ($adbreak) {
+			return array(
+				'id' => $adbreak->id,
+				'startTime' => $adbreak->startTime,
+				'endTime' => $adbreak->endTime
+			);
+		}, array_values($programme->ownAdbreak))
+	)));
 });
 
