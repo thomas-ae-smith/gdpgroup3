@@ -508,9 +508,7 @@
 		},
 
 		broadcasterPlaylistEndTime: function () {
-			return this.broadcasterPlaylistStartTime() + this.reduce(function (memo, item) {
-				return memo + item.duration();
-			}, 0);
+			return this.broadcasterPlaylistStartTime() + this.totalDuration();
 		},
 
 		start: function () {
@@ -528,7 +526,8 @@
 
 		totalDuration: function () {
 			return this.reduce(function (memo, item) {
-				if (item.get("partOfProgramme")) {
+				console.log("POP", item.get("partOfProgramme"))
+				if (!item.get("partOfProgramme")) {
 					memo += Number(item.item.duration());
 				}
 				return memo;
@@ -623,12 +622,21 @@
 
 				that.add(item);
 
-				_.each(programme.get("adbreaks"), function (adbreak) {
-					console.log("Break: ", adbreak)
-					var startTime = Number(adbreak.startTime) + time,
-						duration = adbreak.endTime - adbreak.startTime;
-					that.addAdverts(startTime, duration, programme, true);
+				var breaks = {},
+					updateBreaks = function () {
+						// TODO - remove old breaks
+						_.each(programme.get("adbreaks"), function (adbreak) {
+							var startTime = Number(adbreak.startTime) + time,
+								duration = adbreak.endTime - adbreak.startTime;
+							that.addAdverts(startTime, duration, programme, true);
+						});
+					};
+
+				programme.on("change:adbreaks", function () {
+					updateBreaks();
 				});
+
+				updateBreaks();
 
 				dfd.resolve();
 			});
