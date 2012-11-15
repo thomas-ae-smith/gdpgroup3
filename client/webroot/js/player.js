@@ -1,6 +1,6 @@
 
 (function(y4) {
-	"use strict";
+	//"use strict";
 
 	y4.PlayerView = Backbone.View.extend({
 		className: "player",
@@ -139,7 +139,7 @@
 		render: function () {
 			LayerView.prototype.render.call(this);
 
-			template = _.template($("#html-video-template").html());
+			var template = _.template($("#html-video-template").html());
 
 			this.$el.html(template(this.options));
 			this.$video = this.$("video");
@@ -296,9 +296,9 @@
 		},
 		update: function () {
 			this.$el.css({
-				borderColor: this.item.get("type") === "adbreak" ? "yellow" : "white",
-				left: 50 + (this.item.localTime() - y4.now()) / 60 + "%",
-				width: this.item.duration() / 60 + "%"
+				backgroundColor: this.item.get("type") === "adbreak" ? "#FFB917" : "#333",
+				left: 50 + (this.item.localTime() - y4.now()) / 240 + "%",
+				width: this.item.duration() / 240 + "%"
 			});
 			return this;
 		}

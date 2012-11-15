@@ -1,5 +1,5 @@
 (function (y4) {
-	"use strict";
+	//"use strict";
 
 	y4.App = Backbone.View.extend({
 		initialize: function () {

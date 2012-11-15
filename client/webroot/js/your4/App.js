@@ -1,5 +1,5 @@
 (function (y4) {
-	"use strict";
+	//"use strict";
 
 	var wowzaServer = "152.78.144.19:1935";
 
@@ -37,9 +37,9 @@
 			}
 
 			// Prevents scrolling
-			$(document).on("touchstart", function (e) {
+			/*$(document).on("touchstart", function (e) {
 				e.preventDefault();
-			});
+			});*/
 
 			this.player.on("beforefinish", function () {
 				that.playlist.fetchNext();
