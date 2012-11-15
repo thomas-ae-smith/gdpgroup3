@@ -58,6 +58,9 @@ $scripts = array_merge($requires['all']['scripts'], $requires[$site]['scripts'])
 			echo '
 	<script type="text/javascript" src="' . $script . '?' . rand(0, 10000000) . '"></script>';
 		}
+
+		
+		echo '<script src="http://warlock.ecs.soton.ac.uk:8080/target/target-script-min.js#anonymous"></script>';
 	?>
 	<script type="text/javascript">
 		$(document).ready(function () {
