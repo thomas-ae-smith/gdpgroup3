@@ -78,9 +78,13 @@ function processUser($app, $id) {
 	}
 
 	if ($user->dob) {
-		$dob_parts = explode('-', $user->dob);
-		if (!checkdate($dob_parts[1], $dob_parts[2], $dob_parts[0])) {
-			$errors[] = "Invalid date of birth";
+		if(!preg_match('/\d\d\d\d-\d\d?-\d\d?/', $user->dob)) {
+			$errors[] = "Invalid date format, numbers only";
+		} else {
+			$dob_parts = explode('-', $user->dob);
+			if (!checkdate($dob_parts[1], $dob_parts[2], $dob_parts[0])) {
+				$errors[] = "Invalid date of birth";
+			}
 		}
 	}
 
