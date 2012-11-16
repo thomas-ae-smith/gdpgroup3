@@ -123,7 +123,8 @@
 			this.app.router.navigate("register", { trigger: true });
 		},
 
-		normalLogin: function () {
+		normalLogin: function (e) {
+			e.preventDefault();
 			var that = this,
 				email = $('#inputEmail').val(),
 				password = $('#inputPassword').val();
