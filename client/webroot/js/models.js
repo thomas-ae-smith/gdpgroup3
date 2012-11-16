@@ -296,6 +296,8 @@
 						that.getFbUser().then(function() {
 							dfd.resolve();
 						});
+					} else {
+						dfd.reject();
 					}
 				}, { scope: 'user_birthday,email' });
 			} else {

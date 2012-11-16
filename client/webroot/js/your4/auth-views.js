@@ -115,7 +115,11 @@
 				that.$('.error').hide();
 				that.trigger("loggedIn");
 			}).fail(function (msg) {
-				that.$('.error').show().html(msg);
+				if (msg) {
+					that.$('.error').show().html(msg);
+				}
+			}).always(function () {
+				that.$('.facebook-button').removeAttr('disabled').text('Login with Facebook');	
 			});
 		},
 
