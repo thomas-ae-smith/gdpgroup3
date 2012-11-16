@@ -77,6 +77,13 @@ function processUser($app, $id) {
 		$errors[] = "Occupation not valid";
 	}
 
+	if ($user->dob) {
+		$dob_parts = explode('-', $user->dob);
+		if (!checkdate($dob_parts[1], $dob_parts[2], $dob_parts[0])) {
+			$errors[] = "Invalid date of birth";
+		}
+	}
+
 	if (!empty($errors)) {
 		badRequest($errors);
 	}

@@ -34,9 +34,12 @@
 			});
 
 			var user = this.user.toJSON();
-			user.year = "";
-			user.date = "";
-			user.month = "";
+			if (user['dob'] != null) {
+				var dateParts = user['dob'].split('-');
+				user.year = dateParts[0];
+				user.date = dateParts[2];
+				user.month = dateParts[1];
+			}
 
 			this.$el.html(registerTemplate({
 				user: user,
@@ -59,9 +62,13 @@
 		submitReg: function(e) {
 			var that = this;
 
-			$('.register-form :input').each(function(index) {
+			$('.register-form :input').not('.date-split').each(function(index) {
 				that.user.set($(this).attr('name'), $(this).val());
 			});
+
+			this.user.set('dob', $('.date-split').map(function() {
+				return $(this).val();
+			}).get().join('-'));
 
 
 			var target = $(e.currentTarget);
