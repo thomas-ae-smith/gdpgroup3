@@ -60,6 +60,7 @@
 		},
 
 		submitReg: function(e) {
+			e.preventDefault();
 			var that = this;
 
 			$('.register-form :input').not('.date-split').each(function(index) {
