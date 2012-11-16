@@ -21,6 +21,10 @@
 		},
 		initialize: function () {
 			var that = this;
+			
+			$.get('adverts.html').fail(function() {
+				window.location.href = "adverts.html";
+			});
 
 			this.router = new Router({ app: this });
 			this.users = new y4.Users();

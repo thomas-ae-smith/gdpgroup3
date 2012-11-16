@@ -22,5 +22,5 @@
 
 	// Should HTML5 videos be used?
 	y4.useHtmlVideo = htmlVideoBrowsers.indexOf(y4.browser) > -1;
-
+	
 }(this));
