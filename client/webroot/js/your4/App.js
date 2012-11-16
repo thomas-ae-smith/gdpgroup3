@@ -232,7 +232,7 @@
 
 				return this.go("login");
 			}
-			this.app.renderStart();
+			this.go("play");
 		},
 		login: function () {
 			if (this.app.users.loggedIn()) { return this.go(""); }

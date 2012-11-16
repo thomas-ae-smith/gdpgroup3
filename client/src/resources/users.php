@@ -187,6 +187,7 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 
 	} else if ($type == 'local' && isset($_SESSION['user']['registered'])) {
 		$_SESSION['user'] = $db_user->export();
+		$_SESSION['user']['registered'] = true;
 		output_json($_SESSION['user']);
 	} else {
 		notFound();
