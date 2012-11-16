@@ -11,7 +11,8 @@ function getSchedule($broadcast, $state = null) {
 		'programme_uid' => $programme->uid,
 		'channel_uid' => $channel->uid,
 		'timestamp' => $broadcast->time,
-		'duration' => $broadcast->duration,
+		'duration' => $broadcast->programme->duration,
+		'durationMS' => $broadcast->programme->duration * 1000,
 		'programmeRecordState' => $programme->recordState
 	);
 }
