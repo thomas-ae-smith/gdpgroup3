@@ -296,17 +296,22 @@
 				},
 				options = {
 					success: function () {
-						that.$("form").html("Saved.");
+						that.$(".state-badges").html('<div class="label label-success">Saved</div>').show().delay(1000).fadeOut();
 					},
-					error: function () {
-						that.$("form").prepend("Error saving")
+					error: function (m, response) {
+						that.$(".state-badges").html('<div class="label label-important">Error saving: ' + JSON.parse(response.responseText).error + '</div>').show();
 					}
 				};
 			if (this.advert.has("id")) {
 				this.advert.save(attributes, options);
 			} else {
 				this.advert.set(attributes);
-				this.adverts.create(this.advert, options);
+				this.adverts.create(this.advert, _.extend(options, {
+					success: function () {
+						console.log(arguments)
+						//that.trigger("goto", )
+					}
+				}));
 			}
 		},
 		cancel: function () {
