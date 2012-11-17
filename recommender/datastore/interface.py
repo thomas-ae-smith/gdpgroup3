@@ -27,16 +27,22 @@ def _time_from_str(timestr):
 	return datetime.time(hours, minutes, seconds)
 
 def read_db(query):
+	import pdb; pdb.set_trace()
+	print("test")
 	try:
 		conn = mysql.connector.connect(**credentials)
-		cursor = conn.cursor()
+		try:
+			cursor = conn.cursor()
 
-		cursor.execute(query)
-		result = cursor.fetchall()
+			cursor.execute(query)
+			result = cursor.fetchall()
+		except:
+			raise Exception("Error executing mysql query: {q}!".format(q=query))
+		finally:
+			cursor.close()
 	except:
-		raise Exception("Error executing mysql query: {q}".format(q=query))
+		raise Exception("Error connecting to database!")
 	finally:
-		cursor.close()
 		conn.close()
 
 	return result
@@ -44,15 +50,22 @@ def read_db(query):
 def write_db(query):
 	try:
 		conn = mysql.connector.connect(**credentials)
-		cursor = conn.cursor()
+		try:
+			cursor = conn.cursor()
 
-		cursor.execute(query)
-		conn.commit()
+			cursor.execute(query)
+			result = cursor.fetchall()
+			conn.commit()
+		except:
+			raise Exception("Error executing mysql query: {q}!".format(q=query))
+		finally:
+			cursor.close()
 	except:
-		raise Exception("Error executing mysql query: {q}".format(q=query))
+		raise Exception("Error connecting to database!")
 	finally:
-		cursor.close()
 		conn.close()
+
+	return result
 
 def add_advert_blacklist(userId, advertId):
 	query = (	"INSERT INTO `blacklist_advert` (`user_id`, `advert_id`) "
