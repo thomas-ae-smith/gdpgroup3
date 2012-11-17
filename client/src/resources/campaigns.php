@@ -6,7 +6,7 @@ $targetTables = array(
 	'times' => array('name' => 'ownTime', 'fields' => array('dayOfWeek', 'startTime', 'endTime')),
 	'genres' => array('name' => 'sharedGenre', 'ids' => true),
 	'occupations' => array('name' => 'sharedOccupation', 'ids' => true),
-	'programmes' => array('name' => 'sharedProgramme', 'ids' => true)
+	'brands' => array('name' => 'sharedBrand', 'ids' => true)
 );
 
 function getTargets(&$bean, $type) {
@@ -161,9 +161,9 @@ function setCampaign($campaign, $req) {
 		return R::load('occupation', $id);
 	}, ifsetor($req['targets']['occupations'], array()));
 
-	$campaign->sharedProgramme = array_map(function ($id) {
-		return R::load('programme', $id);
-	}, ifsetor($req['targets']['programmes'], array()));
+	$campaign->sharedBrand = array_map(function ($id) {
+		return R::load('brand', $id);
+	}, ifsetor($req['targets']['brands'], array()));
 
 	$campaignId = R::store($campaign);
 }
