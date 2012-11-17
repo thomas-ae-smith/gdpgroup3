@@ -249,24 +249,29 @@
 			this.$el.html(y4.templates["advert-full"](this.advert.toJSON()));
 			setTimeout(function () { that.updatePreview(); }, 100); // Erm.. HACK
 
+			var $progress;
 			this.$('#advert-file').fileupload({
 				dataType: 'json',
 				add: function (e, data) {
-					data.context = $('<p/>').text('Uploading...').appendTo(document.body);
+					$progress = $('<div class="progress progress-striped active"><div class="bar" style="width: 0;"></div></div>')
+					that.$("#advert-file").after($progress);
 					data.submit();
 				},
 				done: function (e, data) {
-					that.advert.set({ url: data.result.url });
-					console.log(that.advert.get("url"))
-					console.log({ url: data.result.url })
+					that.advert.set({
+						url: data.result.url,
+						duration: data.result.duration,
+						thumbnail: data.result.thumbnail
+					});
+					console.log(data.result.type)
+					that.$("#advert-type").val(data.result.type);
+					$progress.html("Uploaded.").delay(1000).fadeOut();
 				},
 				progressall: function (e, data) {
 					var progress = parseInt(data.loaded / data.total * 100, 10);
-					console.log(progress)
-					$('#progress .bar').css(
-						'width',
-						progress + '%'
-					);
+					$progress.find('.bar').css({
+						width: progress + '%'
+					});
 				}
 			});
 
@@ -291,7 +296,7 @@
 			var that = this,
 				attributes = {
 					title: this.$("#advert-title").val(),
-					type: this.$("#advert-type").val(),
+					type: this.$("#advert-type option:selected").val(),
 					overlay: this.overlayEditor.getValue()
 				},
 				options = {
@@ -406,7 +411,7 @@
 			});
 
 			var occupations = new y4.Occupations(),
-				programmes = new y4.Programmes(),
+				brands = new y4.Brands(),
 				genres = new y4.Genres();
 
 			occupations.fetch().then(function () {
@@ -415,10 +420,10 @@
 								(that.campaign.get("targets").occupations.indexOf(occupation.id) > -1 ? ' checked="true"' : "") + '>' + capitalize(occupation.get("name")) + '</label>');
 				});
 			});
-			programmes.fetch().then(function () {
-				programmes.each(function (programme) {
-					that.$("#campaign-programmes").append('<label class="checkbox"><input type="checkbox" value="' + programme.id + '"' +
-								(that.campaign.get("targets").programmes.indexOf(programme.id) > -1 ? ' checked="true"' : "") + '>' + capitalize(programme.get("name")) + '</label>');
+			brands.fetch().then(function () {
+				brands.each(function (brand) {
+					that.$("#campaign-programmes").append('<label class="checkbox"><input type="checkbox" value="' + brand.id + '"' +
+								(that.campaign.get("targets").brands.indexOf(brand.id) > -1 ? ' checked="true"' : "") + '>' + capitalize(brand.get("title")) + ' (' + brand.get("noOfProgrammes") + ' programmes)' + '</label>');
 				});
 			});
 			genres.fetch().then(function () {

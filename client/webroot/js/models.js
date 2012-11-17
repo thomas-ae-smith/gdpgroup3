@@ -11,7 +11,8 @@
 
 	// Order by name
 	var nameComparator = function (model) {
-		return model.get("name").replace(/^the /i, "");
+		var name = model.has("name") ? model.get("name") : model.get("title");
+		return name.replace(/^the /i, "");
 	};
 
 	y4.Occupations = Backbone.Collection.extend({
@@ -21,6 +22,11 @@
 
 	y4.Genres = Backbone.Collection.extend({
 		url: "http://"+baseUrl+"/api/genres/",
+		comparator: nameComparator
+	});
+
+	y4.Brands = Backbone.Collection.extend({
+		url: "http://"+baseUrl+"/api/brands/",
 		comparator: nameComparator
 	});
 
