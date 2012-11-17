@@ -66,7 +66,7 @@ def add_programme_blacklist(userId, programmeId):
 
 	response = write_db(query)
 
-def get_advert_pool(uid, pid, when=None, maxlen=None):
+def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=()):
 	"""Given a user id, programme id and time, returns a pool of adverts whose
 	campaigns allow the advert to be shown to the given user during the given
 	programme at the given time. Advert ids are returned along with the
@@ -129,6 +129,10 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 	if blacklisted_adverts:
 		campaign_query += " AND `a_c`.`advert_id` NOT IN {blacklist}".format(
 			blacklist="('{ads}')".format(ads="','".join(blacklisted_adverts)))
+
+	if exclude:
+		campaign_query += " AND `a_c`.`advert_id` NOT IN ({exclude})".format(
+			exclude=','.join(str(p) for p in exclude))
 
 	if maxlen != float('inf'):
 		campaign_query += " AND `a`.`duration` <= {maxlen}".format(
