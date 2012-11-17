@@ -27,23 +27,23 @@ def _time_from_str(timestr):
 	return datetime.time(hours, minutes, seconds)
 
 def read_db(query):
-	import pdb; pdb.set_trace()
-	print("test")
 	try:
 		conn = mysql.connector.connect(**credentials)
-		try:
-			cursor = conn.cursor()
-
-			cursor.execute(query)
-			result = cursor.fetchall()
-		except:
-			raise Exception("Error executing mysql query: {q}!".format(q=query))
-		finally:
-			cursor.close()
 	except:
 		raise Exception("Error connecting to database!")
-	finally:
-		conn.close()
+	else:
+		try:
+			cursor = conn.cursor()
+		except:
+			raise Exception("Error executing mysql query: {q}!".format(q=query))
+		else:
+			try:
+				cursor.execute(query)
+				result = cursor.fetchall()
+			finally:
+				cursor.close()
+		finally:
+			conn.close()
 
 	return result
 	
