@@ -50,22 +50,22 @@ def read_db(query):
 def write_db(query):
 	try:
 		conn = mysql.connector.connect(**credentials)
-		try:
-			cursor = conn.cursor()
-
-			cursor.execute(query)
-			result = cursor.fetchall()
-			conn.commit()
-		except:
-			raise Exception("Error executing mysql query: {q}!".format(q=query))
-		finally:
-			cursor.close()
 	except:
 		raise Exception("Error connecting to database!")
-	finally:
-		conn.close()
-
-	return result
+	else:
+		try:
+			cursor = conn.cursor()
+		except:
+			raise Exception("Error executing mysql query: {q}!".format(q=query))
+		else:
+			try:
+				cursor.execute(query)
+				result = cursor.fetchall()
+				conn.commit()
+			finally:
+				cursor.close()
+		finally:
+			conn.close()
 
 def add_advert_blacklist(userId, advertId):
 	query = (	"INSERT INTO `blacklist_advert` (`user_id`, `advert_id`) "
@@ -238,16 +238,16 @@ def get_broadcast_pool(userId, startTime=time(), lookahead=300):
 	return channel_vectors
 
 
-def get_programme(pid, fields=()):
-	"""Returns a tuple of the values of the given fields for a programme with
-	the given id. If no fields are specified, all are returned."""
-	query = (	'SELECT '+_field_string(fields)+' '
-				'FROM `programme` '
-				'WHERE `id`='+str(pid))
+def get_programme_vector(pid):
+	query = (	"SELECT `brand`.`vector` "
+				"FROM `brand` "
+				"LEFT JOIN `programme` "
+				"ON `brand`.`id` = `programme`.`brand_id` "
+				"WHERE `programme`.`id`= "+str(pid))
 
 	response = read_db(query)
 
-	return response[0]
+	return response[0][0]
 
 def get_user(userid, fields=()):
 	"""Returns a tuple of the values of the given fields for a user with

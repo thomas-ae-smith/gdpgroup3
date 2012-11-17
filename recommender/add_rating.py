@@ -31,7 +31,7 @@ def add_rating(user, programme, rating):
 		print("User vector: {v}".format(v=user_vector))
 
 	# Fetch programme vector
-	programme_vector = interface.get_programme(programme, ['vector'])
+	programme_vector = interface.get_programme_vector(programme)
 	if not programme_vector:
 		if DEBUG:
 			pdb.set_trace()
