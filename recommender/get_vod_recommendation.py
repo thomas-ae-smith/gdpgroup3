@@ -62,15 +62,16 @@ def get_vod_recommendation(userId):
 	by the recommender. Returns -1 if there are no programmes in the database"""
 
 	user_vector = vector.string_to_vector(interface.get_user(userId, ['vector'])[0])
-	programmes = interface.read_db(
-		"SELECT `p`.`id`, `b`.`vector` "
-		"FROM `programme` as `p` "
-		"LEFT JOIN `brand` AS `b` "
-		"ON `b`.`id` = `p`.`brand_id` "
-		"WHERE `p`.`id` NOT IN ( "
-			"SELECT `programme_id` "
-			"FROM `blacklist_programme` "
-			"WHERE `user_id`={uid})".format(uid=userId))
+	query = ("SELECT `p`.`id`, `b`.`vector` "
+			"FROM `programme` as `p` "
+			"LEFT JOIN `brand` AS `b` "
+			"ON `b`.`id` = `p`.`brand_id` "
+			"WHERE `p`.`id` NOT IN ( "
+				"SELECT `programme_id` "
+				"FROM `blacklist_programme` "
+				"WHERE `user_id`={uid}) "
+			"AND `p`.`recordState` = 2").format(uid=userId)
+	programmes = interface.read_db(query)
 
 	if VERBOSE:
 		total_programmes = len(programmes)
