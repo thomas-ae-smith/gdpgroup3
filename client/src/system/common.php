@@ -44,6 +44,12 @@ function forbidden($msg = "Access denied.") {
 	exit;
 }
 
+function internalError($msg = 'Internal Server Error.') {
+	header('HTTP/1.0 500 Internal Server Error', true, 500);
+	output_json(array('error' => $msg));
+	exit;
+}
+
 function output_json($content) {
 	header("Content-Type: application/json");
 	echo json_format(json_encode($content));
