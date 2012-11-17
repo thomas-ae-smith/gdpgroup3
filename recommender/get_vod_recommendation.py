@@ -40,18 +40,13 @@ def get_user_vector(user_id):
 	return vector
 
 def get_name(pid):
-	query = "SELECT `title` FROM `programme` WHERE `id` = {pid}".format(pid=pid)
-	conn = mysql.connector.connect(**credentials)
-	cursor = conn.cursor()
-	cursor.execute(query)
-
-	try:
-		name = interface.read_db(
-			"SELECT `brand`.`title` "
+	query = ("SELECT `brand`.`title` "
 			"FROM `programme` "
 			"LEFT JOIN `brand` "
 			"ON `brand`.`id` = `programme`.`brand_id` "
-			"WHERE `programme`.`id` = {pid}".format(pid=pid))[0][0]
+			"WHERE `programme`.`id` = {pid}").format(pid=pid)[0][0]
+	try:
+		name = interface.read_db(query)
 	except StopIteration:
 		name = "No programme with id {id}".format(id=pid)
 
@@ -79,8 +74,8 @@ def get_vod_recommendation(userId):
 		vectors = []
 
 	if not programmes:
-		print("No programmes found in the database!",
-				file=sys.stderr)
+		print("There are no vod programmes! (No programmes in the programmes "
+				"table have recordState=2)", file=sys.stderr)
 		return -1
 
 	best_recommendations = [(float('inf'), -1)]
