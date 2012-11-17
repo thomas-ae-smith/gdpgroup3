@@ -69,6 +69,12 @@ function getCampaignSummary($campaign) {
 }
 
 function setAdvert($advert, $req) {
+	$params = array('type', 'title', 'overlay', 'url', 'duration', 'thumbnail');
+	array_walk($params, function ($param) use ($req) {
+		if (!isset($req[$param])) {
+			badRequest('Field "' . $param . '" must be provided.');
+		}
+	});
 	$advert->type = $req['type'];
 	$advert->title = $req['title'];
 	$advert->overlay = $req['overlay'];
