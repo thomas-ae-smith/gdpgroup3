@@ -60,7 +60,6 @@ def write_db(query):
 		else:
 			try:
 				cursor.execute(query)
-				result = cursor.fetchall()
 				conn.commit()
 			finally:
 				cursor.close()
