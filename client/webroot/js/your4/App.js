@@ -1,9 +1,13 @@
 (function (y4) {
-	"use strict";
+	//"use strict";
 
 	var wowzaServer = "152.78.144.19:1935";
 
 	y4.allowFacebookLogin = window.location.hostname.indexOf("your4.tv") > 0;
+
+	y4.now = function () {
+		return (new Date()).getTime() / 1000;
+	};
 
 	y4.App = Backbone.View.extend({
 		events: {
@@ -12,10 +16,15 @@
 			"click .icon-play": "play",
 			"click .icon-stop": "stop",
 			"click .tap-start": "goPlay",
-			"touchstart .tap-start": "goPlay",
+			"touchstart .tap-start": "startPlay",
+			"click .tap-start": "startPlay"
 		},
 		initialize: function () {
 			var that = this;
+			
+			$.get('adverts.html').fail(function() {
+				window.location.href = "adverts.html";
+			});
 
 			this.router = new Router({ app: this });
 			this.users = new y4.Users();
@@ -33,9 +42,9 @@
 			}
 
 			// Prevents scrolling
-			$(document).on("touchstart", function (e) {
+			/*$(document).on("touchstart", function (e) {
 				e.preventDefault();
-			});
+			});*/
 
 			this.player.on("beforefinish", function () {
 				that.playlist.fetchNext();
@@ -78,13 +87,18 @@
 			this.$(".player-layer").hide();
 			return this;
 		},
+		startPlay: function () {
+			this.$(".start-screen-layer").hide();
+			this.$(".player-layer").show();
+			this.play().showControls();
+			return this;
+		},
 		goPlay: function () {
 			this.router.go("play");
 			return this;
 		},
 		renderStart: function () {
-			this.showStartScreen().$('.start-container')
-				.html('<div class="tap-start"><b>Tap to start.</b></div>');
+			this.showStartScreen().$('.start-container');
 			return this;
 		},
 		renderLogin: function () {
@@ -93,13 +107,13 @@
 
 			that.showStartScreen().$('.start-container').html("")
 				.append(login.render().el);
-			
+
 			login.on("loggedIn", function () {
 				that.hideSpinner();
 				var user = that.user();
 				if (user && user.get('registered')) {
 					that.goPlay();
-				} else {		
+				} else {
 					that.router.go("register");
 				}
 			});
@@ -132,20 +146,27 @@
 		},
 		renderPlay: function (userId) {
 			var that = this,
-				playlist = new y4.Playlist({ user: this.user() });
+				playlist = new y4.Playlist(undefined, { user: this.user() });
 
 			this.showSpinner();
 
-			playlist.start().then(function () {
+			this.player.setPlaylist(playlist);
+
+			playlist.on("ready", function () {
+				playlist.fill();
+			});
+			playlist.on("started", function () {
+				console.log("Started");
 				that.playlist = playlist;
 				that.hideSpinner();
-				that.$(".start-screen-layer").hide();
-				that.$(".player-layer").show();
-				that.play().showControls();
+				that.showStartScreen().$('.start-container')
+					.html('<div class="tap-start"><b>Tap to start.</b></div>');
 			});
 
 			playlist.on("broadcast", function (broadcast) {
 				that.player.setBroadcast(broadcast);
+			}).on("programme", function (programme) {
+				that.player.setProgramme(programme);
 			}).on("advert", function (advert) {
 				that.player.setAdvert(advert);
 			});
@@ -180,7 +201,7 @@
 			}
 			clearTimeout(this.hideControlsTimeout);
 			this.hideControlsTimeout = setTimeout(function () {
-				that.hideControls();
+				//that.hideControls();
 			}, 1500);
 			return this;
 		},
@@ -215,7 +236,7 @@
 
 				return this.go("login");
 			}
-			this.app.renderStart();
+			this.go("play");
 		},
 		login: function () {
 			if (this.app.users.loggedIn()) { return this.go(""); }

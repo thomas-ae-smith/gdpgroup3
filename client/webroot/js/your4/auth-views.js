@@ -1,12 +1,10 @@
 
 (function(y4) {
-	"use strict";
+	//"use strict";
 
 	y4.RegisterView = Backbone.View.extend({
 
 		events: {
-			"change .register-form input": "changeField",
-			"change .register-form select": "changeField",
 			"click .submit-registration": "submitReg"
 		},
 
@@ -35,11 +33,18 @@
 				}
 			});
 
+			var user = this.user.toJSON();
+			if (user['dob'] != null) {
+				var dateParts = user['dob'].split('-');
+				user.year = dateParts[0];
+				user.date = dateParts[2];
+				user.month = dateParts[1];
+			}
+
 			this.$el.html(registerTemplate({
-				user: this.user.toJSON(),
+				user: user,
 				req: toRequest,
-				fields: this.regFields,
-				occupations: this.occupations
+				fields: this.regFields
 			}));
 
 			this.occupations.fetch().then(function() {
@@ -49,25 +54,37 @@
 				});
 			});
 
+			this.$('.register-form :input[name="gender"]').val(this.user.get('gender'));
+
 			return this;
 		},
 
-		changeField: function(e) {
-			var target = $(e.currentTarget);
-			this.user.set(target.attr('name'),target.val());
-		},
-
 		submitReg: function(e) {
+			e.preventDefault();
 			var that = this;
+
+			$('.register-form :input').not('.date-split').each(function(index) {
+				that.user.set($(this).attr('name'), $(this).val());
+			});
+
+			this.user.set('dob', $('.date-split').map(function() {
+				return $(this).val();
+			}).get().join('-'));
+
+
 			var target = $(e.currentTarget);
 			target.attr("disabled","disabled").text("Please wait...");
 			this.app.users.register(this.user.toJSON()).done(function () {
 				that.$('.error').hide();
 				that.trigger("registered");
-			}).fail(function () {
-				that.$('.error').show().html(JSON.parse(response.responseText).error); // FIXME
+			}).fail(function (response) {
+				var errors = JSON.parse(response.responseText).error;
+				var errorBox = that.$('.error').show().html('');
+				_.each(errors, function(error) {
+					errorBox.append('<p>'+error+'</p>');
+				});
 			}).always(function () {
-				target.removeAttr("disabled").text("Register");	
+				target.removeAttr("disabled").text("Register");
 			});
 		}
 	});
@@ -82,6 +99,7 @@
 
 		initialize: function (options) {
 			this.app = options.app;
+			console.log("JK")
 		},
 
 		setUser: function(user, existingSession) {
@@ -97,15 +115,21 @@
 				that.$('.error').hide();
 				that.trigger("loggedIn");
 			}).fail(function (msg) {
-				that.$('.error').show().html(msg);
+				if (msg) {
+					that.$('.error').show().html(msg);
+				}
+			}).always(function () {
+				that.$('.facebook-button').removeAttr('disabled').text('Login with Facebook');	
 			});
 		},
 
 		register: function () {
+			console.log("HJK")
 			this.app.router.navigate("register", { trigger: true });
 		},
 
-		normalLogin: function () {
+		normalLogin: function (e) {
+			e.preventDefault();
 			var that = this,
 				email = $('#inputEmail').val(),
 				password = $('#inputPassword').val();
@@ -114,6 +138,7 @@
 				that.$('.error').hide();
 				that.trigger("loggedIn");
 			}).fail(function (response) {
+				console.log(response)
 				that.$('.error').show().html(JSON.parse(response.responseText).error);
 			});
 		},

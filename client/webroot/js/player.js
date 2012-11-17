@@ -1,6 +1,6 @@
 
 (function(y4) {
-	"use strict";
+	//"use strict";
 
 	y4.PlayerView = Backbone.View.extend({
 		className: "player",
@@ -14,21 +14,21 @@
 			this.channels = new y4.Channels();
 
 			this.videoLayer.on("set", function () {
-				//that.videoLayer.show();
+				that.videoLayer.show();
 			}).on("start", function () {
 				that.blackLayer.hide();
 			}).on("finish", function () {
-				that.blackLayer.show();
-				//that.videoLayer.hide();
+				//that.blackLayer.show();
+				that.videoLayer.hide();
 			});
-			/*this.stillLayer.on("set", function () {
+			this.stillLayer.on("set", function () {
 				that.stillLayer.show();
 			}).on("start", function () {
-				that.blackLayer.hide();
+				//that.blackLayer.hide();
 			}).on("finish", function () {
 				that.blackLayer.show();
-				that.stillLayer.hide();
-			});*/
+				//that.stillLayer.hide();
+			});
 
 		},
 
@@ -42,6 +42,14 @@
 				this.stillLayer.render().hide().el,
 				this.overlayLayer.render().show().el);
 			return this;
+		},
+
+		setPlaylist: function (playlist) {
+			if (this.playlistView) {
+				this.playlistView.close();// TODO
+			}
+			this.playlistView = new y4.PlaylistView({ playlist: playlist });
+			$(".playlist-container").html("").append(this.playlistView.render().el);
 		},
 
 		setAdvert: function (advert) {
@@ -58,26 +66,12 @@
 
 		},
 		setBroadcast: function (broadcast) {
-			var programmes = new y4.Programmes([{ id: broadcast.get("programme_id") }]),
-				programme = programmes.first(),
-				log;
-			programme.fetch().done(function () {
-				console.log("Programme: " + programme.get("title") + " (" + log + ")");
-			});
-			switch (Number(broadcast.get("recordState"))) {
-			case 0:
-			case 1:
-				var channel = this.channels.get(broadcast.get("channel_id"));
-				this.videoLayer.set("your4", channel.get("url"));
-				log = "live on " + channel.get("name");
-				break;
-			case 2:
-				this.videoLayer.set("vod", broadcast.get("uid"));
-				log = "on-demand";
-				break;
-			case 3:
-				// Video deleted!!
-			}
+			var channel = this.channels.get(broadcast.get("channel_id"));
+			this.videoLayer.set("your4", channel.get("url"));
+		},
+
+		setProgramme: function (programme) {
+			this.videoLayer.set("vod", programme.get("uid"));
 		},
 
 		play: function () {
@@ -120,10 +114,11 @@
 		play: function () { this.videoEl.play(); },
 		stop: function() { this.videoEl.pause(); },
 		set: function (service, url) {
+			console.log("http://" + this.options.server + "/" + service + "/" + url + "/playlist.m3u8");
 			if (this.url === url && this.service == service) { return; }
 			var that = this;
 			this.url = url;
-			this.$video.attr("src", "http://" + this.options.server + "/" + this.service + "/" + url + "/playlist.m3u8");
+			this.$video.attr("src", "http://" + this.options.server + "/" + service + "/" + url + "/playlist.m3u8");
 			this.videoEl.load();
 			this.play();
 			return this;
@@ -131,11 +126,18 @@
 		render: function () {
 			LayerView.prototype.render.call(this);
 
-			template = _.template($("#html-video-template").html());
+			var that = this,
+				template = _.template($("#html-video-template").html());
 
 			this.$el.html(template(this.options));
 			this.$video = this.$("video");
 			this.videoEl = this.$video[0];
+
+			this.$video.on("play", function () {
+				that.trigger("start");
+			}).on("ended", function () {
+				that.trigger("finish");
+			});
 
 			return this;
 		}
@@ -218,13 +220,80 @@
 		zIndex: 3,
 		set: function (url) {
 			console.log(this.$("iframe"))
-			this.$("iframe").attr("href", url);
+			this.$("iframe").attr("src", url);
 			return this;
 		},
 		render: function () {
 			LayerView.prototype.render.call(this);
 			this.$el.html(y4.templates["overlay-layer"]);
 			console.log(y4.templates["overlay-layer"])
+			return this;
+		}
+	});
+
+	y4.PlaylistView = Backbone.View.extend({
+		className: "playlist",
+		initialize: function (options) {
+			var that = this;
+			this.playlist = options.playlist;
+			this.playlist.on("add", this.addItem, this);
+			this.playlist.on("remove", this.removeItem, this);
+			this.itemViews = {};
+			this.updateTimer = setInterval(function () {
+				that.updateItemViews();
+			}, 1000);
+		},
+		render: function () {
+			this.$el.html('<div class="now-line"></div>');
+			return this;
+		},
+		close: function () {
+			clearTimeout(this.updateTimer);
+			this.off();
+			this.remove();
+			return this;
+		},
+		removeItem: function (item) {
+			this.itemViews[item.cid].close();
+		},
+		addItem: function (item) {
+			var view = new y4.PlaylistItemView({ item: item });
+			this.itemViews[item.cid] = view;
+			this.$el.append(view.render().el);
+		},
+		updateItemViews: function () {
+			_.each(this.itemViews, function (view) {
+				view.update();
+			});
+		}
+	});
+
+	y4.PlaylistItemView = Backbone.View.extend({
+		className: "playlist-item",
+		initialize: function (options) {
+			this.item = options.item;
+			this.item.on("change", this.render, this);
+		},
+		close: function () {
+			this.off();
+			this.remove();
+			this.item.off("change", this.render);
+			return this;
+		},
+		render: function () {
+			this.$el.html(y4.templates["playlist-item"](_.extend({
+				duration: this.item.duration(),
+				title: this.item.title(),
+				thumbnail: this.item.thumbnail()
+			})));
+			return this.update();
+		},
+		update: function () {
+			this.$el.css({
+				backgroundColor: this.item.get("type") === "adbreak" ? "#FFB917" : "#333",
+				left: 50 + (this.item.localTime() - y4.now()) / 240 + "%",
+				width: this.item.duration() / 240 + "%"
+			});
 			return this;
 		}
 	});
