@@ -153,3 +153,6 @@ function postcode_to_coord($postcode) {
 
 }
 
+function programmeUrl ($programme) {
+	return 'prog-' . preg_replace('/[^\da-z]/i', '', $programme->uid);
+}

@@ -8,12 +8,14 @@ function getSchedule($broadcast, $state = null) {
 	}
 	return array(
 		'id' => $broadcast->id,
+		'programme_id' => $programme->id,
 		'programme_uid' => $programme->uid,
 		'channel_uid' => $channel->uid,
 		'timestamp' => $broadcast->time,
 		'duration' => $broadcast->programme->duration,
 		'durationMS' => $broadcast->programme->duration * 1000,
-		'programmeRecordState' => $programme->recordState
+		'programmeRecordState' => $programme->recordState,
+		'programme_url' => programmeUrl($programme)
 	);
 }
 
