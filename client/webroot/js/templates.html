@@ -23,16 +23,22 @@
 	<div class="thumb">
 		<img src="<%= thumbnail %>">
 	</div>
-	<div class="info">
-		<div class="title"><%= title %></div>
-		<div class="duration"><%= duration %></div>
-	</div>
+	<% if (type !== "adbreak") { %>
+		<div class="info">
+			<div class="title"><%= title %></div>
+			<div class="duration"><%= duration %></div>
+			<div class="label <%= live ? "label-important" : "label-info" %>"><%= live ? "LIVE" : "CATCH-UP" %></div>
+		</div>
+	<% } %>
 </script>
 <script id="still-layer-template" type="text/template">
 	<div class="image-frame"><img class="still" src=""></div>
 </script>
 <script id="overlay-layer-template" type="text/template">
 	<iframe width="100%" height="100%"></iframe>
+</script>
+<script id="skip-layer-template" type="text/template">
+	<a href="javascript:;" class="skip">Skip</a>
 </script>
 <script id="login-template" type="text/template">
 	<div class="logon-inner">

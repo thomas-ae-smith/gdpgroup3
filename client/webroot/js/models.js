@@ -63,7 +63,6 @@
 			this.timeOffset = ((new Date()).getTime() / 1000) - this.get("timenow");
 		},
 		started: function () {
-			console.log(this.timeOffset)
 			return ((new Date()).getTime() / 1000) + this.timeOffset > this.get("time");
 		},
 		secondsTillStart: function () {
@@ -71,9 +70,10 @@
 		},
 		fetchProgramme: function () {
 			var collection = new y4.Programmes([{ id: this.get("programme_id") }]),
+				programme = collection.first(),
 				dfd = $.Deferred();
-			collection.at(0).fetch().done(function () {
-				dfd.resolve(collection.at(0));
+			programme.fetch().done(function () {
+				dfd.resolve(programme);
 			}).fail(function () { dfd.reject() });
 			return dfd;
 		}
@@ -338,6 +338,9 @@
 	});
 
 	y4.PlaylistItem = Backbone.Model.extend({
+		defaults: {
+			live: false
+		},
 		initialize: function (m, options) {
 			this.timeOffset = options.timeOffset;
 			this.item = this.get("item");
@@ -397,15 +400,18 @@
 		},
 
 		start: function () {
+			console.log("NBAHHH", this.first())
 			this.playItem(0);
 			return this;
 		},
 
 		playItem: function (i) {
 			var that = this;
-			console.log("JJ", this.at(i))
+			console.log("Starting on ", this.at(i), i)
 			this.at(i).start().on("finish", function () {
-				that.playItem(i + 1);
+				if (i + 1 < that.length) {
+					that.playItem(i + 1);
+				}
 			});
 		},
 
@@ -425,12 +431,10 @@
 				});
 
 			that.pushAdvertRecommendation(timelimit, programmeId, advertIds).done(function (advert) {
-				console.log("Added advert: " + advert.get("title") + " (" + advert.duration() + "s)")
 				that.pushAdvert(timelimit - advert.duration()).done(function (timeleft) {
 					dfd.resolve(timeleft);
 				});
 			}).fail(function () {
-				console.log("Done")
 				dfd.resolve(timelimit);
 			});
 			return dfd;
@@ -531,7 +535,6 @@
 		},
 
 		broadcasterPlaylistEndTime: function () {
-			console.log(this.broadcasterPlaylistStartTime(), this.totalDuration())
 			return this.broadcasterPlaylistStartTime() + this.totalDuration();
 		},
 
@@ -541,7 +544,6 @@
 		},
 
 		playItem: function (i) {
-			console.log("play", i)
 			var that = this;
 			this.at(i).start().on("finish", function () {
 				that.playItem(i + 1);
@@ -550,7 +552,6 @@
 
 		totalDuration: function () {
 			return this.reduce(function (memo, item) {
-				console.log("POP", item.get("partOfProgramme"), item, item.item.duration())
 				if (!item.get("partOfProgramme")) {
 					memo += Number(item.item.duration());
 				}
@@ -614,13 +615,12 @@
 
 			console.log("Pushing " + programme.get("title"));
 			console.log("Filling break")
-				console.log("BREAKS - ", programme)
 			// Fill in time before start with adverts
 			this.pushAdverts(breakBeforeDuration, programme).dfd.done(function () {
-
 				var time = that.broadcasterPlaylistEndTime(),
 					item = new y4.PlaylistItem({
 						type: "programme",
+						live: broadcast ? true : false,
 						item: programme,
 						time: time
 					}, { timeOffset: that.timeOffset });
@@ -697,7 +697,7 @@
 				dfd = $.Deferred();
 			(new y4.Broadcasts()).recommendation(this.user.id, startTime).done(function (broadcast) {
 				broadcast.fetchProgramme().done(function (programme) {
-					that.pushProgramme(programme, broadcast.get("time") - that.broadcasterPlaylistEndTime()).done(function () {
+					that.pushProgramme(programme, broadcast.get("time") - that.broadcasterPlaylistEndTime(), broadcast).done(function () {
 						dfd.resolve();
 					}).fail(function () { console.error("FIXME: impossible case"); });
 				}).fail(function () { console.error("FIXME: impossible case"); });
@@ -706,9 +706,10 @@
 		},
 		pushVodRecommendation: function () {
 			var that = this,
-				dfd = $.Deferred();
+				dfd = $.Deferred(),
+				duration = this.totalDuration();
 			(new y4.Programmes()).recommendation(this.user.id).done(function (programme) {
-				that.pushProgramme(programme, 120).done(function () {
+				that.pushProgramme(programme, duration < 100 ? 0 : 120).done(function () {
 					dfd.resolve();
 				});
 			}).fail(function () { console.error("FIXME: impossible case"); });

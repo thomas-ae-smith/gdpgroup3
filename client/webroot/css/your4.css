@@ -262,6 +262,25 @@ body {
 	background: black;
 }
 
+.player .skip-layer .skip {
+	position: absolute;
+	display: block;
+	bottom: 20px;
+	left: 80px;
+	right: 80px;
+	background: black;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	padding: 8px;
+	border: 1px solid white;
+	border-radius: 8px;
+}
+
+.player .skip-layer .skip:hover {
+	text-decoration: none;
+}
+
 .player .still-frame,
 .start-container .still-frame {
 	/*background: #221199;*/
@@ -357,7 +376,7 @@ video {
 }
 .playlist-item .info {
 	position: absolute;
-	left: 85px;
+	left: 15px;
 	top: 0;
 	bottom: 0;
 	right: 0;

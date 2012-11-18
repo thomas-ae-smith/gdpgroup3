@@ -10,6 +10,7 @@
 			this.videoLayer = new VideoLayer({ server: options.server });
 			this.blackLayer = new y4.BlackLayerView();
 			this.stillLayer = new y4.StillLayerView();
+			this.skipLayer = new y4.SkipLayerView();
 			this.overlayLayer = new y4.OverlayLayerView();
 			this.channels = new y4.Channels();
 
@@ -18,16 +19,23 @@
 			}).on("start", function () {
 				that.blackLayer.hide();
 			}).on("finish", function () {
-				//that.blackLayer.show();
+				that.blackLayer.show();
 				that.videoLayer.hide();
+				that.skipLayer.hide();
+				that.overlayLayer.hide();
 			});
 			this.stillLayer.on("set", function () {
 				that.stillLayer.show();
 			}).on("start", function () {
-				//that.blackLayer.hide();
+				that.blackLayer.hide();
 			}).on("finish", function () {
 				that.blackLayer.show();
-				//that.stillLayer.hide();
+				that.stillLayer.hide();
+				that.skipLayer.hide();
+				that.overlayLayer.hide();
+			});
+			this.skipLayer.on("skip", function (o) {
+				console.log("Skipped - ", o)
 			});
 
 		},
@@ -40,6 +48,7 @@
 				this.videoLayer.render().el,
 				this.blackLayer.render().el,
 				this.stillLayer.render().hide().el,
+				this.skipLayer.render().hide().el,
 				this.overlayLayer.render().show().el);
 			return this;
 		},
@@ -53,7 +62,6 @@
 		},
 
 		setAdvert: function (advert) {
-			console.log("Play advert", advert)
 			switch (advert.get("type")) {
 			case "still":
 				this.stillLayer.set(advert.get("url"));
@@ -63,7 +71,7 @@
 				break;
 			}
 			this.overlayLayer.set("http://your4.tv/overlay.php#" + advert.id)
-
+			this.skipLayer.showAfterDelay();
 		},
 		setBroadcast: function (broadcast) {
 			var channel = this.channels.get(broadcast.get("channel_id"));
@@ -71,7 +79,7 @@
 		},
 
 		setProgramme: function (programme) {
-			this.videoLayer.set("vod", programme.get("uid"));
+			this.videoLayer.set("vod", programme.get("url"));
 		},
 
 		play: function () {
@@ -148,7 +156,8 @@
 		stop: function () { console.log("TODO") },
 		set: function (service, url) {
 			console.log('rtmp://' + this.options.server + '/' + service, url);
-			if (this.url === url && this.service === service) { return; }
+			// Is there no need to change channel
+			if (this.url === url && this.service === "y4") { return; }
 			this.service = service;
 			this.url = url;
 			this.render();
@@ -219,17 +228,44 @@
 		className: "layer-view overlay-layer",
 		zIndex: 3,
 		set: function (url) {
-			console.log(this.$("iframe"))
 			this.$("iframe").attr("src", url);
 			return this;
 		},
 		render: function () {
 			LayerView.prototype.render.call(this);
 			this.$el.html(y4.templates["overlay-layer"]);
-			console.log(y4.templates["overlay-layer"])
 			return this;
 		}
 	});
+
+	y4.SkipLayerView = LayerView.extend({
+		className: "layer-view skip-layer",
+		zIndex: 5,
+		events: {
+			".skip": "showReasons",
+			".reason": "skip"
+		},
+		render: function () {
+			LayerView.prototype.render.call(this);
+			this.$el.html(y4.templates["skip-layer"]);
+			return this;
+		},
+		showReasons: function () {
+			this.$(".reasons").show();
+		},
+		skip: function () {
+			this.trigger("skip", {
+				reason: "",
+				time: ""
+			});
+		},
+		showAfterDelay: function () {
+			var that = this;
+			setTimeout(function () {
+				that.show();
+			}, 2000);
+		}
+	})
 
 	y4.PlaylistView = Backbone.View.extend({
 		className: "playlist",
@@ -281,18 +317,19 @@
 			return this;
 		},
 		render: function () {
+			console.log(this.item.get("type"))
 			this.$el.html(y4.templates["playlist-item"](_.extend({
 				duration: this.item.duration(),
 				title: this.item.title(),
 				thumbnail: this.item.thumbnail()
-			})));
+			}, this.item.toJSON())));
 			return this.update();
 		},
 		update: function () {
 			this.$el.css({
 				backgroundColor: this.item.get("type") === "adbreak" ? "#FFB917" : "#333",
-				left: 50 + (this.item.localTime() - y4.now()) / 240 + "%",
-				width: this.item.duration() / 240 + "%"
+				left: 50 + (this.item.localTime() - y4.now()) / 100 + "%",
+				width: this.item.duration() / 100 + "%"
 			});
 			return this;
 		}

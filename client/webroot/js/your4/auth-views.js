@@ -99,7 +99,6 @@
 
 		initialize: function (options) {
 			this.app = options.app;
-			console.log("JK")
 		},
 
 		setUser: function(user, existingSession) {
