@@ -30,7 +30,7 @@
 		goAdvert: function (id, edit) {
 			var that = this,
 				advert = id === "new" ? new y4.Advert() : this.adverts.get(id),
-				impressions = this.impressions.where({ "advert_id": id}),
+				impressions = new y4.Impressions(this.impressions.where({ "advert_id": id})),
 				view = advert ?
 						( edit ?
 						new y4.pages.AdvertEdit({ advert: advert, app: this }) :
@@ -270,9 +270,11 @@
 			this.adverts = options.app.adverts;
 			this.title = "Advert: " + this.advert.get("title");
 			this.advert.set({"impressions": options.impressions,
-							"firstshown": _.min(options.impressions, function(impression) { return impression.get("timestamp"); }).get("timestamp"),
-							"counts": _.countBy(options.impressions, function(impression) { return typeof impression.get("clicks")[0] !== "undefined" ? 'clicked' : impression.get("skiptime") ? 'skipped' : 'neither';}),
-							"unique": _.uniq(options.impressions, false, function(impression) { return impression.get("user_id") }).length
+							"firstshown": _.min(options.impressions.pluck("timestamp")),
+							"skipped": options.impressions.filter( function(impression) { return impression.get("skiptime"); }).length,
+							"clicked": options.impressions.filter( function(impression) { return typeof impression.get("clicks")[0] !== "undefined"; }).length,
+							// "counts": _.countBy(options.impressions, function(impression) { return typeof impression.get("clicks")[0] !== "undefined" ? 'clicked' : impression.get("skiptime") ? 'skipped' : 'neither';}),
+							"unique": _.uniq(options.impressions.pluck("user_id")).length
 							});
 			console.log(this.advert);	//TODO: remove
 		},
