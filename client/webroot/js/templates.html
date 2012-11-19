@@ -152,11 +152,20 @@
 	</div>
 	<div class="row-fluid">
 		<div class="span6 well">
-			Duration: <em><%= duration %></em> seconds
-			First shown: <em>sometime</em>
-			Views: <em>87</em>
-			Unique: <em>61</em>
-			Skipped: <em>20</em>
+			<table>
+				<tr>
+					<td>Duration:</td><td><em><%= duration %></em> seconds</td>
+					<td>First shown:</td><td><em><%= firstshown %></em></td>
+				</tr>
+				<tr>
+					<td>Views:</td><td><em><%= impressions.length %></em></td>
+					<td>Unique:</td><td><em><%= unique %></em></td>
+				</tr>
+				<tr>
+					<td>Skipped:</td><td><em><%= counts.skipped %></em></td>
+					<td>Clicked:</td><td><em><%= counts.clicked %></em></td>
+				</tr>
+			</table>
 		</div>
 
 		<div class="span6">

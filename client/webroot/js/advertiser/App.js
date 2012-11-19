@@ -30,10 +30,11 @@
 		goAdvert: function (id, edit) {
 			var that = this,
 				advert = id === "new" ? new y4.Advert() : this.adverts.get(id),
+				impressions = this.impressions.where({ "advert_id": id}),
 				view = advert ?
 						( edit ?
 						new y4.pages.AdvertEdit({ advert: advert, app: this }) :
-						new y4.pages.AdvertFull({ advert: advert, app: this }) ) :
+						new y4.pages.AdvertFull({ advert: advert, impressions: impressions, app: this }) ) :
 					new y4.pages.NotFound({ message: "Advert not found." });
 			view.on("return", function () {
 				that.router.navigate("adverts", { trigger: true });
@@ -268,6 +269,12 @@
 			this.advert = options.advert;
 			this.adverts = options.app.adverts;
 			this.title = "Advert: " + this.advert.get("title");
+			this.advert.set({"impressions": options.impressions,
+							"firstshown": _.min(options.impressions, function(impression) { return impression.get("timestamp"); }).get("timestamp"),
+							"counts": _.countBy(options.impressions, function(impression) { return typeof impression.get("clicks")[0] !== "undefined" ? 'clicked' : impression.get("skiptime") ? 'skipped' : 'neither';}),
+							"unique": _.uniq(options.impressions, false, function(impression) { return impression.get("user_id") }).length
+							});
+			console.log(this.advert);	//TODO: remove
 		},
 		render: function () {
 			var that = this;
