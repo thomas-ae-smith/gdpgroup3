@@ -228,6 +228,33 @@
 	<label class="" for="advert-overlay">Overlay</label>
 	<div id="advert-overlay"><div class="ace-container"><%= htmlEscape(overlay) %></div></div>
 </script>
+<script type="text/html" id="impression-list-template">
+	<div class="toolbar"></div>
+	<table class="table">
+		<thead>
+			<tr>
+				<th width="200">Timestamp</th>
+				<th width="200">Advert</th>
+				<th width="200">User</th>
+				<th width="200">Skiptime</th>
+				<th width="200">Clicktime</th>
+				<th width="200">ClickLocation</th>
+			</tr>
+		</thead>
+		<tbody class="list">
+		</tbody>
+	</table>
+</script>
+<script type="text/html" id="impression-list-item-template">
+	<tr>
+		<td><%= timestamp %></td>
+		<td><%= advert_id %></td>
+		<td><%= user_id %></td>
+		<td><%= skiptime !== null ? skiptime : "-" %></td>
+		<td><%= typeof clicks[0] !== "undefined" ? clicks[0].time : "-" %></td>
+		<td><%= typeof clicks[0] !== "undefined" ? "( " + clicks[0].percentX + ", " + clicks[0].percentY + " )" : "-" %></td>
+	</tr>
+</script>
 <script type="text/html" id="campaign-list-template">
 	<div class="toolbar"><button class="btn create">Create</button></div>
 	<table class="table table-striped">

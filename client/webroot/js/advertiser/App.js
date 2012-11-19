@@ -5,12 +5,14 @@
 		className: "app",
 		links: [
 			{ title: "Home", hash: "" },
-			{ title: "Adverts", hash: "adverts"  },
-			{ title: "Campaigns", hash: "campaigns"  }
+			{ title: "Adverts", hash: "adverts" },
+			{ title: "Impressions", hash: "impressions" },
+			{ title: "Campaigns", hash: "campaigns" }
 		],
 		initialize: function () {
 			this.router = new Router({ app: this });
 			this.adverts = new y4.Adverts();
+			this.impressions = new y4.Impressions();
 			this.campaigns = new y4.Campaigns(undefined, { adverts: this.adverts });
 		},
 		goAdverts: function () {
@@ -38,6 +40,11 @@
 			}).on("edit", function (id) {
 				that.router.navigate("adverts/" + id + "/edit", { trigger: true });
 			});
+			return this.render(view);
+		},
+		goImpressions: function () {
+			var that = this,
+				view = new y4.pages.ImpressionList({ collection: this.impressions, app: this });
 			return this.render(view);
 		},
 		goCampaigns: function () {
@@ -105,7 +112,7 @@
 		},
 		start: function () {
 			var that = this;
-			$.when(this.adverts.fetch(), that.campaigns.fetch()).then(function () {
+			$.when(this.adverts.fetch(), that.impressions.fetch(), that.campaigns.fetch()).then(function () {
 				Backbone.history.start();
 			}).fail(function () {
 				that.$el.html('<div class="alert alert-error" style="width: 700px; margin: 40px auto;"><b>Error while loading page.</b></div>')
@@ -118,6 +125,7 @@
 		routes: {
 			"": "home",
 			"adverts": "adverts",
+			"impressions": "impressions",
 			"adverts/:id": "advert",
 			"adverts/:id/edit": "editadvert",
 			"campaigns": "campaigns",
@@ -128,6 +136,7 @@
 		home: function () { this.app.home(); },
 		adverts: function () { this.app.goAdverts(); },
 		advert: function (id) { this.app.goAdvert(id); },
+		impressions: function () { this.app.goImpressions(); },
 		editadvert: function (id) { this.app.goAdvert(id, true); },
 		campaigns: function () { this.app.goCampaigns(); },
 		campaign: function (id) { this.app.goCampaign(id); },
@@ -229,6 +238,13 @@
 		itemTemplate: "advert-list-item"
 	});
 
+	y4.pages.ImpressionList = y4.Page.extend(y4.List.prototype).extend({
+		title: "Impressions",
+		className: "impression-list",
+		template: "impression-list",
+		itemTemplate: "impression-list-item"
+	});
+
 	y4.pages.CampaignList = y4.Page.extend(y4.List.prototype).extend({
 		title: "Campaigns",
 		className: "campaign-list",
@@ -267,7 +283,7 @@
 				scrollWheelZoom: false
 			})
 			L.tileLayer('http://{s}.tile.cloudmade.com/1b189a705e22441c86cdb384a5bc7837/997/256/{z}/{x}/{y}.png', {
-				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy <a href="http://cloudmade.com">CloudMade</a>',
+				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://cloudmade.com">CloudMade</a>',
 				maxZoom: 18
 			}).addTo(map);
 
