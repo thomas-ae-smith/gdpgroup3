@@ -4,7 +4,7 @@
 
 require __DIR__ . '/../system/config.php';
 require __DIR__ . '/../system/common.php';
-require 'genres.php';
+require __DIR__ . '/genres.php';
 
 set_db('your4');
 
@@ -98,7 +98,6 @@ array_walk($channels, function ($channelIds, $channelName) use ($config) {
 			$broadcast = R::dispense('broadcast');
 			$broadcast->uid = $itemBroadcast->id;
 			$broadcast->time = strtotime($itemBroadcast->transmission_time);
-			$broadcast->duration = $itemBroadcast->broadcast_duration; // or duration???
 			$broadcast->repeat = isset($itemBroadcast->repeat) ? $itemBroadcast->repeat : false;
 			$broadcast->channel = $channel;
 
@@ -108,6 +107,7 @@ array_walk($channels, function ($channelIds, $channelName) use ($config) {
 				$programme = R::dispense('programme');
 				$programme->uid = $item->curie;
 				$programme->title = $item->title;
+				$programme->duration = $itemBroadcast->broadcast_duration; // or duration???
 				$programme->description = isset($item->description) ? $item->description : '';
 				$programme->episodeNumber = isset($item->episode_number) ? $item->episode_number : null;
 				$programme->sharedGenres = array_filter(array_map(function ($uri) {

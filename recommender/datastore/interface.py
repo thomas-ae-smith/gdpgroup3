@@ -29,50 +29,56 @@ def _time_from_str(timestr):
 def read_db(query):
 	try:
 		conn = mysql.connector.connect(**credentials)
-		cursor = conn.cursor()
-
-		cursor.execute(query)
-		result = cursor.fetchall()
 	except:
-		raise Exception("Error executing mysql query: {q}".format(q=query))
-	finally:
-		cursor.close()
-		conn.close()
+		raise Exception("Error connecting to database!")
+	else:
+		try:
+			cursor = conn.cursor()
+		except:
+			raise Exception("Error executing mysql query: {q}!".format(q=query))
+		else:
+			try:
+				cursor.execute(query)
+				result = cursor.fetchall()
+			finally:
+				cursor.close()
+		finally:
+			conn.close()
 
 	return result
 	
 def write_db(query):
 	try:
 		conn = mysql.connector.connect(**credentials)
-		cursor = conn.cursor()
-
-		cursor.execute(query)
-		conn.commit()
 	except:
-		raise Exception("Error executing mysql query: {q}".format(q=query))
-	finally:
-		cursor.close()
-		conn.close()
+		raise Exception("Error connecting to database!")
+	else:
+		try:
+			cursor = conn.cursor()
+		except:
+			raise Exception("Error executing mysql query: {q}!".format(q=query))
+		else:
+			try:
+				cursor.execute(query)
+				conn.commit()
+			finally:
+				cursor.close()
+		finally:
+			conn.close()
 
 def add_advert_blacklist(userId, advertId):
-	query = (	"INSERT INTO `blacklistAdvert` "
-					"(`user`, `advert`) "
-				"VALUES "
-					"('{uid}', '{aid}')".format(
-						uid=userId, aid=advertId))
+	query = (	"INSERT INTO `blacklist_advert` (`user_id`, `advert_id`) "
+				"VALUES ('{uid}', '{aid}')".format(uid=userId, aid=advertId))
 
 	response = write_db(query)
 
 def add_programme_blacklist(userId, programmeId):
-	query = (	"INSERT INTO `blacklistProgramme` "
-					"(`user`, `programme`) "
-				"VALUES "
-					"('{uid}', '{pid}')".format(
-						uid=userId, pid=programmeId))
+	query = (	"INSERT INTO `blacklist_programme` (`user_id`, `programme_id`) "
+				"VALUES ('{uid}', '{pid}')".format(uid=userId, pid=programmeId))
 
 	response = write_db(query)
 
-def get_advert_pool(uid, pid, when=None, maxlen=None):
+def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=()):
 	"""Given a user id, programme id and time, returns a pool of adverts whose
 	campaigns allow the advert to be shown to the given user during the given
 	programme at the given time. Advert ids are returned along with the
@@ -80,7 +86,7 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 	if when is None:
 		when = datetime.datetime.now()
 
-	user_fields = ['dob', 'gender', 'occupation', 'lat', 'long']
+	user_fields = ['dob', 'gender', 'occupation_id', 'lat', 'long']
 	user = {user_fields[index]:val for index, val in
 							enumerate(get_user(uid, user_fields))}
 
@@ -107,34 +113,38 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 						"`programme_id` = {pid}").format(pid=pid)
 		genres = [field[0] for field in read_db(genres_query)]
 
-	blacklist_query = (	"SELECT `advert` "
-						"FROM `blacklistAdvert` "
-						"WHERE `user` = {uid}".format(uid=uid))
+	blacklist_query = (	"SELECT `advert_id` "
+						"FROM `blacklist_advert` "
+						"WHERE `user_id` = {uid}".format(uid=uid))
 	blacklisted_adverts = [str(row[0]) for row in read_db(blacklist_query)]
 
 	campaign_query = (
 		"SELECT `c`.`schedule`, `c`.`gender`, `c_a`.`minAge`, `c_a`.`maxAge`, "
 			"`c_b`.`minLong`, `c_b`.`maxLong`, `c_b`.`minLat`, `c_b`.`maxLat`, "
-			"`c_g`.`genres_id`, `c_o`.`occupations_id`, `c_p`.`programmes_id`, "
+			"`c_g`.`genre_id`, `c_o`.`occupation_id`, `c_p`.`programme_id`, "
 			"`c_t`.`dayOfWeek`, `c_t`.`startTime`, `c_t`.`endTime`, "
-			"`a_c`.`adverts_id`, `c`.`id`, `c`.`nicheness`"
-		"FROM `campaigns` as c "
-		"LEFT JOIN `time`              AS c_t ON `c`.`id`=`c_t`.`campaigns_id` "
-		"LEFT JOIN `agerange`          AS c_a ON `c`.`id`=`c_a`.`campaigns_id` "
-		"LEFT JOIN `boundingbox`       AS c_b ON `c`.`id`=`c_b`.`campaigns_id` "
-		"LEFT JOIN `campaigns_genres`  AS c_g ON `c`.`id`=`c_g`.`campaigns_id` "
-		"LEFT JOIN `adverts_campaigns` AS a_c ON `c`.`id`=`a_c`.`campaigns_id` "
-		"LEFT JOIN `adverts`           AS a   ON `a`.`id`=`a_c`.`adverts_id` "
-		"LEFT JOIN `campaigns_programmes`  AS c_p "
-			"ON `c`.`id`=`c_p`.`campaigns_id` "
-		"LEFT JOIN `campaigns_occupations` AS c_o "
-			"ON `c`.`id`=`c_o`.`campaigns_id` "
+			"`a_c`.`advert_id`, `c`.`id`, `c`.`nicheness`"
+		"FROM `campaign` as c "
+		"LEFT JOIN `time`             AS c_t ON `c`.`id`=`c_t`.`campaign_id` "
+		"LEFT JOIN `agerange`         AS c_a ON `c`.`id`=`c_a`.`campaign_id` "
+		"LEFT JOIN `boundingbox`      AS c_b ON `c`.`id`=`c_b`.`campaign_id` "
+		"LEFT JOIN `campaign_genre`  AS c_g ON `c`.`id`=`c_g`.`campaign_id` "
+		"LEFT JOIN `advert_campaign` AS a_c ON `c`.`id`=`a_c`.`campaign_id` "
+		"LEFT JOIN `advert`          AS a   ON `a`.`id`=`a_c`.`advert_id` "
+		"LEFT JOIN `campaign_programme`  AS c_p "
+			"ON `c`.`id`=`c_p`.`campaign_id` "
+		"LEFT JOIN `campaign_occupation` AS c_o "
+			"ON `c`.`id`=`c_o`.`campaign_id` "
 		"WHERE {when} BETWEEN `c`.`startDate` AND `c`.`endDate`"
 	).format(when=when)
 
 	if blacklisted_adverts:
-		campaign_query += " AND `a_c`.`adverts_id` NOT IN {blacklist}".format(
+		campaign_query += " AND `a_c`.`advert_id` NOT IN {blacklist}".format(
 			blacklist="('{ads}')".format(ads="','".join(blacklisted_adverts)))
+
+	if exclude:
+		campaign_query += " AND `a_c`.`advert_id` NOT IN ({exclude})".format(
+			exclude=','.join(str(p) for p in exclude))
 
 	if maxlen != float('inf'):
 		campaign_query += " AND `a`.`duration` <= {maxlen}".format(
@@ -142,7 +152,7 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 
 	restrictions = read_db(campaign_query)
 	restriction_fields = ['schedule', 'gender', 'minAge', 'maxAge', 'minLong',
-						'maxLong', 'minLat', 'maxLat', 'genre', 'occupation',
+						'maxLong', 'minLat', 'maxLat', 'genre', 'occupation_id',
 						'programme', 'dayOfWeek', 'startTime', 'endTime']
 	campaigns = {}
 	for fields in restrictions:
@@ -159,7 +169,7 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 			'minLat': lambda: user['lat'] >= float(restrict['minLat']),
 			'maxLat': lambda: user['lat'] <= float(restrict['maxLat']),
 			'genre': lambda: pid and restrict['genre'] in genres,
-			'occupation': lambda: user['occupation'] == restrict['occupation'],
+			'occupation_id': lambda: user['occupation_id'] == restrict['occupation_id'],
 			'programme': lambda: pid and broadcast['pid'] == restrict['programme'],
 			'dayOfWeek': lambda: dt.isoweekday() == restrict['dayOfWeek'],
 			'startTime': lambda: dt.time() >= _time_from_str(
@@ -190,9 +200,9 @@ def get_advert_pool(uid, pid, when=None, maxlen=None):
 	return campaigns
 
 def get_ad(campaignId):
-	query = (	"SELECT `adverts_id` "
-				"FROM `adverts_campaigns` "
-				"WHERE `campaigns_id` = {campaignId}".format(
+	query = (	"SELECT `advert_id` "
+				"FROM `advert_campaign` "
+				"WHERE `campaign_id` = {campaignId}".format(
 					campaignId=campaignId))
 				
 	response = read_db(query)
@@ -212,9 +222,9 @@ def get_broadcast_pool(userId, startTime=time(), lookahead=300):
 					"(`brand`.`id` = `programme`.`brand_id`) "	
 				"WHERE `broadcast`.`time` BETWEEN {start_time} AND {end_time} "
 				"AND `programme`.`id` NOT IN ("
-					"SELECT `programme` "
-					"FROM `blacklistProgramme` "
-					"WHERE `blacklistProgramme`.`user` = {uid}"
+					"SELECT `programme_id` "
+					"FROM `blacklist_programme` "
+					"WHERE `blacklist_programme`.`user_id` = {uid}"
 				")".format(uid=userId,
 						start_time=int(startTime),
 						end_time=int(startTime + lookahead)))
@@ -227,16 +237,16 @@ def get_broadcast_pool(userId, startTime=time(), lookahead=300):
 	return channel_vectors
 
 
-def get_programme(pid, fields=()):
-	"""Returns a tuple of the values of the given fields for a programme with
-	the given id. If no fields are specified, all are returned."""
-	query = (	'SELECT '+_field_string(fields)+' '
-				'FROM `programme` '
-				'WHERE `id`='+str(pid))
+def get_programme_vector(pid):
+	query = (	"SELECT `brand`.`vector` "
+				"FROM `brand` "
+				"LEFT JOIN `programme` "
+				"ON `brand`.`id` = `programme`.`brand_id` "
+				"WHERE `programme`.`id`= "+str(pid))
 
 	response = read_db(query)
 
-	return response[0]
+	return response[0][0]
 
 def get_user(userid, fields=()):
 	"""Returns a tuple of the values of the given fields for a user with

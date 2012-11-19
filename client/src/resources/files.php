@@ -27,10 +27,14 @@ function generateVideoThumbnail($thumbnail, $video) {
 	return str_replace('../../webroot', 'http://www.your4.tv', $thumbnail);
 }
 
-function uploadVideo($path) {
-//        $conn = ftp_connect($url); 
-	$url = '';
-	return $url;
+function uploadVideo($filename, $path) {
+    $conn = ftp_connect('152.78.144.19');
+	$login = ftp_login($conn, 'adSoton', 'MountainDew2012');
+	if (!$conn || !$login) { internalError('Unable to connect to advert server.'); }
+	$upload = ftp_put($conn, $filename, $path, FTP_BINARY);
+	if (!$upload) { internalError('Unable to upload to advert server.'); }
+	ftp_close($conn);
+	return $filename;
 }
 
 function findAvailableName($filePath) {
@@ -78,7 +82,7 @@ $app->post('/files(/)', function() use ($app) {
 	if ($video) {
 		$thumbnailPath = findAvailableName('../../webroot/img/thumbs/videos/' . $fileName);
 		$thumbnail = generateVideoThumbnail($thumbnailPath, $video);
-		$url = uploadVideo($fileTmp);
+		$url = uploadVideo(rand(0, 1000000000) . '.mp4', $fileTmp);
 		output_json(array(
         	        'type' => 'video',
 	                'url' => $url,
