@@ -1,14 +1,7 @@
 (function (y4) {
-<<<<<<< local
 	//"use strict";
 
 	var baseUrl = window.location.hostname;
-=======
-	"use strict";
-	
-	// var baseUrl = window.location.hostname + window.location.pathname;
-	var baseUrl = "your4.tv";
->>>>>>> other
 
 	// Following should be removed
 	var virtualenvs = ["users.ecs.soton.ac.uk", "linuxproj.ecs.soton.ac.uk", "localhost", "your4.tv"];
