@@ -7,15 +7,18 @@ function getIdType($id) {
 function processUser($app, $id) {
 	global $facebook;
 
+	$req = $app->request()->getBody();
+	$new_user = false;
 	$type = getIdType($id);
 	$id = str_replace('fb-', '', $id);
 	if ($type == 'fb') {
-		$use_fields = array("occupation");
+		$use_fields = array("occupation_id","postcode");
 		$fb_id = $facebook->getUser();
 		if ($fb_id && $fb_id == $id) {
-			$user = R::findOne('users', 'facebookId = ?', array($fb_id));
+			$user = R::findOne('user', 'facebookId = ?', array($fb_id));
 			if (!$user) {
-				$user = R::dispense('users');
+				$new_user = true;
+				$user = R::dispense('user');
 				$user_profile = $facebook->api('/me','GET');
 				$user->import(fb_to_user($user_profile));
 				$user->lastFbRefresh = date('Y-m-d h:i:s');
@@ -25,33 +28,68 @@ function processUser($app, $id) {
 			exit;
 		}
 	} else {
-		$use_fields = array("name","gender","dob","email","occupation","password");
+		$use_fields = array("name","gender","dob","email","occupation_id","postcode","password");
 		if (isset($_SESSION['user']['id'])) {
 			if ($_SESSION['user']['id'] == $id) {
-				$user = R::dispense('users',$id);
+				$user = R::dispense('user',$id);
 			} else {
 				forbidden();
 				exit;
 			}
 		} else {
-			$user = R::dispense('users');
+			$new_user = true;
+			$user = R::dispense('user');
 		}
 	}
 
-	$req = $app->request()->getBody();
+	$current_email = $user->email;
+
 	foreach ($use_fields as $field) {
 		$field_content = $req[$field];
-		if (isset($field_content)) {
+		if (isset($field_content) && $field_content != "") {
 			if ($field == "password") {
 				$salt = substr(sha1(mt_rand()),0,22); //22 char salt for crypt
 				$user->password = crypt($field_content,'$2a$10$'. $salt);
+			} else if ($field == "postcode") {
+				$field_content = strtoupper(str_replace(' ','',$field_content));
+				try {
+					$coords = postcode_to_coord($field_content);
+					$user->lat = $coords['lat'];
+					$user->long = $coords['long'];
+				} catch (Exception $e) {
+					$errors[] = $e->getMessage();
+				}
 			} else {
 				$user->setAttr($field, $field_content);
 			}
-		} else if ($field != "password") {
-			badRequest();
-			exit;
+		} else if ($field != 'password' || ($field == 'password' && $new_user)) {
+			$errors[] = "$field is required";
 		}
+	}
+
+	if ($new_user || $user->email != $current_email) {
+		if (R::findOne('user', ' email = ? ', array($user->email))) {
+			$errors[] = "This email is in use";	
+		}
+	}
+
+	if ($user->occupation_id && !R::dispense('occupation', $user->occupation_id)) {
+		$errors[] = "Occupation not valid";
+	}
+
+	if ($user->dob) {
+		if(!preg_match('/\d\d\d\d-\d\d?-\d\d?/', $user->dob)) {
+			$errors[] = "Invalid date format, numbers only";
+		} else {
+			$dob_parts = explode('-', $user->dob);
+			if (!checkdate($dob_parts[1], $dob_parts[2], $dob_parts[0])) {
+				$errors[] = "Invalid date of birth";
+			}
+		}
+	}
+
+	if (!empty($errors)) {
+		badRequest($errors);
 	}
 
 	if ($type == 'local' && $app->request()->isPost()) {
@@ -94,13 +132,14 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 
 		$query_str = $type == 'fb' ? 'facebookId = ?' : 'id = ?';
 		if (isset($_SESSION['user']['registered'])) {
-			$db_user = R::findOne('users', $query_str, array($id));
+			$db_user = R::findOne('user', $query_str, array($id));
 			if (is_null($db_user)) {
 				logout();
 			}
 		}
-	} else if (isset($_SESSION['user']['id']) || $type != 'fb') {
-		badRequest();
+	} else if (isset($_SESSION['user']['id']) || $type !== 'fb') { // FIXME: this line and below prevent facebook login
+		notFound();
+		//badRequest();
 	}
 
 	// Fetching user by fb id
@@ -111,7 +150,7 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 		if ($user_id && $user_id == $id) {
 
 			// If the user is already in the DB load them into the session
-			$user = $db_user;
+			$user = R::findOne('user', 'facebookId = ?', array($user_id));
 			if ($user) {
 				if ($user->lastFbRefresh == null || strtotime($user->lastFbRefresh) < strtotime('-1 day')) {
         			$user_profile = $facebook->api('/me','GET');
@@ -148,6 +187,7 @@ $app->get('/users/:id(/)', function($id) use ($app) {
 
 	} else if ($type == 'local' && isset($_SESSION['user']['registered'])) {
 		$_SESSION['user'] = $db_user->export();
+		$_SESSION['user']['registered'] = true;
 		output_json($_SESSION['user']);
 	} else {
 		notFound();
@@ -161,9 +201,9 @@ $app->get('/users/', function() use ($app) {
 		badRequest();
 	}
 
-	$user = R::findOne('users','email = ?',array($email));
+	$user = R::findOne('user','email = ?',array($email));
 	if ($user == null) {
-		forbidden();
+		forbidden("Incorrect email or password.");
 	}
 
 	if($user->password == crypt($pass, substr($user->password, 0, 29))) {
@@ -171,7 +211,7 @@ $app->get('/users/', function() use ($app) {
 		$_SESSION['user']['registered'] = true;
 		output_json($_SESSION['user']);
 	} else {
-		forbidden();
+		forbidden("Incorrect email or password.");
 	}
 });
 

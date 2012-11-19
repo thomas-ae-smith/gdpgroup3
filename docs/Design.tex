@@ -1,0 +1,83 @@
+\section{Design}
+
+\subsection{System Layers}
+The user must be able to access the app via a web browser.
+
+It was decided that the TV and programme streams should be delivered to the client via Wowza media server, which would be run on a Windows server. Peter Wood (inqb8r) has had extensive experience with Wowza, and was able promptly to have the server configured to stream, releaving us of any lengthy configuring that might have had to take place with any other system. Additionally, inqb8r were able to provide us with a licensed Wowza server.
+
+LAMP server
+
+\subsection{Programme recommendation}
+
+To populate a users personal TV channel, your4.tv utilises a programme recommendation system. This system only recommends programmes, and is separate from the targetted advert retreiver (described in Section~\ref{sec:design_adverts}). At an abstract level, each programme is given a vector $\mathbf{p}$, which describes what the programme is like. $\mathbf{p}$ lies within the programme space $\mathcal{P}$, and is calculated by the function \texttt{get\_programme\_vector} from the programme information supplied by Atlas. The concrete implementation of this used in your4.tv is that $\mathcal{P}$ is 19-dimentional, where each dimention represents one of the genres:
+\begin{center}
+	\emph{\footnotesize{
+		\begin{tabular}{c c c c c}
+			Action and Adventure & Animation & Children & Comedy & Documentary \\
+			Drama & Game Show & Home and Garden & Mini-Series & News \\
+			Reality & Science-Fiction & Fantasy & Soap & Special Interest \\
+			Sport & Talk Show & Western & Unclassified & 
+		\end{tabular} 
+	}}
+\end{center}
+which is the full set of allowable genres on The Tvdb\footnote{\url{http://thetvdb.com/}} plus `Unclassified', which is reserved for programmes which \texttt{get\_programme\_vector} cannot assign an appropriate vector. To map a programme into this space, \texttt{get\_programme\_vector} uses the supplied programme name to query the Tvdb api\footnote{\url{http://thetvdb.com/wiki/index.php/Programmers_API}} for a programme's genres, and returns a binary vector of genre memberships (for each element: 1 if the programme belongs in genre; 0 otherwise). As an example, the programme `Grand Designs' has genres \emph{Documentary}, \emph{Home and Garden} and \emph{Reality}, so would be assigned the vector $\left[0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0\right]$.
+
+So that a user may be recommended programmes, each user is also given a vector within the space $\mathcal{P}$, which represents their ideal programme. The vector is initialised with the function \texttt{get\_user\_vector}, which, takes a vector of a users demographic information, $\mathbf{d}$, and returns the user vector, $\mathbf{u}$, which exists within $\mathcal{P}$. The function \texttt{get\_user\_vector} is learned using a set of training data containing mappings between users, their demographics and shows they enjoy. While a user uses your4.tv, their actions influence their user vector. Upon giving a programme a rating, $\mathbf{u}$ is moved either towards or away from $\mathbf{p}$ by an amount which depends upon the magnitude of the rating, the initial distance between $\mathbf{u}$ and $\mathbf{p}$, and the learning rate of the recommender which may be tweaked or made inversely proportional to the number of ratings made by the user. The exact change to $\mathbf{u}$, where $\mathbf{u}_{i}$ is the $i_{th}$ component of vector $\mathbf{u}$, $\mathbf{u}'$ is the new user vector, $0 \leq L \leq 1$ is the learning rate and $-1 \leq r \leq 1$ is the rating given is given by:
+
+% Can use dcases in mathtools to make the fractions in the conditional more readable (bigger).
+$$
+	\mathbf{u}_{i}' =
+	\mathbf{u}_{i} + \begin{cases}
+		\left|\mathbf{p}_{i}-\mathbf{u}_{i}\right|Lr \times \frac{\mathbf{p}_{i}-\mathbf{u}_{i}}{\left|\mathbf{p}_{i}-\mathbf{u}_{i}\right|},&
+			\text{if } r\geq 0\\
+		(1-\left|\mathbf{p}_{i}-\mathbf{u}_{i}\right|)Lr \times \frac{\mathbf{p}_{i}-\mathbf{u}_{i}}{\left|\mathbf{p}_{i}-\mathbf{u}_{i}\right|},&
+			\text{otherwise}
+	\end{cases}
+$$
+Because of division by 0 for the case when the user and programme vectors are, on a particular dimension, identical ($\mathbf{p}_{i}-\mathbf{u}_{i}=0$), a special case was required:
+$$
+	\mathbf{u}_{i}' =
+	\mathbf{u}_{i} + \begin{cases}
+		0,&
+			\text{if } r\geq 0\\
+		\operatorname{sign}(\operatorname{random}()-0.5)\times Lr,&
+			\text{otherwise}
+	\end{cases}
+$$
+
+Genres from Tvdb were chosen as a basis for $\mathcal{P}$ instead of the Project4 or Atlas genres, as this solved the problem of finding training data for the learned function \texttt{get\_user\_vector}. No programme viewing data was available using Project4 or Atlas genres, so the MovieLens 1M dataset\footnote{\url{http://www.grouplens.org/node/73}} was downloaded, and the movies mapped to their corresponding Tvdb genres, giving a large dataset of user demographics, movie ratings, and movie vectors within the programme space $\mathcal{P}$ which serve as suitable training data.
+
+The space $\mathcal{P}$ is, by design, coupled only with the functions \texttt{get\_user\_vector} and \texttt{get\_programme\_vector}. As a result of this, \texttt{get\_user\_vector} and \texttt{get\_programme\_vector} may be altered such that $\mathcal{P}$ provides programme representations better suited to recommendation; i.e., more similar programmes are closer together, more different programmes are further apart, and a high amount of granularity is provided.
+
+
+\subsection{Adverts}
+\label{sec:design_adverts}
+
+Adverts will be targetted
+
+\subsubsection{Campaigns}
+
+Data about users will be collected such that adverts may be targetted towards certain demographics:
+\begin{enumerate}
+\item \textit{Age range}
+\item \textit{Gender}
+\item \textit{Location}
+\end{enumerate}
+
+Additionally, an advertiser may specify \textit{when} adverts should appear:
+\begin{enumerate}
+\item \textit{Time of day}
+\item \textit{Day of week}
+\item \textit{Programme that is on}
+\item \textit{Genre of programme that is on}
+\end{enumerate}
+
+\subsubsection{Viewer - consuming adverts}
+
+\subsection{Streaming}
+Each programme will be recorded using the EPG data. Since adverts will be replaced by ones recommended to viewers, it must be known when adverts are due to start and finish. This information is available as a GPI[?] pulse, sent by Channel 4 [more technical details]
+
+- detail of stream origin and how many systems it goes through before reaching us
+- detail about any delay this may cause
+- what limitations are imposed by this? is useful data stripped? does the delay cause inaccuracies?
+

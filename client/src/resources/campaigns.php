@@ -4,9 +4,9 @@ $targetTables = array(
 	'ageRanges' => array('name' => 'ownAgerange', 'fields' => array('minAge', 'maxAge')),
 	'boundingBoxes' => array('name' => 'ownBoundingbox', 'fields' => array('minLat', 'minLong', 'maxLat', 'maxLong')),
 	'times' => array('name' => 'ownTime', 'fields' => array('dayOfWeek', 'startTime', 'endTime')),
-	'genres' => array('name' => 'sharedGenres', 'ids' => true),
-	'occupations' => array('name' => 'sharedOccupations', 'ids' => true),
-	'programmes' => array('name' => 'sharedProgrammes', 'ids' => true)
+	'genres' => array('name' => 'sharedGenre', 'ids' => true),
+	'occupations' => array('name' => 'sharedOccupation', 'ids' => true),
+	'brands' => array('name' => 'sharedBrand', 'ids' => true)
 );
 
 function getTargets(&$bean, $type) {
@@ -38,19 +38,19 @@ function getAllTargets(&$bean) {
 	return $r;
 }
 function campaignExists($id) {
-	$bean = R::load('campaigns', $id);
+	$bean = R::load('campaign', $id);
 	return $bean->id > 0;
 }
 
 $app->get('/campaigns(/)', function () use ($app) {
-	$beans = R::find('campaigns');
+	$beans = R::find('campaign');
 	output_json(array_map(function ($bean) {
 		return getCampaign($bean);
 	}, array_values($beans)));
 });
 
 $app->get('/campaigns/:id', function ($id) use ($app) {
-	$bean = R::load('campaigns', $id);
+	$bean = R::load('campaign', $id);
 	if (!$bean->id) { notFound('Could not find campaign with that ID.'); }
 	output_json(getCampaign($bean));
 });
@@ -58,7 +58,7 @@ $app->get('/campaigns/:id', function ($id) use ($app) {
 function getCampaign ($bean) {
 	$campaign = $bean->export();
 	$id = $campaign['id'];
-	$campaign['adverts'] = array_keys($bean->sharedAdverts);
+	$campaign['adverts'] = array_keys($bean->sharedAdvert);
 	$campaign['targets'] = getAllTargets($bean);
 	$campaign['targets']['genders'] = preg_split('@,@', $campaign['gender'], NULL, PREG_SPLIT_NO_EMPTY); // don't allow set [""]
 	unset($campaign['gender']);
@@ -68,34 +68,17 @@ function getCampaign ($bean) {
 	return $campaign;
 }
 
-//$app->get('/campaigns/:id/adverts(/)', function ($id) use ($app) {
-//	if (campaignExists($id)) { return notFound('Campaign not found.'); }
-//	output_json(getAdverts($id));
-//});
-
-//$app->get('/campaigns/:id/targets(/)', function ($id) use ($app) {
-//	if (campaignExists($id)) { return notFound('Campaign not found.'); }
-//	output_json(getAllTargets($id));
-//});
-
-//$app->get('/campaigns/:id/targets/:type(/)', function ($id, $type) use ($app, $targetTables) {
-//	if (!campaignExists($id)) { return notFound('Campaign not found.'); }
-//	$r = getTargets($id, $type);	
-//	if ($r === false) { return notFound('No such type.'); }
-//	output_json($r);
-//});
-
 $app->put('/campaigns/:id', function ($id) use ($app) {
-        $req = $app->request()->getBody();
-        $campaign = R::load('campaigns', $id);
-        setCampaign($campaign, $req);
+    $req = $app->request()->getBody();
+    $campaign = R::load('campaign', $id);
+    setCampaign($campaign, $req);
 	output_json(getCampaign($campaign));
 });
 
 $app->post('/campaigns(/)', function () use ($app) {
-        $req = $app->request()->getBody();
-        $campaign = R::dispense('campaigns');
-        setCampaign($campaign, $req);
+    $req = $app->request()->getBody();
+    $campaign = R::dispense('campaign');
+    setCampaign($campaign, $req);
 	output_json(getCampaign($campaign));
 });
 
@@ -103,7 +86,7 @@ function setCampaign($campaign, $req) {
 	$campaign->title = $req['title'];
 	$campaign->startDate = $req['startDate'];
 	$campaign->endDate = $req['endDate'];
-	
+
 	$campaign->gender = '';
 	if (in_array('male', $req['targets']['genders'])) {
 		$campaign->gender = 'male';
@@ -124,9 +107,9 @@ function setCampaign($campaign, $req) {
 
     $campaignId = R::store($campaign);
 
-	$campaign->sharedAdverts = array_map(function ($r) {
-		return R::load('adverts', $r);
-	}, ifsetor($req['adverts'], array()));
+	$campaign->sharedAdvert = array_map(function ($r) {
+		return R::load('advert', $r);
+	}, ifsetor($req['advert'], array()));
 
 	$campaign->ownAgerange = array_map(function ($r) use ($campaignId) {
 		$minAge = $r['minAge'];
@@ -142,47 +125,45 @@ function setCampaign($campaign, $req) {
 
 	$campaign->ownBoundingbox = array_map(function ($r) use ($campaignId) {
 		$minLat = $r['minLat'];
-                $maxLat = $r['maxLat'];
-                $minLong = $r['minLong'];
-                $maxLong = $r['maxLong'];
+        $maxLat = $r['maxLat'];
+        $minLong = $r['minLong'];
+        $maxLong = $r['maxLong'];
 		$bean = R::findOne('boundingbox', ' minLat = ? AND maxLat = ? AND minLong = ? AND maxLong = ? ', array($minLat, $maxLat, $minLong, $maxLong));
 		if (!$bean) {
-      	   		$bean = R::dispense('boundingbox');
-                	$bean->minLat = $r['minLat'];
-	                $bean->maxLat = $r['maxLat'];
-	                $bean->minLong = $r['minLong'];
-	                $bean->maxLong = $r['maxLong'];
+  	   		$bean = R::dispense('boundingbox');
+           	$bean->minLat = $r['minLat'];
+            $bean->maxLat = $r['maxLat'];
+            $bean->minLong = $r['minLong'];
+	        $bean->maxLong = $r['maxLong'];
 		}
-                return $bean;
-        }, ifsetor($req['targets']['boundingBoxes'], array()));
+        return $bean;
+    }, ifsetor($req['targets']['boundingBoxes'], array()));
 
 	$campaign->ownTime = array_map(function ($r) {
-                $dayOfWeek = $r['dayOfWeek'];
+        $dayOfWeek = $r['dayOfWeek'];
 		$startTime = $r['startTime'];
-                $endTime = $r['endTime'];
+        $endTime = $r['endTime'];
 		$bean = R::findOne('time', ' dayOfWeek = ? AND startTime = ? AND endTime = ? ', array($dayOfWeek, $startTime, $endTime));
 		if (!$bean) {
-	                $bean = R::dispense('time');
-	                $bean->dayOfWeek = $r['dayOfWeek'];
+            $bean = R::dispense('time');
+            $bean->dayOfWeek = $r['dayOfWeek'];
 			$bean->startTime = $r['startTime'];
-	                $bean->endTime = $r['endTime'];
+            $bean->endTime = $r['endTime'];
 		}
-                return $bean;
-        }, ifsetor($req['targets']['times'], array()));
+        return $bean;
+    }, ifsetor($req['targets']['times'], array()));
 
-	$campaign->sharedGenres = array_map(function ($id) {
-		return R::load('genres', $id);
+	$campaign->sharedGenre = array_map(function ($id) {
+		return R::load('genre', $id);
 	}, ifsetor($req['targets']['genres'], array()));
-	
-	$campaign->sharedOccupations = array_map(function ($id) {
-		return R::load('occupations', $id);
+
+	$campaign->sharedOccupation = array_map(function ($id) {
+		return R::load('occupation', $id);
 	}, ifsetor($req['targets']['occupations'], array()));
 
-	$campaign->sharedProgrammes = array_map(function ($id) {
-		return R::load('programmes', $id);
-	}, ifsetor($req['targets']['programmes'], array()));
+	$campaign->sharedBrand = array_map(function ($id) {
+		return R::load('brand', $id);
+	}, ifsetor($req['targets']['brands'], array()));
 
 	$campaignId = R::store($campaign);
-	
-
 }

@@ -174,9 +174,9 @@
 				<Class>com.wowza.wms.plugin.livestreamrecord.ModuleLiveStreamRecord</Class>
 			</Module>
 			<Module>
-				<Name>MetadataTest</Name>
-				<Description>Meta Data Injection Test</Description>
-				<Class>com.your4.tests.MetaDataTest</Class>
+				<Name>Your4Recorder</Name>
+				<Description>Records your4 Programmes</Description>
+				<Class>com.your4.your4recorder</Class>
 			</Module>
 		</Modules>
 		<!-- Properties defined here will be added to the IApplication.getProperties() and IApplicationInstance.getProperties() collections -->

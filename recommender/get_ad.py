@@ -1,12 +1,10 @@
 #!/usr/bin/python2.7
 
-#TODO: Database has been updated; campaigns now have multiple ads. Reflect this. Return campaign ads with equal probability.
-
 from __future__ import print_function, division
 
 import argparse
-from random import random
-from time import time
+import random
+import time
 import sys
 
 from datastore import interface
@@ -14,38 +12,50 @@ from datastore import interface
 DEBUG = False
 VERBOSE = False
 
-def get_campaign(uid, pid, when=time()):
+def get_ad(uid, pid, when=None, maxlen=float('inf'), exclude=()):
+	if when is None:
+		when = time.time()
 	# Get all adverts available for a given user, programme and time.
-	campaign_pool = interface.get_campaign_pool(uid, pid, when)
+	advert_pool = interface.get_advert_pool(uid, pid, when, maxlen, exclude)
 
-	if not campaign_pool:
-		print("No valid campaigns returned for uid={uid}, pid={pid}, "
-				"when={when}:".format(uid=uid, pid=pid, when=when),
+	if not advert_pool:
+		print("No valid adverts returned for uid={uid}, pid={pid}, "
+				"when={when}, max_length={maxlen}, exclude=[{ex}]!".format(
+					uid=uid, pid=pid, when=when, maxlen=maxlen,
+					ex=','.join(str(p) for p in exclude)),
 				file=sys.stderr)
 		return -1
 
 	if VERBOSE:
-		print("Valid campaigns for uid={uid}, pid={pid}, "
+		print("Valid adverts for uid={uid}, pid={pid}, "
 			"when={when}:".format(uid=uid, pid=pid, when=when))
-		for campaign_id, nicheness in campaign_pool.iteritems():
-			print("{campaign}\t\t{nicheness}".format(campaign=campaign_id,
-														nicheness=nicheness))
+		for campaignid, campaign in advert_pool.iteritems():
+			print("campaign:{campaign}, nicheness:{nicheness} "
+				"adverts:{adverts}, exclude=[{ex}]".format(
+					campaign=campaignid,
+					nicheness=campaign.nicheness,
+					adverts=campaign.adverts,
+					ex=','.join(str(p) for p in exclude)))
 
 	# Pick a campaign with a probability based on the nicheness.
-	campaignids, nichenesses = zip(*campaign_pool.iteritems())
-	roulette = {sum(nichenesses[:n+1]):campaignids[n]
-					for n in xrange(len(campaignids))}
-	roulette_spin = random() * sum(nichenesses) 
+	nicheness, adverts = zip(*sorted([(c.nicheness, c.adverts)
+										for c in advert_pool.values()]))
 
-	for k, v in roulette.iteritems():
-		if roulette_spin <= k:
-			outcome = v
-			break
-		else:
-			pass
+	if sum(nicheness) == 0:
+		# Flatten and pick one randomly.
+		adset = [item for sublist in adverts for item in sublist]
+	else:
+		viewChance = [(sum(nicheness[:n+1])/sum(nicheness), adverts[n])
+						for n in xrange(len(nicheness))]
 
-	return outcome
+		r = random.random()
+		for n, ads in viewChance:
+			if r <= n:
+				adset = ads
+				break
 
+	return random.choice(adset)
+			
 def _init_argparse():
 	parser = argparse.ArgumentParser(description="Given a userid, a programme "
 		"id and a unix timestamp, returns the id of a targetted advert. If no "
@@ -57,14 +67,25 @@ def _init_argparse():
 	parser.add_argument('pid', metavar='programme_id', type=int,
 						help="The ID of the programme the user is currently "
 							"watching")
-	parser.add_argument('time', metavar='time', type=int, nargs='?',
-						default=time(), help="A unix timestamp representing "
+	parser.add_argument('max_length', metavar='max_length', type=float, nargs='?',
+						default=float('inf'), help="The maximum length of the "
+						"advert in seconds. Defaults to infinity. Can be set "
+						"to infinity by passing 0 or the empty string.")
+	parser.add_argument('start_time', metavar='start_time', type=int, nargs='?',
+						default=None, help="A unix timestamp representing "
 						"when the advert is to be shown.")
+	parser.add_argument('-x', "--exclude", type=int, default=(),
+						nargs='+', help="Given a list of advert ids, will "
+						"not return an advert id withis this list.")
 	parser.add_argument('-v', "--verbose", action="store_true",
 						help="Prints more information to stdout.")
 	parser.add_argument('-d', "--debug", action="store_true",
 						help="If true, breaks using pdb in a number of cases.")
-	return parser.parse_args()
+
+	args = parser.parse_args()
+	if args.start_time is None:
+		args.start_time = time.time()
+	return args
 
 # If called from the commandline.
 if __name__ == "__main__":
@@ -73,10 +94,9 @@ if __name__ == "__main__":
 	DEBUG = args.debug
 	VERBOSE = args.verbose
 
-	campaign = get_campaign(args.uid, args.pid, args.time)
-	ad = interface.get_ad(campaign)
-	if ad == -1:
-		print("Recommended campaign {c} has no corresponding adverts!".format(
-				c=campaign), file=sys.stderr)
+	if not args.max_length:
+		args.max_length = float('inf')
 
-	print(ad, end='')
+	ad_id = get_ad(args.uid, args.pid, args.start_time, args.max_length,
+					exclude=args.exclude)
+	print(ad_id, end='')

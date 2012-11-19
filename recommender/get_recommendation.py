@@ -34,13 +34,17 @@ def get_user_vector(user_id):
 
 	vector = string_to_vector(vector[0])
 
+	# TODO: If no vector exists, MAKE ONE!
+	if not vector:
+		raise Exception("Error: user {} does not have a vector!").format(user_id)
+
 	cursor.close()
 	conn.close()
 
 	return vector
 
 def get_name(pid):
-	query = "SELECT `name` FROM `programmes` WHERE `id` = {pid}".format(pid=pid)
+	query = "SELECT `title` FROM `programme` WHERE `id` = {pid}".format(pid=pid)
 	conn = mysql.connector.connect(**credentials)
 	cursor = conn.cursor()
 	cursor.execute(query)
@@ -65,7 +69,7 @@ def get_recommendation(userId, startTime=None, lookahead=300):
 		startTime = time.time()
 
 	user_vector = vector.string_to_vector(interface.get_user(userId, ['vector'])[0])
-	upcoming_programmes = interface.get_programme_pool(
+	upcoming_programmes = interface.get_broadcast_pool(
 							userId,
 							startTime=startTime,
 							lookahead=lookahead)
@@ -83,6 +87,10 @@ def get_recommendation(userId, startTime=None, lookahead=300):
 
 	best_recommendations = [(float('inf'), -1)]
 	for p_id, p_vector in upcoming_programmes:
+		if not p_vector:
+			print("Programme {pid} does not have a vector!".format(pid=p_id),
+					file=sys.stderr)
+			continue
 		p_vector = vector.string_to_vector(p_vector)
 		try:
 			diff = user_vector - p_vector
@@ -123,9 +131,9 @@ def get_recommendation(userId, startTime=None, lookahead=300):
 
 def _init_argparse():
 	parser = argparse.ArgumentParser(description="Returns a recommended "
-		"programme id for a particular user which starts within a period of "
+		"broadcast id for a particular user which starts within a period of "
 		"time. Defaults to within the next 5 minutes from right now. Returns "
-		"-1 if no programmes exist int he database which start within the "
+		"-1 if no broadcasts exist in the database which start within the "
 		"specified time period. Exits with status 1 if the user does not exist "
 		"in the users table.")
 	parser.add_argument('user_id', metavar='uid', type=int,
@@ -136,8 +144,8 @@ def _init_argparse():
 	parser.add_argument('-l', "--lookahead", type=int, default=300,
 		help="The time, in seconds, after --time in which a recommended "
 		"programme may start. Defaults to 300 (5 minutes).")
-	parser.add_argument('-n', "--name", action="store_true", help="Returns the "
-						"name, instead of the id, of the programme.")
+	#parser.add_argument('-n', "--name", action="store_true", help="Returns the "
+	#					"name, instead of the id, of the programme.")
 	parser.add_argument('-d', "--debug", action="store_true",
 						help="If true, breaks using pdb in a number of cases.")
 	parser.add_argument('-v', "--verbose", action="store_true",
@@ -153,7 +161,7 @@ if __name__ == "__main__":
 
 	recommendation = get_recommendation(args.user_id, startTime=args.time,
 										lookahead=args.lookahead)
-	if args.name:
-		recommendation = get_name(recommendation)
+	#if args.name:
+	#	recommendation = get_name(recommendation)
 
 	print(str(recommendation), end='')

@@ -49,6 +49,10 @@
 			margin-bottom: 40px;
 			text-align: right;
 		}
+		.toolbar .state-badges {
+			display: inline-block;
+			text-align: center;
+		}
 		h1.title {
 			border-bottom: 1px solid #DDD;
 			padding-bottom: 5px;

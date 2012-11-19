@@ -23,7 +23,6 @@ $app->get('/impressions/:id(/)', function ($id) use ($app) {
 	}, array_values($impressions)));
 });
 
-
 $app->get('/impressions/populate', function() use ($app) {
 	$adverts = array_values(R::findAll('adverts'));
 	$users = array_values(R::findAll('users'));

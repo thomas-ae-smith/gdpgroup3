@@ -1,41 +1,31 @@
 
 (function(y4) {
-	"use strict";
-
-
+	//"use strict";
 
 	y4.RegisterView = Backbone.View.extend({
 
-		regFields: ["name","gender","dob","email","occupation","password"],
 		events: {
-			"change .register-form input": "changeField",
-			"change .register-form select": "changeField",
 			"click .submit-registration": "submitReg"
 		},
 
 		className: "logon-outer",
 
-		initialize: function() {
+		initialize: function (options) {
 			var that = this;
-			this.user = this.options.user;
-			if (!this.user) {
-				this.users = new y4.Users();
-				this.user = new y4.User();
-				this.users.add(this.user);
-			}
-
+			this.app = options.app;
+			this.user = this.app.users.first() || new y4.User();
 			this.occupations = new y4.Occupations();
-
+			this.regFields = ["name","gender","dob","email","occupation_id","postcode","password"];
 		},
 
 		render: function() {
-			var registerTemplate = _.template($('#register-template').html());
+			var that = this,
+				registerTemplate = _.template($('#register-template').html());
 
-			if (this.user.get('facebookId') != null) {
+			if (this.user && this.user.get('facebookId') != null) {
 				this.regFields.pop();
 			}
 
-			var that = this;
 			var toRequest = _.filter(this.regFields, function(field) {
 				field = that.user.get(field);
 				if (field == null || typeof(field) === 'undefined') {
@@ -43,29 +33,59 @@
 				}
 			});
 
-			this.$el.html(registerTemplate({user: this.user.toJSON(), req: toRequest, fields: this.regFields, occupations: this.occupations}));
+			var user = this.user.toJSON();
+			if (user['dob'] != null) {
+				var dateParts = user['dob'].split('-');
+				user.year = dateParts[0];
+				user.date = dateParts[2];
+				user.month = dateParts[1];
+			}
+
+			this.$el.html(registerTemplate({
+				user: user,
+				req: toRequest,
+				fields: this.regFields
+			}));
+
 			this.occupations.fetch().then(function() {
-				var occSelect = $('.register-form :input[name="occupation"]');
+				var occSelect = that.$('.register-form :input[name="occupation_id"]');
 				that.occupations.each(function(occupation) {
 					occSelect.append($('<option>', {value: occupation.get('id')}).text(capitalize(occupation.get('name'))));
 				});
 			});
 
+			this.$('.register-form :input[name="gender"]').val(this.user.get('gender'));
+
 			return this;
 		},
 
-		changeField: function(e) {
-			var target = $(e.currentTarget);
-			this.user.set(target.attr('name'),target.val());
-		},
-
-		submitReg: function() {
+		submitReg: function(e) {
+			e.preventDefault();
 			var that = this;
-			this.user.save(undefined, {success: function() {
-				that.trigger("register",that.user);
-			}, error: function(model, response) {
-				that.$el.prepend(response);
-			}});
+
+			$('.register-form :input').not('.date-split').each(function(index) {
+				that.user.set($(this).attr('name'), $(this).val());
+			});
+
+			this.user.set('dob', $('.date-split').map(function() {
+				return $(this).val();
+			}).get().join('-'));
+
+
+			var target = $(e.currentTarget);
+			target.attr("disabled","disabled").text("Please wait...");
+			this.app.users.register(this.user.toJSON()).done(function () {
+				that.$('.error').hide();
+				that.trigger("registered");
+			}).fail(function (response) {
+				var errors = JSON.parse(response.responseText).error;
+				var errorBox = that.$('.error').show().html('');
+				_.each(errors, function(error) {
+					errorBox.append('<p>'+error+'</p>');
+				});
+			}).always(function () {
+				target.removeAttr("disabled").text("Register");
+			});
 		}
 	});
 
@@ -73,6 +93,7 @@
 		className: "logon-outer",
 		events: {
 			"click .facebook-button": "facebookLogin",
+			"click .login-button": "normalLogin",
 			"click .register-button": "register"
 		},
 
@@ -80,37 +101,53 @@
 			this.app = options.app;
 		},
 
+		setUser: function(user, existingSession) {
+			this.trigger("setUser", user, existingSession);
+		},
+
 		facebookLogin: function() {
 			var that = this;
-			if (!this.facebookLoggedIn) {
-				this.$('.facebook-button').attr('disabled', 'disabled')
-					.text("Please wait...");
-				this.app.fbLogin().then(function () {
-					that.$('.facebook-button').removeAttr('disabled')
-						.text("Login with Facebook");
-					console.log("play");
-					that.app.router.navigate("play", { trigger: true });
-				});
-			}
+			this.$('.facebook-button').attr('disabled', 'disabled')
+				.text("Please wait...");
+
+			this.app.users.loginFB().done(function () {
+				that.$('.error').hide();
+				that.trigger("loggedIn");
+			}).fail(function (msg) {
+				if (msg) {
+					that.$('.error').show().html(msg);
+				}
+			}).always(function () {
+				that.$('.facebook-button').removeAttr('disabled').text('Login with Facebook');	
+			});
 		},
 
 		register: function () {
+			console.log("HJK")
 			this.app.router.navigate("register", { trigger: true });
 		},
 
-		login: function () {
-			var user = new User({
-				email: $("#inputEmail").val(),
-				password: $("#inputPassword").val() // or whatever
+		normalLogin: function (e) {
+			e.preventDefault();
+			var that = this,
+				email = $('#inputEmail').val(),
+				password = $('#inputPassword').val();
+
+			this.app.users.login(email, password).done(function () {
+				that.$('.error').hide();
+				that.trigger("loggedIn");
+			}).fail(function (response) {
+				console.log(response)
+				that.$('.error').show().html(JSON.parse(response.responseText).error);
 			});
-			// ...
 		},
 
 		render: function() {
 			var loginTemplate = y4.templates['login'];
 			this.$el.html(loginTemplate());
 			return this;
-		}
+		},
+
 	});
 
 }(this.y4));

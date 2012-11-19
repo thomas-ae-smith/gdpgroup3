@@ -1,0 +1,58 @@
+\section{Implementation}
+
+\subsection{Languages and Techniques}
+As this project involved interacting with many different systems, a diverse range of programming languages were used.
+
+\subsubsection{Client-side web interfaces}
+\begin{enumerate}
+\item \textit{HTML}
+\item \textit{CSS}
+\item \textit{JavaScript}
+\end{enumerate}
+
+\subsubsection{Server-side and data-layer}
+\begin{enumerate}
+\item \textit{PHP}
+\item \textit{Python}
+\end{enumerate}
+
+Communication between server and client is done through a REST interface.
+
+Datebase is MySQL.
+
+\subsubsection{Streaming server}
+\begin{enumerate}
+\item \textit{Java} to interface with the Wowza streaming server
+\item \textit{Python} to interpret to GPI[?] pulse in order to establish when breaks in live programmes are
+\end{enumerate}
+
+\subsection{Libraries and Frameworks}
+
+\subsection{Detailed Architecture}
+
+\subsubsection{Database structure}
+
+\subsubsection{Programme recommendation}
+
+\subsubsection{Advert selection}
+
+\subsubsection{REST services}
+
+\subsubsection{Playback}
+Plays HLS streams in HTML5 Video tag, or RTMP stream in Flash Video.
+
+The player must be capable to displaying two types of media: \textit{video} (for programmes and video adverts) and \textit{stills} (for adverts which consist of just one picture). Additionally, some adverts may have an overlay, which consists of some HTML specified by the advertiser. A challenge here is hiding the buffering of videos or loading of images. A solution is to hide any media until it has loaded. Layers:
+\begin{enumerate}
+\item \textit{Black layer}: used to hide any loading media
+\item \textit{Overlay layer}: an iFrame which will display the HTML that the advertiser has specified for the overlay
+\item \textit{Still layer}: an image that will display any still adverts
+\item \textit{Video layer}: the video component to show the video
+\end{enumerate}
+
+\subsubsection{Data visualisation}
+
+
+\subsection{Code Statistics}
+Lines of code in JS, PHP, Java, Python, HTML, CSS etc
+
+
