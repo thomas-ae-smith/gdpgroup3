@@ -273,9 +273,27 @@
 							"firstshown": _.min(options.impressions.pluck("timestamp")),
 							"skipped": options.impressions.filter( function(impression) { return impression.get("skiptime"); }).length,
 							"clicked": options.impressions.filter( function(impression) { return typeof impression.get("clicks")[0] !== "undefined"; }).length,
-							// "counts": _.countBy(options.impressions, function(impression) { return typeof impression.get("clicks")[0] !== "undefined" ? 'clicked' : impression.get("skiptime") ? 'skipped' : 'neither';}),
 							"unique": _.uniq(options.impressions.pluck("user_id")).length
 							});
+			var data = [];
+			// _.each(_.range(this.advert.get("duration")), function (i) {
+			_.each(_.range(121), function (i) {
+				data.push({time: i, clicks: 0, skips: 0})
+			});
+			console.log("data", data);
+			console.log("duration", this.advert.get("duration"));
+			options.impressions.each( function(impression) { 
+				var skiptime, click;
+				if( skiptime = impression.get("skiptime")) {
+					console.log("skip: ", skiptime);
+					data[skiptime].skips += 1;
+				}
+				if( click = impression.get("clicks")[0]) {
+					console.log("click: ",click.time);
+					data[click.time].clicks += 1;
+				}
+			});
+			console.log(data);
 			console.log(this.advert);	//TODO: remove
 		},
 		render: function () {
@@ -295,6 +313,101 @@
 				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://cloudmade.com">CloudMade</a>',
 				maxZoom: 18
 			}).addTo(map);
+
+
+			(function (that) {
+				var margin = {top: 20, right: 80, bottom: 30, left: 50},
+					width = 420 - margin.left - margin.right,
+					height = 420 - margin.top - margin.bottom;
+
+				var parseDate = d3.time.format("%Y%m%d").parse;
+
+
+				var x = d3.time.scale()
+						.range([0, width]);
+
+				var y = d3.scale.linear()
+						.range([height, 0]);
+
+				var color = d3.scale.category10();		//TODO: reduce to 2
+				
+				var xAxis = d3.svg.axis()
+					.scale(x)
+					.orient("bottom");
+
+				var yAxis = d3.svg.axis()
+					.scale(y)
+					.orient("left");
+
+				var line = d3.svg.line()
+					.interpolate("basis")
+					.x(function(d) { return x(d.seconds); })
+					.y(function(d) { return y(d.count); });
+
+				var svg = d3.select($(that.el).find(".plot")[0]).append("svg")  //I HAVE YOU NOW!!!11!!1  ( TODO: remove)
+					.attr("width", width + margin.left + margin.right)
+					.attr("height", height + margin.top + margin.bottom)
+					.append("g")
+					.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+				d3.tsv("data.tsv", function(data) {
+					color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
+
+					data.forEach(function(d) {
+					d.seconds = parseDate(d.date);
+					});
+
+				var lines = color.domain().map(function(name) {
+					return {
+					  name: name,
+					  values: data.map(function(d) {
+					    return {seconds: d.seconds, count: +d[name]};
+					  })
+					};
+					});
+
+				x.domain(d3.extent(data, function(d) { return d.seconds; }));	//length
+
+				y.domain([					//maxcount
+						d3.min(lines, function(c) { return d3.min(c.values, function(v) { return v.count; }); }),
+						d3.max(lines, function(c) { return d3.max(c.values, function(v) { return v.count; }); })
+					]);
+
+				svg.append("g")
+					.attr("class", "x axis")
+					.attr("transform", "translate(0," + height + ")")
+					.call(xAxis);
+
+				svg.append("g")
+					.attr("class", "y axis")
+					.call(yAxis)
+					.append("text")
+					.attr("transform", "rotate(-90)")
+					.attr("y", 6)
+					.attr("dy", ".71em")
+					.style("text-anchor", "end")
+					.text("Count");
+
+				var city = svg.selectAll(".dataline")
+					.data(lines)
+					.enter().append("g")
+					.attr("class", "dataline");
+
+				city.append("path")
+					.attr("class", "line")
+					.attr("d", function(d) { return line(d.values); })
+					.style("stroke", function(d) { return color(d.name); });
+
+				city.append("text")
+					.datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
+					.attr("transform", function(d) { return "translate(" + x(d.value.seconds) + "," + y(d.value.count) + ")"; })
+					.attr("x", 3)
+					.attr("dy", ".35em")
+					.text(function(d) { return d.name; });
+
+				});
+
+			}(this));
 
 			return this;
 		}

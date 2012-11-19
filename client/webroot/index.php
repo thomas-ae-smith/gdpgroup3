@@ -18,7 +18,7 @@ $requires = array(
 		'styles' => array('css/advertiser.css', 'css/bootstrap.min.css', 'lib/leaflet.css', 'lib/leaflet.draw.css'),
 		'scripts' => array('js/advertiser/App', 'http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js',
 			'lib/bootstrap.js', 'lib/leaflet.js', 'lib/leaflet.draw.js', 'lib/flowplayer.min.js',
-			'lib/jquery.ui.widget.js', 'lib/jquery.iframe-transport.js', 'lib/jquery.fileupload.js')
+			'lib/jquery.ui.widget.js', 'lib/jquery.iframe-transport.js', 'lib/jquery.fileupload.js', 'lib/d3.v2.js')
 	),
 	'overlay' => array(
 		'styles' => array(),
