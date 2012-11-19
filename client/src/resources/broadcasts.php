@@ -2,13 +2,16 @@
 
 $app->get('/broadcasts(/)', function() use ($app) {
 	$userId = $app->request()->get('user');
+	$startTime = $app->request()->get('startTime') ?: time();
 	if ($userId) {
 		$user = R::load('user', $userId);
 		if (!$userId) {
 			return notFound('User with that ID not found.');
 		}
 		unset($out);
-		exec('python ../../../recommender/get_recommendation.py ' . $user->id, $out);
+		exec('python ../../../recommender/get_recommendation.py -t ' . $startTime . ' ' . $user->id, $out);
+		//echo('python ../../../recommender/get_recommendation.py -t ' . $startTime . ' ' . $user->id);
+
 		$broadcastId = $out[0]; // Replace with 0 once get_recommender is fixed
 		$broadcast = R::load('broadcast', $broadcastId);
 		if (!$broadcast->id) {
@@ -16,11 +19,12 @@ $app->get('/broadcasts(/)', function() use ($app) {
 		}
 		output_json(getBroadcast($broadcast));
 	} else {
-		$broadcast = R::find('broadcast');
+		$broadcasts = R::find('broadcast');
 		output_json(array_map(function ($broadcast) {
 			return array(
 				'id' => $broadcast->id,
-				'name' => $broadcast->name
+				'programme_id' => $broadcast->programme_id,
+				'channel_id' => $broadcast->channel_id
 			);
 		}, array_values($broadcasts)));
 	}
@@ -42,14 +46,23 @@ function getBroadcast($broadcast) {
 	$conn = new PDO($DB['project4']['string'], $DB['project4']['username'], $DB['project4']['password']);
 	$q = $conn->prepare('SELECT * FROM project4_mos WHERE channel_ID = ? AND break_start_GMT > ? AND break_end_GMT < ?');
 	$q->execute(array($channel->project4id, $broadcast->time, $broadcast->time + $broadcast->duration));
+	$rows = $q->fetchAll();
 
-	return array_merge($broadcast->export(), array(
+	$mosTimings = array();
+	if (count($rows) > 0) {
+		$mosTimings['mosStart'] = $rows[0]['epg_show_start_GMT'];
+//		$mosTimings['mosEnd'] = $rows[0]['epg_end_show
+	}
+
+	return array_merge($broadcast->export(), $mosTimings, array(
 		'timenow' => time(),
+		'duration' => $broadcast->programme->duration,
 		'mos' => array_map(function ($mos) {
 			return array(
+				'id' => $mos['key'],
 				'start' => $mos['break_start_GMT'],
 				'end' => $mos['break_end_GMT']
 			);
-		}, $q->fetchAll())
+		}, $rows)
 	));
 }

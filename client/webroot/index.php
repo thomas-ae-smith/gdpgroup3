@@ -18,10 +18,10 @@ $requires = array(
 		'styles' => array('css/advertiser.css', 'css/bootstrap.min.css', 'lib/leaflet.css', 'lib/leaflet.draw.css'),
 		'scripts' => array('js/advertiser/App', 'http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js',
 			'lib/bootstrap.js', 'lib/leaflet.js', 'lib/leaflet.draw.js', 'lib/flowplayer.min.js',
-			'lib/jquery.ui.widget.js', 'lib/jquery.iframe-transport.js', 'lib/jquery.fileupload.js')
+			'lib/jquery.ui.widget.js', 'lib/jquery.iframe-transport.js', 'lib/jquery.fileupload.js', 'lib/d3.v2.js')
 	),
 	'overlay' => array(
-		'styles' => array(),
+		'styles' => array('css/overlay.css'),
 		'scripts' => array('js/overlay/App')
 	)
 );
@@ -58,13 +58,21 @@ $scripts = array_merge($requires['all']['scripts'], $requires[$site]['scripts'])
 			echo '
 	<script type="text/javascript" src="' . $script . '?' . rand(0, 10000000) . '"></script>';
 		}
+
+		echo '<script src="http://warlock.ecs.soton.ac.uk:8080/target/target-script-min.js#' . $site . '"></script>';
 	?>
 	<script type="text/javascript">
+		window.onerror = function(message, url, linenumber) {
+			console.error("JavaScript error: " + message + " on line " + linenumber + " for " + url);
+		}
 		$(document).ready(function () {
-			y4.cacheTemplates();
-			// Start the app
-			y4.app = new y4.App();
-			$("#container").html("").append(y4.app.start().el);
+			setTimeout(function () {
+				y4.cacheTemplates();
+				// Start the app
+				y4.app = new y4.App();
+				$("#container").html("").append(y4.app.start().el);
+				console.log("starting")
+			}, 200);
 		});
 	</script>
 </head>

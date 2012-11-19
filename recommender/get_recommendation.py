@@ -34,6 +34,10 @@ def get_user_vector(user_id):
 
 	vector = string_to_vector(vector[0])
 
+	# TODO: If no vector exists, MAKE ONE!
+	if not vector:
+		raise Exception("Error: user {} does not have a vector!").format(user_id)
+
 	cursor.close()
 	conn.close()
 

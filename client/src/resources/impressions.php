@@ -11,6 +11,18 @@ $app->get('/impressions(/)', function () use ($app) {
 	}, array_values($impressions)));
 });
 
+
+$app->get('/impressions/:id(/)', function ($id) use ($app) {
+	$impressions = R::find('advertimpression', ' advert_id = ? ', array($id));
+	output_json(array_map(function ($impression) {
+		$clicks = R::find('advertclick', ' advertimpression_id = ? ', array($impression->id));
+		return array_merge($impression->export(), array(
+			'clicks' => R::exportAll($clicks)
+		));
+
+	}, array_values($impressions)));
+});
+
 $app->get('/impressions/populate', function() use ($app) {
 	$adverts = array_values(R::findAll('adverts'));
 	$users = array_values(R::findAll('users'));
