@@ -59,7 +59,11 @@
 		.advert-list tr:hover td {
 			background-color: #DEE2E2 !important;
 		}
-		.advert-full #advert-overlay {
+		.advert-full #advert-stats {
+			width: 100%;
+			table-layout: fixed;
+		}
+		.advert-edit #advert-overlay {
 			position: relative;
 			width: 100%;
 			height: 400px;
@@ -122,4 +126,17 @@
 			-webkit-transform: rotate(-90deg);
 			-moz-transform: rotate(-90deg);*/
 			margin-left: -7px;
+		}
+
+		.axis path,
+		.axis line {
+			fill: none;
+			stroke: #000;
+			shape-rendering: crispEdges;
+		}
+
+		.line {
+			fill: none;
+			stroke: steelblue;
+			stroke-width: 1.5px;
 		}

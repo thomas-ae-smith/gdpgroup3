@@ -66,6 +66,19 @@
 		model: y4.Advert
 	});
 
+	y4.Impression = Backbone.Model.extend({
+		defaults: {
+			timestamp: 0,
+			advert: [],
+			user: [],
+			skiptime: 0
+		}
+	});
+	y4.Impressions = Backbone.Collection.extend({
+		url: "http://"+baseUrl+"/api/impressions/",
+		model: y4.Impression
+	});
+
 
 	y4.Campaign = Backbone.Model.extend({
 		defaults: {

@@ -5,12 +5,14 @@
 		className: "app",
 		links: [
 			{ title: "Home", hash: "" },
-			{ title: "Adverts", hash: "adverts"  },
-			{ title: "Campaigns", hash: "campaigns"  }
+			{ title: "Adverts", hash: "adverts" },
+			{ title: "Impressions", hash: "impressions" },
+			{ title: "Campaigns", hash: "campaigns" }
 		],
 		initialize: function () {
 			this.router = new Router({ app: this });
 			this.adverts = new y4.Adverts();
+			this.impressions = new y4.Impressions();
 			this.campaigns = new y4.Campaigns(undefined, { adverts: this.adverts });
 		},
 		goAdverts: function () {
@@ -18,20 +20,32 @@
 				view = new y4.pages.AdvertList({ collection: this.adverts, app: this });
 			view.on("select", function (id) {
 				that.router.navigate("adverts/" + id, { trigger: true });
+			}).on("edit", function (id) {
+				that.router.navigate("adverts/" + id + "/edit", { trigger: true });
 			}).on("create", function () {
 				that.router.navigate("adverts/new", { trigger: true })
 			});
 			return this.render(view);
 		},
-		goAdvert: function (id) {
+		goAdvert: function (id, edit) {
 			var that = this,
 				advert = id === "new" ? new y4.Advert() : this.adverts.get(id),
+				impressions = new y4.Impressions(this.impressions.where({ "advert_id": id})),
 				view = advert ?
-					new y4.pages.AdvertFull({ advert: advert, app: this }) :
+						( edit ?
+						new y4.pages.AdvertEdit({ advert: advert, app: this }) :
+						new y4.pages.AdvertFull({ advert: advert, impressions: impressions, app: this }) ) :
 					new y4.pages.NotFound({ message: "Advert not found." });
 			view.on("return", function () {
 				that.router.navigate("adverts", { trigger: true });
+			}).on("edit", function (id) {
+				that.router.navigate("adverts/" + id + "/edit", { trigger: true });
 			});
+			return this.render(view);
+		},
+		goImpressions: function () {
+			var that = this,
+				view = new y4.pages.ImpressionList({ collection: this.impressions, app: this });
 			return this.render(view);
 		},
 		goCampaigns: function () {
@@ -99,7 +113,7 @@
 		},
 		start: function () {
 			var that = this;
-			$.when(this.adverts.fetch(), that.campaigns.fetch()).done(function () {
+			$.when(this.adverts.fetch(), that.impressions.fetch(), that.campaigns.fetch()).then(function () {
 				Backbone.history.start();
 			}).fail(function () {
 				that.$el.html('<div class="alert alert-error" style="width: 700px; margin: 40px auto;"><b>Error while loading page.</b></div>')
@@ -112,7 +126,9 @@
 		routes: {
 			"": "home",
 			"adverts": "adverts",
+			"impressions": "impressions",
 			"adverts/:id": "advert",
+			"adverts/:id/edit": "editadvert",
 			"campaigns": "campaigns",
 			"campaigns/:id": "campaign",
 			"*notFound": "notFound" // http://stackoverflow.com/questions/11236338/is-there-a-way-to-catch-all-non-matched-routes-with-backbone
@@ -121,6 +137,8 @@
 		home: function () { this.app.home(); },
 		adverts: function () { this.app.goAdverts(); },
 		advert: function (id) { this.app.goAdvert(id); },
+		impressions: function () { this.app.goImpressions(); },
+		editadvert: function (id) { this.app.goAdvert(id, true); },
 		campaigns: function () { this.app.goCampaigns(); },
 		campaign: function (id) { this.app.goCampaign(id); },
 		notFound: function () {
@@ -191,8 +209,10 @@
 			$list.append($item.fadeIn(noAnimation ? 0 : 200));
 			$item.click(function () {
 				that.trigger("select", model.id);
-			}).find(".edit").click(function () {
+			}).find(".stats").click(function () {
 				that.trigger("select", model.id);
+			}).end().find(".edit").click(function () {
+				that.trigger("edit", model.id);
 			}).end().find(".delete").click(function (e) {
 				if (confirm("Are you sure you wish to delete this advert?")) {
 					model.destroy();
@@ -219,6 +239,13 @@
 		itemTemplate: "advert-list-item"
 	});
 
+	y4.pages.ImpressionList = y4.Page.extend(y4.List.prototype).extend({
+		title: "Impressions",
+		className: "impression-list",
+		template: "impression-list",
+		itemTemplate: "impression-list-item"
+	});
+
 	y4.pages.CampaignList = y4.Page.extend(y4.List.prototype).extend({
 		title: "Campaigns",
 		className: "campaign-list",
@@ -235,6 +262,172 @@
 
 	y4.pages.AdvertFull = y4.Page.extend({
 		className: "advert-full",
+		initialize: function (options) {
+			this.advert = options.advert;
+			this.adverts = options.app.adverts;
+			this.title = "Advert: " + this.advert.get("title");
+			this.advert.set({"impressions": options.impressions,
+							"firstshown": _.min(options.impressions.pluck("timestamp")),
+							"skipped": options.impressions.filter( function(impression) { return impression.get("skiptime"); }).length,
+							"clicked": options.impressions.filter( function(impression) { return typeof impression.get("clicks")[0] !== "undefined"; }).length,
+							"unique": _.uniq(options.impressions.pluck("user_id")).length
+							});
+			var data = [];
+			// _.each(_.range(this.advert.get("duration")), function (i) {
+			_.each(_.range(121), function (i) {
+				data.push({seconds: i, clicks: 0, skips: 0})
+			});
+			options.impressions.each( function(impression) { 
+				var skiptime, click;
+				if( skiptime = impression.get("skiptime")) {
+					data[skiptime].skips += 1;
+				}
+				if( click = impression.get("clicks")[0]) {
+					data[click.time].clicks += 1;
+				}
+			});
+			for (var i = 1; i < data.length; i++) {
+				data[i].skips += data[i-1].skips;
+				data[i].clicks += data[i-1].clicks;
+			};
+			this.advert.set({"data": data});
+		},
+		render: function () {
+			var that = this;
+			this.$el.html(y4.templates["advert-full"](this.advert.toJSON()));
+
+			this.$(".edit").click(function () {
+				that.trigger("edit", that.advert.id);
+			});
+
+			this.$("#advert-stats tr td:nth-child(odd)")
+				.css({
+						"font-weight": "bold",
+						"text-align": "right"
+					});
+
+			var map = this.locationMap = L.map(this.$("#viewer-locations .map")[0], {
+				center: [54.805, -3.59],
+				zoom: 5,
+				scrollWheelZoom: false
+			})
+			L.tileLayer('http://{s}.tile.cloudmade.com/1b189a705e22441c86cdb384a5bc7837/997/256/{z}/{x}/{y}.png', {
+				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://cloudmade.com">CloudMade</a>',
+				maxZoom: 18
+			}).addTo(map);
+			setTimeout(function () {
+				that.$(".target-tabs a").eq(0).click();
+				map.invalidateSize();
+			});
+
+
+			(function (that) {
+				var margin = {top: 20, right: 50, bottom: 30, left: 30},
+					width = 420 - margin.left - margin.right,
+					height = 420 - margin.top - margin.bottom;
+
+				var parseDate = d3.time.format("%Y%m%d").parse;
+
+
+				var x = d3.scale.linear()
+						.range([0, width]);
+
+				var y = d3.scale.linear()
+						.range([height, 0]);
+
+				var color = d3.scale.category10();		//TODO: reduce to 2
+				
+				var xAxis = d3.svg.axis()
+					.scale(x)
+					.orient("bottom");
+
+				var yAxis = d3.svg.axis()
+					.scale(y)
+					.orient("left");
+
+				var line = d3.svg.line()
+					.interpolate("basis")
+					.x(function(d) { return x(d.seconds); })
+					.y(function(d) { return y(d.count); });
+
+				var svg = d3.select($(that.el).find(".plot")[0]).append("svg")  //I HAVE YOU NOW!!!11!!1  ( TODO: remove)
+					.attr("width", width + margin.left + margin.right)
+					.attr("height", height + margin.top + margin.bottom)
+					.append("g")
+					.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+				var data = that.advert.get("data");
+					color.domain(d3.keys(data[0]).filter(function(key) { return key !== "seconds"; }));
+
+				var lines = color.domain().map(function(name) {
+					return {
+					  name: name,
+					  values: data.map(function(d) {
+					    return {seconds: d.seconds, count: +d[name]};
+					  })
+					};
+					});
+
+				x.domain(d3.extent(data, function(d) { return d.seconds; }));	//length
+
+				y.domain([					//maxcount
+						d3.min(lines, function(c) { return d3.min(c.values, function(v) { return v.count; }); }),
+						d3.max(lines, function(c) { return d3.max(c.values, function(v) { return v.count; }); })
+					]);
+
+				svg.append("g")
+					.attr("class", "x axis")
+					.attr("transform", "translate(0," + height + ")")
+					.call(xAxis)
+					.append("text")
+					.attr("y", -20)
+					.attr("x", 300)
+					.attr("dy", ".71em")
+					.style("text-anchor", "end")
+					.text("seconds");
+
+				svg.append("g")
+					.attr("class", "y axis")
+					.call(yAxis)
+					.append("text")
+					.attr("transform", "rotate(-90)")
+					.attr("y", 6)
+					.attr("dy", ".71em")
+					.style("text-anchor", "end")
+					.text("count");
+
+				var city = svg.selectAll(".dataline")
+					.data(lines)
+					.enter().append("g")
+					.attr("class", "dataline");
+
+				city.append("path")
+					.attr("class", "line")
+					.attr("d", function(d) { return line(d.values); })
+					.style("stroke", function(d) { return color(d.name); });
+
+				city.append("text")
+					.datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
+					.attr("transform", function(d) { return "translate(" + x(d.value.seconds) + "," + y(d.value.count) + ")"; })
+					.attr("x", 3)
+					.attr("dy", ".35em")
+					.text(function(d) { return d.name; });
+
+				// });
+
+			}(this));
+
+			return this;
+		}
+		// ,
+		// edit: function (e) {
+		// 	e.preventDefault();
+		// 	this.router.navigate("adverts/" + this.advert.id + "/edit", { trigger: true });
+		// }
+	});
+
+	y4.pages.AdvertEdit = y4.Page.extend({
+		className: "advert-edit",
 		events: {
 			"click .cancel": "cancel",
 			"click .submit": "submit"
@@ -246,7 +439,7 @@
 		},
 		render: function () {
 			var that = this;
-			this.$el.html(y4.templates["advert-full"](this.advert.toJSON()));
+			this.$el.html(y4.templates["advert-edit"](this.advert.toJSON()));
 			setTimeout(function () { that.updatePreview(); }, 100); // Erm.. HACK
 
 			this.$('#advert-file').fileupload({
