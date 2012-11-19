@@ -262,9 +262,6 @@
 
 	y4.pages.AdvertFull = y4.Page.extend({
 		className: "advert-full",
-		// events: {
-		// 	"click .edit": "edit"
-		// },
 		initialize: function (options) {
 			this.advert = options.advert;
 			this.adverts = options.app.adverts;
@@ -278,23 +275,22 @@
 			var data = [];
 			// _.each(_.range(this.advert.get("duration")), function (i) {
 			_.each(_.range(121), function (i) {
-				data.push({time: i, clicks: 0, skips: 0})
+				data.push({seconds: i, clicks: 0, skips: 0})
 			});
-			console.log("data", data);
-			console.log("duration", this.advert.get("duration"));
 			options.impressions.each( function(impression) { 
 				var skiptime, click;
 				if( skiptime = impression.get("skiptime")) {
-					console.log("skip: ", skiptime);
 					data[skiptime].skips += 1;
 				}
 				if( click = impression.get("clicks")[0]) {
-					console.log("click: ",click.time);
 					data[click.time].clicks += 1;
 				}
 			});
-			console.log(data);
-			console.log(this.advert);	//TODO: remove
+			for (var i = 1; i < data.length; i++) {
+				data[i].skips += data[i-1].skips;
+				data[i].clicks += data[i-1].clicks;
+			};
+			this.advert.set({"data": data});
 		},
 		render: function () {
 			var that = this;
@@ -303,6 +299,12 @@
 			this.$(".edit").click(function () {
 				that.trigger("edit", that.advert.id);
 			});
+
+			this.$("#advert-stats tr td:nth-child(odd)")
+				.css({
+						"font-weight": "bold",
+						"text-align": "right"
+					});
 
 			var map = this.locationMap = L.map(this.$("#viewer-locations .map")[0], {
 				center: [54.805, -3.59],
@@ -313,17 +315,21 @@
 				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://cloudmade.com">CloudMade</a>',
 				maxZoom: 18
 			}).addTo(map);
+			setTimeout(function () {
+				that.$(".target-tabs a").eq(0).click();
+				map.invalidateSize();
+			});
 
 
 			(function (that) {
-				var margin = {top: 20, right: 80, bottom: 30, left: 50},
+				var margin = {top: 20, right: 50, bottom: 30, left: 30},
 					width = 420 - margin.left - margin.right,
 					height = 420 - margin.top - margin.bottom;
 
 				var parseDate = d3.time.format("%Y%m%d").parse;
 
 
-				var x = d3.time.scale()
+				var x = d3.scale.linear()
 						.range([0, width]);
 
 				var y = d3.scale.linear()
@@ -350,12 +356,8 @@
 					.append("g")
 					.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-				d3.tsv("data.tsv", function(data) {
-					color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
-
-					data.forEach(function(d) {
-					d.seconds = parseDate(d.date);
-					});
+				var data = that.advert.get("data");
+					color.domain(d3.keys(data[0]).filter(function(key) { return key !== "seconds"; }));
 
 				var lines = color.domain().map(function(name) {
 					return {
@@ -376,7 +378,13 @@
 				svg.append("g")
 					.attr("class", "x axis")
 					.attr("transform", "translate(0," + height + ")")
-					.call(xAxis);
+					.call(xAxis)
+					.append("text")
+					.attr("y", -20)
+					.attr("x", 300)
+					.attr("dy", ".71em")
+					.style("text-anchor", "end")
+					.text("seconds");
 
 				svg.append("g")
 					.attr("class", "y axis")
@@ -386,7 +394,7 @@
 					.attr("y", 6)
 					.attr("dy", ".71em")
 					.style("text-anchor", "end")
-					.text("Count");
+					.text("count");
 
 				var city = svg.selectAll(".dataline")
 					.data(lines)
@@ -405,7 +413,7 @@
 					.attr("dy", ".35em")
 					.text(function(d) { return d.name; });
 
-				});
+				// });
 
 			}(this));
 
