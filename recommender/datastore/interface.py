@@ -213,7 +213,7 @@ def get_ad(campaignId):
 	return random.choice(campaigns)
 
 
-def get_broadcast_pool(userId, startTime=time(), lookahead=300):
+def get_broadcast_pool(userId, startTime=time(), lookahead=300, exclude=()):
 	query = (	"SELECT `broadcast`.`id`, `brand`.`vector` "
 				"FROM `broadcast` "
 				"INNER JOIN `programme` ON "
@@ -229,6 +229,9 @@ def get_broadcast_pool(userId, startTime=time(), lookahead=300):
 						start_time=int(startTime),
 						end_time=int(startTime + lookahead)))
 
+	if exclude:
+		query += " AND `programme`.`id` NOT IN ({exclude})".format(
+			exclude=','.join(str(p) for p in exclude))
 
 	response = read_db(query)
 
