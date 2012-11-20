@@ -4,7 +4,7 @@
 	var baseUrl = window.location.hostname;
 
 	// Following should be removed
-	var virtualenvs = ["users.ecs.soton.ac.uk", "linuxproj.ecs.soton.ac.uk", "localhost", "your4.tv"];
+	var virtualenvs = ["users.ecs.soton.ac.uk", "linuxproj.ecs.soton.ac.uk", "localhost", "your4.tv", "127.0.0.1"];
 	if (virtualenvs.indexOf(window.location.hostname) > -1) {
 		baseUrl = "www.your4.tv";
 	}
