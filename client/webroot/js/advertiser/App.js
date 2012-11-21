@@ -28,7 +28,6 @@
 			return this.render(view);
 		},
 		goAdvert: function (id, edit) {
-			console.log("id:", id);
 			var that = this,
 				advert = id === "new" ? new y4.Advert() : this.adverts.get(id),
 				impressions = new y4.Impressions(this.impressions.where({ "advert_id": id})),
@@ -320,6 +319,7 @@
 				that.$(".target-tabs a").eq(0).click();
 				map.invalidateSize();
 			});
+			L.marker([50.936592, -1.398697]).addTo(map);
 
 
 			(function (that) {
