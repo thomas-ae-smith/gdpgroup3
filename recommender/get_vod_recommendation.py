@@ -52,7 +52,7 @@ def get_name(pid):
 
 	return name
 
-def get_vod_recommendation(userId):
+def get_vod_recommendation(userId, exclude=()):
 	"""Given a userid, returns the programme id for a vod programme recommended
 	by the recommender. Returns -1 if there are no programmes in the database"""
 
@@ -66,6 +66,11 @@ def get_vod_recommendation(userId):
 				"FROM `blacklist_programme` "
 				"WHERE `user_id`={uid}) "
 			"AND `p`.`recordState` = 2").format(uid=userId)
+
+	if exclude:
+		query += " AND `p`.`id` NOT IN ({exclude})".format(
+			exclude=','.join(str(p) for p in exclude))
+
 	programmes = interface.read_db(query)
 
 	if VERBOSE:
@@ -130,6 +135,9 @@ def _init_argparse():
 		"in the users table.")
 	parser.add_argument('user_id', metavar='uid', type=int,
 						help="The ID of a user")
+	parser.add_argument('-x', "--exclude", type=int, default=(),
+						nargs='+', help="Given a list of advert ids, will "
+						"not return an advert id withis this list.")
 	parser.add_argument('-n', "--name", action="store_true", help="Returns the "
 						"name, instead of the id, of the programme.")
 	parser.add_argument('-d', "--debug", action="store_true",
@@ -145,7 +153,8 @@ if __name__ == "__main__":
 	DEBUG = bool(args.debug)
 	VERBOSE = bool(args.verbose)
 
-	recommendation = get_vod_recommendation(args.user_id)
+	recommendation = get_vod_recommendation(args.user_id,
+											exclude=args.exclude)
 
 	if args.name:
 		recommendation = get_name(recommendation)

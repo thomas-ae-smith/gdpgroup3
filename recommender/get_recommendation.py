@@ -59,7 +59,7 @@ def get_name(pid):
 
 	return name
 
-def get_recommendation(userId, startTime=None, lookahead=300):
+def get_recommendation(userId, startTime=None, lookahead=300, exclude=()):
 	"""Given a userid, returns the programme id for a programme recommended
 	by the recommender which starts within the next `lookahead` seconds.
 	Returns -1 if there are no programmes in the database which start within
@@ -72,7 +72,8 @@ def get_recommendation(userId, startTime=None, lookahead=300):
 	upcoming_programmes = interface.get_broadcast_pool(
 							userId,
 							startTime=startTime,
-							lookahead=lookahead)
+							lookahead=lookahead,
+							exclude=exclude)
 
 	if VERBOSE:
 		total_programmes = len(upcoming_programmes)
@@ -146,6 +147,9 @@ def _init_argparse():
 		"programme may start. Defaults to 300 (5 minutes).")
 	#parser.add_argument('-n', "--name", action="store_true", help="Returns the "
 	#					"name, instead of the id, of the programme.")
+	parser.add_argument('-x', "--exclude", type=int, default=(),
+						nargs='+', help="Given a list of advert ids, will "
+						"not return an advert id withis this list.")
 	parser.add_argument('-d', "--debug", action="store_true",
 						help="If true, breaks using pdb in a number of cases.")
 	parser.add_argument('-v', "--verbose", action="store_true",
@@ -160,7 +164,8 @@ if __name__ == "__main__":
 	VERBOSE = bool(args.verbose)
 
 	recommendation = get_recommendation(args.user_id, startTime=args.time,
-										lookahead=args.lookahead)
+										lookahead=args.lookahead,
+										exclude=args.exclude)
 	#if args.name:
 	#	recommendation = get_name(recommendation)
 
