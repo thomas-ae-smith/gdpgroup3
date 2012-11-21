@@ -13,6 +13,9 @@ from credentials import credentials
 from util.calc_age import calc_age
 
 Campaign = collections.namedtuple('Campaign', ['nicheness','adverts'])
+Programme = collections.namedtuple('Programme', ['id', 'genres', 'schedule'])
+User = collections.namedtuple('User', ['id', 'age', 'gender', 'occupation',
+										'lat', 'long'])
 
 def _field_string(fields):
 	"""Returns '*' if `fields` is empty, otherwise returns a string of
@@ -78,6 +81,7 @@ def add_programme_blacklist(userId, programmeId):
 
 	response = write_db(query)
 
+# TODO: Don't assume live programme.
 def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=()):
 	"""Given a user id, programme id and time, returns a pool of adverts whose
 	campaigns allow the advert to be shown to the given user during the given
@@ -86,116 +90,180 @@ def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=()):
 	if when is None:
 		when = datetime.datetime.now()
 
-	user_fields = ['dob', 'gender', 'occupation_id', 'lat', 'long']
-	user = {user_fields[index]:val for index, val in
-							enumerate(get_user(uid, user_fields))}
+	# Get user details
+	user_query = (	"SELECT `id`, `dob`, `gender`, `occupation_id`, `lat`, "
+						"`long` "
+					"FROM `user` "
+					"WHERE `id` = {uid}").format(uid=uid)
+	user_response = read_db(user_query)[0]
+	user = User(user_response[0],			# id
+				calc_age(user_response[1]),	# age
+				user_response[2], 			# gender
+				user_response[3], 			# occupation
+				user_response[4], 			# lat
+				user_response[5]) 			# long
 
-	broadcast_fields = ['pid', 'live']
-	broadcast_query = ( "SELECT `programme`.`id`, "
-							"if(`broadcast`.`time`>{time}, 'live', 'vod') "
-						"FROM `broadcast` "
-						"LEFT JOIN `programme`"
-							"ON (`programme`.`id`=`broadcast`.`programme_id`) "
-						"WHERE `broadcast`.`programme_id` = {pid}"
-						).format(time=when, pid=pid)
+	# Get programme details
+	programme_query = (	"SELECT `p`.`id`, `gp`.`genre_id` "
+						"FROM `programme` as p "
+						"LEFT JOIN `genre_programme` as gp "
+						"ON `p`.`id` = `gp`.`programme_id` "
+						"WHERE `p`.`id` = {pid}").format(pid=pid)
+	programme_response = dict(read_db(programme_query))
+	programme = Programme(programme_response.keys()[0],
+							set(programme_response.values()),
+							'live') # TODO: Dont assume live.
 
-	try: 
-		broadcast = {broadcast_fields[index]:val for index, val in
-								enumerate(read_db(broadcast_query)[0])}
-	except IndexError: # If the programme does not exist in the db
-		if pid != 0:
-			print("There is no programme with id {pid}!".format(pid=pid),
-			file=sys.stderr)
-		pid = None # This is set to help debugging (all references to a programme 
-					# crash), and to indicate the programme is nonexistant.
-	else:
-		genres_query = ("SELECT `genre_id` FROM `genre_programme` WHERE "
-						"`programme_id` = {pid}").format(pid=pid)
-		genres = [field[0] for field in read_db(genres_query)]
+	###### Restrict campaigns to user restrictions ######
 
-	blacklist_query = (	"SELECT `advert_id` "
+	# Get campaigns where the user fits age requirements
+	agequery = ("SELECT `campaign`.`id`,`campaign`.`nicheness` "
+				"FROM `campaign` "
+				"LEFT JOIN `agerange` "
+				"ON `campaign`.`id` = `agerange`.`campaign_id` "
+				"WHERE (`agerange`.`minage` IS NULL "
+					"OR `agerange`.`minage` <= {age}) "
+				"AND (`agerange`.`maxage` IS NULL "
+					"OR `agerange`.`maxage` >= {age})").format(
+						age=user.age)
+	# Keep track of valid campaigns to show
+	valid_campaigns = set(read_db(agequery))
+	if not valid_campaigns: # If no valid campaigns, may as well stop querying.
+		return []
+
+
+	# Restrict to campaigns where user fits gender requirements.
+	genderquery = ("SELECT `campaign`.`id`,`campaign`.`nicheness` "
+					"FROM `campaign` "
+					"WHERE (FIND_IN_SET('{gender}',`gender`) > 0) "
+					"OR (`gender` = '') "
+					"OR (`gender` IS NULL)").format(gender=user.gender)
+	valid_campaigns.intersection_update(set(read_db(genderquery)))
+	if not valid_campaigns:
+		return []
+
+	# Get campaigns where the user fits occupation requirements
+	occupationquery = (	"SELECT `campaign`.`id`,`campaign`.`nicheness` "
+						"FROM `campaign` "
+						"LEFT JOIN `campaign_occupation` "
+						"ON `campaign`.`id` = `campaign_occupation`.`campaign_id` "
+						"WHERE `campaign_occupation`.`occupation_id` IS NULL "
+						"OR `campaign_occupation`.`occupation_id` = "
+							"{occupation}").format(occupation=user.occupation)
+	valid_campaigns.intersection_update(set(read_db(occupationquery)))
+	if not valid_campaigns:
+		return []
+
+	# Get campaigns where the user fits boundingbox requirements
+	bbquery = (	"SELECT `campaign`.`id`,`campaign`.`nicheness` "
+				"FROM `campaign` "
+				"LEFT JOIN `boundingbox` "
+				"ON `campaign`.`id` = `boundingbox`.`campaign_id` "
+				"WHERE (`boundingbox`.`minLat` IS NULL "
+					"OR `boundingbox`.`minLat` <= {lat}) "
+				"AND (`boundingbox`.`maxLat` IS NULL "
+					"OR `boundingbox`.`maxLat` >= {lat}) "
+				"AND (`boundingbox`.`minLong` IS NULL "
+					"OR `boundingbox`.`minLong` <= {long}) "
+				"AND (`boundingbox`.`maxLong` IS NULL "
+					"OR `boundingbox`.`maxLong` >= {long})").format(
+						lat=user.lat, long=user.long)
+	valid_campaigns.intersection_update(set(read_db(bbquery)))
+	if not valid_campaigns:
+		return []
+
+	# Get campaigns where the user fits boundingbox requirements
+	bbquery = (	"SELECT `campaign`.`id`,`campaign`.`nicheness` "
+				"FROM `campaign` "
+				"LEFT JOIN `boundingbox` "
+				"ON `campaign`.`id` = `boundingbox`.`campaign_id` "
+				"WHERE (`boundingbox`.`minLat` IS NULL "
+					"OR `boundingbox`.`minLat` <= {lat}) "
+				"AND (`boundingbox`.`maxLat` IS NULL "
+					"OR `boundingbox`.`maxLat` >= {lat}) "
+				"AND (`boundingbox`.`minLong` IS NULL "
+					"OR `boundingbox`.`minLong` <= {long}) "
+				"AND (`boundingbox`.`maxLong` IS NULL "
+					"OR `boundingbox`.`maxLong` >= {long})").format(
+						lat=user.lat, long=user.long)
+	valid_campaigns.intersection_update(set(read_db(bbquery)))
+	if not valid_campaigns:
+		return []
+
+
+	###### Restrict campaigns to time restrictions ######
+	
+	###### Restrict campaigns to programme restrictions ######
+
+	###### Return adverts and their nichenesses ######
+	advertquery = ("SELECT `advert_campaign`.`campaign_id`, `advert`.`id` "
+					"FROM `advert` "
+					"INNER JOIN `advert_campaign` "
+					"ON `advert`.`id` = `advert_campaign`.`advert_id` "
+					"WHERE `advert_campaign`.`campaign_id` IN ({campaigns}) "
+					"AND `advert`.`id` NOT IN ("
+						"SELECT `advert_id` "
 						"FROM `blacklist_advert` "
-						"WHERE `user_id` = {uid}".format(uid=uid))
-	blacklisted_adverts = [str(row[0]) for row in read_db(blacklist_query)]
+						"WHERE `user_id` = {uid})").format(
+							campaigns=",".join(
+										str(a) for a, n in valid_campaigns),
+							uid=uid)
 
-	campaign_query = (
-		"SELECT `c`.`schedule`, `c`.`gender`, `c_a`.`minAge`, `c_a`.`maxAge`, "
-			"`c_b`.`minLong`, `c_b`.`maxLong`, `c_b`.`minLat`, `c_b`.`maxLat`, "
-			"`c_g`.`genre_id`, `c_o`.`occupation_id`, `c_p`.`programme_id`, "
-			"`c_t`.`dayOfWeek`, `c_t`.`startTime`, `c_t`.`endTime`, "
-			"`a_c`.`advert_id`, `c`.`id`, `c`.`nicheness`"
-		"FROM `campaign` as c "
-		"LEFT JOIN `time`             AS c_t ON `c`.`id`=`c_t`.`campaign_id` "
-		"LEFT JOIN `agerange`         AS c_a ON `c`.`id`=`c_a`.`campaign_id` "
-		"LEFT JOIN `boundingbox`      AS c_b ON `c`.`id`=`c_b`.`campaign_id` "
-		"LEFT JOIN `campaign_genre`  AS c_g ON `c`.`id`=`c_g`.`campaign_id` "
-		"LEFT JOIN `advert_campaign` AS a_c ON `c`.`id`=`a_c`.`campaign_id` "
-		"LEFT JOIN `advert`          AS a   ON `a`.`id`=`a_c`.`advert_id` "
-		"LEFT JOIN `campaign_programme`  AS c_p "
-			"ON `c`.`id`=`c_p`.`campaign_id` "
-		"LEFT JOIN `campaign_occupation` AS c_o "
-			"ON `c`.`id`=`c_o`.`campaign_id` "
-		"WHERE {when} BETWEEN `c`.`startDate` AND `c`.`endDate`"
-	).format(when=when)
-
-	if blacklisted_adverts:
-		campaign_query += " AND `a_c`.`advert_id` NOT IN {blacklist}".format(
-			blacklist="('{ads}')".format(ads="','".join(blacklisted_adverts)))
-
-	if exclude:
-		campaign_query += " AND `a_c`.`advert_id` NOT IN ({exclude})".format(
-			exclude=','.join(str(p) for p in exclude))
-
-	if maxlen != float('inf'):
-		campaign_query += " AND `a`.`duration` <= {maxlen}".format(
-							maxlen=maxlen)
-
-	restrictions = read_db(campaign_query)
-	restriction_fields = ['schedule', 'gender', 'minAge', 'maxAge', 'minLong',
-						'maxLong', 'minLat', 'maxLat', 'genre', 'occupation_id',
-						'programme', 'dayOfWeek', 'startTime', 'endTime']
+	valid_campaigns = dict(valid_campaigns)
 	campaigns = {}
-	for fields in restrictions:
-		restrict = dict(zip(restriction_fields, fields[:-3]))
-		advertid, campaignid, nicheness = fields[-3:]
-		dt = datetime.datetime.utcfromtimestamp(when)
-		restrict_match = {
-			'schedule': lambda: pid and broadcast['live'] in restrict['schedule'],
-			'gender': lambda: user['gender'] in restrict['gender'],
-			'minAge': lambda: calc_age(user['dob']) >= restrict['minAge'],
-			'maxAge': lambda: calc_age(user['dob']) <= restrict['maxAge'],
-			'minLong': lambda: user['long'] >= float(restrict['minLong']),
-			'maxLong': lambda: user['long'] <= float(restrict['maxLong']),
-			'minLat': lambda: user['lat'] >= float(restrict['minLat']),
-			'maxLat': lambda: user['lat'] <= float(restrict['maxLat']),
-			'genre': lambda: pid and restrict['genre'] in genres,
-			'occupation_id': lambda: user['occupation_id'] == restrict['occupation_id'],
-			'programme': lambda: pid and broadcast['pid'] == restrict['programme'],
-			'dayOfWeek': lambda: dt.isoweekday() == restrict['dayOfWeek'],
-			'startTime': lambda: dt.time() >= _time_from_str(
-												restrict['startTime']),
-			'endTime': lambda: dt.time() <= _time_from_str(
-												restrict['endTime'])
-		}
+	for campaign, advert in read_db(advertquery):
+		try:
+			campaigns[campaign].adverts.append(advert)
+		except KeyError:
+			campaigns[campaign] = Campaign(valid_campaigns[campaign], [advert])
 
-		if restrict['gender'] == set(['']):
-			restrict['gender'] = None
+	if not campaigns:
+		print("Error: None of the campaigns ({c}) have any adverts to "
+				"show!".format(c=[c[0] for c in valid_campaigns]),
+				file=sys.stderr)
+		return []
 
-		if restrict['schedule'] == set(['']):
-			restrict['schedule'] = None
+	##### Beyond here be OLD CODE
+	while False:
+		campaigns = {}
+		for fields in restrictions:
+			restrict = dict(zip(restriction_fields, fields[:-3]))
+			advertid, campaignid, nicheness = fields[-3:]
+			dt = datetime.datetime.utcfromtimestamp(when)
+			restrict_match = {
+				'schedule': lambda: pid and broadcast['live'] in restrict['schedule'],
+				'gender': lambda: user['gender'] in restrict['gender'],
+				'minAge': lambda: calc_age(user['dob']) >= restrict['minAge'],
+				'maxAge': lambda: calc_age(user['dob']) <= restrict['maxAge'],
+				'minLong': lambda: user['long'] >= float(restrict['minLong']),
+				'maxLong': lambda: user['long'] <= float(restrict['maxLong']),
+				'minLat': lambda: user['lat'] >= float(restrict['minLat']),
+				'maxLat': lambda: user['lat'] <= float(restrict['maxLat']),
+				'genre': lambda: pid and restrict['genre'] in genres,
+				'occupation_id': lambda: user['occupation_id'] == restrict['occupation_id'],
+				'programme': lambda: pid and broadcast['pid'] == restrict['programme'],
+				'dayOfWeek': lambda: dt.isoweekday() == restrict['dayOfWeek'],
+				'startTime': lambda: dt.time() >= _time_from_str(
+													restrict['startTime']),
+				'endTime': lambda: dt.time() <= _time_from_str(
+													restrict['endTime'])
+			}
 
-		#if not nicheness:
-			#import pdb; pdb.set_trace()
+			if restrict['gender'] == set(['']):
+				restrict['gender'] = None
 
-		available = all([v is None or restrict_match[k]()
-							for k, v in restrict.iteritems()])
+			if restrict['schedule'] == set(['']):
+				restrict['schedule'] = None
 
-		if available:
-			try:
-				campaigns[campaignid].adverts.append(advertid)
-			except KeyError:
-				campaigns[campaignid] = Campaign(nicheness=float(nicheness),
-												adverts=[int(advertid)])
+			available = all([v is None or restrict_match[k]()
+								for k, v in restrict.iteritems()])
+
+			if available:
+				try:
+					campaigns[campaignid].adverts.append(advertid)
+				except KeyError:
+					campaigns[campaignid] = Campaign(nicheness=float(nicheness),
+													adverts=[int(advertid)])
 
 	return campaigns
 
