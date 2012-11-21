@@ -1,5 +1,1 @@
-#AuthName "Restricted Area"
-#AuthType Basic
-#AuthUserFile /usr/share/gdp/gdpgroup3/client/webroot/.htpasswd
-#AuthGroupFile /dev/null
-#require valid-user
+

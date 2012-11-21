@@ -107,7 +107,8 @@
 		defaults: {
 			title: "",
 			type: "",
-			overlay: ""
+			overlay: "",
+			duration: 0
 		},
 		duration: function () {
 			return Math.ceil(this.get("duration"));
@@ -144,6 +145,9 @@
 				dfd.resolve(that.first()); // TODO: check there is a first?
 			}).fail(function () { dfd.reject(); });
 			return dfd;
+		},
+		comparator: function (m) {
+			return -Number(m.id);
 		}
 	});
 
