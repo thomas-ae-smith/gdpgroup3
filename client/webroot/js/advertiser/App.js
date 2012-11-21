@@ -28,11 +28,12 @@
 			return this.render(view);
 		},
 		goAdvert: function (id, edit) {
+			console.log("id:", id);
 			var that = this,
 				advert = id === "new" ? new y4.Advert() : this.adverts.get(id),
 				impressions = new y4.Impressions(this.impressions.where({ "advert_id": id})),
 				view = advert ?
-						( edit ?
+						( edit || id === "new" ?
 						new y4.pages.AdvertEdit({ advert: advert, app: this }) :
 						new y4.pages.AdvertFull({ advert: advert, impressions: impressions, app: this }) ) :
 					new y4.pages.NotFound({ message: "Advert not found." });
@@ -274,7 +275,7 @@
 							});
 			var data = [];
 			// _.each(_.range(this.advert.get("duration")), function (i) {
-			_.each(_.range(121), function (i) {
+			_.each(_.range(121), function (i) {		//TODO: this is only like this for the sample data
 				data.push({seconds: i, clicks: 0, skips: 0})
 			});
 			options.impressions.each( function(impression) { 
@@ -413,17 +414,10 @@
 					.attr("dy", ".35em")
 					.text(function(d) { return d.name; });
 
-				// });
-
 			}(this));
 
 			return this;
 		}
-		// ,
-		// edit: function (e) {
-		// 	e.preventDefault();
-		// 	this.router.navigate("adverts/" + this.advert.id + "/edit", { trigger: true });
-		// }
 	});
 
 	y4.pages.AdvertEdit = y4.Page.extend({
