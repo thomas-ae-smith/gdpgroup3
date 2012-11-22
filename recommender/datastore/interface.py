@@ -103,17 +103,6 @@ def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=()):
 				user_response[4], 			# lat
 				user_response[5]) 			# long
 
-	# Get programme details
-	programme_query = (	"SELECT `p`.`id`, `gp`.`genre_id` "
-						"FROM `programme` as p "
-						"LEFT JOIN `genre_programme` as gp "
-						"ON `p`.`id` = `gp`.`programme_id` "
-						"WHERE `p`.`id` = {pid}").format(pid=pid)
-	programme_response = dict(read_db(programme_query))
-	programme = Programme(programme_response.keys()[0],
-							set(programme_response.values()),
-							'live') # TODO: Dont assume live.
-
 	###### Restrict campaigns to user restrictions ######
 
 	# Get campaigns where the user fits age requirements
@@ -189,8 +178,49 @@ def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=()):
 	if not valid_campaigns:
 		return {}
 
-	import pdb; pdb.set_trace()
 	###### Restrict campaigns to programme restrictions ######
+	# Get programme details
+	programme_query = (	"SELECT `p`.`id`, `gp`.`genre_id` "
+						"FROM `programme` as p "
+						"LEFT JOIN `genre_programme` as gp "
+						"ON `p`.`id` = `gp`.`programme_id` "
+						"WHERE `p`.`id` = {pid}").format(pid=pid)
+	programme_response = dict(read_db(programme_query))
+	programme = Programme(programme_response.keys()[0],
+							set(programme_response.values()),
+							'live') # TODO: Dont assume live.
+
+	if programme.genres:
+		genrequery = (	"SELECT `campaign`.`id`,`campaign`.`nicheness` "
+						"FROM `campaign` "
+						"LEFT JOIN `campaign_genre` "
+						"ON `campaign`.`id` = `campaign_genre`.`campaign_id` "
+						"WHERE (`campaign_genre`.`genre_id` IS NULL "
+							"OR `campaign_genre`.`genre_id` = '' "
+							"OR `campaign_genre`.`genre_id` IN ({genres}))").format(
+								genres=','.join(str(g) for g in programme.genres))
+	else:
+		genrequery = (	"SELECT `campaign`.`id`,`campaign`.`nicheness` "
+						"FROM `campaign` "
+						"LEFT JOIN `campaign_genre` "
+						"ON `campaign`.`id` = `campaign_genre`.`campaign_id` "
+						"WHERE (`campaign_genre`.`genre_id` IS NULL "
+							"OR `campaign_genre`.`genre_id` = ''").format(
+								genres=','.join(str(g) for g in programme.genres))
+
+	valid_campaigns.intersection_update(set(read_db(genrequery)))
+	if not valid_campaigns:
+		return {}
+
+	schedulequery = (	"SELECT `campaign`.`id`,`campaign`.`nicheness` "
+						"FROM `campaign` "
+						"WHERE (`campaign`.`schedule` IS NULL "
+							"OR `campaign`.`schedule` = '' "
+							"OR FIND_IN_SET('{schedule}', `campaign`.`schedule`) > 0)").format(
+								schedule=programme.schedule)
+	valid_campaigns.intersection_update(set(read_db(schedulequery)))
+	if not valid_campaigns:
+		return {}
 
 	###### Return adverts and their nichenesses ######
 	advertquery = ("SELECT `advert_campaign`.`campaign_id`, `advert`.`id` "
