@@ -129,8 +129,7 @@ def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=()):
 	# Keep track of valid campaigns to show
 	valid_campaigns = set(read_db(agequery))
 	if not valid_campaigns: # If no valid campaigns, may as well stop querying.
-		return []
-
+		return {}
 
 	# Restrict to campaigns where user fits gender requirements.
 	genderquery = ("SELECT `campaign`.`id`,`campaign`.`nicheness` "
@@ -140,7 +139,7 @@ def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=()):
 					"OR (`gender` IS NULL)").format(gender=user.gender)
 	valid_campaigns.intersection_update(set(read_db(genderquery)))
 	if not valid_campaigns:
-		return []
+		return {}
 
 	# Get campaigns where the user fits occupation requirements
 	occupationquery = (	"SELECT `campaign`.`id`,`campaign`.`nicheness` "
@@ -152,7 +151,7 @@ def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=()):
 							"{occupation}").format(occupation=user.occupation)
 	valid_campaigns.intersection_update(set(read_db(occupationquery)))
 	if not valid_campaigns:
-		return []
+		return {}
 
 	# Get campaigns where the user fits boundingbox requirements
 	bbquery = (	"SELECT `campaign`.`id`,`campaign`.`nicheness` "
@@ -170,29 +169,27 @@ def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=()):
 						lat=user.lat, long=user.long)
 	valid_campaigns.intersection_update(set(read_db(bbquery)))
 	if not valid_campaigns:
-		return []
-
-	# Get campaigns where the user fits boundingbox requirements
-	bbquery = (	"SELECT `campaign`.`id`,`campaign`.`nicheness` "
-				"FROM `campaign` "
-				"LEFT JOIN `boundingbox` "
-				"ON `campaign`.`id` = `boundingbox`.`campaign_id` "
-				"WHERE (`boundingbox`.`minLat` IS NULL "
-					"OR `boundingbox`.`minLat` <= {lat}) "
-				"AND (`boundingbox`.`maxLat` IS NULL "
-					"OR `boundingbox`.`maxLat` >= {lat}) "
-				"AND (`boundingbox`.`minLong` IS NULL "
-					"OR `boundingbox`.`minLong` <= {long}) "
-				"AND (`boundingbox`.`maxLong` IS NULL "
-					"OR `boundingbox`.`maxLong` >= {long})").format(
-						lat=user.lat, long=user.long)
-	valid_campaigns.intersection_update(set(read_db(bbquery)))
-	if not valid_campaigns:
-		return []
-
+		return {}
 
 	###### Restrict campaigns to time restrictions ######
-	
+	dt = datetime.datetime.utcfromtimestamp(when)
+	timequery = (	"SELECT `campaign`.`id`,`campaign`.`nicheness` "
+					"FROM `campaign` "
+					"LEFT JOIN `time` "
+					"ON `campaign`.`id` = `time`.`campaign_id` "
+					"WHERE (`time`.`startTime` IS NULL "
+						"OR `time`.`startTime` <= {time}) "
+					"AND (`time`.`endTime` IS NULL "
+						"OR `time`.`endTime` >= {time}) "
+					"AND (`time`.`dayOfWeek` IS NULL "
+						"OR `time`.`dayOfWeek` = {day})").format(
+							time=dt.time().isoformat(),
+							day=dt.isoweekday())
+	valid_campaigns.intersection_update(set(read_db(bbquery)))
+	if not valid_campaigns:
+		return {}
+
+	import pdb; pdb.set_trace()
 	###### Restrict campaigns to programme restrictions ######
 
 	###### Return adverts and their nichenesses ######
