@@ -15,10 +15,10 @@ $app->get('/adverts(/)', function() use ($app) {
 		if (!$user->id) { return notFound('User with that ID not found.'); }
 		if ($programmeId !== 0 && !$programme->id) { return notFound('Programme with that ID not found.'); }
 		unset($out);
-//		exec('python ../../../recommender/get_ad.py ' . $user->id . ' ' . $programme->id . ' ' . $timeLimit . ' ' . time(), $out);
+		exec('python ../../../recommender/get_ad.py ' . $user->id . ' ' . $programme->id . ' ' . $timeLimit . ' ' . time(), $out);
 	//	echo('python ../../../recommender/get_ad.py ' . $user->id . ' ' . $programme->id . ' ' . $timeLimit . ' ' . time());
 	//	var_dump($out);
-		$advertId = $timeLimit > 10 ? 1 : 0;// $out[0];
+		$advertId = $timeLimit > 10 ? $out[0] : 0;// $out[0];
 		$advert = R::load('advert', $advertId);
 		if (!$advert->id) { return notFound('No suitable recommendation.'); }
 		output_json(array(getAdvert($advert)));
@@ -58,6 +58,20 @@ $app->delete('/adverts/:id', function ($id) use ($app) {
 	noContent();
 });
 
+$app->get('/advert-refresh', function () use ($app) {
+    $conn = ftp_connect('152.78.144.19');
+	$login = ftp_login($conn, 'adSoton', 'MountainDew2012');
+	if (!$conn || !$login) { internalError('Unable to connect to advert server.'); }
+	$files = array_map(function ($file) {
+	}, array_filter(ftp_nlist($conn, '.'), function ($file) {
+		return (endsWith($file, '.mp4') || endsWith($file, '.f4v')) && !startsWith($file, './prog-');
+	}));
+
+	var_dump($files);
+	die();
+	ftp_close($conn);
+});
+
 function getAdvert($advert) {
 	return array_merge($advert->export(), array(
 		'campaigns' => array_map('getCampaignSummary', array_values($advert->sharedCampaign))
@@ -83,4 +97,16 @@ function setAdvert($advert, $req) {
 	$advert->thumbnail = $req['thumbnail'];
 	R::store($advert);
 	output_json(getAdvert($advert));
+}
+
+function startsWith($haystack, $needle) {
+    return !strncmp($haystack, $needle, strlen($needle));
+}
+
+function endsWith($haystack, $needle) {
+    $length = strlen($needle);
+    if ($length == 0) {
+        return true;
+    }
+    return (substr($haystack, -$length) === $needle);
 }
