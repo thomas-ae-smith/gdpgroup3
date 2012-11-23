@@ -242,8 +242,10 @@
 		className: "layer-view skip-layer",
 		zIndex: 5,
 		events: {
-			".skip": "showReasons",
-			".reason": "skip"
+			"click .skip": "showReasons",
+			"touchstart .skip": "showReasons",
+			"click .reason": "skip",
+			"touchstart .reason": "skip"
 		},
 		render: function () {
 			LayerView.prototype.render.call(this);
@@ -328,7 +330,7 @@
 		update: function () {
 			this.$el.css({
 				backgroundColor: this.item.get("type") === "adbreak" ? "#FFB917" : "#333",
-				left: 50 + (this.item.localTime() - y4.now()) / 100 + "%",
+				left: (this.item.localTime() - y4.now()) / 100 + "%",
 				width: this.item.duration() / 100 + "%"
 			});
 			return this;

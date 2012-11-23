@@ -2,6 +2,11 @@
 	//"use strict";
 
 	y4.App = Backbone.View.extend({
+		events {
+			"touchstart body": "touch",
+			"mousemove body": "touch"
+		},
+
 		initialize: function () {
 			this.adverts = new y4.Adverts();
 			//this.adverts.fetch();
@@ -22,6 +27,10 @@
 				$("body").html(html);
 			}
 			return this;
+		},
+		touch: function(e) {
+			console.log("IFRAME MOUSE MOVE");
+			$(top).trigger(e);
 		}
 	});
 

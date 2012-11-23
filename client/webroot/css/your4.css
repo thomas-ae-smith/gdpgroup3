@@ -331,10 +331,21 @@ video {
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 120px;
 	background: black;
 	z-index: 1000;
 	opacity: 0.9;
+	height: 0;
+}
+
+.bottom-controls {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: black;
+	z-index: 1000;
+	opacity: 0.9;
+	height: 0;
 }
 
 .playlist {
