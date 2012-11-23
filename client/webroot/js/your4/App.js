@@ -194,14 +194,16 @@
 		},
 
 		showControls: function () {
+			console.log("moved");
 			var that = this;
 			if (!this.controlsAreShown) {
+				console.log("yay");
 				this.$(".top-controls, .bottom-controls").fadeIn(200); // TODO switch to transit (or maybe not due to dequeue)
 				this.controlsAreShown = true;
 			}
 			clearTimeout(this.hideControlsTimeout);
 			this.hideControlsTimeout = setTimeout(function () {
-				//that.hideControls();
+				that.hideControls();
 			}, 1500);
 			return this;
 		},
