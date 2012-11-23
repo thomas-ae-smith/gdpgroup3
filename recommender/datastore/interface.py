@@ -251,48 +251,6 @@ def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=()):
 				file=sys.stderr)
 		return []
 
-	##### Beyond here be OLD CODE
-	while False:
-		campaigns = {}
-		for fields in restrictions:
-			restrict = dict(zip(restriction_fields, fields[:-3]))
-			advertid, campaignid, nicheness = fields[-3:]
-			dt = datetime.datetime.utcfromtimestamp(when)
-			restrict_match = {
-				'schedule': lambda: pid and broadcast['live'] in restrict['schedule'],
-				'gender': lambda: user['gender'] in restrict['gender'],
-				'minAge': lambda: calc_age(user['dob']) >= restrict['minAge'],
-				'maxAge': lambda: calc_age(user['dob']) <= restrict['maxAge'],
-				'minLong': lambda: user['long'] >= float(restrict['minLong']),
-				'maxLong': lambda: user['long'] <= float(restrict['maxLong']),
-				'minLat': lambda: user['lat'] >= float(restrict['minLat']),
-				'maxLat': lambda: user['lat'] <= float(restrict['maxLat']),
-				'genre': lambda: pid and restrict['genre'] in genres,
-				'occupation_id': lambda: user['occupation_id'] == restrict['occupation_id'],
-				'programme': lambda: pid and broadcast['pid'] == restrict['programme'],
-				'dayOfWeek': lambda: dt.isoweekday() == restrict['dayOfWeek'],
-				'startTime': lambda: dt.time() >= _time_from_str(
-													restrict['startTime']),
-				'endTime': lambda: dt.time() <= _time_from_str(
-													restrict['endTime'])
-			}
-
-			if restrict['gender'] == set(['']):
-				restrict['gender'] = None
-
-			if restrict['schedule'] == set(['']):
-				restrict['schedule'] = None
-
-			available = all([v is None or restrict_match[k]()
-								for k, v in restrict.iteritems()])
-
-			if available:
-				try:
-					campaigns[campaignid].adverts.append(advertid)
-				except KeyError:
-					campaigns[campaignid] = Campaign(nicheness=float(nicheness),
-													adverts=[int(advertid)])
-
 	return campaigns
 
 def get_ad(campaignId):
