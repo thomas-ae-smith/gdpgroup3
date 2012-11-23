@@ -26,7 +26,9 @@ $app->get('/adverts(/)', function() use ($app) {
 
 		if (!$advert->id) {
 			$advert = R::findOne('advert', ' duration < ? ORDER BY RAND() ', array($timeLimit));
-			//notFound('No suitable recommendation.');
+		}
+		if (!$advert->id) {
+			notFound('No suitable recommendation.');
 		}
 		output_json(array(getAdvert($advert)));
 	} else {
