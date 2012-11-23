@@ -193,16 +193,24 @@
 			if (this.spinner) { this.spinner.stop(); }
 		},
 
-		showControls: function () {
+		showControls: function (e) {
 			var that = this;
 			if (!this.controlsAreShown) {
 				this.$(".bottom-controls").transition({height: '100px'});
 				this.controlsAreShown = true;
 			}
+
 			clearTimeout(this.hideControlsTimeout);
-			this.hideControlsTimeout = setTimeout(function () {
-				that.hideControls();
-			}, 1500);
+
+			var playlistFocused = e
+					&& $(e.originalEvent.srcElement).parents('.playlist-container').length
+					&& e.type == 'mousemove';
+
+			if (!playlistFocused) {
+				this.hideControlsTimeout = setTimeout(function () {
+					that.hideControls();
+				}, 1500);
+			}
 			return this;
 		},
 

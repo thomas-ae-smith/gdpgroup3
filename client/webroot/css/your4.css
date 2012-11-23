@@ -386,9 +386,18 @@ video {
 	width: 80px;
 }
 .playlist-item .info {
+	padding: 10px;
+	overflow: hidden;
+}
+.playlist-item .info .title {
+	font-size: 16px;
+	font-weight: bold;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	
+}
+.playlist-item .info .live-label {
 	position: absolute;
-	left: 15px;
-	top: 0;
-	bottom: 0;
-	right: 0;
+	right: 10px;
+	bottom: 10px;
 }

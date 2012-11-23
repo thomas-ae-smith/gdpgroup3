@@ -302,12 +302,11 @@
 		},
 		updateItemViews: function () {
 			_.each(this.itemViews, function (view) {
-				view.update();
+				//view.update();
 			});
 		},
 		updateNowMarker: function () {
-			console.log(y4.now()-y4./100);
-			$('.now-line').css({left: y4.now() / 100 + '%'});	
+			$('.now-line').css({left: (y4.now()-this.playlist.currItem.localTime()) / 100 + '%'});	
 		}
 	});
 

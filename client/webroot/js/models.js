@@ -581,6 +581,7 @@
 
 		playItem: function (i) {
 			var that = this;
+			this.currItem = this.at(i);
 			this.at(i).start().on("finish", function () {
 				that.playItem(i + 1);
 			});

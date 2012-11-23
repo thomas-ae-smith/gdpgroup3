@@ -22,7 +22,7 @@
 		<div class="info">
 			<div class="title"><%= title %></div>
 			<div class="duration"><%= duration %></div>
-			<div class="label <%= live ? "label-important" : "label-info" %>"><%= live ? "LIVE" : "CATCH-UP" %></div>
+			<span class="live-label label <%= live ? "label-important" : "label-info" %>"><%= live ? "LIVE" : "RECORDED" %></span>
 		</div>
 	<% } %>
 </script>
