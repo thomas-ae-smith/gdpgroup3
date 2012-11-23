@@ -231,10 +231,13 @@ def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=(), live=True):
 						"SELECT `advert_id` "
 						"FROM `blacklist_advert` "
 						"WHERE `user_id` = {uid}) "
-					"AND `advert`.`id` NOT IN ({exclude})").format(
+					).format(
 						campaigns=",".join(str(a) for a, n in valid_campaigns),
-						uid=uid,
-						exclude=",".join(str(e) for e in exclude))
+						uid=uid)
+
+	if exclude:
+		advertquery += "AND `advert`.`id` NOT IN ({exclude})".format(
+							exclude=",".join(str(e) for e in exclude))
 
 	valid_campaigns = dict(valid_campaigns)
 	campaigns = {}
@@ -245,10 +248,7 @@ def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=(), live=True):
 			campaigns[campaign] = Campaign(valid_campaigns[campaign], [advert])
 
 	if not campaigns:
-		print("Error: None of the campaigns ({c}) have any adverts to "
-				"show!".format(c=[c[0] for c in valid_campaigns]),
-				file=sys.stderr)
-		return []
+		return {}
 
 	return campaigns
 
