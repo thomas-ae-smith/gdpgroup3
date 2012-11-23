@@ -12,11 +12,11 @@ from datastore import interface
 DEBUG = False
 VERBOSE = False
 
-def get_ad(uid, pid, when=None, maxlen=float('inf'), exclude=()):
+def get_ad(uid, pid, when=None, maxlen=float('inf'), exclude=(), live=True):
 	if when is None:
 		when = time.time()
 	# Get all adverts available for a given user, programme and time.
-	advert_pool = interface.get_advert_pool(uid, pid, when, maxlen, exclude)
+	advert_pool = interface.get_advert_pool(uid, pid, when, maxlen, exclude, live)
 
 	if not advert_pool:
 		print("No valid adverts returned for uid={uid}, pid={pid}, "
@@ -74,6 +74,8 @@ def _init_argparse():
 	parser.add_argument('start_time', metavar='start_time', type=int, nargs='?',
 						default=None, help="A unix timestamp representing "
 						"when the advert is to be shown.")
+	parser.add_argument('-l', "--live", action="store_true",
+						help="Return ads for a live showing of this programme.")
 	parser.add_argument('-x', "--exclude", type=int, default=(),
 						nargs='+', help="Given a list of advert ids, will "
 						"not return an advert id withis this list.")
@@ -98,5 +100,5 @@ if __name__ == "__main__":
 		args.max_length = float('inf')
 
 	ad_id = get_ad(args.uid, args.pid, args.start_time, args.max_length,
-					exclude=args.exclude)
+					exclude=args.exclude, live=args.live)
 	print(ad_id, end='')

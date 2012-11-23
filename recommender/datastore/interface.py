@@ -81,8 +81,7 @@ def add_programme_blacklist(userId, programmeId):
 
 	response = write_db(query)
 
-# TODO: Don't assume live programme.
-def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=()):
+def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=(), live=True):
 	"""Given a user id, programme id and time, returns a pool of adverts whose
 	campaigns allow the advert to be shown to the given user during the given
 	programme at the given time. Advert ids are returned along with the
@@ -188,7 +187,7 @@ def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=()):
 	programme_response = dict(read_db(programme_query))
 	programme = Programme(programme_response.keys()[0],
 							set(programme_response.values()),
-							'live') # TODO: Dont assume live.
+							{True:'live',False:'vod'}[live])
 
 	if programme.genres:
 		genrequery = (	"SELECT `campaign`.`id`,`campaign`.`nicheness` "
