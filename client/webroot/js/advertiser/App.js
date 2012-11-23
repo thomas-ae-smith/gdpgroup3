@@ -260,6 +260,33 @@
 		}
 	});
 
+	var wowzaServer = "152.78.144.19:1935";
+	y4.PreviewView = Backbone.View.extend({
+		initialize: function (options) {
+			this.advert = options.advert;
+		},
+		render: function () {
+			var that = this,
+				player = new y4.PlayerView({ server: wowzaServer });
+			this.$el.html('<a class="play" href="javascript:;">Pause</a>').append(player.render().el);
+			player.setAdvert(that.advert);
+			player.videoLayer.on("finish", function () {
+				player.setAdvert(that.advert);
+			});
+			var $play = this.$(".play");
+			$play.click(function () {
+				if ($play.text() === "Play") {
+					player.videoLayer.play();
+					$play.text("Pause");
+				} else {
+					player.videoLayer.pause();
+					$play.text("Play");
+				}
+			})
+			return this;
+		}
+	});
+
 	y4.pages.AdvertFull = y4.Page.extend({
 		className: "advert-full",
 		initialize: function (options) {
@@ -305,6 +332,11 @@
 						"font-weight": "bold",
 						"text-align": "right"
 					});
+
+	
+
+			var preview = new y4.PreviewView({ advert: this.advert });
+			this.$(".live-preview").append(preview.render().el);
 
 			var map = this.locationMap = L.map(this.$("#viewer-locations .map")[0], {
 				center: [54.805, -3.59],
@@ -367,7 +399,7 @@
 					    return {seconds: d.seconds, count: +d[name]};
 					  })
 					};
-					});
+				});
 
 				x.domain(d3.extent(data, function(d) { return d.seconds; }));	//length
 
@@ -434,7 +466,9 @@
 		render: function () {
 			var that = this;
 			this.$el.html(y4.templates["advert-edit"](this.advert.toJSON()));
-			setTimeout(function () { that.updatePreview(); }, 100); // Erm.. HACK
+
+			var preview = new y4.PreviewView({ advert: this.advert });
+			this.$(".live-preview").append(preview.render().el);
 
 			var $progress;
 			this.$('#advert-file').fileupload({
@@ -473,10 +507,7 @@
 			return this;
 		},
 		updatePreview: _.throttle(function () {
-			var update = this.$("#advert-overlay-iframe")[0].contentWindow.update;
-			if (update) {
-				update(this.overlayEditor.getValue());
-			}
+			this.$(".overlay-layer iframe")[0].contentWindow.location.reload();
 		}, 500),
 		submit: function (e) {
 			e.preventDefault();
