@@ -12,12 +12,12 @@ $app->get('/adverts(/)', function() use ($app) {
 	if ($userId) {
 		$user = R::load('user', $userId);
 		$programme = R::load('programme', $programmeId);
+		$exclude = explode(',', $excludeAdvertIds);
 		if (!$user->id) { return notFound('User with that ID not found.'); }
 		if ($programmeId !== 0 && !$programme->id) { return notFound('Programme with that ID not found.'); }
 		unset($out);
-		exec('python ../../../recommender/get_ad.py ' . $user->id . ' ' . $programme->id . ' ' . $timeLimit . ' ' . time(), $out);
-	//	echo('python ../../../recommender/get_ad.py ' . $user->id . ' ' . $programme->id . ' ' . $timeLimit . ' ' . time());
-	//	var_dump($out);
+		exec('python ../../../recommender/get_ad.py ' . $user->id . ' ' . $programme->id . ' ' . $timeLimit . ' ' . time() . ' -x ' . implode(' ', $exclude), $out);
+		//echo 'python ../../../recommender/get_ad.py ' . $user->id . ' ' . $programme->id . ' ' . $timeLimit . ' ' . time() . ' -x ' . implode(' ', $exclude);
 		$advertId = $timeLimit > 10 ? $out[0] : 0;// $out[0];
 		$advert = R::load('advert', $advertId);
 		if (!$advert->id) { return notFound('No suitable recommendation.'); }
