@@ -144,3 +144,31 @@
 			stroke: steelblue;
 			stroke-width: 1.5px;
 		}
+
+
+.live-preview {
+	position: relative;
+}
+
+.layer-view {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.still-layer, .black-layer {
+	background: black;
+}
+
+.live-preview iframe {
+	border: 0;
+}
+
+.live-preview .play {
+	position: absolute;
+	bottom: 10px;
+	left: 210px;
+	z-index: 1000;
+}

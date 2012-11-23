@@ -2,7 +2,7 @@
 	//"use strict";
 
 	y4.App = Backbone.View.extend({
-		events {
+		events: {
 			"touchstart body": "touch",
 			"mousemove body": "touch"
 		},

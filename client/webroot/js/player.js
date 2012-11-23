@@ -120,7 +120,7 @@
 
 	y4.HtmlVideoLayerView = VideoLayerView.extend({
 		play: function () { this.videoEl.play(); },
-		stop: function() { this.videoEl.pause(); },
+		pause: function() { this.videoEl.pause(); },
 		set: function (service, url) {
 			console.log("http://" + this.options.server + "/" + service + "/" + url + "/playlist.m3u8");
 			if (this.url === url && this.service == service) { return; }
@@ -152,8 +152,8 @@
 	});
 
 	y4.FlashVideoLayerView = VideoLayerView.extend({
-		play: function () { console.log("TODO") },
-		stop: function () { console.log("TODO") },
+		play: function () { $f(this.$('.flash-video-container')[0]).play(); },
+		pause: function () { $f(this.$('.flash-video-container')[0]).pause(); },
 		set: function (service, url) {
 			console.log('rtmp://' + this.options.server + '/' + service, url);
 			// Is there no need to change channel
@@ -306,7 +306,7 @@
 			});
 		},
 		updateNowMarker: function () {
-			console.log(y4.now()-y4./100);
+			//console.log(y4.now()-y4./100);
 			$('.now-line').css({left: y4.now() / 100 + '%'});	
 		}
 	});
