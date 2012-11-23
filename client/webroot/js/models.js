@@ -152,18 +152,7 @@
 		defaults: {
 			title: "",
 			startDate: 0,
-			endDate: 0,
-			adverts: [], // FIXME: WRONG
-			targets: { // FIXME: WRONG!!!
-				ageRanges: [],
-				boundingBoxes: [],
-				times: [],
-				genres: [],
-				occupations: [],
-				programmes: [],
-				genders: [],
-				schedules: []
-			}
+			endDate: 0
 		},
 		initialize: function () {
 			var that = this;
@@ -171,6 +160,23 @@
 			_.each(this.get("targets"), function (targets, type) {
 				that.targetCollections[type] = new y4.CampaignTargets(targets, { /*url: that.url() + "/targets/" + type + "/"*/ });
 			});
+			if (!this.get("targets")) {
+				this.set({
+					targets: {
+						ageRanges: [],
+						boundingBoxes: [],
+						times: [],
+						genres: [],
+						occupations: [],
+						brands: [],
+						genders: [],
+						schedules: []
+					}
+				});
+			}
+			if (!this.get("adverts")) {
+				this.set({ adverts: [] });
+			}
 		}
 	});
 	y4.Campaigns = Backbone.Collection.extend({
