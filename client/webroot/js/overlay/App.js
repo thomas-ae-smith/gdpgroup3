@@ -29,7 +29,6 @@
 			return this;
 		},
 		touch: function(e) {
-			console.log("IFRAME MOUSE MOVE");
 			$(top).trigger(e);
 		}
 	});

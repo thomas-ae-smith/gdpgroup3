@@ -194,11 +194,9 @@
 		},
 
 		showControls: function () {
-			console.log("moved");
 			var that = this;
 			if (!this.controlsAreShown) {
-				console.log("yay");
-				this.$(".top-controls, .bottom-controls").fadeIn(200); // TODO switch to transit (or maybe not due to dequeue)
+				this.$(".bottom-controls").transition({height: '100px'});
 				this.controlsAreShown = true;
 			}
 			clearTimeout(this.hideControlsTimeout);
@@ -209,7 +207,7 @@
 		},
 
 		hideControls: function () {
-			this.$(".top-controls, .bottom-controls").dequeue().fadeOut(200);
+			this.$(".bottom-controls").transition({height: '0px'});
 			this.controlsAreShown = false;
 			return this;
 		},

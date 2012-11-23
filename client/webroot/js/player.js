@@ -49,7 +49,7 @@
 				this.blackLayer.render().el,
 				this.stillLayer.render().hide().el,
 				this.skipLayer.render().hide().el,
-				this.overlayLayer.render().show().el);
+				this.overlayLayer.render().hide().el);
 			return this;
 		},
 
@@ -70,7 +70,7 @@
 				this.videoLayer.set("vod", advert.get("url"));
 				break;
 			}
-			this.overlayLayer.set("http://your4.tv/overlay.php#" + advert.id)
+			this.overlayLayer.set("http://your4.tv/overlay.php#" + advert.id).show();
 			this.skipLayer.showAfterDelay();
 		},
 		setBroadcast: function (broadcast) {
@@ -278,6 +278,7 @@
 			this.playlist.on("remove", this.removeItem, this);
 			this.itemViews = {};
 			this.updateTimer = setInterval(function () {
+				that.updateNowMarker();
 				that.updateItemViews();
 			}, 1000);
 		},
@@ -303,6 +304,10 @@
 			_.each(this.itemViews, function (view) {
 				view.update();
 			});
+		},
+		updateNowMarker: function () {
+			console.log(y4.now()-y4./100);
+			$('.now-line').css({left: y4.now() / 100 + '%'});	
 		}
 	});
 
