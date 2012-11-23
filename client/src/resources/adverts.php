@@ -20,10 +20,14 @@ $app->get('/adverts(/)', function() use ($app) {
 		exec('python ../../../recommender/get_ad.py ' . $user->id . ' ' . $programme->id . ' ' . 
 			$timeLimit . ' ' . time() . ($exclude ? ' -x ' . implode(' ', $exclude) : '') . 
 			($live ? ' -l' : ''), $out);
-		//echo 'python ../../../recommender/get_ad.py ' . $user->id . ' ' . $programme->id . ' ' . $timeLimit . ' ' . time() . ' -x ' . implode(' ', $exclude);
+
 		$advertId = $timeLimit > 10 ? $out[0] : 0;// $out[0];
 		$advert = R::load('advert', $advertId);
-		if (!$advert->id) { return notFound('No suitable recommendation.'); }
+
+		if (!$advert->id) {
+			$advert = R::findOne('advert', ' duration < ? ORDER BY RAND() ', array($timeLimit));
+			//notFound('No suitable recommendation.');
+		}
 		output_json(array(getAdvert($advert)));
 	} else {
 		$adverts = R::find('advert');
