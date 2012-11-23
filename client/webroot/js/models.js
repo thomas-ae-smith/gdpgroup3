@@ -131,7 +131,7 @@
 	y4.Adverts = Backbone.Collection.extend({
 		url: "http://"+baseUrl+"/api/adverts/",
 		model: y4.Advert,
-		recommendation: function (userId, programmeId, timelimit, excludeAdvertIds) {
+		recommendation: function (userId, programmeId, timelimit, excludeAdvertIds, broadcast) {
 			var that = this,
 				dfd = $.Deferred();
 			this.fetch({
@@ -139,7 +139,8 @@
 					user: userId,
 					programme: programmeId,
 					time_limit: Math.max(Math.floor(timelimit), 1),
-					exclude_adverts: excludeAdvertIds.join(",")
+					exclude_adverts: _.uniq(excludeAdvertIds).join(","),
+					broadcast: broadcast
 				}
 			}).done(function () {
 				dfd.resolve(that.first()); // TODO: check there is a first?
@@ -413,6 +414,7 @@
 			this.programmeId = options.programmeId || 0;
 			this.userId = options.userId;
 			this.timeOffset = options.timeOffset;
+			this.broadcast = options.broadcast;
 			this.on("add", function () {
 				if (!that.ready) {
 					that.ready = true;
@@ -490,7 +492,7 @@
 		pushAdvertRecommendation: function (timelimit, programmeId, excludeAdvertIds) {
 			var that = this,
 				dfd = $.Deferred();
-			(new y4.Adverts()).recommendation(this.userId, programmeId, timelimit, excludeAdvertIds).done(function (advert) {
+			(new y4.Adverts()).recommendation(this.userId, programmeId, timelimit, excludeAdvertIds, this.broadcast).done(function (advert) {
 
 				var item = new y4.PlaylistItem({
 					type: "advert",
@@ -652,7 +654,7 @@
 			console.log("Pushing " + programme.get("title"));
 			console.log("Filling break")
 			// Fill in time before start with adverts
-			this.pushAdverts(breakBeforeDuration, programme).dfd.done(function () {
+			this.pushAdverts(breakBeforeDuration, programme, broadcast).dfd.done(function () {
 				var time = that.broadcasterPlaylistEndTime(),
 					item = new y4.PlaylistItem({
 						type: "programme",
@@ -681,7 +683,7 @@
 						_.each(programme.get("adbreaks"), function (adbreak) {
 							var startTime = Number(adbreak.startTime) + time,
 								duration = adbreak.endTime - adbreak.startTime;
-							breaks[adbreak.id] = that.addAdverts(startTime, duration, programme, true).adbreak;
+							breaks[adbreak.id] = that.addAdverts(startTime, duration, programme, true, broadcast).adbreak;
 						});
 					};
 
@@ -696,7 +698,7 @@
 
 			return dfd;
 		},
-		addAdverts: function (time, duration, programme, partOfProgramme) {
+		addAdverts: function (time, duration, programme, partOfProgramme, broadcast) {
 			console.log("Preparing advert break.");
 			var that = this,
 				dfd = $.Deferred(),
@@ -704,6 +706,7 @@
 					duration: duration,
 					userId: this.user.id,
 					programmeId: programme ? programme.id : 0,
+					broadcast: broadcast ? true : false,
 					startTime: time,
 					timeOffset: that.timeOffset
 				}),
@@ -725,8 +728,8 @@
 
 			return { adbreak: adbreak, dfd: dfd };
 		},
-		pushAdverts: function (duration, programme) {
-			return this.addAdverts(this.broadcasterPlaylistEndTime(), duration, programme);
+		pushAdverts: function (duration, programme, broadcast) {
+			return this.addAdverts(this.broadcasterPlaylistEndTime(), duration, programme, false, broadcast);
 		},
 		pushBroadcastRecommendation: function (startTime) {
 			var that = this,
