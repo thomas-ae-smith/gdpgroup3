@@ -231,10 +231,11 @@ def get_advert_pool(uid, pid, when=None, maxlen=None, exclude=()):
 					"AND `advert`.`id` NOT IN ("
 						"SELECT `advert_id` "
 						"FROM `blacklist_advert` "
-						"WHERE `user_id` = {uid})").format(
-							campaigns=",".join(
-										str(a) for a, n in valid_campaigns),
-							uid=uid)
+						"WHERE `user_id` = {uid}) "
+					"AND `advert`.`id` NOT IN ({exclude})").format(
+						campaigns=",".join(str(a) for a, n in valid_campaigns),
+						uid=uid,
+						exclude=",".join(str(e) for e in exclude))
 
 	valid_campaigns = dict(valid_campaigns)
 	campaigns = {}
