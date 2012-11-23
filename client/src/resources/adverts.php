@@ -6,6 +6,7 @@ $app->get('/adverts(/)', function() use ($app) {
 	$programmeId = intval($app->request()->get('programme'));
 	$timeLimit = intval($app->request()->get('time_limit'));
 	$excludeAdvertIds = $app->request()->get('exclude_adverts');
+	$live = $app->request()->get('live');
 	if (!$timeLimit) { $timeLimit = 0; }
 	if (!$programmeId) { $programmeId = 0; }
 	// If a user and programme is provided, provide one advert that is most suitable for them
@@ -16,7 +17,9 @@ $app->get('/adverts(/)', function() use ($app) {
 		if (!$user->id) { return notFound('User with that ID not found.'); }
 		if ($programmeId !== 0 && !$programme->id) { return notFound('Programme with that ID not found.'); }
 		unset($out);
-		exec('python ../../../recommender/get_ad.py ' . $user->id . ' ' . $programme->id . ' ' . $timeLimit . ' ' . time() . ($exclude ? ' -x ' . implode(' ', $exclude) : ''), $out);
+		exec('python ../../../recommender/get_ad.py ' . $user->id . ' ' . $programme->id . ' ' . 
+			$timeLimit . ' ' . time() . ($exclude ? ' -x ' . implode(' ', $exclude) : '') . 
+			($live ? ' -l' : ''), $out);
 		//echo 'python ../../../recommender/get_ad.py ' . $user->id . ' ' . $programme->id . ' ' . $timeLimit . ' ' . time() . ' -x ' . implode(' ', $exclude);
 		$advertId = $timeLimit > 10 ? $out[0] : 0;// $out[0];
 		$advert = R::load('advert', $advertId);
