@@ -23,6 +23,7 @@ function generateVideoThumbnail($thumbnail, $video) {
 	$width = $video->getFrameWidth();
 	$height = $video->getFrameHeight();
 	$frame = $video->getFrame(floor($count / 10));
+	if (!$frame) { $frame = $video->getFrame(50); }
 	imagepng(thumbnail($frame->toGDImage()), $thumbnail);
 	return str_replace('../../webroot', 'http://www.your4.tv', $thumbnail);
 }
