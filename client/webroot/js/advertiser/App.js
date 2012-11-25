@@ -295,7 +295,7 @@
 			this.impressions = options.impressions;
 			this.title = "Advert: " + this.advert.get("title");
 			this.advert.set({"impressions": this.impressions,
-							"firstshown": isFinite(firstshown = _.min(this.impressions.pluck("timestamp")))? firstshown : "Never",
+							"firstshown": isFinite( firstshown = _.min(this.impressions.pluck("timestamp")) )? (new Date(1000 * firstshown)).toDateString().slice(4) : "Never",
 							"skipped": this.impressions.filter( function(impression) { return impression.get("skiptime"); }).length,
 							"clicked": this.impressions.filter( function(impression) { return typeof impression.get("clicks")[0] !== "undefined"; }).length,
 							"unique": _.uniq(this.impressions.pluck("user_id")).length
@@ -305,7 +305,7 @@
 			_.each(_.range(121), function (i) {		//TODO: this is only like this for the sample data
 				data.push({seconds: i, clicks: 0, skips: 0})
 			});
-			options.impressions.each( function(impression) { 
+			this.impressions.each( function(impression) { 
 				var skiptime, click;
 				if( skiptime = impression.get("skiptime")) {
 					data[skiptime].skips += 1;
