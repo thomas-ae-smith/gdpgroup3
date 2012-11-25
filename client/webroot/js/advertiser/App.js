@@ -351,7 +351,7 @@
 				that.$(".target-tabs a").eq(0).click();
 				map.invalidateSize();
 			});
-			L.marker([50.936592, -1.398697]).addTo(map);
+			// L.marker([50.936592, -1.398697]).addTo(map); //TODO: test data, remove
 
 
 			(function (that) {
@@ -383,7 +383,7 @@
 					.x(function(d) { return x(d.seconds); })
 					.y(function(d) { return y(d.count); });
 
-				var svg = d3.select($(that.el).find(".plot")[0]).append("svg")  //I HAVE YOU NOW!!!11!!1  ( TODO: remove)
+				var svg = d3.select($(that.el).find(".plot")[0]).append("svg")  //I HAVE YOU NOW!  ( TODO: remove)
 					.attr("width", width + margin.left + margin.right)
 					.attr("height", height + margin.top + margin.bottom)
 					.append("g")
