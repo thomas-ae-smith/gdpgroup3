@@ -292,12 +292,13 @@
 		initialize: function (options) {
 			this.advert = options.advert;
 			this.adverts = options.app.adverts;
+			this.impressions = options.impressions;
 			this.title = "Advert: " + this.advert.get("title");
-			this.advert.set({"impressions": options.impressions,
-							"firstshown": _.min(options.impressions.pluck("timestamp")),
-							"skipped": options.impressions.filter( function(impression) { return impression.get("skiptime"); }).length,
-							"clicked": options.impressions.filter( function(impression) { return typeof impression.get("clicks")[0] !== "undefined"; }).length,
-							"unique": _.uniq(options.impressions.pluck("user_id")).length
+			this.advert.set({"impressions": this.impressions,
+							"firstshown": isFinite(firstshown = _.min(this.impressions.pluck("timestamp")))? firstshown : "Never",
+							"skipped": this.impressions.filter( function(impression) { return impression.get("skiptime"); }).length,
+							"clicked": this.impressions.filter( function(impression) { return typeof impression.get("clicks")[0] !== "undefined"; }).length,
+							"unique": _.uniq(this.impressions.pluck("user_id")).length
 							});
 			var data = [];
 			// _.each(_.range(this.advert.get("duration")), function (i) {
