@@ -53,7 +53,31 @@ The space $\mathcal{P}$ is, by design, coupled only with the functions \texttt{g
 \subsection{Adverts}
 \label{sec:design_adverts}
 
+Each advert is assigned to a campaign, where a campaign has multiple adverts and an advert may apply to multiple campaigns. A campaign may be given a set of restrictions, where the adverts belonging to a campaign are shown whenever the restrictions are met. Restrictions may apply to programmes, users and times, where the restrictable attributes are:
 
+\begin{center}
+	\begin{tabular}{c c r l}
+		\textbf{Programmes} & \textbf{Times} & \multicolumn{2}{c}{\textbf{Users}} \\
+		\hline
+		genre & time of day & ~~gender & latitude \\ % The two non-breaking spaces are so the table looke a little nicer.
+		individual programme & weekday & age & longitude \\
+		liveness & & &  occupation \\
+	\end{tabular}
+\end{center}
+
+Attributes may have multiple restrictions, where the restrictions are single points or ranges where appropriate. When a campaign has multiple restrictions on a single attribute, that attribute is considered satisfied if any of its restrictions are satisfied; e.g.: if a campaign has weekday restrictions of Monday and Wednesday, the weekday restriction is considered satisfies on either a Monday or a Wednesday. A campaign only applies when all of its restrictions are satisfied, though a campaign need not have restrictions for all of the above attributes.
+
+Whenever a campaign is satisfied, its adverts are shown with a frequency depending on the value of a campaign metric we are calling nicheness, defined as:
+$$
+	\text{nicheness} = \frac{(1-\text{nicheness}_\text{programme}) + (1-\text{nicheness}_\text{time}) + (1-\text{nicheness}_\text{user})}{3}
+$$
+where
+\begin{align*}
+	\text{nicheness}_\text{programme} &= 1 - \frac{\text{satisfying programmes}}{\text{total programmes}} \\
+	\text{nicheness}_\text{time} &= 1 - \frac{\text{satisfied time during campaign}}{\text{total time during campaign}} \\
+	\text{nicheness}_\text{user} &= 1 - \frac{\text{satisfying users}}{\text{total users}}
+\end{align*}
+meaning that for a particular person, programme and time in which multiple campaigns apply, more niche campaigns will have their adverts display more often. This design decision was made to encourage advertisers to create niche campaigns over broad campaigns, which has the result of users being shown more highly targetted adverts more often. According to our prestudy (section \ref{sec:prestudy}), this relevance has a large influence on user attentivity, and also positively influences the user experience\cite{yahoo-intrusive-advertising}.
 
 \subsubsection{Campaigns}
 
