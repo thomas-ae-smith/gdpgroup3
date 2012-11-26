@@ -17,7 +17,9 @@
 			"click .icon-stop": "stop",
 			"click .tap-start": "goPlay",
 			"touchstart .tap-start": "startPlay",
-			"click .tap-start": "startPlay"
+			"click .tap-start": "startPlay",
+			"touchstart .logout-btn": "logout",
+			"click .logout-btn": "logout"
 		},
 		initialize: function () {
 			var that = this;
@@ -148,6 +150,8 @@
 			var that = this,
 				playlist = new y4.Playlist(undefined, { user: this.user() });
 
+			$('.account-controls .name').text("Welcome "+this.user().get('name'));
+
 			this.showSpinner();
 
 			this.player.setPlaylist(playlist);
@@ -196,17 +200,19 @@
 		showControls: function (e) {
 			var that = this;
 			if (!this.controlsAreShown) {
-				this.$(".bottom-controls").transition({height: '100px'});
+				this.$(".bottom-controls").transition({height: '80px'});
+				this.$(".top-controls").transition({height: '40px'});
+				$(".player .skip-layer .skip").transition({bottom: '90px'});
 				this.controlsAreShown = true;
 			}
 
 			clearTimeout(this.hideControlsTimeout);
 
-			var playlistFocused = e
-					&& $(e.originalEvent.srcElement).parents('.playlist-container').length
+			var controlsFocused = e
+					&& $(e.originalEvent.srcElement).parents('.bottom-controls, .top-controls').length
 					&& e.type == 'mousemove';
 
-			if (!playlistFocused) {
+			if (!controlsFocused) {
 				this.hideControlsTimeout = setTimeout(function () {
 					that.hideControls();
 				}, 1500);
@@ -215,13 +221,18 @@
 		},
 
 		hideControls: function () {
-			this.$(".bottom-controls").transition({height: '0px'});
+			this.$(".bottom-controls, .top-controls").transition({height: '0px'});
+			$(".player .skip-layer .skip").transition({bottom: '20px'});
 			this.controlsAreShown = false;
 			return this;
 		},
 
 		play: function () { this.player.play(); return this; },
 		stop: function () { this.player.stop(); return this; },
+
+		logout: function() {
+			this.router.navigate('logout', { trigger: true });
+		}
 
 	});
 

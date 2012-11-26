@@ -5,6 +5,15 @@
 	</div>
 	<div class="player-layer">
 		<div class="top-controls">
+			<div class="top-content">
+				<img class="logo" src="/img/logo.png" alt="Your4"/>
+				<div class="account-controls pull-right">
+					<span class="name">Welcome Unknown</span>
+						<div class="btn-group account-options">
+							<button class="btn btn-small logout-btn">Logout</button>
+						</div>
+				</div>
+			</div>
 		</div>
 		<div class="player-container"></div>
 		<div class="bottom-controls">
@@ -21,7 +30,7 @@
 	<% if (type !== "adbreak") { %>
 		<div class="info">
 			<div class="title"><%= title %></div>
-			<div class="duration"><%= duration %></div>
+			<div class="times"><%= start %> - <%= end %></div>
 			<span class="live-label label <%= live ? "label-important" : "label-info" %>"><%= live ? "LIVE" : "RECORDED" %></span>
 		</div>
 	<% } %>
@@ -104,6 +113,7 @@
 			</div>
 		<% }); %>
 			<button class="btn btn-large btn-primary submit-registration" type="submit">Register</button>
+			<button class="btn btn-large cancel-registration" type="button">Cancel</button>
 		</form>
 	</div>
 </script>

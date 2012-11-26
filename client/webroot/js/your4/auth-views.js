@@ -5,7 +5,8 @@
 	y4.RegisterView = Backbone.View.extend({
 
 		events: {
-			"click .submit-registration": "submitReg"
+			"click .submit-registration": "submitReg",
+			"click .cancel-registration": "cancelReg"
 		},
 
 		className: "logon-outer",
@@ -74,6 +75,7 @@
 
 			var target = $(e.currentTarget);
 			target.attr("disabled","disabled").text("Please wait...");
+			$('.cancel-registration').attr("disabled","disabled");
 			this.app.users.register(this.user.toJSON()).done(function () {
 				that.$('.error').hide();
 				that.trigger("registered");
@@ -85,8 +87,14 @@
 				});
 			}).always(function () {
 				target.removeAttr("disabled").text("Register");
+				$('.cancel-registration').removeAttr("disabled");
 			});
+		},
+		
+		cancelReg: function() {
+			this.app.router.navigate("logout", { trigger: true });	
 		}
+
 	});
 
 	y4.LoginView = Backbone.View.extend({
@@ -123,7 +131,6 @@
 		},
 
 		register: function () {
-			console.log("HJK")
 			this.app.router.navigate("register", { trigger: true });
 		},
 

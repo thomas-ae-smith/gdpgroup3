@@ -1,4 +1,5 @@
 body {
+	background: black;
 	overflow: hidden;
 	background: black;
 	color: white;
@@ -153,6 +154,7 @@ body {
 
 .start-container .logon-inner .submit-registration {
 	margin-top:10px;
+	margin-bottom:5px;
 }
 
 .start-container .logon-inner .separator {
@@ -263,6 +265,7 @@ body {
 }
 
 .player .skip-layer .skip {
+	opacity: 0.7;
 	position: absolute;
 	display: block;
 	bottom: 20px;
@@ -278,6 +281,7 @@ body {
 }
 
 .player .skip-layer .skip:hover {
+	opacity: 1;
 	text-decoration: none;
 }
 
@@ -331,10 +335,34 @@ video {
 	top: 0;
 	left: 0;
 	right: 0;
-	background: black;
 	z-index: 1000;
 	opacity: 0.9;
 	height: 0;
+	overflow: hidden;
+	border: 1px solid #333;
+	background: #111;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: 0 -1px 1px #000;
+	background-image: -webkit-gradient(linear,left top,left bottom,from( #3c3c3c ),to( #111 ));
+	background-image: -webkit-linear-gradient( #3c3c3c,#111 );
+	background-image: -moz-linear-gradient( #3c3c3c,#111 );
+	background-image: -ms-linear-gradient( #3c3c3c,#111 );
+	background-image: -o-linear-gradient( #3c3c3c,#111 );
+	background-image: linear-gradient( #3c3c3c,#111 );
+}
+
+.top-controls .top-content {
+	padding: 5px;
+}
+
+.top-content .logo {
+	height: 35px;
+}
+
+.account-options {
+	display: inline-block;
+	margin-left: 10px;
 }
 
 .bottom-controls {
@@ -365,18 +393,16 @@ video {
 	overflow: hidden;
 	border: 1px solid white;
 	font-size: 10px;
-	margin: 2px;
 }
 .now-line {
 	position: absolute;
-	left: 50%;
+	left: 0;
 	top: 0;
 	bottom: 0;
-	width: 3px;
-	opacity: 0.8;
-	border-radius: 4px;
+	width: 0;
+	border-right: 2px solid #fff;
 	z-index: 1000;
-	background: red;
+	background: rgba(204, 51, 194, 0.3);
 }
 .playlist-item .thumb {
 	position: absolute;

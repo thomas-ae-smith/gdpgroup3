@@ -276,10 +276,10 @@
 			this.playlist = options.playlist;
 			this.playlist.on("add", this.addItem, this);
 			this.playlist.on("remove", this.removeItem, this);
+			this.playlist.on("switched", this.switchTo, this);
 			this.itemViews = {};
 			this.updateTimer = setInterval(function () {
-				that.updateNowMarker();
-				that.updateItemViews();
+				that.updateTicker();
 			}, 1000);
 		},
 		render: function () {
@@ -300,13 +300,15 @@
 			this.itemViews[item.cid] = view;
 			this.$el.append(view.render().el);
 		},
-		updateItemViews: function () {
+		switchTo: function (item) {
+			var that = this;
+			this.currItem = item;
 			_.each(this.itemViews, function (view) {
-				//view.update();
+				view.update();
 			});
 		},
-		updateNowMarker: function () {
-			$('.now-line').css({left: (y4.now()-this.playlist.currItem.localTime()) / 100 + '%'});	
+		updateTicker: function () {
+			$('.now-line').css({width: (y4.now()-this.currItem.localTime()) / 100 + '%'});
 		}
 	});
 
@@ -323,9 +325,12 @@
 			return this;
 		},
 		render: function () {
-			console.log(this.item.get("type"))
+			console.log(this.item.get("type"));
+
 			this.$el.html(y4.templates["playlist-item"](_.extend({
 				duration: this.item.duration(),
+				start: timestampToTime(this.item.localTime()),
+				end: timestampToTime(this.item.localTime()+this.item.duration()),
 				title: this.item.title(),
 				thumbnail: this.item.thumbnail()
 			}, this.item.toJSON())));
@@ -333,10 +338,12 @@
 		},
 		update: function () {
 			this.$el.css({
-				backgroundColor: this.item.get("type") === "adbreak" ? "#FFB917" : "#333",
-				left: (this.item.localTime() - y4.now()) / 100 + "%",
+				backgroundColor: this.item.get("type") === "adbreak" ? "#fff" : "#333",
 				width: this.item.duration() / 100 + "%"
 			});
+			
+			this.$el.transition({left: (this.item.localTime() - y4.now()) / 100 + "%"});
+
 			return this;
 		}
 	});

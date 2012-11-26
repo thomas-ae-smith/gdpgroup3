@@ -102,12 +102,12 @@ array_walk($channels, function ($channelIds, $channelName) use ($config) {
 			$broadcast->channel = $channel;
 
 			$programme = R::findOne('programme', ' uid = ? ', array($item->curie)); // curie = compact uri
-
 			if (!$programme) {
 				$programme = R::dispense('programme');
 				$programme->uid = $item->curie;
 				$programme->title = $item->title;
 				$programme->duration = $itemBroadcast->broadcast_duration; // or duration???
+				$programme->image = isset($item->image) ? $item->image : null;
 				$programme->description = isset($item->description) ? $item->description : '';
 				$programme->episodeNumber = isset($item->episode_number) ? $item->episode_number : null;
 				$programme->sharedGenres = array_filter(array_map(function ($uri) {
