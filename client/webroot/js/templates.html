@@ -208,9 +208,8 @@
 				<div class="span12 well">
 					<table id="advert-stats">
 						<tr>
-							<td>Advert Duration:</td><td><em><%= duration %></em> seconds</td>
-							<!--<td>First Shown:</td><td><em><%= firstshown %></em></td>-->
-							<td>First Shown:</td><td><em>8th Nov 2012</em></td>
+							<td>Advert Duration:</td><td><em><%= Math.round(duration) %></em> seconds</td>
+							<td>First Shown:</td><td><em><%= firstshown %></em></td>
 						</tr>
 						<tr>
 							<td>Total Views:</td><td><em><%= impressions.length %></em></td>
@@ -225,7 +224,7 @@
 			</div>
 			<div class="row-fluid">
 				<div class="span12">
-					Viewer Locations (by IP):
+					Viewer Locations:
 				</div>
 			</div>
 			<div class="row-fluid">
@@ -247,76 +246,6 @@
 					<div class="live-preview">
 						<div class="video"></div>
 					</div>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span12">
-					Cumulative skip and click-through times:
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span12 well">
-					<div class="plot" style="height: 420px"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</script>
-<script type="text/html" id="advert-edit-template">
-	<div class="toolbar">
-		<button type="button" class="btn cancel">Cancel</button>
-		<button type="submit" class="btn edit btn-primary">Edit</button>
-	</div>
-	
-	<div class="row">
-		<div class="span6">
-			<div class="row-fluid">
-				<div class="span12">
-					Stats:
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span12 well">
-					<table id="advert-stats">
-						<tr>
-							<td>Advert Duration:</td><td><em><%= duration %></em> seconds</td>
-							<td>First Shown:</td><td><em><%= firstshown %></em></td>
-						</tr>
-						<tr>
-							<td>Total Views:</td><td><em><%= impressions.length %></em></td>
-							<td>Unique Views:</td><td><em><%= unique %></em></td>
-						</tr>
-						<tr>
-							<td>Clicked:</td><td><em><%= clicked %></em></td>
-							<td>Skipped:</td><td><em><%= skipped %></em></td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span12">
-					Viewer Locations (by IP):
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span12 well">
-					<div id="viewer-locations">
-						<div class="map"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="span6">
-			<div class="row-fluid">
-				<div class="span12">
-					Live preview:
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span12">
-					<div class="live-preview">
-					</div>
-					<button type="button" class="btn heat">heat map</button>
 				</div>
 			</div>
 			<div class="row-fluid">
@@ -425,8 +354,8 @@
 		<td></td>
 		<td><%= _.reduce(adverts, function (memo, advert, i) { return memo + (i ? "," : "") + advert.title; }, "") %></td>
 		<td><%= title %></td>
-		<td><%= startDate %></td>
-		<td><%= endDate %></td>
+		<td><%= (new Date(startDate*1000)).toDateString() %></td>
+		<td><%= (new Date(endDate*1000)).toDateString() %></td>
 		<td><button class="btn edit">Edit</button> <button class="btn delete">Delete</button>
 	</tr>
 </script>

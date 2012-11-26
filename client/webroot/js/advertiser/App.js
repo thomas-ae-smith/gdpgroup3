@@ -292,19 +292,20 @@
 		initialize: function (options) {
 			this.advert = options.advert;
 			this.adverts = options.app.adverts;
+			this.impressions = options.impressions;
 			this.title = "Advert: " + this.advert.get("title");
-			this.advert.set({"impressions": options.impressions,
-							"firstshown": _.min(options.impressions.pluck("timestamp")),
-							"skipped": options.impressions.filter( function(impression) { return impression.get("skiptime"); }).length,
-							"clicked": options.impressions.filter( function(impression) { return typeof impression.get("clicks")[0] !== "undefined"; }).length,
-							"unique": _.uniq(options.impressions.pluck("user_id")).length
+			this.advert.set({"impressions": this.impressions,
+							"firstshown": isFinite( firstshown = _.min(this.impressions.pluck("timestamp")) )? (new Date(1000 * firstshown)).toDateString().slice(4) : "Never",
+							"skipped": this.impressions.filter( function(impression) { return impression.get("skiptime"); }).length,
+							"clicked": this.impressions.filter( function(impression) { return typeof impression.get("clicks")[0] !== "undefined"; }).length,
+							"unique": _.uniq(this.impressions.pluck("user_id")).length
 							});
 			var data = [];
 			// _.each(_.range(this.advert.get("duration")), function (i) {
 			_.each(_.range(121), function (i) {		//TODO: this is only like this for the sample data
 				data.push({seconds: i, clicks: 0, skips: 0})
 			});
-			options.impressions.each( function(impression) { 
+			this.impressions.each( function(impression) { 
 				var skiptime, click;
 				if( skiptime = impression.get("skiptime")) {
 					data[skiptime].skips += 1;
@@ -351,7 +352,7 @@
 				that.$(".target-tabs a").eq(0).click();
 				map.invalidateSize();
 			});
-			L.marker([50.936592, -1.398697]).addTo(map);
+			// L.marker([50.936592, -1.398697]).addTo(map); //TODO: test data, remove
 
 
 			(function (that) {
@@ -383,7 +384,7 @@
 					.x(function(d) { return x(d.seconds); })
 					.y(function(d) { return y(d.count); });
 
-				var svg = d3.select($(that.el).find(".plot")[0]).append("svg")  //I HAVE YOU NOW!!!11!!1  ( TODO: remove)
+				var svg = d3.select($(that.el).find(".plot")[0]).append("svg")  //I HAVE YOU NOW!  ( TODO: remove)
 					.attr("width", width + margin.left + margin.right)
 					.attr("height", height + margin.top + margin.bottom)
 					.append("g")
