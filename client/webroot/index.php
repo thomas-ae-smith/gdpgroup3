@@ -22,7 +22,7 @@ $requires = array(
 		'scripts' => array('js/overlay/App')
 	),
 	'study' => array(
-		'styles' => array('css/study.css'),
+		'styles' => array('css/your4.css'),
 		'scripts' => array('lib/flowplayer.min.js', 'js/study/App', 'js/player.js')
 	)
 );
