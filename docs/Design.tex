@@ -7,9 +7,9 @@ It was decided that the TV and programme streams should be delivered to the clie
 
 LAMP server
 
-\subsection{Programme recommendation}
+\subsection{Programme Recommendation}
 
-To populate a users personal TV channel, your4.tv utilises a programme recommendation system. This system only recommends programmes, and is separate from the targetted advert retreiver (described in Section~\ref{sec:design_adverts}). At an abstract level, each programme is given a vector $\mathbf{p}$, which describes what the programme is like. The vector $\mathbf{p}$ lies within the programme space $\mathcal{P}$, and is calculated using the function \texttt{get\_programme\_vector} from programme information. The concrete implementation of this used in your4.tv is that $\mathcal{P}$ is 19-dimentional, where each dimention represents one of the genres:
+A your4.tv user is presented with a personal channel populated with a list of programmes as recommended by a programme recommendation system.  This system only recommends programmes, and is separate from the targetted advert retreiver (described in Section~\ref{sec:design_adverts}). At an abstract level, each programme is given a vector $\mathbf{p}$, which describes what the programme is like. The vector $\mathbf{p}$ lies within the programme space $\mathcal{P}$, and is calculated using the function \texttt{get\_programme\_vector} from programme information. The concrete implementation of this used in your4.tv is that $\mathcal{P}$ is 19-dimentional, where each dimention represents one of the genres:
 \begin{center}
 	\emph{\footnotesize{
 		\begin{tabular}{c c c c c}
