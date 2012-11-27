@@ -44,12 +44,17 @@
 			return this.channels.fetch();
 		},
 		render: function () {
-			this.$el.html("").append(
+			/*this.$el.html("").append(
 				this.videoLayer.render().el,
 				this.blackLayer.render().el,
 				this.stillLayer.render().hide().el,
 				this.skipLayer.render().hide().el,
-				this.overlayLayer.render().hide().el);
+				this.overlayLayer.render().hide().el);*/
+			this.$el.html("").append(this.videoLayer.el);
+			this.videoLayer.render(true).$el.append(this.blackLayer.el);
+			this.blackLayer.render().$el.append(this.stillLayer.el);
+			this.stillLayer.render().$el.append(this.skipLayer.el);
+			this.skipLayer.render().$el.append(this.overlayLayer.el);
 			return this;
 		},
 
@@ -164,13 +169,16 @@
 			this.trigger("set");
 			return this;
 		},
-		render: function () {
+		render: function (clear) {
 			LayerView.prototype.render.call(this);
 			var that = this,
 				template = _.template($("#flash-video-template").html());
 
-			this.$el.html(template());
-			this.$('.flash-video-container').flowplayer({
+			if (clear) {
+				this.$el.html(template());
+			}
+
+			this.$('.flash-video-container').html("").flowplayer({
 				src: "lib/flowplayer.swf",
 				wmode: "opaque"
 			}, {
