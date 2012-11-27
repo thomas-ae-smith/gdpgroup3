@@ -427,3 +427,7 @@ video {
 	right: 10px;
 	bottom: 10px;
 }
+
+iframe {
+	border: 0;
+}
