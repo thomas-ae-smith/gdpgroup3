@@ -14,7 +14,7 @@
 		render: function () {
 			$("body").html(this.advert.get("overlay"))
 				.css({
-					"font-size": Math.round($(window).innerHeight() / 15) + "px"
+					"font-size": Math.round($(top).innerHeight() / 15) + "px"
 				});
 			return this;
 		},
