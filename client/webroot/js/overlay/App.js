@@ -12,12 +12,11 @@
 		},
 		render: function () {
 			$("body").css({
-					"font-size": Math.round($(top).innerHeight() / 15) + "px"
+					"font-size": Math.round($(window).innerHeight() / 15) + "px"
 				}).html('<div class="overlay-container"></div>')
 				.find(".overlay-container").css({
 					position: "relative",
 					margin: "0 auto",
-					border: "1px solid red"
 				}).html(this.advert.get("overlay"));
 			return this;
 		},
@@ -36,7 +35,7 @@
 				y4.videoWidth = width;
 				y4.videoHeight = height;
 				var f = width / height,
-					h = $(top).innerHeight();
+					h = $(window).innerHeight();
 
 				this.$(".overlay-container").css({
 					height: h,
