@@ -44,17 +44,17 @@
 			return this.channels.fetch();
 		},
 		render: function () {
-			/*this.$el.html("").append(
-				this.videoLayer.render().el,
-				this.blackLayer.render().el,
-				this.stillLayer.render().hide().el,
-				this.skipLayer.render().hide().el,
-				this.overlayLayer.render().hide().el);*/
-			this.$el.html("").append(this.videoLayer.el);
+			/*this.$el.html("").append(this.videoLayer.el);
 			this.videoLayer.render(true).$el.append(this.blackLayer.el);
 			this.blackLayer.render().$el.append(this.stillLayer.el);
 			this.stillLayer.render().$el.append(this.skipLayer.el);
-			this.skipLayer.render().$el.append(this.overlayLayer.el);
+			this.skipLayer.render().$el.append(this.overlayLayer.render().el);*/
+
+			this.$el.html("").append(this.videoLayer.el, this.blackLayer.render().el);
+			this.videoLayer.render(true).$el.append(this.stillLayer.el);
+			this.stillLayer.render().$el.append(this.skipLayer.el);
+			this.skipLayer.render().$el.append(this.overlayLayer.render().el);
+
 			return this;
 		},
 
@@ -105,14 +105,12 @@
 			return this;
 		},
 		render: function () {
-			this.$el.css({ zIndex: this.zIndex });
 			return this;
 		}
 	});
 
 	var VideoLayerView = LayerView.extend({
 		className: "layer-view video-layer",
-		zIndex: 1,
 		mute: function () {
 			console.log("TODO");
 			return this;
@@ -120,6 +118,10 @@
 		unmute: function () {
 			console.log("TODO");
 			return this;
+		},
+		render: function() {
+			LayerView.prototype.render.call(this);
+			this.$el.css({zIndex:1});
 		}
 	});
 
@@ -137,7 +139,7 @@
 			return this;
 		},
 		render: function () {
-			LayerView.prototype.render.call(this);
+			VideoLayerView.prototype.render.call(this);
 
 			var that = this,
 				template = _.template($("#html-video-template").html());
@@ -170,7 +172,7 @@
 			return this;
 		},
 		render: function (clear) {
-			LayerView.prototype.render.call(this);
+			VideoLayerView.prototype.render.call(this);
 			var that = this,
 				template = _.template($("#flash-video-template").html());
 
@@ -215,12 +217,10 @@
 
 	y4.BlackLayerView = LayerView.extend({
 		className: "layer-view black-layer",
-		zIndex: 4
 	});
 
 	y4.StillLayerView = LayerView.extend({
 		className: "layer-view still-layer",
-		zIndex: 2,
 		set: function (url) {
 			this.$("img.still").attr("src", url);
 			return this;
@@ -234,7 +234,6 @@
 
 	y4.OverlayLayerView = LayerView.extend({
 		className: "layer-view overlay-layer",
-		zIndex: 3,
 		set: function (url) {
 			this.$("iframe").attr("src", url);
 			return this;
@@ -248,7 +247,6 @@
 
 	y4.SkipLayerView = LayerView.extend({
 		className: "layer-view skip-layer",
-		zIndex: 5,
 		events: {
 			"click .skip": "showReasons",
 			"touchstart .skip": "showReasons",
