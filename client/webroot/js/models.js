@@ -758,4 +758,22 @@
 		}
 	});
 
+	y4.Study = Backbone.Model.extend({
+		defaults: {
+
+		},
+		initialize: function () {
+			if (!this.get("adverts")) {
+				this.set({
+					adverts: []
+				});
+			}
+		}
+	});
+
+	y4.Studies = Backbone.Collection.extend({
+		model: y4.Study,
+		url: "http://"+baseUrl+"/api/studies"
+	});
+
 }(this.y4));

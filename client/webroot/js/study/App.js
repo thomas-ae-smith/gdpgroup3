@@ -19,8 +19,8 @@
 			[6, 4]
 		],
 		roundAdvertPools = [
-			[91, 50, 51, 52, 53, 54, 55, 56, 57, 58],
-			[54, 55, 56, 57, 58, 59, 60, 61, 62, 63]
+			[49, 50, 51, 52, 53, 54, 55, 56, 57, 58],
+			[54, 55, 56, 57, 58, 59, 60, 61, 62, 91]
 		],
 		instructionals = [
 			new y4.Programme({ url: "WIY-Club2-10_9_1.mp4" }),
@@ -36,14 +36,24 @@
 			this.adverts = new y4.Adverts();
 			this.roundAdverts = [];
 			this.player = new y4.PlayerView({ server: wowzaServer });
+			this.studies = new y4.Studies();
 		},
 		render: function () {
 			this.$el.html("").append(this.player.render().el);
+			this.player.$(".skip").hide();
 			return this;
 		},
 		start: function () {
-			var that = this;
-			this.adverts.fetch().done(function () {
+			var that = this,
+				created = $.Deferred();
+
+			this.study = this.studies.create({}, {
+				success: function () {
+					created.resolve();
+				}
+			});
+
+			$.when(this.adverts.fetch(), created).done(function () {
 
 				_.each(roundAdvertPools, function (pool, i) {
 					that.roundAdverts[i] = new y4.Adverts(that.adverts.filter(function (advert) {
@@ -75,8 +85,10 @@
 					case 2:
 					case 4:
 						var n = Math.floor(Math.random() * that.roundAdverts[currRound].length),
-							advert = that.roundAdverts[currRound].get(91);
-						console.log(n, that.roundAdverts[currRound], advert)
+							advert = that.roundAdverts[currRound].at(n);
+						that.study.save({
+							adverts: that.study.get("adverts").concat([advert.id])
+						});
 						that.roundAdverts[currRound].remove(advert);
 						that.player.setAdvert(advert);
 						setTimeout(function () {
