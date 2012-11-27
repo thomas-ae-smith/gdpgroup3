@@ -31,3 +31,15 @@ function now () {
 function error (msg) {
     console.error(msg)
 }
+
+function formatTime (secs, showHours) {
+    var hours = pad(Math.floor(secs / (60 * 60)), 2);
+
+    var divisor_for_minutes = secs % (60 * 60);
+    var minutes = pad(Math.floor(divisor_for_minutes / 60), 2);
+
+    var divisor_for_seconds = divisor_for_minutes % 60;
+    var seconds = pad(Math.floor(divisor_for_seconds), 2);
+
+    return (showHours ? [hours, minutes, seconds] : [minutes, seconds]).join(":");
+}

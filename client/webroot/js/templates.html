@@ -186,7 +186,8 @@
 				<i class="icon-<%= type === "still" ? "camera" : (type === "video" ? "film" : "") %>"></i>
 			</div>
 		</div></td>
-		<td><%= title %></td>
+		<td><%= title %><br>
+			<span class="muted"><%= formatTime(duration) %></span></td>
 		<td><button class="btn stats">Stats</button> <button class="btn edit">Edit</button> <button class="btn delete">Delete</button>
 	</tr>
 </script>

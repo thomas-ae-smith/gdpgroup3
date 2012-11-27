@@ -148,7 +148,7 @@
 			return dfd;
 		},
 		comparator: function (m) {
-			return -Number(m.id);
+			return m.get("title").toLowerCase();
 		}
 	});
 

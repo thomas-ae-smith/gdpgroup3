@@ -1,7 +1,4 @@
 <?php
-	//var scripts = ["js/Scene.js", "js/collections.js", "js/App.js", "js/VideoPlayer.js", "js/Player.js", "js/Media.js", "js/Overlay.js", "js/PersonalChannel.js"],
-//http://warlock.ecs.soton.ac.uk:8080/target/target-script-min.js#anonymous
-
 // We get PHP to load our dependancies
 $requires = array(
 	'all' => array(
@@ -23,6 +20,10 @@ $requires = array(
 	'overlay' => array(
 		'styles' => array('css/overlay.css'),
 		'scripts' => array('js/overlay/App')
+	),
+	'study' => array(
+		'styles' => array('css/study.css'),
+		'scripts' => array('lib/flowplayer.min.js', 'js/study/App', 'js/player.js')
 	)
 );
 
@@ -33,6 +34,8 @@ if (strpos($uri, 'advertiser.php') !== false) {
 	$site = 'overlay';
 } else if (strpos($uri, 'client.php') !== false) {
 	$site = 'client';
+} else if (strpos($uri, 'study.php') !== false) {
+	$site = 'study';
 } else {
 	$site = 'your4';
 }
