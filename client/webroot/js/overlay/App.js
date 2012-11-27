@@ -12,20 +12,22 @@
 			//this.adverts.fetch();
 		},
 		render: function () {
+			$("body").html(this.advert.get("overlay"))
+				.css({
+					"font-size": Math.round($(window).innerHeight() / 15) + "px"
+				});
 			return this;
 		},
 		start: function () {
+			var that = this;
 			this.adverts.add({ id: Number(window.location.hash.substr(1)) });
-			var advert = this.adverts.first();
-			advert.fetch().done(function () {
-				$("body").html(advert.get("overlay"));
+			this.advert = this.adverts.first();
+
+			this.advert.fetch().done(function () {
+				that.render();
 			}).fail(function () {
 				$("body").html("No advert with that ID.");
 			});
-			window.update = function (html) {
-				console.log("hj", $("body"), html)
-				$("body").html(html);
-			}
 			return this;
 		},
 		touch: function(e) {
