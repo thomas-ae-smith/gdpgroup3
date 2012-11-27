@@ -53,6 +53,8 @@ The space $\mathcal{P}$ is, by design, coupled only with the functions \texttt{g
 \subsection{Adverts}
 \label{sec:design_adverts}
 
+Targetted adverts are shown in your4.tv during programme advert breaks, replacing the adverts which would otherwise appear. Users are able to skip an advert, prompting a box asking the reason they chose to skip the advert, possibly resulting in it being blacklisted for the user. Skipping adverts does not reduce the amount of time the user spends watching adverts, instead simply allows the collection of user preference data and replaces the advert for another which the user hopefully finds more relevant.
+
 Each advert is assigned to a campaign, where a campaign has multiple adverts and an advert may apply to multiple campaigns. A campaign may be given a set of restrictions, where the adverts belonging to a campaign are shown whenever the restrictions are met. Restrictions may apply to programmes, users and times, where the restrictable attributes are:
 
 \begin{center}
@@ -78,8 +80,6 @@ where
 	\text{nicheness}_\text{user} &= 1 - \frac{\text{satisfying users}}{\text{total users}}
 \end{align*}
 meaning that for a particular person, programme and time in which multiple campaigns apply, more niche campaigns will have their adverts display more often. This design decision was made to reward advertisers for creating niche campaigns over broad campaigns. By encouraging a greater number of more highly targetted advertisements in this way, users will be shown a far more relevant advert set. According to our prestudy (section \ref{sec:prestudy}), such relevance has a large influence on user attentivity, and is also known to positively influences the user experience\cite{yahoo-intrusive-advertising}.
-
-\subsubsection{Viewer - consuming adverts}
 
 \subsection{Streaming}
 Each programme will be recorded using the EPG data. Since adverts will be replaced by ones recommended to viewers, it must be known when adverts are due to start and finish. This information is available as a GPI[?] pulse, sent by Channel 4 [more technical details]
