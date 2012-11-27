@@ -16,8 +16,9 @@
 
 			this.videoLayer.on("set", function () {
 				that.videoLayer.show();
-			}).on("start", function () {
+			}).on("start", function (metaData) {
 				that.blackLayer.hide();
+				that.overlayLayer.$("iframe")[0].contentWindow.setVideoDimensions(metaData.width, metaData.height)
 			}).on("finish", function () {
 				that.blackLayer.show();
 				that.videoLayer.hide();
@@ -75,7 +76,7 @@
 				this.videoLayer.set("vod", advert.get("url"));
 				break;
 			}
-			this.overlayLayer.set("http://your4.tv/overlay.php#" + advert.id).show();
+			this.overlayLayer.set("http://" + window.location.host + window.location.pathname.split("/").slice(0, -1).join("/") + "/overlay.php#" + advert.id).show();
 			this.skipLayer.showAfterDelay();
 		},
 		setBroadcast: function (broadcast) {
@@ -159,8 +160,8 @@
 	});
 
 	y4.FlashVideoLayerView = VideoLayerView.extend({
-		play: function () { $f(this.$('.flash-video-container')[0]).play(); },
-		pause: function () { $f(this.$('.flash-video-container')[0]).pause(); },
+		play: function () { this.$f.play(); },
+		pause: function () { this.$f.pause(); },
 		set: function (service, url) {
 			console.log('rtmp://' + this.options.server + '/' + service, url);
 			// Is there no need to change channel
@@ -179,6 +180,7 @@
 			if (clear) {
 				this.$el.html(template());
 			}
+			console.log("fml")
 
 			this.$('.flash-video-container').html("").flowplayer({
 				src: "lib/flowplayer.swf",
@@ -192,7 +194,7 @@
 					autoBuffering: true,
 					accelerated: true,
 					onStart: function () {
-						that.trigger("start");
+						that.trigger("start", that.$f.getClip().metaData);
 					},
 					onFinish: function () {
 						that.trigger("finish");
@@ -210,6 +212,7 @@
 					backgroundGradient: 'none'
 				}
 			});
+			this.$f = $f(this.$('.flash-video-container')[0]);
 
 			return this;
 		}
