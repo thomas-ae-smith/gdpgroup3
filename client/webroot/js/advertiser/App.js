@@ -266,7 +266,6 @@
 			this.advert = options.advert;
 		},
 		render: function () {
-			console.log("DABKSJDHGAKSDGH");
 			var that = this,
 				player = new y4.PlayerView({ server: wowzaServer });
 			this.$el.html('<a class="play" href="javascript:;">Pause</a>').append(player.render().el);

@@ -45,12 +45,6 @@
 			return this.channels.fetch();
 		},
 		render: function () {
-			/*this.$el.html("").append(this.videoLayer.el);
-			this.videoLayer.render(true).$el.append(this.blackLayer.el);
-			this.blackLayer.render().$el.append(this.stillLayer.el);
-			this.stillLayer.render().$el.append(this.skipLayer.el);
-			this.skipLayer.render().$el.append(this.overlayLayer.render().el);*/
-
 			this.$el.html("").append(this.videoLayer.el, this.blackLayer.render().el);
 			this.videoLayer.render(true).$el.append(this.stillLayer.el);
 			this.stillLayer.render().$el.append(this.skipLayer.el);

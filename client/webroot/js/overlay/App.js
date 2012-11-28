@@ -9,11 +9,11 @@
 
 		initialize: function () {
 			this.adverts = new y4.Adverts();
+			this.height = $(window).innerHeight() || $(top).innerHeight();
 		},
 		render: function () {
-			console.log($(window).innerHeight());
 			$("body").css({
-					"font-size": Math.round($(window).innerHeight() / 15) + "px"
+					"font-size": Math.round(this.height / 15) + "px"
 				}).html('<div class="overlay-container"></div>')
 				.find(".overlay-container").css({
 					position: "relative",
@@ -36,7 +36,7 @@
 				y4.videoWidth = width;
 				y4.videoHeight = height;
 				var f = width / height,
-					h = $(window).innerHeight();
+					h = that.height;
 
 				this.$(".overlay-container").css({
 					height: h,
