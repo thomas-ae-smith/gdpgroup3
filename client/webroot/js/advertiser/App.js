@@ -266,6 +266,7 @@
 			this.advert = options.advert;
 		},
 		render: function () {
+			console.log("DABKSJDHGAKSDGH");
 			var that = this,
 				player = new y4.PlayerView({ server: wowzaServer });
 			this.$el.html('<a class="play" href="javascript:;">Pause</a>').append(player.render().el);
@@ -467,7 +468,7 @@
 		render: function () {
 			var that = this;
 			this.$el.html(y4.templates["advert-edit"](this.advert.toJSON()));
-
+			
 			var preview = new y4.PreviewView({ advert: this.advert });
 			this.$(".live-preview").append(preview.render().el);
 

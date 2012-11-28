@@ -11,7 +11,7 @@
 			this.adverts = new y4.Adverts();
 		},
 		render: function () {
-			console.log($(top).find('.overlay-layer').children());
+			console.log($(window).innerHeight());
 			$("body").css({
 					"font-size": Math.round($(window).innerHeight() / 15) + "px"
 				}).html('<div class="overlay-container"></div>')
