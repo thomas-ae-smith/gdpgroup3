@@ -1,7 +1,7 @@
 .screen {
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;
-	background: black;
+	background: #111410;
 	z-index: 10;
 	padding: 30px;
 	text-align: center;
@@ -13,12 +13,12 @@
 }
 
 .screen .msg {
-	margin: 7% 0 7%;
-	line-height: 40px;
+	margin: 4% 0;
+	line-height: 50px;
 }
 
 .screen input {
-	width: 80%;
-	height: 10%;
-	margin-bottom: 5px;
+	width: 60%;
+	height: 15%;
+	margin-bottom: 2%;
 }

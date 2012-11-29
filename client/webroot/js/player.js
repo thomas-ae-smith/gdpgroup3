@@ -12,6 +12,7 @@
 			this.stillLayer = new y4.StillLayerView();
 			this.skipLayer = new y4.SkipLayerView();
 			this.overlayLayer = new y4.OverlayLayerView();
+			this.transcriptLayer = new y4.TranscriptLayerView();
 			this.channels = new y4.Channels();
 
 			this.videoLayer.on("set", function () {
@@ -24,6 +25,7 @@
 				that.videoLayer.hide();
 				that.skipLayer.hide();
 				that.overlayLayer.hide();
+				that.transcriptLayer.reset();
 			});
 			this.stillLayer.on("set", function () {
 				that.stillLayer.show();
@@ -46,7 +48,8 @@
 		},
 		render: function () {
 			this.$el.html("").append(this.videoLayer.el, this.blackLayer.render().el);
-			this.videoLayer.render(true).$el.append(this.stillLayer.el);
+			this.videoLayer.render(true).$el.append(this.transcriptLayer.el);
+			this.transcriptLayer.render().$el.append(this.stillLayer.el);
 			this.stillLayer.render().$el.append(this.skipLayer.el);
 			this.skipLayer.render().$el.append(this.overlayLayer.render().el);
 
@@ -80,6 +83,9 @@
 
 		setProgramme: function (programme) {
 			this.videoLayer.set("vod", programme.get("url"));
+			if (programme.get("transcript")) {
+				this.transcriptLayer.set(programme.get("transcript")).show();
+			}
 		},
 
 		play: function () {
@@ -174,7 +180,6 @@
 			if (clear) {
 				this.$el.html(template());
 			}
-			console.log("fml")
 
 			this.$('.flash-video-container').html("").flowplayer({
 				src: "lib/flowplayer.swf",
@@ -238,6 +243,43 @@
 		render: function () {
 			LayerView.prototype.render.call(this);
 			this.$el.html(y4.templates["overlay-layer"]);
+			return this;
+		}
+	});
+
+	y4.TranscriptLayerView = LayerView.extend({
+		className: "layer-view transcript-layer",
+		initialize: function () {
+			this.timers = [];
+		},
+		set: function (transcript) {
+			var that = this;
+			this.reset();
+			_.each(transcript, function (subtitle) {
+				that.timers.push(setTimeout(function () {
+					that.subtitle(subtitle.msg, subtitle.duration);
+				}, subtitle.time * 1000));
+			})
+			return this;
+		},
+		reset: function () {
+			_.each(this.timers, function (timer) {
+				clearTimeout(timer);
+			});
+		},
+		subtitle: function (msg, duration) {
+			var that = this;
+			that.$subtitle.html(msg);
+			setTimeout(function () {
+				if (that.$subtitle.html() === msg) {
+					that.$subtitle.html("")
+				}
+			}, duration * 1000);
+		},
+		render: function () {
+			LayerView.prototype.render.call(this);
+			this.$el.html('<div class="subtitle"></div>');
+			this.$subtitle = this.$(".subtitle");
 			return this;
 		}
 	});
@@ -328,8 +370,6 @@
 			return this;
 		},
 		render: function () {
-			console.log(this.item.get("type"));
-
 			this.$el.html(y4.templates["playlist-item"](_.extend({
 				duration: this.item.duration(),
 				start: timestampToTime(this.item.localTime()),
