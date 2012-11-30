@@ -8,7 +8,7 @@ $requires = array(
 	'your4' => array(
 		'styles' => array('css/bootstrap.min.css', 'css/font-awesome.css', 'css/your4.css'),
 		'scripts' => array('lib/flowplayer.min.js', 'lib/bootstrap.js', 'lib/spin.min.js',
-			'lib/jquery.transit.min.js', 'js/your4/App.js', 'js/player.js', 'js/your4/auth-views.js',
+			'lib/jquery.transit.js', 'js/your4/App.js', 'js/player.js', 'js/your4/auth-views.js',
 			'http://connect.facebook.net/en_US/all.js')
 	),
 	'advertiser' => array(
@@ -19,7 +19,7 @@ $requires = array(
 	),
 	'overlay' => array(
 		'styles' => array('css/overlay.css'),
-		'scripts' => array('js/overlay/App')
+		'scripts' => array('js/overlay/App','lib/jquery.transit.js')
 	),
 	'study' => array(
 		'styles' => array('css/bootstrap.min.css', 'css/your4.css', 'css/study.css'),

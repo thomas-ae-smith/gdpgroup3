@@ -19,7 +19,7 @@
 				that.videoLayer.show();
 			}).on("start", function (metaData) {
 				that.blackLayer.hide();
-				that.overlayLayer.$("iframe")[0].contentWindow.setVideoDimensions(metaData.width, metaData.height)
+				that.overlayLayer.$("iframe")[0].contentWindow.initOverlay(metaData.width, metaData.height)
 			}).on("finish", function () {
 				that.blackLayer.show();
 				that.videoLayer.hide();
@@ -149,8 +149,12 @@
 			this.$video = this.$("video");
 			this.videoEl = this.$video[0];
 
+
 			this.$video.on("play", function () {
-				that.trigger("start");
+				var metaData = {};
+				metaData.width = this.videoWidth;
+				metaData.height = this.videoHeight;
+				that.trigger("start", metaData);
 			}).on("ended", function () {
 				that.trigger("finish");
 			});

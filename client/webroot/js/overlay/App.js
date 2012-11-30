@@ -11,13 +11,15 @@
 			this.adverts = new y4.Adverts();
 			this.height = $(window).innerHeight() || $(top).innerHeight();
 		},
-		render: function () {
+		render: function (width, height) {
 			$("body").css({
 					"font-size": Math.round(this.height / 15) + "px"
 				}).html('<div class="overlay-container"></div>')
 				.find(".overlay-container").css({
 					position: "relative",
 					margin: "0 auto",
+					width: width,
+					height: height
 				}).html(this.advert.get("overlay"));
 			return this;
 		},
@@ -26,21 +28,15 @@
 			this.adverts.add({ id: Number(window.location.hash.substr(1)) });
 			this.advert = this.adverts.first();
 
-			this.advert.fetch().done(function () {
-				that.render();
-			}).fail(function () {
-				$("body").html("No advert with that ID.");
-			});
+			var dfd = this.advert.fetch();	
+			window.initOverlay = function (width, height) {
+				dfd.done(function () {
+					var f = width / height,
+					 	h = that.height;
 
-			window.setVideoDimensions = function (width, height) {
-				y4.videoWidth = width;
-				y4.videoHeight = height;
-				var f = width / height,
-					h = that.height;
-
-				this.$(".overlay-container").css({
-					height: h,
-					width: f * h
+					that.render(f*h, h);
+				}).fail(function () {
+					$("body").html("No advert with that ID.");
 				});
 			}
 			return this;
