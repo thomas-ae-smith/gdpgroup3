@@ -23,11 +23,11 @@
 			[54, 55, 56, 57, 58, 59, 60, 61, 62, 91]
 		],
 		instructionals = [
-			new y4.Programme({ url: "WIY-Club2-10_9_1.mp4", transcript: [
-				{ time: 2, duration: 5, msg: "Hi, thanks for volunteering for this study." },
-				{ time: 7, duration: 7, msg: "In this study, we want to find out a bit more about how people view TV adverts." },
-				{ time: 16, duration: 5, msg: "We're about to show you two sets of adverts." },
-				{ time: 20, duration: 5, msg: "After these, we'll ask you a series of questions on your experience." },
+			new y4.Programme({ url: "gdp1.mp4", transcript: [
+				{ time: 0.84, duration: 4, msg: "Hi, thanks for volunteering for this study." },
+				{ time: 4.56, duration: 5, msg: "In this study, we want to find out a bit more about how people view TV adverts." },
+				{ time: 9.52, duration: 7, msg: "We're about to show you two sets of adverts." },
+				{ time: 15.8, duration: 5, msg: "After these, we'll ask you a series of questions on your experience." },
 			] }),
 			new y4.Programme({ url: "WIY-Club2-10_9_1.mp4" }),
 			new y4.Programme({ url: "WIY-Club2-10_9_1.mp4" })
