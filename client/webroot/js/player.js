@@ -1,5 +1,5 @@
 (function (y4, $, Backbone, _, $f) {
-	"use strict";
+	//"use strict";
 
 	y4.PlayerView = Backbone.View.extend({
 		className: "player",
@@ -21,7 +21,7 @@
 				that.transcriptLayer.start();
 				that.overlayLayer.$("iframe")[0].contentWindow.initOverlay(metaData.width, metaData.height);
 			}).on("finish", function () {
-				that.blackLayer.show();
+				//that.blackLayer.show();
 				that.videoLayer.hide();
 				that.skipLayer.hide();
 				that.overlayLayer.hide();
@@ -32,7 +32,7 @@
 			}).on("start", function () {
 				that.blackLayer.hide();
 			}).on("finish", function () {
-				that.blackLayer.show();
+				//that.blackLayer.show();
 				that.stillLayer.hide();
 				that.skipLayer.hide();
 				that.overlayLayer.hide();
