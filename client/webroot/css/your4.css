@@ -420,7 +420,7 @@ video {
 	font-weight: bold;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	
+
 }
 .playlist-item .info .live-label {
 	position: absolute;
@@ -436,8 +436,9 @@ iframe {
 	position: absolute;
 	left: 10%; right: 10%; bottom: 10%;
 	font-size: 30px;
+	line-height: 40px;
 	/*font-weight: bold;*/
 	text-align: center;
 	text-shadow: 1px 1px 5px #000000;
-	font-family: verdana sans-serif;
+	font-family: verdana, sans-serif;
 }

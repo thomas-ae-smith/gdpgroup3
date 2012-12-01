@@ -1,13 +1,13 @@
-(function (y4) {
-	//"use strict";
+(function (y4, $, Backbone, _) {
+	"use strict";
 
 	var wowzaServer = "152.78.144.19:1935";
 
 	/**** CHANGE THE FOLLOWING BEFORE BEGINNING A STUDY ****/
-		
+
 	// 50% of participants should have this as 0, and the remaining as 1
 	var firstRound = 0; // 0 or 1
-	
+
 	// A third should have this as 0, a third as 1 and a third as 2.
 	var timeMode = 0; // 0, 1, or 2
 
@@ -24,10 +24,15 @@
 		],
 		instructionals = [
 			new y4.Programme({ url: "gdp1.mp4", transcript: [
-				{ time: 0.84, duration: 4, msg: "Hi, thanks for volunteering for this study." },
+				{ time: 1.24, duration: 4, msg: "Hi, thanks for volunteering for this study." },
 				{ time: 4.56, duration: 5, msg: "In this study, we want to find out a bit more about how people view TV adverts." },
 				{ time: 9.52, duration: 7, msg: "We're about to show you two sets of adverts." },
-				{ time: 15.8, duration: 5, msg: "After these, we'll ask you a series of questions on your experience." },
+				{ time: 12.8, duration: 5, msg: "After these, we'll ask you a series of questions on your experience." },
+				{ time: 15.8, duration: 5, msg: "We ask that during this study you remain focused on the screen" },
+				{ time: 19.8, duration: 5, msg: "and don't communicate with the researcher (unless there is a problem)" },
+				{ time: 22.8, duration: 5, msg: "and please don't use your phone or other devices." },
+				{ time: 26.2, duration: 5, msg: "When you're ready to begin, press start." },
+				{ time: 27.5, duration: 5, msg: "If you would like to watch this introduction again, press replay." }
 			] }),
 			new y4.Programme({ url: "WIY-Club2-10_9_1.mp4" }),
 			new y4.Programme({ url: "WIY-Club2-10_9_1.mp4" })
@@ -55,7 +60,7 @@
 				roundAdvertPools = [[id], [id]];
 			} else {
 				this.renderScreen("When you're ready to begin, press <i>Start</i>.", function () {
-					that.next()
+					that.next();
 				});
 			}
 			return this;
@@ -101,7 +106,7 @@
 					}));
 				});
 
-				if (window.location.hash) { 
+				if (window.location.hash) {
 					that.next();
 				}
 
@@ -153,10 +158,10 @@
 					that.stage++;
 					that.next();
 				}, timeModes[timeMode][that.roundCount] * 60000);
-				
+
 				break;
 			}
 		}
 	});
 
-} (this.y4));
+}(this.y4, this.jQuery, this.Backbone, this._));

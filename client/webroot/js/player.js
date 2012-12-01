@@ -1,6 +1,5 @@
-
-(function(y4) {
-	//"use strict";
+(function (y4, $, Backbone, _, $f) {
+	"use strict";
 
 	y4.PlayerView = Backbone.View.extend({
 		className: "player",
@@ -19,7 +18,8 @@
 				that.videoLayer.show();
 			}).on("start", function (metaData) {
 				that.blackLayer.hide();
-				that.overlayLayer.$("iframe")[0].contentWindow.initOverlay(metaData.width, metaData.height)
+				that.transcriptLayer.start();
+				that.overlayLayer.$("iframe")[0].contentWindow.initOverlay(metaData.width, metaData.height);
 			}).on("finish", function () {
 				that.blackLayer.show();
 				that.videoLayer.hide();
@@ -38,7 +38,7 @@
 				that.overlayLayer.hide();
 			});
 			this.skipLayer.on("skip", function (o) {
-				console.log("Skipped - ", o)
+				console.log("Skipped - ", o);
 			});
 
 		},
@@ -131,7 +131,7 @@
 		pause: function() { this.videoEl.pause(); },
 		set: function (service, url) {
 			console.log("http://" + this.options.server + "/" + service + "/" + url + "/playlist.m3u8");
-			if (this.url === url && this.service == service) { return; }
+			if (this.url === url && this.service === service) { return; }
 			var that = this;
 			this.url = url;
 			this.$video.attr("src", "http://" + this.options.server + "/" + service + "/" + url + "/playlist.m3u8");
@@ -222,7 +222,7 @@
 	});
 
 	y4.BlackLayerView = LayerView.extend({
-		className: "layer-view black-layer",
+		className: "layer-view black-layer"
 	});
 
 	y4.StillLayerView = LayerView.extend({
@@ -257,16 +257,21 @@
 			this.timers = [];
 		},
 		set: function (transcript) {
-			var that = this;
 			this.reset();
-			_.each(transcript, function (subtitle) {
+			this.transcript = transcript;
+			return this;
+		},
+		start: function () {
+			var that = this;
+			_.each(this.transcript, function (subtitle) {
 				that.timers.push(setTimeout(function () {
 					that.subtitle(subtitle.msg, subtitle.duration);
 				}, subtitle.time * 1000));
-			})
+			});
 			return this;
 		},
 		reset: function () {
+			delete this.transcript;
 			_.each(this.timers, function (timer) {
 				clearTimeout(timer);
 			});
@@ -276,7 +281,7 @@
 			that.$subtitle.html(msg);
 			setTimeout(function () {
 				if (that.$subtitle.html() === msg) {
-					that.$subtitle.html("")
+					that.$subtitle.html("");
 				}
 			}, duration * 1000);
 		},
@@ -316,7 +321,7 @@
 				that.show();
 			}, 2000);
 		}
-	})
+	});
 
 	y4.PlaylistView = Backbone.View.extend({
 		className: "playlist",
@@ -388,12 +393,11 @@
 				backgroundColor: this.item.get("type") === "adbreak" ? "#fff" : "#333",
 				width: this.item.duration() / 100 + "%"
 			});
-			
+
 			this.$el.transition({left: (this.item.localTime() - y4.now()) / 100 + "%"});
 
 			return this;
 		}
 	});
 
-
-}(this.y4));
+}(this.y4, this.jQuery, this.Backbone, this._, this.$f));
