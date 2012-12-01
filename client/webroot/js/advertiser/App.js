@@ -509,7 +509,7 @@
 		},
 		updatePreview: _.throttle(function () {
 			this.$(".overlay-layer iframe")[0].contentWindow.location.reload();
-		}, 500),
+		}, 5000),
 		submit: function (e) {
 			e.preventDefault();
 			var that = this,

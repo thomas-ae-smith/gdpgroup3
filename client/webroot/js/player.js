@@ -1,5 +1,4 @@
-
-(function(y4) {
+(function (y4, $, Backbone, _, $f) {
 	//"use strict";
 
 	y4.PlayerView = Backbone.View.extend({
@@ -12,31 +11,34 @@
 			this.stillLayer = new y4.StillLayerView();
 			this.skipLayer = new y4.SkipLayerView();
 			this.overlayLayer = new y4.OverlayLayerView();
+			this.transcriptLayer = new y4.TranscriptLayerView();
 			this.channels = new y4.Channels();
 
 			this.videoLayer.on("set", function () {
 				that.videoLayer.show();
 			}).on("start", function (metaData) {
 				that.blackLayer.hide();
-				that.overlayLayer.$("iframe")[0].contentWindow.setVideoDimensions(metaData.width, metaData.height)
+				that.transcriptLayer.start();
+				that.overlayLayer.$("iframe")[0].contentWindow.initOverlay(metaData.width, metaData.height);
 			}).on("finish", function () {
-				that.blackLayer.show();
+				//that.blackLayer.show();
 				that.videoLayer.hide();
 				that.skipLayer.hide();
 				that.overlayLayer.hide();
+				that.transcriptLayer.reset();
 			});
 			this.stillLayer.on("set", function () {
 				that.stillLayer.show();
 			}).on("start", function () {
 				that.blackLayer.hide();
 			}).on("finish", function () {
-				that.blackLayer.show();
+				//that.blackLayer.show();
 				that.stillLayer.hide();
 				that.skipLayer.hide();
 				that.overlayLayer.hide();
 			});
 			this.skipLayer.on("skip", function (o) {
-				console.log("Skipped - ", o)
+				console.log("Skipped - ", o);
 			});
 
 		},
@@ -46,7 +48,8 @@
 		},
 		render: function () {
 			this.$el.html("").append(this.videoLayer.el, this.blackLayer.render().el);
-			this.videoLayer.render(true).$el.append(this.stillLayer.el);
+			this.videoLayer.render(true).$el.append(this.transcriptLayer.el);
+			this.transcriptLayer.render().$el.append(this.stillLayer.el);
 			this.stillLayer.render().$el.append(this.skipLayer.el);
 			this.skipLayer.render().$el.append(this.overlayLayer.render().el);
 
@@ -80,6 +83,9 @@
 
 		setProgramme: function (programme) {
 			this.videoLayer.set("vod", programme.get("url"));
+			if (programme.get("transcript")) {
+				this.transcriptLayer.set(programme.get("transcript")).show();
+			}
 		},
 
 		play: function () {
@@ -125,7 +131,7 @@
 		pause: function() { this.videoEl.pause(); },
 		set: function (service, url) {
 			console.log("http://" + this.options.server + "/" + service + "/" + url + "/playlist.m3u8");
-			if (this.url === url && this.service == service) { return; }
+			if (this.url === url && this.service === service) { return; }
 			var that = this;
 			this.url = url;
 			this.$video.attr("src", "http://" + this.options.server + "/" + service + "/" + url + "/playlist.m3u8");
@@ -143,8 +149,12 @@
 			this.$video = this.$("video");
 			this.videoEl = this.$video[0];
 
+
 			this.$video.on("play", function () {
-				that.trigger("start");
+				var metaData = {};
+				metaData.width = this.videoWidth;
+				metaData.height = this.videoHeight;
+				that.trigger("start", metaData);
 			}).on("ended", function () {
 				that.trigger("finish");
 			});
@@ -174,7 +184,6 @@
 			if (clear) {
 				this.$el.html(template());
 			}
-			console.log("fml")
 
 			this.$('.flash-video-container').html("").flowplayer({
 				src: "lib/flowplayer.swf",
@@ -213,7 +222,7 @@
 	});
 
 	y4.BlackLayerView = LayerView.extend({
-		className: "layer-view black-layer",
+		className: "layer-view black-layer"
 	});
 
 	y4.StillLayerView = LayerView.extend({
@@ -238,6 +247,48 @@
 		render: function () {
 			LayerView.prototype.render.call(this);
 			this.$el.html(y4.templates["overlay-layer"]);
+			return this;
+		}
+	});
+
+	y4.TranscriptLayerView = LayerView.extend({
+		className: "layer-view transcript-layer",
+		initialize: function () {
+			this.timers = [];
+		},
+		set: function (transcript) {
+			this.reset();
+			this.transcript = transcript;
+			return this;
+		},
+		start: function () {
+			var that = this;
+			_.each(this.transcript, function (subtitle) {
+				that.timers.push(setTimeout(function () {
+					that.subtitle(subtitle.msg, subtitle.duration);
+				}, subtitle.time * 1000));
+			});
+			return this;
+		},
+		reset: function () {
+			delete this.transcript;
+			_.each(this.timers, function (timer) {
+				clearTimeout(timer);
+			});
+		},
+		subtitle: function (msg, duration) {
+			var that = this;
+			that.$subtitle.html(msg);
+			setTimeout(function () {
+				if (that.$subtitle.html() === msg) {
+					that.$subtitle.html("");
+				}
+			}, duration * 1000);
+		},
+		render: function () {
+			LayerView.prototype.render.call(this);
+			this.$el.html('<div class="subtitle"></div>');
+			this.$subtitle = this.$(".subtitle");
 			return this;
 		}
 	});
@@ -270,7 +321,7 @@
 				that.show();
 			}, 2000);
 		}
-	})
+	});
 
 	y4.PlaylistView = Backbone.View.extend({
 		className: "playlist",
@@ -328,8 +379,6 @@
 			return this;
 		},
 		render: function () {
-			console.log(this.item.get("type"));
-
 			this.$el.html(y4.templates["playlist-item"](_.extend({
 				duration: this.item.duration(),
 				start: timestampToTime(this.item.localTime()),
@@ -344,12 +393,11 @@
 				backgroundColor: this.item.get("type") === "adbreak" ? "#fff" : "#333",
 				width: this.item.duration() / 100 + "%"
 			});
-			
+
 			this.$el.transition({left: (this.item.localTime() - y4.now()) / 100 + "%"});
 
 			return this;
 		}
 	});
 
-
-}(this.y4));
+}(this.y4, this.jQuery, this.Backbone, this._, this.$f));
