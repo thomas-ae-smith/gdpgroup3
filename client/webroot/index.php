@@ -24,6 +24,10 @@ $requires = array(
 	'study' => array(
 		'styles' => array('css/bootstrap.min.css', 'css/your4.css', 'css/study.css'),
 		'scripts' => array('lib/flowplayer.min.js', 'js/study/App', 'js/player.js')
+	),
+	'instruction' => array(
+		'styles' => array('css/bootstrap.min.css', 'css/your4.css', 'css/instruction.css'),
+		'scripts' => array('lib/flowplayer.min.js', 'js/instruction/App', 'js/player.js')
 	)
 );
 
@@ -36,6 +40,8 @@ if (strpos($uri, 'advertiser.php') !== false) {
 	$site = 'client';
 } else if (strpos($uri, 'study.php') !== false) {
 	$site = 'study';
+} else if (strpos($uri, 'instruction.php') !== false) {
+	$site = 'instruction';
 } else {
 	$site = 'your4';
 }
@@ -62,7 +68,7 @@ $scripts = array_merge($requires['all']['scripts'], $requires[$site]['scripts'])
 	<script type="text/javascript" src="' . $script . '?' . rand(0, 10000000) . '"></script>';
 		}
 
-		echo '<script src="http://warlock.ecs.soton.ac.uk:8080/target/target-script-min.js#' . $site . '"></script>';
+		//echo '<script src="http://warlock.ecs.soton.ac.uk:8080/target/target-script-min.js#' . $site . '"></script>';
 	?>
 	<script type="text/javascript">
 		window.onerror = function(message, url, linenumber) {

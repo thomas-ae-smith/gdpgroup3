@@ -22,7 +22,7 @@
 				that.overlayLayer.$("iframe")[0].contentWindow.initOverlay(metaData.width, metaData.height);
 			}).on("finish", function () {
 				//that.blackLayer.show();
-				that.videoLayer.hide();
+				//that.videoLayer.hide();
 				that.skipLayer.hide();
 				that.overlayLayer.hide();
 				that.transcriptLayer.reset();
