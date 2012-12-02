@@ -3,6 +3,7 @@
 	\subsection{Limitations}
 	\subsection{Further Work}
 		\subsubsection{Programme Recommendation}
+		\label{sec:further_work_recommender}
 		\begin{itemize}
 			\item Fuzzy Memberships
 			\item Multiple data sources
@@ -10,4 +11,17 @@
 			\item collaborative filtering
 			\item Clustering to save bandwidth
 		\end{itemize}
+
+		Currently, programmes are assigned binary vectors within $\mathcal{P}$; programmes either do or do not belong in each of the 18 genres. As a result, programme vectors may lie only in the corners of the hypercube geometrically representing $\mathcal{P}$. A logical improvement to the reccomender system would be to allow fuzzy genre memberships, allowing programme vectors to exist anywhere within $\mathcal{P}$ and hence allowing fine-grained differences between similar programmes to be properly represented in the system.
+		
+		To initialize a programme with a fuzzy programme vector, \texttt{get\_programme\_vector} will be required to make use of more information than the current list of programme genres. Possible avenues to explore could include modifying $\mathcal{P}$ such that points are represented by genres pulled from multiple sources and reduced to a lower dimentionality feature space through Principal Component Analysis, where the dimentionality of the feature space would need to be determined empirically. If additional external information processing is undesirable, user rating data could be used to modify programme vectors which are initialised as binary, although this is only useful in the case of recommending non-live programmes due to the cold start problem\cite{cold-start-problem}.
+
+		If non-binary programme vectors are introduced to $\mathcal{P}$, a change is required in how a user vector is modified upon a negative programme rating. Under the current architecture, a user is pushed away from the vector of a negatively rated programme, which, if vectors are introduced which exist outside of the corners of $\mathcal{P}$, can cause a user vector to get pushed into a corner and only recommended programmes they don't like, keeping them within the same corner. To solve this, the negative rating case can be changed to:
+		$$
+			\text{lolmaths}
+		$$
+		which pulls a users vector towards that of the `opposite' programme, even if that moves the user towards the negatively rated programme.
+
+		% I think the architecture has changed so this won't work anymore.
+		% The current architecture of delivering recommendations to users can be modified to allow for much greater scalability. Currently, each user requests a recommendation and the server responds. If the userbase becomes large enough for this to become infeasable, one solution is to maintain a table of user vector cluster centroids which are updated periodically by a cronjob. Periodically, this table of centroids would be multicast out to all users, along with recommendations for each centroid. 
 	\subsection{Conclusion}
