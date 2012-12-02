@@ -20,7 +20,7 @@
 		],
 		roundAdvertPools = [
 			[49, 50, 51, 52, 53, 54, 55, 56, 57, 58],
-			[54, 55, 56, 57, 58, 59, 60, 61, 62, 91]
+			[24, 29, 91, 97, 109, 125, 129, 135, 62, 91]
 		],
 		instructionals = [
 			new y4.Programme({ url: "gdp1.mp4", transcript: [
@@ -34,8 +34,31 @@
 				{ time: 26.2, duration: 5, msg: "When you're ready to begin, press start." },
 				{ time: 27.5, duration: 5, msg: "If you would like to watch this introduction again, press replay." }
 			] }),
-			new y4.Programme({ url: "WIY-Club2-10_9_1.mp4" }),
-			new y4.Programme({ url: "WIY-Club2-10_9_1.mp4" })
+			new y4.Programme({ url: "gdp2.mp4", transcript: [
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+			] }),
+			new y4.Programme({ url: "gdp3.mp4", transcript: [
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+			] }),
+			new y4.Programme({ url: "gdp4.mp4", transcript: [
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+				{ time: 1, duration: 5, msg: "" },
+			] })
 		];
 
 	y4.App = Backbone.View.extend({
@@ -123,6 +146,9 @@
 			switch (this.stage) {
 			case 1:
 				that.player.setProgramme(instructionals[0]);
+				that.study.save({
+					adverts: that.study.get("adverts").concat([5])
+				});
 				this.stage++;
 				break;
 			case 2:
@@ -137,10 +163,16 @@
 				break;
 			case 4:
 				that.player.setProgramme(instructionals[1]);
+				that.study.save({
+					adverts: that.study.get("adverts").concat([5])
+				});
 				that.stage++;
 				break;
 			case 7:
 				that.player.setProgramme(instructionals[2]);
+				that.study.save({
+					adverts: that.study.get("adverts").concat([5])
+				});
 				that.stage++;
 				break;
 			case 3:

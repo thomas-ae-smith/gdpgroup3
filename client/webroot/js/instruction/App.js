@@ -31,21 +31,24 @@
 		render: function () {
 			var that = this;
 			this.$el.html("").append(this.player.render().el);
+			var n = 0.2;
+			this.$el.css({
+				transform: "scale(1)"
+			});
+			setInterval(function () {
+				n += 0.02;
+				that.$el.css({
+//					transform: "scale(" + n + ")"
+				})
+			}, 100);
 			this.player.$(".skip").hide();
 			this.$el.append('<img src="img/tv-retro.png">')
 			return this;
 		},
 		start: function () {
-			var that = this,
-				created = $.Deferred();
+			var that = this;
 
-			this.study = this.studies.create({}, {
-				success: function () {
-					created.resolve();
-				}
-			});
-
-			$.when(this.adverts.fetch(), created).done(function () {
+			this.adverts.fetch().done(function () {
 
 				that.render();
 
@@ -64,9 +67,6 @@
 		next: function () {
 			var n = Math.floor(Math.random() * this.roundAdverts.length),
 				advert = this.roundAdverts.at(n);
-			this.study.save({
-				adverts: this.study.get("adverts").concat([advert.id])
-			});
 			this.roundAdverts.remove(advert);
 			this.player.setAdvert(advert);
 
