@@ -141,7 +141,7 @@
 			});
 			return this;
 		},
-		stage: 4, // 1: instructions, 2: confirm, 3: round 1, 4: instructions, 5: confirm, 6: round 2, 7: finish
+		stage: 1, // 1: instructions, 2: confirm, 3: round 1, 4: instructions, 5: confirm, 6: round 2, 7: finish
 		currRound: firstRound,
 		roundCount: 0,
 		next: function () {
@@ -157,6 +157,14 @@
 				this.stage++;
 				break;
 			case 2:
+				that.renderScreen("When you're ready to begin, press <i>Start</i>.<br>Press <i>Replay</i> to watch these instructions again.", function () {
+					that.stage++;
+					that.next();
+				}, function () {
+					that.stage--;
+					that.next();
+				});
+				break;
 			case 4:
 			case 8:
 				that.renderScreen("When you're ready to begin, press <i>Start</i>.<br>Press <i>Replay</i> to watch these instructions again.", function () {
