@@ -33,16 +33,110 @@
 			this.$el.html("").append(this.player.render().el);
 			var n = 0.2;
 			this.$el.css({
-				transform: "scale(1)"
+				position: "relative",
+				margin: "200px auto"
 			});
-			setInterval(function () {
-				n += 0.02;
+			var p = setInterval(function () {
+				n += 0.0001;
 				that.$el.css({
-//					transform: "scale(" + n + ")"
-				})
+					width: n * 600,
+					height: n * 400,
+					marginTop: (1 - n) * 200
+				});
+			}, 10);
+			this.player.$(".skip").hide();
+			this.$el.append('<img src="img/retro-tv.png">');
+			this.$("img").css({
+				position: "absolute",
+				left: 0,
+				right: 0,
+				top: 0,
+				bottom: 0,
+				zIndex: 1000
+			});
+			this.$(".player").css({
+				left: "5%",
+				right: "22%",
+				bottom: "8%",
+				top: "8%",
+				background: "black"
+			});
+			$("body").css({ background: "white" });
+
+			return this;
+		},
+		render1: function () {
+			var that = this;
+			this.$el.html("").append(this.player.render().el);
+			var n = 0.2;
+			this.$el.css({
+				position: "relative",
+				margin: "200px auto"
+			});
+			var p = setInterval(function () {
+				n += 0.001;
+				that.$el.css({
+					width: n * 600,
+					height: n * 400,
+					marginTop: (1 - n) * 200
+				});
 			}, 100);
 			this.player.$(".skip").hide();
-			this.$el.append('<img src="img/tv-retro.png">')
+			this.$el.append('<img src="img/retro-tv.png">');
+			this.$("img").css({
+				position: "absolute",
+				left: 0,
+				right: 0,
+				top: 0,
+				bottom: 0,
+				zIndex: 1000
+			});
+			this.$(".player").css({
+				left: "5%",
+				right: "22%",
+				bottom: "8%",
+				top: "8%",
+				background: "black"
+			}).find(".video-layer").css({
+				opacity: 0
+			}).delay(9400).animate({
+				opacity: 1
+			}, 1000);
+			$("body").css({ background: "white" });
+
+			setTimeout(function () {
+				clearTimeout(p);
+				that.$el.animate({
+					left: -1000,
+					opacity: 0
+				}, 100);
+				setTimeout(function () {
+					that.$el.html('<img src="img/no-talking.jpg">').css({
+						left: 800
+					}).animate({
+						left: 0,
+						opacity: 1
+					});
+				}, 150);
+			}, 19800);
+			setTimeout(function () {
+				that.$el.animate({
+					left: -1000,
+					opacity: 0
+				}, 100);
+				setTimeout(function () {
+					that.$el.html('<img src="img/no-phones.png">').css({
+						left: 800
+					}).animate({
+						left: 0,
+						opacity: 1
+					});
+				}, 150);
+			}, 22800);
+			setTimeout(function () {
+				that.$el.fadeOut(1000);
+			}, 26200);
+
 			return this;
 		},
 		start: function () {

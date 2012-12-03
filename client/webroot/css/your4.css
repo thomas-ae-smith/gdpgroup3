@@ -434,7 +434,7 @@ iframe {
 
 .transcript-layer .subtitle {
 	position: absolute;
-	left: 10%; right: 10%; bottom: 10%;
+	left: 10%; right: 10%; bottom: 3%;
 	font-size: 30px;
 	line-height: 40px;
 	/*font-weight: bold;*/
