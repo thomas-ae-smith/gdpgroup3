@@ -176,6 +176,7 @@
 				});
 				break;
 			case 6:
+				that.player.videoLayer.set(null);
 				that.renderScreen("Round complete. Press <i>Start</i> to begin the next round.", function () {
 					that.stage++;
 					that.next();
