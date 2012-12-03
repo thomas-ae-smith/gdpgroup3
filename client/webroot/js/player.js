@@ -21,7 +21,9 @@
 				that.transcriptLayer.start();
 				var w = that.overlayLayer.$("iframe")[0].contentWindow;
 				setInterval(function () {
-					w.initOverlay(metaData.width, metaData.height);
+					try {
+						w.initOverlay(metaData.width, metaData.height);
+					} catch (e) {}
 				}, 500); /// FIXME: HORRIBLE HACK
 
 			}).on("finish", function () {

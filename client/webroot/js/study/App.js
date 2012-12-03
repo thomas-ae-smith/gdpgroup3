@@ -19,8 +19,8 @@
 			[6, 4]
 		],
 		roundAdvertPools = [
-			[137, 138, 139, 140, 141, 142, 143, 62, 91], // The first 7 of these are duplicates of the interactive adverts except without the overlays
-			[24, 29, 91, 97, 109, 125, 129, 135, 62, 91]
+			[137, 138, 139, 140, 141, 142, 143, 62, 91, 78, 90], // The first 7 of these are duplicates of the interactive adverts except without the overlays
+			[24, 29, 91, 97, 109, 125, 129, 135, 62, 91, 3, 20, 90]
 		],
 		instructionals = [
 			new y4.Programme({ url: "gdp1o.mov", transcript: [
@@ -157,8 +157,6 @@
 				this.stage++;
 				break;
 			case 2:
-			case 4:
-			case 8:
 				that.renderScreen("When you're ready to begin, press <i>Start</i>.<br>Press <i>Replay</i> to watch these instructions again.", function () {
 					that.stage++;
 					that.next();
@@ -167,7 +165,27 @@
 					that.next();
 				});
 				break;
+			case 4:
+			case 8:
+				that.renderScreen("When you're ready to begin, press <i>Start</i>.<br>Press <i>Replay</i> to watch these instructions again.", function () {
+					that.stage++;
+					that.next();
+
+					setTimeout(function () {
+						that.player.videoLayer.set(null);
+						that.currRound = 1 - that.currRound;
+						that.roundCount++;
+						that.stage++;
+						that.next();
+					}, timeModes[timeMode][that.roundCount] * 60000);
+
+				}, function () {
+					that.stage--;
+					that.next();
+				});
+				break;
 			case 6:
+				that.player.videoLayer.set(null);
 				that.renderScreen("Round complete. Press <i>Start</i> to begin the next round.", function () {
 					that.stage++;
 					that.next();
@@ -199,12 +217,6 @@
 				});
 				that.roundAdverts[that.currRound].remove(advert);
 				that.player.setAdvert(advert);
-				setTimeout(function () {
-					that.currRound = 1 - that.currRound;
-					that.roundCount++;
-					that.stage++;
-					that.next();
-				}, timeModes[timeMode][that.roundCount] * 60000);
 
 				break;
 			}
