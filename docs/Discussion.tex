@@ -4,13 +4,6 @@
 	\subsection{Further Work}
 		\subsubsection{Programme Recommendation}
 		\label{sec:further_work_recommender}
-		\begin{itemize}
-			\item Fuzzy Memberships
-			\item Multiple data sources
-			\item Dimentionality reduction
-			\item collaborative filtering
-			\item Clustering to save bandwidth
-		\end{itemize}
 
 		Currently, programmes are assigned binary vectors within $\mathcal{P}$; programmes either do or do not belong in each of the 18 genres. As a result, programme vectors may lie only in the corners of the hypercube geometrically representing $\mathcal{P}$. A logical improvement to the reccomender system would be to allow fuzzy genre memberships, allowing programme vectors to exist anywhere within $\mathcal{P}$ and hence allowing fine-grained differences between similar programmes to be properly represented in the system.
 		
@@ -20,4 +13,8 @@
 
 		%% I think the architecture has changed so this won't work anymore.
 		% The current architecture of delivering recommendations to users can be modified to allow for much greater scalability. Currently, each user requests a recommendation and the server responds. If the userbase becomes large enough for this to become infeasable, one solution is to maintain a table of user vector cluster centroids which are updated periodically by a cronjob. Periodically, this table of centroids would be multicast out to all users, along with recommendations for each centroid. 
+	\subsubsection{Advert Recommendation}
+
+	* Recommending advers using user preference data is obv better.
+
 	\subsection{Conclusion}
