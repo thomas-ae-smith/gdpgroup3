@@ -19,8 +19,8 @@
 			[6, 4]
 		],
 		roundAdvertPools = [
-			[137, 138, 139, 140, 141, 142, 143, 62, 91], // The first 7 of these are duplicates of the interactive adverts except without the overlays
-			[24, 29, 91, 97, 109, 125, 129, 135, 62, 91]
+			[137, 138, 139, 140, 141, 142, 143, 62, 91, 78, 90], // The first 7 of these are duplicates of the interactive adverts except without the overlays
+			[24, 29, 91, 97, 109, 125, 129, 135, 62, 91, 3, 20, 90]
 		],
 		instructionals = [
 			new y4.Programme({ url: "gdp1o.mov", transcript: [
@@ -141,7 +141,7 @@
 			});
 			return this;
 		},
-		stage: 1, // 1: instructions, 2: confirm, 3: round 1, 4: instructions, 5: confirm, 6: round 2, 7: finish
+		stage: 4, // 1: instructions, 2: confirm, 3: round 1, 4: instructions, 5: confirm, 6: round 2, 7: finish
 		currRound: firstRound,
 		roundCount: 0,
 		next: function () {
