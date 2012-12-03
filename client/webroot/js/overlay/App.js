@@ -11,7 +11,10 @@
 			this.adverts = new y4.Adverts();
 			this.height = $(window).innerHeight() || $(top).innerHeight();
 		},
+		rendered: false,
 		render: function (width, height) {
+			if (this.rendered) { return this; }
+			this.rendered = true;
 			$("body").css({
 					"font-size": Math.round(this.height / 15) + "px"
 				}).html('<div class="overlay-container"></div>')
@@ -28,7 +31,7 @@
 			this.adverts.add({ id: Number(window.location.hash.substr(1)) });
 			this.advert = this.adverts.first();
 
-			var dfd = this.advert.fetch();	
+			var dfd = this.advert.fetch();
 			window.initOverlay = function (width, height) {
 				dfd.done(function () {
 					var f = width / height,

@@ -442,3 +442,12 @@ iframe {
 	text-shadow: 1px 1px 5px #000000;
 	font-family: verdana, sans-serif;
 }
+
+
+.still-layer, .transcript-layer, .skip-layer {
+	z-index: 1200;
+}
+
+.overlay-layer, iframe {
+	z-index: 10000;
+}

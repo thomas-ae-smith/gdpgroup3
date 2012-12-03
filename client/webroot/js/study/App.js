@@ -19,7 +19,7 @@
 			[6, 4]
 		],
 		roundAdvertPools = [
-			[49, 50, 51, 52, 53, 54, 55, 56, 57, 58],
+			[137, 138, 139, 140, 141, 142, 143, 62, 91], // The first 7 of these are duplicates of the interactive adverts except without the overlays
 			[24, 29, 91, 97, 109, 125, 129, 135, 62, 91]
 		],
 		instructionals = [
@@ -71,6 +71,8 @@
 			this.studies = new y4.Studies();
 
 			this.player.videoLayer.on("finish", this.next, this);
+
+
 		},
 		render: function () {
 			var that = this;
@@ -79,7 +81,6 @@
 			this.$bannerHacks = this.$(".banner").hide();
 			this.player.$(".skip").hide();
 			if (window.location.hash) {
-				that.stage = 3;
 				var id = Number(window.location.hash.slice(1));
 				roundAdvertPools = [[id], [id]];
 			} else {
@@ -131,6 +132,7 @@
 				});
 
 				if (window.location.hash) {
+					that.stage = 4;
 					that.next();
 				}
 
@@ -139,7 +141,7 @@
 			});
 			return this;
 		},
-		stage: 2, // 1: instructions, 2: confirm, 3: round 1, 4: instructions, 5: confirm, 6: round 2, 7: finish
+		stage: 1, // 1: instructions, 2: confirm, 3: round 1, 4: instructions, 5: confirm, 6: round 2, 7: finish
 		currRound: firstRound,
 		roundCount: 0,
 		next: function () {

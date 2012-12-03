@@ -181,12 +181,13 @@
 <script type="text/html" id="advert-list-item-template">
 	<tr>
 		<td width="130"><div class="thumbnail-bg">
-			<img src="<%= thumbnail || "img/no-preview.png" %>" width="120">
+			<img src="<%= thumbnail.replace("www.your4.tv", "punchout.me") || "img/no-preview.png" %>" width="120">
 			<div class="icon <%= type %>" data-title="<%= y4.language.advertType[type] %>">
 				<i class="icon-<%= type === "still" ? "camera" : (type === "video" ? "film" : "") %>"></i>
 			</div>
 		</div></td>
-		<td><%= title %><br>
+		<td><%= title %> <% if (overlay) { %><span class="label label-success">Overlay</span><% } %><br>
+			<span class="muted">ID: <%= id %></span><br>
 			<span class="muted"><%= formatTime(duration) %></span></td>
 		<td><button class="btn stats">Stats</button> <button class="btn edit">Edit</button> <button class="btn delete">Delete</button>
 	</tr>
@@ -197,7 +198,7 @@
 		<button type="button" class="btn cancel">Cancel</button>
 		<button type="submit" class="btn edit btn-primary">Edit</button>
 	</div>
-	
+
 	<div class="row">
 		<div class="span6">
 			<div class="row-fluid">

@@ -282,7 +282,7 @@
 					player.videoLayer.pause();
 					$play.text("Play");
 				}
-			})
+			});
 			return this;
 		}
 	});
@@ -305,7 +305,7 @@
 			_.each(_.range(121), function (i) {		//TODO: this is only like this for the sample data
 				data.push({seconds: i, clicks: 0, skips: 0})
 			});
-			this.impressions.each( function(impression) { 
+			this.impressions.each( function(impression) {
 				var skiptime, click;
 				if( skiptime = impression.get("skiptime")) {
 					data[skiptime].skips += 1;
@@ -334,7 +334,7 @@
 						"text-align": "right"
 					});
 
-	
+
 
 			var preview = new y4.PreviewView({ advert: this.advert });
 			this.$(".live-preview").append(preview.render().el);
@@ -343,7 +343,7 @@
 				center: [54.805, -3.59],
 				zoom: 5,
 				scrollWheelZoom: false
-			})
+			});
 			L.tileLayer('http://{s}.tile.cloudmade.com/1b189a705e22441c86cdb384a5bc7837/997/256/{z}/{x}/{y}.png', {
 				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://cloudmade.com">CloudMade</a>',
 				maxZoom: 18
@@ -370,7 +370,7 @@
 						.range([height, 0]);
 
 				var color = d3.scale.category10();		//TODO: reduce to 2
-				
+
 				var xAxis = d3.svg.axis()
 					.scale(x)
 					.orient("bottom");
@@ -467,7 +467,7 @@
 		render: function () {
 			var that = this;
 			this.$el.html(y4.templates["advert-edit"](this.advert.toJSON()));
-			
+
 			var preview = new y4.PreviewView({ advert: this.advert });
 			this.$(".live-preview").append(preview.render().el);
 
@@ -485,7 +485,7 @@
 						duration: data.result.duration,
 						thumbnail: data.result.thumbnail
 					});
-					console.log(data.result.type)
+					console.log(data.result.type);
 					that.$("#advert-type").val(data.result.type);
 					$progress.html("Uploaded.").delay(1000).fadeOut();
 				},
@@ -565,7 +565,7 @@
 				center: [54.805, -3.59],
 				zoom: 5,
 				scrollWheelZoom: false
-			})
+			});
 			L.tileLayer('http://{s}.tile.cloudmade.com/1b189a705e22441c86cdb384a5bc7837/997/256/{z}/{x}/{y}.png', {
 				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://cloudmade.com">CloudMade</a>',
 				maxZoom: 18
@@ -616,12 +616,12 @@
 			map.addLayer(drawnItems);
 
 			_.each(this.campaign.get("targets").boundingBoxes, function (bb) {
-				console.log("J")
+				console.log("J");
 				var sw = new L.LatLng(bb.minLat, bb.minLong),
 					ne = new L.LatLng(bb.maxLat, bb.maxLong),
 					rect = L.rectangle(new L.LatLngBounds(sw, ne), { color: "blue", fillColor: "blue" });
 				addRectangle(rect);
-			})
+			});
 
 			this.$(".target-tabs a").click(function (e) {
 				e.preventDefault();
@@ -664,7 +664,7 @@
 				var day = Number(daytime.dayOfWeek),
 					startTime = daytime.startTime.split(":"),
 					endTime = daytime.endTime.split(":");
-				console.log(startTime, endTime)
+				console.log(startTime, endTime);
 				startTime = Number(startTime[0]) * 4 + Number(startTime[1]) / 15;
 				endTime = Number(endTime[0]) * 4 + Number(endTime[1]) / 15;
 				_.times(endTime - startTime + 1, function (i) {

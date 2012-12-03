@@ -19,7 +19,11 @@
 			}).on("start", function (metaData) {
 				that.blackLayer.hide();
 				that.transcriptLayer.start();
-				that.overlayLayer.$("iframe")[0].contentWindow.initOverlay(metaData.width, metaData.height);
+				var w = that.overlayLayer.$("iframe")[0].contentWindow;
+				setInterval(function () {
+					w.initOverlay(metaData.width, metaData.height);
+				}, 500); /// FIXME: HORRIBLE HACK
+
 			}).on("finish", function () {
 				//that.blackLayer.show();
 				//that.videoLayer.hide();
@@ -73,7 +77,7 @@
 				this.videoLayer.set("vod", advert.get("url"));
 				break;
 			}
-			this.overlayLayer.set("http://" + window.location.host + window.location.pathname.split("/").slice(0, -1).join("/") + "/overlay.php#" + advert.id).show();
+			this.overlayLayer.set("http://" + window.location.host + window.location.pathname.split("/").slice(0, -1).join("/") + "/overlay.php?" + Math.floor(Math.random() * 100000000) + "#" + advert.id).show();
 			this.skipLayer.showAfterDelay();
 		},
 		setBroadcast: function (broadcast) {
