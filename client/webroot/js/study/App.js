@@ -172,6 +172,7 @@
 					that.next();
 
 					setTimeout(function () {
+						that.player.videoLayer.set(null);
 						that.currRound = 1 - that.currRound;
 						that.roundCount++;
 						that.stage++;
