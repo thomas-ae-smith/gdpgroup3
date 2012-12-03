@@ -162,6 +162,14 @@
 				that.renderScreen("When you're ready to begin, press <i>Start</i>.<br>Press <i>Replay</i> to watch these instructions again.", function () {
 					that.stage++;
 					that.next();
+
+					setTimeout(function () {
+						that.currRound = 1 - that.currRound;
+						that.roundCount++;
+						that.stage++;
+						that.next();
+					}, timeModes[timeMode][that.roundCount] * 60000);
+
 				}, function () {
 					that.stage--;
 					that.next();
@@ -199,12 +207,6 @@
 				});
 				that.roundAdverts[that.currRound].remove(advert);
 				that.player.setAdvert(advert);
-				setTimeout(function () {
-					that.currRound = 1 - that.currRound;
-					that.roundCount++;
-					that.stage++;
-					that.next();
-				}, timeModes[timeMode][that.roundCount] * 60000);
 
 				break;
 			}
