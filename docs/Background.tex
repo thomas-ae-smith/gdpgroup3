@@ -10,5 +10,14 @@
 
 	\subsection{Programme Recommendation}
 
+	Recommendation systems are a mature area of research, with a huge variety of implementations existing to back up a large theoretical base. 
+
+	% Implicit data collection methods.
+
+	% Cold-start problem.
+	Collaborative-filtering based recommendation systems are faced with the cold start problem, which is the problem of the recommender being unable to give high-quality recommendations on items for which sufficient information has not yet been gathered. In a live TV recommendation system, at the point when a TV show is recommended to users, it has not yet been aired and therefore cannot use collaborative data to recommend the programme. After airing, the show may pick up many viewer ratings, but in a system that deals only with live TV, these ratings are now useless as the programme will not be shown and hence not have the chance to be recommended again. Designing recommender systems to deal with the cold start problem is an active area of research, and studies have shown that item-based algorithms outperform SVD-based algorithms in early stages of recommendation\cite{cold-start-problem}. In addition, collaborative approaches have been combined with content-based to provide an initial source of information\cite{generative_models}.
+
 	\subsection{Mobile devices}
 
+	\subsection{Literature Review}
+		Much research into the area of programme recommendations in IPTV has been performed by Contentwise\footnote{\url{http://www.contentwise.tv/}}. Relevant to your4.tv is the cold start problem
