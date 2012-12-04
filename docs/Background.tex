@@ -39,13 +39,12 @@
 
 	stuff on better campaign tools/metrics from brightrooll
 
-
-
 	\subsection{Programme Recommendation}
 
 	Recommendation systems are a mature area of research, with a huge variety of implementations existing to back up a large theoretical base. Blah blah...
 
 	% Implicit data collection methods.
+	By using user feedback, a recommender system may improve by learning what a particular user likes. Asking the user explicitly for ratings on programmes is sufficient to provide this information, but can appear as an additional chore to the user with no immediate apparent reward. This can lead to users being unwilling to provide explicit programme ratings, meaning a recommender system has no information from which to improve. Collecting ratings implicitly combats this 
 
 	% Cold-start problem.
 	Collaborative-filtering based recommendation systems are faced with the cold start problem, which is the problem of the recommender being unable to give high-quality recommendations on items for which sufficient information has not yet been gathered. In a live TV recommendation system, at the point when a TV show is recommended to users, it has not yet been aired and therefore cannot use collaborative data to recommend the programme. After airing, the show may pick up many viewer ratings, but in a system that deals only with live TV, these ratings are now useless as the programme will not be shown and hence not have the chance to be recommended again. Designing recommender systems to deal with the cold start problem is an active area of research, and studies have shown that item-based algorithms outperform SVD-based algorithms in early stages of recommendation\cite{cold-start-problem}. In addition, collaborative approaches have been combined with content-based to provide an initial source of information\cite{generative_models}.
