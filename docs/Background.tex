@@ -16,11 +16,18 @@
 
 	Project4 is an addressable advertising service
 
-
 	\subsection{Interactive Advertising}
 
-	Advertising has traditionally been static imagery or prerecorded video with, particularly in the case of TV advertising, a broad target audience, coarse targeting and minimal feedback, with all information flowing from the advertiser to the audience. The rise of internet media streaming services has suddenly added two new possibilities: the possibility of an information flow from the audience back to the advertiser, and the possibility of a user on a device such as a laptop to easily interact with adverts. This plane of interactivity allows for advertisers to design fun, memorable and informative interactions into their adverts, and collect user information through the audience$\rightarrow$ advertiser information flow.
+	% TV streaming can use interactivity and feedback.
+	Advertising has traditionally been static imagery or prerecorded video with, particularly in the case of TV advertising, a broad target audience, coarse targeting and minimal feedback, with all information flowing from the advertiser to the audience. The rise of internet media streaming services has suddenly added two new possibilities: the possibility of an information flow from the audience back to the advertiser, and the possibility of a user on an interactive device, e.g., a laptop, to easily interact with adverts. This plane of interactivity allows for advertisers to design fun, memorable and informative interactions into their adverts, and collect user information through the audience$\rightarrow$advertiser information flow.
 
+	% Interruption of main programme flow.
+	A major challenge in the introduction of interactivity in advertisements maintaining the main programme flow without restricting how the user may interact with an advert. For a live streaming service, if a user clicks an advert link taking them to a new web-page, the user may miss following adverts and part of the main broadcast. To avoid this, different methods of information delivery may be used:
+	\begin{itemize}
+		\item By interacting with the advert, the user requests contact at a later time, which could be a phone-call, letter, email or visit\citep{integrated-approach-advertising}. 
+		\item Users may `bookmark' interactive content, continuing interaction at a later point in time\citep{integrated-approach-advertising}.
+		\item Upon selecting an advert to interact with, the screen is partitioned into two screens, one containing the interactive content, the other containing the live broadcast\citep{integrated-approach-advertising}.
+	\end{itemize}
 
 
 	\subsection{Programme Recommendation}
@@ -28,8 +35,10 @@
 	Recommendation systems are a mature area of research, with a huge variety of implementations existing to back up a large theoretical base. Blah blah...
 
 	% Implicit data collection methods.
+	To recommend content to a user, data must be collected about the user. While explicit collection of user ratings provide this information, this may appear undesirable to the user, who may see the need to provide ratings as a chore with no immediate apparent benefit. Implicit data collection is unobtrusive to the user and happens automatically, so there is no risk of a user being unwilling to enter information, resulting in no user information on which to base recommendations. Implicit ratings may be gleaned from any detectable user interaction, including the amount of time a user spends watching a programme, as is the case with Fastweb\citep{recommender-systems-handbook}.
+
 
 	% Cold-start problem.
-	Collaborative-filtering based recommendation systems are faced with the cold start problem, which is the problem of the recommender being unable to give high-quality recommendations on items for which sufficient information has not yet been gathered. In a live TV recommendation system, at the point when a TV show is recommended to users, it has not yet been aired and therefore cannot use collaborative data to recommend the programme. After airing, the show may pick up many viewer ratings, but in a system that deals only with live TV, these ratings are now useless as the programme will not be shown and hence not have the chance to be recommended again. Designing recommender systems to deal with the cold start problem is an active area of research, and studies have shown that item-based algorithms outperform SVD-based algorithms in early stages of recommendation\cite{cold-start-problem}. In addition, collaborative approaches have been combined with content-based to provide an initial source of information\cite{generative_models}.
+	Collaborative-filtering based recommendation systems are faced with the cold start problem, which is the problem of the recommender being unable to give high-quality recommendations on items for which sufficient information has not yet been gathered. In a live TV recommendation system, at the point when a TV show is recommended to users, it has not yet been aired and therefore cannot use collaborative data to recommend the programme. After airing, the show may pick up many viewer ratings, but in a system that deals only with live TV, these ratings are now useless as the programme will not be shown and hence not have the chance to be recommended again. Designing recommender systems to deal with the cold start problem is an active area of research, and studies have shown that item-based algorithms outperform SVD-based algorithms in early stages of recommendation\citep{cold-start-problem}. In addition, collaborative approaches have been combined with content-based to provide an initial source of information\citep{generative_models}.
 
 	\subsection{Mobile devices}
