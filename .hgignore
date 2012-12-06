@@ -15,7 +15,7 @@ docs/*.glo
 docs/*.ist
 docs/*.log
 docs/*.out
-docs/*.pdf
+docs/Report.pdf
 docs/*.toc
 *.aux
 *.acn
@@ -26,5 +26,7 @@ docs/*.toc
 *.ist
 *.log
 *.out
-*.pdf
 *.toc
+docs/Report.synctex.gz
+docs/build/Report.synctex.gz
+docs/build/Report.dvi
