@@ -20,10 +20,19 @@
 
 		If non-binary programme vectors are introduced to $\mathcal{P}$, a change is required in how a user vector is modified upon a negative programme rating. Under the current architecture, a user is pushed away from the vector of a negatively rated programme; if programme vectors exist away from the vertices of $\mathcal{P}$, a user who's vector somehow ends up at a vertex describing programmes they dislike will be unable to move away from the vertex by giving negative ratings, leaving them stuck. This is a difficult problem to solve and is outside the scope of this project; repeated bad ratings must not converge to a single point but explore the programme space, but must not pull a user vector away from a known `good' area. While a jump with random direction may work, storing the users previous rating will allow for exploitation of rating gradients, enabling use of more complex gradient-climbing techniques.
 
+		The addition of implicit user ratings will remove the burden from the user of giving explicit ratings \citep{implicit_indicators}, especially if explicit ratings are removed or de-emphasised. Few interactions are offered by your4.tv, but programme skipping is provided and is a known source of reliable implicit ratings \cite{}. \citep{recommender-systems-handbook}[p.~304] describe an implicit programme rating $\hat{r}$ calculated from the time a user has watched the programme $p$ and the total programme length $L$:
+		$$
+			\hat{r} = 3 + 2 \frac{t - 5}{L - 5},\quad 5 \leq t \leq L
+		$$
+The rating given is between 3 and 5, on a rating scale of 1-5, where play times of under 5 minutes are discarded, and a rating approaches 5 as more of the programme is watched. The implicit ratings gleaned from programme skipping may be made more reliable by asking the user why the programme was skipped; this would allow the rating calculating to consider whether the user does not like the programme, or if the skip was due to another reason (they may have already seen the programme elsewhere). Although this reintroduces the problem of breaking the users pattern of activity, it may be the case that the mental cost to answer why they pressed skip is less than that of giving a rating explicitly.
+
 		%% I think the architecture has changed so this won't work anymore.
 		% The current architecture of delivering recommendations to users can be modified to allow for much greater scalability. Currently, each user requests a recommendation and the server responds. If the userbase becomes large enough for this to become infeasable, one solution is to maintain a table of user vector cluster centroids which are updated periodically by a cronjob. Periodically, this table of centroids would be multicast out to all users, along with recommendations for each centroid. 
 	\subsubsection{Advert Recommendation}
 
 	If recommendation techniques are implemented to improve advert relevance, the data already being collected on user preferences will be of great value in predicting adverts the user will enjoy/engage with. Techniques have been developed \cite{contextual_advertising} which utilize this preference information, along with demographic \cite{contextual_advertising} information, which is also collected by your4.tv. A third datasource utilised by the recommender system described by \cite{contextual_advertising} is user viewing histories, which your4.tv does not currently collect, though has potential to improve not only advert recommendations, but also programme recommendations, as mentioned in Section~\ref{sec:further_work_recommender}.
+
+	\subsubsection{Waiting time/Recommendation quality tradeoff}
+	% Knapsack problem!
 
 	\subsection{Conclusion}
