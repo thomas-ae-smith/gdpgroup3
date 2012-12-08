@@ -18,7 +18,7 @@ $requires = array(
 			'lib/jquery.ui.widget.js', 'lib/jquery.iframe-transport.js', 'lib/jquery.fileupload.js', 'lib/d3.v2.js')
 	),
 	'overlay' => array(
-		'styles' => array('css/overlay.css'),
+		'styles' => array('css/bootstrap.min.css', 'css/overlay.css'),
 		'scripts' => array('js/overlay/App','lib/jquery.transit.js')
 	),
 	'study' => array(

@@ -36,6 +36,17 @@ $app->get('/programmes/:id', function ($id) use ($app) {
 	output_json($programme->export());
 });
 
+$app->post('/programmes/:id/rate/', function ($id) {
+	$req = $app->request()->getBody();
+	$rating = min(1, max(-1, floatval($req['rating'])));
+	$programme = R::load('programme', $id);
+	if (!$programme) { return notFound('Programme with that ID not found.'); }
+	exec('python ../../../recommender/add_rating.py ' . $user->id . ' ' . $programme->id . ' ' . $rating);
+	output_json(array(
+		'rating' => $rating
+	));
+});
+
 function getProgramme($programme) {
 	return array_merge($programme->export(), array(
 		'url' => programmeUrl($programme),
