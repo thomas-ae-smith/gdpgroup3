@@ -16,6 +16,8 @@ $app->get('/programmes(/)', function() use ($app) {
 			notFound('No suitable recommendation at the moment - try again soon.');
 		}
 
+		exec('python ../../../recommender/add_blacklist_programme.py ' . $user->id . ' ' . $programme->id);
+
 		output_json(getProgramme($programme));
 	} else {
 		$programmes = R::find('programme');
