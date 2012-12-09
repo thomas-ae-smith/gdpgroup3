@@ -32,8 +32,23 @@ The rating given is between 3 and 5, on a rating scale of 1-5, where play times 
 
 	If recommendation techniques are implemented to improve advert relevance, the data already being collected on user preferences will be of great value in predicting adverts the user will enjoy/engage with. Techniques have been developed \cite{contextual_advertising} which utilize this preference information, along with demographic \cite{contextual_advertising} information, which is also collected by your4.tv. A third data source utilised by the recommender system described by \cite{contextual_advertising} is user viewing histories, which your4.tv does not currently collect, though has potential to improve not only advert recommendations, but also programme recommendations, as mentioned in Section~\ref{sec:further_work_recommender}.
 
-	\subsubsection{Waiting time/Recommendation quality tradeoff}
-	% Knapsack problem!
+	\subsubsection{Waiting time/Recommendation quality trade-off}
+	In the current system, programme playlists are constructed in a greedy fashion, using the following algorithm:
+	\begin{algorithmic}[H]
+	\State start\_timestamp $\gets$ now();
+	\State playlist $\gets$ $[]$;
+	\While{$($totalTime(playlist) $<$ 7200$)$ \textbf{or} $($len(playlist) $<$ 4$)$}
+		\State P $\gets$ $[$all live programmes starting between startTime and startTime+300$]$;
+		\If{P not empty}
+			\State next\_programme $\gets$ best programme in P;
+		\Else
+			\State next\_programme $\gets$ best non-live programme;
+		\EndIf
+		\State playlist.append(next\_programme);
+		\State start\_timestamp $\gets$ start\_timestamp + length(next\_programme);
+	\EndWhile
+	\end{algorithmic}
+	This is far from optimum, as programmes with extremely high predicted ratings may start at slightly over 5 minutes after the previous programme ends, leading the programme not to be recommended. By viewing playlist-building as a problem of maximizing predicted programme ratings, minimizing gaps between programmes and prioritizing live TV, this can be seen as a nontrivial constrained optimisation problem, where the trade-off values would need to be determined empirically.
 
 	\subsection{Conclusion}
 In summary our project improves the user experience by making live media personal, targeting both shows and adverts to each user as well as integrating seamlessly with the social experience. Additionally it reduces frustration at missed shows as these are transparently skipped in favour of something the user can watch from the start. In addition it provides a zero-interaction discovery system to remove the time consuming hunt for something to watch and perhaps aid users in discovering new and exciting content. Moreover it improves the experience of consuming adverts by providing users with interactivity, personally targeted adverts and the ability to control which adverts they are shown. 
