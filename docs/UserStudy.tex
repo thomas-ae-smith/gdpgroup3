@@ -7,7 +7,6 @@
 	Using a set of 119 student targeted adverts taken from Project4, 8 were given interactive html/css overlays containing interactive content likely to be typical for an interactive TV advert. Each participant in the study was shown two rounds of adverts---one interactive and one non-interactive---with half the participants being shown the interactive adverts first, and the other half shown non-interactive adverts first. The length of the rounds varied between 4, 5, and 6 minutes, and were evenly split between longer interactive rounds, longer non-interactive rounds and equal length rounds; the purpose of which was to measure differences in the participants perceived time and actual round time. 
 
 	The study was scripted, which has been included in Appendix~\ref{sec:appendix_interview_script}. While participants were neither encouraged nor discouraged from interacting with the interactive set of adverts, they were informed that interactions were possible, and how to interact, removing the initial learning period. As part of the study, an video introduction was given, which is included in Appendix~\ref{sec:appendix_video_script}.
-
 	\begin{table}[hb]
 		\centering
 		\begin{tabularx}{\linewidth}{ c X }
@@ -30,9 +29,9 @@
 
 	\subsection{Results}
 
-	Analysing the answer to question 2b (ii), ``\textit{Please estimate how much time more or less you were watching in the second session?}'', shows how users perceived time during the live and non-live rounds. 
-
-	\begin{figure}[hb]
+	% Time perception
+	For question 2b (ii), participants were asked ``\textit{Please estimate how much time more or less you were watching in the second session?}''. Using the responses, Figure~\ref{fig:time_perception} generated, showing the amount that users over/underestimated the time spent watching a round of advertisements and an extrapolated normal distribution.
+	\begin{figure}[h!]
 		\centering
 		\begin{subfigure}[h]{0.49\textwidth}
 			\centering
@@ -45,4 +44,15 @@
 			\caption{Non-interactive adverts: $\mu=0.6228$, $\sigma=0.3739$}
 		\end{subfigure}
 		\caption{Errors in time estimations of users watching interactive and non-interactive advertisements, and extrapolated normal distributions. 10 points recorded in study used.}
+		\label{fig:time_perception}
+	\end{figure}
+	Little difference in time perception is by Figure~\ref{fig:time_perception}, which is confirmed when a Student's independent two-sample t-test performed on the time estimate data gives 0.
+
+	% Recall
+	Using information in the participants answers, a table was constructed of adverts that were recalled by participants and whether the participants had seen the advert in the interactive round, the noninteractive round or both rounds. The recall results are given in Figure~\ref{fig:recall}, where it can be seen that participants had a better recall of adverts from the noninteractive round. 
+	\begin{figure}{h!}
+		\centering
+		\includegraphics[width=\textwidth]{images/recall.pdf}
+		\caption{Average percentage of advertisements recalled depending on the round the advert was seen in (interactive round, noninteractive round or both rounds).}
+		\label{fig:recall}
 	\end{figure}
