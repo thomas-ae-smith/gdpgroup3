@@ -7,6 +7,8 @@ It was decided that the TV and programme streams should be delivered to the clie
 
 LAMP server
 
+\subsection{Personalised TV Channel}
+
 \subsection{Programme Recommendation}
 	A your4.tv user is presented with a personal channel populated with a list of programmes as recommended by a programme recommendation system.  This system only recommends programmes, and is separate from the targeted advert retriever (described in Section~\ref{sec:design_adverts}). At an abstract level, each programme is given a vector $\mathbf{p}$, which describes what the programme is like. The programme vector $\mathbf{p}$ lies within the programme space $\mathcal{P}$, and is calculated from a vector of programme information $\mathbf{i}$ using the function $v_p$ ($\mathbf{p} = v_p(\mathbf{i})$). The concrete implementation of this used in your4.tv is that $\mathcal{P}$ is 19-dimensional, where each dimension represents one of the genres:
 	\begin{center}
@@ -72,47 +74,51 @@ LAMP server
 \subsection{Granularly Targeted Adverts}
 \label{sec:design_adverts}
 
-In [cite] it is discussed that adverts that are relevant to users are more likely to be of interest. Furthermore, our prestudy revealed that x\% [fixme] of participants would pay more attention to adverts that are relevant to them. The use of granular targeting would allow advertisers to specify very specific target markets, based on demographics, browsing habits and contextual information. As shown in [cite], adverts targeted specifically towards individuals are, in general, more relevant to that individuals personal interests.
+In [cite] it is discussed that adverts that are relevant to users are more likely to be of interest and in \citet{yahoo-intrusive-advertising} is shown to influence user experience. Furthermore, our prestudy (Section~\ref{sec:prestudy}) revealed that x\% [fixme] of participants would pay more attention to adverts that are relevant to them. The use of granular targeting would allow advertisers to specify very specific target markets, based on demographics, browsing habits and contextual information. As shown in [cite], adverts targeted specifically towards individuals are, in general, more relevant to that individuals personal interests.
 
 The usage of internet-connected devices allows the capturing of information about a user, allowing this granular targeting. In the design of our advertising platform, we take the notion of an advert campaign, as used by [cite] in [some system], and allow an advert to be targeted towards people based on personal information (such as age, gender and occupation), usage data (such as viewing history) and contextual information (such as time of day and what programme they are watching).
 
-In the context of live TV, these targeted adverts would replace adverts that are streamed as part of the channel by the broadcaster. This advert replacement has been implemented successfully previously as part of Project4, as described in Section~\ref{project4}.
+[cite] discusses the use of skip functionality in adverts in [system]. Users were able to skip adverts that they did not enjoy, such that they would be presented with a different advert for the remainder of the advert break. x\% of users were satisfied that by skipping adverts, they would be more likely to be presented with adverts that were of interest to them. Furthermore, our prestudy revealed that x\% [fixme] of individuals felt that skip functionality would influence the attention they would pay to adverts. From this, we wish to include skip functionality as part of our design: a user may skip an advert in order to be presented with a different advert, and may do so until the advert break has finished.
 
-\subsubsection{Collection of Statistics}
-
-Targeted adverts are shown in your4.tv during programme advert breaks, replacing the adverts which would otherwise appear. Users are able to skip an advert, prompting a box asking the reason they chose to skip the advert, where the advert may be blacklisted for the user, depending on their response. Skipping adverts does not reduce the amount of time the user spends watching adverts, instead simply allows the collection of user preference data and replaces the advert for another.
+In the context of live TV, these targeted adverts would replace adverts that are streamed as part of the channel by the broadcaster. This advert replacement has been implemented successfully previously as part of Project4, as described in Section~\ref{project4}. In addition, these advert breaks could be placed in between non-live streamed programmes.
 
 \subsubsection{Advert campaigns}
 
-Each advert in the system is assigned to a campaign, where a campaign has multiple adverts and an advert may apply to multiple campaigns. A campaign may be given a set of restrictions, where the adverts belonging to a campaign are shown whenever the restrictions are met. Restrictions may apply to programmes, users and times, where the attributes that can be restricted are:
+Any advert may be targeted towards individuals by assigning that advert to a campaign. An advert may be in as many campaigns as the advertiser needs, and a campaign may include any number of adverts. A campaign is given a set of restrictions, where the adverts belonging to a campaign are shown whenever the restrictions are met. Restrictions may apply to programmes, users and times, where the attributes that can be restricted are:
 
 \begin{center}
 	\begin{tabular}{c c r l}
 		\toprule
 		\textbf{Programmes} & \textbf{Times} & \multicolumn{2}{c}{\textbf{Users}} \\
 		\midrule
-		genre & time of day & ~~gender & latitude \\ % The two non-breaking spaces are so the table looke a little nicer.
+		genre & time of day & ~~gender & latitude \\ % The two non-breaking spaces are so the table looke a little nicer. ( Nice olde English there )
 		individual programme & weekday & age & longitude \\
 		liveness & & &  occupation \\
 		\bottomrule
 	\end{tabular}
 \end{center}
 
-Attributes may have multiple restrictions, where the restrictions are single points or ranges where appropriate. When a campaign has multiple restrictions on a single attribute, that attribute is considered satisfied if any of its restrictions are satisfied; e.g.: if a campaign has weekday restrictions of Monday and Wednesday, the weekday restriction is considered satisfied on either a Monday or a Wednesday. A campaign only applies when all of its restrictions are satisfied, though a campaign need not have restrictions for all of the above attributes, or indeed any restrictions at all.
+Attributes may have multiple restrictions, where the restrictions are discrete points or continuous ranges where appropriate. When a campaign has multiple restrictions on a single attribute, that attribute is considered satisfied if any of its restrictions are satisfied; e.g.: if a campaign has weekday restrictions of Monday and Wednesday, the weekday restriction is considered satisfied on either a Monday or a Wednesday. A campaign only applies when all of its restrictions are satisfied, though a campaign need not have restrictions for all of the above attributes, or indeed any restrictions at all.
 
-Whenever a campaign is satisfied, its adverts are shown with a frequency directly proportional to the value of a campaign metric we are calling nicheness, defined as:
+Whenever a campaign is satisfied, its adverts are shown with a frequency directly proportional to the value of a campaign metric that we call \textit{nicheness}. We define nicheness, $n$, as:
 $$
-	\text{nicheness} = \frac{(1-\text{nicheness}_\text{programme}) + (1-\text{nicheness}_\text{time}) + (1-\text{nicheness}_\text{user})}{3}
+	n = \frac{(1-n_\text{programme}) + (1-n_\text{time}) + (1-n_\text{user})}{3}
 $$
+
 where
 \begin{align*}
-	\text{nicheness}_\text{programme} &= 1 - \frac{\text{satisfying programmes}}{\text{total programmes}} \\
-	\text{nicheness}_\text{time} &= 1 - \frac{\text{satisfied time during campaign}}{\text{total time during campaign}} \\
-	\text{nicheness}_\text{user} &= 1 - \frac{\text{satisfying users}}{\text{total users}}
+	n_\text{programme} &= 1 - \frac{\text{satisfying programmes}}{\text{total programmes}} \\
+	n_\text{time} &= 1 - \frac{\text{satisfied time during campaign}}{\text{total time during campaign}} \\
+	n_\text{user} &= 1 - \frac{\text{satisfying users}}{\text{total users}}
 \end{align*}
-meaning that for a particular person, programme and time in which multiple campaigns apply, more niche campaigns will have their adverts display more often. This design decision was made to reward advertisers for creating niche campaigns over broad campaigns. By encouraging a greater number of more highly targeted advertisements in this way, users will be shown a far more relevant advert set.
+
+In other words, for a particular person, programme and time in which multiple campaigns apply, campaigns with a higher nicheness will have their adverts displayed more often. This design decision was made to reward advertisers for creating niche campaigns over broad campaigns. By encouraging a greater number of more highly targeted advertisements in this way, users will be shown a far more relevant advert set.
 % DOES our study show this?
-According to our pre-study (section \ref{sec:prestudy}), such relevance has a large influence on user attentiveness, and is also known to positively influences the user experience\citep{yahoo-intrusive-advertising}.
+
+\subsubsection{Collection of Statistics}
+
+Users are able to skip an advert, prompting a box asking the reason they chose to skip the advert, where the advert may be blacklisted for the user, depending on their response. Skipping adverts does not reduce the amount of time the user spends watching adverts, instead simply allows the collection of user preference data and replaces the advert for another.
+
 
 \subsection{Streaming}
 The Wowza server will be configured to act as a repeater, re-broadcasting the streams provided by Inqb8r. The Cupertino streaming packetiser will be used to output the streams in the HLS format such that the videos may be viewed on iPads and any other devices supporting this technology. Each programme will be recorded using the EPG data. Since adverts will be replaced by ones recommended to viewers, it must be known when adverts are due to start and finish. This process is achieved by Project4 using a GPI\citep{SCTE104} triggered hardware solution utilising an SCTE 104 Server, a Tanberg Encoder and a PV1000 Ad replacement device as described in \ref{subsubsec:Project4Tech}. Finally the Wowza server will be configured with the standard extension ``vod'' which allows any file of a valid format in a given directory to be streamed.
