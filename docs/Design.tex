@@ -68,10 +68,21 @@ LAMP server
 	The space $\mathcal{P}$ is, by design, coupled only with the functions $v_u$ and $v_p$. As a result of this, $v_p$ may be modified, changing the structure of $\mathcal{P}$, as long as $v_u$ is re-learnt using the new programme representation. This is desirable, as programme representations better suited to recommendation are possible; i.e., more similar programmes are closer together, more different programmes are further apart, and similar programmes are not given identical representations. Possible ways of accomplishing this are discussed in section~\ref{sec:further_work_recommender}.
 
 
-\subsection{Targeted Adverts}
+
+\subsection{Granularly Targeted Adverts}
 \label{sec:design_adverts}
 
+In [cite] it is discussed that adverts that are relevant to users are more likely to be of interest. Furthermore, our prestudy revealed that x\% [fixme] of participants would pay more attention to adverts that are relevant to them. The use of granular targeting would allow advertisers to specify very specific target markets, based on demographics, browsing habits and contextual information. As shown in [cite], adverts targeted specifically towards individuals are, in general, more relevant to that individuals personal interests.
+
+The usage of internet-connected devices allows the capturing of information about a user, allowing this granular targeting. In the design of our advertising platform, we take the notion of an advert campaign, as used by [cite] in [some system], and allow an advert to be targeted towards people based on personal information (such as age, gender and occupation), usage data (such as viewing history) and contextual information (such as time of day and what programme they are watching).
+
+In the context of live TV, these targeted adverts would replace adverts that are streamed as part of the channel by the broadcaster. This advert replacement has been implemented successfully previously as part of Project4, as described in Section~\ref{project4}.
+
+\subsubsection{Collection of Statistics}
+
 Targeted adverts are shown in your4.tv during programme advert breaks, replacing the adverts which would otherwise appear. Users are able to skip an advert, prompting a box asking the reason they chose to skip the advert, where the advert may be blacklisted for the user, depending on their response. Skipping adverts does not reduce the amount of time the user spends watching adverts, instead simply allows the collection of user preference data and replaces the advert for another.
+
+\subsubsection{Advert campaigns}
 
 Each advert in the system is assigned to a campaign, where a campaign has multiple adverts and an advert may apply to multiple campaigns. A campaign may be given a set of restrictions, where the adverts belonging to a campaign are shown whenever the restrictions are met. Restrictions may apply to programmes, users and times, where the attributes that can be restricted are:
 
@@ -121,8 +132,8 @@ The Wowza server will be configured to include the standard extension ``Live Str
 \subsubsection{Restrictions}
 Without a GPI trigger millisecond precision is not possible for advert timings but assuming the network delay remains approximately constant second accuracy should be possible in most situations. Unfortunately live shows can result in these times being slightly out so in some cases the information may be incorrect. We have been given access by Inqb8r to the SCTE 104 control scripts which are coded in Python. Using these we should be able to minimise this risk by pinging the Wowza server and the LAMP server when the GPI pulse is received which is precisely 8 seconds before ad ad break is due to start. Additionally this information could be used to start and stop the recordings on the Wowza server resulting in recordings excluding the adverts allowing potential insertion of adverts at the user's discretion, allowing them to choose when to watch the adverts. However due to the lack of an available development device and the difficulty of modifying the scripts to perform our tasks without interfering with the existing Project4 tasks it has been decided that using this information is outside the scope of this project.
 
-\subsection{Scheduled Tasks}\label{subsec:ScheduledTasks}
-%list scheduled tasks here
-\begin{description}
-\item[EPG Retrieval]{EPG information is acquired by a cron job running on the LAMP server using the Atlas REST API.}
-\end{description}
+\subsection{Interactive Adverts}
+
+In our prestudy, participants revealed they would often use the advert break as an opportunity to perform another task, such as leave the room to make a drink.
+
+

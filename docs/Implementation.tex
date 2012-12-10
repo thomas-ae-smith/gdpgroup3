@@ -1,6 +1,17 @@
 \section{Implementation}
 
-In the following section, the technical details of the implemented system will be discussed. This includes the overall systems architecture, database design, and the languages and tools used during the development process.
+The proposed platform consists of several aspects. Firstly, an interface for tablet computers will need to be devised in order to allow users to watch TV. 
+
+Programme recommendation
+
+Advert campaigns
+
+In the following section, the technical details of the implemented system, \textit{Your4.tv}, will be discussed. This includes the overall systems architecture, database design, and the languages and tools used during the development process.
+
+\subsection{Platform}
+
+Apple iPad
+Modern web browser
 
 \subsection{Systems Architecture \& Description}
 
@@ -238,3 +249,9 @@ Lines of code in JS, PHP, Java, Python, HTML, CSS etc
 	\caption{Log in}
 	\label{fig:advertiser-campaign-schedule}
 \end{figure}
+
+\subsection{Scheduled Tasks}\label{subsec:ScheduledTasks}
+%list scheduled tasks here
+\begin{description}
+\item[EPG Retrieval]{EPG information is acquired by a cron job running on the LAMP server using the Atlas REST API.}
+\end{description}
