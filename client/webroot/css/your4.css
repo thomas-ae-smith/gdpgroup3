@@ -451,3 +451,15 @@ iframe {
 .overlay-layer, iframe {
 	z-index: 10000;
 }
+
+.rating {
+	position: absolute;
+	bottom: 140px;
+	right: 10px;
+	z-index: 10000000
+}
+
+.rating .star {
+	color: white;
+	display: inline-block;
+}

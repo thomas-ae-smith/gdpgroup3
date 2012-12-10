@@ -16,6 +16,7 @@
 			</div>
 		</div>
 		<div class="player-container"></div>
+		<div class="rating-container"></div>
 		<div class="bottom-controls">
 			<div class="playlist-container"></div>
 		</div>
@@ -181,7 +182,7 @@
 <script type="text/html" id="advert-list-item-template">
 	<tr>
 		<td width="130"><div class="thumbnail-bg">
-			<img src="<%= thumbnail.replace("www.your4.tv", "punchout.me") || "img/no-preview.png" %>" width="120">
+			<img src="<%= thumbnail/*.replace("www.your4.tv", "punchout.me")*/ || "img/no-preview.png" %>" width="120">
 			<div class="icon <%= type %>" data-title="<%= y4.language.advertType[type] %>">
 				<i class="icon-<%= type === "still" ? "camera" : (type === "video" ? "film" : "") %>"></i>
 			</div>

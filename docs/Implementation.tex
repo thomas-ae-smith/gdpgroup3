@@ -1,6 +1,8 @@
 \section{Implementation}
 
-\subsection{Systems Architecture}
+In the following section, the technical details of the implemented system will be discussed. This includes the overall systems architecture, database design, and the languages and tools used during the development process.
+
+\subsection{Systems Architecture \& Description}
 
 \begin{figure}[H]
 	\centering
@@ -13,67 +15,106 @@ Figure~\ref{your4-architecture} shows the overall architecture of the Your4 syst
 
 \begin{description}
 	\item[Client] The client (expected to be Mobile Safari for iPad running on top of iOS 5+) is responsible for for interfacing with the LAMP server to retrieve the users' personalised playlist. With this playlist, the player in the client can then request the appropriate media from the media server.
-	\item[LAMP server] The LAMP server represents the bulk of the system and is responsible for providing a REST API for the key features of Your4: Playlist recommendations, user authentication, electronic programme guide (EPG) data
+	\item[LAMP server] The LAMP server represents the bulk of the system and is responsible for providing a REST API for the key features of Your4: recommendations, user authentication, electronic programme guide (EPG) data and advert uploading \& manipulation.
+	\item[Media server] The media server is responsible for encoding and serving live streams as well as recording programmes and serving recorded programmes.
 \end{description}
 
 \subsubsection{Client}
+
+The client receives all HTML content from the LAMP server upon the first visit of your4.tv. From this point onwards, all communication between the client and LAMP server contains only models and collections (e.g. a programme and all of its attributes) on the LAMP servers REST interface in JSON format. The client side application is then responsible for parsing this JSON response and manipulating the user interface using local templates (embedded in the HTML upon the initial page load) as appropriate. Due to the asynchronicity this approach brings, a significant UI speed increase can be observed against traditional methods whereby the web browser acts as a ``thin client'', by simply parsing and rendering HTML responses pre-generated server side.
+
+Using the POST, GET, PUT and DELETE methods in HTTP requests to the REST endpoint maps to the equivalent CRUD (create, read, update and delete) operations on the object concerned. This methodology creates a simple self-documenting API. In a similar exploitation of HTTP philosophies, HTTP status codes are used to identify the status of a request. For example, 200 indicates success and 400 indicates the request was invalid (failed server side validation). The client can then perform the appropriate callback function to manipulate the interface.
+
+\paragraph{Authentication}
+
+The concept of a ``user'' is key to the system since crucial demographics data and matrices defining recommender state are stored against each user. The client authenticates a user by either local login or using the Facebook login API\footnote{\footurl{https://developers.facebook.com/docs/concepts/login}}. Upon page load, the client attempts to retrieve ``/api/users/me'' from the server to discover if an active session is available. If so, the player layers will be rendered on screen, otherwise, the user will be routed to the login interface.
+
+The user can then choose to use the local login which will generate a GET request with the email and password as query parameters. If a 200 response is received, the login is considered to be successful. A user can also choose to login via Facebook. After the user accepts the Facebook permissions, a local cookie is set and a GET request is generated to ``/api/users/fb-[facebook\_id]'' where ``[facebook\_id]'' is retrieved from the Facebook API.
+
+\paragraph{Playback}
+
+Upon initialisation of the player, a number of layers are rendered on top of one another:
+
+\begin{description}
+	\item[Video layer] The video component to show video. If on an Apple device, this is a HTML5 video tag. Otherwise, a flash video player is instantiated.
+	\item[Skip layer] Contains user controls to skip and rate currently playing media.
+	\item[Black layer] Used to hide buffering video in order to provide more seamless stream.
+	\item[Overlay layer] An iFrame which displays the HTML that the advertiser has specified to be overlayed on their advert.
+\end{description}
+
+Once rendering is complete, the client requests a number of resources from the REST API in order to compile and play a playlist:
+
+\begin{enumerate}
+	\item A list of channels including the relevant stream URL to the media server.
+	\item The current LAMP server timestamp. This is used in recommendation requests.
+	\item A request is made for the best recommended live broadcast. This recommendation is based on the currently playing program on each channel. Live broadcasts are given priority over recorded programmes as this is close to the ``personal TV channel'' ideal. The current timestamp and user ID is sent with this request in order for the server to determine what suitable programmes are upcoming. If a 200 response is received, the body will include the channel ID. If a 404 is received, no appropriate live broadcast recommendation is available. The client will then request a recorded programme recommendation. In both cases, the response also includes the programme ID from the EPG and the location of ad breaks.
+	\item With the programme ID, a request is made to retrieve the programme data such as name, description and length.
+	\item Between each recorded programme a 2 minute ad break is artificially included. Up to 5 minutes is allowed between live broadcasts (depending on previous programme end and the start of the live broadcast). The system is also aware of ad breaks in programmes within the playlist. For each ad break, a request is made containing: the user ID; programme ID; the amount of time in the ad break; if the ad break is between a live or recorded programme and finally, a list of advert ID's which have already been listed in the playlist. Using this data, the LAMP server can select adverts that match the users demographics and the currently playing programme. This step is repeated multiple times, reducing the amount of time left unallocated in the request each time, until all ad breaks are full.
+	\item Steps 3 to 5 are repeated until the minimum duration and size of playlist are both satisfied. Upon each repeat, the timestamp sent with the request is set to the end time of the previously recommended programme or advert. This informs the recommender as to the point in time it should check live broadcasts for suitable programmes.
+	\item The playlist is rendered on screen.
+	\item The video player is instructed to play the first stream URL in the playlist. Each time an item in the playlist ends, a signal is triggered which causes the player to play the next stream. As well as this, another recommendation is requested and added to the playlist.
+\end{enumerate}
+
+The client checks the user agent string of the browser to determine what format of media to request from the media server. Apple devices require HTTP Live Streaming (HLS) streams while the flash player alternative requests an RTMP alternative.
+
 \subsubsection{LAMP Server}
-\paragraph{REST Interface}
-\paragraph{Recommender}
+
+The LAMP server's primary responsibility is to expose all required functionality on a single REST endpoint, ``/api''. In general, the LAMP server deals with a request by passing it through various stages before finally manipulating the database:
+
+\begin{enumerate}
+	\item A HTTP request is retrieved by the web server.
+	\item The request is passed to the REST API where the appropriate function is called dependant on the request URI and HTTP method.
+	\item The object in the request body is passed into the Object Relational Mapper.
+	\item The ORM builds the approproate SQL query and passes it to the DBMS.
+	\item The DBMS modifies or retrieves from the data store.
+	\item The application logic returns the result as a HTTP response containing a JSON boddy.
+\end{enumerate}
+
+\paragraph{Authentication}
+
+Upon registration, name, email, gender, date of birth, occupation, postcode and password are required. For Facebook logins, a facebook ID is required in place of the password. Passwords are stored with a Blowfish-based hash type with a per-user 22 character salt and a 1024 iteration cost parameter which prevents rainbow table exploitation in a human lifetime \citep{hashing}. The postcode is converted to latitude \& longitude coordinates based on ordnance survey data. Upon successful authentication, a session cookie is created.
+
+A recommender function is also called which retrieves the user's initial vector. This is based upon the required demographics data provided at registration. This vector is then stored agaist the user in the database.
+
+\paragraph{Programme Recommendations}
+
+Daily, EPG data is imported from the Atlas API\footnote{\footurl{http://atlas.metabroadcast.com}} into the Your4 database. This contains unique programme ID's, descriptions, episode numbers and other programme data.
+
+Upon first initialisation of the recommender, a CSV file containing training data from the GroupLens research group\footnote{\footurl{http://www.grouplens.org/node/73}} is processed. This gives the recommender an initial estimate as to what type of users prefer what genres. Upon execution of the aforementioned EPG cron job, each programme is passed to a recommender function to retrieve the initial programme vector to store against it. This function calls the genre API, TVDB\footnote{\footurl{http://thetvdb.com}}, to identify this vector. The vector is a 1-dimensional matrix whereby each position represents a predefined genre. A ``1'' indicates the programme belongs to a genre.
+
+Upon receiving a live recommendation request, the recommender selects programmes starting within the next 5 minutes of the timestamp contained in the request (see step 3 in aforementioned playback steps). The recommender then filters out programmes the requesting user has already viewed in the past, and selects the best one according the recommender output. If no suitable live recommendation can be made, a 404 will be returned and the client will request a recorded programme. The recommender then executes a similar process to the live request, but filters programmes by those which have been recorded by the media server.
+
+When a user rates a programme on the client, a request is received by the recommender. This rating is a 5-star system which maps to -1, -0.5, 0, 0.5 and 1 respectively. Upon this request, the recommender tunes the users vector accordingly. The act of rating also adds the programme to the list of already viewed programmes for a user.
+
+\paragraph{Adverts}
+
+Data pertaining to the times ad breaks are positioned during programmes are imported regularly from Project4 systems. Project4 employs a hardware solution to detect these ad breaks. With this data, the client is able to know at which points in time it should request an advert to replace the adverts provided in stream by the broadcaster.
+
+
+
+
+
+project 4 mos
+ad uploading
+ad selecting
+
+\paragraph{Data visualisation}
 \subsubsection{Media Server}
 
+\subsection{Database structure}
 
 
 \subsection{Languages and Techniques}
 As this project involved interacting with many different systems, a diverse range of programming languages were used.
 
-\subsubsection{Client-side web interfaces}
-\begin{enumerate}
-\item \textit{HTML}
-\item \textit{CSS}
-\item \textit{JavaScript}
-\end{enumerate}
-
-\subsubsection{Server-side and data-layer}
-\begin{enumerate}
-\item \textit{PHP}
-\item \textit{Python}
-\end{enumerate}
 
 Communication between server and client is done through a REST interface.
 
 Datebase is MySQL.
 
-\subsubsection{Streaming server}
-\begin{enumerate}
-\item \textit{Java} to interface with the Wowza streaming server
-\item \textit{Python} to interpret to GPI[?] pulse in order to establish when breaks in live programmes are
-\end{enumerate}
 
-\subsection{Libraries and Frameworks}
+\subsubsection{Libraries and Frameworks}
 
-\subsection{Detailed Architecture}
-
-\subsubsection{Database structure}
-
-\subsubsection{Programme recommendation}
-
-\subsubsection{Advert selection}
-
-\subsubsection{REST services}
-
-\subsubsection{Playback}
-Plays HLS streams in HTML5 Video tag, or RTMP stream in Flash Video.
-
-The player must be capable of displaying two types of media: \textit{video} (for programmes and video adverts) and \textit{stills} (for adverts which consist of just one picture). Additionally, some adverts may have an overlay, which consists of some HTML specified by the advertiser. A challenge here is hiding the buffering of videos or loading of images. A solution is to hide any media until it has loaded. Layers:
-\begin{enumerate}
-\item \textit{Black layer}: used to hide any loading media
-\item \textit{Overlay layer}: an iFrame which will display the HTML that the advertiser has specified for the overlay
-\item \textit{Still layer}: an image that will display any still adverts
-\item \textit{Video layer}: the video component to show the video
-\end{enumerate}
-
-\subsubsection{Data visualisation}
 
 
 \subsection{Code Statistics}

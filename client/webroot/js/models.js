@@ -6,7 +6,7 @@
 	// Following should be removed
 	var virtualenvs = ["users.ecs.soton.ac.uk", "192.168.1.78", "linuxproj.ecs.soton.ac.uk", "localhost", "your4.tv", "127.0.0.1"];
 	if (virtualenvs.indexOf(window.location.hostname) > -1) {
-		baseUrl = "punchout.me"; //"www.your4.tv";
+		baseUrl = "www.your4.tv";//"punchout.me"; //;
 	}
 
 	// Order by name
@@ -39,6 +39,15 @@
 		},
 		thumbnail: function () {
 			return "";
+		},
+		rate: function (rating) {
+			return $.ajax({
+				url: this.url() + this.id + "/rate/",
+				type: "POST",
+				data: JSON.stringify({ rating: rating }),
+				contentType: "application/json; charset=utf-8",
+				dataType: "json"
+			});
 		}
 	});
 

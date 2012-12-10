@@ -1,6 +1,38 @@
 (function (y4, $, Backbone, _, $f) {
 	//"use strict";
 
+	y4.RatingView = Backbone.View.extend({
+		className: "rating",
+		initialize: function () {
+			var that = this,
+				programmes = new y4.Programmes([ { id: this.options.programmeId } ]);
+			this.programme = programmes.first();
+			console.log("Koooo", that.options.programmeId);
+			this.programme.fetch().done(function () {
+				console.log("2: CHEE", that.programme);
+				that.render();
+			});
+		},
+		render: function () {
+			var that = this;
+			this.$el.html("");
+			_.times(5, function (i) {
+				var $star = $('<div class="star">O</div>');
+				$star.click(function (e) {
+					e.preventDefault();
+					that.rate((i - 2) / 2).then(function () {
+						$star.html("X").siblings().html("O");
+					});
+				});
+				that.$el.append($star);
+			});
+			return this;
+		},
+		rate: function (i) {
+			return this.programme.rate(i);
+		}
+	});
+
 	y4.PlayerView = Backbone.View.extend({
 		className: "player",
 		initialize: function (options) {
@@ -85,6 +117,8 @@
 		setBroadcast: function (broadcast) {
 			var channel = this.channels.get(broadcast.get("channel_id"));
 			this.videoLayer.set("your4", channel.get("url"));
+			var ratingView = new y4.RatingView({ programmeId: broadcast.get("programme_id") });
+			$(".rating-container").html("").append(ratingView.render().el);
 		},
 
 		setProgramme: function (programme) {
@@ -92,6 +126,9 @@
 			if (programme.get("transcript")) {
 				this.transcriptLayer.set(programme.get("transcript")).show();
 			}
+			var ratingView = new y4.RatingView({ programmeId: programme.id });
+			console.log("J", ratingView, $(".rating-container"));
+			$(".rating-container").html("").append(ratingView.render().el);
 		},
 
 		play: function () {

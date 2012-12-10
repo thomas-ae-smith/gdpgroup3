@@ -40,6 +40,11 @@
 \usepackage{bold-extra}
 \usepackage[sc,bf,compact,small]{titlesec}
 
+% Allow use of paragraph as depth 4 sub title
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
 % Pretty listings
 \usepackage{listings}
 \input{PrettyListings}
@@ -54,6 +59,10 @@
 % Nicer looking table rules.
 \usepackage{booktabs}
 
+% Nice pseudocode
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{float}
@@ -62,5 +71,6 @@
 \usepackage{tabularx}
 \usepackage{multicol}
 \usepackage{emptypage}
+\usepackage{longtable}
 
 \AtBeginDocument{\renewcommand\cite{\citep}} % Redefine \cite to \citep.

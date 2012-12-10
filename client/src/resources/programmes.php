@@ -16,6 +16,8 @@ $app->get('/programmes(/)', function() use ($app) {
 			notFound('No suitable recommendation at the moment - try again soon.');
 		}
 
+		exec('python ../../../recommender/add_blacklist_programme.py ' . $user->id . ' ' . $programme->id);
+
 		output_json(getProgramme($programme));
 	} else {
 		$programmes = R::find('programme');
@@ -32,6 +34,17 @@ $app->get('/programmes/:id', function ($id) use ($app) {
 	$programme = R::load('programme', $id);
 	if (!$programme) { return notFound('Programme with that ID not found.'); }
 	output_json($programme->export());
+});
+
+$app->post('/programmes/:id/rate/', function ($id) {
+	$req = $app->request()->getBody();
+	$rating = min(1, max(-1, floatval($req['rating'])));
+	$programme = R::load('programme', $id);
+	if (!$programme) { return notFound('Programme with that ID not found.'); }
+	exec('python ../../../recommender/add_rating.py ' . $user->id . ' ' . $programme->id . ' ' . $rating);
+	output_json(array(
+		'rating' => $rating
+	));
 });
 
 function getProgramme($programme) {
