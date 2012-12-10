@@ -104,27 +104,70 @@ The live application is also responsible for recording programmes. A REST API ca
 
 \subsection{Database structure}
 
-\begin{figure}[th]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{images/your4-db.pdf}
+	\includegraphics[trim = 0 3.7cm 3.5cm 0, clip, width=\textwidth]{images/your4-db.pdf}
 	\caption{Overview of Your4 database layout}
 	\label{fig:your4-db}
 \end{figure}
 
-\subsection{Languages and Techniques}
-As this project involved interacting with many different systems, a diverse range of programming languages were used.
+Figure~\ref{fig:your4-db} shows the Your4 database class diagram. The Object Relational Mapper (ORM) in use enforces a strict naming policy in which all table and attributes are in lower case and are not pluralised. The underscore character represents a relation, e.g. ``programme\_id'' represents a foreign key to the ``id'' attribute in the programme table.
 
-
-Communication between server and client is done through a REST interface.
-
-Datebase is MySQL.
-
+\subsection{Programming Techniques \& Languages}
 
 \subsubsection{Libraries and Frameworks}
 
+A number of libraries and technologies were used during the implementation stage:
+
+\begin{description}
+	\item[Client] \hfill
+		\begin{description}
+			\item[JQuery] asdas asdas asdas asdas asdas 
+			\item[Underscore] asdas asdas asdas asdas asdas 
+			\item[Backbone] asdas asdas 
+			\item[Flowplayer] asdas asdas 
+			\item[Bootstrap] asdas asdas asdas asdas 
+			\item[D3] asdas asdas asdas asdas asdas asdas 
+			\item[Leaflet] asdas asdas 
+			\item[Facebook]
+		\end{description}
+	\item[LAMP Server] \hfill
+		\begin{description}
+			\item[MySQL]
+			\item[Slim]
+			\item[RedBean]
+			\item[Facebook]
+			\item[TVDB]
+			\item[NumPy]
+		\end{description}
+	\item[Media Server] \hfill
+		\begin{description}
+			\item[Wowza]
+			\item[LiveStreamRecord]
+			\item[Gson]
+		\end{description}
+\end{description}
+
+Mysql
+slim
+redbean
+jquery
+leaflet
+backbone
+underscore
+bootstrap
+flowplayer
+d3
+numpy
+tvdb - caching
+wowza
+LiveStreamRecord
+gson
 
 
-\subsection{Code Statistics}
+
+
+\subsubsection{Code Statistics}
 Lines of code in JS, PHP, Java, Python, HTML, CSS etc
 
 \subsection{System walkthrough}
