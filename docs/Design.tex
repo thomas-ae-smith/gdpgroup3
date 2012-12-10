@@ -71,14 +71,16 @@ LAMP server
 
 
 
-\subsection{Granularly Targeted Adverts}
+\subsection{Targeting Adverts}
 \label{sec:design_adverts}
 
 In [cite] it is discussed that adverts that are relevant to users are more likely to be of interest and in \citet{yahoo-intrusive-advertising} is shown to influence user experience. Furthermore, our prestudy (Section~\ref{sec:prestudy}) revealed that x\% [fixme] of participants would pay more attention to adverts that are relevant to them. The use of granular targeting would allow advertisers to specify very specific target markets, based on demographics, browsing habits and contextual information. As shown in [cite], adverts targeted specifically towards individuals are, in general, more relevant to that individuals personal interests.
 
 The usage of internet-connected devices allows the capturing of information about a user, allowing this granular targeting. In the design of our advertising platform, we take the notion of an advert campaign, as used by [cite] in [some system], and allow an advert to be targeted towards people based on personal information (such as age, gender and occupation), usage data (such as viewing history) and contextual information (such as time of day and what programme they are watching).
 
-[cite] discusses the use of skip functionality in adverts in [system]. Users were able to skip adverts that they did not enjoy, such that they would be presented with a different advert for the remainder of the advert break. x\% of users were satisfied that by skipping adverts, they would be more likely to be presented with adverts that were of interest to them. Furthermore, our prestudy revealed that x\% [fixme] of individuals felt that skip functionality would influence the attention they would pay to adverts. From this, we wish to include skip functionality as part of our design: a user may skip an advert in order to be presented with a different advert, and may do so until the advert break has finished.
+[cite] discusses the use of skip functionality in adverts in [system]. Users were able to skip adverts that they did not enjoy, such that they would be presented with a different advert for the remainder of the advert break. x\% of users were satisfied that by skipping adverts, they would be more likely to be presented with adverts that were of interest to them. Furthermore, our prestudy revealed that x\% [fixme] of individuals felt that skip functionality would influence the attention they would pay to adverts. 
+
+From this, we wish to include skip functionality as part of our design: a user may skip an advert in order to be presented with a different advert, and may do so until the advert break has finished. In order to expand on this, we will ask users \textit{why} they chose to skip an advert, presenting options much like Facebook advert skip options as discussed in Section~\ref{subsection:backgroundStats}. This will allow advertisers to collect information on \textit{why} individuals skip adverts and allow users to effectively block adverts from being shown again. 
 
 In the context of live TV, these targeted adverts would replace adverts that are streamed as part of the channel by the broadcaster. This advert replacement has been implemented successfully previously as part of Project4, as described in Section~\ref{project4}. In addition, these advert breaks could be placed in between non-live streamed programmes.
 
@@ -115,9 +117,19 @@ where
 In other words, for a particular person, programme and time in which multiple campaigns apply, campaigns with a higher nicheness will have their adverts displayed more often. This design decision was made to reward advertisers for creating niche campaigns over broad campaigns. By encouraging a greater number of more highly targeted advertisements in this way, users will be shown a far more relevant advert set.
 % DOES our study show this?
 
+
 \subsubsection{Collection of Statistics}
 
-Users are able to skip an advert, prompting a box asking the reason they chose to skip the advert, where the advert may be blacklisted for the user, depending on their response. Skipping adverts does not reduce the amount of time the user spends watching adverts, instead simply allows the collection of user preference data and replaces the advert for another.
+As discussing in Section~\ref{subsection:backgroundStats}, TV devices which transmit usage data account for only x\% of TV viewers within the USA, representing a very small sample of TV viewers. However, internet analytics services, such as YouTube and Google Analytics, allow fine-granular statistics to be collected about users of web-based services, including what material individuals view, how long for and even an individuals location when they accessed the material. Such information would be extremely valuable to advertisers, with [cite] demonstrating a demand for newer, higher-granular statistics.
+
+Using an internet-enabled device allows two way communication -- a device may receive video from a streaming service to present to the user and send information about the user back to the streaming service. We can incorporate this as part of our design, which would allow us to collect three types of information:
+\begin{description}
+\item[Demographic information] age, gender and occupation;
+\item[Contextual information] time of day, location and what programme the viewer is watching;
+\item[Usage information] what programmes and adverts the viewer has watched in the past, when and where users have clicked on adverts.
+\end{description}
+
+The usage information would allow advertisers to fine tune adverts and campaigns towards their target demographic, focusing on who watches the advert and how they they are interacted with. Furthermore, with the skip functionality, advertisers could establish when users are most likely to skip during an advert and why.
 
 
 \subsection{Streaming}
