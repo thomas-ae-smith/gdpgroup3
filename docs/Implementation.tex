@@ -6,12 +6,12 @@ In the following section, the technical details of the implemented system will b
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4]{images/your4-architecture.png}
+	\includegraphics[width=\textwidth]{images/your4-architecture.png}
 	\caption{Overview of Your4 architecture}
-	\label{your4-architecture}
+	\label{fig:your4-architecture}
 \end{figure}
 
-Figure~\ref{your4-architecture} shows the overall architecture of the Your4 system. The system is split into three distinct parts:
+Figure~\ref{fig:your4-architecture} shows the overall architecture of the Your4 system. The system is split into three distinct parts:
 
 \begin{description}
 	\item[Client] The client (expected to be Mobile Safari for iPad running on top of iOS 5+) is responsible for for interfacing with the LAMP server to retrieve the users' personalised playlist. With this playlist, the player in the client can then request the appropriate media from the media server.
@@ -67,7 +67,7 @@ The LAMP server's primary responsibility is to expose all required functionality
 	\item The object in the request body is passed into the Object Relational Mapper.
 	\item The ORM builds the approproate SQL query and passes it to the DBMS.
 	\item The DBMS modifies or retrieves from the data store.
-	\item The application logic returns the result as a HTTP response containing a JSON boddy.
+	\item The application logic returns the result as a HTTP response containing a JSON body.
 \end{enumerate}
 
 \paragraph{Authentication}
@@ -90,19 +90,26 @@ When a user rates a programme on the client, a request is received by the recomm
 
 Data pertaining to the times ad breaks are positioned during programmes are imported regularly from Project4 systems. Project4 employs a hardware solution to detect these ad breaks. With this data, the client is able to know at which points in time it should request an advert to replace the adverts provided in stream by the broadcaster.
 
+Upon uploading of an advert, an FTP session is instantiated by the LAMP server to the media server. The advert is then uploaded to the media server where it is stored alongside other adverts and recorded programmes. An interactive overlay can also be specified, which will be used in the body of the iFrame element of the overlay layer during playback. Campaign information such as target locations, programmes, gender, age and other specifics can also be specified for storage against the advert in the Your4 database. The advertiser can also specify the times of day (on a per-day basis) and the programmes that they wish their advert to be shown in.
 
+When the client requests an advert, the amount of time the advert has to fill and the ID's of adverts that have already been scheduled in the ad break are included in the request. The LAMP server then performs a search on the database for adverts that match these characteristics (duration less or equal than the remaining ad break time left and the advert has not been shown already in this ad break) and the targeting criterion set by the advertiser. Any adverts the user has shown a dislike for in the past will also be filtered out.
 
+Views, clicks and skips are recorded by the client and feedback is sent to the REST interface. The advertiser can then view these statistics.
 
-
-project 4 mos
-ad uploading
-ad selecting
-
-\paragraph{Data visualisation}
 \subsubsection{Media Server}
+
+The media server is based on two distinct applications. The first application is responsible for retrieving the source live streams and relaying these to the client. The second is responsible for streaming recorded programmes and adverts from the video store to the client. Both applications use a ``packetizer'' which is responsible for encoding the raw input streams to the output requested (HLS for Apple based devices).
+
+The live application is also responsible for recording programmes. A REST API call is made to the LAMP server to retrieve start and end times of programmes. Using this data, the application records each programme on each channel and stores the resulting media in the video store. This media is stored with a filename which matches that of the unique ID in the EPG. This allows the client to implicitly build the video URL to request when a recorded programme recommendation is made. When a recording starts, the application updates the ``recordState'' flag of the programme via the REST interface. This flag is updated again when recording is completed. Using the state of this flag, the recommender is able to filter out programmes which have not yet been recorded during recorded programme recommendation. The recordings application can then stream these media files to the client when requested.
 
 \subsection{Database structure}
 
+\begin{figure}[th]
+	\centering
+	\includegraphics[width=\textwidth]{images/your4-db.pdf}
+	\caption{Overview of Your4 database layout}
+	\label{fig:your4-db}
+\end{figure}
 
 \subsection{Languages and Techniques}
 As this project involved interacting with many different systems, a diverse range of programming languages were used.
