@@ -1,5 +1,7 @@
 \section{Implementation}
 
+In the following section, the technical details of the implemented system will be discussed. This includes the overall systems architecture, database design, and the languages and tools used during the development process.
+
 \subsection{Systems Architecture \& Description}
 
 \begin{figure}[H]
@@ -57,9 +59,45 @@ The client checks the user agent string of the browser to determine what format 
 
 \subsubsection{LAMP Server}
 
-\paragraph{Advert selection}
-\paragraph{REST Interface}
-\paragraph{Recommender}
+The LAMP server's primary responsibility is to expose all required functionality on a single REST endpoint, ``/api''. In general, the LAMP server deals with a request by passing it through various stages before finally manipulating the database:
+
+\begin{enumerate}
+	\item A HTTP request is retrieved by the web server.
+	\item The request is passed to the REST API where the appropriate function is called dependant on the request URI and HTTP method.
+	\item The object in the request body is passed into the Object Relational Mapper.
+	\item The ORM builds the approproate SQL query and passes it to the DBMS.
+	\item The DBMS modifies or retrieves from the data store.
+	\item The application logic returns the result as a HTTP response containing a JSON boddy.
+\end{enumerate}
+
+\paragraph{Authentication}
+
+Upon registration, name, email, gender, date of birth, occupation, postcode and password are required. For Facebook logins, a facebook ID is required in place of the password. Passwords are stored with a Blowfish-based hash type with a per-user 22 character salt and a 1024 iteration cost parameter which prevents rainbow table exploitation in a human lifetime \citep{hashing}. The postcode is converted to latitude \& longitude coordinates based on ordnance survey data. Upon successful authentication, a session cookie is created.
+
+A recommender function is also called which retrieves the user's initial vector. This is based upon the required demographics data provided at registration. This vector is then stored agaist the user in the database.
+
+\paragraph{Programme Recommendations}
+
+Daily, EPG data is imported from the Atlas API\footnote{\footurl{http://atlas.metabroadcast.com}} into the Your4 database. This contains unique programme ID's, descriptions, episode numbers and other programme data.
+
+Upon first initialisation of the recommender, a CSV file containing training data from the GroupLens research group\footnote{\footurl{http://www.grouplens.org/node/73}} is processed. This gives the recommender an initial estimate as to what type of users prefer what genres. Upon execution of the aforementioned EPG cron job, each programme is passed to a recommender function to retrieve the initial programme vector to store against it. This function calls the genre API, TVDB\footnote{\footurl{http://thetvdb.com}}, to identify this vector. The vector is a 1-dimensional matrix whereby each position represents a predefined genre. A ``1'' indicates the programme belongs to a genre.
+
+Upon receiving a live recommendation request, the recommender selects programmes starting within the next 5 minutes of the timestamp contained in the request (see step 3 in aforementioned playback steps). The recommender then filters out programmes the requesting user has already viewed in the past, and selects the best one according the recommender output. If no suitable live recommendation can be made, a 404 will be returned and the client will request a recorded programme. The recommender then executes a similar process to the live request, but filters programmes by those which have been recorded by the media server.
+
+When a user rates a programme on the client, a request is received by the recommender. This rating is a 5-star system which maps to -1, -0.5, 0, 0.5 and 1 respectively. Upon this request, the recommender tunes the users vector accordingly. The act of rating also adds the programme to the list of already viewed programmes for a user.
+
+\paragraph{Adverts}
+
+Data pertaining to the times ad breaks are positioned during programmes are imported regularly from Project4 systems. Project4 employs a hardware solution to detect these ad breaks. With this data, the client is able to know at which points in time it should request an advert to replace the adverts provided in stream by the broadcaster.
+
+
+
+
+
+project 4 mos
+ad uploading
+ad selecting
+
 \paragraph{Data visualisation}
 \subsubsection{Media Server}
 
