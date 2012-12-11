@@ -1,10 +1,10 @@
 \section{Design}
 
-The prestudy allows us to justify the design of a platform for granularly targeting adverts and providing interaction within adverts. This section will cover the design of this platform, as well as how this platform can be demonstrated within a personalised TV channel -- a TV channel tailored towards viewers specifically on which programmes and adverts are recommended based on information about the viewer.
+The results of the prestudy allows us to justify the design of a platform for granularly targeting adverts and providing interaction within adverts. This section will cover the design of this platform, as well as how this platform can be demonstrated within a personalised TV channel -- a TV channel tailored towards viewers specifically on which programmes and adverts are recommended based on information about the viewer. Our implementation (Section~\ref{sec:implementation}) of this personal TV channel is called \textit{Your4.tv}.
 
-We'll start by discussing how adverts will be targeted through \textit{campaigns} -- a set of restrictions on viewers that adverts must conform to in order to be shown. Following this, we'll devise a method to allow interactivity in adverts. We also describe how we can collect statistics that this platform would offer about advert usage. In order to demonstrate the usage of these adverts, we then discuss the design of a personalised TV channel, which will utilize a recommender system to select programmes that the viewer will want to watch. In our implementation (Section~\ref{sec:implementation}), we call that personal TV channel \textit{Your4.tv}.
+We'll start by discussing how adverts will be targeted through \textit{campaigns} -- a set of restrictions on viewers that adverts must conform to in order to be shown. Following this, we'll devise a method to allow interactivity in adverts. We also describe how we can collect statistics that this platform would offer about advert usage. In order to demonstrate the usage of these adverts, we then discuss the design of \textit{Your4.tv}, a personalised TV channel, which will utilize a recommender system to select programmes that the viewer will want to watch. 
 
-\subsection{Targeting Adverts}
+\subsection{Targeting adverts}
 	\label{sec:design_adverts}
 
 	In [cite] it is discussed that adverts that are relevant to users are more likely to be engaging to a viewer and in \citet{yahoo-intrusive-advertising} is shown to influence user experience. Furthermore, our prestudy (Section~\ref{sec:prestudy}) revealed that x\% [fixme] of participants would pay more attention to adverts that are relevant to them. The use of granular targeting would allow advertisers to specify very specific target markets, based on demographics, browsing habits and contextual information. As shown in [cite], adverts targeted specifically towards individuals are, in general, more relevant to that individuals personal interests.
@@ -52,11 +52,11 @@ We'll start by discussing how adverts will be targeted through \textit{campaigns
 	In other words, for a particular person, programme and time in which multiple campaigns apply, campaigns with a higher nicheness will have their adverts displayed more often. This design decision was made to reward advertisers for creating niche campaigns over broad campaigns. By encouraging a greater number of more highly targeted advertisements in this way, users will be shown a far more relevant advert set.
 	% DOES our study show this?
 
-\subsection{Interactive Adverts}
+\subsection{Interactive adverts}
 
 	In our prestudy, participants revealed they would often use the advert break as an opportunity to perform another task, such as leave the room to make a drink.
 
-\subsection{Advertiser Statistics}
+\subsection{Advertiser statistics}
 
 	As discussing in Section~\ref{subsection:backgroundStats}, TV devices which transmit usage data account for only x\% of TV viewers within the USA, representing a very small sample of TV viewers. However, internet analytics services, such as YouTube and Google Analytics, allow fine-granular statistics to be collected about users of web-based services, including what material individuals view, how long for and even an individuals location when they accessed the material. Such information would be extremely valuable to advertisers, with [cite] demonstrating a demand for newer, higher-granular statistics.
 
@@ -69,13 +69,13 @@ We'll start by discussing how adverts will be targeted through \textit{campaigns
 
 	The usage information would allow advertisers to fine tune adverts and campaigns towards their target demographic, focusing on who watches the advert and how they they are interacted with. Furthermore, with the skip functionality, advertisers could establish when users are most likely to skip during an advert and why.
 
-\subsection{Personalised TV Channel}
+\subsection{Personalised TV channel}
 
 	The proposed information used for advert targeting, as described in Section~\ref{sec:design_adverts}, includes contextual information, such as what programme a user is watching, and a viewers usage history, such as programmes they've watched in the past. In order to provide this information, we wish to use the advert platform on top of a TV streaming services. We devised a personalised TV streaming services for this purpose, which would ensure that a user is watching TV programmes that they are interested in them. If programmes that are shown to a user are of interest to them, then adverts shown to them should cater more to their interest.
 
 	At the centre of this personalised TV channel is a recommender system which learns from a user's preferences towards particular programmes and subsequently recommends programmes based on their interests. The programmes that would be available to this recommender system would be any programmes that have been streamed on Channel~4 (or it's sister channels -- see Section~\ref{backgroundChannel4}). 
 
-	\subsubsection{Programme Recommendation}
+	\subsubsection{Programme recommendation}
 
 		A user who accesses this system would be presented with a TV channel populated with a list of programmes as recommended by a programme recommendation system.  This system recommends programmes specifically, and is separate from the targeted advert retriever (described in Section~\ref{sec:design_adverts}). 
 
