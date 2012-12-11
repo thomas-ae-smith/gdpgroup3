@@ -1,14 +1,12 @@
 \section{Evaluation}
 	\subsection{Summary}
-		In this project, we have built and tested a platform for interactive adverts which may be targeted towards users with detailed granularity. As part of this, we have developed a tool that allows the production of interactive adverts, and the creation of campaigns - targeting criteria for adverts - as well as viewing the statistics pertaining to these.
+		In this project, we have built and tested a platform for interactive and granular targeted adverts. As part of this, we have developed a tool for content producers to deploy interactive adverts and to create targeted advertising campaigns (targeting criteria for adverts) as well as viewing the statistics pertaining to these.
 
-		We have demonstrated the use of this platform by developing a TV streaming service, your4.tv, which shows users programmes that are recommended to them based on their age, gender and occupation. Within this service, we use programme information and user information as input to our advert targeting platform, resulting in adverts that are more likely [back this up] to be of interest to the user. We target this service towards tablet computers, which allows interaction with adverts in a diverse and intuitive way through touch input.
+		We have demonstrated the use of this platform by developing a personalised TV streaming service for tablet devices, Your4, which seamlessly streams a channel to the user with programme content they most enjoy. Within this service, advertising breaks are replaced with adverts which are more likely to be of interest to the user, by taking into account their demographics and the currently playing programme. These adverts provide interactive elements, with an opportunity for creativity via the use of touchscreen gestures and controls.
 
-		In the design stage of this project, three major subsystems were deduced. First, the advertising platform itself would operate on the web architecture. Data about adverts and campaigns would be transferred via a REST endpoint which could be used by both the client for an advert publisher and a viewer. Furthermore, this would allow the publisher to create their interactive overlays using HTML, CSS and JavaScript, allowing easy integration with other services such as social networks.
+		The implementation stage of the project details the three major subsystems, and how these interact. This seperation of concerns, achieved with the use of REST services, a client-side application and an industry standard media server, provides a scalable and extendable platform on which to provide the Your4 service. This implementation includes a recommender subsystem to build custom playlists, which learns user preferences from user feedback, via a rating system.
 
-		Secondly, the adverts would need to be streamed. HTTP-Live Streaming (HLS) and H.264 are supported by HTML video on iPad. Wowza was an appropriate tool for streaming adverts.
-
-		For your4.tv, a recommender system was built for 
+		Two user studies were undertaken. The first of which to determine how users consume media while watching television. The second to evaluate the use of interactive adverts on the Your4 platform. An in depth analysis of the results was documented.
 	\subsection{Limitations}
 	\subsection{Further work}
 		\subsubsection{Programme recommendation}
