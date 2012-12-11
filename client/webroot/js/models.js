@@ -40,15 +40,11 @@
 		thumbnail: function () {
 			return "";
 		},
-		rate: function (rating, userId) {
-			console.log("PAAHHHHHHH", userId)
+		rate: function (rating) {
 			return $.ajax({
-				url: this.url() + "/rate/",
+				url: this.url() + this.id + "/rate/",
 				type: "POST",
-				data: JSON.stringify({
-					rating: rating,
-					user: userId
-				}),
+				data: JSON.stringify({ rating: rating }),
 				contentType: "application/json; charset=utf-8",
 				dataType: "json"
 			});

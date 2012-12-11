@@ -29,7 +29,7 @@
 			return this;
 		},
 		rate: function (i) {
-			return this.programme.rate(i, Number(y4.app.user().id));
+			return this.programme.rate(i);
 		}
 	});
 

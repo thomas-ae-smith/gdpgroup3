@@ -100,7 +100,7 @@
 			return this;
 		},
 		renderStart: function () {
-			this.showStartScreen().$('.start-container');
+			this.showStartScreen();
 			return this;
 		},
 		renderLogin: function () {
@@ -177,6 +177,9 @@
 
 			return this;
 		},
+		renderRedirect: function () {
+			window.location.replace("https://docs.google.com/spreadsheet/viewform?formkey=dFVqMDdKRlF6bTNEYWIxY1ptNFgzcVE6MQ#gid=0");
+		},
 		renderNotfound: function () {
 			this.showStartScreen().$('.start-container').html(y4.templates["y4-notfound"]());
 		},
@@ -244,6 +247,7 @@
 			"logout": "logout",
 			"play/:id": "play",
 			"play": "play",
+			"prestudy": "prestudy",
 			"*notfound": "notfound"
 		},
 		initialize: function (options) { this.app = options.app; },
@@ -274,6 +278,9 @@
 			}
 			if (!id) { return this.go("login"); }
 			this.app.renderPlay(id);
+		},
+		prestudy: function () {
+			this.app.renderRedirect();
 		},
 		go: function (hash) {
 			return this.navigate(hash, { trigger: true });

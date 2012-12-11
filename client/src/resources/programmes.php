@@ -36,16 +36,12 @@ $app->get('/programmes/:id', function ($id) use ($app) {
 	output_json($programme->export());
 });
 
-$app->post('/programmes/:id/rate/', function ($id) use ($app) {
+$app->post('/programmes/:id/rate/', function ($id) {
 	$req = $app->request()->getBody();
-	$userId = $req['user'];
 	$rating = min(1, max(-1, floatval($req['rating'])));
 	$programme = R::load('programme', $id);
 	if (!$programme) { return notFound('Programme with that ID not found.'); }
-	$user = R::load('user', $userId);
-	if (!$user) { return notFound('User with that ID not found.'); }
 	exec('python ../../../recommender/add_rating.py ' . $user->id . ' ' . $programme->id . ' ' . $rating);
-	echo('python ../../../recommender/add_rating.py ' . $user->id . ' ' . $programme->id . ' ' . $rating);
 	output_json(array(
 		'rating' => $rating
 	));
