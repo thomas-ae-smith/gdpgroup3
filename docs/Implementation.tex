@@ -125,7 +125,7 @@ Figure~\ref{fig:your4-db} shows the Your4 database class diagram. The Object Rel
 
 The implementation consists of a number of subsystems using different programming languages. The client is built on JavaScript, HTML and CSS; the LAMP server on PHP for the REST interface and Python for the recommender; and finally, the media server is based on a Java implementation. In order to achieve a concise and maintainable solution, a combination of design strategies and good use of libraries was employed.
 
-\subsubsection{Design strategies and Patterns}
+\subsubsection{Design strategies and patterns}
 
 Where possible, it is good practice to use popular design strategies and patterns as templates to solve common problems in application development. A number of such strategies were used during the implementation stage, the most prevalent of which are documented here:
 
@@ -169,10 +169,12 @@ A number of libraries and technologies were used during the implementation stage
 		\end{description}
 \end{description}
 
-
 \subsubsection{Code statistics}
-Lines of code in JS, PHP, Java, Python, HTML, CSS etc
-\begin{center}
+
+Table~\ref{tab:metrics} shows the number of lines broken down by language throughough the implementation.
+\nopagebreak
+\begin{table}[H]
+	\centering
 	\begin{tabular}{l r r r}
 		\toprule
 		\textbf{Language} & \textbf{Files} & \textbf{Comments} & \textbf{Code} \\
@@ -188,7 +190,9 @@ Lines of code in JS, PHP, Java, Python, HTML, CSS etc
 		sum & 85 & 681 & 7714 \\ 
 		\bottomrule
 	\end{tabular}
-\end{center}
+	\caption{Number of lines in Your4 code base}
+	\label{tab:metrics}
+\end{table}
 
 
 \subsection{System walkthrough}
