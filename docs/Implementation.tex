@@ -1,46 +1,8 @@
 \section{Implementation}
 
-The proposed platform consists of several aspects. Firstly, an interface for tablet computers will need to be devised in order to allow users to watch TV. 
-
-Programme recommendation
-
-Advert campaigns
+The proposed service consists of several aspects: A interface for tablet computers; streaming of video; programme recommendations; advert campaigns \& uploading; advert selection and the general architecture of the service.
 
 In the following section, the technical details of the implemented system, \textit{Your4.tv}, will be discussed. This includes the overall systems architecture, database design, and the languages and tools used during the development process.
-
-\subsection{Platform}
-
-Apple iPad
-Modern web browser
-
-\subsection{System Layers}
-The user must be able to access the app via a web browser.
-
-It was decided that the TV and programme streams should be delivered to the client via Wowza media server, which would be hosted on a machine running Windows Server 2008. Peter Wood (Inqb8r) has had extensive experience with Wowza, and assisted Dexter in the configuration of the server to output the Channel 4 streams. This helped by relieving us of any lengthy configuring that might have had to take place with any other system. Additionally, Inqb8r were able to provide us with a licensed Wowza server.
-
-LAMP server
-
-
-\subsection{Streaming}
-The Wowza server will be configured to act as a repeater, re-broadcasting the streams provided by Inqb8r. The Cupertino streaming packetiser will be used to output the streams in the HLS format such that the videos may be viewed on iPads and any other devices supporting this technology. Each programme will be recorded using the EPG data. Since adverts will be replaced by ones recommended to viewers, it must be known when adverts are due to start and finish. This process is achieved by Project4 using a GPI\citep{SCTE104} triggered hardware solution utilising an SCTE 104 Server, a Tanberg Encoder and a PV1000 Ad replacement device as described in \ref{subsubsec:Project4Tech}. Finally the Wowza server will be configured with the standard extension ``vod'' which allows any file of a valid format in a given directory to be streamed.
-
-\subsubsection{Project 4 Advert Replacement: Hardware Solution}\label{subsubsec:Project4Tech}
-Ad break information is sent to a Miranda Xplayer Server from Channel 4 via an automation system which forwards this information as XML to a SCTE 104 device. This information is received via HTTP when the SCTE server is running in HTTP Server mode. Ad information is received on this interface 1 minute and 8 seconds before the Ad break is due to start. On receiving this information it checks with a PV1000 substitution device for a matching Ad break, see \citep{PV1000Schedule}. If it finds one it starts listening for a GPI pulse, sent from the automation system which when triggered instructs the Tanberg Encoder which encodes the video stream to insert markers around the ad breaks. This pulse is received 8 seconds before airing. The PV1000 devices then detect these markers and replace the ad break with one they have created\ref{Project4EventFlow}.
-
-\paragraph{PV1000 Schedule}\label{PV1000Schedule}
-The PV1000 receives its schedule from the TMS server. The TMS server receives EPG information from the princess server which pulls it from an EPG ftp service. A user uploaded Channel 4 schedule is also provided to the TMS server 2 weeks in advance. The calculated ad breaks are then provided to the PV1000.
-
-\subsubsection{Your4 Advert Replacement: Software Solution}
-When the XML data is received defining the ad breaks as described in \ref{subsubsec:Project4Tech} the information (known as a MOS record) is also stored in a MySQL database. This database also includes EPG information We have been given access to this database and thus (excluding network delays) we are able to discover the existence of Ad breaks up to 1 minute and 8 seconds before they are shown. This information will then made available via the your4 REST interface and the clients will use this warning to call the advert recommender to determine which adverts should be shown in place of the existing ones (see Section~\ref{sec:design_adverts}). These adverts will then be streamed as separate files from the Wowza server using the ``vod'' extension.
-
-\subsubsection{Recordings}
-The Wowza server will be configured to include the standard extension ``Live Stream Record'' which allows the use of HTTP to record any active streams to a given file. A restriction of this module is that only 1 recording of each stream is permitted. A custom Wowza ServerListener module will be created which will start with the server. This module will continuously poll the your4 REST interface for any shows due to start in the next minute. This information will be retrieved from Atlas in advance by a cron job on the LAMP server as described in \ref{subsec:ScheduledTasks}. When a new show starts any current recording on the channel will be stopped resulting in a streamable file which will be placed in the directory that the ``vod'' extension is configured to use. This file may then be streamed at any time until it is deleted. Once the current recording is stopped a new one will be started to record the new show. By making a new recording end existing recordings we ensure mutual exclusion for each stream, this is required as the ``LiveStreamRecord'' extension only allows a single recorder on each stream. After a configurable period of time the recording will then be removed from the list of recordings but will only be deleted after a further period of time `t' has elapsed where `t' is the length of the video, allowing any existing streamers to finish watching before it is removed. Throughout this process the Wowza module will also use the REST interface to detail the state of any given program where valid states are: ``Not Recorded, Recording, Recorded, Deleted.''
-
-\subsubsection{Restrictions}
-Without a GPI trigger millisecond precision is not possible for advert timings but assuming the network delay remains approximately constant second accuracy should be possible in most situations. Unfortunately live shows can result in these times being slightly out so in some cases the information may be incorrect. We have been given access by Inqb8r to the SCTE 104 control scripts which are coded in Python. Using these we should be able to minimise this risk by pinging the Wowza server and the LAMP server when the GPI pulse is received which is precisely 8 seconds before ad ad break is due to start. Additionally this information could be used to start and stop the recordings on the Wowza server resulting in recordings excluding the adverts allowing potential insertion of adverts at the user's discretion, allowing them to choose when to watch the adverts. However due to the lack of an available development device and the difficulty of modifying the scripts to perform our tasks without interfering with the existing Project4 tasks it has been decided that using this information is outside the scope of this project.
-
-
-
 
 \subsection{Systems Architecture \& Description}
 
@@ -118,7 +80,7 @@ A recommender function is also called which retrieves the user's initial vector.
 
 \paragraph{Programme Recommendations}
 
-Daily, EPG data is imported from the Atlas API\footnote{\footurl{http://atlas.metabroadcast.com}} into the Your4 database. This contains unique programme ID's, descriptions, episode numbers and other programme data.
+Daily, EPG data is imported from the Atlas API\footnote{\footurl{http://atlas.metabroadcast.com}} into the Your4 database. This contains unique programme ID's, descriptions, start and end times, episode numbers, and other programme data.
 
 Upon first initialisation of the recommender, a CSV file containing training data from the GroupLens research group\footnote{\footurl{http://www.grouplens.org/node/73}} is processed. This gives the recommender an initial estimate as to what type of users prefer what genres. Upon execution of the aforementioned EPG cron job, each programme is passed to a recommender function to retrieve the initial programme vector to store against it. This function calls the genre API, TVDB\footnote{\footurl{http://thetvdb.com}}, to identify this vector. The vector is a 1-dimensional matrix whereby each position represents a predefined genre. A ``1'' indicates the programme belongs to a genre.
 
@@ -128,9 +90,9 @@ When a user rates a programme on the client, a request is received by the recomm
 
 \paragraph{Adverts}
 
-Data pertaining to the times ad breaks are positioned during programmes are imported regularly from Project4 systems. Project4 employs a hardware solution to detect these ad breaks. With this data, the client is able to know at which points in time it should request an advert to replace the adverts provided in stream by the broadcaster.
+Inqb8r's Project4 hardware systems receive XML data pertaining to the times ad breaks are positioned during programmes as described in \ref{subsubsec:Project4Tech}. The information (known as a MOS record) is also stored in the Project4 MySQL database. Excluding network delays, we are able to discover the existence of ad breaks up to 1 minute and 8 seconds before they are shown. This information is imported regularly into the Your4 database and made available via the REST interface. With this data, the client is able to know at which points in time it should request an advert to replace the adverts provided in stream by the broadcaster.
 
-Upon uploading of an advert, an FTP session is instantiated by the LAMP server to the media server. The advert is then uploaded to the media server where it is stored alongside other adverts and recorded programmes. An interactive overlay can also be specified, which will be used in the body of the iFrame element of the overlay layer during playback. Campaign information such as target locations, programmes, gender, age and other specifics can also be specified for storage against the advert in the Your4 database. The advertiser can also specify the times of day (on a per-day basis) and the programmes that they wish their advert to be shown in.
+Upon uploading of an advert to Your4 by an advertiser, an FTP session is instantiated by the LAMP server to the media server. The advert is then uploaded to the media server where it is stored alongside other adverts and recorded programmes in the video store. An interactive overlay can also be specified, which will be used in the body of the iFrame element of the overlay layer during playback. Campaign information such as target locations, programmes, gender, age and other specifics can also be specified for storage against the advert in the Your4 database. The advertiser can also specify the times of day (on a per-day basis) and the programmes that they wish their advert to be shown in.
 
 When the client requests an advert, the amount of time the advert has to fill and the ID's of adverts that have already been scheduled in the ad break are included in the request. The LAMP server then performs a search on the database for adverts that match these characteristics (duration less or equal than the remaining ad break time left and the advert has not been shown already in this ad break) and the targeting criterion set by the advertiser. Any adverts the user has shown a dislike for in the past will also be filtered out.
 
@@ -138,9 +100,15 @@ Views, clicks and skips are recorded by the client and feedback is sent to the R
 
 \subsubsection{Media Server}
 
-The media server is based on two distinct applications. The first application is responsible for retrieving the source live streams and relaying these to the client. The second is responsible for streaming recorded programmes and adverts from the video store to the client. Both applications use a ``packetizer'' which is responsible for encoding the raw input streams to the output requested (HLS for Apple based devices).
+Video streams are delivered to the client via a Wowza media server\footnote{\footurl{http://www.wowza.com/}}, hosted on a Windows Server 2008 based machine. This machine is provided by Inqb8r, who have extensive experience with Wowza based systems.
 
-The live application is also responsible for recording programmes. A REST API call is made to the LAMP server to retrieve start and end times of programmes. Using this data, the application records each programme on each channel and stores the resulting media in the video store. This media is stored with a filename which matches that of the unique ID in the EPG. This allows the client to implicitly build the video URL to request when a recorded programme recommendation is made. When a recording starts, the application updates the ``recordState'' flag of the programme via the REST interface. This flag is updated again when recording is completed. Using the state of this flag, the recommender is able to filter out programmes which have not yet been recorded during recorded programme recommendation. The recordings application can then stream these media files to the client when requested.
+The Wowza server is configured to act as a repeater, re-broadcasting the streams provided by Inqb8r. This server is based on two distinct applications. The first application is responsible for retrieving the source live streams and relaying these to the client. The second is responsible for streaming recorded programmes and adverts from the video store to the client (the standard wowza extension ``vod'' allows any file of a valid format in a given directory to be streamed). Both applications use a ``packetizer'' which is responsible for encoding the raw input streams to the output requested (HLS for Apple based devices). The packetizer is chosen based on this request, for example, the ``cupertino'' packetizer is used to encode Apple HLS streams.
+
+The live application is also responsible for recording programmes. The LAMP server's EPG REST interface is continuously polled for any shows due to start in the next minute to retrieve the start and end times of programmes. Using this data, the application records each programme on each channel and stores the resulting media in the video store. This media is stored with a filename which matches that of the unique ID in the EPG. This allows the client to implicitly build the video URL to request when a recorded programme recommendation is made. When a recording starts, the application updates the ``recordState'' flag of the programme via the REST interface. This flag is updated again when recording is completed. Using the state of this flag, the recommender is able to filter out programmes which have not yet been recorded during recorded programme recommendation. The recordings application can then stream these media files to the client when requested.
+
+Recording is processed by the Wowza ``LiveStreamRecord'' module. This module imposes a strict limit of only one simultaneous recording per stream. When a new programme starts any current recording on the channel is stopped, ensuring this enforced mutual exclusion. The end result is a set of video files for each programme stored in the video store.
+
+As every programme is recorded, scalability in terms of storage is an issue. For this reason, recorded video's are removed after a configurable amount of time. First, the recording is removed from further recommendations by setting the ``recordState'' flag of the programme to ``deleted'' via the REST interface. After an amount of time equal to the length of the video has passed, the video file itself is removed. This allows any existing viewers of the recording to complete their viewing of the programme.
 
 \subsection{Database structure}
 

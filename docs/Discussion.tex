@@ -10,8 +10,8 @@
 
 		For your4.tv, a recommender system was built for 
 	\subsection{Limitations}
-	\subsection{Further Work}
-		\subsubsection{Programme Recommendation}
+	\subsection{Further work}
+		\subsubsection{Programme recommendation}
 		\label{sec:further_work_recommender}
 
 		Currently, programmes are assigned binary vectors within $\mathcal{P}$; programmes either do or do not belong in each of the 18 genres. As a result, programme vectors may lie only in the corners of the hypercube geometrically representing $\mathcal{P}$. A logical improvement to the recommender system would be to allow fuzzy genre memberships, allowing programme vectors to exist anywhere within $\mathcal{P}$ and hence allowing fine-grained differences between similar programmes to be properly represented in the system.
@@ -28,11 +28,11 @@ The rating given is between 3 and 5, on a rating scale of 1-5, where play times 
 
 		%% I think the architecture has changed so this won't work anymore.
 		% The current architecture of delivering recommendations to users can be modified to allow for much greater scalability. Currently, each user requests a recommendation and the server responds. If the userbase becomes large enough for this to become infeasable, one solution is to maintain a table of user vector cluster centroids which are updated periodically by a cronjob. Periodically, this table of centroids would be multicast out to all users, along with recommendations for each centroid. 
-	\subsubsection{Advert Recommendation}
+	\subsubsection{Advert recommendation}
 
 	If recommendation techniques are implemented to improve advert relevance, the data already being collected on user preferences will be of great value in predicting adverts the user will enjoy/engage with. Techniques have been developed \cite{contextual_advertising} which utilize this preference information, along with demographic \cite{contextual_advertising} information, which is also collected by your4.tv. A third data source utilised by the recommender system described by \cite{contextual_advertising} is user viewing histories, which your4.tv does not currently collect, though has potential to improve not only advert recommendations, but also programme recommendations, as mentioned in Section~\ref{sec:further_work_recommender}.
 
-	\subsubsection{Waiting time/Recommendation quality trade-off}
+	\subsubsection{Waiting time/recommendation quality trade-off}
 	In the current system, programme playlists are constructed in a greedy fashion, using the following algorithm:
 	\begin{algorithmic}[H]
 	\State start\_timestamp $\gets$ now();
@@ -49,6 +49,16 @@ The rating given is between 3 and 5, on a rating scale of 1-5, where play times 
 	\EndWhile
 	\end{algorithmic}
 	This is far from optimum, as programmes with extremely high predicted ratings may start at slightly over 5 minutes after the previous programme ends, leading the programme not to be recommended. By viewing playlist-building as a problem of maximizing predicted programme ratings, minimizing gaps between programmes and prioritizing live TV, this can be seen as a nontrivial constrained optimisation problem, where the trade-off values would need to be determined empirically.
+
+	\subsubsection{Streaming enhancements}
+
+	Since adverts will be replaced by ones recommended to viewers, it must be known when adverts are due to start and finish. This process is achieved by Project4 using a GPI\citep{SCTE104} triggered hardware solution utilising an SCTE 104 Server, a Tanberg Encoder and a PV1000 Ad replacement device as described in \ref{subsubsec:Project4Tech}. 
+
+	Ad break information is sent to a Miranda Xplayer Server from Channel 4 via an automation system which forwards this information as XML to a SCTE 104 device. This information is received via HTTP when the SCTE server is running in HTTP Server mode. Ad information is received on this interface 1 minute and 8 seconds before the Ad break is due to start. On receiving this information it checks with a PV1000 substitution device for a matching Ad break, see \citep{PV1000Schedule}. If it finds one it starts listening for a GPI pulse, sent from the automation system which when triggered instructs the Tanberg Encoder which encodes the video stream to insert markers around the ad breaks. This pulse is received 8 seconds before airing. The PV1000 devices then detect these markers and replace the ad break with one they have created\ref{Project4EventFlow}.
+
+	The PV1000 receives its schedule from the TMS server. The TMS server receives EPG information from the princess server which pulls it from an EPG ftp service. A user uploaded Channel 4 schedule is also provided to the TMS server 2 weeks in advance. The calculated ad breaks are then provided to the PV1000.
+
+	Without a GPI trigger millisecond precision is not possible for advert timings but assuming the network delay remains approximately constant second accuracy should be possible in most situations. Unfortunately live shows can result in these times being slightly out so in some cases the information may be incorrect. We have been given access by Inqb8r to the SCTE 104 control scripts which are coded in Python. Using these we should be able to minimise this risk by pinging the Wowza server and the LAMP server when the GPI pulse is received which is precisely 8 seconds before ad ad break is due to start. Additionally this information could be used to start and stop the recordings on the Wowza server resulting in recordings excluding the adverts allowing potential insertion of adverts at the user's discretion, allowing them to choose when to watch the adverts. However due to the lack of an available development device and the difficulty of modifying the scripts to perform our tasks without interfering with the existing Project4 tasks it has been decided that using this information is outside the scope of this project.
 
 	\subsection{Conclusion}
 In summary our project improves the user experience by making live media personal, targeting both shows and adverts to each user as well as integrating seamlessly with the social experience. Additionally it reduces frustration at missed shows as these are transparently skipped in favour of something the user can watch from the start. In addition it provides a zero-interaction discovery system to remove the time consuming hunt for something to watch and perhaps aid users in discovering new and exciting content. Moreover it improves the experience of consuming adverts by providing users with interactivity, personally targeted adverts and the ability to control which adverts they are shown. 
