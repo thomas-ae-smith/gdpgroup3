@@ -125,7 +125,7 @@ Figure~\ref{fig:your4-db} shows the Your4 database class diagram. The Object Rel
 
 The implementation consists of a number of subsystems using different programming languages. The client is built on JavaScript, HTML and CSS; the LAMP server on PHP for the REST interface and Python for the recommender; and finally, the media server is based on a Java implementation. In order to achieve a concise and maintainable solution, a combination of design strategies and good use of libraries was employed.
 
-\subsubsection{Design strategies and Patterns}
+\subsubsection{Design strategies and patterns}
 
 Where possible, it is good practice to use popular design strategies and patterns as templates to solve common problems in application development. A number of such strategies were used during the implementation stage, the most prevalent of which are documented here:
 
@@ -169,75 +169,90 @@ A number of libraries and technologies were used during the implementation stage
 		\end{description}
 \end{description}
 
-
 \subsubsection{Code statistics}
-Lines of code in JS, PHP, Java, Python, HTML, CSS etc
+
+Table~\ref{tab:metrics} shows the number of lines broken down by language throughough the implementation.
+\nopagebreak
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l r r r}
+		\toprule
+		\textbf{Language} & \textbf{Files} & \textbf{Comments} & \textbf{Code} \\
+		\midrule
+		JavaScript & 11 & 55 & 2686 \\ 
+		PHP & 26 & 28 & 1515 \\ 
+		Python & 17 & 282 & 1239 \\ 
+		Java & 20 & 322 & 1056 \\ 
+		CSS & 5 & 18 & 603 \\ 
+		HTML & 2 & 8 & 462 \\ 
+		XML & 4 & 100 & 151 \\ 
+		\midrule
+		sum & 85 & 681 & 7714 \\ 
+		\bottomrule
+	\end{tabular}
+	\caption{Number of lines in Your4 code base}
+	\label{tab:metrics}
+\end{table}
 
 \subsection{System walkthrough}
 \begin{figure}[th]
 	\centering
-	\includegraphics[width=\textwidth]{images/screenshots/your4-login.png}
-	\caption{Log in}
+	\includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{images/screenshots/your4-login.png}
+	\caption{Logging in.}
 	\label{fig:your4-login}
 \end{figure}
 \begin{figure}[th]
 	\centering
-	\includegraphics[width=\textwidth]{images/screenshots/your4-tap-to-start.png}
-	\caption{Log in}
+	\includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{images/screenshots/your4-tap-to-start.png}
+	\caption{Video playing is started by capturing a touch event and relaying to video element.}
 	\label{fig:your4-tap-to-start}
 \end{figure}
 \begin{figure}[th]
 	\centering
-	\includegraphics[width=\textwidth]{images/screenshots/your4-play.png}
-	\caption{Log in}
+	\includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{images/screenshots/your4-play.png}
+	\caption{The playlist is shown when the user taps the screen. It slides out of view after a few seconds. It can be dragged left and right to view more items.}
 	\label{fig:your4-play}
 \end{figure}
 
 \begin{figure}[th]
 	\centering
-	\includegraphics[width=\textwidth]{images/screenshots/advertiser-advert-edit.png}
-	\caption{Log in}
+	\includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{images/screenshots/advertiser-advert-edit.png}
+	\caption{Advertisers can preview their advert overlays and edit them with full syntax highlighting.}
 	\label{fig:advertiser-advert-edit}
 \end{figure}
 \begin{figure}[th]
 	\centering
-	\includegraphics[width=\textwidth]{images/screenshots/advertiser-campaigns.png}
-	\caption{Log in}
+	\includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{images/screenshots/advertiser-campaigns.png}
+	\caption{Advertisers can view their campaigns attached to their adverts.}
 	\label{fig:advertiser-campaigns}
 \end{figure}
 \begin{figure}[th]
 	\centering
-	\includegraphics[width=\textwidth]{images/screenshots/advertiser-advert.png}
-	\caption{Log in}
+	\includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{images/screenshots/advertiser-advert.png}
+	\caption{Stats can be viewed pertaining to an advert.}
 	\label{fig:advertiser-advert}
 \end{figure}
 \begin{figure}[th]
 	\centering
-	\includegraphics[width=\textwidth]{images/screenshots/advertiser-impressions.png}
-	\caption{Log in}
-	\label{fig:advertiser-impressions}
-\end{figure}
-\begin{figure}[th]
-	\centering
-	\includegraphics[width=\textwidth]{images/screenshots/advertiser-adverts.png}
-	\caption{Log in}
+	\includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{images/screenshots/advertiser-adverts.png}
+	\caption{Advertisers can view and remove their adverts.}
 	\label{fig:advertiser-adverts}
 \end{figure}
 \begin{figure}[th]
 	\centering
-	\includegraphics[width=\textwidth]{images/screenshots/advertiser-campaign-demographics.png}
-	\caption{Log in}
+	\includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{images/screenshots/advertiser-campaign-demographics.png}
+	\caption{Advertisers can specify the target demographics of their campaigns.}
 	\label{fig:advertiser-campaign-demographics}
 \end{figure}
 \begin{figure}[th]
 	\centering
-	\includegraphics[width=\textwidth]{images/screenshots/advertiser-campaign.png}
-	\caption{Log in}
+	\includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{images/screenshots/advertiser-campaign.png}
+	\caption{A campaign is attached to an advert.}
 	\label{fig:advertiser-campaign}
 \end{figure}
 \begin{figure}[th]
 	\centering
-	\includegraphics[width=\textwidth]{images/screenshots/advertiser-campaign-schedule.png}
-	\caption{Log in}
+	\includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{images/screenshots/advertiser-campaign-schedule.png}
+	\caption{Campaigns can be scheduled during the week and attributed to specific genres or programmes.}
 	\label{fig:advertiser-campaign-schedule}
 \end{figure}
