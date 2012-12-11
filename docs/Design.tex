@@ -62,7 +62,7 @@ We'll start by discussing how adverts will be targeted through \textit{campaigns
 			\displaystyle \sum_{d \in \mathbb{C}} n_d
 		}
 	$$
-Which stems from the algorithm: A campaign is picked from $\mathbb{C}$ with a probability equal to its nicheness in proportion to the sum of nichenesses in $\mathbb{C}$; from this campaign, an advert is picked with equal probability from all the adverts that apply to the campaign. While the equation above becomes singular if every campaign in $\mathbb{C}$ has a nicheness of 0, the algorithm implemented allows this; this is the only case when a campaign with nicheness 0 can ever be returned, in which case . This makes sense, as a campaign with nicheness 0 applies to everybody, all of the time, and 
+Which stems from the algorithm: A campaign is picked from $\mathbb{C}$ with a probability equal to its nicheness in proportion to the sum of nichenesses in $\mathbb{C}$; from this campaign, an advert is picked with equal probability from all the adverts that apply to the campaign. While the above equation becomes singular if every campaign in $\mathbb{C}$ has a nicheness of 0, the algorithm implemented allows this; this is the only case when a campaign with nicheness 0 can ever be returned, in which case a campaign is chosen with equal probability. This is desirable, as campaigns with no restrictions on them may be created, showing adverts to users to whom no targetted adverts apply.
 
 \subsection{Interactive adverts}
 
