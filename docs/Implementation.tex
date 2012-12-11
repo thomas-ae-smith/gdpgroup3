@@ -13,6 +13,35 @@ In the following section, the technical details of the implemented system, \text
 Apple iPad
 Modern web browser
 
+\subsection{System Layers}
+The user must be able to access the app via a web browser.
+
+It was decided that the TV and programme streams should be delivered to the client via Wowza media server, which would be hosted on a machine running Windows Server 2008. Peter Wood (Inqb8r) has had extensive experience with Wowza, and assisted Dexter in the configuration of the server to output the Channel 4 streams. This helped by relieving us of any lengthy configuring that might have had to take place with any other system. Additionally, Inqb8r were able to provide us with a licensed Wowza server.
+
+LAMP server
+
+
+\subsection{Streaming}
+The Wowza server will be configured to act as a repeater, re-broadcasting the streams provided by Inqb8r. The Cupertino streaming packetiser will be used to output the streams in the HLS format such that the videos may be viewed on iPads and any other devices supporting this technology. Each programme will be recorded using the EPG data. Since adverts will be replaced by ones recommended to viewers, it must be known when adverts are due to start and finish. This process is achieved by Project4 using a GPI\citep{SCTE104} triggered hardware solution utilising an SCTE 104 Server, a Tanberg Encoder and a PV1000 Ad replacement device as described in \ref{subsubsec:Project4Tech}. Finally the Wowza server will be configured with the standard extension ``vod'' which allows any file of a valid format in a given directory to be streamed.
+
+\subsubsection{Project 4 Advert Replacement: Hardware Solution}\label{subsubsec:Project4Tech}
+Ad break information is sent to a Miranda Xplayer Server from Channel 4 via an automation system which forwards this information as XML to a SCTE 104 device. This information is received via HTTP when the SCTE server is running in HTTP Server mode. Ad information is received on this interface 1 minute and 8 seconds before the Ad break is due to start. On receiving this information it checks with a PV1000 substitution device for a matching Ad break, see \citep{PV1000Schedule}. If it finds one it starts listening for a GPI pulse, sent from the automation system which when triggered instructs the Tanberg Encoder which encodes the video stream to insert markers around the ad breaks. This pulse is received 8 seconds before airing. The PV1000 devices then detect these markers and replace the ad break with one they have created\ref{Project4EventFlow}.
+
+\paragraph{PV1000 Schedule}\label{PV1000Schedule}
+The PV1000 receives its schedule from the TMS server. The TMS server receives EPG information from the princess server which pulls it from an EPG ftp service. A user uploaded Channel 4 schedule is also provided to the TMS server 2 weeks in advance. The calculated ad breaks are then provided to the PV1000.
+
+\subsubsection{Your4 Advert Replacement: Software Solution}
+When the XML data is received defining the ad breaks as described in \ref{subsubsec:Project4Tech} the information (known as a MOS record) is also stored in a MySQL database. This database also includes EPG information We have been given access to this database and thus (excluding network delays) we are able to discover the existence of Ad breaks up to 1 minute and 8 seconds before they are shown. This information will then made available via the your4 REST interface and the clients will use this warning to call the advert recommender to determine which adverts should be shown in place of the existing ones (see Section~\ref{sec:design_adverts}). These adverts will then be streamed as separate files from the Wowza server using the ``vod'' extension.
+
+\subsubsection{Recordings}
+The Wowza server will be configured to include the standard extension ``Live Stream Record'' which allows the use of HTTP to record any active streams to a given file. A restriction of this module is that only 1 recording of each stream is permitted. A custom Wowza ServerListener module will be created which will start with the server. This module will continuously poll the your4 REST interface for any shows due to start in the next minute. This information will be retrieved from Atlas in advance by a cron job on the LAMP server as described in \ref{subsec:ScheduledTasks}. When a new show starts any current recording on the channel will be stopped resulting in a streamable file which will be placed in the directory that the ``vod'' extension is configured to use. This file may then be streamed at any time until it is deleted. Once the current recording is stopped a new one will be started to record the new show. By making a new recording end existing recordings we ensure mutual exclusion for each stream, this is required as the ``LiveStreamRecord'' extension only allows a single recorder on each stream. After a configurable period of time the recording will then be removed from the list of recordings but will only be deleted after a further period of time `t' has elapsed where `t' is the length of the video, allowing any existing streamers to finish watching before it is removed. Throughout this process the Wowza module will also use the REST interface to detail the state of any given program where valid states are: ``Not Recorded, Recording, Recorded, Deleted.''
+
+\subsubsection{Restrictions}
+Without a GPI trigger millisecond precision is not possible for advert timings but assuming the network delay remains approximately constant second accuracy should be possible in most situations. Unfortunately live shows can result in these times being slightly out so in some cases the information may be incorrect. We have been given access by Inqb8r to the SCTE 104 control scripts which are coded in Python. Using these we should be able to minimise this risk by pinging the Wowza server and the LAMP server when the GPI pulse is received which is precisely 8 seconds before ad ad break is due to start. Additionally this information could be used to start and stop the recordings on the Wowza server resulting in recordings excluding the adverts allowing potential insertion of adverts at the user's discretion, allowing them to choose when to watch the adverts. However due to the lack of an available development device and the difficulty of modifying the scripts to perform our tasks without interfering with the existing Project4 tasks it has been decided that using this information is outside the scope of this project.
+
+
+
+
 \subsection{Systems Architecture \& Description}
 
 \begin{figure}[H]
