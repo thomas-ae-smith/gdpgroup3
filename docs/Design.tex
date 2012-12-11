@@ -21,7 +21,7 @@ We'll start by discussing how adverts will be targeted through \textit{campaigns
 
 	\subsubsection{Advert campaigns}
 
-	Any advert may be targeted towards individuals by assigning that advert to a campaign. An advert may be in as many campaigns as the advertiser needs, and a campaign may include any number of adverts. A campaign is given a set of restrictions, where the adverts belonging to a campaign are shown whenever the restrictions are met. Restrictions may apply to programmes, users and times, where the attributes that can be restricted are:
+	Any advert may be targeted towards individuals by assigning that advert to a campaign; an advert may be in as many campaigns as the advertiser needs, and a campaign may include any number of adverts. A campaign is given a set of restrictions, where the adverts belonging to a particular campaign are shown whenever the campaign restrictions are met. Restrictions may apply to programmes, users and times, where the attributes that can be restricted are:
 
 	\begin{center}
 		\begin{tabular}{c c r l}
@@ -35,7 +35,7 @@ We'll start by discussing how adverts will be targeted through \textit{campaigns
 		\end{tabular}
 	\end{center}
 
-	Attributes may have multiple restrictions, where the restrictions are discrete points or continuous ranges where appropriate. When a campaign has multiple restrictions on a single attribute, that attribute is considered satisfied if any of its restrictions are satisfied; e.g.: if a campaign has weekday restrictions of Monday and Wednesday, the weekday restriction is considered satisfied on either a Monday or a Wednesday. A campaign only applies when all of its restrictions are satisfied, though a campaign need not have restrictions for all of the above attributes, or indeed any restrictions at all.
+	Attributes may have multiple restrictions, where the restrictions are discrete points or continuous ranges where appropriate (e.g., ages restrictions are specified as ranges, and genre restrictions as points). When a campaign has multiple restrictions on a single attribute, that attribute is considered satisfied if any of its restrictions are satisfied; e.g.: if a campaign has weekday restrictions of Monday and Wednesday, the weekday restriction is considered satisfied on either a Monday or a Wednesday. A campaign only applies when all of its restrictions are satisfied, though a campaign need not have restrictions for all of the above attributes, or indeed any restrictions at all.
 
 	Whenever a campaign is satisfied, its adverts are shown with a frequency directly proportional to the value of a campaign metric that we call \textit{nicheness}. We define nicheness, $n$, as:
 	$$
@@ -49,8 +49,19 @@ We'll start by discussing how adverts will be targeted through \textit{campaigns
 		n_\text{user} &= 1 - \frac{\text{satisfying users}}{\text{total users}}
 	\end{align*}
 
-	In other words, for a particular person, programme and time in which multiple campaigns apply, campaigns with a higher nicheness will have their adverts displayed more often. This design decision was made to reward advertisers for creating niche campaigns over broad campaigns. By encouraging a greater number of more highly targeted advertisements in this way, users will be shown a far more relevant advert set.
-	% DOES our study show this?
+	In other words, for a particular person, programme and time in which multiple campaigns apply, campaigns with a higher nicheness will have their adverts displayed more often. This design decision was made to reward advertisers for creating niche campaigns over broad campaigns. By encouraging a greater number of more highly targeted advertisements in this way, users will be shown a far more relevant advert set. Given a set of campaigns $\mathbb{C}$, the probability that an advert $a$ is shown from a particular campaign is:
+	$$
+		P(a) =
+		\frac{
+			\displaystyle \sum^{c \in \mathbb{C}}
+			\begin{cases}
+				\frac{n_c}{\left|c\right|}, & a \in c \\
+				0, & \text{otherwise}
+			\end{cases}
+		}{
+			\displaystyle \sum^{d \in \mathbb{C}} n_d
+		}
+	$$
 
 \subsection{Interactive Adverts}
 
@@ -101,20 +112,19 @@ We'll start by discussing how adverts will be targeted through \textit{campaigns
 		So that a user may be recommended programmes, each user is given a vector, $\mathbf{u}$, also within the space $\mathcal{P}$, which represents the user's ideal programme. This user vector is initialised with the function $v_u$, which takes a vector of a user's demographic information, $\mathbf{d}$, and returns the user vector, $\mathbf{u}$ ($\mathbf{u} = v_u(\mathbf{d})$). The actual demographics in $\mathbf{d}$ are constrained by the target audience, the training data available and the user data available, and as a result only gender is considered ($\mathbf{d} \in \left\{{ \left[ 0\right] ,\left[ 1\right] }\right\} $). The function $v_u$ is learned using a set of training data containing mappings between users, their demographics and shows they enjoy. 
 
 		While a user uses \textit{Your4.tv}, their actions influence their user vector. Upon giving a programme a rating, $\mathbf{u}$ is moved either towards or away from $\mathbf{p}$ by an amount which depends upon the magnitude of the rating, the initial distance between $\mathbf{u}$ and $\mathbf{p}$, and the learning rate of the recommender which may be tweaked or made inversely proportional to the number of ratings made by the user. While an adaptive learning rate will result in a simulated-annealing type search in the programme space, a constant learning rate will continue adapting recommendations to the user's current mood, which should not be assumed to be static. The exact change to $\mathbf{u}$, where $\mathbf{u}_{i}$ is the $i^{th}$ component of vector $\mathbf{u}$, $\mathbf{u}'$ is the new user vector, $0 \leq L \leq 1$ is the learning rate and $-1 \leq r \leq 1$ is the rating given is given by:
-		% {\left[1\right], \left[0\right]
 		% Can use dcases in mathtools to make the fractions in the conditional more readable (bigger).
 		$$
 			\mathbf{u}_{i}' =
 			\mathbf{u}_{i} + \begin{cases}
-				\left|\mathbf{q}\right|Lr \times \frac{\mathbf{q}}{\left|\mathbf{q}\right|},&
+				\left|\mathbf{q}_i\right|Lr \times \frac{\mathbf{q}_i}{\left|\mathbf{q}_i\right|},&
 					\text{if } r\geq 0\\
-				(1-\left|\mathbf{q}\right|)Lr \times \frac{\mathbf{q}}{\left|\mathbf{q}\right|},&
+				(1-\left|\mathbf{q}_i\right|)Lr \times \frac{\mathbf{q}_i}{\left|\mathbf{q}_i\right|},&
 					\text{otherwise}
 			\end{cases}
 		$$
-		where
+		where $q$ is the abbreviated difference between the programme and user vector:
 		$$
-			\mathbf{q} = \mathbf{p}_{i}-\mathbf{u}_{i}
+			\mathbf{q} = \mathbf{p}-\mathbf{u}
 		$$
 		Because of division by 0 for the case when the user and programme vectors are, on a particular dimension, identical ($\mathbf{q}=0$), a special case was required:
 		$$
