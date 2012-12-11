@@ -13,7 +13,7 @@ In the following section, the technical details of the implemented system, \text
 Apple iPad
 Modern web browser
 
-\subsection{System Layers}
+\subsection{System layers}
 The user must be able to access the app via a web browser.
 
 It was decided that the TV and programme streams should be delivered to the client via Wowza media server, which would be hosted on a machine running Windows Server 2008. Peter Wood (Inqb8r) has had extensive experience with Wowza, and assisted Dexter in the configuration of the server to output the Channel 4 streams. This helped by relieving us of any lengthy configuring that might have had to take place with any other system. Additionally, Inqb8r were able to provide us with a licensed Wowza server.
@@ -24,13 +24,13 @@ LAMP server
 \subsection{Streaming}
 The Wowza server will be configured to act as a repeater, re-broadcasting the streams provided by Inqb8r. The Cupertino streaming packetiser will be used to output the streams in the HLS format such that the videos may be viewed on iPads and any other devices supporting this technology. Each programme will be recorded using the EPG data. Since adverts will be replaced by ones recommended to viewers, it must be known when adverts are due to start and finish. This process is achieved by Project4 using a GPI\citep{SCTE104} triggered hardware solution utilising an SCTE 104 Server, a Tanberg Encoder and a PV1000 Ad replacement device as described in \ref{subsubsec:Project4Tech}. Finally the Wowza server will be configured with the standard extension ``vod'' which allows any file of a valid format in a given directory to be streamed.
 
-\subsubsection{Project 4 Advert Replacement: Hardware Solution}\label{subsubsec:Project4Tech}
+\subsubsection{Project 4 advert replacement: hardware solution}\label{subsubsec:Project4Tech}
 Ad break information is sent to a Miranda Xplayer Server from Channel 4 via an automation system which forwards this information as XML to a SCTE 104 device. This information is received via HTTP when the SCTE server is running in HTTP Server mode. Ad information is received on this interface 1 minute and 8 seconds before the Ad break is due to start. On receiving this information it checks with a PV1000 substitution device for a matching Ad break, see \citep{PV1000Schedule}. If it finds one it starts listening for a GPI pulse, sent from the automation system which when triggered instructs the Tanberg Encoder which encodes the video stream to insert markers around the ad breaks. This pulse is received 8 seconds before airing. The PV1000 devices then detect these markers and replace the ad break with one they have created\ref{Project4EventFlow}.
 
-\paragraph{PV1000 Schedule}\label{PV1000Schedule}
+\paragraph{Pv1000 schedule}\label{PV1000Schedule}
 The PV1000 receives its schedule from the TMS server. The TMS server receives EPG information from the princess server which pulls it from an EPG ftp service. A user uploaded Channel 4 schedule is also provided to the TMS server 2 weeks in advance. The calculated ad breaks are then provided to the PV1000.
 
-\subsubsection{Your4 Advert Replacement: Software Solution}
+\subsubsection{Your4 advert replacement: software solution}
 When the XML data is received defining the ad breaks as described in \ref{subsubsec:Project4Tech} the information (known as a MOS record) is also stored in a MySQL database. This database also includes EPG information We have been given access to this database and thus (excluding network delays) we are able to discover the existence of Ad breaks up to 1 minute and 8 seconds before they are shown. This information will then made available via the your4 REST interface and the clients will use this warning to call the advert recommender to determine which adverts should be shown in place of the existing ones (see Section~\ref{sec:design_adverts}). These adverts will then be streamed as separate files from the Wowza server using the ``vod'' extension.
 
 \subsubsection{Recordings}
@@ -42,7 +42,7 @@ Without a GPI trigger millisecond precision is not possible for advert timings b
 
 
 
-\subsection{Systems Architecture \& Description}
+\subsection{Systems architecture \& description}
 
 \begin{figure}[H]
 	\centering
@@ -97,7 +97,7 @@ Once rendering is complete, the client requests a number of resources from the R
 
 The client checks the user agent string of the browser to determine what format of media to request from the media server. Apple devices require HTTP Live Streaming (HLS) streams while the flash player alternative requests an RTMP alternative.
 
-\subsubsection{LAMP Server}
+\subsubsection{Lamp server}
 
 The LAMP server's primary responsibility is to expose all required functionality on a single REST endpoint, ``/api''. In general, the LAMP server deals with a request by passing it through various stages before finally manipulating the database:
 
@@ -116,7 +116,7 @@ Upon registration, name, email, gender, date of birth, occupation, postcode and 
 
 A recommender function is also called which retrieves the user's initial vector. This is based upon the required demographics data provided at registration. This vector is then stored agaist the user in the database.
 
-\paragraph{Programme Recommendations}
+\paragraph{Programme recommendations}
 
 Daily, EPG data is imported from the Atlas API\footnote{\footurl{http://atlas.metabroadcast.com}} into the Your4 database. This contains unique programme ID's, descriptions, episode numbers and other programme data.
 
@@ -136,7 +136,7 @@ When the client requests an advert, the amount of time the advert has to fill an
 
 Views, clicks and skips are recorded by the client and feedback is sent to the REST interface. The advertiser can then view these statistics.
 
-\subsubsection{Media Server}
+\subsubsection{Media server}
 
 The media server is based on two distinct applications. The first application is responsible for retrieving the source live streams and relaying these to the client. The second is responsible for streaming recorded programmes and adverts from the video store to the client. Both applications use a ``packetizer'' which is responsible for encoding the raw input streams to the output requested (HLS for Apple based devices).
 
@@ -153,9 +153,9 @@ The live application is also responsible for recording programmes. A REST API ca
 
 Figure~\ref{fig:your4-db} shows the Your4 database class diagram. The Object Relational Mapper (ORM) in use enforces a strict naming policy in which all table and attributes are in lower case and are not pluralised. The underscore character represents a relation, e.g. ``programme\_id'' represents a foreign key to the ``id'' attribute in the programme table.
 
-\subsection{Programming Techniques \& Languages}
+\subsection{Programming techniques \& languages}
 
-\subsubsection{Libraries and Frameworks}
+\subsubsection{Libraries and frameworks}
 
 A number of libraries and technologies were used during the implementation stage:
 
@@ -207,7 +207,7 @@ gson
 
 
 
-\subsubsection{Code Statistics}
+\subsubsection{Code statistics}
 Lines of code in JS, PHP, Java, Python, HTML, CSS etc
 
 \subsection{System walkthrough}
@@ -279,7 +279,7 @@ Lines of code in JS, PHP, Java, Python, HTML, CSS etc
 	\label{fig:advertiser-campaign-schedule}
 \end{figure}
 
-\subsection{Scheduled Tasks}\label{subsec:ScheduledTasks}
+\subsection{Scheduled tasks}\label{subsec:ScheduledTasks}
 %list scheduled tasks here
 \begin{description}
 \item[EPG Retrieval]{EPG information is acquired by a cron job running on the LAMP server using the Atlas REST API.}
