@@ -21,7 +21,7 @@ Following on from this, we give an overview of research in viewer engagement in 
 	Google, a leader in online advertising, has reinforced this shift in ideology towards targeted video by supporting a ``Cost Per View'' (CPV) pricing strategy. Cost per view differs from cost per impression (CPI) in that pricing is based upon users who choose to watch a video instead of video that is simply passively playing. This strategy can also incorporate advert skipping. YouTube, a Google product, offers ``TrueView''\footnote{Google Insights: Online Video -- \footurl{http://www.google.co.uk/adwords/watchthisspace/benchmarks-and-insights/online-video/} (Accessed: 04/12/2012)} which only charges an advertiser if the viewer reaches the end of the advert without using a skip button. This is an attractive option for advertisers, as TV advertising does not return any metrics to identify who out of the audience reach is engaged by the advertisement.
 
 	% Advertisers need people to be engaged in their adverts
-	\citet{three-screen} reports a growing trend in which viewers choose the best medium (television, online and mobile) available to them to consume content according to the viewers perception of the quality of the content and its availability. 31\% of internet activity occurs when consumers are also watching television in domestic environments. A growing number of households are adopting Digital Video Recorder (DVR) technology, with 29\% of US homes able to time shift television which allows viewing only content the viewer is interested in, including the skipping of adverts \citep{gal2006targeted}. However, live TV viewing still accounts for the majority of video consumption, but is growing at a slower rate than the richer online platforms.
+	\citet{three-screen} reports a growing trend in which viewers choose the best medium (television, online and mobile) available to them to consume content according to the viewers perception of the quality of the content and its availability. 31\% of internet activity occurs when consumers are also watching television in domestic environments. A growing number of households are adopting Digital Video Recorder (DVR) technology, with 29\% of US homes able to time shift television which allows viewing only content the viewer is interested in. However, live TV viewing still accounts for the majority of video consumption, but is growing at a slower rate than the richer online platforms.
 
 	More advanced time-shifting systems such as TiVo\footnote{TiVo -- \footurl{http://www.tivo.com/}} allow users to pause and rewind live TV. It achieves this by recording a rolling 30 minutes of the last two channels the user was watching\footnote{Description of TiVo's Live TV rewinding technology -- \footurl{http://www.mytivo.com.au/whatistivo/tivois/pauserewind/}}. While this improves the user experience by reducing the likelihood they will miss the start of a show, the two channel limitation reduces the usefulness of these systems in terms of user experience. Additionally, while watching a time-shifted channel, a user may fast-forward. This may be seen as an opportunity to skip through adverts, negatively affecting advertisers.
 
@@ -60,29 +60,19 @@ Following on from this, we give an overview of research in viewer engagement in 
 
 	Engagement cannot be measured directly, but can be inferred from other measurements. \citet{time_perception} report that time perception correlates well with engagement, and may be used as a measurement. Information recall is used in the study described in \citep{advertising_engagement} as an indicator of user engagement, and correlates with attention \citep{interactions_attention_memory}, a requirement for engagement \cite{what_is_engagement}.
 
-\subsection{Targeting}
+\subsection{Targeted adverts}
 
-	\citet{yahoo-intrusive-advertising}
-	* time perception, known to indicate engagement
-	* relevance shown to influence user experience
+	\citet{personalised_interactive_tv_advertising} contrast traditional and personalised interactive TV advertising, then propose an architecture for acheiving personalised interactive TV advertising, using a Set-top box to identify and comminucate with an end-user.
 
 	\citet{nettelhorst2012effects}
 	* adverts that are relevant to users are more likely to be engaging to a viewer
 
-	\citep{interactions_attention_memory}
-	* information recall, known to correlate with attention
-
-	\citep{davidson2012}
-	* YouTube does targeting through a recommender system. Accounts for 60\% of video clicks
-
-	\citep{gal2006targeted}
+	
 	* skipping
 
 	ad breaks positioned early in a programme are more effective \citep{jeong2011position}
 
 \subsection{Programme recommendation}
-	
-	PREVIOUS WORK \citep{personalisedEPG}
 
 	% What are they? Are they used?
 	Recommendation systems -- systems which recommend unseen items to users based off of relevant data -- are a mature area of research, with a huge number of industrial implementations existing to back up a large theoretical base. Recommendation systems are widely used in internet streaming media services, including YouTube, 4od\footnote{Channel 4 On Demand -- \footurl{http://www.channel4.com/programmes/4od}} and iPlayer\footnote{BBC iPlayer -- \footurl{http://www.bbc.co.uk/iplayer}}, and can be of enormous commercial value; evidence of this is given by the US\$1,000,000 2009 Netflix prize awarded to \textit{Pragmatic Chaos} for improving upon Netflix's movie recommendation algorithm \textit{Cinematch}, in return for granting Netflix a non-exclusive licence \citep{pragmatic_chaos}.
@@ -107,7 +97,7 @@ Following on from this, we give an overview of research in viewer engagement in 
 
 	Television is already switching to become an interactive platform; the 2012 live election debate was augmented with live news and live twitter streams, discussed by \citet{2010_election}, and the 2012 Olympic Games was given an online interactive video player\footnote{Interactive 2012 Olympics video player -- \footurl{http://www.bbc.co.uk/sport/olympics/2012/live-video}}. \citet{tv_stb_overview} gives an overview of the state of interactive TV set-top box development, and describes a rapidly growing market in Europe and Asia. A number of problems in standardization, network architecture and upgradability are described, but many of these become redundant upon removal of the assumption that interactive TV requires a set-top box, and instead assuming the software runs on a personal computer communicating via the internet.
 
-	Relating to interactive advertisement, \citet{integrated-approach-advertising} discusses a number of issues including that of timing when the user decides to interact with the advert. When interacting with an advert which requires more time than the length of the advert, it is undesirable to halt the interaction and switch to the next advert. However, the alternative means overrunning into the time in which the subsequent adverts or even the main programme would be broadcasting, which raises a number of issues, particularly if the stream being viewed is live. The solutions given are to either record the stream being missed, or to minimise the interaction time required with one of the following techniques:
+	Relating to interactive advertisement, \citet{integrated-approach-advertising} discusses a number of issues including that of timing when the user decides to interact with the advert. When interacting with an advert which requires more time than the length of the advert, it is undesirable to halt the interaction and switch to the next advert. However, the alternative means overrunning into the time in which the subsequent adverts or even the main programme would be broadcasting, which raises a number of issues, particularly if the stream being viewed is live. \citet{integrated-approach-advertising} and \citet{personalised_interactive_tv_advertising} give solutions of either recording the stream being missed and playing the missed parts after interaction has finished, or to minimise the interaction time required with one of the following techniques:
 	\begin{itemize}
 		\item Interaction in which the user requests to be contacted at a later point in time, which could be through email, a phone call, a visit, a letter or any other contact method.
 		\item Interaction in which the user `bookmarks' the interactive content, which may be returned to at a later point in time.
