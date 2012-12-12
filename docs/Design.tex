@@ -4,14 +4,21 @@ The results of the prestudy allows us to justify the design of a platform for gr
 
 We'll start by discussing how adverts will be targeted through \textit{campaigns} -- a set of restrictions on viewers that adverts must conform to in order to be shown. Following this, we'll devise a method to allow interactivity in adverts. We also describe how we can collect statistics that this platform would offer about advert usage. In order to demonstrate the usage of these adverts, we then discuss the design of \textit{Your4.tv}, a personalised TV channel, which will utilize a recommender system to select programmes that the viewer will want to watch.
 
-\begin{landscape}
-\begin{figure}[th]
-	\centering
-	\includegraphics[height=\textwidth]{images/design.jpg}
-	\caption{Design stage}
-\end{figure}
-\end{landscape}
-\newpage
+\subsection{Overview}
+
+	Due to the large number of topics this platform encompasses, it was important that we understood what tasks would be involved. Figure~\ref{fig:designing} shows an early plan, demonstrating the major parts and types of information that would be required. This overview shows that a personalised TV stream would have programmes selected by a recommender, which learns from a user's preference. Targeted interactive adverts be selected based on information about the user and their context.
+
+	The diagram categorises the tasks involved into client-side development (blue), statistics (yellow), recommendation (red), streaming (green) and overlays (black). This allows these tasks to be allocated to team members effectively.
+
+	\begin{landscape}
+	\begin{figure}[th]
+		\centering
+		\includegraphics[height=\textwidth]{images/design.jpg}
+		\caption{Design stage planning}
+		\label{fig:designing}
+	\end{figure}
+	\end{landscape}
+	\newpage
 
 \subsection{Targeting adverts}
 	\label{sec:design_adverts}
@@ -20,7 +27,7 @@ We'll start by discussing how adverts will be targeted through \textit{campaigns
 
 	The usage of internet-connected devices allows the capturing of information about a user, allowing this granular targeting. In the design of our advertising platform, we take the notion of an advert campaign, as used by [cite] in [some system], and allow an advert to be targeted towards people based on personal information (such as age, gender and occupation), usage data (such as viewing history) and contextual information (such as time of day and what programme they are watching).
 
-	In the context of live TV, these targeted adverts would replace adverts that are streamed as part of the channel by the broadcaster. This advert replacement has been implemented successfully previously as part of Project4, as described in Section~\ref{project4}. In addition, these advert breaks could be placed in between non-live streamed programmes.
+	In the context of live TV, these targeted adverts would replace adverts that are streamed as part of the channel by the broadcaster. This advert replacement has been implemented successfully previously as part of Project4, as described in Section~\ref{sec:motivation_inqb8r}. In addition, these advert breaks could be placed in between non-live streamed programmes.
 
 	\subsubsection{Skipping adverts}
 
