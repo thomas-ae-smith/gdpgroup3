@@ -8,6 +8,7 @@ In the following section, the technical details of the implemented system, \text
 In order to ensure the completion of the project in the limited time available the requirements were subdivided using the MoSCoW system developed as part of \citet{clegg1994case}.
 
 \subsubsection{Must Have}
+	These are requirements which must be met in order for our service to meet the requirements set by our customer and to create a platform which will allow us to create a demonstration application to test our hypotheses.
 	\paragraph{Functional}
 		\begin{enumerate}
 			\item{A user must be able to create a personal account for use with the system.}
@@ -18,10 +19,9 @@ In order to ensure the completion of the project in the limited time available t
 			\item{The scheduling algorithm must never choose a programme which has already started.}
 			\item{Users must be able to log out at any time.}
 			\item{Users must be able to view the generated playlist (EPG Information).}
-			\item{The user should be able to express why they skipped an advert.}
-			\item{The user should be able to skip an advert.}
-			\item{If a user skips an advert, the advertiser must be able to see the user's feedback.}
+			\item{The user must be able to skip an advert.}
 			\item{Users must be able to rate a show between 5 discrete levels from one to five stars.}
+			\item{Users must be able to interact with elements added by advertisers to the interactive overlay of an advert.}
 			\item{The system must replace all adverts, within all detected advert breaks.}
 			\item{The replaced adverts a user is shown must be taken from a set which matches both the user's demographic and the advertiser's chosen targeting attributes.}
 			\item{Advertisers must be able to create a new advertising campaign.}
@@ -49,15 +49,24 @@ In order to ensure the completion of the project in the limited time available t
 			\item{There must be no maximum number of adverts in a campaign}
 		\end{enumerate}
 \subsubsection{Should Have}
+These are requirements which the system should have to be a reasonably useful platform, however not achieving these requirements will not prevent us from testing our hypotheses.
 	\paragraph{Functional}
 		\begin{enumerate}
-			\item{}		
+			\item{The system should record all shows that are broadcast on each channel as individual files.}
+			\item{The system should regularly delete recordings to conserve space.}
+			\item{The recommender should never suggest a recorded show that has already been deleted.}
+			\item{The scheduling system should prefer live shows over recorded shows.}
+			\item{The user should be able to express why they skipped an advert.}
+			\item{If a user skips an advert, the advertiser must be able to see the user's feedback.}	
 		\end{enumerate}
 	\paragraph{Non-functional}
 		\begin{enumerate}
-			\item{A user must be shown a stream within 10 seconds of requesting it.}
+			\item{The system should, where possible, prefer scheduling options which will result in the least server load.}
+			\item{A user should be shown a stream within 10 seconds of requesting it.}
+			\item{The system should have a think time of no more than 0.3 seconds for any interaction.}
 		\end{enumerate}
 \subsubsection{Could Have}
+These are potential extensions which would improve the system, some of which may be included if all previous requirements are met.
 	\paragraph{Functional}
 		\begin{enumerate}
 			\item{The system could allow advertisers to upload static images as adverts to be shown in shorter advert gaps.}
@@ -66,23 +75,35 @@ In order to ensure the completion of the project in the limited time available t
 			\item{The system could allow the additional targeting parameter focussed to allow advertisers to request audio centric adverts to be shown when a user defocusses the app.}
 			\item{The system could allow show ratings in a continuous space rather than a discrete space.}
 			\item{The system could allow users to provide batches of ratings to allow interested users to improve the accuracy of the system's recommendations.}
+			\item{The system could make user preferences affect the position of shows in the recommender space.}
 			\item{The system could allow users to generate custom play lists.}
 			\item{The system could allow users to add a specific show to their playlist.}
-			\item{The system }
+			\item{The system could track changes in social status such as promotions and relationship status changes using Facebook.}
 		\end{enumerate}
 	\paragraph{Non-functional}
 		\begin{enumerate}
-			\item{The service should gracefully degrade given an insufficient Internet connection speed to use lower definition}
+			\item{The service could gracefully degrade given an insufficient Internet connection speed to use lower definition.}
 		\end{enumerate}
 \subsubsection{Wont Have}
+These are extensions which our system will not have and have been explicitly defined as out of scope. These could be used for future work or alternate uses of our system.
 \paragraph{Functional}
 		\begin{enumerate}
-			\item{The system should allow buffering of the live stream for later 1-time off-line playback.}
+			\item{The system will not allow advertisers to add interaction elements which save additional information such as coupon codes to a user's profile.}
+			\item{The system will not allow buffering of the live stream for later 1-time off-line playback.}
+			\item{The system will not allow users to see and share other user's play lists.}
+			\item{The system will not allow users to review coupons or other benefits provided by advert interaction.}
+			\item{The system will not use granular personality data such as that provided by VisualDNA to initialise the user's preferences.}
+			\item{The system will not use granular brand preference as a targeting variable such as those provided by VisualDNA.}
+			\item{Adhoc unplanned advert breaks will not be replaced.}
+			\item{The system will not use GPI triggering to eliminate adverts from recordings.}
+			\item{The system will not attempt to exclude adverts from recordings.}
 		\end{enumerate}
 \paragraph{Non-functional}
 		\begin{enumerate}
-			\item{The user should not need an active Internet connection}
-			\item{The system architecture should allow node loss with no service degradation}
+			\item{The system will not use segment caching proxies to reduce server load.}
+			\item{The user will not function without an active Internet connection.}
+			\item{The system architecture will not allow node loss without service degradation.}
+			\item{Advert replacement will not be guaranteed to be millisecond accurate}
 		\end{enumerate}
 
 \subsection{Systems architecture and description}
