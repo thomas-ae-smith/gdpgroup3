@@ -1,8 +1,10 @@
 \section{Background}
 
-Mobile devices and high-speed internet have dramatically changed the way the people can view video media. In this section, we'll first discuss the popularity of different methods of watching video media and how modern methods have affected how people view video advertisements. We'll then discuss how streaming video over internet opens up opportunities for granular targeting of video media, including advertisements and TV shows. Following on from this, methods of facilitating programme recommendation will be discussed and a consideration of the costs of streaming services focusing on individualised services. Finally, current research in interactive video media will be reviewed, specifically in the context of improving viewer engagement \cite{what_is_engagement}.
+Mobile devices and high-speed internet have dramatically changed the way the people can view video media. In this section, we'll first discuss the popularity of different methods of watching video media, including via mobile devices, and how modern methods have affected how people view video advertisements. We'll then discuss how streaming video over internet opens up opportunities for granular targeting of video media, including advertisements and TV shows. 
 
-\subsection{History \& Recent Trends of Video Advertising}
+Following on from this, we give an overview of research in viewer engagement in these methods of watching video media. We discuss how targeting particular video towards users can improve this, leading us to discuss programme recommendation as a way to facilitate this. We review current research in interactive video media, specifically in the context of improving viewer engagement \cite{what_is_engagement}. We then summarise the availability of statistics to advertisers before finally considering the costs of streaming services, focusing on individualised services.
+
+\subsection{History and recent trends of video advertising}
 
 	Live television channels, such as Channel 4, and streaming services, such as Youtube\footnote{Youtube video streaming website -- \footurl{www.youtube.com}}, display programme content with video advertisements apportioned amongst this content at both regular intervals, and between distinguishable items of content. These advertisements typically vary in subject and style in a number of ways in order to increase the efficiency of the advert by maximising the size of the captured audience who fit the target audience for the given advert.
 
@@ -27,12 +29,11 @@ Mobile devices and high-speed internet have dramatically changed the way the peo
 	% Stats
 	Traditional TV viewing statistics are not immediate or accurate due to the lack of feedback directly from the viewing device. This information is usually obtained by surveying small samples of viewers using the ``Nielsen Rating'' system. Because the Nielsen system is an opt-in study, the sample is non-random in that all participants who take part are those individual who chose to opt in, introducing flaws into any results obtained. This sample is also extremely small at approximately 37,000 homes in the USA which accounts for less than 0.5\% of the population \citep{nielsen-sample}. In contrast to traditional TV, online platforms allow immediate return of accurate statistics such as click through rates and viewer demographics. Advertisers consider better metrics to be the most important factor on encouraging higher digital video advertising spend.
 
-\subsubsection{Mobile Video}
+	\subsubsection{Mobile video}
 
-	Smartphone usage in the UK has risen year on year. As of 2012, 51\% of the UK population owns a smartphone device. As mobile advertising is a strong growth industry, it is of interest to content owners to expose their products and services on this platform. By the pervasive nature of mobile devices, more users are relying on their smartphone outside of the home in order to research and purchase products; watch video; communicate and to stay informed. 66\% of smartphone users watch video on their device and 84\% of users notice mobile ads while using their phone. \citep{mobile-planet} These two factors together present an opportunity for content owners to engage users with their services by employing the use of rich video with advertising. With over 31\% of advertisers considering mobile video as the area in which advertising spend will increase most \citep{brightroll-report}, TV broadcasters need to shift towards a more engaging platform.
+		Smartphone usage in the UK has risen year on year. As of 2012, 51\% of the UK population owns a smartphone device. As mobile advertising is a strong growth industry, it is of interest to content owners to expose their products and services on this platform. By the pervasive nature of mobile devices, more users are relying on their smartphone outside of the home in order to research and purchase products; watch video; communicate and to stay informed. 66\% of smartphone users watch video on their device and 84\% of users notice mobile ads while using their phone. \citep{mobile-planet} These two factors together present an opportunity for content owners to engage users with their services by employing the use of rich video with advertising. With over 31\% of advertisers considering mobile video as the area in which advertising spend will increase most \citep{brightroll-report}, TV broadcasters need to shift towards a more engaging platform.
 
-
-\subsection{User Engagement}
+\subsection{User engagement}
 	MENTION IN INTRO PARA TO THIS SECTION
 
 	\cite{what_is_engagement}
@@ -43,7 +44,6 @@ Mobile devices and high-speed internet have dramatically changed the way the peo
 	\citet{informationOverload}
 
 	\citet{humanVariables}
-
 
 \subsection{Targeting}
 
@@ -65,8 +65,7 @@ Mobile devices and high-speed internet have dramatically changed the way the peo
 
 	ad breaks positioned early in a programme are more effective \citep{jeong2011position}
 
-
-\subsection{Programme Recommendation}
+\subsection{Programme recommendation}
 	
 	PREVIOUS WORK \citep{personalisedEPG}
 
@@ -84,18 +83,7 @@ Mobile devices and high-speed internet have dramatically changed the way the peo
 
 	Research is being performed into the extension of programme recommenders into advertisement recommenders \citep{contextual_advertising}. While similar algorithms are used, advert recommenders have a different set of considerations in providing optimal adverts: who is watching, what is being watched, programme popularity and business rules (e.g., the amount paid for the advertisement) \citep{contextual_advertising}.
 
-\subsection{The Cost of Streaming}
-Whenever a new service is provided, there will be an initial cost to the provider, to install any hardware and create and necessary software. In traditional broadcast economics \citep{broadcastEconomics} the cost of adding users to a service is \$0.00 but with individualised streams this is not the case. Even so, with the considerable number of people now using tablet devices for their TV viewing it seems odd that no major broadcasters have provided their service on these devices. Especially when we consider the prevalence of on-demand services despite the relative costs behind typical implementations of these. When we examine typical unicast-based implementations of on-demand services, it becomes clear that for scalable \textit{live streaming} a new approach is needed.
-
-Most traditional streaming services provide a unicast stream to each viewer which means that the load placed on the servers increases linearly resulting in a linear increase in costs as more users connect. \citet{cachedStream} realised that this does not scale well and proposes a different architecture using self organising caches and stream segmentation, this type of approach is considered as the standard solution and is further examined by \citet{segmentProxyCaching}. \citet{cachedStream} concludes that their proposed helper decreases load significantly so using a system such as that proposed with a protocol such as Apple's HLS\cite{HLS} which segments the stream as part of the protocol the cost of adding a user can be significantly reduced however it still does not meet the zero requirement noted in \citep{broadcastEconomics}.
-
-Another internet broadcast possibility is using multicast technology\citep{multicast}. Multicasting reduces server load significantly as the source need only forward the stream to one endpoint -- the multicast group. This means that adding new listeners does not negatively impact server performance hence giving zero additional cost required for the Spence-Owen analysis\citep{broadcastEconomics}.
-
-While mobile device usage continues to rise, development by major broadcasters for this platform is slow. As many of the main channels provide on-demand services such as Channel 4's 4oD. The costs of unicast services mean that expansion into this new area must be proven economically viable. Systems such as Project4 attempt to improve the viability by replacing the adverts with ones targeted towards their more specific user demographic of students while keeping costs low using multicast technology. By extending this idea of improved targeting we can infer that by providing an app which could give individual granular targeting it seems likely that advertisers would be able to reach a greater percentage of their target audience with less advert showings. Unfortunately, this would require reverting to unicast for at least the adverts as each user's stream would be different.
-
-A hybrid approach, using multicast where possible, to minimise unicast traffic, would minimise the cost of such a granular service to broadcasters while keeping the granularity which would be highly valued by advertisers. Additionally, using an easily cacheable segmenting protocol such as HLS \citep{HLS}, with a helper such as that proposed in \citep{cachedStream} individual customisation could be maximised while minimising server load and hence costs making this sort of system economically viable.
-
-\subsection{Interactive Television}
+\subsection{Interactive television}
 	
 	Television is already switching to become an interactive platform; the 2012 live election debate was augmented with live twitter streams, discussed by \citep{2010_election}, and the 2012 olympic games was given an online interactive video player\footnote{Interactive 2012 Onlympics video player -- \footurl{http://www.bbc.co.uk/sport/olympics/2012/live-video}}. \citet{tv_stb_overview} gives an overview of the state of interactive TV set-top box development, and describes a rapidly growing market in Europe and Asia. A number of problems in standardization, network architecture and upgradability are described, but many of these become redundant upon removal of the assumption that interactive TV requires a set-top box, and instead assuming the software runs on a personal computer communicating via the internet.
 
@@ -114,6 +102,17 @@ A hybrid approach, using multicast where possible, to minimise unicast traffic, 
 
 	studies of interactivity on websites described in \citet{Teo2003281}
 
-\subsection{Advertiser Statistics and Analytics}
+\subsection{Advertiser statistics and analytics}
 	% Low granularity: TV regions, few people use a box that transmits usage data
 	% High granularity: YouTube, Google Analytics
+
+\subsection{The cost of streaming}
+	Whenever a new service is provided, there will be an initial cost to the provider, to install any hardware and create and necessary software. In traditional broadcast economics \citep{broadcastEconomics} the cost of adding users to a service is \$0.00 but with individualised streams this is not the case. Even so, with the considerable number of people now using tablet devices for their TV viewing it seems odd that no major broadcasters have provided their service on these devices. Especially when we consider the prevalence of on-demand services despite the relative costs behind typical implementations of these. When we examine typical unicast-based implementations of on-demand services, it becomes clear that for scalable \textit{live streaming} a new approach is needed.
+
+	Most traditional streaming services provide a unicast stream to each viewer which means that the load placed on the servers increases linearly resulting in a linear increase in costs as more users connect. \citet{cachedStream} realised that this does not scale well and proposes a different architecture using self organising caches and stream segmentation, this type of approach is considered as the standard solution and is further examined by \citet{segmentProxyCaching}. \citet{cachedStream} concludes that their proposed helper decreases load significantly so using a system such as that proposed with a protocol such as Apple's HLS\cite{HLS} which segments the stream as part of the protocol the cost of adding a user can be significantly reduced however it still does not meet the zero requirement noted in \citep{broadcastEconomics}.
+
+	Another internet broadcast possibility is using multicast technology\citep{multicast}. Multicasting reduces server load significantly as the source need only forward the stream to one endpoint -- the multicast group. This means that adding new listeners does not negatively impact server performance hence giving zero additional cost required for the Spence-Owen analysis\citep{broadcastEconomics}.
+
+	While mobile device usage continues to rise, development by major broadcasters for this platform is slow. As many of the main channels provide on-demand services such as Channel 4's 4oD. The costs of unicast services mean that expansion into this new area must be proven economically viable. Systems such as Project4 attempt to improve the viability by replacing the adverts with ones targeted towards their more specific user demographic of students while keeping costs low using multicast technology. By extending this idea of improved targeting we can infer that by providing an app which could give individual granular targeting it seems likely that advertisers would be able to reach a greater percentage of their target audience with less advert showings. Unfortunately, this would require reverting to unicast for at least the adverts as each user's stream would be different.
+
+	A hybrid approach, using multicast where possible, to minimise unicast traffic, would minimise the cost of such a granular service to broadcasters while keeping the granularity which would be highly valued by advertisers. Additionally, using an easily cacheable segmenting protocol such as HLS \citep{HLS}, with a helper such as that proposed in \citep{cachedStream} individual customisation could be maximised while minimising server load and hence costs making this sort of system economically viable.
