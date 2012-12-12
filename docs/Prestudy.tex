@@ -38,50 +38,73 @@ To help ensure that the prestudy results were relevant and informative, close at
 %-Selected students as a sample - representative (find reference)\\
 \citet{viacom} reports that young people (the 18-24 demographic) watch TV on tablets more than any other demographic, and so the prestudy was directed largely towards this group. %TODO Maybe mention Project4's target audience, and available adverts
 %-Protected results, ethics number 4315\\
-Following the guidelines of the governing body, the questionnaire draft was submitted to ERGO, and recieved ecthical approval to proceed (study number 4315).
+Following the guidelines of the governing body, the questionnaire draft was submitted to ERGO, and recieved ecthical approval to proceed (study number 4315). %TODO - mention password protected and automatic
 %-Performed early\\
-Since the survey outcomes were an important influencing factor in the continued development of the system, it was essential that the prestudy was completed early in the lifetime of the project. Once the intention and form of the questions had been finalised, the survey was created and publicised as widely as possible.
+Since the survey outcomes were an important influencing factor in the continued development of the system, it was essential that the prestudy was completed early in the lifetime of the project. Once the intention and form of the questions had been finalised, the survey was created and publicised as swiftly as possible.
 %Conclusion - aspects of how the survey was run made it more successful
-By 
+By releasing the study quickly and advertising it specifically to the target demographic, maximal value was derived from the outcomes. %TODO: gah.
 
 %Intro - we wanted lots of data
 So that anomalous results did not unduly skew the outcome of the study, and to ensure broad coverage and increase the possible diversity of viewpoints captured, it was important to attempt to maximise the number of responses the survey would recieve.
 %Justification - we did these things to induce people to answer
 %We were also keen to ensure that as many people as possible would provide useful information
 %-Short and easy and anonymous\\
-One approach taken was to make the questionnaire as quick and painless as possible to complete
-The survey design was intentionally short and minimal, to maximise the likelihood of agreement, we will also make it clear to any potential participant that no personally identifiable information will be collected and that they will not be contacted about their responses. %TODO: talk about using an URL
-To perform this study an anonymous questionnaire has been chosen as the best approach.
-This is because the information we gather will be used to tailor our service but will not require any further interaction on the part of the set of participants as they will not be provided with our product, only asked their opinion of existing and potential systems.
-
-with each entry automatically entered into a spreadsheet upon submission.
-
-
+One approach taken was to make the questionnaire as quick and painless as possible to complete.
+The survey design was intentionally short and minimal, with the majority of the questions answerable via checkboxes or radio-buttons.
+No personally identifiable information was collected, and the only question requiring a full text answer was optional. %TODO: talk about using an URL %(who wrote this?)
 %-Webpage\\
+A web-based service was used to host the survey, which helped to ensure participant anonymity and data security, ease of access to the survey itself, and also automatic answer collation and streamlined processing.
 %-Spread via social networking sites\\
+Finally, the survey itself was largely advertised via social networking sites. Aside from the benefits of serendipitous discovery, this also helped to ensure that potential participants were most likely to find the survey during times when they would also have opportunity to quickly complete it.
 %Conclusion - This helped: we got a large number of results as discussed in the following section
+Initially the prestudy completion target was set at 30 respondants, however due in at least some part to the techniques employed during its design, the final count was more than double this figure -- as discussed in the following section. %TODO: is this too wooly?
 
 
 %Note
-The prestudy page as presented to participants is still available online\footnote{Your4 Prestudy Questionnaire -- \footurl{http://your4.tv/\#prestudy}} and a listing of the questions can be found in Appendix~\ref{sec:appendix_prestudy_questions}. 
+The prestudy page as presented to participants is still available online\footnote{Your4 Prestudy Questionnaire -- \footurl{http://your4.tv/\#prestudy}}, and a listing of the questions can be found in Appendix~\ref{sec:appendix_prestudy_questions}. 
 
 
-\subsection{Survey outcome}
+\subsection{Outcomes}
+
+%Stats
+%Intro - the survey was in some respects more successful than hoped
+In many respects the survey was more successful than anticipated.
+%Justification
+%-Over the course of a single week
+Over the course of a single week, the online survey was seen and completed by a large number of participants.
+%-67 student participants
+In total, 67 responses were recorded, covering a wide variety of viewpoints and supplying several useful datapoints about viewer habits and responses.
+%-Discovered specific features we should focus on
+These led to a number of specific features that were selected for further attention - and a number that were disregarded.
+%Conclusion - this was a good thing
+In terms of depth and breadth of feedback recieved, the prestudy provided a sound, results-backed basis for many of the development decisions throughout the project.
+
+%Specific outcomes
+%INtro - there are some specific things we can pick up on
+Some of the data recorded during the prestudy was particularly relevant to the system specification process, while other questions produced responses that were more useful for informing a fuller picture of the context and demographic backround.
+%Justification
+%Bacground - section .1
+For example, the first few questions were intended to give a clearer view of how often respondants watched streaming media in various formats, and how the attention paid to adverts varied by format -- revealing that most attention was given to adverts shown on live TV (see section~\ref{sec:prestudy_media}).
+%Relevant adverts - section .2
+Other data revealed which specific aspects of an advert were likely to have an influence on whether it was watched by a viewer, as discussed in section~\ref{sec:prestudy_influence}.
+%Ability to skip adverts - section .3
+When considering adverts that were not watched by viewers, it was also useful to discover what actions were typically taken instead (section~\ref{sec:prestudy_alternatives}), in order to investigate alternative methods through which overall advert impressions could be reasonably maximised.
+%Targeting
+Additionallly, the prestudy questions anticipated a likely direction for the project and investigated acceptence of the use of personal information to improve advertisement relevance, revealing that most of the respondants were comfortable with some degree of targeting.
+%Conclusion - IN this light, suggests that the product we propose will improve the ...
+The survey results suggest that the proposed product will most easily be able to improve upon existing offerings by providing a TV-like experience with specific additional functionality, rather than trying to pursue an experience more akin to that supplied by traditional in-browser video sources.
+
+%Interesting free text responses
+%Intro - of particular note:
+%Justification - find some of these
+%Conclusion - variety of viewpoints out there
 
 
 
- - Analysis\\
-  - Specific interest\\
-  - Resulting decisions\\
-
-Results:\\
-67 student participants\\
-Discovered specific features we should focus on:\\
-Relevant adverts\\
-Ability to skip adverts\\
-... suggests that the product we propose will improve the ...
+A detailed breakdown of some specific questions follows
 
 \subsubsection{Attention by media type}
+\label{sec:prestudy_media}
 %Question: How often do you pay attention to adverts served with the following media?
 \begin{figure}[H]
 	\vspace{-10pt}
@@ -92,18 +115,8 @@ Ability to skip adverts\\
 \end{figure}
 As can be seen in Figure~\ref{fig:prestudy_media}, only a small minority of participants reported to always pay attention adverts shown. In particular, amongst viewers watching other media such as Youtube, more than half of them never watch any of the advertisements at all - from the free text responses, it seem this is largely people using ad blocking programs. On the other hand, a far larger proportion of viewers `Always' or `Sometimes' watch adverts on live TV, which is certainly good news for a platform such as your4.tv.
 
-\subsubsection{Advertisement responses}
-%Question: If you do not pay attention to adverts, which of the following do you do instead? (multiple choice)
-\begin{figure}[H]
-	\vspace{-10pt}
-	\includegraphics[width=\textwidth]{images/prestudy_alternatives.png}
-	\caption{User responses to the question ``If you do not pay attention to adverts, which of the following do you do instead?''}
-	\label{fig:prestudy_alternatives}
-	\vspace{-15pt}
-\end{figure}
-Having seen that almost everyone ignores adverts sometimes, we also asked what people did instead of paying attention to them. Again, we can see that more than three quarters of the respondents skip adverts at least occasionally, where possible. We found that a few of the respondents mentioned `zoning out' and losing interest during ad breaks - we can also see that people use the advertisement time to do other tasks - generally on the same device, but less frequently on another one, or something completely different like making tea, etc. We use this data to help inform the development of functionality for the system.
-
 \subsubsection{Influential Aspects}
+\label{sec:prestudy_influence}
 %Question: How much do the following aspects influence how likely you are to watch an advert?
 \begin{figure}[H]
 	\vspace{-10pt}
@@ -116,3 +129,15 @@ Finally, we looked at which specific aspects affected why people were likely to 
 %TODO: do we mention the retrospecive need to define positive vs. negative influence?
 
 
+
+\subsubsection{Advertisement responses}
+\label{sec:prestudy_alternatives}
+%Question: If you do not pay attention to adverts, which of the following do you do instead? (multiple choice)
+\begin{figure}[H]
+	\vspace{-10pt}
+	\includegraphics[width=\textwidth]{images/prestudy_alternatives.png}
+	\caption{User responses to the question ``If you do not pay attention to adverts, which of the following do you do instead?''}
+	\label{fig:prestudy_alternatives}
+	\vspace{-15pt}
+\end{figure}
+Having seen that almost everyone ignores adverts sometimes, we also asked what people did instead of paying attention to them. Again, we can see that more than three quarters of the respondents skip adverts at least occasionally, where possible. We found that a few of the respondents mentioned `zoning out' and losing interest during ad breaks - we can also see that people use the advertisement time to do other tasks - generally on the same device, but less frequently on another one, or something completely different like making tea, etc. We use this data to help inform the development of functionality for the system.
