@@ -2,7 +2,7 @@
 
 The results of the prestudy allows us to justify the design of a platform for granularly targeting adverts and providing interaction within adverts. This section will cover the design of this platform, as well as how this platform can be demonstrated within a personalised TV channel -- a TV channel tailored towards viewers specifically on which programmes and adverts are recommended based on information about the viewer. Our implementation (Section~\ref{sec:implementation}) of this personal TV channel is called \textit{Your4.tv}.
 
-We'll start by discussing how adverts will be targeted through \textit{campaigns} -- a set of restrictions on viewers that adverts must conform to in order to be shown. Following this, we'll devise a method to allow interactivity in adverts. We also describe how we can collect statistics that this platform would offer about advert usage. In order to demonstrate the usage of these adverts, we then discuss the design of \textit{Your4.tv}, a personalised TV channel, which will utilize a recommender system to select programmes that the viewer will want to watch. 
+We'll start by discussing how adverts will be targeted through \textit{campaigns} -- a set of restrictions on viewers that adverts must conform to in order to be shown. Following this, we'll devise a method to allow interactivity in adverts. We also describe how we can collect statistics that this platform would offer about advert usage. In order to demonstrate the usage of these adverts, we then discuss the design of \textit{Your4.tv}, a personalised TV channel, which will utilize a recommender system to select programmes that the viewer will want to watch.
 
 \begin{landscape}
 \begin{figure}[th]
@@ -16,7 +16,7 @@ We'll start by discussing how adverts will be targeted through \textit{campaigns
 \subsection{Targeting adverts}
 	\label{sec:design_adverts}
 
-	In [cite] it is discussed that adverts that are relevant to users are more likely to be engaging to a viewer and in \citet{yahoo-intrusive-advertising} is shown to influence user experience. Furthermore, our prestudy (Section~\ref{sec:prestudy}) revealed that x\% [fixme] of participants would pay more attention to adverts that are relevant to them. The use of granular targeting would allow advertisers to specify very specific target markets, based on demographics, browsing habits and contextual information. As shown in [cite], adverts targeted specifically towards individuals are, in general, more relevant to that individuals personal interests.
+	In \citet{nettelhorst2012effects}[does it? discuss in background] it is discussed that adverts that are relevant to users are more likely to be engaging to a viewer and in \citet{yahoo-intrusive-advertising} is shown to influence user experience. Furthermore, our prestudy (Section~\ref{sec:prestudy}) revealed that x\% [fixme] of participants would pay more attention to adverts that are relevant to them. The use of granular targeting would allow advertisers to specify very specific target markets, based on demographics, browsing habits and contextual information. As shown in [cite], adverts targeted specifically towards individuals are, in general, more relevant to that individuals personal interests.
 
 	The usage of internet-connected devices allows the capturing of information about a user, allowing this granular targeting. In the design of our advertising platform, we take the notion of an advert campaign, as used by [cite] in [some system], and allow an advert to be targeted towards people based on personal information (such as age, gender and occupation), usage data (such as viewing history) and contextual information (such as time of day and what programme they are watching).
 
@@ -24,9 +24,9 @@ We'll start by discussing how adverts will be targeted through \textit{campaigns
 
 	\subsubsection{Skipping adverts}
 
-	[cite] discusses the use of skip functionality in adverts in [system]. Users were able to skip adverts that they did not enjoy, such that they would be presented with a different advert for the remainder of the advert break. x\% of users were satisfied that by skipping adverts, they would be more likely to be presented with adverts that were of interest to them. Furthermore, our prestudy revealed that x\% [fixme] of individuals felt that skip functionality would influence the attention they would pay to adverts. 
+	[cite] discusses the use of skip functionality in adverts in [system]. Users were able to skip adverts that they did not enjoy, such that they would be presented with a different advert for the remainder of the advert break. x\% of users were satisfied that by skipping adverts, they would be more likely to be presented with adverts that were of interest to them. Furthermore, our prestudy revealed that x\% [fixme] of individuals felt that skip functionality would influence the attention they would pay to adverts.
 
-	From this, we wish to include skip functionality as part of our design: a user may skip an advert in order to be presented with a different advert, and may do so until the advert break has finished. In order to expand on this, we will ask users \textit{why} they chose to skip an advert, presenting options much like Facebook advert skip options as discussed in Section~\ref{subsection:backgroundStats}. This will allow advertisers to collect information on \textit{why} individuals skip adverts and allow users to effectively block adverts from being shown again. 
+	From this, we wish to include skip functionality as part of our design: a user may skip an advert in order to be presented with a different advert, and may do so until the advert break has finished. In order to expand on this, we will ask users \textit{why} they chose to skip an advert, presenting options much like Facebook advert skip options as discussed in Section~\ref{subsection:backgroundStats}. This will allow advertisers to collect information on \textit{why} individuals skip adverts and allow users to effectively block adverts from being shown again.
 
 	\subsubsection{Advert campaigns}
 
@@ -94,11 +94,11 @@ Which stems from the algorithm: A campaign is picked from $\mathbb{C}$ with a pr
 
 	The proposed information used for advert targeting, as described in Section~\ref{sec:design_adverts}, includes contextual information, such as what programme a user is watching, and a viewers usage history, such as programmes they've watched in the past. In order to provide this information, we wish to use the advert platform on top of a TV streaming services. We devised a personalised TV streaming services for this purpose, which would ensure that a user is watching TV programmes that they are interested in them. If programmes that are shown to a user are of interest to them, then adverts shown to them should cater more to their interest.
 
-	At the centre of this personalised TV channel is a recommender system which learns from a user's preferences towards particular programmes and subsequently recommends programmes based on their interests. The programmes that would be available to this recommender system would be any programmes that have been streamed on Channel~4 (or it's sister channels -- see Section~\ref{backgroundChannel4}). 
+	At the centre of this personalised TV channel is a recommender system which learns from a user's preferences towards particular programmes and subsequently recommends programmes based on their interests. The programmes that would be available to this recommender system would be any programmes that have been streamed on Channel~4 (or it's sister channels -- see Section~\ref{backgroundChannel4}).
 
 	\subsubsection{Programme recommendation}
 
-		A user who accesses this system would be presented with a TV channel populated with a list of programmes as recommended by a programme recommendation system.  This system recommends programmes specifically, and is separate from the targeted advert retriever (described in Section~\ref{sec:design_adverts}). 
+		A user who accesses this system would be presented with a TV channel populated with a list of programmes as recommended by a programme recommendation system.  This system recommends programmes specifically, and is separate from the targeted advert retriever (described in Section~\ref{sec:design_adverts}).
 
 		At an abstract level, each programme is given a vector $\mathbf{p}$, which describes what the programme is like. The programme vector $\mathbf{p}$ lies within the programme space $\mathcal{P}$, and is calculated from a vector of programme information $\mathbf{i}$ using the function $v_p$ ($\mathbf{p} = v_p(\mathbf{i})$). The concrete implementation of this used in \textit{Your4.tv} is that $\mathcal{P}$ is 19-dimensional, where each dimension represents one of the genres:
 
@@ -108,18 +108,18 @@ Which stems from the algorithm: A campaign is picked from $\mathbb{C}$ with a pr
 					Action and Adventure & Animation & Children & Comedy & Documentary \\
 					Drama & Game Show & Home and Garden & Mini-Series & News \\
 					Reality & Science-Fiction & Fantasy & Soap & Special Interest \\
-					Sport & Talk Show & Western & Unclassified & 
-				\end{tabular} 
+					Sport & Talk Show & Western & Unclassified &
+				\end{tabular}
 			}}
 		\end{center}
-		
+
 
 		This is the full set of allowable genres on The Tvdb\footnote{TheTVDB -- \footurl{http://thetvdb.com}} plus `Unclassified', which is reserved for programmes which $v_p$ cannot assign an appropriate vector. To map a programme into this space, $v_p$ uses the supplied programme name to query the Tvdb API\footnote{TheTVDB Programmers API -- \footurl{http://thetvdb.com/wiki/index.php/Programmers\_API}} for a programme's genres, and returns a binary vector of genre memberships (for each element: 1 if the programme belongs in genre; 0 otherwise). As an example, the programme `Grand Designs' has genres \emph{Documentary}, \emph{Home and Garden} and \emph{Reality}, so would be assigned the vector:
 		$$
 		\left[0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0\right]^T
 		$$
 
-		So that a user may be recommended programmes, each user is given a vector, $\mathbf{u}$, also within the space $\mathcal{P}$, which represents the user's ideal programme. This user vector is initialised with the function $v_u$, which takes a vector of a user's demographic information, $\mathbf{d}$, and returns the user vector, $\mathbf{u}$ ($\mathbf{u} = v_u(\mathbf{d})$). The actual demographics in $\mathbf{d}$ are constrained by the target audience, the training data available and the user data available, and as a result only gender is considered ($\mathbf{d} \in \left\{{ \left[ 0\right] ,\left[ 1\right] }\right\} $). The function $v_u$ is learned using a set of training data containing mappings between users, their demographics and shows they enjoy. 
+		So that a user may be recommended programmes, each user is given a vector, $\mathbf{u}$, also within the space $\mathcal{P}$, which represents the user's ideal programme. This user vector is initialised with the function $v_u$, which takes a vector of a user's demographic information, $\mathbf{d}$, and returns the user vector, $\mathbf{u}$ ($\mathbf{u} = v_u(\mathbf{d})$). The actual demographics in $\mathbf{d}$ are constrained by the target audience, the training data available and the user data available, and as a result only gender is considered ($\mathbf{d} \in \left\{{ \left[ 0\right] ,\left[ 1\right] }\right\} $). The function $v_u$ is learned using a set of training data containing mappings between users, their demographics and shows they enjoy.
 
 		While a user uses \textit{Your4.tv}, their actions influence their user vector. Upon giving a programme a rating, $\mathbf{u}$ is moved either towards or away from $\mathbf{p}$ by an amount which depends upon the magnitude of the rating, the initial distance between $\mathbf{u}$ and $\mathbf{p}$, and the learning rate of the recommender which may be tweaked or made inversely proportional to the number of ratings made by the user. While an adaptive learning rate will result in a simulated-annealing type search in the programme space, a constant learning rate will continue adapting recommendations to the user's current mood, which should not be assumed to be static. The exact change to $\mathbf{u}$, where $\mathbf{u}_{i}$ is the $i^{th}$ component of vector $\mathbf{u}$, $\mathbf{u}'$ is the new user vector, $0 \leq L \leq 1$ is the learning rate and $-1 \leq r \leq 1$ is the rating given is given by:
 		% Can use dcases in mathtools to make the fractions in the conditional more readable (bigger).

@@ -6,7 +6,7 @@
 	/**** CHANGE THE FOLLOWING BEFORE BEGINNING A STUDY ****/
 
 	// 50% of participants should have this as 0, and the remaining as 1
-	var firstRound = 0; // 0 or 1
+	var firstRound = 1; // 0 or 1
 
 	// A third should have this as 0, a third as 1 and a third as 2.
 	var timeMode = 0; // 0, 1, or 2
