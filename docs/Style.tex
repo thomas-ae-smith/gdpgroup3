@@ -7,6 +7,7 @@
 
 % Clickable references, glossary, footnotes etc.
 \usepackage[colorlinks=false,pdfborder={0 0 0}]{hyperref}
+\usepackage[flushmargin,hang,multiple,ragged]{footmisc} % nicer footnotes - ragged right
 
 % Bibliography
 \usepackage[authoryear,sort&compress]{natbib}
@@ -23,8 +24,10 @@
 
 % You can footnote URLs with this utility command.
 \usepackage{url}
+\usepackage{breakurl}
+\usepackage[normalem]{ulem}
 \newcommand{\link}[2]{{#1}\footnote{{#1} - \footurl{#2} }}
-\newcommand{\footurl}[1]{\color{urlcolor}{\underline{\url{#1}}}}
+\newcommand{\footurl}[1]{\color{urlcolor}{\textit{\url{#1}}}\color{black}}
 
 % Cool figure captions. Must go before subfig due to clash.
 \usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption} 
