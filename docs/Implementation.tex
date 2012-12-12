@@ -5,6 +5,85 @@ The proposed service consists of several aspects: A interface for tablet compute
 In the following section, the technical details of the implemented system, \textit{Your4.tv}, will be discussed. This includes the overall systems architecture, database design, and the languages and tools used during the development process.
 
 \subsection{Requirements Elicitation}
+In order to ensure the completion of the project in the limited time available the requirements were subdivided using the MoSCoW system developed as part of \citet{clegg1994case}.
+
+\subsubsection{Must Have}
+	\paragraph{Functional}
+		\begin{enumerate}
+			\item{A user must be able to create a personal account for use with the system.}
+			\item{A user must be able to create an account connected to their Facebook profile.}
+			\item{When signing up a user must agree to provide Postcode, email, date of birth and occupational demographics information.}
+			\item{The user must not need to make any decisions before being shown a stream.}
+			\item{The scheduling algorithm for programmes must never require user interaction.}
+			\item{The scheduling algorithm must never choose a programme which has already started.}
+			\item{Users must be able to log out at any time.}
+			\item{Users must be able to view the generated playlist (EPG Information).}
+			\item{The user should be able to express why they skipped an advert.}
+			\item{The user should be able to skip an advert.}
+			\item{If a user skips an advert, the advertiser must be able to see the user's feedback.}
+			\item{Users must be able to rate a show between 5 discrete levels from one to five stars.}
+			\item{The system must replace all adverts, within all detected advert breaks.}
+			\item{The replaced adverts a user is shown must be taken from a set which matches both the user's demographic and the advertiser's chosen targeting attributes.}
+			\item{Advertisers must be able to create a new advertising campaign.}
+			\item{Advertisers must be able to provide a meaningful name for each of their campaigns.}
+			\item{Advertisers must be able to create a new advert.}
+			\item{Advertisers must be able to give a meaningful name to each of their adverts.}
+			\item{Advertisers must be able to upload a video to be the displayed base content of a specific one of their adverts.}
+			\item{Advertisers must be able to upload a video to replace the displayed base content of a specific one of their adverts.}
+			\item{Advertisers must be able to edit an advertising campaign.}
+			\item{Advertisers must be able to delete an advertising campaign.}
+			\item{Advertisers must be able to optionally add interactive HTML elements, Javascript and CSS to an overlay on each of their adverts.}
+			\item{Advertisers must be able to modify the content of the interactive overlay on each of their adverts.}
+			\item{Advertisers must be able to remove all elements in the overlay.}
+			\item{Advertisers must be able to see a preview of each advert with the interactive layer.}
+			\item{Advertisers must be able to see statistics about the location and actions of the viewers of each of their adverts.}
+			\item{The user must be able to optionally interact with any interactive elements in an advert.}
+			\item{Advertisers must be able to associate every advert with zero or more advertising campaigns.}
+			\item{Advertisers must be able to express their preference for the viewership of each advertising campaign in terms of geographic areas, genders, age range, occupations, times, media type (recorded or live), programme genre and programme context (exact programmes).}
+		\end{enumerate}
+	\paragraph{Non-functional}
+		\begin{enumerate}
+			\item{All client side system features must work on the iPad 2.}
+			\item{Interaction must not slow down or otherwise adversely affect the streams.}
+			\item{Users must never be able to return to the stream before the advert break is over.}
+			\item{There must be no maximum number of adverts in a campaign}
+		\end{enumerate}
+\subsubsection{Should Have}
+	\paragraph{Functional}
+		\begin{enumerate}
+			\item{}		
+		\end{enumerate}
+	\paragraph{Non-functional}
+		\begin{enumerate}
+			\item{A user must be shown a stream within 10 seconds of requesting it.}
+		\end{enumerate}
+\subsubsection{Could Have}
+	\paragraph{Functional}
+		\begin{enumerate}
+			\item{The system could allow advertisers to upload static images as adverts to be shown in shorter advert gaps.}
+			\item{For static image adverts the system could allow the advertiser to specify a minimum time for the advert to be displayed.}
+			\item{The system could allow audio only adverts.}
+			\item{The system could allow the additional targeting parameter focussed to allow advertisers to request audio centric adverts to be shown when a user defocusses the app.}
+			\item{The system could allow show ratings in a continuous space rather than a discrete space.}
+			\item{The system could allow users to provide batches of ratings to allow interested users to improve the accuracy of the system's recommendations.}
+			\item{The system could allow users to generate custom play lists.}
+			\item{The system could allow users to add a specific show to their playlist.}
+			\item{The system }
+		\end{enumerate}
+	\paragraph{Non-functional}
+		\begin{enumerate}
+			\item{The service should gracefully degrade given an insufficient Internet connection speed to use lower definition}
+		\end{enumerate}
+\subsubsection{Wont Have}
+\paragraph{Functional}
+		\begin{enumerate}
+			\item{The system should allow buffering of the live stream for later 1-time off-line playback.}
+		\end{enumerate}
+\paragraph{Non-functional}
+		\begin{enumerate}
+			\item{The user should not need an active Internet connection}
+			\item{The system architecture should allow node loss with no service degradation}
+		\end{enumerate}
 
 \subsection{Systems architecture and description}
 
