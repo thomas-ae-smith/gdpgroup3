@@ -1,6 +1,12 @@
 \section{Evaluation}
 	To evaluate the research and the platform that demonstrates this work, the limitations alongside future changes and additions will be discussed, ending in an evaluation of the work completed in the conclusion.
 	\subsection{Limitations}
+
+	The results regarding user time perception and information recall measurements were unexpected. While the hypothesis of heightened user engagement during interactive advertisements is not supported by the evidence gathered during the user study, the significance of the data gathered is not great enough to draw any conclusions, and further study is required. One important point to note is that the adverts in the interactive set were taken from an existing set of adverts and had overlays applied to them; that is, the adverts were not designed to be interactive. As a result, the information from the advertisement video combined with the information in the interactive overlay may have led to information overload, known to negatively impact information recall \cite{divided_attention}, as was observed in the study.
+
+	EXPAND ON \cite{divided_attention}.
+	OKAY.
+
 	\subsection{Further work}
 		\subsubsection{Programme recommendation}
 		\label{sec:further_work_recommender}
@@ -46,6 +52,8 @@
 	Currently, MOS records (as described in section~\ref{sec:lamp-adverts}) are used to determine the location of adverts during a programme. These are inserted in the database up to one minute and eight seconds before an advert break starts. However, these records only offer up to 1 second accuracy.
 
 	In order to replace adverts seamlessly, this accuracy must be significantly increased and hence it is useful to consider the hardware based approach taken by Inqb8r's Project4. In digital encoding systems, GPI pulses are electrical signals often used to trigger the next stage in a sequence of precisely timed events. Such electrical signals are used in the original physical cable source of television streams. Project4 receives the planned advert break information on a server with a GPI interface, precisely 8 seconds before an ad break begins. When this pulse is received it is used to insert markers into the stream with millisecond accurate precision. These markers are then used to splice adverts into the break (using a proprietary device known as the PV1000). This can be seen in \ref{Project4EventFlow}.
+
+	%REFERENCE \citep{SCTE104} FOR GPI
 
 	By utilising the GPI pulse to notify the media server of ad breaks in the live stream, recording could be temporarily paused until the ad break is over. This would require high precision, and so a near-constant network latency or physical proximity of the servers to the GPI pulse device would be preferable. The resulting media files would not contain any ad breaks. As a result, advert breaks in recorded programmes would not contain any small advert fragments from the original stream.
 

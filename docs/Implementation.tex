@@ -4,6 +4,87 @@ The proposed service consists of several aspects: A interface for tablet compute
 
 In the following section, the technical details of the implemented system, \textit{Your4.tv}, will be discussed. This includes the overall systems architecture, database design, and the languages and tools used during the development process.
 
+\subsection{Requirements Elicitation}
+In order to ensure the completion of the project in the limited time available the requirements were subdivided using the MoSCoW system developed as part of \citet{clegg1994case}.
+
+\subsubsection{Must Have}
+	\paragraph{Functional}
+		\begin{enumerate}
+			\item{A user must be able to create a personal account for use with the system.}
+			\item{A user must be able to create an account connected to their Facebook profile.}
+			\item{When signing up a user must agree to provide Postcode, email, date of birth and occupational demographics information.}
+			\item{The user must not need to make any decisions before being shown a stream.}
+			\item{The scheduling algorithm for programmes must never require user interaction.}
+			\item{The scheduling algorithm must never choose a programme which has already started.}
+			\item{Users must be able to log out at any time.}
+			\item{Users must be able to view the generated playlist (EPG Information).}
+			\item{The user should be able to express why they skipped an advert.}
+			\item{The user should be able to skip an advert.}
+			\item{If a user skips an advert, the advertiser must be able to see the user's feedback.}
+			\item{Users must be able to rate a show between 5 discrete levels from one to five stars.}
+			\item{The system must replace all adverts, within all detected advert breaks.}
+			\item{The replaced adverts a user is shown must be taken from a set which matches both the user's demographic and the advertiser's chosen targeting attributes.}
+			\item{Advertisers must be able to create a new advertising campaign.}
+			\item{Advertisers must be able to provide a meaningful name for each of their campaigns.}
+			\item{Advertisers must be able to create a new advert.}
+			\item{Advertisers must be able to give a meaningful name to each of their adverts.}
+			\item{Advertisers must be able to upload a video to be the displayed base content of a specific one of their adverts.}
+			\item{Advertisers must be able to upload a video to replace the displayed base content of a specific one of their adverts.}
+			\item{Advertisers must be able to edit an advertising campaign.}
+			\item{Advertisers must be able to delete an advertising campaign.}
+			\item{Advertisers must be able to optionally add interactive HTML elements, Javascript and CSS to an overlay on each of their adverts.}
+			\item{Advertisers must be able to modify the content of the interactive overlay on each of their adverts.}
+			\item{Advertisers must be able to remove all elements in the overlay.}
+			\item{Advertisers must be able to see a preview of each advert with the interactive layer.}
+			\item{Advertisers must be able to see statistics about the location and actions of the viewers of each of their adverts.}
+			\item{The user must be able to optionally interact with any interactive elements in an advert.}
+			\item{Advertisers must be able to associate every advert with zero or more advertising campaigns.}
+			\item{Advertisers must be able to express their preference for the viewership of each advertising campaign in terms of geographic areas, genders, age range, occupations, times, media type (recorded or live), programme genre and programme context (exact programmes).}
+		\end{enumerate}
+	\paragraph{Non-functional}
+		\begin{enumerate}
+			\item{All client side system features must work on the iPad 2.}
+			\item{Interaction must not slow down or otherwise adversely affect the streams.}
+			\item{Users must never be able to return to the stream before the advert break is over.}
+			\item{There must be no maximum number of adverts in a campaign}
+		\end{enumerate}
+\subsubsection{Should Have}
+	\paragraph{Functional}
+		\begin{enumerate}
+			\item{}		
+		\end{enumerate}
+	\paragraph{Non-functional}
+		\begin{enumerate}
+			\item{A user must be shown a stream within 10 seconds of requesting it.}
+		\end{enumerate}
+\subsubsection{Could Have}
+	\paragraph{Functional}
+		\begin{enumerate}
+			\item{The system could allow advertisers to upload static images as adverts to be shown in shorter advert gaps.}
+			\item{For static image adverts the system could allow the advertiser to specify a minimum time for the advert to be displayed.}
+			\item{The system could allow audio only adverts.}
+			\item{The system could allow the additional targeting parameter focussed to allow advertisers to request audio centric adverts to be shown when a user defocusses the app.}
+			\item{The system could allow show ratings in a continuous space rather than a discrete space.}
+			\item{The system could allow users to provide batches of ratings to allow interested users to improve the accuracy of the system's recommendations.}
+			\item{The system could allow users to generate custom play lists.}
+			\item{The system could allow users to add a specific show to their playlist.}
+			\item{The system 
+		\end{enumerate}
+	\paragraph{Non-functional}
+		\begin{enumerate}
+			\item{The service should gracefully degrade given an insufficient Internet connection speed to use lower definition}
+		\end{enumerate}
+\subsubsection{Wont Have}
+\paragraph{Functional}
+		\begin{enumerate}
+			\item{The system should allow buffering of the live stream for later 1-time off-line playback.}
+		\end{enumerate}
+\paragraph{Non-functional}
+		\begin{enumerate}
+			\item{The user should not need an active Internet connection}
+			\item{The system architecture should allow node loss with no service degradation}
+		\end{enumerate}
+
 \subsection{Systems architecture and description}
 
 \begin{figure}[H]
@@ -23,7 +104,7 @@ Figure~\ref{fig:your4-architecture} shows the overall architecture of the Your4 
 
 \subsubsection{Client}
 
-The client receives all HTML content from the LAMP server upon the first visit of your4.tv. From this point onwards, all communication between the client and LAMP server contains only models and collections (e.g. a programme and all of its attributes) on the LAMP servers REST interface in JSON format. The client side application is then responsible for parsing this JSON response and manipulating the user interface using local templates (embedded in the HTML upon the initial page load) as appropriate. Due to the asynchronicity this approach brings, a significant UI speed increase can be observed against traditional methods whereby the web browser acts as a ``thin client'', by simply parsing and rendering HTML responses pre-generated server side.
+The client receives all HTML content from the LAMP server upon the first visit of your4.tv. From this point onwards, all communication between the client and LAMP server contains only models and collections (e.g. a programme and all of its attributes) on the LAMP servers REST interface in JSON format. The client side application is then responsible for parsing this JSON response and manipulating the user interface using local templates (embedded in the HTML upon the initial page load) as appropriate. Due to the asynchronism this approach brings, a significant UI speed increase can be observed against traditional methods whereby the web browser acts as a ``thin client'', by simply parsing and rendering HTML responses pre-generated server side.
 
 Using the POST, GET, PUT and DELETE methods in HTTP requests to the REST endpoint maps to the equivalent CRUD (create, read, update and delete) operations on the object concerned. This methodology creates a simple self-documenting API. In a similar exploitation of HTTP philosophies, HTTP status codes are used to identify the status of a request. For example, 200 indicates success and 400 indicates the request was invalid (failed server side validation). The client can then perform the appropriate callback function to manipulate the interface.
 
@@ -51,7 +132,7 @@ Once rendering is complete, the client requests a number of resources from the R
 	\item The current LAMP server timestamp. This is used in recommendation requests.
 	\item A request is made for the best recommended live broadcast. This recommendation is based on the currently playing program on each channel. Live broadcasts are given priority over recorded programmes as this is close to the ``personal TV channel'' ideal. The current timestamp and user ID is sent with this request in order for the server to determine what suitable programmes are upcoming. If a 200 response is received, the body will include the channel ID. If a 404 is received, no appropriate live broadcast recommendation is available. The client will then request a recorded programme recommendation. In both cases, the response also includes the programme ID from the EPG and the location of ad breaks.
 	\item With the programme ID, a request is made to retrieve the programme data such as name, description and length.
-	\item Between each recorded programme a 2 minute ad break is artificially included. Up to 5 minutes is allowed between live broadcasts (depending on previous programme end and the start of the live broadcast). The system is also aware of ad breaks in programmes within the playlist. For each ad break, a request is made containing: the user ID; programme ID; the amount of time in the ad break; if the ad break is between a live or recorded programme and finally, a list of advert ID's which have already been listed in the playlist. Using this data, the LAMP server can select adverts that match the users demographics and the currently playing programme. This step is repeated multiple times, reducing the amount of time left unallocated in the request each time, until all ad breaks are full.
+	\item Between each recorded programme a 2 minute ad break is artificially included. Up to 5 minutes is allowed between live broadcasts (depending on previous programme end and the start of the live broadcast). The system is also aware of ad breaks in programmes within the playlist. For each ad break, a request is made containing: the user ID; programme ID; the amount of time in the ad break; if the ad break is between a live or recorded programme and finally, a list of advert IDs which have already been listed in the playlist. Using this data, the LAMP server can select adverts that match the users demographics and the currently playing programme. This step is repeated multiple times, reducing the amount of time left unallocated in the request each time, until all ad breaks are full.
 	\item Steps 3 to 5 are repeated until the minimum duration and size of playlist are both satisfied. Upon each repeat, the timestamp sent with the request is set to the end time of the previously recommended programme or advert. This informs the recommender as to the point in time it should check live broadcasts for suitable programmes.
 	\item The playlist is rendered on screen.
 	\item The video player is instructed to play the first stream URL in the playlist. Each time an item in the playlist ends, a signal is triggered which causes the player to play the next stream. As well as this, another recommendation is requested and added to the playlist.
@@ -67,7 +148,7 @@ The LAMP server's primary responsibility is to expose all required functionality
 	\item A HTTP request is retrieved by the web server.
 	\item The request is passed to the REST API where the appropriate function is called dependant on the request URI and HTTP method.
 	\item The object in the request body is passed into the Object Relational Mapper.
-	\item The ORM builds the approproate SQL query and passes it to the DBMS.
+	\item The ORM builds the appropriate SQL query and passes it to the DBMS.
 	\item The DBMS modifies or retrieves from the data store.
 	\item The application logic returns the result as a HTTP response containing a JSON body.
 \end{enumerate}
@@ -80,7 +161,7 @@ A recommender function is also called which retrieves the user's initial vector.
 
 \paragraph{Programme recommendations}
 
-Daily, EPG data is imported from the Atlas API\footnote{\footurl{http://atlas.metabroadcast.com}} into the Your4 database. This contains unique programme ID's, descriptions, start and end times, episode numbers, and other programme data.
+Daily, EPG data is imported from the Atlas API\footnote{\footurl{http://atlas.metabroadcast.com}} into the Your4 database. This contains unique programme IDs, descriptions, start and end times, episode numbers, and other programme data.
 
 Upon first initialisation of the recommender, a CSV file containing training data from the GroupLens research group\footnote{\footurl{http://www.grouplens.org/node/73}} is processed. This gives the recommender an initial estimate as to what type of users prefer what genres. Upon execution of the aforementioned EPG cron job, each programme is passed to a recommender function to retrieve the initial programme vector to store against it. This function calls the genre API, TVDB\footnote{\footurl{http://thetvdb.com}}, to identify this vector. The vector is a 1-dimensional matrix whereby each position represents a predefined genre. A ``1'' indicates the programme belongs to a genre.
 
@@ -102,11 +183,11 @@ Views, clicks and skips are recorded by the client and feedback is sent to the R
 
 Video streams are delivered to the client via a Wowza media server\footnote{\footurl{http://www.wowza.com/}}, hosted on a Windows Server 2008 based machine. This machine is provided by Inqb8r, who have extensive experience with Wowza based systems.
 
-The Wowza server is configured to act as a repeater, re-broadcasting the streams provided by Inqb8r. This server is based on two distinct applications. The first application is responsible for retrieving the source live streams and relaying these to the client. The second is responsible for streaming recorded programmes and adverts from the video store to the client (the standard Wowza extension ``vod'' allows any file of a valid format in a given directory to be streamed). Both applications use a ``packetizer'' which is responsible for encoding the raw input streams to the output requested (HLS for Apple based devices). The packetizer is chosen based on this request, for example, the ``cupertino'' packetizer is used to encode Apple HLS streams.
+The Wowza server is configured to act as a repeater, re-broadcasting the streams provided by Inqb8r. This server is based on two distinct applications. The first application is a custom Wowza module responsible for retrieving the source live streams and relaying these to the client. The second is responsible for streaming recorded programmes and adverts from the video store to the client (the standard Wowza extension ``vod'' allows any file of a valid format in a given directory to be streamed). Both applications use a ``packetizer'' which is responsible for encoding the raw input streams to the output requested (HLS for Apple based devices). The packetizer is chosen based on this request, for example, the ``cupertino'' packetizer is used to encode Apple HLS streams distinguished by the m3u8 file extension in the URL.
 
-The live application is also responsible for recording programmes. The LAMP server's EPG REST interface is continuously polled for any shows due to start in the next minute to retrieve the start and end times of programmes. Using this data, the application records each programme on each channel and stores the resulting media in the video store. This media is stored with a filename which matches that of the unique ID in the EPG. This allows the client to implicitly build the video URL to request when a recorded programme recommendation is made. When a recording starts, the application updates the ``recordState'' flag of the programme via the REST interface. This flag is updated again when recording is completed. Using the state of this flag, the recommender is able to filter out programmes which have not yet been recorded during recorded programme recommendation. The recordings application can then stream these media files to the client when requested.
+The custom module is also responsible for recording programmes. The LAMP server's EPG REST interface is continuously polled for any shows due to start in the next minute to retrieve the start and end times of programmes. Using this data, the application records each programme on each channel and stores the resulting media in the video store. This media is stored with a file name which matches that of the unique ID in the EPG. This allows the client to implicitly build the video URL to request when a recorded programme recommendation is made. When a recording starts, the application updates the ``recordState'' flag of the programme via the REST interface. This flag is updated again when recording is completed. Using the state of this flag, the recommender is able to filter out programmes which have not yet been recorded during recorded programme recommendation. The recordings application can then stream these media files to the client when requested.
 
-Recording is processed by the Wowza ``LiveStreamRecord'' module. This module imposes a strict limit of only one simultaneous recording per stream. When a new programme starts any current recording on the channel is stopped, ensuring this enforced mutual exclusion. The end result is a set of video files for each programme stored in the video store.
+Recording requests are processed by the Wowza ``LiveStreamRecord'' module in terms of actions on channels rather than explicit recordings. This means that the module imposes a strict limit of only one simultaneous recording per stream. Due to this restriction, whenever a new programme starts any current recording on the channel is stopped before the new recording is started, ensuring mutual exclusion. The end result is a set of video files for each programme stored in the video store.
 
 As every programme is recorded, scalability in terms of storage is an issue. For this reason, recorded video's are removed after a configurable amount of time. First, the recording is removed from further recommendations by setting the ``recordState'' flag of the programme to ``deleted'' via the REST interface. After an amount of time equal to the length of the video has passed, the video file itself is removed. This allows any existing viewers of the recording to complete their viewing of the programme.
 
@@ -130,7 +211,7 @@ The implementation consists of a number of subsystems using different programmin
 Where possible, it is good practice to use popular design strategies and patterns as templates to solve common problems in application development. A number of such strategies were used during the implementation stage, the most prevalent of which are documented here:
 
 \begin{description}
-	\item[MV*] By seperating models and views using the client-side Backbone.js library, the client is easily able to retrieve objects (models) from the REST interface and attribute them to a view. The view can then use the attributes of the model to render the appropriate HTML in the DOM. This view can also handle user manipulation and edit the models attributes. Models can be swapped in and out of a view easily, and the result re-rendered on screen.
+	\item[MV*] By separating models and views using the client-side Backbone.js library, the client is easily able to retrieve objects (models) from the REST interface and attribute them to a view. The view can then use the attributes of the model to render the appropriate HTML in the DOM. This view can also handle user manipulation and edit the models attributes. Models can be swapped in and out of a view easily, and the result re-rendered on screen.
 	\item[Front controller] By using a client-side URL router, navigation is controlled by a single object. This allows for easy tracking and manipulation of the current application navigation state. This router then calls the appropriate function relevant to the currently visited route.
 	\item[Observer pattern] By allowing objects to subscribe to and trigger events, signals can be passed to an object or set of objects without tight coupling. For example, a signal is sent to the player view when an item in the playlist is due to start. As well as the player view, the views representing the playlist are also subscribed to the event, so they can shift the ticker (representing time elapsed on the playlist) to the start of the next programme.
 	\item[Facade pattern] The LAMP REST interface maps HTTP methods to the equivalent CRUD operations on the object contained within the request body. By providing this self-documenting ``facade'', the inner complexities and domain-specific operations are hidden from the external API.
@@ -157,7 +238,7 @@ A number of libraries and technologies were used during the implementation stage
 			\item[MySQL] Relational DBMS for primary storage.
 			\item[Slim] PHP framework used to implement REST interface and application logic.
 			\item[RedBean] PHP Object Relational Mapper for easy database manipulation.
-			\item[Facebook] Used for validating facebook logins.
+			\item[Facebook] Used for validating Facebook logins.
 			\item[TVDB] Used by the recommender to retrieve programme genres.
 			\item[NumPy] Used by the recommender for manipulation of matrices.
 		\end{description}
@@ -171,7 +252,7 @@ A number of libraries and technologies were used during the implementation stage
 
 \subsubsection{Code statistics}
 
-Table~\ref{tab:metrics} shows the number of lines broken down by language throughough the implementation.
+Table~\ref{tab:metrics} shows the number of lines broken down by language throughout the implementation.
 \nopagebreak
 \begin{table}[H]
 	\centering
