@@ -159,7 +159,7 @@ Which stems from the algorithm: A campaign is picked from $\mathbb{C}$ with a pr
 			\end{cases}
 		$$
 
-		Genres from Tvdb were chosen as a basis for $\mathcal{P}$, as this solved the problem of finding training data for the learned function $v_u$. The MovieLens 1M dataset\footnote{\url{http://www.grouplens.org/node/73}} was downloaded, and the movies mapped to their corresponding Tvdb genres, giving a large dataset of user demographics, movie ratings, and movie vectors within the programme space $\mathcal{P}$ which serve as suitable training data. To map new programmes into the $\mathcal{P}$, $v_p$ looks up the Tvdb genres for a given programme, using these to construct $\mathbf{p}$.
+		Genres from Tvdb were chosen as a basis for $\mathcal{P}$, as this solved the problem of finding training data for the learned function $v_u$. The MovieLens 1M dataset\footnote{The MovieLens 1M dataset -- \footurl{http://www.grouplens.org/node/73}} was downloaded, and the movies mapped to their corresponding Tvdb genres, giving a large dataset of user demographics, movie ratings, and movie vectors within the programme space $\mathcal{P}$ which serve as suitable training data. To map new programmes into the $\mathcal{P}$, $v_p$ looks up the Tvdb genres for a given programme, using these to construct $\mathbf{p}$.
 
 			\begin{figure}[h!]
 				\begin{center}
