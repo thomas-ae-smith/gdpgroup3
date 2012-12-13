@@ -148,7 +148,7 @@ Using the POST, GET, PUT and DELETE methods in HTTP requests to the REST endpoin
 
 \paragraph{Authentication}
 
-The concept of a ``user'' is key to the system since crucial demographics data and matrices defining recommender state are stored against each user. The client authenticates a user by either local login or using the Facebook login API\footnote{\footurl{https://developers.facebook.com/docs/concepts/login}}. Upon page load, the client attempts to retrieve ``/api/users/me'' from the server to discover if an active session is available. If so, the player layers will be rendered on screen, otherwise, the user will be routed to the login interface.
+The concept of a ``user'' is key to the system since crucial demographics data and matrices defining recommender state are stored against each user. The client authenticates a user by either local login or using the Facebook login API\footnote{Sign in with Facebook -- \footurl{https://developers.facebook.com/docs/concepts/login}}. Upon page load, the client attempts to retrieve ``/api/users/me'' from the server to discover if an active session is available. If so, the player layers will be rendered on screen, otherwise, the user will be routed to the login interface.
 
 The user can then choose to use the local login which will generate a GET request with the email and password as query parameters. If a 200 response is received, the login is considered to be successful. A user can also choose to login via Facebook. After the user accepts the Facebook permissions, a local cookie is set and a GET request is generated to ``/api/users/fb-[facebook\_id]'' where ``[facebook\_id]'' is retrieved from the Facebook API.
 
@@ -199,9 +199,9 @@ A recommender function is also called which retrieves the user's initial vector.
 
 \paragraph{Programme recommendations}
 
-Daily, EPG data is imported from the Atlas API\footnote{\footurl{http://atlas.metabroadcast.com}} into the Your4 database. This contains unique programme IDs, descriptions, start and end times, episode numbers, and other programme data.
+Daily, EPG data is imported from the Atlas API\footnote{Atlas Information -- \footurl{http://atlas.metabroadcast.com}} into the Your4 database. This contains unique programme IDs, descriptions, start and end times, episode numbers, and other programme data.
 
-Upon first initialisation of the recommender, a CSV file containing training data from the GroupLens research group\footnote{\footurl{http://www.grouplens.org/node/73}} is processed. This gives the recommender an initial estimate as to what type of users prefer what genres. Upon execution of the aforementioned EPG cron job, each programme is passed to a recommender function to retrieve the initial programme vector to store against it. This function calls the genre API, TVDB\footnote{\footurl{http://thetvdb.com}}, to identify this vector. The vector is a 1-dimensional matrix whereby each position represents a predefined genre. A ``1'' indicates the programme belongs to a genre.
+Upon first initialisation of the recommender, a CSV file containing training data from the GroupLens research group\footnote{Initial training data -- \footurl{http://www.grouplens.org/node/73}} is processed. This gives the recommender an initial estimate as to what type of users prefer what genres. Upon execution of the aforementioned EPG cron job, each programme is passed to a recommender function to retrieve the initial programme vector to store against it. This function calls the genre API, TVDB\footnote{Open TV Database -- \footurl{http://thetvdb.com}}, to identify this vector. The vector is a 1-dimensional matrix whereby each position represents a predefined genre. A ``1'' indicates the programme belongs to a genre.
 
 Upon receiving a live recommendation request, the recommender selects programmes starting within the next 5 minutes of the timestamp contained in the request (see step 3 in aforementioned playback steps). The recommender then filters out programmes the requesting user has already viewed in the past, and selects the best one according the recommender output. If no suitable live recommendation can be made, a 404 will be returned and the client will request a recorded programme. The recommender then executes a similar process to the live request, but filters programmes by those which have been recorded by the media server.
 
@@ -219,7 +219,7 @@ Views, clicks and skips are recorded by the client and feedback is sent to the R
 
 \subsubsection{Media server}
 
-Video streams are delivered to the client via a Wowza media server\footnote{\footurl{http://www.wowza.com/}}, hosted on a Windows Server 2008 based machine. This machine is provided by Inqb8r, who have extensive experience with Wowza based systems.
+Video streams are delivered to the client via a Wowza media server\footnote{Wowza Media Server -- \footurl{http://www.wowza.com/}}, hosted on a Windows Server 2008 based machine. This machine is provided by Inqb8r, who have extensive experience with Wowza based systems.
 
 The Wowza server is configured to act as a repeater, re-broadcasting the streams provided by Inqb8r. This server is based on two distinct applications. The first application is a custom Wowza module responsible for retrieving the source live streams and relaying these to the client. The second is responsible for streaming recorded programmes and adverts from the video store to the client (the standard Wowza extension ``vod'' allows any file of a valid format in a given directory to be streamed). Both applications use a ``packetizer'' which is responsible for encoding the raw input streams to the output requested (HLS for Apple based devices). The packetizer is chosen based on this request, for example, the ``cupertino'' packetizer is used to encode Apple HLS streams distinguished by the m3u8 file extension in the URL.
 
