@@ -1,10 +1,10 @@
 \section{User Study}
 	\label{sec:user_study}
-	\subsection{Overview}
-	A study was performed in which the change in user engagement was evaluated upon being presented with interactive and non-interactive advertisements. In order to accurately estimate user engagement, we measured two primary known indicators: the participants' time perception \citep{time_perception}, and attention \cite{what_is_engagement}. Time perception was recorded directly via participants' verbal responses, while attention was assessed via information recall -- shown by \citet{interactions_attention_memory} to strongly correlate with attention, and used previously also by \citet{advertising_engagement} to measure engagement.
+
+	A study was performed in which the change in user engagement was evaluated upon being presented with interactive and non-interactive advertisements. In order to accurately estimate user engagement, we measured two primary known indicators: the participants' time perception \citep{time_perception}, and attention \cite{what_is_engagement}. Time perception was recorded directly via participants' verbal responses, while attention was assessed via information recall -- shown by \citet{interactions_attention_memory} to strongly correlate with attention, and used previously also by \citet{advertising_engagement} to measure engagement. We also asked each participant to gauge which round -- interactive or non-interactive -- they found the paid most attention too, found most memorable and found most enjoyable.
 
 	\subsection{Methodology}
-	Out of a set of 119 student targeted adverts provided from Project4, 8 were given interactive html/css overlays containing responsive content likely to be typical for an interactive TV advert. To minimise the problem of a user needing to interact with an overlay for longer than length of the advert, they were designed using techniques discussed by \citet{integrated-approach-advertising}. The interactive content added is given in Table~\ref{tab:interactive_content}.
+	Out of a set of 119 student targeted adverts provided from Project4, 8 were given interactive HTML/JavaScript/CSS overlays containing responsive content likely to be typical for an interactive TV advert. To minimise the problem of a user needing to interact with an overlay for longer than the length of the advert, they were designed using techniques discussed by \citet{integrated-approach-advertising} (see Section~\ref{sec:background_interactive_tv}. The interactive content added is given in Table~\ref{tab:interactive_content}. A more thorough description of each interactive advert, including screenshots, is available in Appendix~\ref{sec:appendix_ads}.
 
 	\begin{table}[hb]
 		\centering
@@ -22,13 +22,20 @@
 			\url{thetrainline.com} & \textbf{Poll}: The user may vote on if they think train tickets are too expensive, and are shown poll results upon voting. \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Interactive content added to advertisements}
+		\caption{Interactive content added to advertisements. See Appendix~\ref{sec:appendix_ads} for more thorough descriptions of each.}
 		\label{tab:interactive_content}
 	\end{table}
 
-	Each participant in the study was shown two rounds of adverts---one interactive and one non-interactive---with half the participants being shown the interactive adverts first, and the other half shown non-interactive adverts first. The length of the rounds varied between 4, 5, and 6 minutes, and were evenly split between longer interactive rounds, longer non-interactive rounds and equal length rounds; the purpose of which was to measure differences in the participants perceived time and actual round time. 
+	Each participant in the study was shown two rounds of adverts -- one interactive and one non-interactive -- with half the participants being shown the interactive adverts first, and the other half shown non-interactive adverts first. The length of the rounds varied between 4, 5, and 6 minutes, and were evenly split between longer interactive rounds, longer non-interactive rounds and equal length rounds; the purpose of which was to measure differences in the participants perceived time and actual round time. 
 
-	The study followed a pre-prepared script, as included in Appendix~\ref{sec:appendix_interview_script}. While participants were neither encouraged nor discouraged from interacting with the overlays on the set of modified adverts, they were informed that interactions were possible in order to help ameliorate the effects of any initial learning period. As part of the study, video introductions were given for each section, as scripted in Appendix~\ref{sec:appendix_video_script}.
+	The study followed a pre-prepared script, consisting of instructions and questions, as included in Appendix~\ref{sec:appendix_interview_script}. While participants were neither encouraged nor discouraged from interacting with the overlays on the set of modified adverts, they were informed that interactions were possible in order to help ameliorate the effects of any initial learning period. As part of the study, video introductions (as shown in Figure~\ref{fig:insuctional_vid}) were given for each section, as scripted in Appendix~\ref{sec:appendix_video_script}.
+
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{images/instruction_scr.png}
+		\caption{Screenshot of the instructional video, with subtitles, presented to participants at the beginning of the study. Full transcript can be found in Appendix~\ref{sec:appendix_video_script}}
+		\label{fig:insuctional_vid}
+	\end{figure}
 
 	\subsection{Results}
 
@@ -39,7 +46,7 @@
 	% Time perception
 	For question 2b, participants were asked ``\textit{Please estimate how much time more or less you were watching in the second session?}''. Figure~\ref{fig:time_perception} displays the recorded responses, showing the amount that users over/underestimated the time spent watching each round of advertisements, and an extrapolated normal distribution.
 
-	\begin{figure}[!h]
+	\begin{figure}[!ht]
 		\centering
 		\begin{subfigure}[h]{0.49\textwidth}
 			\centering
@@ -57,18 +64,18 @@
 	Little difference in time perception between interactive and non-interactive advertisements is shown by Figure~\ref{fig:time_perception}. A Student's independent two-sample t-test performed on the time estimate data gives 0.17, showing strong support for the null hypothesis that there is no significant difference in the time perception error between interactive and non-interactive advertisements.
 
 	% Recall
-	Using information in the participants' answers, a table was constructed of adverts that were recalled by participants and whether the participants had seen the advert in the interactive round, the non-interactive round or both rounds. The recall results are given in Figure~\ref{fig:recall}, where it can be seen that participants had a better recall of adverts from the noninteractive round. 
+	Using information in the participants' answers, a table was constructed of adverts that were recalled by participants and whether the participants had seen the advert in the interactive round, the non-interactive round or both rounds. The recall results are given in Figure~\ref{fig:recall}, where it can be seen that participants had a better recall of adverts from the non-interactive round. 
 
-	\begin{figure}[!h]
+	\begin{figure}[!ht]
 		\centering
 		\includegraphics[width=\textwidth]{images/recall.pdf}
 		\caption{Average percentage of advertisements recalled depending on the version of the advert seen (interactive, non-interactive or both versions). The red error bars indicate the mean recall rate $\pm$ one standard deviation.}
 		\label{fig:recall}
 	\end{figure}
 
-	Along with taking quantitative measurements of time perception and information recall, data was also collected on how participants believed they perceived the interactive and noninteractive adverts differently. This data was collected during the interview stage from participant answers. Questions 3, 4, 5, 6, and 9 were polar (yes/no questions), and the percentage of positive results have been given in Figure~\ref{fig:yesno_results}. The significant results that can be seen from Figure~\ref{fig:yesno_results} are: participants believe that advert relevance leads to heightened attention and likelihood of being watched, and that interactivity in adverts leads to heightened enjoyment. Results which are less significant and with greater variance are: interactive adverts are paid slightly more attention, and are enjoyed marginally less than non-interactive versions.
+	Along with taking quantitative measurements of time perception and information recall, data was also collected on how participants believed they perceived the interactive and non-interactive adverts differently. This data was collected during the interview stage from participant answers. Questions 3, 4, 5, 6, and 9 were polar (yes/no questions), and the percentage of positive results have been given in Figure~\ref{fig:yesno_results}. The significant results that can be seen from Figure~\ref{fig:yesno_results} are: participants believe that advert relevance leads to heightened attention and likelihood of being watched, and that interactivity in adverts leads to heightened enjoyment. Results which are less significant and with greater variance are: interactive adverts are paid slightly more attention, and are enjoyed marginally less than non-interactive versions.
 
-	\begin{figure}[h!]
+	\begin{figure}[!ht]
 		\centering
 		\begin{subfigure}[t]{0.49\textwidth}
 			\centering
@@ -98,22 +105,34 @@
 
 	If we take engagement to be a combination of these factors using
 
-	\begin{equation}
+	$$
 	\text{engagement} = \frac{\text{attention} + \text{memorability} + \text{enjoyability}}{3}
-	\end{equation}
+	$$
 
 	Then we discover that 71\% of participants showed an improvement in engagement.
 
 
 	\subsubsection{Effect of hold iPad}
 
-	An interesting observation was that 8 out of the 18 participants held the iPad, while the remaining participant left the iPad on the table. When 
+	An interesting observation was that 8 out of the 18 participants held the iPad, while the remaining participant left the iPad on the table. When this 
 
-	\begin{figure}[!h]
+	\begin{figure}[!ht]
 		\centering
 		\includegraphics[width=\textwidth]{images/ipad_held.png}
 		\caption{Participants who held the iPad showed higher levels of interest, memorability and enjoyability in the interactive round than participant that left the iPad on the table.}
 		\label{fig:held}
 	\end{figure}
+
+	This could perhaps be the result of the iPad being more in the field of view of the individual, and appealing to more senses by the nature of holding it. Are a for future research
 	
 	%I made this equation up, but would be good if we could back this up. Perhaps with \citep{what_is_engagement}
+
+	\subsubsection{Comments on interactive adverts}
+
+	One non-interactive advert (Guinness) was used in the interactive session to simulate adverts where the advertiser did not wish to add any interaction. During this advert, many participations were observed to tap erratically on the screen to invoke some form of interaction, even irritating some participants. One participant who received this advert thought that the system had broken and that they were receiving another non-interactive session. This stresses the importance of indicating to users what adverts are interactive, which should inform the design of a platform such as this in order to avoid user confusion and frustration.
+
+	A significant number of participants continued to tap on the screen intermittently after completing the provided interactive actions. When questioned about why they did this, many participants indicated they thought that ``Easter eggs'' (hidden interactive parts) may exist within the advert. This inquisitive nature could be used by advertisers to encourage further attention by providing small hidden aspects to adverts for attentive viewers. This could be used for extrinsic reward, for example, rewarding users who find five hidden items in the advert in return for a 10\% discount on the advertised product. This would perhaps encourage repeated viewing in order to complete such a quest.
+
+	Many of the participants suggested that a mini-game could be included, providing users with interaction for the complete duration of the advert and offering them the opportunity to compete with other viewers, with the winner receiving a prize. This was a notable result simply for the number of people that suggested it, implying that it may be a popular idea, at least among the student demographic.
+
+	A large number of participants said that of all the adverts, they remembered the Domino's avert the most. When asked why, most of them responded that it was due to the length of the advert. Long adverts irritated participants, but many said that a longer interaction would have made it more palatable. This could allow advertisers to gain the advantages of longer adverts by providing an extended interaction to keep enjoyment levels while maximising exposure.
