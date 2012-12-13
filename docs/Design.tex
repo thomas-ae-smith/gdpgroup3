@@ -1,6 +1,6 @@
 \section{Design}
 
-The results of the prestudy allows us to justify the design of a platform for granularly targeting adverts and providing interaction within adverts. This section will cover the design of this platform, as well as how this platform can be demonstrated within a personalised TV channel -- a TV channel tailored towards viewers specifically on which programmes and adverts are recommended based on information about the viewer. Our implementation (Section~\ref{sec:implementation}) of this personal TV channel is called \textit{Your4.tv}.
+The results of the prestudy justify the design of a platform for granularly targeting adverts and providing interaction within adverts. This section will cover the design of this platform, as well as how this platform can be demonstrated within a personalised TV channel -- a TV channel tailored towards viewers specifically on which programmes and adverts are recommended based on information about the viewer. Our implementation (Section~\ref{sec:implementation}) of this personal TV channel is called \textit{Your4.tv}.
 
 We'll start by discussing how adverts will be targeted through \textit{campaigns} -- a set of restrictions on viewers that adverts must conform to in order to be shown. Following this, we'll devise a method to allow interactivity in adverts. We also describe how we can collect statistics that this platform would offer about advert usage. In order to demonstrate the usage of these adverts, we then discuss the design of \textit{Your4.tv}, a personalised TV channel, which will utilize a recommender system to select programmes that the viewer will want to watch.
 
@@ -32,7 +32,7 @@ We'll start by discussing how adverts will be targeted through \textit{campaigns
 	%as used by [cite] in [some system], 
 	and allow an advert to be targeted towards people based on personal information (such as age, gender and occupation), usage data (such as viewing history) and contextual information (such as time of day and what programme they are watching).
 
-	In the context of live TV, these targeted adverts would replace adverts that are streamed as part of the channel by the broadcaster. This advert replacement has been implemented successfully previously as part of Project4, as described in Section~\ref{sec:motivation_inqb8r}. In addition, these advert breaks could be placed in between non-live streamed programmes.
+	In the context of live TV, these targeted adverts would replace adverts that are streamed as part of the channel by the broadcaster. A system for this advert replacement has been previously successfully implemented as part of Project4, as described in Section~\ref{sec:motivation_inqb8r}. In addition, these advert breaks could be placed in between non-live streamed programmes.
 
 	\subsubsection{Skipping adverts}
 
@@ -95,9 +95,9 @@ Which stems from the algorithm: A campaign is picked from $\mathbb{C}$ with a pr
 
 	Using an internet-enabled device allows two way communication -- a device may receive video from a streaming service to present to the user and send information about the user back to the streaming service. We can incorporate this as part of our design, which would allow us to collect three types of information:
 	\begin{description}
-	\item[Demographic information] age, gender and occupation;
-	\item[Contextual information] time of day, location and what programme the viewer is watching;
-	\item[Usage information] what programmes and adverts the viewer has watched in the past, when and where users have clicked on adverts.
+	\item[Demographic information:] age, gender and occupation;
+	\item[Contextual information:] time of day, location and what programme the viewer is watching;
+	\item[Usage information:] what programmes and adverts the viewer has watched in the past, when and where users have clicked on adverts.
 	\end{description}
 
 	The usage information would allow advertisers to fine-tune adverts and campaigns towards their target demographic, focusing on who watches the advert and how they they are interacted with. Furthermore, with the skip functionality, advertisers could establish when users are most likely to skip during an advert and why.
@@ -130,10 +130,10 @@ Which stems from the algorithm: A campaign is picked from $\mathbb{C}$ with a pr
 		$$
 		\left[0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0\right]^T
 		$$
-
 		So that a user may be recommended programmes, each user is given a vector, $\mathbf{u}$, also within the space $\mathcal{P}$, which represents the user's ideal programme. This user vector is initialised with the function $v_u$, which takes a vector of a user's demographic information, $\mathbf{d}$, and returns the user vector, $\mathbf{u}$ ($\mathbf{u} = v_u(\mathbf{d})$). The actual demographics in $\mathbf{d}$ are constrained by the target audience, the training data available and the user data available, and as a result only gender is considered ($\mathbf{d} \in \left\{{ \left[ 0\right] ,\left[ 1\right] }\right\} $). The function $v_u$ is learned using a set of training data containing mappings between users, their demographics and shows they enjoy.
 
 		While a user uses \textit{Your4.tv}, their actions influence their user vector. Upon giving a programme a rating, $\mathbf{u}$ is moved either towards or away from $\mathbf{p}$ by an amount which depends upon the magnitude of the rating, the initial distance between $\mathbf{u}$ and $\mathbf{p}$, and the learning rate of the recommender which may be tweaked or made inversely proportional to the number of ratings made by the user. While an adaptive learning rate will result in a simulated-annealing type search in the programme space, a constant learning rate will continue adapting recommendations to the user's current mood, which should not be assumed to be static. The exact change to $\mathbf{u}$, where $\mathbf{u}_{i}$ is the $i^{th}$ component of vector $\mathbf{u}$, $\mathbf{u}'$ is the new user vector, $0 \leq L \leq 1$ is the learning rate and $-1 \leq r \leq 1$ is the rating given is given by:
+
 		% Can use dcases in mathtools to make the fractions in the conditional more readable (bigger).
 		$$
 			\mathbf{u}_{i}' =
@@ -158,7 +158,6 @@ Which stems from the algorithm: A campaign is picked from $\mathbb{C}$ with a pr
 					\text{otherwise}
 			\end{cases}
 		$$
-
 		Genres from Tvdb were chosen as a basis for $\mathcal{P}$, as this solved the problem of finding training data for the learned function $v_u$. The MovieLens 1M dataset\footnote{The MovieLens 1M dataset -- \footurl{http://www.grouplens.org/node/73}} was downloaded, and the movies mapped to their corresponding Tvdb genres, giving a large dataset of user demographics, movie ratings, and movie vectors within the programme space $\mathcal{P}$ which serve as suitable training data. To map new programmes into the $\mathcal{P}$, $v_p$ looks up the Tvdb genres for a given programme, using these to construct $\mathbf{p}$.
 
 			\begin{figure}[h!]
@@ -173,15 +172,12 @@ Which stems from the algorithm: A campaign is picked from $\mathbb{C}$ with a pr
 				\end{subfigure}
 				\begin{subfigure}[t]{0.32\textwidth}
 					\includegraphics[width=\textwidth]{images/recommender_3.pdf}
-					\caption{The programme just watched/skipped is removed from the users programme pool, and the user is recommended a new different programme.}
+					\caption{The programme just watched/skipped is removed from the users programme pool, and the user is recommended a new programme.}
 				\end{subfigure}
 				\caption{Visualisation of how the state of an example 3-dimensional version or the recommender described above changes during use. The axes used in this example are romance, action and comedy; a subset of the 18 dimensions in the actual implementation.}
 				\label{fig:recommender_example}
 			\end{center}
 		\end{figure}
-
 		The space $\mathcal{P}$ is, by design, coupled only with the functions $v_u$ and $v_p$. As a result of this, $v_p$ may be modified, changing the structure of $\mathcal{P}$, as long as $v_u$ is re-learnt using the new programme representation. This is desirable, as programme representations better suited to recommendation are possible; i.e., more similar programmes are closer together, more different programmes are further apart, and similar programmes are not given identical representations. Possible ways of accomplishing this are discussed in section~\ref{sec:further_work_recommender}.
 
-	\subsubsection{Programme availability}
-
-		The programmes available would be any show that has been broadcast on Channel~4 (or it's sister channels) that we record. Due to storage constraints, we restrict the time which we keep programmes to 7 days - so any programme that has broadcast on these channels in the past 7 days will be available for the programme recommender to recommend.
+		The programmes available would be any show broadcast on Channel~4 (or its sister channels) that we record. Due to storage constraints, time programmes are kept for is restricted to 7 days - any programme broadcast on these channels in that time will be available for recommendation.
