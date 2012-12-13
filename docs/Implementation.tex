@@ -219,7 +219,7 @@ Views, clicks and skips are recorded by the client and feedback is sent to the R
 
 \subsubsection{Media server}
 
-Video streams are delivered to the client via a Wowza media server\footnote{\footurl{http://www.wowza.com/}}, hosted on a Windows Server 2008 machine. This resource is provided by Inqb8r, who have extensive experience with Wowza based systems.
+Video streams are delivered to the client via a Wowza media server\footnote{Wowza Media Server Website -- \footurl{http://www.wowza.com/}}, hosted on a Windows Server 2008 machine. This resource is provided by Inqb8r, who have extensive experience with Wowza based systems.
 
 The Wowza server is configured to act as a repeater, re-broadcasting the streams provided by Inqb8r. This server is based on two distinct applications. The first application is a custom Wowza module responsible for retrieving the source live streams and relaying these to the client. The second is responsible for streaming recorded programmes and adverts from the video store to the client (the standard Wowza extension ``vod'' allows any file of a valid format in a given directory to be streamed). Both applications use a ``packetizer'' which is responsible for encoding the raw input streams to the output requested (HLS for Apple based devices). The packetizer is chosen based on this request, for example, the ``cupertino'' packetizer is used to encode Apple HLS streams distinguished by the .m3u8 file extension in the URL.
 
