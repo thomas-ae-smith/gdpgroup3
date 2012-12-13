@@ -27,7 +27,10 @@ We'll start by discussing how adverts will be targeted through \textit{campaigns
 	%% This is tautologically true
 	% As shown in [cite], adverts targeted specifically towards individuals are, in general, more relevant to that individuals personal interests.
 
-	The usage of internet-connected devices allows the capturing of information about a user, allowing this granular targeting. In the design of our advertising platform, we take the notion of an advert campaign, as used by [cite] in [some system], and allow an advert to be targeted towards people based on personal information (such as age, gender and occupation), usage data (such as viewing history) and contextual information (such as time of day and what programme they are watching).
+	The usage of internet-connected devices allows the capturing of information about a user, allowing this granular targeting. In the design of our advertising platform, we take the notion of an advert campaign, 
+	%% Who wrote this? Put your citations in!
+	%as used by [cite] in [some system], 
+	and allow an advert to be targeted towards people based on personal information (such as age, gender and occupation), usage data (such as viewing history) and contextual information (such as time of day and what programme they are watching).
 
 	In the context of live TV, these targeted adverts would replace adverts that are streamed as part of the channel by the broadcaster. This advert replacement has been implemented successfully previously as part of Project4, as described in Section~\ref{sec:motivation_inqb8r}. In addition, these advert breaks could be placed in between non-live streamed programmes.
 
@@ -35,14 +38,10 @@ We'll start by discussing how adverts will be targeted through \textit{campaigns
 
 	%% Has anybody actually got a paper on this?
 	% [cite] discusses the use of skip functionality in adverts in [system]. 
-	Users were able to skip adverts that they did not enjoy, such that they would be presented with a different advert for the remainder of the advert break.
+	Our prestudy revealed that 64\% of individuals felt that skip functionality would influence the attention they would pay to adverts. Because of this, advert skipping has been implemented, allowing users may skip adverts that they do not enjoy; this switches the current advert for a different advert, and does not change the length of the advert break. Upon skipping an advert, the user is presented with options, much like Facebook advert skip options as discussed in Section~\ref{sec:beyond_traditional_advertising}, such that the reasoning behind the advert skipping may be discovered. This data may be reported back to the advertiser, and particularly negative options result in blacklisting of the advert. 
+
 	%% Where did this statistic come from?
 	% x\% of users were satisfied that by skipping adverts, they would be more likely to be presented with adverts that were of interest to them.
-	Furthermore, our prestudy revealed that 64\% of individuals felt that skip functionality would influence the attention they would pay to adverts.
-
-	From this, we wish to include skip functionality as part of our design: a user may skip an advert in order to be presented with a different advert, and may do so until the advert break has finished. In order to expand on this, we will ask users why they chose to skip an advert, presenting options much like Facebook advert skip options as discussed in 
-	% This reference is broken
-	Section~\ref{subsection:backgroundStats}. This will allow advertisers to collect information on why individuals skip adverts and allow users to effectively block adverts from being shown again.
 
 	\subsubsection{Advert campaigns}
 
@@ -90,7 +89,9 @@ Which stems from the algorithm: A campaign is picked from $\mathbb{C}$ with a pr
 
 \subsection{Advertiser statistics}
 
-	As discussing in Section~\ref{sec:background_stats}, TV devices which transmit usage data account for only x\% of TV viewers within the USA, representing a very small sample of TV viewers. However, internet analytics services, such as YouTube and Google Analytics, allow fine-granular statistics to be collected about users of web-based services, including what material individuals view, how long for and even an individuals location when they accessed the material. Such information would be extremely valuable to advertisers, with [cite] demonstrating a demand for newer, higher-granular statistics.
+	As discussing in Section~\ref{sec:background_stats}, TV devices which transmit usage data account for less than 0.5\% of TV viewers within the USA, representing a very small sample of TV viewers. However, internet analytics services, such as YouTube and Google Analytics, allow fine-granular statistics to be collected about users of web-based services, including what material individuals view, how long for and even an individuals location when they accessed the material. Such information would be extremely valuable to advertisers.
+	%% WHO??
+	%, with [cite] demonstrating a demand for newer, higher-granular statistics.
 
 	Using an internet-enabled device allows two way communication -- a device may receive video from a streaming service to present to the user and send information about the user back to the streaming service. We can incorporate this as part of our design, which would allow us to collect three types of information:
 	\begin{description}
@@ -99,13 +100,13 @@ Which stems from the algorithm: A campaign is picked from $\mathbb{C}$ with a pr
 	\item[Usage information] what programmes and adverts the viewer has watched in the past, when and where users have clicked on adverts.
 	\end{description}
 
-	The usage information would allow advertisers to fine tune adverts and campaigns towards their target demographic, focusing on who watches the advert and how they they are interacted with. Furthermore, with the skip functionality, advertisers could establish when users are most likely to skip during an advert and why.
+	The usage information would allow advertisers to fine-tune adverts and campaigns towards their target demographic, focusing on who watches the advert and how they they are interacted with. Furthermore, with the skip functionality, advertisers could establish when users are most likely to skip during an advert and why.
 
 \subsection{Personalised TV channel}
 
 	The proposed information used for advert targeting, as described in Section~\ref{sec:design_adverts}, includes contextual information, such as what programme a user is watching, and a viewers usage history, such as programmes they've watched in the past. In order to provide this information, we wish to use the advert platform on top of a TV streaming services. We devised a personalised TV streaming services for this purpose, which would ensure that a user is watching TV programmes that they are interested in them. If programmes that are shown to a user are of interest to them, then adverts shown to them should cater more to their interest.
 
-	At the centre of this personalised TV channel is a recommender system which learns from a user's preferences towards particular programmes and subsequently recommends programmes based on their interests. The programmes that would be available to this recommender system would be any programmes that have been streamed on Channel~4 (or it's sister channels -- see Section~\ref{backgroundChannel4}).
+	At the centre of this personalised TV channel is a recommender system which learns from a user's preferences towards particular programmes and subsequently recommends programmes based on their interests. The programmes that would be available to this recommender system would be any programmes that have been streamed on Channel~4 (or it's sister channels -- see Section~\ref{sec:evolution_of_TV}).
 
 	\subsubsection{Programme recommendation}
 
@@ -174,7 +175,7 @@ Which stems from the algorithm: A campaign is picked from $\mathbb{C}$ with a pr
 					\includegraphics[width=\textwidth]{images/recommender_3.pdf}
 					\caption{The programme just watched/skipped is removed from the users programme pool, and the user is recommended a new different programme.}
 				\end{subfigure}
-				\caption{Visualisation of how the state of an example 3-dimensional version or the recommender described above changes during use. The axes used in this example are romance, action and comedy; a subset of the 18 dimentions in the actual implementation.}
+				\caption{Visualisation of how the state of an example 3-dimensional version or the recommender described above changes during use. The axes used in this example are romance, action and comedy; a subset of the 18 dimensions in the actual implementation.}
 				\label{fig:recommender_example}
 			\end{center}
 		\end{figure}
