@@ -68,10 +68,12 @@
 				that.user.set($(this).attr('name'), $(this).val());
 			});
 
-			this.user.set('dob', $('.date-split').map(function() {
-				return $(this).val();
-			}).get().join('-'));
+			//this.user.set('dob', $('.date-split').map(function() {
+			//	return $(this).val();
+			//}).get().join('-')); // Overcomplicated and broken
 
+			this.user.set('dob', this.$("#year").val() + "-" +
+				this.$("#month").val() + "-" + this.$("#date").val());
 
 			var target = $(e.currentTarget);
 			target.attr("disabled","disabled").text("Please wait...");
