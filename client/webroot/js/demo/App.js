@@ -148,7 +148,7 @@
 		},
 		renderPlay: function (userId) {
 			var that = this,
-				playlist = new y4.Playlist(undefined, { user: this.user() });
+				playlist = new y4.Playlist(undefined, { user: this.user(), demo: 1 });
 
 			$('.account-controls .name').text("Welcome "+this.user().get('name'));
 

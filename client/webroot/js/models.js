@@ -55,11 +55,11 @@
 		model: y4.Programme,
 		url: "http://"+baseUrl+"/api/programmes/",
 		//comparator: nameComparator,
-		recommendation: function (userId) {
+		recommendation: function (userId, demo) {
 			var that = this,
 				dfd = $.Deferred();
 			this.fetch({
-				data: { user: userId }
+				data: { user: userId, demo: demo }
 			}).done(function () {
 				dfd.resolve(that.first());
 			}).fail(function () { dfd.reject(); });
@@ -91,11 +91,11 @@
 	y4.Broadcasts = Backbone.Collection.extend({
 		url: "http://"+baseUrl+"/api/broadcasts/",
 		model: y4.Broadcast,
-		recommendation: function (userId, startTime) {
+		recommendation: function (userId, startTime, demo) {
 			var that = this,
 				dfd = $.Deferred();
 			this.fetch({
-				data: { user: userId, startTime: Math.floor(startTime) }
+				data: { user: userId, startTime: Math.floor(startTime), demo: demo }
 			}).done(function () {
 				dfd.resolve(that.first()); // TODO: check there is a first?
 			}).fail(function () { dfd.reject(); });
@@ -536,6 +536,7 @@
 		initialize: function (models, options) {
 			var that = this;
 			this.user = options.user;
+			this.demo = options.demo;
 			/*this.reset([
 				{ type: "break", item: new y4.AdbreakAdverts() },
 				{ type: "broadcast", item: new y4.ProgrammeSection({ section: 0 }) },
@@ -745,7 +746,7 @@
 		pushBroadcastRecommendation: function (startTime) {
 			var that = this,
 				dfd = $.Deferred();
-			(new y4.Broadcasts()).recommendation(this.user.id, startTime).done(function (broadcast) {
+			(new y4.Broadcasts()).recommendation(this.user.id, startTime, this.demo).done(function (broadcast) {
 				broadcast.fetchProgramme().done(function (programme) {
 					that.pushProgramme(programme, broadcast.get("time") - that.broadcasterPlaylistEndTime(), broadcast).done(function () {
 						dfd.resolve();
@@ -758,11 +759,12 @@
 			var that = this,
 				dfd = $.Deferred(),
 				duration = this.totalDuration();
-			(new y4.Programmes()).recommendation(this.user.id).done(function (programme) {
+			(new y4.Programmes()).recommendation(this.user.id, this.demo).done(function (programme) {
 				that.pushProgramme(programme, duration < 100 ? 0 : 120).done(function () {
 					dfd.resolve();
 				});
 			}).fail(function () { console.error("FIXME: impossible case"); });
+			if (this.demo) { this.demo++; }
 			return dfd;
 		}
 	});
