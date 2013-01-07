@@ -95,16 +95,16 @@
 					</select>
 					<% } else if (field == "dob") { %>
 					<div class="input-prepend pull-left">
-						<span class="add-on">Year</span>
-						<input class="date-split" type="text" id="year" name="year" value="<%= user['year'] %>" <%= disabled %>>
+						<span class="add-on">Date</span>
+						<input class="date-split" type="text" id="date" name="date" value="<%= user['date'] %>" <%= disabled %>>
 					</div>
 					<div class="input-prepend pull-left">
 						<span class="add-on">Month</span>
 						<input class="date-split" type="text" id="month" name="month" value="<%= user['month'] %>" <%= disabled %>>
 					</div>
 					<div class="input-prepend pull-left">
-						<span class="add-on">Date</span>
-						<input class="date-split" type="text" id="date" name="date" value="<%= user['date'] %>" <%= disabled %>>
+						<span class="add-on">Year</span>
+						<input class="date-split" type="text" id="year" name="year" value="<%= user['year'] %>" <%= disabled %>>
 					</div>
 
 					<% } else { %>
