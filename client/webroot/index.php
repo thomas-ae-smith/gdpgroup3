@@ -11,6 +11,12 @@ $requires = array(
 			'lib/jquery.transit.js', 'js/your4/App.js', 'js/player.js', 'js/your4/auth-views.js',
 			'http://connect.facebook.net/en_US/all.js')
 	),
+	'demo' => array(
+		'styles' => array('css/bootstrap.min.css', 'css/font-awesome.css', 'css/your4.css'),
+		'scripts' => array('lib/flowplayer.min.js', 'lib/bootstrap.js', 'lib/spin.min.js',
+			'lib/jquery.transit.js', 'js/demo/App.js', 'js/player.js', 'js/demo/auth-views.js',
+			'http://connect.facebook.net/en_US/all.js')
+	),
 	'advertiser' => array(
 		'styles' => array('css/advertiser.css', 'css/bootstrap.min.css', 'lib/leaflet.css', 'lib/leaflet.draw.css'),
 		'scripts' => array('js/advertiser/App', 'http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js',
@@ -42,6 +48,8 @@ if (strpos($uri, 'advertiser.php') !== false) {
 	$site = 'study';
 } else if (strpos($uri, 'instruction.php') !== false) {
 	$site = 'instruction';
+} else if (strpos($uri, 'demo.php') !== false) {
+	$site = 'demo';
 } else {
 	$site = 'your4';
 }
