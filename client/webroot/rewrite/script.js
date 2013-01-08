@@ -100,12 +100,16 @@ var Player = Backbone.View.extend({
 			if (i < si) { return; }
 			total += Number(item.get("duration"));
 			timeouts.push(setTimeout(function () {
-				that.i++;
-				that.playItem(i + 1);
+				that.next();
 			}, total * 1000))
 		});
 
 		this.playItem(0, time);
+	},
+	next: function () {
+		this.i++;
+		this.playItem(this.i);
+		this.playlist.reset(this.playlist.models.slice(1));
 	},
 	playItem: function (i, time) {
 		if (i >= this.playlist.length) { return; }
@@ -117,7 +121,7 @@ var Player = Backbone.View.extend({
 		} else {
 			$("iframe").attr("src", "about:blank");
 		}
-		this.time = 0;
+		this.time = time || 0;
 	},
 	skip: function () {
 		this.start(0, this.i + 1);
@@ -145,9 +149,24 @@ var Player = Backbone.View.extend({
 		this.time += 1;
 		var displayTime = 300,
 			time = this.time;
-		$(".playlist .marker").css({
+		$(".playlist .now-line").css({
 			left: (time / displayTime) * 100 + "%"
 		});
+		$(".playlist .playlist-item").remove();
+		var total = 0;
+		console.log(this.playlist.length)
+		this.playlist.each(function (item) {
+			var itemj = item.toJSON(),
+				width = (itemj.duration / displayTime) * 100;
+
+			var $item = $('<div class="playlist-item"></div>').css({
+					width: width + "%",
+					left: total + "%"
+				}).toggleClass("ad", itemj.type==="advert")
+				.toggleClass("vod", itemj.type!=="advert").html(item.model.get("title"));
+			$(".playlist").append($item);
+			total += width;
+		})
 	}
 });
 
