@@ -24,12 +24,12 @@ $app->get('/impressions/:id(/)', function ($id) use ($app) {
 });
 
 $app->get('/impressions/populate', function() use ($app) {
-	$adverts = array_values(R::findAll('adverts'));
-	$users = array_values(R::findAll('users'));
+	// $adverts = array_values(R::findAll('adverts'));
+	$users = array_values(R::findAll('user'));
 
 	for ($i = 0; $i < 100; $i++) {
 		$impression = R::dispense('advertimpression');
-		$impression->advert = $adverts[125];
+		$impression->advert = R::load('advert', 125);
 		$impression->user = $users[rand(0, count($users) - 1)];
 		$impression->timestamp = time() - rand(0, 7 * 24 * 60 * 60);
 		if (rand(0, 4) >= 3) {
