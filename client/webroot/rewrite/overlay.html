@@ -1,0 +1,26 @@
+<script src="../lib/jquery.js"></script>
+<script src="../lib/underscore.js"></script>
+<script src="../lib/backbone.js"></script>
+<script>
+var id = location.hash.slice(1);
+$(document).ready(function () {
+	var advert = new Advert({id: id});
+	advert.fetch().then(function () {
+		$("body").html(advert.get("overlay"));
+	});
+})
+var Advert = Backbone.Model.extend({
+	url: function () {
+		return "http://www.your4.tv/api/adverts/" + this.id;
+	}
+});
+</script>
+<style>
+body {
+	background: transparent;
+	overflow: hidden;
+	color: white;
+	font-family: sans-serif;
+	margin: 0;
+}
+</style>

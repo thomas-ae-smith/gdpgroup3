@@ -1,6 +1,7 @@
 var playlistJ = [
 	{ type: "programme", id: 5152, duration: 40 },
-	{ type: "advert", id: 138 },
+	//{ type: "advert", id: 139 },
+	{ type: "advert", id: 125 },
 	{ type: "advert", id: 139 },
 	{ type: "advert", id: 140 }
 ]
@@ -35,15 +36,10 @@ $(document).ready(function () {
 	//});
 
 	$(".star").click(function () {
-		var siblings = $(this).siblings,
-			i = siblings.indexOf(this);
-
-		for (var i2 = 0; i2 < i; i++) {
-			$(".star").at(i2).addClass("active");
-		}
-		for (var i2 = i; i2 < 5; i++) {
-			$(".star").at(i2).removeClass("active");
-		}
+		var i = $(this).attr("data-val");
+		$(".star").each(function (i2) {
+			$(this).toggleClass("active", i2 < i);
+		});
 	})
 })
 
@@ -109,6 +105,12 @@ var Player = Backbone.View.extend({
 		if (i >= this.playlist.length) { return; }
 		var item = this.playlist.at(i);
 		this.set("vod", item.model.uri(), time);
+		$(".star").removeClass("active");
+		if (item.get("type") === "advert") {
+			$("iframe").attr("src", "overlay.html?" + Math.ceil(Math.random() * 1000000) + "#" + item.get("id"));
+		} else {
+			$("iframe").attr("src", "about:blank");
+		}
 	},
 	skip: function () {
 		this.start(0, this.i + 1);
