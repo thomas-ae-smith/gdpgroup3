@@ -29,17 +29,17 @@ $app->get('/impressions/populate', function() use ($app) {
 
 	for ($i = 0; $i < 100; $i++) {
 		$impression = R::dispense('advertimpression');
-		$impression->advert = $adverts[rand(0, count($adverts) - 1)];
+		$impression->advert = $adverts[125];
 		$impression->user = $users[rand(0, count($users) - 1)];
-		$impression->timestamp = time() - rand(0, 24 * 60 * 60);
+		$impression->timestamp = time() - rand(0, 7 * 24 * 60 * 60);
 		if (rand(0, 4) >= 3) {
-			$impression->skiptime = rand(0, 120);
+			$impression->skiptime = rand(0, 30);
 		}
 		if (rand(0, 4) >= 3) {
 			$click = R::dispense('advertclick');
 			$click->percentX = rand(0, 100);
 			$click->percentY = rand(0, 100);
-			$click->time = rand(0, 120);
+			$click->time = rand(0, 30);
 			$click->advertimpression = $impression;
 			R::store($click);
 		}
