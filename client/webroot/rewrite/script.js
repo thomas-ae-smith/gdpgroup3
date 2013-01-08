@@ -40,7 +40,14 @@ $(document).ready(function () {
 		$(".star").each(function (i2) {
 			$(this).toggleClass("active", i2 < i);
 		});
-	})
+		var $thanks = $('<div class="thanks">Thanks!</div>').css({
+			color: "white",
+			fontSize: 14
+		});
+		$(".star").fadeOut(function () {
+			$(".star").eq(0).after($thanks);
+		}).after();
+	});
 })
 
 var Player = Backbone.View.extend({
@@ -91,7 +98,7 @@ var Player = Backbone.View.extend({
 		var that = this,
 			timeouts = this.timeouts = [],
 			total = -time;
-		
+
 		si = this.i = si || 0;
 
 		this.playlist.reset(this.playlist.models.slice(si));
@@ -101,7 +108,7 @@ var Player = Backbone.View.extend({
 			total += Number(item.get("duration"));
 			timeouts.push(setTimeout(function () {
 				that.next();
-			}, total * 1000))
+			}, total * 1000));
 		});
 
 		this.playItem(0, time);
@@ -118,8 +125,11 @@ var Player = Backbone.View.extend({
 		$(".star").removeClass("active");
 		if (item.get("type") === "advert") {
 			$("iframe").attr("src", "overlay.html?" + Math.ceil(Math.random() * 1000000) + "#" + item.get("id"));
+			$(".rating").hide();
 		} else {
 			$("iframe").attr("src", "about:blank");
+			$(".rating").show();
+			$(".star").show().siblings().find(".thanks").remove()
 		}
 		this.time = time || 0;
 	},

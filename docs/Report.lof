@@ -1,0 +1,52 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Project4 -- a student-oriented web-based TV service, which offers Channel\nobreakspace {}4 channels with adverts replaced with student-focused adverts.\relax }}{10}{figure.caption.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Caption for LOF}}{11}{figure.caption.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces YouTube video showing annotations overlaid (in blue and red)\relax }}{18}{figure.caption.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces User responses to the question ``How often do you pay attention to adverts served with the following media?''\relax }}{32}{figure.caption.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces User responses to the question ``How much do the following aspects influence how likely you are to watch an advert?''\relax }}{33}{figure.caption.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces User responses to the question ``If you do not pay attention to adverts, which of the following do you do instead?'' (multiple choice)\relax }}{33}{figure.caption.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Design stage planning\relax }}{35}{figure.caption.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Visualisation of how the state of an example 3-dimensional version or the recommender described above changes during use. The axes used in this example are romance, action and comedy; a subset of the 18 dimentions in the actual implementation.\relax }}{40}{figure.caption.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Overview of Your4 architecture\relax }}{48}{figure.caption.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Overview of Your4 database layout\relax }}{54}{figure.caption.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Logging in.\relax }}{57}{figure.caption.12}
+\contentsline {figure}{\numberline {12}{\ignorespaces Video playing is started by capturing a touch event and relaying to video element.\relax }}{58}{figure.caption.13}
+\contentsline {figure}{\numberline {13}{\ignorespaces The playlist is shown when the user taps the screen. It slides out of view after a few seconds. It can be dragged left and right to view more items.\relax }}{58}{figure.caption.14}
+\contentsline {figure}{\numberline {14}{\ignorespaces Advertisers can preview their advert overlays and edit them with full syntax highlighting.\relax }}{59}{figure.caption.15}
+\contentsline {figure}{\numberline {15}{\ignorespaces Advertisers can view their campaigns attached to their adverts.\relax }}{59}{figure.caption.16}
+\contentsline {figure}{\numberline {16}{\ignorespaces Stats can be viewed pertaining to an advert.\relax }}{60}{figure.caption.17}
+\contentsline {figure}{\numberline {17}{\ignorespaces Advertisers can view and remove their adverts.\relax }}{60}{figure.caption.18}
+\contentsline {figure}{\numberline {18}{\ignorespaces Advertisers can specify the target demographics of their campaigns.\relax }}{61}{figure.caption.19}
+\contentsline {figure}{\numberline {19}{\ignorespaces A campaign is attached to an advert.\relax }}{61}{figure.caption.20}
+\contentsline {figure}{\numberline {20}{\ignorespaces Campaigns can be scheduled during the week and attributed to specific genres or programmes.\relax }}{62}{figure.caption.21}
+\contentsline {figure}{\numberline {21}{\ignorespaces Errors in time estimations of users watching interactive and non-interactive advertisements, and extrapolated normal distributions. 10 points recorded in study used.\relax }}{64}{figure.caption.23}
+\contentsline {figure}{\numberline {22}{\ignorespaces Average percentage of advertisements recalled depending on the round the advert was seen in (interactive round, noninteractive round or both rounds). The red error bars indicate show the mean recall rate $\pm $one standard deviation.\relax }}{65}{figure.caption.24}
+\contentsline {figure}{\numberline {23}{\ignorespaces Analysis of user answers to a number of questions. The red error bars indicate show the mean values $\pm $one standard deviation.\relax }}{66}{figure.caption.25}
+\contentsline {figure}{\numberline {24}{\ignorespaces Caption for LOF}}{71}{figure.caption.26}
+\contentsline {figure}{\numberline {25}{\ignorespaces Log in\relax }}{79}{figure.caption.27}
+\contentsline {figure}{\numberline {26}{\ignorespaces Fosters advert, before liking.\relax }}{89}{figure.caption.28}
+\contentsline {figure}{\numberline {27}{\ignorespaces Fosters advert, after liking.\relax }}{90}{figure.caption.29}
+\contentsline {figure}{\numberline {28}{\ignorespaces Domino's advert, before interaction.\relax }}{91}{figure.caption.30}
+\contentsline {figure}{\numberline {29}{\ignorespaces Domino's advert, after the logo is tapped.\relax }}{92}{figure.caption.31}
+\contentsline {figure}{\numberline {30}{\ignorespaces Domino's advert, after selecting a pizza segment.\relax }}{92}{figure.caption.32}
+\contentsline {figure}{\numberline {31}{\ignorespaces Unified Insurance Cover advert, initial.\relax }}{93}{figure.caption.33}
+\contentsline {figure}{\numberline {32}{\ignorespaces Unified Insurance Cover advert, first item added.\relax }}{94}{figure.caption.34}
+\contentsline {figure}{\numberline {33}{\ignorespaces Unified Insurance Cover advert, second item added.\relax }}{94}{figure.caption.35}
+\contentsline {figure}{\numberline {34}{\ignorespaces Unified Insurance Cover advert, third item added.\relax }}{95}{figure.caption.36}
+\contentsline {figure}{\numberline {35}{\ignorespaces Unified Insurance Cover advert, fourth item added.\relax }}{95}{figure.caption.37}
+\contentsline {figure}{\numberline {36}{\ignorespaces Unified Insurance Cover advert, several items ticked.\relax }}{96}{figure.caption.38}
+\contentsline {figure}{\numberline {37}{\ignorespaces Unified Insurance Cover advert, single item ticked.\relax }}{96}{figure.caption.39}
+\contentsline {figure}{\numberline {38}{\ignorespaces thetrainline.com advert, before interaction.\relax }}{97}{figure.caption.40}
+\contentsline {figure}{\numberline {39}{\ignorespaces thetrainline.com advert, after option is selected.\relax }}{98}{figure.caption.41}
+\contentsline {figure}{\numberline {40}{\ignorespaces Pot Noodle advert, before interaction.\relax }}{99}{figure.caption.42}
+\contentsline {figure}{\numberline {41}{\ignorespaces Pot Noodle advert, other Pot Noodle selected.\relax }}{100}{figure.caption.43}
+\contentsline {figure}{\numberline {42}{\ignorespaces Pot Noodle advert, Chicken and Mushroom Pot Noodle selected.\relax }}{100}{figure.caption.44}
+\contentsline {figure}{\numberline {43}{\ignorespaces Pot Noodle advert, after countdown ends.\relax }}{101}{figure.caption.45}
+\contentsline {figure}{\numberline {44}{\ignorespaces Smirnoff advert, before liking.\relax }}{102}{figure.caption.46}
+\contentsline {figure}{\numberline {45}{\ignorespaces Smirnoff advert, after liking.\relax }}{102}{figure.caption.47}
+\contentsline {figure}{\numberline {46}{\ignorespaces The Perks of Being a Wallflower film advert, initial.\relax }}{103}{figure.caption.48}
+\contentsline {figure}{\numberline {47}{\ignorespaces The Perks of Being a Wallflower film advert, entered text.\relax }}{104}{figure.caption.49}
+\contentsline {figure}{\numberline {48}{\ignorespaces The Perks of Being a Wallflower film advert, map shown.\relax }}{104}{figure.caption.50}
+\contentsline {figure}{\numberline {49}{\ignorespaces The Perks of Being a Wallflower film advert, clicked on marker.\relax }}{105}{figure.caption.51}
+\contentsline {figure}{\numberline {50}{\ignorespaces Visit Scotland advert, initial.\relax }}{106}{figure.caption.52}
+\contentsline {figure}{\numberline {51}{\ignorespaces Visit Scotland advert, email entered.\relax }}{107}{figure.caption.53}
+\contentsline {figure}{\numberline {52}{\ignorespaces Visit Scotland advert, email submitted.\relax }}{107}{figure.caption.54}

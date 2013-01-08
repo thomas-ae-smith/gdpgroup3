@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
+	<title>Your4</title>
 	<script src="../lib/jquery.js"></script>
 	<script src="../lib/underscore.js"></script>
 	<script src="../lib/backbone.js"></script>
@@ -22,9 +24,20 @@
 		font-size: 40px;
 		text-align: center;
 		background: black;
+		line-height: 50px;
+	}
+	.skip:hover {
+		opacity: 0.8;
 	}
 	.skip a {
+		width: 100%;
+		height: 100%;
 		color: #fff;
+		cursor: pointer;
+		display: block;
+	}
+	.skip a:hover {
+		text-decoration: none;
 	}
 	.skip-options {
 		z-index: 20;
@@ -147,11 +160,12 @@
 	.star {
 		width: 30px;
 		height: 30px;
-		background: #ccc;
+		color: #ccc;
 		display: inline-block;
-	}	
+		font-size: 30px;
+	}
 	.star.active {
-		background: yellow;
+		color: yellow;
 	}
 	.overlay-container {
 		position: absolute;
@@ -226,6 +240,10 @@
 		z-index: 1000;
 		background: rgba(204, 51, 194, 0.3);
 	}
+	.player, .player > div {
+		width: 100%;
+		height: 100%;
+	}
 
 	</style>
 </head>
@@ -241,11 +259,11 @@
 		<a class="option" href="javascript:;">Other</a>
 	</div>
 	<div class="rating">
-		<div class="star" data-val="1"></div>
-		<div class="star" data-val="2"></div>
-		<div class="star" data-val="3"></div>
-		<div class="star" data-val="4"></div>
-		<div class="star" data-val="5"></div>
+		<div class="star" data-val="1">&#9733;</div>
+		<div class="star" data-val="2">&#9733;</div>
+		<div class="star" data-val="3">&#9733;</div>
+		<div class="star" data-val="4">&#9733;</div>
+		<div class="star" data-val="5">&#9733;</div>
 	</div>
 	<div class="overlay-container">
 		<iframe width="100%" height="100%"></iframe>
