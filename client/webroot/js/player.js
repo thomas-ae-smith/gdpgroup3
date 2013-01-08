@@ -122,7 +122,7 @@
 		},
 
 		setProgramme: function (programme) {
-			this.videoLayer.set("vod", "prog-" + programme.get("uid")/*programme.get("url")*/);
+			this.videoLayer.set("vod", "prog-" + programme.get("uid")/*programme.get("url")*/, y4.startTimeHack );
 			if (programme.get("transcript")) {
 				this.transcriptLayer.set(programme.get("transcript")).show();
 			}
@@ -209,12 +209,13 @@
 	y4.FlashVideoLayerView = VideoLayerView.extend({
 		play: function () { this.$f.play(); },
 		pause: function () { this.$f.pause(); },
-		set: function (service, url) {
+		set: function (service, url, startTime) {
 			console.log('rtmp://' + this.options.server + '/' + service, url);
 			// Is there no need to change channel
 			if (this.url === url && this.service === "y4") { return; }
 			this.service = service;
 			this.url = url;
+			this.startTime = startTime || 0;
 			this.render();
 			this.trigger("set");
 			return this;
@@ -235,6 +236,7 @@
 				clip: {
 					url: 'mp4:' + this.url,
 					scaling: "fit",
+					start: this.startTime,
 					provider: 'y4',
 					autoPlay: true,
 					autoBuffering: true,

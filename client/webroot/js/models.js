@@ -406,6 +406,14 @@
 		start: function () {
 			var that = this;
 			if (this.item.start) { this.item.start(); }
+			var adbreaks = this.item.get("adbreaks");
+			if (adbreaks) { // errrrrggghhh
+				setTimeout(function () {
+					console.log("***AD1")
+					that.trigger("finish");
+				}, (adbreaks[0].startTime - y4.startTimeHack) * 1000);
+				console.log("MMMOOOO", (adbreaks[0].startTime - y4.startTimeHack) * 1000)
+			}
 			this.trigger("start");
 			setTimeout(function () {
 				that.trigger("finish");
@@ -693,7 +701,7 @@
 						});
 						// Add new breaks
 						_.each(programme.get("adbreaks"), function (adbreak) {
-							var startTime = Number(adbreak.startTime) + time,
+							var startTime = Number(adbreak.startTime) + time - y4.startTimeHack,
 								duration = adbreak.endTime - adbreak.startTime;
 							breaks[adbreak.id] = that.addAdverts(startTime, duration, programme, true, broadcast).adbreak;
 						});
@@ -719,7 +727,7 @@
 					userId: this.user.id,
 					programmeId: programme ? programme.id : 0,
 					broadcast: broadcast ? true : false,
-					startTime: time,
+					startTime: time - y4.startTimeHack,
 					timeOffset: that.timeOffset
 				}),
 				item = new y4.PlaylistItem({
@@ -729,7 +737,10 @@
 					partOfProgramme: partOfProgramme
 				}, { timeOffset: that.timeOffset });
 
+			console.log(time, y4.startTimeHack)
+
 			adbreak.on("adStart", function (advert) {
+				console.log("!!!!!!!!!!!!!!!!!!!!!START AD BREAK!!!!!!!!!!!!!!!!")
 				that.trigger("advert", advert);
 			}).on("ready", function () {
 				that.add(item);

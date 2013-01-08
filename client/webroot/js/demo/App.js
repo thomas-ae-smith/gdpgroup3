@@ -9,6 +9,8 @@
 		return (new Date()).getTime() / 1000;
 	};
 
+	y4.startTimeHack = 50;
+
 	y4.App = Backbone.View.extend({
 		events: {
 			"mousemove .player-layer": "showControls",
@@ -51,6 +53,7 @@
 			this.player.on("beforefinish", function () {
 				that.playlist.fetchNext();
 			}).on("finish", function () {
+					console.log("***AD2")
 				// Check if the next programme/advert can still be shown at
 				// this time (that no more than 5 seconds has elapsed since
 				// beforefinish)
@@ -59,6 +62,7 @@
 						that.player.next();
 					});
 				} else {
+					console.log("***AD3")
 					that.player.next();
 				}
 			});
