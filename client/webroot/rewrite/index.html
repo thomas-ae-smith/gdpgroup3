@@ -31,14 +31,32 @@
 		left: 0;
 		right: 0;
 		background: green;
+		text-align: center;
+		display: none;
 	}
-	.skip-options {
-		width: 40%;
-		height: 40%;
-		padding: 5px;
+	.skip-options .option {
+		display: inline-block;
+		width: 28%;
+		height: 45%;
+		margin: 10px;
+		line-height: 100px;
 		background: blue;
 		text-align: center;
-		
+		color: white;
+	}
+	.skipt-options .option:hover {
+		background: white;
+		color: black;
+	}
+	.login {
+		position: absolute;
+		z-index: 10000;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: black;
+		text-align: center;
 	}
 	</style>
 </head>
@@ -46,14 +64,24 @@
 	<div class="player"></div>
 	<div class="skip"><a href="javascript:;">Skip</a></div>
 	<div class="skip-options">
-		<a class="option">Misleading</a>
-		<a class="option">Offensive</a>
-		<a class="option">Not interested</a>
-		<a class="option">Annoying</a>
-		<a class="option">Other</a>
+		<a class="option" href="javascript:;">Misleading</a>
+		<a class="option" href="javascript:;">Offensive</a>
+		<a class="option" href="javascript:;">Not interested</a>
+		<a class="option" href="javascript:;">Annoying</a>
+		<a class="option" href="javascript:;">I've seen this before</a>
+		<a class="option" href="javascript:;">Other</a>
+	</div>
+	<div class="rating">
 	</div>
 	<div class="playlist">
 
+	</div>
+	<div class="login">
+		<form>
+			Username: <input type="text"><br>
+			Password: <input type="password"><br>
+			<input type="submit" class="submit">
+		</form>
 	</div>
 </head>
 </html>

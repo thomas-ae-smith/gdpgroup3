@@ -11,15 +11,28 @@ $(document).ready(function () {
 
 	$(".player").append(player.el);
 	$(".skip").click(function () {
+		if (player.current().get("type") === "advert") {
+			$(".skip-options").show();
+		} else {
+			player.skip();
+		}
+	});
+	$(".skip-options .option").click(function () {
 		player.skip();
+		$(".skip-options").hide();
 	});
 
 	player.setPlaylist(playlist);
 
-	player.on("ready", function () {
-		console.log(playlist)
+	//player.on("ready", function () {
+	//	console.log(playlist)
+	$(".login form").submit(function (e) {
+		e.preventDefault();
 		player.start(37);
+		$(".login").hide();
+		return false;
 	});
+	//});
 })
 
 var Player = Backbone.View.extend({
@@ -103,6 +116,9 @@ var Player = Backbone.View.extend({
 			that.trigger("ready");
 		});
 		this.playlist = playlist;
+	},
+	current: function () {
+		return this.playlist.at(this.i);
 	}
 })
 
