@@ -44,6 +44,12 @@ $(document).ready(function () {
 })
 
 var Player = Backbone.View.extend({
+	initialize: function () {
+		var that = this;
+		setInterval(function () {
+			that.tick();
+		}, 1000);
+	},
 	render: function (time) {
 		$(this.el).html("").flowplayer({
 			src: "../lib/flowplayer.swf",
@@ -111,6 +117,7 @@ var Player = Backbone.View.extend({
 		} else {
 			$("iframe").attr("src", "about:blank");
 		}
+		this.time = 0;
 	},
 	skip: function () {
 		this.start(0, this.i + 1);
@@ -133,11 +140,19 @@ var Player = Backbone.View.extend({
 	},
 	current: function () {
 		return this.playlist.at(this.i);
+	},
+	tick: function () {
+		this.time += 1;
+		var displayTime = 300,
+			time = this.time;
+		$(".playlist .marker").css({
+			left: (time / displayTime) * 100 + "%"
+		});
 	}
-})
+});
 
 
-var PlaylistView = Backbone.view.extend({
+var PlaylistView = Backbone.View.extend({
 	init: function() {
 		var that = this;
 		this.playlist = this.options.playlist;
