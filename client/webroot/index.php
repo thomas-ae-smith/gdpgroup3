@@ -51,7 +51,7 @@ if (strpos($uri, 'advertiser.php') !== false) {
 } else if (strpos($uri, 'demo.php') !== false) {
 	$site = 'demo';
 } else {
-	$site = 'your4';
+	$site = 'demo';//'your4';
 }
 
 $styles = array_merge($requires['all']['styles'], $requires[$site]['styles']);

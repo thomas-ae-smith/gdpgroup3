@@ -122,7 +122,7 @@
 		},
 
 		setProgramme: function (programme) {
-			this.videoLayer.set("vod", programme.get("url"));
+			this.videoLayer.set("vod", "prog-" + programme.get("uid")/*programme.get("url")*/);
 			if (programme.get("transcript")) {
 				this.transcriptLayer.set(programme.get("transcript")).show();
 			}
