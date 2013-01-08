@@ -33,6 +33,18 @@ $(document).ready(function () {
 		return false;
 	});
 	//});
+
+	$(".star").click(function () {
+		var siblings = $(this).siblings,
+			i = siblings.indexOf(this);
+
+		for (var i2 = 0; i2 < i; i++) {
+			$(".star").at(i2).addClass("active");
+		}
+		for (var i2 = i; i2 < 5; i++) {
+			$(".star").at(i2).removeClass("active");
+		}
+	})
 })
 
 var Player = Backbone.View.extend({
