@@ -11,23 +11,11 @@ $app->get('/impressions(/)', function () use ($app) {
 	}, array_values($impressions)));
 });
 
-
-$app->get('/impressions/:id(/)', function ($id) use ($app) {
-	$impressions = R::find('advertimpression', ' advert_id = ? ', array($id));
-	output_json(array_map(function ($impression) {
-		$clicks = R::find('advertclick', ' advertimpression_id = ? ', array($impression->id));
-		return array_merge($impression->export(), array(
-			'clicks' => R::exportAll($clicks)
-		));
-
-	}, array_values($impressions)));
-});
-
-$app->get('/impressions/populate', function() use ($app) {
+$app->get('/impressions/populate(/)', function() use ($app) {
 	// $adverts = array_values(R::findAll('adverts'));
 	$users = array_values(R::findAll('user'));
 
-	for ($i = 0; $i < 100; $i++) {
+	for ($i = 0; $i < 47; $i++) {
 		$impression = R::dispense('advertimpression');
 		$impression->advert = R::load('advert', 125);
 		$impression->user = $users[rand(0, count($users) - 1)];
@@ -45,4 +33,17 @@ $app->get('/impressions/populate', function() use ($app) {
 		}
 		R::store($impression);
 	}
+	return "populated.";
+});
+
+$app->get('/impressions/:id(/)', function ($id) use ($app) {
+        output_json("err");
+        $impressions = R::find('advertimpression', ' advert_id = ? ', array($id));
+        output_json(array_map(function ($impression) {
+                $clicks = R::find('advertclick', ' advertimpression_id = ? ', array($impression->id));
+                return array_merge($impression->export(), array(
+                        'clicks' => R::exportAll($clicks)
+                ));
+
+        }, array_values($impressions)));
 });
