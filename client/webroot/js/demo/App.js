@@ -9,7 +9,7 @@
 		return (new Date()).getTime() / 1000;
 	};
 
-	y4.startTimeHack = 50;
+	y4.startTimeHack = 40;
 
 	y4.App = Backbone.View.extend({
 		events: {

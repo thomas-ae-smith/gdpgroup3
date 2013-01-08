@@ -31,6 +31,14 @@
 	});
 
 	y4.Programme = Backbone.Model.extend({
+		initialize: function () {
+			var adbreaks = this.get("adbreaks");
+			if (adbreaks && adbreaks.length > 0) {
+				console.log("nadd1", adbreaks[0].startTime)
+				adbreaks[0].startTime -= y4.startTimeHack;
+				console.log("nadd2", adbreaks[0].startTime)
+			}
+		},
 		duration: function () {
 			return Math.ceil(this.get("duration"));
 		},
@@ -407,20 +415,24 @@
 		start: function () {
 			var that = this;
 			if (this.item.start) { this.item.start(); console.log("SSS") }
-			console.log("START")
+			console.log("START", this)
 			var adbreaks = this.item.get("adbreaks");
-			if (adbreaks) { // errrrrggghhh
+			/*if (adbreaks && false) { // errrrrggghhh
 				setTimeout(function () {
 					console.log("***AD1")
 					that.trigger("finish");
 				}, (adbreaks[0].startTime - y4.startTimeHack) * 1000);
 				console.log("MMMOOOO", (adbreaks[0].startTime - y4.startTimeHack) * 1000)
-			}
-			this.trigger("start");
-			setTimeout(function () {
-				that.trigger("finish");
-			}, this.duration() * 1000);
-			console.log("AD DURATION", this.duration());
+			}*/
+			console.log("___>>>", y4.hackAdbreaksStarted);
+			//if (this.get("type") !== "adbreak") {
+				this.trigger("start");
+				setTimeout(function () {
+					console.log("FINISH")
+					that.trigger("finish");
+				}, this.duration() * 1000);
+				console.log("AD DURATION", this.duration());
+			//}
 			return this;
 		}
 	});
@@ -741,7 +753,10 @@
 				}, { timeOffset: that.timeOffset });
 
 			adbreak.on("adStart", function (advert) {
-				console.log("!!!!!!!!!!!!!!!!!!!!!START AD BREAK!!!!!!!!!!!!!!!!")
+				if (y4.hackAdbreaksStarted > 2) { return };
+				if (!y4.hackAdbreaksStarted) { y4.hackAdbreaksStarted = 0; }
+				y4.hackAdbreaksStarted++;
+				console.log("!!!!!!!!!!!!!!!!!!!!!START AD BREAK!!!!!!!!!!!!!!!!", y4.hackAdbreaksStarted)
 				that.trigger("advert", advert);
 			}).on("ready", function () {
 				that.add(item);
