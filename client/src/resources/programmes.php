@@ -1,6 +1,17 @@
 <?php
 
-$app->get('/programmes(/)', function() use ($app) {
+$demo_programmes = array(5152, 1085, 1187, 583, 1393, 1186);
+
+$app->get('/programmes(/)', function() use ($app, $demo_programmes) {
+	$demo = $app->request()->get('demo');
+	if ($demo) {
+		$programme = R::load('programme', $demo_programmes[$demo - 1]);
+		if (!$demo) {
+			notFound('No more demo programmes');
+		}
+		output_json(getProgramme($programme));
+		return;
+	}
 	$userId = $app->request()->get('user');
 	if ($userId) {
 		$user = R::load('user', $userId);
@@ -12,7 +23,7 @@ $app->get('/programmes(/)', function() use ($app) {
 
 		$programmeId = $out[0]; // Replace with 0 once get_recommender is fixed
 		$programme = R::load('programme', $programmeId);
-		if (!$programme->id) {
+		if (!$programme) {
 			notFound('No suitable recommendation at the moment - try again soon.');
 		}
 

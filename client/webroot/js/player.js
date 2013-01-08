@@ -26,6 +26,10 @@
 				});
 				that.$el.append($star);
 			});
+			
+			var skip = $('<a href="javascript:;" class="skip" style="bottom: 20px;">Skip</a>');
+			this.$el.append(skip);
+
 			return this;
 		},
 		rate: function (i) {
@@ -88,8 +92,7 @@
 			this.$el.html("").append(this.videoLayer.el, this.blackLayer.render().el);
 			this.videoLayer.render(true).$el.append(this.transcriptLayer.el);
 			this.transcriptLayer.render().$el.append(this.stillLayer.el);
-			this.stillLayer.render().$el.append(this.skipLayer.el);
-			this.skipLayer.render().$el.append(this.overlayLayer.render().el);
+			this.stillLayer.render().$el.append(this.overlayLayer.render().el);
 
 			return this;
 		},

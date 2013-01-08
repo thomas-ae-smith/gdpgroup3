@@ -1,6 +1,9 @@
 <?php
 
 $app->get('/broadcasts(/)', function() use ($app) {
+	if ($app->request()->get('demo')) {
+		notFound('No broadcasts for demo');
+	}
 	$userId = $app->request()->get('user');
 	$startTime = $app->request()->get('startTime') ?: time();
 	if ($userId) {

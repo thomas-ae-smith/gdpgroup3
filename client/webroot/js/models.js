@@ -702,7 +702,7 @@
 					if (broadcast) {
 						that.trigger("broadcast", broadcast);
 					} else {
-						that.trigger("programme", programme);
+						that.trigger("programme", programme, item);
 					}
 				});
 

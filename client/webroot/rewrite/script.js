@@ -137,6 +137,20 @@ var Player = Backbone.View.extend({
 })
 
 
+var PlaylistView = Backbone.view.extend({
+	init: function() {
+		var that = this;
+		this.playlist = this.options.playlist;
+		this.updateTimer = setInterval(1000, function() {
+			that.updateTicker();
+		});
+	},
+
+	updateTicker: function() {
+		// Update now-line width
+	}
+})
+
 var PlaylistItem = Backbone.Model.extend({
 	load: function () {
 		var that = this,

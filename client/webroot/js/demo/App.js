@@ -154,6 +154,9 @@
 			var that = this,
 				playlist = new y4.Playlist(undefined, { user: this.user(), demo: 1 });
 
+			console.log("!!!!!PLAYLIST");
+			console.log(playlist);
+
 			$('.account-controls .name').text("Welcome "+this.user().get('name'));
 
 			this.showSpinner();
@@ -173,7 +176,10 @@
 
 			playlist.on("broadcast", function (broadcast) {
 				that.player.setBroadcast(broadcast);
-			}).on("programme", function (programme) {
+			}).on("programme", function (programme, item) {
+				//if (programme.get("id") == "5152") {
+				//	item.set("time", item.get("time") - 580);
+				//}
 				that.player.setProgramme(programme);
 			}).on("advert", function (advert) {
 				that.player.setAdvert(advert);

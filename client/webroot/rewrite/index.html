@@ -86,6 +86,68 @@
 	iframe {
 		border: 0;
 	}
+
+	.playlist {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 80px;
+		background: black;
+		opacity: 0.9;
+		display: none;
+	}
+
+	.playlist-item {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		overflow: hidden;
+		border: 1px solid white;
+		font-size: 10px;
+		background: rgba(51, 51, 51);
+	}
+
+	.playlist-item.ad {
+		background: rgba(255, 255 ,255);
+	}
+
+	.playlist-item .info {
+		padding: 10px;
+		overflow: hidden;
+	}
+
+	.playlist-item .info .title {
+		font-size: 16px;
+		font-weight: bold;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	.playlist-item .info .type-label {
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+	}
+
+	.playlist-item .info .type-label.live {
+		background-color: #b94a48;
+	}
+
+	.playlist-item .info .type-label.recorded {
+		background-color: #3a87ad;
+	}
+
+	.now-line {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 0;
+		border-right: 2px solid #fff;
+		z-index: 1000;
+		background: rgba(204, 51, 194, 0.3);
+	}
+
 	</style>
 </head>
 <head>
@@ -110,7 +172,14 @@
 		<iframe width="100%" height="100%"></iframe>
 	</div>
 	<div class="playlist">
-
+		<div class="now-line"></div>
+		<div class="playlist-item">
+			<div class="info">
+				<div class="title">Be-Shure</div>
+				<div class="times">17:19 - 17:19</div>
+				<span class="type-label label recorded">RECORDED</span>
+			</div>
+		</div>
 	</div>
 	<div class="login">
 		<form>

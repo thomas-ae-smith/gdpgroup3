@@ -1,7 +1,15 @@
 <?php
 
+$demo_adverts = array(138, 139, 140, 141, 142, 143);
+
 // Advert collection
-$app->get('/adverts(/)', function() use ($app) {
+$app->get('/adverts(/)', function() use ($app, $demo_adverts) {
+	$demo = $app->request()->get('demo');
+	if ($demo && $demo <= count($demo_adverts)) {
+		$advert = R::load('advert', $demo_adverts[$demo - 1]);
+		output_json(array(getAdvert($advert)));
+		return;
+	}
 	$userId = intval($app->request()->get('user'));
 	$programmeId = intval($app->request()->get('programme'));
 	$timeLimit = intval($app->request()->get('time_limit'));
