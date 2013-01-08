@@ -140,7 +140,7 @@
 	y4.Adverts = Backbone.Collection.extend({
 		url: "http://"+baseUrl+"/api/adverts/",
 		model: y4.Advert,
-		recommendation: function (userId, programmeId, timelimit, excludeAdvertIds, broadcast) {
+		recommendation: function (userId, programmeId, timelimit, excludeAdvertIds, broadcast, demo) {
 			var that = this,
 				dfd = $.Deferred();
 			this.fetch({
@@ -149,7 +149,8 @@
 					programme: programmeId,
 					time_limit: Math.max(Math.floor(timelimit), 1),
 					exclude_adverts: _.uniq(excludeAdvertIds).join(","),
-					broadcast: broadcast
+					broadcast: broadcast,
+					demo: demo
 				}
 			}).done(function () {
 				dfd.resolve(that.first()); // TODO: check there is a first?
@@ -405,7 +406,8 @@
 		},
 		start: function () {
 			var that = this;
-			if (this.item.start) { this.item.start(); }
+			if (this.item.start) { this.item.start(); console.log("SSS") }
+			console.log("START")
 			var adbreaks = this.item.get("adbreaks");
 			if (adbreaks) { // errrrrggghhh
 				setTimeout(function () {
@@ -418,6 +420,7 @@
 			setTimeout(function () {
 				that.trigger("finish");
 			}, this.duration() * 1000);
+			console.log("AD DURATION", this.duration());
 			return this;
 		}
 	});
@@ -509,7 +512,7 @@
 		pushAdvertRecommendation: function (timelimit, programmeId, excludeAdvertIds) {
 			var that = this,
 				dfd = $.Deferred();
-			(new y4.Adverts()).recommendation(this.userId, programmeId, timelimit, excludeAdvertIds, this.broadcast).done(function (advert) {
+			(new y4.Adverts()).recommendation(this.userId, programmeId, timelimit, excludeAdvertIds, this.broadcast, that.length + 1).done(function (advert) {
 
 				var item = new y4.PlaylistItem({
 					type: "advert",
@@ -727,7 +730,7 @@
 					userId: this.user.id,
 					programmeId: programme ? programme.id : 0,
 					broadcast: broadcast ? true : false,
-					startTime: time - y4.startTimeHack,
+					startTime: time,
 					timeOffset: that.timeOffset
 				}),
 				item = new y4.PlaylistItem({
@@ -736,8 +739,6 @@
 					time: time,
 					partOfProgramme: partOfProgramme
 				}, { timeOffset: that.timeOffset });
-
-			console.log(time, y4.startTimeHack)
 
 			adbreak.on("adStart", function (advert) {
 				console.log("!!!!!!!!!!!!!!!!!!!!!START AD BREAK!!!!!!!!!!!!!!!!")
