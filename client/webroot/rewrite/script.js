@@ -1,15 +1,23 @@
 (function ($, _, Backbone, moment) {
 	'use strict';
 
+	/* Interactive ads
+	trainline 125
+	paddy 91
+	smirnoff 109
+	? 29
+	pot noodle 97
+	scotland 24
+	wallflower 129
+	? 135 */
+
 	var playlistJ = [
 		{ type: 'programme', pid: 5152, duration: 52, addTime: 850 },
 		{ type: 'advert', pid: 125 },
 		{ type: 'advert', pid: 91 },
-		{ type: 'advert', pid: 91 },
-		{ type: 'advert', pid: 139 },
-		{ type: 'advert', pid: 125 },
-		{ type: 'advert', pid: 139 },
-		{ type: 'advert', pid: 140 },
+		{ type: 'advert', pid: 97 },
+		{ type: 'advert', pid: 129 },
+		{ type: 'advert', pid: 29 },
 		{ type: 'advert', pid: 139 },
 		{ type: 'programme', pid: 5152, duration: 900 },
 		{ type: 'advert', pid: 125 },
@@ -65,7 +73,7 @@
 
 		$('.login form').submit(function (e) {
 			e.preventDefault();
-			player.start(0);
+			player.start(50);
 			$('.login').hide();
 			return false;
 		});
@@ -131,7 +139,8 @@
 				timeouts = this.timeouts = [],
 				total = -time;
 
-			si = this.i = si || 0;
+			si = si || 0;
+			this.i = 0;
 
 			this.playlist.reset(this.playlist.models.slice(si));
 
@@ -146,9 +155,9 @@
 			this.playItem(0, time);
 		},
 		next: function () {
-			this.i++;
-			this.playItem(this.i);
+			//this.i++;
 			this.playlist.reset(this.playlist.models.slice(1));
+			this.playItem(this.i);
 		},
 		playItem: function (i, time) {
 			if (i >= this.playlist.length) { return; }
