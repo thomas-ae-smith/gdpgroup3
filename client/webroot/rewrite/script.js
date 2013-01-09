@@ -2,7 +2,7 @@
 	'use strict';
 
 	var playlistJ = [
-		{ type: 'programme', pid: 5152, duration: 40 },
+		{ type: 'programme', pid: 5152, duration: 52, addTime: 850 },
 		{ type: 'advert', pid: 125 },
 		{ type: 'advert', pid: 139 },
 		{ type: 'advert', pid: 140 },
@@ -162,7 +162,7 @@
 				$('.rating').show();
 				$('.star').show().siblings().find('.thanks').remove();
 			}
-			this.time = time || 0;
+			this.time = time ||  + (item.get('addTime') || 0);
 		},
 		skip: function () {
 			this.start(0, this.i + 1);
@@ -202,7 +202,7 @@
 
 			this.playlist.each(function (item) {
 				var itemj = item.toJSON(),
-					width = (itemj.duration / displayTime) * 100;
+					width = ((itemj.duration + (itemj.addTime || 0)) / displayTime) * 100;
 
 				var m = _.extend(item.model.toJSON(), itemj, {
 					startTime: now + totalTime,
