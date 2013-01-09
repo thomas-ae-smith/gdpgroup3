@@ -14,8 +14,8 @@
 	var playlistJ = [
 		{ type: 'programme', pid: 5152, duration: 52, addTime: 850 },
 		{ type: 'advert', pid: 125 },
-		{ type: 'advert', pid: 91 },
-		{ type: 'advert', pid: 97 },
+		{ type: 'advert', pid: 139 },
+		{ type: 'advert', pid: 140 },
 		{ type: 'advert', pid: 129 },
 		{ type: 'advert', pid: 29 },
 		{ type: 'advert', pid: 139 },
