@@ -206,7 +206,7 @@
 					width = ((itemj.duration + (itemj.addTime || 0)) / displayTime) * 100;
 
 				var m = _.extend(item.model.toJSON(), itemj, {
-					startTime: now + totalTime,
+					startTime: now + totalTime - itemj.addTime,
 					endTime: now + totalTime + itemj.duration
 				});
 
