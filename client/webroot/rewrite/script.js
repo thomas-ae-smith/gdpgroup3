@@ -155,7 +155,7 @@
 			this.set('vod', item.model.uri(), time);
 			$('.star').removeClass('active');
 			if (item.get('type') === 'advert') {
-				$('iframe').attr('src', 'overlay.html?' + Math.ceil(Math.random() * 1000000) + '#' + item.get('id'));
+				$('iframe').attr('src', 'overlay.html?' + Math.ceil(Math.random() * 1000000) + '#' + item.get('pid'));
 				$('.rating').hide();
 			} else {
 				$('iframe').attr('src', 'about:blank');
