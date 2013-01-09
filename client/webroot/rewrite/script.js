@@ -3,13 +3,13 @@
 
 	var playlistJ = [
 		{ type: 'programme', pid: 5152, duration: 40 },
-		//{ type: 'advert', id: 139 },
 		{ type: 'advert', pid: 125 },
 		{ type: 'advert', pid: 139 },
 		{ type: 'advert', pid: 140 },
 		{ type: 'advert', pid: 125 },
 		{ type: 'advert', pid: 139 },
 		{ type: 'advert', pid: 140 },
+		{ type: 'advert', pid: 139 },
 		{ type: 'programme', pid: 5152, duration: 900 },
 		{ type: 'advert', pid: 125 },
 		{ type: 'advert', pid: 139 },
@@ -28,7 +28,8 @@
 		{ type: 'advert', pid: 139 },
 		{ type: 'advert', pid: 140 },
 		{ type: 'advert', pid: 140 },
-		{ type: 'programme', pid: 5129, duration: 900 }
+		{ type: 'programme', pid: 5129, duration: 900 },
+		{ type: 'advert', pid: 140 }
 	];
 
 	$(document).ready(function () {
