@@ -55,9 +55,16 @@
 			$('.loading-screen').hide();
 		});
 
+		$('.facebook-button').click(function (e) {
+			e.preventDefault();
+			player.start(0);
+			$('.login').hide();
+			return false;
+		}
+
 		$('.login form').submit(function (e) {
 			e.preventDefault();
-			player.start(37);
+			player.start(0);
 			$('.login').hide();
 			return false;
 		});
