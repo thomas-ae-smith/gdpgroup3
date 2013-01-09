@@ -60,7 +60,7 @@
 			player.start(0);
 			$('.login').hide();
 			return false;
-		}
+		});
 
 		$('.login form').submit(function (e) {
 			e.preventDefault();
