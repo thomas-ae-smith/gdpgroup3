@@ -80,7 +80,7 @@
 				fontSize: 14
 			});
 			$('.star').fadeOut(function () {
-				$('.star').eq(0).after($thanks);
+				$('.star').eq(0).after($thanks.delay(2000).fadeOut());
 			}).after();
 		});
 	});
