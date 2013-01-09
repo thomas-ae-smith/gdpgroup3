@@ -172,7 +172,7 @@
 				$('.rating').show();
 				$('.star').show().siblings().find('.thanks').remove();
 			}
-			this.time = time ||  + (item.get('addTime') || 0);
+			this.time = (time || 0) + (item.get('addTime') ? Number(item.get('addTime')) : 0);
 		},
 		skip: function () {
 			this.start(0, this.i + 1);
@@ -215,7 +215,7 @@
 					width = ((itemj.duration + (itemj.addTime || 0)) / displayTime) * 100;
 
 				var m = _.extend(item.model.toJSON(), itemj, {
-					startTime: now + totalTime - itemj.addTime,
+					startTime: now + totalTime - (itemj.addTime || 0),
 					endTime: now + totalTime + itemj.duration
 				});
 
