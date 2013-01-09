@@ -29,7 +29,7 @@ $(document).ready(function () {
 	//	console.log(playlist)
 	$(".login form").submit(function (e) {
 		e.preventDefault();
-		player.start(37);
+		player.start(0);
 		$(".login").hide();
 		return false;
 	});
