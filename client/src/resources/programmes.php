@@ -44,7 +44,7 @@ $app->get('/programmes(/)', function() use ($app, $demo_programmes) {
 $app->get('/programmes/:id', function ($id) use ($app) {
 	$programme = R::load('programme', $id);
 	if (!$programme) { return notFound('Programme with that ID not found.'); }
-	output_json($programme->export());
+	output_json(getProgramme($programme));
 });
 
 $app->post('/programmes/:id/rate/', function ($id) {
@@ -59,6 +59,7 @@ $app->post('/programmes/:id/rate/', function ($id) {
 });
 
 function getProgramme($programme) {
+	$brand = $programme->brand;
 	return array_merge($programme->export(), array(
 		'url' => programmeUrl($programme),
 		'adbreaks' => array_map(function ($adbreak) {
@@ -67,7 +68,8 @@ function getProgramme($programme) {
 				'startTime' => $adbreak->startTime,
 				'endTime' => $adbreak->endTime
 			);
-		}, array_values($programme->ownAdbreak))
+		}, array_values($programme->ownAdbreak)),
+		'fulltitle' => ($brand->title !== $programme->title ? $brand->title . ' - ' : '') . $programme->title
 	));
 };
 
